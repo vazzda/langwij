@@ -375,4 +375,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get decayHardcoreDesc => 'Very fast (2 days)';
+
+  @override
+  String get navLanguage => 'Language';
+
+  @override
+  String get navVocabulary => 'Vocabulary';
+
+  @override
+  String get navTools => 'Tools';
+
+  @override
+  String get navSettings => 'Settings';
+
+  @override
+  String get underDevelopmentTitle => 'Coming soon';
+
+  @override
+  String get underDevelopmentBody => 'This feature is under development.';
+
+  @override
+  String get settingsTheme => 'Theme';
 }

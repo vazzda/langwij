@@ -1,0 +1,83 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+import '../../../app/router/app_router.dart';
+import '../../../app/theme/app_themes.dart';
+import '../../../l10n/app_localizations.dart';
+import 'navbar_icon_button.dart';
+
+/// Bottom navigation bar with 4 tabs.
+/// Active tab is detected from the current route.
+class BottomNavBarWidget extends StatelessWidget {
+  const BottomNavBarWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final t = AppThemes.of(context);
+    final l10n = AppLocalizations.of(context)!;
+    final path = GoRouterState.of(context).uri.path;
+
+    final isLanguage = path == '/language';
+    final isVocabulary = path == '/' ||
+        path == '/vocabulary' ||
+        path == '/conjugations' ||
+        path == '/agreement';
+    final isTools = path == '/tools';
+    final isSettings = path == '/settings';
+
+    return Container(
+      decoration: BoxDecoration(
+        color: t.navbarBackground,
+        border: Border(
+          top: BorderSide(
+            color: t.navbarBorderColor,
+            width: t.navbarBorderWidth,
+          ),
+        ),
+      ),
+      child: SafeArea(
+        top: false,
+        child: SizedBox(
+          height: 56,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              NavBarIconButton(
+                icon: Icons.language,
+                tooltip: l10n.navLanguage,
+                isEnabled: isLanguage,
+                enabledColor: t.navbarIconColor,
+                disabledColor: t.navbarDisabledIconColor,
+                onPressed: () => context.go('/language'),
+              ),
+              NavBarIconButton(
+                icon: Icons.menu_book,
+                tooltip: l10n.navVocabulary,
+                isEnabled: isVocabulary,
+                enabledColor: t.navbarIconColor,
+                disabledColor: t.navbarDisabledIconColor,
+                onPressed: () => context.go(AppRoutes.home),
+              ),
+              NavBarIconButton(
+                icon: Icons.build,
+                tooltip: l10n.navTools,
+                isEnabled: isTools,
+                enabledColor: t.navbarIconColor,
+                disabledColor: t.navbarDisabledIconColor,
+                onPressed: () => context.go('/tools'),
+              ),
+              NavBarIconButton(
+                icon: Icons.settings,
+                tooltip: l10n.navSettings,
+                isEnabled: isSettings,
+                enabledColor: t.navbarIconColor,
+                disabledColor: t.navbarDisabledIconColor,
+                onPressed: () => context.go(AppRoutes.settings),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

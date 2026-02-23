@@ -1,0 +1,78 @@
+## EXECUTION PROTOCOL
+
+DEFAULT: READ-ONLY. No file creation, editing, or deletion.
+EXECUTION: Only when the exact word "unleash" is in the current message.
+A PreToolUse hook enforces this — attempts without "unleash" are blocked.
+
+## PROJECT RULES
+
+### No hardcoded colors
+- NEVER hardcode color values (hex, RGB, opacity modifications like `.withOpacity()`, `Color(0x...)`)
+- ALWAYS use themed colors from `AppThemeData` via `AppThemes.of(context)`
+- Theme definitions: `lib/app/theme/app_themes.dart`
+- Theme instances: `lib/app/theme/themes/serpski_yellow_theme.dart`
+- If a needed color doesn't exist in the theme, propose adding it to `AppThemeData` first
+
+### No hardcoded font styles
+- NEVER hardcode font size, weight, family, or letter spacing in widget code
+- ALWAYS use product-level styles from `AppFontStyles` (e.g. `AppFontStyles.textBody`, `AppFontStyles.textSheetTitle`)
+- Font styles file: `lib/app/theme/app_font_styles.dart`
+- If a needed style doesn't exist, first add it to `AppFontStyles`, then use it
+- Only allowed inline modification: `.copyWith(color: ...)` for theming and text transforms like `.toUpperCase()` on the string itself
+
+### No raw Material controls
+- NEVER use raw Material/Flutter widgets directly in screens — ALWAYS use project controls from `lib/shared/ui/`
+- If a needed control doesn't exist, first add it to the project controls, then use it
+- NEVER inline/hardcode a control inside a widget unless explicitly discussed and agreed upon
+- NEVER pass ad-hoc overrides (iconSize, padding, margin, etc.) to bypass a control's built-in sizing/styling — if the control doesn't support the needed variant, add a proper variant to the control itself
+- Project controls (replace Material equivalents):
+  - **Buttons**: `AccentButton`, `BaseButton`, `ProjectTextButton`, `DangerTextButton`
+  - **Text input**: `ProjectTextInput`
+  - **Choice chips**: `AppChoiceChip`
+  - **Cards**: `ProjectCard`
+  - **Bottom sheets**: `showProjectBottomSheet()`
+  - **Navigation**: `ScreenLayoutWidget`
+
+### No hardcoded text strings
+- NEVER hardcode user-facing text — ALWAYS use `AppLocalizations` (accessed as `l10n`)
+- If a needed string doesn't exist, first add it to `lib/l10n/app_en.arb`, then use it
+- Localization stack: `flutter_localizations` + `intl` + `generate: true` (auto-generates `AppLocalizations`)
+- Dict file: `lib/l10n/app_en.arb`
+- Key naming convention: `section_descriptiveName` (e.g. `session_exitConfirm`, `common_cancel`)
+- Parameterized strings use `{placeholder}` syntax with `@key` metadata block
+
+### Architecture — Service Layer Pattern (Flutter)
+- Layer boundaries: Screen → Service → Repository → DB
+- **Screens**: watch providers for state, call services for actions, handle navigation. Nothing else.
+- **Services**: business logic, orchestrate repositories, handle provider invalidation sequences.
+- **Repositories**: DB access only, no business logic.
+- Screens must NEVER:
+  - Do raw SQL or call `DatabaseProvider` directly
+  - Call repository methods for mutations (reading via providers is OK)
+  - Know about provider invalidation sequences
+  - Contain multi-step business operations
+- Services are classes exposed via `Provider`, holding a `Ref`
+- Feature-specific services go in `lib/features/<name>/services/`
+- If it touches >1 repository or requires invalidation — it belongs in a service
+- If multiple screens need the same operation — extract to a service
+- If a screen method is >10 lines of non-UI code — likely belongs in a service
+
+### State ownership
+- Before adding any state/flag/provider, ask: "Who already owns this data?"
+- If the data already exists somewhere (DB, existing provider, feed), derive from it. Don't create a parallel flag.
+- New state must have ONE owner. No two systems tracking the same concept.
+- If a solution requires multiple call sites to "remember" to update a flag, the design is wrong.
+
+### Git is hands-off
+- NEVER run state-changing git commands (`add`, `commit`, `push`, `pull`, `stash`, `reset`, `checkout`, `rebase`, `merge`, `rm`)
+- Read-only allowed: `git status`, `git diff`, `git log`, `git show`, `git branch` (list only)
+
+### Communication style
+- Robot tone. Minimal, factual, zero warmth. Not rude — just mechanical.
+- No pleasantries, no filler, no encouragement, no casual phrases ("take your time", "sounds good", "great question", etc.)
+- When there is nothing to say, a one-word or emoji acknowledgment beats fake engagement.
+- Acknowledge mistakes in one sentence. No hollow apologies, no promises to "do better" — neither survives context boundaries.
+- No rhetorical questions.
+- Address user as male (he/him).
+- No flattery. No ass-kissing. No patronizing. Never act like a friendly manager or a customer service agent.
+- Be critical. Have opinions. If the approach is bad, say so directly. Push back when something is wrong — don't agree just because the user said it.

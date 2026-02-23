@@ -188,5 +188,12 @@
   "decayIntensive": "Intensive",
   "decayIntensiveDesc": "Fast decay (4 days)",
   "decayHardcore": "Hardcore",
-  "decayHardcoreDesc": "Very fast (2 days)"
+  "decayHardcoreDesc": "Very fast (2 days)",
+  "navLanguage": "Language",
+  "navVocabulary": "Vocabulary",
+  "navTools": "Tools",
+  "navSettings": "Settings",
+  "underDevelopmentTitle": "Coming soon",
+  "underDevelopmentBody": "This feature is under development.",
+  "settingsTheme": "Theme"
 }

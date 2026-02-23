@@ -789,6 +789,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Very fast (2 days)'**
   String get decayHardcoreDesc;
+
+  /// No description provided for @navLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get navLanguage;
+
+  /// No description provided for @navVocabulary.
+  ///
+  /// In en, this message translates to:
+  /// **'Vocabulary'**
+  String get navVocabulary;
+
+  /// No description provided for @navTools.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools'**
+  String get navTools;
+
+  /// No description provided for @navSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get navSettings;
+
+  /// No description provided for @underDevelopmentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming soon'**
+  String get underDevelopmentTitle;
+
+  /// No description provided for @underDevelopmentBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This feature is under development.'**
+  String get underDevelopmentBody;
+
+  /// No description provided for @settingsTheme.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get settingsTheme;
 }
 
 class _AppLocalizationsDelegate
