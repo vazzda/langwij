@@ -92,10 +92,10 @@ class _AgreementGroupListScreenState extends ConsumerState<AgreementGroupListScr
       },
       child: ScreenLayoutWidget(
         title: l10n.parentAgreement,
+        showBottomNav: true,
         leading: BackButton(
           onPressed: () => context.go(AppRoutes.home),
         ),
-        showBottomNav: true,
         child: asyncGroups.when(
           data: (groups) {
             final adjectiveGroupsList = adjectiveGroups(groups);

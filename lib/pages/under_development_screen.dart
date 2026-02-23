@@ -8,14 +8,25 @@ import '../shared/ui/screen_layout/screen_layout_widget.dart';
 class UnderDevelopmentScreen extends StatelessWidget {
   const UnderDevelopmentScreen({super.key, required this.titleKey});
 
-  /// l10n key used for the app bar title.
+  /// l10n key name: 'navLanguage' or 'navTools'.
   final String titleKey;
+
+  String _resolveTitle(AppLocalizations l10n) {
+    switch (titleKey) {
+      case 'navLanguage':
+        return l10n.navLanguage;
+      case 'navTools':
+        return l10n.navTools;
+      default:
+        return titleKey;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final t = AppThemes.of(context);
-    final title = titleKey == 'language' ? l10n.navLanguage : l10n.navTools;
+    final title = _resolveTitle(l10n);
 
     return ScreenLayoutWidget(
       title: title,
@@ -26,7 +37,7 @@ class UnderDevelopmentScreen extends StatelessWidget {
           children: [
             Text(
               l10n.underDevelopmentTitle,
-              style: AppFontStyles.textSubtitle.copyWith(color: t.textPrimary),
+              style: AppFontStyles.textSectionHeader.copyWith(color: t.textPrimary),
             ),
             const SizedBox(height: 8),
             Text(

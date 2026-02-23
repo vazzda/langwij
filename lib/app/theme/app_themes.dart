@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'themes/candidate01_theme.dart';
+import 'themes/candidate02_theme.dart';
 import 'themes/candidate05_theme.dart';
 import 'themes/candidate07_theme.dart';
 import 'themes/candidate08_theme.dart';
-import 'themes/candidate01_theme.dart';
-import 'themes/candidate02_theme.dart';
 import 'app_font_styles.dart';
 
+export 'themes/candidate01_theme.dart';
+export 'themes/candidate02_theme.dart';
+export 'themes/candidate05_theme.dart';
+export 'themes/candidate07_theme.dart';
+export 'themes/candidate08_theme.dart';
 export 'app_font_styles.dart';
 
 // ============================================================================
@@ -274,13 +279,6 @@ class AppThemes {
     return ThemeData(
       useMaterial3: true,
       scaffoldBackgroundColor: data.scaffoldBackground,
-      pageTransitionsTheme: const PageTransitionsTheme(
-        builders: {
-          TargetPlatform.android: NoAnimationPageTransitionsBuilder(),
-          TargetPlatform.iOS: NoAnimationPageTransitionsBuilder(),
-          TargetPlatform.macOS: NoAnimationPageTransitionsBuilder(),
-        },
-      ),
       colorScheme: ColorScheme.fromSeed(
         seedColor: data.accentColor,
         primary: data.accentColor,
@@ -303,6 +301,16 @@ class AppThemes {
         ),
       ),
       iconTheme: IconThemeData(color: data.textPrimary),
+      pageTransitionsTheme: const PageTransitionsTheme(
+        builders: {
+          TargetPlatform.android: NoAnimationPageTransitionsBuilder(),
+          TargetPlatform.iOS: NoAnimationPageTransitionsBuilder(),
+          TargetPlatform.linux: NoAnimationPageTransitionsBuilder(),
+          TargetPlatform.macOS: NoAnimationPageTransitionsBuilder(),
+          TargetPlatform.windows: NoAnimationPageTransitionsBuilder(),
+          TargetPlatform.fuchsia: NoAnimationPageTransitionsBuilder(),
+        },
+      ),
       extensions: <ThemeExtension<dynamic>>[AppThemeDataExtension(data)],
     );
   }

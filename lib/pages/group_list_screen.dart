@@ -477,8 +477,8 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
       },
       child: ScreenLayoutWidget(
         title: title,
-        leading: BackButton(onPressed: () => context.go(AppRoutes.home)),
         showBottomNav: true,
+        leading: BackButton(onPressed: () => context.go(AppRoutes.home)),
         child: asyncGroups.when(
           data: (groups) {
             final childGroups = groups

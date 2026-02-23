@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../l10n/app_localizations.dart';
 import '../../../app/router/app_router.dart';
 import '../../../app/theme/app_themes.dart';
-import '../../../l10n/app_localizations.dart';
 import 'navbar_icon_button.dart';
 
-/// Bottom navigation bar with 4 tabs.
+/// Flat bottom navigation bar with 4 tabs.
 /// Active tab is detected from the current route.
 class BottomNavBarWidget extends StatelessWidget {
   const BottomNavBarWidget({super.key});
@@ -15,15 +15,15 @@ class BottomNavBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = AppThemes.of(context);
     final l10n = AppLocalizations.of(context)!;
-    final path = GoRouterState.of(context).uri.path;
+    final currentPath = GoRouterState.of(context).uri.path;
 
-    final isLanguage = path == '/language';
-    final isVocabulary = path == '/' ||
-        path == '/vocabulary' ||
-        path == '/conjugations' ||
-        path == '/agreement';
-    final isTools = path == '/tools';
-    final isSettings = path == '/settings';
+    final isLanguage = currentPath == AppRoutes.language;
+    final isVocabulary = currentPath == AppRoutes.home ||
+        currentPath == AppRoutes.vocabulary ||
+        currentPath == AppRoutes.conjugations ||
+        currentPath == AppRoutes.agreement;
+    final isTools = currentPath == AppRoutes.tools;
+    final isSettings = currentPath == AppRoutes.settings;
 
     return Container(
       decoration: BoxDecoration(
@@ -45,34 +45,42 @@ class BottomNavBarWidget extends StatelessWidget {
               NavBarIconButton(
                 icon: Icons.language,
                 tooltip: l10n.navLanguage,
-                isEnabled: isLanguage,
+                isEnabled: !isLanguage,
                 enabledColor: t.navbarIconColor,
                 disabledColor: t.navbarDisabledIconColor,
-                onPressed: () => context.go('/language'),
+                onPressed: !isLanguage
+                    ? () => context.go(AppRoutes.language)
+                    : null,
               ),
               NavBarIconButton(
                 icon: Icons.menu_book,
                 tooltip: l10n.navVocabulary,
-                isEnabled: isVocabulary,
+                isEnabled: !isVocabulary,
                 enabledColor: t.navbarIconColor,
                 disabledColor: t.navbarDisabledIconColor,
-                onPressed: () => context.go(AppRoutes.home),
+                onPressed: !isVocabulary
+                    ? () => context.go(AppRoutes.home)
+                    : null,
               ),
               NavBarIconButton(
                 icon: Icons.build,
                 tooltip: l10n.navTools,
-                isEnabled: isTools,
+                isEnabled: !isTools,
                 enabledColor: t.navbarIconColor,
                 disabledColor: t.navbarDisabledIconColor,
-                onPressed: () => context.go('/tools'),
+                onPressed: !isTools
+                    ? () => context.go(AppRoutes.tools)
+                    : null,
               ),
               NavBarIconButton(
                 icon: Icons.settings,
                 tooltip: l10n.navSettings,
-                isEnabled: isSettings,
+                isEnabled: !isSettings,
                 enabledColor: t.navbarIconColor,
                 disabledColor: t.navbarDisabledIconColor,
-                onPressed: () => context.go(AppRoutes.settings),
+                onPressed: !isSettings
+                    ? () => context.go(AppRoutes.settings)
+                    : null,
               ),
             ],
           ),

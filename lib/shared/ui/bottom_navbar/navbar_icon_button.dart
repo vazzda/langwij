@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
-/// A single icon button in the bottom navigation bar.
+/// Icon button for bottom navbar with explicit enabled/disabled states.
 class NavBarIconButton extends StatelessWidget {
+  final IconData icon;
+  final String tooltip;
+  final bool isEnabled;
+  final Color enabledColor;
+  final Color disabledColor;
+  final VoidCallback? onPressed;
+
   const NavBarIconButton({
     super.key,
     required this.icon,
@@ -12,22 +19,39 @@ class NavBarIconButton extends StatelessWidget {
     this.onPressed,
   });
 
-  final IconData icon;
-  final String tooltip;
-  final bool isEnabled;
-  final Color enabledColor;
-  final Color disabledColor;
-  final VoidCallback? onPressed;
-
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      icon: Icon(
-        icon,
-        color: isEnabled ? enabledColor : disabledColor,
+    final iconColor = isEnabled ? enabledColor : disabledColor;
+    final iconWidget = Icon(icon, size: 28, color: iconColor);
+
+    if (isEnabled && onPressed != null) {
+      return Tooltip(
+        message: tooltip,
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: onPressed,
+            borderRadius: BorderRadius.circular(24),
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: iconWidget,
+            ),
+          ),
+        ),
+      );
+    }
+
+    return AbsorbPointer(
+      absorbing: true,
+      child: Tooltip(
+        message: tooltip,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: iconWidget,
+        ),
       ),
-      tooltip: tooltip,
-      onPressed: isEnabled ? null : onPressed,
     );
   }
 }
