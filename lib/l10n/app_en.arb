@@ -241,5 +241,7 @@
 
   "tools_conjugations": "Conjugations",
   "tools_agreement": "Gender agreement",
-  "tools_emptyState": "No tools available for this language"
+  "tools_emptyState": "No tools available for this language",
+
+  "settingsHide": "Hide"
 }

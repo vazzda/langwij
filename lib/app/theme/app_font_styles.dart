@@ -68,6 +68,10 @@ class AppFontStyles {
   static TextStyle get textControlHint => _bodyM;
   static TextStyle get textButton => _bodyLAccented;
   static TextStyle get textButtonSmall => _bodyMAccented;
+  static TextStyle get textButtonLarge => _headerL;
+
+  // Note styles
+  static TextStyle get textNote => _bodyS;
 
   // Body & Caption
   static TextStyle get textCaption => _bodyS;
@@ -86,6 +90,13 @@ class AppFontStyles {
 
   // Prompt (quiz card)
   static TextStyle get textPrompt => _headerXxl;
+
+  // Tag styles
+  static TextStyle get textTagChip => _bodySAccented;
+  static TextStyle get textTagIcon => _bodyXs;
+
+  // Snackbar styles
+  static TextStyle get textSnackbar => _bodyM;
 
   // Score
   static TextStyle get textScore => _headerS;

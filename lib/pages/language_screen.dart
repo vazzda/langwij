@@ -9,8 +9,9 @@ import '../app/providers/language_settings_provider.dart';
 import '../app/theme/app_themes.dart';
 import '../shared/repositories/daily_activity_repository.dart';
 import '../shared/repositories/dictionary_repository.dart';
+import '../shared/ui/buttons/project_button_group.dart';
+import '../shared/ui/buttons/project_buttons.dart' show ButtonSize;
 import '../shared/ui/card/project_card.dart';
-import '../shared/ui/inputs/app_choice_chip.dart';
 import '../shared/ui/screen_layout/screen_layout_widget.dart';
 
 /// Resolves a language ARB label key to its localized string.
@@ -48,16 +49,8 @@ class LanguageScreen extends ConsumerWidget {
         // ignore: unnecessary_underscores
         error: (_, __) => Center(child: Text(l10n.loadError)),
         data: (packs) {
-          // All language codes that can be target (exclude native)
-          final targetCodes = packs
-              .map((p) => p.code)
-              .where((c) => c != langSettings.nativeLang)
-              .toList();
-          // All language codes that can be native (exclude target)
-          final nativeCodes = packs
-              .map((p) => p.code)
-              .where((c) => c != langSettings.targetLang)
-              .toList();
+          // All language codes from packs
+          final allCodes = packs.map((p) => p.code).toList();
           // Available UI languages
           final uiCodes = availableUiLanguages;
           // Find packs map for label lookup
@@ -75,9 +68,10 @@ class LanguageScreen extends ConsumerWidget {
               // Target language selector
               _SectionHeader(label: l10n.language_learning),
               const SizedBox(height: 8),
-              _ChipRow(
-                codes: targetCodes,
+              _LangButtonGroup(
+                codes: allCodes,
                 selectedCode: langSettings.targetLang,
+                disabledCode: langSettings.nativeLang,
                 packByCode: packByCode,
                 l10n: l10n,
                 onSelected: (code) {
@@ -89,9 +83,10 @@ class LanguageScreen extends ConsumerWidget {
               // Native language selector
               _SectionHeader(label: l10n.language_native),
               const SizedBox(height: 8),
-              _ChipRow(
-                codes: nativeCodes,
+              _LangButtonGroup(
+                codes: allCodes,
                 selectedCode: langSettings.nativeLang,
+                disabledCode: langSettings.targetLang,
                 packByCode: packByCode,
                 l10n: l10n,
                 onSelected: (code) {
@@ -103,7 +98,7 @@ class LanguageScreen extends ConsumerWidget {
               // UI language selector
               _SectionHeader(label: l10n.language_appLanguage),
               const SizedBox(height: 8),
-              _ChipRow(
+              _LangButtonGroup(
                 codes: uiCodes,
                 selectedCode: langSettings.uiLang,
                 packByCode: packByCode,
@@ -181,10 +176,11 @@ class _SectionHeader extends StatelessWidget {
   }
 }
 
-class _ChipRow extends StatelessWidget {
-  const _ChipRow({
+class _LangButtonGroup extends StatelessWidget {
+  const _LangButtonGroup({
     required this.codes,
     required this.selectedCode,
+    this.disabledCode,
     required this.packByCode,
     required this.l10n,
     required this.onSelected,
@@ -192,22 +188,25 @@ class _ChipRow extends StatelessWidget {
 
   final List<String> codes;
   final String selectedCode;
+  final String? disabledCode;
   final Map<String, dynamic> packByCode;
   final AppLocalizations l10n;
   final ValueChanged<String> onSelected;
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
-      spacing: 8,
-      runSpacing: 4,
-      children: codes.map((code) {
+    return ProjectButtonGroup(
+      expanded: true,
+      size: ButtonSize.small,
+      items: codes.map((code) {
         final pack = packByCode[code];
         final labelKey = pack?.labelKey ?? 'lang_$code';
-        return AppChoiceChip(
+        final isSelected = code == selectedCode;
+        final isDisabled = code == disabledCode;
+        return ProjectButtonGroupItem(
           label: _langLabel(l10n, labelKey as String),
-          selected: code == selectedCode,
-          onSelected: (_) => onSelected(code),
+          isSelected: isSelected,
+          onPressed: isDisabled || isSelected ? null : () => onSelected(code),
         );
       }).toList(),
     );

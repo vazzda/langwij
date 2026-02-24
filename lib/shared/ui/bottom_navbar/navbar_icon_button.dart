@@ -8,6 +8,7 @@ class NavBarIconButton extends StatelessWidget {
   final Color enabledColor;
   final Color disabledColor;
   final VoidCallback? onPressed;
+  final VoidCallback? onDisabledTap;
 
   const NavBarIconButton({
     super.key,
@@ -17,6 +18,7 @@ class NavBarIconButton extends StatelessWidget {
     required this.enabledColor,
     required this.disabledColor,
     this.onPressed,
+    this.onDisabledTap,
   });
 
   @override
@@ -39,6 +41,17 @@ class NavBarIconButton extends StatelessWidget {
               child: iconWidget,
             ),
           ),
+        ),
+      );
+    }
+
+    if (onDisabledTap != null) {
+      return GestureDetector(
+        onTap: onDisabledTap,
+        behavior: HitTestBehavior.opaque,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: iconWidget,
         ),
       );
     }

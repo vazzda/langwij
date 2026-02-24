@@ -1,25 +1,93 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:srpski_card/app/theme/app_themes.dart';
 
-import '../../../app/theme/app_themes.dart';
-
-/// Themed bottom sheet wrapper. Applies project styling automatically.
+/// Show a themed bottom sheet with consistent styling across the app.
+///
+/// Uses theme values for:
+/// - backgroundColor: bottomSheetBackground
+/// - barrierColor: bottomSheetScrimColor
+/// - borderRadius: bottomSheetBorderRadius
+/// - border: bottomSheetBorderColor, bottomSheetBorderWidth
+/// - blurSigma: bottomSheetBlurSigma (0 = no blur, 10+ = strong blur)
+///
+/// The [builder] receives the BuildContext and should return the sheet content.
+/// Content should use `theme.bottomSheetPadding` for consistent padding.
 Future<T?> showProjectBottomSheet<T>({
   required BuildContext context,
   required Widget Function(BuildContext context) builder,
+  bool isScrollControlled = true,
+  bool useDraggableSheet = false,
+  double draggableInitialSize = 0.5,
+  double draggableMinSize = 0.3,
+  double draggableMaxSize = 0.9,
 }) {
-  final t = AppThemes.of(context);
+  final theme = AppThemes.of(context);
+
   return showModalBottomSheet<T>(
     context: context,
-    backgroundColor: t.bottomSheetBackground,
+    isScrollControlled: isScrollControlled,
+    backgroundColor: Colors.transparent,
+    barrierColor: theme.bottomSheetScrimColor,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(
-        top: Radius.circular(t.bottomSheetBorderRadius),
+        top: Radius.circular(theme.bottomSheetBorderRadius),
       ),
     ),
-    builder: (sheetContext) => SafeArea(
-      child: Padding(
-        padding: EdgeInsets.all(t.bottomSheetPadding),
-        child: builder(sheetContext),
+    builder: (sheetContext) {
+      final content = useDraggableSheet
+          ? DraggableScrollableSheet(
+              initialChildSize: draggableInitialSize,
+              minChildSize: draggableMinSize,
+              maxChildSize: draggableMaxSize,
+              expand: false,
+              builder: (context, scrollController) => SafeArea(
+                top: false,
+                child: builder(context),
+              ),
+            )
+          : SafeArea(
+              top: false,
+              child: builder(sheetContext),
+            );
+
+      return _buildBlurredSheet(
+        theme: theme,
+        backgroundColor: theme.bottomSheetBackground,
+        child: content,
+      );
+    },
+  );
+}
+
+/// Helper to build a bottom sheet with optional blur effect.
+/// If [theme.bottomSheetBlurSigma] > 0, applies backdrop blur.
+Widget _buildBlurredSheet({
+  required AppThemeData theme,
+  required Color backgroundColor,
+  required Widget child,
+}) {
+  final borderRadius = BorderRadius.vertical(
+    top: Radius.circular(theme.bottomSheetBorderRadius),
+  );
+
+  return ClipRRect(
+    borderRadius: borderRadius,
+    child: BackdropFilter(
+      filter: ImageFilter.blur(
+        sigmaX: theme.bottomSheetBlurSigma,
+        sigmaY: theme.bottomSheetBlurSigma,
+      ),
+      child: Container(
+        decoration: BoxDecoration(
+          color: backgroundColor,
+          borderRadius: borderRadius,
+          border: Border.all(
+            color: theme.bottomSheetBorderColor,
+            width: theme.bottomSheetBorderWidth,
+          ),
+        ),
+        child: child,
       ),
     ),
   );

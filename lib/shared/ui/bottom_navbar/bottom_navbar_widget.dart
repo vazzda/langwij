@@ -9,7 +9,9 @@ import 'navbar_icon_button.dart';
 /// Flat bottom navigation bar with 4 tabs.
 /// Active tab is detected from the current route.
 class BottomNavBarWidget extends StatelessWidget {
-  const BottomNavBarWidget({super.key});
+  const BottomNavBarWidget({super.key, this.onSettingsDisabledTap});
+
+  final VoidCallback? onSettingsDisabledTap;
 
   @override
   Widget build(BuildContext context) {
@@ -80,6 +82,7 @@ class BottomNavBarWidget extends StatelessWidget {
                 onPressed: !isSettings
                     ? () => context.go(AppRoutes.settings)
                     : null,
+                onDisabledTap: isSettings ? onSettingsDisabledTap : null,
               ),
             ],
           ),

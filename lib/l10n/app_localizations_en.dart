@@ -461,4 +461,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tools_emptyState => 'No tools available for this language';
+
+  @override
+  String get settingsHide => 'Hide';
 }

@@ -12,6 +12,7 @@ class ScreenLayoutWidget extends StatelessWidget {
     this.actions,
     this.leading,
     this.showBottomNav = false,
+    this.onSettingsDisabledTap,
   });
 
   final String title;
@@ -19,6 +20,7 @@ class ScreenLayoutWidget extends StatelessWidget {
   final List<Widget>? actions;
   final Widget? leading;
   final bool showBottomNav;
+  final VoidCallback? onSettingsDisabledTap;
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +39,9 @@ class ScreenLayoutWidget extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: showBottomNav ? const BottomNavBarWidget() : null,
+      bottomNavigationBar: showBottomNav
+          ? BottomNavBarWidget(onSettingsDisabledTap: onSettingsDisabledTap)
+          : null,
       body: SafeArea(child: child),
     );
   }

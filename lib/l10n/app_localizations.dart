@@ -945,6 +945,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No tools available for this language'**
   String get tools_emptyState;
+
+  /// No description provided for @settingsHide.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide'**
+  String get settingsHide;
 }
 
 class _AppLocalizationsDelegate

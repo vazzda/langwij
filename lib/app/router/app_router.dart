@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../l10n/app_localizations.dart';
 import '../../pages/agreement_group_list_screen.dart';
+import '../../pages/controls_list_screen.dart';
 import '../../pages/group_list_screen.dart';
 import '../../pages/language_screen.dart';
 import '../../pages/result_screen.dart';
@@ -22,6 +23,7 @@ class AppRoutes {
   static const String language = '/language';
   static const String tools = '/tools';
   static const String settings = '/settings';
+  static const String devControls = '/dev-controls';
 }
 
 /// No-animation page for tab-level navigation.
@@ -109,6 +111,14 @@ GoRouter createAppRouter() {
         path: AppRoutes.agreement,
         pageBuilder: (context, state) => _noTransitionPage(
           const AgreementGroupListScreen(),
+          state,
+        ),
+      ),
+      // Developer routes
+      GoRoute(
+        path: AppRoutes.devControls,
+        pageBuilder: (context, state) => _noTransitionPage(
+          const ControlsListScreen(),
           state,
         ),
       ),

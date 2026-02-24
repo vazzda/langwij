@@ -32,80 +32,204 @@ enum AppTheme {
 // ============================================================================
 
 class AppThemeData {
+  // ==========================================================================
+  // THEME IDENTIFIER
+  // ==========================================================================
   final AppTheme themeType;
 
-  // Scaffold
-  final Color scaffoldBackground;
+  // ==========================================================================
+  // ACCENT
+  // ==========================================================================
+  final Color accentColor;
+  final Color accentColorText;
+  final Color dangerColor;
+  final Color dangerColorText;
 
-  // AppBar
+  // ==========================================================================
+  // APPBAR
+  // ==========================================================================
   final Color appBarBackground;
   final Color appBarBorderColor;
   final double appBarBorderWidth;
   final Color appBarForeground;
+  final Color appBarIconColor;
   final Color appBarTitleColor;
 
-  // Navbar
-  final Color navbarBackground;
-  final Color navbarBorderColor;
-  final double navbarBorderWidth;
-  final Color navbarIconColor;
-  final Color navbarDisabledIconColor;
+  // ==========================================================================
+  // BADGE
+  // ==========================================================================
+  final double badgeBorderRadius;
+  final double badgeBorderWidth;
 
-  // Text
-  final Color textPrimary;
-  final Color textSecondary;
+  // ==========================================================================
+  // BOTTOM SHEET
+  // ==========================================================================
+  final Color bottomSheetBackground;
+  final Color bottomSheetBorderColor;
+  final double bottomSheetBorderRadius;
+  final double bottomSheetBorderWidth;
+  final double bottomSheetBlurSigma;
+  final double bottomSheetPadding;
+  final Color bottomSheetScrimColor;
 
-  // Accent
-  final Color accentColor;
-  final Color accentColorText;
+  // ==========================================================================
+  // BUTTON
+  // ==========================================================================
+  final double buttonBorderRadius;
+  final double buttonBorderWidth;
 
-  // Danger / Error
-  final Color dangerColor;
-  final Color dangerColorText;
-
-  // Card
+  // ==========================================================================
+  // CARD
+  // ==========================================================================
   final Color cardBackground;
   final Color cardBorderColor;
   final double cardBorderRadius;
   final double cardBorderWidth;
 
-  // Control
+  // ==========================================================================
+  // DASH
+  // ==========================================================================
+  final Color dashCardBackground;
+  final Color dashCardBorderColor;
+  final double dashCardBorderRadius;
+  final double dashCardBorderWidth;
+
+  // ==========================================================================
+  // CHOICE CHIP
+  // ==========================================================================
+  final Color chipSelectedBackground;
+  final Color chipSelectedForeground;
+
+  // ==========================================================================
+  // CONTROL
+  // ==========================================================================
   final Color controlAccentBackground;
   final Color controlAccentForeground;
   final Color controlBackground;
   final Color controlBorder;
   final double controlBorderRadius;
   final double controlBorderWidth;
+  final Color controlDangerBackground;
+  final Color controlDangerForeground;
   final Color controlForeground;
 
-  // Button
-  final double buttonBorderRadius;
-  final double buttonBorderWidth;
+  // ==========================================================================
+  // DISPLAY
+  // ==========================================================================
+  final Color displayBackground;
+  final double displayBorderRadius;
 
-  // Bottom Sheet
-  final Color bottomSheetBackground;
-  final Color bottomSheetBorderColor;
-  final double bottomSheetBorderRadius;
-  final double bottomSheetBorderWidth;
-  final Color bottomSheetScrimColor;
-  final double bottomSheetPadding;
-
-  // Divider
-  final Color dividerColor;
+  // ==========================================================================
+  // DIVIDER
+  // ==========================================================================
   final double dividerWidth;
+  final Color dividerColor;
 
-  // Test badge
+  // ==========================================================================
+  // FAB
+  // ==========================================================================
+  final Color fabBackground;
+  final Color fabBorderColor;
+  final double fabBorderWidth;
+  final Color fabTextColor;
+
+  // ==========================================================================
+  // CONFIRM FAB
+  // ==========================================================================
+  final Color confirmFabBackground;
+  final Color confirmFabBorderColor;
+  final Color confirmFabForeground;
+
+  // ==========================================================================
+  // LIST ITEM
+  // ==========================================================================
+  final Color listItemBorderColor;
+  final double listItemBorderRadius;
+  final double listItemBorderWidth;
+
+  // ==========================================================================
+  // MODAL
+  // ==========================================================================
+  final double modalBorderRadius;
+
+  // ==========================================================================
+  // NAVBAR
+  // ==========================================================================
+  final Color navbarBackground;
+  final Color navbarBorderColor;
+  final double navbarBorderWidth;
+  final Color navbarDisabledIconColor;
+  final Color navbarIconColor;
+
+  // ==========================================================================
+  // NOTE
+  // ==========================================================================
+  final Color noteBackground;
+  final Color noteBorderColor;
+  final double noteBorderRadius;
+  final double noteBorderWidth;
+  final Color noteTextColor;
+
+  // ==========================================================================
+  // SCAFFOLD
+  // ==========================================================================
+  final Color scaffoldBackground;
+
+  // ==========================================================================
+  // SNACKBAR
+  // ==========================================================================
+  final Color snackbarBackground;
+  final Color snackbarTextColor;
+  final double snackbarBorderRadius;
+
+  // ==========================================================================
+  // TAG
+  // ==========================================================================
+  final Color tag1Bg;
+  final Color tag1BorderColor;
+  final Color tag1TextColor;
+  final Color tag2Bg;
+  final Color tag2BorderColor;
+  final Color tag2TextColor;
+  final Color tag3Bg;
+  final Color tag3BorderColor;
+  final Color tag3TextColor;
+  final Color tag4Bg;
+  final Color tag4BorderColor;
+  final Color tag4TextColor;
+  final Color tag5Bg;
+  final Color tag5BorderColor;
+  final Color tag5TextColor;
+  final double tagBorderRadius;
+  final double tagBorderWidth;
+  final Color tagChipBorder;
+  final Color tagColor1;
+  final Color tagColor2;
+  final Color tagColor3;
+  final Color tagColor4;
+  final Color tagColor5;
+  final Color tagNoneBg;
+  final Color tagNoneBorderColor;
+  final Color tagNoneTextColor;
+
+  // ==========================================================================
+  // TEXT
+  // ==========================================================================
+  final Color textPrimary;
+  final Color textSecondary;
+
+  // ==========================================================================
+  // TEST BADGE (srpski-specific)
+  // ==========================================================================
   final Color testBadgeBackground;
   final Color testBadgePercentage;
   final Color testBadgeDateRecent;
   final Color testBadgeDateStale;
   final Color testBadgeDateOld;
 
-  // Choice chip
-  final Color chipSelectedBackground;
-  final Color chipSelectedForeground;
-
-  // Retention badge
+  // ==========================================================================
+  // RETENTION (srpski-specific)
+  // ==========================================================================
   final Color retentionNone;
   final Color retentionWeak;
   final Color retentionGood;
@@ -113,62 +237,163 @@ class AppThemeData {
   final Color retentionSuper;
   final Color retentionText;
 
-  // Disabled
+  // ==========================================================================
+  // SHADOW
+  // ==========================================================================
+  final List<BoxShadow>? componentShadow;
+  final List<BoxShadow>? appBarShadow;
+  final List<BoxShadow>? navbarShadow;
+
+  // ==========================================================================
+  // TOGGLE
+  // ==========================================================================
+  final double toggleBorderRadius;
+
+  // ==========================================================================
+  // DISABLED
+  // ==========================================================================
   final double disabledOpacity;
 
   const AppThemeData({
     required this.themeType,
-    required this.scaffoldBackground,
-    required this.appBarBackground,
-    required this.appBarBorderColor,
-    required this.appBarBorderWidth,
-    required this.appBarForeground,
-    required this.appBarTitleColor,
-    required this.navbarBackground,
-    required this.navbarBorderColor,
-    required this.navbarBorderWidth,
-    required this.navbarIconColor,
-    required this.navbarDisabledIconColor,
-    required this.textPrimary,
-    required this.textSecondary,
+    // Accent
     required this.accentColor,
     required this.accentColorText,
     required this.dangerColor,
     required this.dangerColorText,
+    // AppBar
+    required this.appBarBackground,
+    required this.appBarBorderColor,
+    required this.appBarBorderWidth,
+    required this.appBarForeground,
+    required this.appBarIconColor,
+    required this.appBarTitleColor,
+    // Badge
+    required this.badgeBorderRadius,
+    required this.badgeBorderWidth,
+    // BottomSheet
+    required this.bottomSheetBackground,
+    required this.bottomSheetBorderColor,
+    required this.bottomSheetBorderRadius,
+    required this.bottomSheetBorderWidth,
+    required this.bottomSheetBlurSigma,
+    required this.bottomSheetPadding,
+    required this.bottomSheetScrimColor,
+    // Button
+    required this.buttonBorderRadius,
+    required this.buttonBorderWidth,
+    // Card
     required this.cardBackground,
     required this.cardBorderColor,
     required this.cardBorderRadius,
     required this.cardBorderWidth,
+    // Dash
+    required this.dashCardBackground,
+    required this.dashCardBorderColor,
+    required this.dashCardBorderRadius,
+    required this.dashCardBorderWidth,
+    // Choice chip
+    required this.chipSelectedBackground,
+    required this.chipSelectedForeground,
+    // Control
     required this.controlAccentBackground,
     required this.controlAccentForeground,
     required this.controlBackground,
     required this.controlBorder,
     required this.controlBorderRadius,
     required this.controlBorderWidth,
+    required this.controlDangerBackground,
+    required this.controlDangerForeground,
     required this.controlForeground,
-    required this.buttonBorderRadius,
-    required this.buttonBorderWidth,
-    required this.bottomSheetBackground,
-    required this.bottomSheetBorderColor,
-    required this.bottomSheetBorderRadius,
-    required this.bottomSheetBorderWidth,
-    required this.bottomSheetScrimColor,
-    required this.bottomSheetPadding,
-    required this.dividerColor,
+    // Display
+    required this.displayBackground,
+    required this.displayBorderRadius,
+    // Divider
     required this.dividerWidth,
+    required this.dividerColor,
+    // Fab
+    required this.fabBackground,
+    required this.fabBorderColor,
+    required this.fabBorderWidth,
+    required this.fabTextColor,
+    // Confirm Fab
+    required this.confirmFabBackground,
+    required this.confirmFabBorderColor,
+    required this.confirmFabForeground,
+    // ListItem
+    required this.listItemBorderColor,
+    required this.listItemBorderRadius,
+    required this.listItemBorderWidth,
+    // Modal
+    required this.modalBorderRadius,
+    // Navbar
+    required this.navbarBackground,
+    required this.navbarBorderColor,
+    required this.navbarBorderWidth,
+    required this.navbarDisabledIconColor,
+    required this.navbarIconColor,
+    // Note
+    required this.noteBackground,
+    required this.noteBorderColor,
+    required this.noteBorderRadius,
+    required this.noteBorderWidth,
+    required this.noteTextColor,
+    // Scaffold
+    required this.scaffoldBackground,
+    // Snackbar
+    required this.snackbarBackground,
+    required this.snackbarTextColor,
+    required this.snackbarBorderRadius,
+    // Tag
+    required this.tag1Bg,
+    required this.tag1BorderColor,
+    required this.tag1TextColor,
+    required this.tag2Bg,
+    required this.tag2BorderColor,
+    required this.tag2TextColor,
+    required this.tag3Bg,
+    required this.tag3BorderColor,
+    required this.tag3TextColor,
+    required this.tag4Bg,
+    required this.tag4BorderColor,
+    required this.tag4TextColor,
+    required this.tag5Bg,
+    required this.tag5BorderColor,
+    required this.tag5TextColor,
+    required this.tagBorderRadius,
+    required this.tagBorderWidth,
+    required this.tagChipBorder,
+    required this.tagColor1,
+    required this.tagColor2,
+    required this.tagColor3,
+    required this.tagColor4,
+    required this.tagColor5,
+    required this.tagNoneBg,
+    required this.tagNoneBorderColor,
+    required this.tagNoneTextColor,
+    // Text
+    required this.textPrimary,
+    required this.textSecondary,
+    // Test badge
     required this.testBadgeBackground,
     required this.testBadgePercentage,
     required this.testBadgeDateRecent,
     required this.testBadgeDateStale,
     required this.testBadgeDateOld,
-    required this.chipSelectedBackground,
-    required this.chipSelectedForeground,
+    // Retention
     required this.retentionNone,
     required this.retentionWeak,
     required this.retentionGood,
     required this.retentionStrong,
     required this.retentionSuper,
     required this.retentionText,
+    // Shadow
+    required this.componentShadow,
+    required this.appBarShadow,
+    required this.navbarShadow,
+    // Toggle
+    required this.toggleBorderRadius,
+    // Disabled
     required this.disabledOpacity,
   });
 }

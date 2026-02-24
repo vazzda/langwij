@@ -1,29 +1,72 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../l10n/app_localizations.dart';
 import '../shared/repositories/models/decay_formula.dart';
 import '../app/providers/app_settings_provider.dart';
+import '../app/providers/dev_section_provider.dart';
 import '../app/providers/theme_provider.dart';
+import '../app/router/app_router.dart';
 import '../app/theme/app_themes.dart';
+import '../shared/ui/buttons/project_buttons.dart';
 import '../shared/ui/screen_layout/screen_layout_widget.dart';
 import '../shared/ui/card/project_card.dart';
 import '../shared/ui/inputs/project_radio_tile.dart';
+import 'package:srpski_card/shared/lib/constants.dart';
 
 /// Settings screen for app configuration.
-class SettingsScreen extends ConsumerWidget {
+class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<SettingsScreen> createState() => _SettingsScreenState();
+}
+
+class _SettingsScreenState extends ConsumerState<SettingsScreen> {
+  int _settingsTapCount = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadDevSectionState();
+  }
+
+  Future<void> _loadDevSectionState() async {
+    final enabled = await loadDevSectionEnabled();
+    if (mounted) {
+      ref.read(devSectionEnabledProvider.notifier).state = enabled;
+    }
+  }
+
+  void _handleTitleTap() {
+    setState(() {
+      _settingsTapCount++;
+      if (_settingsTapCount >= AppConstants.devAccessTapCount) {
+        ref.read(devSectionEnabledProvider.notifier).state = true;
+        saveDevSectionEnabled(true);
+        _settingsTapCount = 0;
+      }
+    });
+  }
+
+  void _handleHideDevSection() {
+    ref.read(devSectionEnabledProvider.notifier).state = false;
+    saveDevSectionEnabled(false);
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final t = AppThemes.of(context);
     final settings = ref.watch(appSettingsProvider);
     final currentTheme = ref.watch(themeProvider);
+    final showDevSection = ref.watch(devSectionEnabledProvider);
 
     return ScreenLayoutWidget(
       title: l10n.settingsTitle,
       showBottomNav: true,
+      onSettingsDisabledTap: _handleTitleTap,
       child: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -97,6 +140,40 @@ class SettingsScreen extends ConsumerWidget {
                 .read(appSettingsProvider.notifier)
                 .setDecayFormula(DecayFormula.hardcore),
           ),
+          // Developer section (hidden until unlocked)
+          if (showDevSection) ...[
+            const SizedBox(height: 24),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 12),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Developer',
+                    style: AppFontStyles.textSectionHeader.copyWith(color: t.textPrimary),
+                  ),
+                  BaseButton(
+                    label: l10n.settingsHide,
+                    onPressed: _handleHideDevSection,
+                  ),
+                ],
+              ),
+            ),
+            ProjectCard(
+              onTap: () => context.push(AppRoutes.devControls),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      'Controls List',
+                      style: AppFontStyles.textListItem.copyWith(color: t.textPrimary),
+                    ),
+                  ),
+                  Icon(Icons.chevron_right, color: t.textPrimary),
+                ],
+              ),
+            ),
+          ],
         ],
       ),
     );
