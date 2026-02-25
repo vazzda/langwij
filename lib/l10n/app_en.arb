@@ -207,6 +207,7 @@
   "language_learning": "Learning",
   "language_native": "Native language",
   "language_appLanguage": "App language",
+  "language_sameAsLearning": "Same as learning language selected",
   "language_myProgress": "My progress",
   "language_incompleteDictionaries": "Incomplete dictionaries",
   "language_groupsProgress": "{done}/{total} groups",

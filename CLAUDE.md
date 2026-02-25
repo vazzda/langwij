@@ -28,7 +28,6 @@ A PreToolUse hook enforces this — attempts without "unleash" are blocked.
 - Project controls (replace Material equivalents):
   - **Buttons**: `AccentButton`, `BaseButton`, `ProjectTextButton`, `DangerTextButton`
   - **Text input**: `ProjectTextInput`
-  - **Choice chips**: `AppChoiceChip`
   - **Cards**: `ProjectCard`
   - **Bottom sheets**: `showProjectBottomSheet()`
   - **Navigation**: `ScreenLayoutWidget`

@@ -7,7 +7,6 @@ import '../shared/ui/buttons/project_buttons.dart';
 import '../shared/ui/buttons/project_button_group.dart';
 import '../shared/ui/card/project_card.dart';
 import '../shared/ui/divider/project_divider.dart';
-import '../shared/ui/inputs/app_choice_chip.dart';
 import '../shared/ui/inputs/project_date_picker.dart';
 import '../shared/ui/inputs/project_hour_picker.dart';
 import '../shared/ui/inputs/project_input_row.dart';
@@ -38,7 +37,6 @@ class ControlsListScreen extends StatefulWidget {
 class _ControlsListScreenState extends State<ControlsListScreen> {
   bool _demoCheckbox = true;
   bool _demoSwitch = true;
-  bool _chipSelected = false;
   String _radioValue = 'A';
   String _demoGridRadio = 'Time';
   final _textController = TextEditingController();
@@ -671,34 +669,7 @@ class _ControlsListScreenState extends State<ControlsListScreen> {
             ),
           ]),
 
-          // 9. CHOICE CHIPS (srpski-specific)
-          _buildSection('Choice Chips', [
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                AppChoiceChip(
-                  label: 'Selected',
-                  selected: true,
-                  onSelected: (_) {},
-                ),
-                AppChoiceChip(
-                  label: 'Unselected',
-                  selected: false,
-                  onSelected: (_) {},
-                ),
-                AppChoiceChip(
-                  label: 'Interactive',
-                  selected: _chipSelected,
-                  onSelected: (_) {
-                    setState(() => _chipSelected = !_chipSelected);
-                  },
-                ),
-              ],
-            ),
-          ]),
-
-          // 10. RADIO TILES (srpski-specific)
+          // 9. RADIO TILES (srpski-specific)
           _buildSection('Radio Tiles', [
             ProjectRadioTile<String>(
               value: 'A',

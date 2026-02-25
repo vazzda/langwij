@@ -422,6 +422,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get language_appLanguage => 'App language';
 
   @override
+  String get language_sameAsLearning => 'Same as learning language selected';
+
+  @override
   String get language_myProgress => 'My progress';
 
   @override

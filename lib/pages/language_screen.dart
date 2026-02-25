@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../l10n/app_localizations.dart';
 import '../app/providers/daily_activity_provider.dart';
+import '../app/providers/dev_section_provider.dart';
 import '../app/providers/dictionary_provider.dart';
 import '../app/providers/group_progress_provider.dart';
 import '../app/providers/language_settings_provider.dart';
@@ -12,6 +13,7 @@ import '../shared/repositories/dictionary_repository.dart';
 import '../shared/ui/buttons/project_button_group.dart';
 import '../shared/ui/buttons/project_buttons.dart' show ButtonSize;
 import '../shared/ui/card/project_card.dart';
+import '../shared/ui/note/project_note.dart';
 import '../shared/ui/screen_layout/screen_layout_widget.dart';
 
 /// Resolves a language ARB label key to its localized string.
@@ -40,6 +42,7 @@ class LanguageScreen extends ConsumerWidget {
     final asyncStats = ref.watch(dailyActivityProvider);
     final allProgress = ref.watch(groupProgressProvider);
     final asyncDictionary = ref.watch(dictionaryProvider);
+    final showDevSection = ref.watch(devSectionEnabledProvider);
 
     return ScreenLayoutWidget(
       title: l10n.navLanguage,
@@ -71,7 +74,6 @@ class LanguageScreen extends ConsumerWidget {
               _LangButtonGroup(
                 codes: allCodes,
                 selectedCode: langSettings.targetLang,
-                disabledCode: langSettings.nativeLang,
                 packByCode: packByCode,
                 l10n: l10n,
                 onSelected: (code) {
@@ -86,13 +88,16 @@ class LanguageScreen extends ConsumerWidget {
               _LangButtonGroup(
                 codes: allCodes,
                 selectedCode: langSettings.nativeLang,
-                disabledCode: langSettings.targetLang,
                 packByCode: packByCode,
                 l10n: l10n,
                 onSelected: (code) {
                   ref.read(languageSettingsProvider.notifier).setNativeLang(code);
                 },
               ),
+              if (langSettings.targetLang == langSettings.nativeLang) ...[
+                const SizedBox(height: 8),
+                ProjectNote(text: l10n.language_sameAsLearning),
+              ],
               const SizedBox(height: 20),
 
               // UI language selector
@@ -132,8 +137,8 @@ class LanguageScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 12),
 
-              // Incomplete dictionaries
-              ...packs
+              // Incomplete dictionaries (dev mode only)
+              if (showDevSection) ...packs
                   .where((p) => !p.isComplete)
                   .map((p) => Padding(
                         padding: const EdgeInsets.only(bottom: 8),
@@ -180,7 +185,6 @@ class _LangButtonGroup extends StatelessWidget {
   const _LangButtonGroup({
     required this.codes,
     required this.selectedCode,
-    this.disabledCode,
     required this.packByCode,
     required this.l10n,
     required this.onSelected,
@@ -188,7 +192,6 @@ class _LangButtonGroup extends StatelessWidget {
 
   final List<String> codes;
   final String selectedCode;
-  final String? disabledCode;
   final Map<String, dynamic> packByCode;
   final AppLocalizations l10n;
   final ValueChanged<String> onSelected;
@@ -202,11 +205,10 @@ class _LangButtonGroup extends StatelessWidget {
         final pack = packByCode[code];
         final labelKey = pack?.labelKey ?? 'lang_$code';
         final isSelected = code == selectedCode;
-        final isDisabled = code == disabledCode;
         return ProjectButtonGroupItem(
           label: _langLabel(l10n, labelKey as String),
           isSelected: isSelected,
-          onPressed: isDisabled || isSelected ? null : () => onSelected(code),
+          onPressed: isSelected ? null : () => onSelected(code),
         );
       }).toList(),
     );

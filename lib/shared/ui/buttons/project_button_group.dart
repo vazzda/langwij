@@ -77,9 +77,10 @@ class ProjectButtonGroup extends ConsumerWidget {
     double borderWidth,
   ) {
     final isEnabled = item.onPressed != null;
-    final bgColor = isEnabled ? colors.background : colors.disabledBackground;
-    final fgColor = isEnabled ? colors.foreground : colors.disabledForeground;
-    final borderColor = isEnabled ? colors.border : colors.disabledBorder;
+    final useFullColors = isEnabled || item.isSelected;
+    final bgColor = useFullColors ? colors.background : colors.disabledBackground;
+    final fgColor = useFullColors ? colors.foreground : colors.disabledForeground;
+    final borderColor = useFullColors ? colors.border : colors.disabledBorder;
 
     final radius = Radius.circular(borderRadius);
     const noRadius = Radius.zero;

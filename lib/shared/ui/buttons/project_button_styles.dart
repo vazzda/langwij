@@ -164,27 +164,27 @@ class ProjectButtonStyleResolver {
           background: themeData.controlBackground,
           foreground: themeData.controlForeground,
           border: themeData.controlBorder,
-          disabledBackground: themeData.controlBackground.withValues(alpha: 0.6),
-          disabledForeground: themeData.controlForeground.withValues(alpha: 0.6),
-          disabledBorder: themeData.controlBorder.withValues(alpha: 0.6),
+          disabledBackground: themeData.controlBackground.withValues(alpha: themeData.disabledOpacity),
+          disabledForeground: themeData.controlForeground.withValues(alpha: themeData.disabledOpacity),
+          disabledBorder: themeData.controlBorder.withValues(alpha: themeData.disabledOpacity),
         );
       case ButtonVariant.accent:
         return ProjectButtonColors(
           background: themeData.controlAccentBackground,
           foreground: themeData.controlAccentForeground,
           border: themeData.controlAccentBackground,
-          disabledBackground: themeData.controlAccentBackground.withValues(alpha: 0.6),
-          disabledForeground: themeData.controlAccentForeground.withValues(alpha: 0.6),
-          disabledBorder: themeData.controlAccentBackground.withValues(alpha: 0.6),
+          disabledBackground: themeData.controlAccentBackground.withValues(alpha: themeData.disabledOpacity),
+          disabledForeground: themeData.controlAccentForeground.withValues(alpha: themeData.disabledOpacity),
+          disabledBorder: themeData.controlAccentBackground.withValues(alpha: themeData.disabledOpacity),
         );
       case ButtonVariant.danger:
         return ProjectButtonColors(
           background: themeData.controlDangerBackground,
           foreground: themeData.controlDangerForeground,
           border: themeData.controlDangerBackground,
-          disabledBackground: themeData.controlDangerBackground.withValues(alpha: 0.6),
-          disabledForeground: themeData.controlDangerForeground.withValues(alpha: 0.6),
-          disabledBorder: themeData.controlDangerBackground.withValues(alpha: 0.6),
+          disabledBackground: themeData.controlDangerBackground.withValues(alpha: themeData.disabledOpacity),
+          disabledForeground: themeData.controlDangerForeground.withValues(alpha: themeData.disabledOpacity),
+          disabledBorder: themeData.controlDangerBackground.withValues(alpha: themeData.disabledOpacity),
         );
       case ButtonVariant.text:
         return ProjectButtonColors(
@@ -192,7 +192,7 @@ class ProjectButtonStyleResolver {
           foreground: themeData.textPrimary,
           border: Colors.transparent,
           disabledBackground: Colors.transparent,
-          disabledForeground: themeData.textSecondary.withValues(alpha: 0.6),
+          disabledForeground: themeData.textSecondary.withValues(alpha: themeData.disabledOpacity),
           disabledBorder: Colors.transparent,
         );
       case ButtonVariant.textAccent:
@@ -201,7 +201,7 @@ class ProjectButtonStyleResolver {
           foreground: themeData.controlAccentBackground,
           border: Colors.transparent,
           disabledBackground: Colors.transparent,
-          disabledForeground: themeData.controlAccentBackground.withValues(alpha: 0.4),
+          disabledForeground: themeData.controlAccentBackground.withValues(alpha: themeData.disabledOpacity),
           disabledBorder: Colors.transparent,
         );
       case ButtonVariant.textDanger:
@@ -210,7 +210,7 @@ class ProjectButtonStyleResolver {
           foreground: themeData.controlDangerBackground,
           border: Colors.transparent,
           disabledBackground: Colors.transparent,
-          disabledForeground: themeData.controlDangerBackground.withValues(alpha: 0.4),
+          disabledForeground: themeData.controlDangerBackground.withValues(alpha: themeData.disabledOpacity),
           disabledBorder: Colors.transparent,
         );
     }

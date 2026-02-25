@@ -95,12 +95,6 @@ class AppThemeData {
   final double dashCardBorderWidth;
 
   // ==========================================================================
-  // CHOICE CHIP
-  // ==========================================================================
-  final Color chipSelectedBackground;
-  final Color chipSelectedForeground;
-
-  // ==========================================================================
   // CONTROL
   // ==========================================================================
   final Color controlAccentBackground;
@@ -292,9 +286,6 @@ class AppThemeData {
     required this.dashCardBorderColor,
     required this.dashCardBorderRadius,
     required this.dashCardBorderWidth,
-    // Choice chip
-    required this.chipSelectedBackground,
-    required this.chipSelectedForeground,
     // Control
     required this.controlAccentBackground,
     required this.controlAccentForeground,

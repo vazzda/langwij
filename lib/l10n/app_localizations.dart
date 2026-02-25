@@ -880,6 +880,12 @@ abstract class AppLocalizations {
   /// **'App language'**
   String get language_appLanguage;
 
+  /// No description provided for @language_sameAsLearning.
+  ///
+  /// In en, this message translates to:
+  /// **'Same as learning language selected'**
+  String get language_sameAsLearning;
+
   /// No description provided for @language_myProgress.
   ///
   /// In en, this message translates to:

@@ -120,9 +120,6 @@ const AppThemeData candidate07Theme = AppThemeData(
   dashCardBorderColor: Candidate07Palette.oldlace,
   dashCardBorderRadius: 8.0,
   dashCardBorderWidth: 2.0,
-  // Choice chip
-  chipSelectedBackground: Candidate07Palette.deepWalnutA12,
-  chipSelectedForeground: Candidate07Palette.deepWalnut,
   // ListItem
   listItemBorderColor: Candidate07Palette.oldlace,
   listItemBorderRadius: 8.0,
