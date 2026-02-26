@@ -1,4 +1,28 @@
 {
+  "hello": {
+    "text": "cao"
+  },
+  "goodbye": {
+    "text": "cao"
+  },
+  "thank_you": {
+    "text": "hvala"
+  },
+  "please": {
+    "text": "molim"
+  },
+  "i": {
+    "text": "ja"
+  },
+  "you": {
+    "text": "ti"
+  },
+  "yes": {
+    "text": "da"
+  },
+  "no": {
+    "text": "ne"
+  },
   "lie_down": {
     "imperfective": "ležati",
     "perfective": "leći"
@@ -1595,6 +1619,9 @@
       }
     },
     "groups": {
+      "base": {
+        "name": "Osnova"
+      },
       "basic_verbs_00": {
         "name": "Osnovni glagoli (dev)"
       },

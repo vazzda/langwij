@@ -105,9 +105,8 @@ class _SessionScreenState extends ConsumerState<SessionScreen> {
       }
     }
 
-    final title = session.groupLabelKey != null
-        ? groupLabel(l10n, session.groupLabelKey!)
-        : (group != null
+    final title = session.groupName
+        ?? (group != null
             ? groupLabel(l10n, group.labelKey)
             : (session.sessionType == SessionType.agreement
                 ? l10n.parentAgreement

@@ -1,61 +1,12 @@
 import '../../entities/group/group_model.dart';
 import '../../l10n/app_localizations.dart';
 
-/// Returns the localized display label for a group by its labelKey.
+/// Returns the localized display label for a conjugation group by its labelKey.
+/// Only valid for Tools (conjugation/agreement) groups — vocab groups use meta system.
 String groupLabel(AppLocalizations l10n, String labelKey) {
   switch (labelKey) {
     case 'groupWords':
       return l10n.groupWords;
-    case 'groupBasicVerbs01':
-      return l10n.groupBasicVerbs01;
-    case 'groupBasicVerbs02':
-      return l10n.groupBasicVerbs02;
-    case 'groupBasicVerbs03':
-      return l10n.groupBasicVerbs03;
-    case 'groupBasicVerbs04':
-      return l10n.groupBasicVerbs04;
-    case 'groupBasicVerbs05':
-      return l10n.groupBasicVerbs05;
-    case 'groupBasicVerbs06':
-      return l10n.groupBasicVerbs06;
-    case 'groupBasicVerbs07':
-      return l10n.groupBasicVerbs07;
-    case 'groupBasicVerbs08':
-      return l10n.groupBasicVerbs08;
-    case 'groupBasicVerbs09':
-      return l10n.groupBasicVerbs09;
-    case 'groupBasicVerbs10':
-      return l10n.groupBasicVerbs10;
-    case 'groupBasicVerbs11':
-      return l10n.groupBasicVerbs11;
-    case 'groupAdverbsOfTime':
-      return l10n.groupAdverbsOfTime;
-    case 'groupPrepositions':
-      return l10n.groupPrepositions;
-    case 'groupDemonstrativePronouns':
-      return l10n.groupDemonstrativePronouns;
-    case 'groupRelativeDirection':
-      return l10n.groupRelativeDirection;
-    case 'groupDegreeAndQuantity':
-      return l10n.groupDegreeAndQuantity;
-    case 'groupPeople':
-      return l10n.groupPeople;
-    case 'groupPlaces':
-      return l10n.groupPlaces;
-    case 'groupDailyItemsAndObjects':
-      return l10n.groupDailyItemsAndObjects;
-    case 'groupTimeAndNature':
-      return l10n.groupTimeAndNature;
-    case 'groupAbstractConcepts':
-      return l10n.groupAbstractConcepts;
-    case 'groupGeneralQualities':
-      return l10n.groupGeneralQualities;
-    case 'groupPeopleAndEmotions':
-      return l10n.groupPeopleAndEmotions;
-    case 'groupSensesAndFeelings':
-      return l10n.groupSensesAndFeelings;
-    case 'groupColors':
-      return l10n.groupColors;
     case 'groupEndingsImEAti':
       return l10n.groupEndingsImEAti;
     case 'groupEndingsImEEti':

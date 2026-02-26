@@ -23,7 +23,7 @@ class SessionState {
     required this.originRoute,
     this.originScrollOffset = 0.0,
     this.adjectiveGroupId,
-    this.groupLabelKey,
+    this.groupName,
     this.queue = const [],
     this.allCards,
     this.correctCount = 0,
@@ -42,8 +42,8 @@ class SessionState {
   final double originScrollOffset;
   /// For agreement sessions: the adjective group id (without "agreement:" prefix).
   final String? adjectiveGroupId;
-  /// ARB key for the group name. Used for session title display.
-  final String? groupLabelKey;
+  /// Resolved group name for session title display (from meta system).
+  final String? groupName;
 
   /// Remaining cards to answer (front = current). Wrong answers are moved to end.
   final List<CardModel> queue;
@@ -80,7 +80,7 @@ class SessionState {
       originRoute: originRoute,
       originScrollOffset: originScrollOffset,
       adjectiveGroupId: adjectiveGroupId,
-      groupLabelKey: groupLabelKey,
+      groupName: groupName,
       queue: queue ?? this.queue,
       allCards: allCards,
       correctCount: correctCount ?? this.correctCount,

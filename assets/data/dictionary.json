@@ -1,5 +1,29 @@
 {
   "concepts": {
+    "hello": {
+      "pos": "other"
+    },
+    "goodbye": {
+      "pos": "other"
+    },
+    "thank_you": {
+      "pos": "other"
+    },
+    "please": {
+      "pos": "other"
+    },
+    "i": {
+      "pos": "other"
+    },
+    "you": {
+      "pos": "other"
+    },
+    "yes": {
+      "pos": "other"
+    },
+    "no": {
+      "pos": "other"
+    },
     "lie_down": {
       "pos": "verb"
     },

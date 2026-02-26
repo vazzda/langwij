@@ -3,7 +3,7 @@
     {
       "id": "intro",
       "groups": [
-        "basic_verbs_00",
+        "base",
         "basic_verbs_01",
         "basic_verbs_02",
         "basic_verbs_03",
@@ -47,22 +47,22 @@
       ]
     }
   ],
-
   "groups": [
     {
-      "id": "basic_verbs_00",
-      "labelKey": "groupBasicVerbs04",
+      "id": "base",
       "concepts": [
-        "lie_down",
-        "lie_down",
-        "lie_down",
-        "lie_down",
-        "work"
+        "hello",
+        "goodbye",
+        "thank_you",
+        "please",
+        "i",
+        "you",
+        "yes",
+        "no"
       ]
     },
     {
       "id": "basic_verbs_01",
-      "labelKey": "groupBasicVerbs01",
       "concepts": [
         "lie_down",
         "arrive",
@@ -87,7 +87,6 @@
     },
     {
       "id": "basic_verbs_02",
-      "labelKey": "groupBasicVerbs02",
       "concepts": [
         "learn",
         "make",
@@ -112,7 +111,6 @@
     },
     {
       "id": "basic_verbs_03",
-      "labelKey": "groupBasicVerbs03",
       "concepts": [
         "buy",
         "give",
@@ -138,7 +136,6 @@
     },
     {
       "id": "basic_verbs_04",
-      "labelKey": "groupBasicVerbs04",
       "concepts": [
         "respect",
         "clean",
@@ -161,7 +158,6 @@
     },
     {
       "id": "basic_verbs_05",
-      "labelKey": "groupBasicVerbs05",
       "concepts": [
         "walk",
         "fly",
@@ -186,7 +182,6 @@
     },
     {
       "id": "basic_verbs_06",
-      "labelKey": "groupBasicVerbs06",
       "concepts": [
         "cut",
         "fight",
@@ -212,7 +207,6 @@
     },
     {
       "id": "basic_verbs_07",
-      "labelKey": "groupBasicVerbs07",
       "concepts": [
         "smile",
         "find",
@@ -238,7 +232,6 @@
     },
     {
       "id": "basic_verbs_08",
-      "labelKey": "groupBasicVerbs08",
       "concepts": [
         "do",
         "get",
@@ -264,7 +257,6 @@
     },
     {
       "id": "basic_verbs_09",
-      "labelKey": "groupBasicVerbs09",
       "concepts": [
         "mean",
         "keep",
@@ -289,7 +281,6 @@
     },
     {
       "id": "basic_verbs_10",
-      "labelKey": "groupBasicVerbs10",
       "concepts": [
         "include",
         "continue",
@@ -315,7 +306,6 @@
     },
     {
       "id": "basic_verbs_11",
-      "labelKey": "groupBasicVerbs11",
       "concepts": [
         "reach",
         "require",
@@ -335,7 +325,6 @@
     },
     {
       "id": "adverbs_of_time",
-      "labelKey": "groupAdverbsOfTime",
       "concepts": [
         "now",
         "then",
@@ -363,7 +352,6 @@
     },
     {
       "id": "prepositions",
-      "labelKey": "groupPrepositions",
       "concepts": [
         "under",
         "over",
@@ -379,7 +367,6 @@
     },
     {
       "id": "demonstrative_pronouns",
-      "labelKey": "groupDemonstrativePronouns",
       "concepts": [
         "this",
         "that",
@@ -395,7 +382,6 @@
     },
     {
       "id": "relative_direction",
-      "labelKey": "groupRelativeDirection",
       "concepts": [
         "left",
         "right",
@@ -411,7 +397,6 @@
     },
     {
       "id": "degree_quantity",
-      "labelKey": "groupDegreeAndQuantity",
       "concepts": [
         "much",
         "a_lot",
@@ -437,7 +422,6 @@
     },
     {
       "id": "people",
-      "labelKey": "groupPeople",
       "concepts": [
         "person",
         "man",
@@ -459,7 +443,6 @@
     },
     {
       "id": "places",
-      "labelKey": "groupPlaces",
       "concepts": [
         "home",
         "city",
@@ -479,7 +462,6 @@
     },
     {
       "id": "daily_items_objects",
-      "labelKey": "groupDailyItemsAndObjects",
       "concepts": [
         "thing",
         "car",
@@ -504,7 +486,6 @@
     },
     {
       "id": "time_nature",
-      "labelKey": "groupTimeAndNature",
       "concepts": [
         "time",
         "year",
@@ -527,7 +508,6 @@
     },
     {
       "id": "abstract_concepts",
-      "labelKey": "groupAbstractConcepts",
       "concepts": [
         "life",
         "love_n",
@@ -546,7 +526,6 @@
     },
     {
       "id": "general_qualities",
-      "labelKey": "groupGeneralQualities",
       "concepts": [
         "good",
         "bad",
@@ -568,7 +547,6 @@
     },
     {
       "id": "people_emotions",
-      "labelKey": "groupPeopleAndEmotions",
       "concepts": [
         "happy",
         "sad",
@@ -589,7 +567,6 @@
     },
     {
       "id": "senses_feelings",
-      "labelKey": "groupSensesAndFeelings",
       "concepts": [
         "hot",
         "warm",
@@ -610,7 +587,6 @@
     },
     {
       "id": "colors",
-      "labelKey": "groupColors",
       "concepts": [
         "white",
         "black",

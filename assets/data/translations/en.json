@@ -1,4 +1,28 @@
 {
+  "hello": {
+    "text": "hello"
+  },
+  "goodbye": {
+    "text": "goodbye"
+  },
+  "thank_you": {
+    "text": "thank you"
+  },
+  "please": {
+    "text": "please"
+  },
+  "i": {
+    "text": "I"
+  },
+  "you": {
+    "text": "you"
+  },
+  "yes": {
+    "text": "yes"
+  },
+  "no": {
+    "text": "no"
+  },
   "lie_down": {
     "text": "to lie down"
   },
@@ -1452,6 +1476,9 @@
       }
     },
     "groups": {
+      "base": {
+        "name": "Essentials"
+      },
       "basic_verbs_00": {
         "name": "Basic Verbs (dev)"
       },

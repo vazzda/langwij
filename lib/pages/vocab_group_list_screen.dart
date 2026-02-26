@@ -17,7 +17,6 @@ import '../entities/language/language_pack.dart';
 import '../entities/level/level.dart';
 import '../entities/plan/level_tier.dart';
 import '../features/quiz/session_notifier.dart';
-import 'package:srpski_card/shared/lib/group_label.dart';
 import 'package:srpski_card/shared/lib/progress_calculator.dart';
 import '../shared/repositories/models/group_progress.dart';
 import '../app/providers/daily_activity_provider.dart';
@@ -206,8 +205,8 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
 
         final cardCount = _countCards(group, targetPack, nativePack);
         final progress = allProgress[groupId];
-        final groupName = nativePack.groupMeta[groupId]?.name ??
-            groupLabel(l10n, group.labelKey);
+        final groupName =
+            nativePack.groupMeta[groupId]?.name ?? group.id;
         final groupDesc = nativePack.groupMeta[groupId]?.description;
 
         items.add(_GroupItem(

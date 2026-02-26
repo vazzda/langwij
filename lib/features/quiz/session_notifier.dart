@@ -61,9 +61,12 @@ class SessionNotifier extends StateNotifier<SessionState?> {
     final queue = selected.map((i) => allCards[i]).toList();
     final wordIds = selected.map((i) => allCards[i].wordId).toSet();
 
+    final resolvedName =
+        nativePack.groupMeta[group.id]?.name ?? group.id;
+
     state = SessionState(
       groupId: group.id,
-      groupLabelKey: group.labelKey,
+      groupName: resolvedName,
       mode: mode,
       requestedCount: questionCount,
       sessionType: SessionType.vocabulary,
@@ -166,7 +169,7 @@ class SessionNotifier extends StateNotifier<SessionState?> {
     }).toSet();
     state = SessionState(
       groupId: state!.groupId,
-      groupLabelKey: state!.groupLabelKey,
+      groupName: state!.groupName,
       mode: state!.mode,
       requestedCount: state!.requestedCount,
       sessionType: state!.sessionType,
