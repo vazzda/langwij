@@ -172,6 +172,12 @@
   "underDevelopmentBody": "This feature is under development.",
   "settingsTheme": "Theme",
 
+  "theme_clean": "Clean",
+  "theme_warm": "Warm",
+  "theme_dark": "Dark",
+  "theme_newspaper": "Newspaper",
+  "theme_ocean": "Ocean",
+
   "lang_english": "English",
   "lang_serbian": "Serbian",
   "lang_russian": "Russian",
@@ -226,5 +232,7 @@
 
   "quiz_aspectImperfective": "Imperfective:",
   "quiz_aspectPerfective": "Perfective:",
-  "quiz_aspectPairPrompt": "Type both aspect forms"
+  "quiz_aspectPairPrompt": "Type both aspect forms",
+
+  "vocab_train": "Train"
 }

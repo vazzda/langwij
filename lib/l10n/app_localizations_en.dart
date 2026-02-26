@@ -323,6 +323,21 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsTheme => 'Theme';
 
   @override
+  String get theme_clean => 'Clean';
+
+  @override
+  String get theme_warm => 'Warm';
+
+  @override
+  String get theme_dark => 'Dark';
+
+  @override
+  String get theme_newspaper => 'Newspaper';
+
+  @override
+  String get theme_ocean => 'Ocean';
+
+  @override
   String get lang_english => 'English';
 
   @override
@@ -410,4 +425,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get quiz_aspectPairPrompt => 'Type both aspect forms';
+
+  @override
+  String get vocab_train => 'Train';
 }

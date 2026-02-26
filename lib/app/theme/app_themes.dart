@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../l10n/app_localizations.dart';
 import 'themes/candidate01_theme.dart';
 import 'themes/candidate02_theme.dart';
 import 'themes/candidate05_theme.dart';
@@ -85,6 +86,19 @@ class AppThemeData {
   final Color cardBorderColor;
   final double cardBorderRadius;
   final double cardBorderWidth;
+
+  // ==========================================================================
+  // TILE
+  // ==========================================================================
+  final Color tileBackground;
+  final Color tileForeground;
+  final Color tileBorderColor;
+  final double tileBorderWidth;
+  final double tileBorderRadius;
+  // Sizing — universal defaults, override per theme only if needed
+  final double tileMinWidth;
+  final double tileHeight;
+  final double tileGap;
 
   // ==========================================================================
   // DASH
@@ -290,6 +304,15 @@ class AppThemeData {
     required this.cardBorderColor,
     required this.cardBorderRadius,
     required this.cardBorderWidth,
+    // Tile
+    required this.tileBackground,
+    required this.tileForeground,
+    required this.tileBorderColor,
+    required this.tileBorderWidth,
+    required this.tileBorderRadius,
+    this.tileMinWidth = 110.0,
+    this.tileHeight = 100.0,
+    this.tileGap = 10.0,
     // Dash
     required this.dashCardBackground,
     required this.dashCardBorderColor,
@@ -409,18 +432,18 @@ class AppThemeData {
 // ============================================================================
 
 extension AppThemeExtension on AppTheme {
-  String getDisplayName() {
+  String getDisplayName(AppLocalizations l10n) {
     switch (this) {
       case AppTheme.candidate05:
-        return 'Clean';
+        return l10n.theme_clean;
       case AppTheme.candidate07:
-        return 'Warm';
+        return l10n.theme_warm;
       case AppTheme.candidate08:
-        return 'Dark';
+        return l10n.theme_dark;
       case AppTheme.candidate01:
-        return 'Newspaper';
+        return l10n.theme_newspaper;
       case AppTheme.candidate02:
-        return 'Ocean';
+        return l10n.theme_ocean;
     }
   }
 
@@ -548,13 +571,29 @@ class AppThemes {
 
   static TextTheme _getTextTheme(Color color) {
     return TextTheme(
-      headlineMedium: GoogleFonts.bigShouldersDisplay(fontSize: 24, fontWeight: FontWeight.w600, color: color),
-      titleLarge: GoogleFonts.bigShouldersDisplay(fontSize: 20, fontWeight: FontWeight.w600, color: color),
-      titleMedium: GoogleFonts.robotoMono(fontSize: 16, fontWeight: FontWeight.w500, color: color),
+      headlineMedium: GoogleFonts.bigShouldersDisplay(
+        fontSize: 24,
+        fontWeight: FontWeight.w600,
+        color: color,
+      ),
+      titleLarge: GoogleFonts.bigShouldersDisplay(
+        fontSize: 20,
+        fontWeight: FontWeight.w600,
+        color: color,
+      ),
+      titleMedium: GoogleFonts.robotoMono(
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+        color: color,
+      ),
       bodyLarge: GoogleFonts.robotoMono(fontSize: 16, color: color),
       bodyMedium: GoogleFonts.robotoMono(fontSize: 14, color: color),
       bodySmall: GoogleFonts.robotoMono(fontSize: 12, color: color),
-      labelLarge: GoogleFonts.robotoMono(fontSize: 14, fontWeight: FontWeight.w500, color: color),
+      labelLarge: GoogleFonts.robotoMono(
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
+        color: color,
+      ),
     );
   }
 

@@ -682,6 +682,36 @@ abstract class AppLocalizations {
   /// **'Theme'**
   String get settingsTheme;
 
+  /// No description provided for @theme_clean.
+  ///
+  /// In en, this message translates to:
+  /// **'Clean'**
+  String get theme_clean;
+
+  /// No description provided for @theme_warm.
+  ///
+  /// In en, this message translates to:
+  /// **'Warm'**
+  String get theme_warm;
+
+  /// No description provided for @theme_dark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get theme_dark;
+
+  /// No description provided for @theme_newspaper.
+  ///
+  /// In en, this message translates to:
+  /// **'Newspaper'**
+  String get theme_newspaper;
+
+  /// No description provided for @theme_ocean.
+  ///
+  /// In en, this message translates to:
+  /// **'Ocean'**
+  String get theme_ocean;
+
   /// No description provided for @lang_english.
   ///
   /// In en, this message translates to:
@@ -843,6 +873,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Type both aspect forms'**
   String get quiz_aspectPairPrompt;
+
+  /// No description provided for @vocab_train.
+  ///
+  /// In en, this message translates to:
+  /// **'Train'**
+  String get vocab_train;
 }
 
 class _AppLocalizationsDelegate

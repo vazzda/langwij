@@ -128,6 +128,12 @@ const AppThemeData candidate02Theme = AppThemeData(
   cardBorderColor: Candidate02Palette.darkNavy,
   cardBorderRadius: 8.0,
   cardBorderWidth: 2.0,
+  // Tile
+  tileBackground: Candidate02Palette.mintCream,
+  tileForeground: Candidate02Palette.darkNavy,
+  tileBorderColor: Candidate02Palette.darkNavy,
+  tileBorderWidth: 2.0,
+  tileBorderRadius: 8.0,
   // Dash
   dashCardBackground: Candidate02Palette.mintCream,
   dashCardBorderColor: Candidate02Palette.darkNavy,

@@ -123,7 +123,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   ProjectRadioTile<AppTheme>(
                     value: theme,
                     groupValue: currentTheme,
-                    label: theme.getDisplayName(),
+                    label: theme.getDisplayName(l10n),
                     onChanged: (value) {
                       if (value != null) {
                         ref.read(themeProvider.notifier).state = value;

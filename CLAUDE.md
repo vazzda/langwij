@@ -29,6 +29,7 @@ A PreToolUse hook enforces this — attempts without "unleash" are blocked.
   - **Buttons**: `AccentButton`, `BaseButton`, `ProjectTextButton`, `DangerTextButton`
   - **Text input**: `ProjectTextInput`
   - **Cards**: `ProjectCard`
+  - **Tiles**: `ProjectTile`
   - **Progress bar**: `ProjectProgressBar`
   - **Bottom sheets**: `showProjectBottomSheet()`
   - **Navigation**: `ScreenLayoutWidget`

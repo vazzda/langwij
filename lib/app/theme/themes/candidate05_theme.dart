@@ -127,6 +127,12 @@ const AppThemeData candidate05Theme = AppThemeData(
   cardBorderColor: Candidate05Palette.platinum,
   cardBorderRadius: 8.0,
   cardBorderWidth: 2.0,
+  // Tile
+  tileBackground: Candidate05Palette.platinum,
+  tileForeground: Candidate05Palette.gunMetal,
+  tileBorderColor: Candidate05Palette.platinum,
+  tileBorderWidth: 2.0,
+  tileBorderRadius: 8.0,
   // Dash
   dashCardBackground: Candidate05Palette.platinum,
   dashCardBorderColor: Candidate05Palette.platinum,
