@@ -1,1587 +1,953 @@
 {
-  "lie_down": [
-    {
-      "text": "[RU:lie_down]"
-    }
-  ],
-  "arrive": [
-    {
-      "text": "[RU:arrive]"
-    }
-  ],
-  "buy": [
-    {
-      "text": "[RU:buy]"
-    }
-  ],
-  "give": [
-    {
-      "text": "[RU:give]"
-    }
-  ],
-  "sell": [
-    {
-      "text": "[RU:sell]"
-    }
-  ],
-  "smile": [
-    {
-      "text": "[RU:smile]"
-    }
-  ],
-  "count": [
-    {
-      "text": "[RU:count]"
-    }
-  ],
-  "hold": [
-    {
-      "text": "[RU:hold]"
-    }
-  ],
-  "stand": [
-    {
-      "text": "[RU:stand]"
-    }
-  ],
-  "run": [
-    {
-      "text": "[RU:run]"
-    }
-  ],
-  "sit": [
-    {
-      "text": "[RU:sit]"
-    }
-  ],
-  "see": [
-    {
-      "text": "[RU:see]"
-    }
-  ],
-  "watch": [
-    {
-      "text": "[RU:watch]"
-    }
-  ],
-  "love": [
-    {
-      "text": "[RU:love]"
-    }
-  ],
-  "wish": [
-    {
-      "text": "[RU:wish]"
-    }
-  ],
-  "live": [
-    {
-      "text": "[RU:live]"
-    }
-  ],
-  "talk": [
-    {
-      "text": "[RU:talk]"
-    }
-  ],
-  "speak": [
-    {
-      "text": "[RU:speak]"
-    }
-  ],
-  "use": [
-    {
-      "text": "[RU:use]"
-    }
-  ],
-  "think": [
-    {
-      "text": "[RU:think]"
-    }
-  ],
-  "pay": [
-    {
-      "text": "[RU:pay]"
-    }
-  ],
-  "listen": [
-    {
-      "text": "[RU:listen]"
-    }
-  ],
-  "work": [
-    {
-      "text": "[RU:work]"
-    }
-  ],
-  "learn": [
-    {
-      "text": "[RU:learn]"
-    }
-  ],
-  "make": [
-    {
-      "text": "[RU:make]"
-    }
-  ],
-  "drive": [
-    {
-      "text": "[RU:drive]"
-    }
-  ],
-  "forget": [
-    {
-      "text": "[RU:forget]"
-    }
-  ],
-  "hate": [
-    {
-      "text": "[RU:hate]"
-    }
-  ],
-  "wait": [
-    {
-      "text": "[RU:wait]"
-    }
-  ],
-  "read": [
-    {
-      "text": "[RU:read]"
-    }
-  ],
-  "play": [
-    {
-      "text": "[RU:play]"
-    }
-  ],
-  "have": [
-    {
-      "text": "[RU:have]"
-    }
-  ],
-  "not_have": [
-    {
-      "text": "[RU:not_have]"
-    }
-  ],
-  "cook": [
-    {
-      "text": "[RU:cook]"
-    }
-  ],
-  "have_to": [
-    {
-      "text": "[RU:have_to]"
-    }
-  ],
-  "sing": [
-    {
-      "text": "[RU:sing]"
-    }
-  ],
-  "swim": [
-    {
-      "text": "[RU:swim]"
-    }
-  ],
-  "dream": [
-    {
-      "text": "[RU:dream]"
-    }
-  ],
-  "sleep": [
-    {
-      "text": "[RU:sleep]"
-    }
-  ],
-  "can": [
-    {
-      "text": "[RU:can]"
-    }
-  ],
-  "wear": [
-    {
-      "text": "[RU:wear]"
-    }
-  ],
-  "study": [
-    {
-      "text": "[RU:study]"
-    }
-  ],
-  "like": [
-    {
-      "text": "[RU:like]"
-    }
-  ],
-  "train": [
-    {
-      "text": "[RU:train]"
-    }
-  ],
-  "eat_lunch": [
-    {
-      "text": "[RU:eat_lunch]"
-    }
-  ],
-  "eat_dinner": [
-    {
-      "text": "[RU:eat_dinner]"
-    }
-  ],
-  "eat_breakfast": [
-    {
-      "text": "[RU:eat_breakfast]"
-    }
-  ],
-  "know": [
-    {
-      "text": "[RU:know]"
-    }
-  ],
-  "lie": [
-    {
-      "text": "[RU:lie]"
-    }
-  ],
-  "help": [
-    {
-      "text": "[RU:help]"
-    }
-  ],
-  "show": [
-    {
-      "text": "[RU:show]"
-    }
-  ],
-  "wave": [
-    {
-      "text": "[RU:wave]"
-    }
-  ],
-  "write": [
-    {
-      "text": "[RU:write]"
-    }
-  ],
-  "dance": [
-    {
-      "text": "[RU:dance]"
-    }
-  ],
-  "cry": [
-    {
-      "text": "[RU:cry]"
-    }
-  ],
-  "jump": [
-    {
-      "text": "[RU:jump]"
-    }
-  ],
-  "shout": [
-    {
-      "text": "[RU:shout]"
-    }
-  ],
-  "teach": [
-    {
-      "text": "[RU:teach]"
-    }
-  ],
-  "expect": [
-    {
-      "text": "[RU:expect]"
-    }
-  ],
-  "respect": [
-    {
-      "text": "[RU:respect]"
-    }
-  ],
-  "clean": [
-    {
-      "text": "[RU:clean]"
-    }
-  ],
-  "travel": [
-    {
-      "text": "[RU:travel]"
-    }
-  ],
-  "be_happy": [
-    {
-      "text": "[RU:be_happy]"
-    }
-  ],
-  "come": [
-    {
-      "text": "[RU:come]"
-    }
-  ],
-  "go": [
-    {
-      "text": "[RU:go]"
-    }
-  ],
-  "bake": [
-    {
-      "text": "[RU:bake]"
-    }
-  ],
-  "understand": [
-    {
-      "text": "[RU:understand]"
-    }
-  ],
-  "be_allowed_to": [
-    {
-      "text": "[RU:be_allowed_to]"
-    }
-  ],
-  "succeed": [
-    {
-      "text": "[RU:succeed]"
-    }
-  ],
-  "be": [
-    {
-      "text": "[RU:be]"
-    }
-  ],
-  "want": [
-    {
-      "text": "[RU:want]"
-    }
-  ],
-  "finish": [
-    {
-      "text": "[RU:finish]"
-    }
-  ],
-  "answer": [
-    {
-      "text": "[RU:answer]"
-    }
-  ],
-  "accept": [
-    {
-      "text": "[RU:accept]"
-    }
-  ],
-  "raise": [
-    {
-      "text": "[RU:raise]"
-    }
-  ],
-  "suggest": [
-    {
-      "text": "[RU:suggest]"
-    }
-  ],
-  "walk": [
-    {
-      "text": "[RU:walk]"
-    }
-  ],
-  "fly": [
-    {
-      "text": "[RU:fly]"
-    }
-  ],
-  "stop": [
-    {
-      "text": "[RU:stop]"
-    }
-  ],
-  "follow": [
-    {
-      "text": "[RU:follow]"
-    }
-  ],
-  "say": [
-    {
-      "text": "[RU:say]"
-    }
-  ],
-  "eat": [
-    {
-      "text": "[RU:eat]"
-    }
-  ],
-  "drink": [
-    {
-      "text": "[RU:drink]"
-    }
-  ],
-  "kill": [
-    {
-      "text": "[RU:kill]"
-    }
-  ],
-  "die": [
-    {
-      "text": "[RU:die]"
-    }
-  ],
-  "laugh": [
-    {
-      "text": "[RU:laugh]"
-    }
-  ],
-  "hear": [
-    {
-      "text": "[RU:hear]"
-    }
-  ],
-  "taste": [
-    {
-      "text": "[RU:taste]"
-    }
-  ],
-  "touch": [
-    {
-      "text": "[RU:touch]"
-    }
-  ],
-  "kiss": [
-    {
-      "text": "[RU:kiss]"
-    }
-  ],
-  "burn": [
-    {
-      "text": "[RU:burn]"
-    }
-  ],
-  "melt": [
-    {
-      "text": "[RU:melt]"
-    }
-  ],
-  "dig": [
-    {
-      "text": "[RU:dig]"
-    }
-  ],
-  "explode": [
-    {
-      "text": "[RU:explode]"
-    }
-  ],
-  "pass": [
-    {
-      "text": "[RU:pass]"
-    }
-  ],
-  "cut": [
-    {
-      "text": "[RU:cut]"
-    }
-  ],
-  "fight": [
-    {
-      "text": "[RU:fight]"
-    }
-  ],
-  "wake_up": [
-    {
-      "text": "[RU:wake_up]"
-    }
-  ],
-  "marry": [
-    {
-      "text": "[RU:marry]"
-    }
-  ],
-  "pray": [
-    {
-      "text": "[RU:pray]"
-    }
-  ],
-  "win": [
-    {
-      "text": "[RU:win]"
-    }
-  ],
-  "lose": [
-    {
-      "text": "[RU:lose]"
-    }
-  ],
-  "mixstir": [
-    {
-      "text": "[RU:mixstir]"
-    }
-  ],
-  "bend": [
-    {
-      "text": "[RU:bend]"
-    }
-  ],
-  "wash": [
-    {
-      "text": "[RU:wash]"
-    }
-  ],
-  "open": [
-    {
-      "text": "[RU:open]"
-    }
-  ],
-  "close": [
-    {
-      "text": "[RU:close]"
-    }
-  ],
-  "call": [
-    {
-      "text": "[RU:call]"
-    }
-  ],
-  "turn": [
-    {
-      "text": "[RU:turn]"
-    }
-  ],
-  "build": [
-    {
-      "text": "[RU:build]"
-    }
-  ],
-  "grow": [
-    {
-      "text": "[RU:grow]"
-    }
-  ],
-  "draw": [
-    {
-      "text": "[RU:draw]"
-    }
-  ],
-  "feed": [
-    {
-      "text": "[RU:feed]"
-    }
-  ],
-  "catch": [
-    {
-      "text": "[RU:catch]"
-    }
-  ],
-  "throw": [
-    {
-      "text": "[RU:throw]"
-    }
-  ],
-  "find": [
-    {
-      "text": "[RU:find]"
-    }
-  ],
-  "fall": [
-    {
-      "text": "[RU:fall]"
-    }
-  ],
-  "push": [
-    {
-      "text": "[RU:push]"
-    }
-  ],
-  "pull": [
-    {
-      "text": "[RU:pull]"
-    }
-  ],
-  "carry": [
-    {
-      "text": "[RU:carry]"
-    }
-  ],
-  "break": [
-    {
-      "text": "[RU:break]"
-    }
-  ],
-  "hang": [
-    {
-      "text": "[RU:hang]"
-    }
-  ],
-  "shake": [
-    {
-      "text": "[RU:shake]"
-    }
-  ],
-  "sign": [
-    {
-      "text": "[RU:sign]"
-    }
-  ],
-  "beat": [
-    {
-      "text": "[RU:beat]"
-    }
-  ],
-  "play_instrument": [
-    {
-      "text": "[RU:play_instrument]"
-    }
-  ],
-  "smell": [
-    {
-      "text": "[RU:smell]"
-    }
-  ],
-  "shoot": [
-    {
-      "text": "[RU:shoot]"
-    }
-  ],
-  "choose": [
-    {
-      "text": "[RU:choose]"
-    }
-  ],
-  "check": [
-    {
-      "text": "[RU:check]"
-    }
-  ],
-  "check_out": [
-    {
-      "text": "[RU:check_out]"
-    }
-  ],
-  "support": [
-    {
-      "text": "[RU:support]"
-    }
-  ],
-  "care": [
-    {
-      "text": "[RU:care]"
-    }
-  ],
-  "do": [
-    {
-      "text": "[RU:do]"
-    }
-  ],
-  "get": [
-    {
-      "text": "[RU:get]"
-    }
-  ],
-  "look_for": [
-    {
-      "text": "[RU:look_for]"
-    }
-  ],
-  "look_at": [
-    {
-      "text": "[RU:look_at]"
-    }
-  ],
-  "get_up": [
-    {
-      "text": "[RU:get_up]"
-    }
-  ],
-  "take": [
-    {
-      "text": "[RU:take]"
-    }
-  ],
-  "find_out": [
-    {
-      "text": "[RU:find_out]"
-    }
-  ],
-  "give_up": [
-    {
-      "text": "[RU:give_up]"
-    }
-  ],
-  "call_back": [
-    {
-      "text": "[RU:call_back]"
-    }
-  ],
-  "try": [
-    {
-      "text": "[RU:try]"
-    }
-  ],
-  "try_on": [
-    {
-      "text": "[RU:try_on]"
-    }
-  ],
-  "ask": [
-    {
-      "text": "[RU:ask]"
-    }
-  ],
-  "need": [
-    {
-      "text": "[RU:need]"
-    }
-  ],
-  "feel": [
-    {
-      "text": "[RU:feel]"
-    }
-  ],
-  "become": [
-    {
-      "text": "[RU:become]"
-    }
-  ],
-  "leave": [
-    {
-      "text": "[RU:leave]"
-    }
-  ],
-  "put": [
-    {
-      "text": "[RU:put]"
-    }
-  ],
-  "put_on": [
-    {
-      "text": "[RU:put_on]"
-    }
-  ],
-  "take_off": [
-    {
-      "text": "[RU:take_off]"
-    }
-  ],
-  "mean": [
-    {
-      "text": "[RU:mean]"
-    }
-  ],
-  "keep": [
-    {
-      "text": "[RU:keep]"
-    }
-  ],
-  "let": [
-    {
-      "text": "[RU:let]"
-    }
-  ],
-  "begin": [
-    {
-      "text": "[RU:begin]"
-    }
-  ],
-  "seem": [
-    {
-      "text": "[RU:seem]"
-    }
-  ],
-  "turn_on": [
-    {
-      "text": "[RU:turn_on]"
-    }
-  ],
-  "turn_off": [
-    {
-      "text": "[RU:turn_off]"
-    }
-  ],
-  "move": [
-    {
-      "text": "[RU:move]"
-    }
-  ],
-  "move_in": [
-    {
-      "text": "[RU:move_in]"
-    }
-  ],
-  "move_out": [
-    {
-      "text": "[RU:move_out]"
-    }
-  ],
-  "believe": [
-    {
-      "text": "[RU:believe]"
-    }
-  ],
-  "bring": [
-    {
-      "text": "[RU:bring]"
-    }
-  ],
-  "bring_up": [
-    {
-      "text": "[RU:bring_up]"
-    }
-  ],
-  "happen": [
-    {
-      "text": "[RU:happen]"
-    }
-  ],
-  "sit_down": [
-    {
-      "text": "[RU:sit_down]"
-    }
-  ],
-  "pay_for": [
-    {
-      "text": "[RU:pay_for]"
-    }
-  ],
-  "meet": [
-    {
-      "text": "[RU:meet]"
-    }
-  ],
-  "meet_up": [
-    {
-      "text": "[RU:meet_up]"
-    }
-  ],
-  "include": [
-    {
-      "text": "[RU:include]"
-    }
-  ],
-  "continue": [
-    {
-      "text": "[RU:continue]"
-    }
-  ],
-  "set": [
-    {
-      "text": "[RU:set]"
-    }
-  ],
-  "set_up": [
-    {
-      "text": "[RU:set_up]"
-    }
-  ],
-  "change": [
-    {
-      "text": "[RU:change]"
-    }
-  ],
-  "lead": [
-    {
-      "text": "[RU:lead]"
-    }
-  ],
-  "watch_out": [
-    {
-      "text": "[RU:watch_out]"
-    }
-  ],
-  "create": [
-    {
-      "text": "[RU:create]"
-    }
-  ],
-  "add": [
-    {
-      "text": "[RU:add]"
-    }
-  ],
-  "spend": [
-    {
-      "text": "[RU:spend]"
-    }
-  ],
-  "grow_up": [
-    {
-      "text": "[RU:grow_up]"
-    }
-  ],
-  "offer": [
-    {
-      "text": "[RU:offer]"
-    }
-  ],
-  "remember": [
-    {
-      "text": "[RU:remember]"
-    }
-  ],
-  "consider": [
-    {
-      "text": "[RU:consider]"
-    }
-  ],
-  "appear": [
-    {
-      "text": "[RU:appear]"
-    }
-  ],
-  "wait_for": [
-    {
-      "text": "[RU:wait_for]"
-    }
-  ],
-  "serve": [
-    {
-      "text": "[RU:serve]"
-    }
-  ],
-  "send": [
-    {
-      "text": "[RU:send]"
-    }
-  ],
-  "stay": [
-    {
-      "text": "[RU:stay]"
-    }
-  ],
-  "reach": [
-    {
-      "text": "[RU:reach]"
-    }
-  ],
-  "require": [
-    {
-      "text": "[RU:require]"
-    }
-  ],
-  "report": [
-    {
-      "text": "[RU:report]"
-    }
-  ],
-  "decide": [
-    {
-      "text": "[RU:decide]"
-    }
-  ],
-  "break_down": [
-    {
-      "text": "[RU:break_down]"
-    }
-  ],
-  "agree": [
-    {
-      "text": "[RU:agree]"
-    }
-  ],
-  "explain": [
-    {
-      "text": "[RU:explain]"
-    }
-  ],
-  "hope": [
-    {
-      "text": "[RU:hope]"
-    }
-  ],
-  "develop": [
-    {
-      "text": "[RU:develop]"
-    }
-  ],
-  "fear": [
-    {
-      "text": "[RU:fear]"
-    }
-  ],
-  "thank": [
-    {
-      "text": "[RU:thank]"
-    }
-  ],
-  "receive": [
-    {
-      "text": "[RU:receive]"
-    }
-  ],
-  "join": [
-    {
-      "text": "[RU:join]"
-    }
-  ],
-  "now": [
-    {
-      "text": "[RU:now]"
-    }
-  ],
-  "then": [
-    {
-      "text": "[RU:then]"
-    }
-  ],
-  "then_o": [
-    {
-      "text": "[RU:then_o]"
-    }
-  ],
-  "today": [
-    {
-      "text": "[RU:today]"
-    }
-  ],
-  "tonight": [
-    {
-      "text": "[RU:tonight]"
-    }
-  ],
-  "yesterday": [
-    {
-      "text": "[RU:yesterday]"
-    }
-  ],
-  "tomorrow": [
-    {
-      "text": "[RU:tomorrow]"
-    }
-  ],
-  "soon": [
-    {
-      "text": "[RU:soon]"
-    }
-  ],
-  "later": [
-    {
-      "text": "[RU:later]"
-    }
-  ],
-  "earlier": [
-    {
-      "text": "[RU:earlier]"
-    }
-  ],
-  "recently": [
-    {
-      "text": "[RU:recently]"
-    }
-  ],
-  "always": [
-    {
-      "text": "[RU:always]"
-    }
-  ],
-  "often": [
-    {
-      "text": "[RU:often]"
-    }
-  ],
-  "usually": [
-    {
-      "text": "[RU:usually]"
-    }
-  ],
-  "sometimes": [
-    {
-      "text": "[RU:sometimes]"
-    }
-  ],
-  "rarely": [
-    {
-      "text": "[RU:rarely]"
-    }
-  ],
-  "never": [
-    {
-      "text": "[RU:never]"
-    }
-  ],
-  "already": [
-    {
-      "text": "[RU:already]"
-    }
-  ],
-  "yet": [
-    {
-      "text": "[RU:yet]"
-    }
-  ],
-  "immediately": [
-    {
-      "text": "[RU:immediately]"
-    }
-  ],
-  "before": [
-    {
-      "text": "[RU:before]"
-    }
-  ],
-  "after": [
-    {
-      "text": "[RU:after]"
-    }
-  ],
-  "under": [
-    {
-      "text": "[RU:under]"
-    }
-  ],
-  "over": [
-    {
-      "text": "[RU:over]"
-    }
-  ],
-  "behind": [
-    {
-      "text": "[RU:behind]"
-    }
-  ],
-  "in_front_of": [
-    {
-      "text": "[RU:in_front_of]"
-    }
-  ],
-  "between": [
-    {
-      "text": "[RU:between]"
-    }
-  ],
-  "beside": [
-    {
-      "text": "[RU:beside]"
-    }
-  ],
-  "in": [
-    {
-      "text": "[RU:in]"
-    }
-  ],
-  "inside": [
-    {
-      "text": "[RU:inside]"
-    }
-  ],
-  "on": [
-    {
-      "text": "[RU:on]"
-    }
-  ],
-  "near": [
-    {
-      "text": "[RU:near]"
-    }
-  ],
-  "this": [
-    {
-      "text": "[RU:this]"
-    }
-  ],
-  "that": [
-    {
-      "text": "[RU:that]"
-    }
-  ],
-  "that_o": [
-    {
-      "text": "[RU:that_o]"
-    }
-  ],
-  "such": [
-    {
-      "text": "[RU:such]"
-    }
-  ],
-  "such_o": [
-    {
-      "text": "[RU:such_o]"
-    }
-  ],
-  "such_o_2": [
-    {
-      "text": "[RU:such_o_2]"
-    }
-  ],
-  "this_much": [
-    {
-      "text": "[RU:this_much]"
-    }
-  ],
-  "that_much": [
-    {
-      "text": "[RU:that_much]"
-    }
-  ],
-  "this_many": [
-    {
-      "text": "[RU:this_many]"
-    }
-  ],
-  "that_many": [
-    {
-      "text": "[RU:that_many]"
-    }
-  ],
-  "left": [
-    {
-      "text": "[RU:left]"
-    }
-  ],
-  "right": [
-    {
-      "text": "[RU:right]"
-    }
-  ],
-  "straight": [
-    {
-      "text": "[RU:straight]"
-    }
-  ],
-  "forward": [
-    {
-      "text": "[RU:forward]"
-    }
-  ],
-  "backward": [
-    {
-      "text": "[RU:backward]"
-    }
-  ],
-  "up": [
-    {
-      "text": "[RU:up]"
-    }
-  ],
-  "down": [
-    {
-      "text": "[RU:down]"
-    }
-  ],
-  "across": [
-    {
-      "text": "[RU:across]"
-    }
-  ],
-  "sideways": [
-    {
-      "text": "[RU:sideways]"
-    }
-  ],
-  "everywhere": [
-    {
-      "text": "[RU:everywhere]"
-    }
-  ],
-  "much": [
-    {
-      "text": "[RU:much]"
-    }
-  ],
-  "a_lot": [
-    {
-      "text": "[RU:a_lot]"
-    }
-  ],
-  "very": [
-    {
-      "text": "[RU:very]"
-    }
-  ],
-  "very_o": [
-    {
-      "text": "[RU:very_o]"
-    }
-  ],
-  "too": [
-    {
-      "text": "[RU:too]"
-    }
-  ],
-  "enough": [
-    {
-      "text": "[RU:enough]"
-    }
-  ],
-  "little": [
-    {
-      "text": "[RU:little]"
-    }
-  ],
-  "almost": [
-    {
-      "text": "[RU:almost]"
-    }
-  ],
-  "more": [
-    {
-      "text": "[RU:more]"
-    }
-  ],
-  "less": [
-    {
-      "text": "[RU:less]"
-    }
-  ],
-  "completely": [
-    {
-      "text": "[RU:completely]"
-    }
-  ],
-  "totally": [
-    {
-      "text": "[RU:totally]"
-    }
-  ],
-  "exactly": [
-    {
-      "text": "[RU:exactly]"
-    }
-  ],
-  "partially": [
-    {
-      "text": "[RU:partially]"
-    }
-  ],
-  "mostly": [
-    {
-      "text": "[RU:mostly]"
-    }
-  ],
-  "only": [
-    {
-      "text": "[RU:only]"
-    }
-  ],
-  "hardly": [
-    {
-      "text": "[RU:hardly]"
-    }
-  ],
-  "sufficiently": [
-    {
-      "text": "[RU:sufficiently]"
-    }
-  ],
-  "exceedingly": [
-    {
-      "text": "[RU:exceedingly]"
-    }
-  ],
-  "at_least": [
-    {
-      "text": "[RU:at_least]"
-    }
-  ],
-  "person": [
-    {
-      "text": "[RU:person]"
-    }
-  ],
-  "man": [
-    {
-      "text": "[RU:man]"
-    }
-  ],
-  "woman": [
-    {
-      "text": "[RU:woman]"
-    }
-  ],
-  "child": [
-    {
-      "text": "[RU:child]"
-    }
-  ],
-  "boy": [
-    {
-      "text": "[RU:boy]"
-    }
-  ],
-  "girl": [
-    {
-      "text": "[RU:girl]"
-    }
-  ],
-  "friend": [
-    {
-      "text": "[RU:friend]"
-    }
-  ],
-  "family": [
-    {
-      "text": "[RU:family]"
-    }
-  ],
-  "father": [
-    {
-      "text": "[RU:father]"
-    }
-  ],
-  "mother": [
-    {
-      "text": "[RU:mother]"
-    }
-  ],
-  "brother": [
-    {
-      "text": "[RU:brother]"
-    }
-  ],
-  "sister": [
-    {
-      "text": "[RU:sister]"
-    }
-  ],
-  "husband": [
-    {
-      "text": "[RU:husband]"
-    }
-  ],
-  "wife": [
-    {
-      "text": "[RU:wife]"
-    }
-  ],
-  "doctor": [
-    {
-      "text": "[RU:doctor]"
-    }
-  ],
-  "police": [
-    {
-      "text": "[RU:police]"
-    }
-  ],
-  "home": [
-    {
-      "text": "[RU:home]"
-    }
-  ],
-  "city": [
-    {
-      "text": "[RU:city]"
-    }
-  ],
-  "street": [
-    {
-      "text": "[RU:street]"
-    }
-  ],
-  "school": [
-    {
-      "text": "[RU:school]"
-    }
-  ],
-  "store": [
-    {
-      "text": "[RU:store]"
-    }
-  ],
-  "hospital": [
-    {
-      "text": "[RU:hospital]"
-    }
-  ],
-  "park": [
-    {
-      "text": "[RU:park]"
-    }
-  ],
-  "country": [
-    {
-      "text": "[RU:country]"
-    }
-  ],
-  "land": [
-    {
-      "text": "[RU:land]"
-    }
-  ],
-  "world": [
-    {
-      "text": "[RU:world]"
-    }
-  ],
-  "office": [
-    {
-      "text": "[RU:office]"
-    }
-  ],
-  "room": [
-    {
-      "text": "[RU:room]"
-    }
-  ],
-  "station": [
-    {
-      "text": "[RU:station]"
-    }
-  ],
-  "airport": [
-    {
-      "text": "[RU:airport]"
-    }
-  ],
-  "thing": [
-    {
-      "text": "[RU:thing]"
-    }
-  ],
-  "car": [
-    {
-      "text": "[RU:car]"
-    }
-  ],
-  "bus": [
-    {
-      "text": "[RU:bus]"
-    }
-  ],
-  "book": [
-    {
-      "text": "[RU:book]"
-    }
-  ],
-  "money": [
-    {
-      "text": "[RU:money]"
-    }
-  ],
-  "money_n": [
-    {
-      "text": "[RU:money_n]"
-    }
-  ],
-  "water": [
-    {
-      "text": "[RU:water]"
-    }
-  ],
-  "food": [
-    {
-      "text": "[RU:food]"
-    }
-  ],
-  "bread": [
-    {
-      "text": "[RU:bread]"
-    }
-  ],
-  "coffee": [
-    {
-      "text": "[RU:coffee]"
-    }
-  ],
-  "phone": [
-    {
-      "text": "[RU:phone]"
-    }
-  ],
-  "computer": [
-    {
-      "text": "[RU:computer]"
-    }
-  ],
-  "bed": [
-    {
-      "text": "[RU:bed]"
-    }
-  ]
+  "lie_down": {
+    "text": "[RU:lie_down]"
+  },
+  "arrive": {
+    "text": "[RU:arrive]"
+  },
+  "buy": {
+    "text": "[RU:buy]"
+  },
+  "give": {
+    "text": "[RU:give]"
+  },
+  "sell": {
+    "text": "[RU:sell]"
+  },
+  "smile": {
+    "text": "[RU:smile]"
+  },
+  "count": {
+    "text": "[RU:count]"
+  },
+  "hold": {
+    "text": "[RU:hold]"
+  },
+  "stand": {
+    "text": "[RU:stand]"
+  },
+  "run": {
+    "text": "[RU:run]"
+  },
+  "sit": {
+    "text": "[RU:sit]"
+  },
+  "see": {
+    "text": "[RU:see]"
+  },
+  "watch": {
+    "text": "[RU:watch]"
+  },
+  "love": {
+    "text": "[RU:love]"
+  },
+  "wish": {
+    "text": "[RU:wish]"
+  },
+  "live": {
+    "text": "[RU:live]"
+  },
+  "talk": {
+    "text": "[RU:talk]"
+  },
+  "speak": {
+    "text": "[RU:speak]"
+  },
+  "use": {
+    "text": "[RU:use]"
+  },
+  "think": {
+    "text": "[RU:think]"
+  },
+  "pay": {
+    "text": "[RU:pay]"
+  },
+  "listen": {
+    "text": "[RU:listen]"
+  },
+  "work": {
+    "text": "[RU:work]"
+  },
+  "learn": {
+    "text": "[RU:learn]"
+  },
+  "make": {
+    "text": "[RU:make]"
+  },
+  "drive": {
+    "text": "[RU:drive]"
+  },
+  "forget": {
+    "text": "[RU:forget]"
+  },
+  "hate": {
+    "text": "[RU:hate]"
+  },
+  "wait": {
+    "text": "[RU:wait]"
+  },
+  "read": {
+    "text": "[RU:read]"
+  },
+  "play": {
+    "text": "[RU:play]"
+  },
+  "have": {
+    "text": "[RU:have]"
+  },
+  "not_have": {
+    "text": "[RU:not_have]"
+  },
+  "cook": {
+    "text": "[RU:cook]"
+  },
+  "have_to": {
+    "text": "[RU:have_to]"
+  },
+  "sing": {
+    "text": "[RU:sing]"
+  },
+  "swim": {
+    "text": "[RU:swim]"
+  },
+  "dream": {
+    "text": "[RU:dream]"
+  },
+  "sleep": {
+    "text": "[RU:sleep]"
+  },
+  "can": {
+    "text": "[RU:can]"
+  },
+  "wear": {
+    "text": "[RU:wear]"
+  },
+  "study": {
+    "text": "[RU:study]"
+  },
+  "like": {
+    "text": "[RU:like]"
+  },
+  "train": {
+    "text": "[RU:train]"
+  },
+  "eat_lunch": {
+    "text": "[RU:eat_lunch]"
+  },
+  "eat_dinner": {
+    "text": "[RU:eat_dinner]"
+  },
+  "eat_breakfast": {
+    "text": "[RU:eat_breakfast]"
+  },
+  "know": {
+    "text": "[RU:know]"
+  },
+  "lie": {
+    "text": "[RU:lie]"
+  },
+  "help": {
+    "text": "[RU:help]"
+  },
+  "show": {
+    "text": "[RU:show]"
+  },
+  "wave": {
+    "text": "[RU:wave]"
+  },
+  "write": {
+    "text": "[RU:write]"
+  },
+  "dance": {
+    "text": "[RU:dance]"
+  },
+  "cry": {
+    "text": "[RU:cry]"
+  },
+  "jump": {
+    "text": "[RU:jump]"
+  },
+  "shout": {
+    "text": "[RU:shout]"
+  },
+  "teach": {
+    "text": "[RU:teach]"
+  },
+  "expect": {
+    "text": "[RU:expect]"
+  },
+  "respect": {
+    "text": "[RU:respect]"
+  },
+  "clean": {
+    "text": "[RU:clean]"
+  },
+  "travel": {
+    "text": "[RU:travel]"
+  },
+  "be_happy": {
+    "text": "[RU:be_happy]"
+  },
+  "come": {
+    "text": "[RU:come]"
+  },
+  "go": {
+    "text": "[RU:go]"
+  },
+  "bake": {
+    "text": "[RU:bake]"
+  },
+  "understand": {
+    "text": "[RU:understand]"
+  },
+  "be_allowed_to": {
+    "text": "[RU:be_allowed_to]"
+  },
+  "succeed": {
+    "text": "[RU:succeed]"
+  },
+  "be": {
+    "text": "[RU:be]"
+  },
+  "want": {
+    "text": "[RU:want]"
+  },
+  "finish": {
+    "text": "[RU:finish]"
+  },
+  "answer": {
+    "text": "[RU:answer]"
+  },
+  "accept": {
+    "text": "[RU:accept]"
+  },
+  "raise": {
+    "text": "[RU:raise]"
+  },
+  "suggest": {
+    "text": "[RU:suggest]"
+  },
+  "walk": {
+    "text": "[RU:walk]"
+  },
+  "fly": {
+    "text": "[RU:fly]"
+  },
+  "stop": {
+    "text": "[RU:stop]"
+  },
+  "follow": {
+    "text": "[RU:follow]"
+  },
+  "say": {
+    "text": "[RU:say]"
+  },
+  "eat": {
+    "text": "[RU:eat]"
+  },
+  "drink": {
+    "text": "[RU:drink]"
+  },
+  "kill": {
+    "text": "[RU:kill]"
+  },
+  "die": {
+    "text": "[RU:die]"
+  },
+  "laugh": {
+    "text": "[RU:laugh]"
+  },
+  "hear": {
+    "text": "[RU:hear]"
+  },
+  "taste": {
+    "text": "[RU:taste]"
+  },
+  "touch": {
+    "text": "[RU:touch]"
+  },
+  "kiss": {
+    "text": "[RU:kiss]"
+  },
+  "burn": {
+    "text": "[RU:burn]"
+  },
+  "melt": {
+    "text": "[RU:melt]"
+  },
+  "dig": {
+    "text": "[RU:dig]"
+  },
+  "explode": {
+    "text": "[RU:explode]"
+  },
+  "pass": {
+    "text": "[RU:pass]"
+  },
+  "cut": {
+    "text": "[RU:cut]"
+  },
+  "fight": {
+    "text": "[RU:fight]"
+  },
+  "wake_up": {
+    "text": "[RU:wake_up]"
+  },
+  "marry": {
+    "text": "[RU:marry]"
+  },
+  "pray": {
+    "text": "[RU:pray]"
+  },
+  "win": {
+    "text": "[RU:win]"
+  },
+  "lose": {
+    "text": "[RU:lose]"
+  },
+  "mixstir": {
+    "text": "[RU:mixstir]"
+  },
+  "bend": {
+    "text": "[RU:bend]"
+  },
+  "wash": {
+    "text": "[RU:wash]"
+  },
+  "open": {
+    "text": "[RU:open]"
+  },
+  "close": {
+    "text": "[RU:close]"
+  },
+  "call": {
+    "text": "[RU:call]"
+  },
+  "turn": {
+    "text": "[RU:turn]"
+  },
+  "build": {
+    "text": "[RU:build]"
+  },
+  "grow": {
+    "text": "[RU:grow]"
+  },
+  "draw": {
+    "text": "[RU:draw]"
+  },
+  "feed": {
+    "text": "[RU:feed]"
+  },
+  "catch": {
+    "text": "[RU:catch]"
+  },
+  "throw": {
+    "text": "[RU:throw]"
+  },
+  "find": {
+    "text": "[RU:find]"
+  },
+  "fall": {
+    "text": "[RU:fall]"
+  },
+  "push": {
+    "text": "[RU:push]"
+  },
+  "pull": {
+    "text": "[RU:pull]"
+  },
+  "carry": {
+    "text": "[RU:carry]"
+  },
+  "break": {
+    "text": "[RU:break]"
+  },
+  "hang": {
+    "text": "[RU:hang]"
+  },
+  "shake": {
+    "text": "[RU:shake]"
+  },
+  "sign": {
+    "text": "[RU:sign]"
+  },
+  "beat": {
+    "text": "[RU:beat]"
+  },
+  "play_instrument": {
+    "text": "[RU:play_instrument]"
+  },
+  "smell": {
+    "text": "[RU:smell]"
+  },
+  "shoot": {
+    "text": "[RU:shoot]"
+  },
+  "choose": {
+    "text": "[RU:choose]"
+  },
+  "check": {
+    "text": "[RU:check]"
+  },
+  "check_out": {
+    "text": "[RU:check_out]"
+  },
+  "support": {
+    "text": "[RU:support]"
+  },
+  "care": {
+    "text": "[RU:care]"
+  },
+  "do": {
+    "text": "[RU:do]"
+  },
+  "get": {
+    "text": "[RU:get]"
+  },
+  "look_for": {
+    "text": "[RU:look_for]"
+  },
+  "look_at": {
+    "text": "[RU:look_at]"
+  },
+  "get_up": {
+    "text": "[RU:get_up]"
+  },
+  "take": {
+    "text": "[RU:take]"
+  },
+  "find_out": {
+    "text": "[RU:find_out]"
+  },
+  "give_up": {
+    "text": "[RU:give_up]"
+  },
+  "call_back": {
+    "text": "[RU:call_back]"
+  },
+  "try": {
+    "text": "[RU:try]"
+  },
+  "try_on": {
+    "text": "[RU:try_on]"
+  },
+  "ask": {
+    "text": "[RU:ask]"
+  },
+  "need": {
+    "text": "[RU:need]"
+  },
+  "feel": {
+    "text": "[RU:feel]"
+  },
+  "become": {
+    "text": "[RU:become]"
+  },
+  "leave": {
+    "text": "[RU:leave]"
+  },
+  "put": {
+    "text": "[RU:put]"
+  },
+  "put_on": {
+    "text": "[RU:put_on]"
+  },
+  "take_off": {
+    "text": "[RU:take_off]"
+  },
+  "mean": {
+    "text": "[RU:mean]"
+  },
+  "keep": {
+    "text": "[RU:keep]"
+  },
+  "let": {
+    "text": "[RU:let]"
+  },
+  "begin": {
+    "text": "[RU:begin]"
+  },
+  "seem": {
+    "text": "[RU:seem]"
+  },
+  "turn_on": {
+    "text": "[RU:turn_on]"
+  },
+  "turn_off": {
+    "text": "[RU:turn_off]"
+  },
+  "move": {
+    "text": "[RU:move]"
+  },
+  "move_in": {
+    "text": "[RU:move_in]"
+  },
+  "move_out": {
+    "text": "[RU:move_out]"
+  },
+  "believe": {
+    "text": "[RU:believe]"
+  },
+  "bring": {
+    "text": "[RU:bring]"
+  },
+  "bring_up": {
+    "text": "[RU:bring_up]"
+  },
+  "happen": {
+    "text": "[RU:happen]"
+  },
+  "sit_down": {
+    "text": "[RU:sit_down]"
+  },
+  "pay_for": {
+    "text": "[RU:pay_for]"
+  },
+  "meet": {
+    "text": "[RU:meet]"
+  },
+  "meet_up": {
+    "text": "[RU:meet_up]"
+  },
+  "include": {
+    "text": "[RU:include]"
+  },
+  "continue": {
+    "text": "[RU:continue]"
+  },
+  "set": {
+    "text": "[RU:set]"
+  },
+  "set_up": {
+    "text": "[RU:set_up]"
+  },
+  "change": {
+    "text": "[RU:change]"
+  },
+  "lead": {
+    "text": "[RU:lead]"
+  },
+  "watch_out": {
+    "text": "[RU:watch_out]"
+  },
+  "create": {
+    "text": "[RU:create]"
+  },
+  "add": {
+    "text": "[RU:add]"
+  },
+  "spend": {
+    "text": "[RU:spend]"
+  },
+  "grow_up": {
+    "text": "[RU:grow_up]"
+  },
+  "offer": {
+    "text": "[RU:offer]"
+  },
+  "remember": {
+    "text": "[RU:remember]"
+  },
+  "consider": {
+    "text": "[RU:consider]"
+  },
+  "appear": {
+    "text": "[RU:appear]"
+  },
+  "wait_for": {
+    "text": "[RU:wait_for]"
+  },
+  "serve": {
+    "text": "[RU:serve]"
+  },
+  "send": {
+    "text": "[RU:send]"
+  },
+  "stay": {
+    "text": "[RU:stay]"
+  },
+  "reach": {
+    "text": "[RU:reach]"
+  },
+  "require": {
+    "text": "[RU:require]"
+  },
+  "report": {
+    "text": "[RU:report]"
+  },
+  "decide": {
+    "text": "[RU:decide]"
+  },
+  "break_down": {
+    "text": "[RU:break_down]"
+  },
+  "agree": {
+    "text": "[RU:agree]"
+  },
+  "explain": {
+    "text": "[RU:explain]"
+  },
+  "hope": {
+    "text": "[RU:hope]"
+  },
+  "develop": {
+    "text": "[RU:develop]"
+  },
+  "fear": {
+    "text": "[RU:fear]"
+  },
+  "thank": {
+    "text": "[RU:thank]"
+  },
+  "receive": {
+    "text": "[RU:receive]"
+  },
+  "join": {
+    "text": "[RU:join]"
+  },
+  "now": {
+    "text": "[RU:now]"
+  },
+  "then": {
+    "text": "[RU:then]"
+  },
+  "then_o": {
+    "text": "[RU:then_o]"
+  },
+  "today": {
+    "text": "[RU:today]"
+  },
+  "tonight": {
+    "text": "[RU:tonight]"
+  },
+  "yesterday": {
+    "text": "[RU:yesterday]"
+  },
+  "tomorrow": {
+    "text": "[RU:tomorrow]"
+  },
+  "soon": {
+    "text": "[RU:soon]"
+  },
+  "later": {
+    "text": "[RU:later]"
+  },
+  "earlier": {
+    "text": "[RU:earlier]"
+  },
+  "recently": {
+    "text": "[RU:recently]"
+  },
+  "always": {
+    "text": "[RU:always]"
+  },
+  "often": {
+    "text": "[RU:often]"
+  },
+  "usually": {
+    "text": "[RU:usually]"
+  },
+  "sometimes": {
+    "text": "[RU:sometimes]"
+  },
+  "rarely": {
+    "text": "[RU:rarely]"
+  },
+  "never": {
+    "text": "[RU:never]"
+  },
+  "already": {
+    "text": "[RU:already]"
+  },
+  "yet": {
+    "text": "[RU:yet]"
+  },
+  "immediately": {
+    "text": "[RU:immediately]"
+  },
+  "before": {
+    "text": "[RU:before]"
+  },
+  "after": {
+    "text": "[RU:after]"
+  },
+  "under": {
+    "text": "[RU:under]"
+  },
+  "over": {
+    "text": "[RU:over]"
+  },
+  "behind": {
+    "text": "[RU:behind]"
+  },
+  "in_front_of": {
+    "text": "[RU:in_front_of]"
+  },
+  "between": {
+    "text": "[RU:between]"
+  },
+  "beside": {
+    "text": "[RU:beside]"
+  },
+  "in": {
+    "text": "[RU:in]"
+  },
+  "inside": {
+    "text": "[RU:inside]"
+  },
+  "on": {
+    "text": "[RU:on]"
+  },
+  "near": {
+    "text": "[RU:near]"
+  },
+  "this": {
+    "text": "[RU:this]"
+  },
+  "that": {
+    "text": "[RU:that]"
+  },
+  "that_o": {
+    "text": "[RU:that_o]"
+  },
+  "such": {
+    "text": "[RU:such]"
+  },
+  "such_o": {
+    "text": "[RU:such_o]"
+  },
+  "such_o_2": {
+    "text": "[RU:such_o_2]"
+  },
+  "this_much": {
+    "text": "[RU:this_much]"
+  },
+  "that_much": {
+    "text": "[RU:that_much]"
+  },
+  "this_many": {
+    "text": "[RU:this_many]"
+  },
+  "that_many": {
+    "text": "[RU:that_many]"
+  },
+  "left": {
+    "text": "[RU:left]"
+  },
+  "right": {
+    "text": "[RU:right]"
+  },
+  "straight": {
+    "text": "[RU:straight]"
+  },
+  "forward": {
+    "text": "[RU:forward]"
+  },
+  "backward": {
+    "text": "[RU:backward]"
+  },
+  "up": {
+    "text": "[RU:up]"
+  },
+  "down": {
+    "text": "[RU:down]"
+  },
+  "across": {
+    "text": "[RU:across]"
+  },
+  "sideways": {
+    "text": "[RU:sideways]"
+  },
+  "everywhere": {
+    "text": "[RU:everywhere]"
+  },
+  "much": {
+    "text": "[RU:much]"
+  },
+  "a_lot": {
+    "text": "[RU:a_lot]"
+  },
+  "very": {
+    "text": "[RU:very]"
+  },
+  "very_o": {
+    "text": "[RU:very_o]"
+  },
+  "too": {
+    "text": "[RU:too]"
+  },
+  "enough": {
+    "text": "[RU:enough]"
+  },
+  "little": {
+    "text": "[RU:little]"
+  },
+  "almost": {
+    "text": "[RU:almost]"
+  },
+  "more": {
+    "text": "[RU:more]"
+  },
+  "less": {
+    "text": "[RU:less]"
+  },
+  "completely": {
+    "text": "[RU:completely]"
+  },
+  "totally": {
+    "text": "[RU:totally]"
+  },
+  "exactly": {
+    "text": "[RU:exactly]"
+  },
+  "partially": {
+    "text": "[RU:partially]"
+  },
+  "mostly": {
+    "text": "[RU:mostly]"
+  },
+  "only": {
+    "text": "[RU:only]"
+  },
+  "hardly": {
+    "text": "[RU:hardly]"
+  },
+  "sufficiently": {
+    "text": "[RU:sufficiently]"
+  },
+  "exceedingly": {
+    "text": "[RU:exceedingly]"
+  },
+  "at_least": {
+    "text": "[RU:at_least]"
+  },
+  "person": {
+    "text": "[RU:person]"
+  },
+  "man": {
+    "text": "[RU:man]"
+  },
+  "woman": {
+    "text": "[RU:woman]"
+  },
+  "child": {
+    "text": "[RU:child]"
+  },
+  "boy": {
+    "text": "[RU:boy]"
+  },
+  "girl": {
+    "text": "[RU:girl]"
+  },
+  "friend": {
+    "text": "[RU:friend]"
+  },
+  "family": {
+    "text": "[RU:family]"
+  },
+  "father": {
+    "text": "[RU:father]"
+  },
+  "mother": {
+    "text": "[RU:mother]"
+  },
+  "brother": {
+    "text": "[RU:brother]"
+  },
+  "sister": {
+    "text": "[RU:sister]"
+  },
+  "husband": {
+    "text": "[RU:husband]"
+  },
+  "wife": {
+    "text": "[RU:wife]"
+  },
+  "doctor": {
+    "text": "[RU:doctor]"
+  },
+  "police": {
+    "text": "[RU:police]"
+  },
+  "home": {
+    "text": "[RU:home]"
+  },
+  "city": {
+    "text": "[RU:city]"
+  },
+  "street": {
+    "text": "[RU:street]"
+  },
+  "school": {
+    "text": "[RU:school]"
+  },
+  "store": {
+    "text": "[RU:store]"
+  },
+  "hospital": {
+    "text": "[RU:hospital]"
+  },
+  "park": {
+    "text": "[RU:park]"
+  },
+  "country": {
+    "text": "[RU:country]"
+  },
+  "land": {
+    "text": "[RU:land]"
+  },
+  "world": {
+    "text": "[RU:world]"
+  },
+  "office": {
+    "text": "[RU:office]"
+  },
+  "room": {
+    "text": "[RU:room]"
+  },
+  "station": {
+    "text": "[RU:station]"
+  },
+  "airport": {
+    "text": "[RU:airport]"
+  },
+  "thing": {
+    "text": "[RU:thing]"
+  },
+  "car": {
+    "text": "[RU:car]"
+  },
+  "bus": {
+    "text": "[RU:bus]"
+  },
+  "book": {
+    "text": "[RU:book]"
+  },
+  "money": {
+    "text": "[RU:money]"
+  },
+  "money_n": {
+    "text": "[RU:money_n]"
+  },
+  "water": {
+    "text": "[RU:water]"
+  },
+  "food": {
+    "text": "[RU:food]"
+  },
+  "bread": {
+    "text": "[RU:bread]"
+  },
+  "coffee": {
+    "text": "[RU:coffee]"
+  },
+  "phone": {
+    "text": "[RU:phone]"
+  },
+  "computer": {
+    "text": "[RU:computer]"
+  },
+  "bed": {
+    "text": "[RU:bed]"
+  }
 }

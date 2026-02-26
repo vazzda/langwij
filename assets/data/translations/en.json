@@ -1,2285 +1,1439 @@
 {
-  "lie_down": [
-    {
-      "text": "to lie down"
-    }
-  ],
-  "arrive": [
-    {
-      "text": "to arrive",
-      "note": "reach destination"
-    }
-  ],
-  "buy": [
-    {
-      "text": "to buy",
-      "note": "purchase"
-    }
-  ],
-  "give": [
-    {
-      "text": "to give",
-      "note": "hand to someone"
-    }
-  ],
-  "sell": [
-    {
-      "text": "to sell",
-      "note": "exchange for money"
-    }
-  ],
-  "smile": [
-    {
-      "text": "to smile",
-      "note": "facial expression"
-    }
-  ],
-  "count": [
-    {
-      "text": "to count"
-    }
-  ],
-  "hold": [
-    {
-      "text": "to hold",
-      "note": "grip"
-    }
-  ],
-  "stand": [
-    {
-      "text": "to stand",
-      "note": "be upright"
-    }
-  ],
-  "run": [
-    {
-      "text": "to run",
-      "note": "move fast"
-    }
-  ],
-  "sit": [
-    {
-      "text": "to sit",
-      "note": "rest on seat"
-    }
-  ],
-  "see": [
-    {
-      "text": "to see",
-      "note": "use eyes"
-    }
-  ],
-  "watch": [
-    {
-      "text": "to watch",
-      "note": "observe"
-    }
-  ],
-  "love": [
-    {
-      "text": "to love",
-      "note": "strong affection"
-    }
-  ],
-  "wish": [
-    {
-      "text": "to wish",
-      "note": "long for"
-    }
-  ],
-  "live": [
-    {
-      "text": "to live",
-      "note": "dwell"
-    }
-  ],
-  "talk": [
-    {
-      "text": "to talk",
-      "note": "converse"
-    }
-  ],
-  "speak": [
-    {
-      "text": "to speak",
-      "note": "utter"
-    }
-  ],
-  "use": [
-    {
-      "text": "to use",
-      "note": "employ a tool"
-    }
-  ],
-  "think": [
-    {
-      "text": "to think",
-      "note": "mental action"
-    }
-  ],
-  "pay": [
-    {
-      "text": "to pay",
-      "note": "give money"
-    }
-  ],
-  "listen": [
-    {
-      "text": "to listen",
-      "note": "pay attention to sound"
-    }
-  ],
-  "work": [
-    {
-      "text": "to work",
-      "note": "labor/task"
-    }
-  ],
-  "learn": [
-    {
-      "text": "to learn",
-      "note": "gain knowledge"
-    }
-  ],
-  "make": [
-    {
-      "text": "to make",
-      "note": "create/construct"
-    }
-  ],
-  "drive": [
-    {
-      "text": "to drive",
-      "note": "operate vehicle"
-    }
-  ],
-  "forget": [
-    {
-      "text": "to forget"
-    }
-  ],
-  "hate": [
-    {
-      "text": "to hate"
-    }
-  ],
-  "wait": [
-    {
-      "text": "to wait",
-      "note": "stay/pause"
-    }
-  ],
-  "read": [
-    {
-      "text": "to read",
-      "note": "interpret text"
-    }
-  ],
-  "play": [
-    {
-      "text": "to play",
-      "note": "recreation"
-    }
-  ],
-  "have": [
-    {
-      "text": "to have",
-      "note": "possess/own"
-    }
-  ],
-  "not_have": [
-    {
-      "text": "to not have"
-    }
-  ],
-  "cook": [
-    {
-      "text": "to cook",
-      "note": "prepare food"
-    }
-  ],
-  "have_to": [
-    {
-      "text": "to have to",
-      "note": "must"
-    }
-  ],
-  "sing": [
-    {
-      "text": "to sing"
-    }
-  ],
-  "swim": [
-    {
-      "text": "to swim"
-    }
-  ],
-  "dream": [
-    {
-      "text": "to dream"
-    }
-  ],
-  "sleep": [
-    {
-      "text": "to sleep",
-      "note": "rest"
-    }
-  ],
-  "can": [
-    {
-      "text": "to can",
-      "note": "be able to"
-    }
-  ],
-  "wear": [
-    {
-      "text": "to wear"
-    }
-  ],
-  "study": [
-    {
-      "text": "to study"
-    }
-  ],
-  "like": [
-    {
-      "text": "to like",
-      "note": "enjoy"
-    }
-  ],
-  "train": [
-    {
-      "text": "to train"
-    }
-  ],
-  "eat_lunch": [
-    {
-      "text": "to eat lunch",
-      "note": "consume food"
-    }
-  ],
-  "eat_dinner": [
-    {
-      "text": "to eat dinner",
-      "note": "consume food"
-    }
-  ],
-  "eat_breakfast": [
-    {
-      "text": "to eat breakfast",
-      "note": "consume food"
-    }
-  ],
-  "know": [
-    {
-      "text": "to know",
-      "note": "possess information"
-    }
-  ],
-  "lie": [
-    {
-      "text": "to lie"
-    }
-  ],
-  "help": [
-    {
-      "text": "to help",
-      "note": "assist"
-    }
-  ],
-  "show": [
-    {
-      "text": "to show",
-      "note": "display"
-    }
-  ],
-  "wave": [
-    {
-      "text": "to wave"
-    }
-  ],
-  "write": [
-    {
-      "text": "to write",
-      "note": "record text"
-    }
-  ],
-  "dance": [
-    {
-      "text": "to dance"
-    }
-  ],
-  "cry": [
-    {
-      "text": "to cry"
-    }
-  ],
-  "jump": [
-    {
-      "text": "to jump"
-    }
-  ],
-  "shout": [
-    {
-      "text": "to shout"
-    }
-  ],
-  "teach": [
-    {
-      "text": "to teach"
-    }
-  ],
-  "expect": [
-    {
-      "text": "to expect",
-      "note": "anticipate"
-    }
-  ],
-  "respect": [
-    {
-      "text": "to respect"
-    }
-  ],
-  "clean": [
-    {
-      "text": "to clean"
-    }
-  ],
-  "travel": [
-    {
-      "text": "to travel"
-    }
-  ],
-  "be_happy": [
-    {
-      "text": "to be happy"
-    }
-  ],
-  "come": [
-    {
-      "text": "to come",
-      "note": "move toward"
-    }
-  ],
-  "go": [
-    {
-      "text": "to go",
-      "note": "move to a place"
-    }
-  ],
-  "bake": [
-    {
-      "text": "to bake"
-    }
-  ],
-  "understand": [
-    {
-      "text": "to understand",
-      "note": "comprehend"
-    }
-  ],
-  "be_allowed_to": [
-    {
-      "text": "to be allowed to"
-    }
-  ],
-  "succeed": [
-    {
-      "text": "to succeed"
-    }
-  ],
-  "be": [
-    {
-      "text": "to be",
-      "note": "exist/state"
-    }
-  ],
-  "want": [
-    {
-      "text": "to want",
-      "note": "desire"
-    }
-  ],
-  "finish": [
-    {
-      "text": "to finish",
-      "note": "complete"
-    }
-  ],
-  "answer": [
-    {
-      "text": "to answer",
-      "note": "respond"
-    }
-  ],
-  "accept": [
-    {
-      "text": "to accept",
-      "note": "take/agree"
-    }
-  ],
-  "raise": [
-    {
-      "text": "to raise",
-      "note": "lift up"
-    }
-  ],
-  "suggest": [
-    {
-      "text": "to suggest",
-      "note": "propose idea"
-    }
-  ],
-  "walk": [
-    {
-      "text": "to walk",
-      "note": "step"
-    }
-  ],
-  "fly": [
-    {
-      "text": "to fly"
-    }
-  ],
-  "stop": [
-    {
-      "text": "to stop",
-      "note": "cease"
-    }
-  ],
-  "follow": [
-    {
-      "text": "to follow",
-      "note": "go after"
-    }
-  ],
-  "say": [
-    {
-      "text": "to say",
-      "note": "speak words"
-    }
-  ],
-  "eat": [
-    {
-      "text": "to eat",
-      "note": "consume food"
-    }
-  ],
-  "drink": [
-    {
-      "text": "to drink",
-      "note": "consume liquid"
-    }
-  ],
-  "kill": [
-    {
-      "text": "to kill",
-      "note": "cause death"
-    }
-  ],
-  "die": [
-    {
-      "text": "to die",
-      "note": "cease living"
-    }
-  ],
-  "laugh": [
-    {
-      "text": "to laugh",
-      "note": "express mirth"
-    }
-  ],
-  "hear": [
-    {
-      "text": "to hear",
-      "note": "perceive sound"
-    }
-  ],
-  "taste": [
-    {
-      "text": "to taste"
-    }
-  ],
-  "touch": [
-    {
-      "text": "to touch"
-    }
-  ],
-  "kiss": [
-    {
-      "text": "to kiss"
-    }
-  ],
-  "burn": [
-    {
-      "text": "to burn"
-    }
-  ],
-  "melt": [
-    {
-      "text": "to melt"
-    }
-  ],
-  "dig": [
-    {
-      "text": "to dig"
-    }
-  ],
-  "explode": [
-    {
-      "text": "to explode"
-    }
-  ],
-  "pass": [
-    {
-      "text": "to pass",
-      "note": "go by"
-    }
-  ],
-  "cut": [
-    {
-      "text": "to cut",
-      "note": "divide with blade"
-    }
-  ],
-  "fight": [
-    {
-      "text": "to fight"
-    }
-  ],
-  "wake_up": [
-    {
-      "text": "to wake up",
-      "note": "stop sleeping"
-    }
-  ],
-  "marry": [
-    {
-      "text": "to marry"
-    }
-  ],
-  "pray": [
-    {
-      "text": "to pray"
-    }
-  ],
-  "win": [
-    {
-      "text": "to win / to get",
-      "note": "be victorious / obtain/receive"
-    }
-  ],
-  "lose": [
-    {
-      "text": "to lose",
-      "note": "misplace"
-    }
-  ],
-  "mixstir": [
-    {
-      "text": "to mix/stir"
-    }
-  ],
-  "bend": [
-    {
-      "text": "to bend"
-    }
-  ],
-  "wash": [
-    {
-      "text": "to wash"
-    }
-  ],
-  "open": [
-    {
-      "text": "to open",
-      "note": "unclose"
-    }
-  ],
-  "close": [
-    {
-      "text": "to close"
-    }
-  ],
-  "call": [
-    {
-      "text": "to call",
-      "note": "telephone/shout"
-    }
-  ],
-  "turn": [
-    {
-      "text": "to turn",
-      "note": "rotate/change direction"
-    }
-  ],
-  "build": [
-    {
-      "text": "to build",
-      "note": "construct"
-    }
-  ],
-  "grow": [
-    {
-      "text": "to grow",
-      "note": "increase"
-    }
-  ],
-  "draw": [
-    {
-      "text": "to draw"
-    }
-  ],
-  "feed": [
-    {
-      "text": "to feed"
-    }
-  ],
-  "catch": [
-    {
-      "text": "to catch"
-    }
-  ],
-  "throw": [
-    {
-      "text": "to throw"
-    }
-  ],
-  "find": [
-    {
-      "text": "to find",
-      "note": "locate"
-    }
-  ],
-  "fall": [
-    {
-      "text": "to fall",
-      "note": "drop down"
-    }
-  ],
-  "push": [
-    {
-      "text": "to push",
-      "note": "press away"
-    }
-  ],
-  "pull": [
-    {
-      "text": "to pull",
-      "note": "tug toward"
-    }
-  ],
-  "carry": [
-    {
-      "text": "to carry",
-      "note": "hold and move"
-    }
-  ],
-  "break": [
-    {
-      "text": "to break",
-      "note": "shatter/stop working"
-    }
-  ],
-  "hang": [
-    {
-      "text": "to hang"
-    }
-  ],
-  "shake": [
-    {
-      "text": "to shake"
-    }
-  ],
-  "sign": [
-    {
-      "text": "to sign"
-    }
-  ],
-  "beat": [
-    {
-      "text": "to beat"
-    }
-  ],
-  "play_instrument": [
-    {
-      "text": "to play instrument"
-    }
-  ],
-  "smell": [
-    {
-      "text": "to smell"
-    }
-  ],
-  "shoot": [
-    {
-      "text": "to shoot",
-      "note": "a gun"
-    }
-  ],
-  "choose": [
-    {
-      "text": "to choose",
-      "note": "select"
-    }
-  ],
-  "check": [
-    {
-      "text": "to check",
-      "note": "verify"
-    }
-  ],
-  "check_out": [
-    {
-      "text": "to check out",
-      "note": "examine/leave"
-    }
-  ],
-  "support": [
-    {
-      "text": "to support",
-      "note": "help/hold up"
-    }
-  ],
-  "care": [
-    {
-      "text": "to care",
-      "note": "feel concern"
-    }
-  ],
-  "do": [
-    {
-      "text": "to do",
-      "note": "perform an action"
-    }
-  ],
-  "get": [
-    {
-      "text": "to get",
-      "note": "obtain/receive"
-    }
-  ],
-  "look_for": [
-    {
-      "text": "to look for",
-      "note": "search for something"
-    }
-  ],
-  "look_at": [
-    {
-      "text": "to look at",
-      "note": "view/examine"
-    }
-  ],
-  "get_up": [
-    {
-      "text": "to get up",
-      "note": "rise from bed"
-    }
-  ],
-  "take": [
-    {
-      "text": "to take",
-      "note": "move something/someone"
-    }
-  ],
-  "find_out": [
-    {
-      "text": "to find out",
-      "note": "discover information"
-    }
-  ],
-  "give_up": [
-    {
-      "text": "to give up",
-      "note": "quit/stop trying"
-    }
-  ],
-  "call_back": [
-    {
-      "text": "to call back",
-      "note": "return a call"
-    }
-  ],
-  "try": [
-    {
-      "text": "to try",
-      "note": "attempt"
-    }
-  ],
-  "try_on": [
-    {
-      "text": "to try on",
-      "note": "test clothes"
-    }
-  ],
-  "ask": [
-    {
-      "text": "to ask",
-      "note": "request info"
-    }
-  ],
-  "need": [
-    {
-      "text": "to need",
-      "note": "require"
-    }
-  ],
-  "feel": [
-    {
-      "text": "to feel",
-      "note": "experience emotion/touch"
-    }
-  ],
-  "become": [
-    {
-      "text": "to become",
-      "note": "change state"
-    }
-  ],
-  "leave": [
-    {
-      "text": "to leave",
-      "note": "go away"
-    }
-  ],
-  "put": [
-    {
-      "text": "to put",
-      "note": "place somewhere"
-    }
-  ],
-  "put_on": [
-    {
-      "text": "to put on",
-      "note": "dress yourself"
-    }
-  ],
-  "take_off": [
-    {
-      "text": "to take off",
-      "note": "remove clothes/launch"
-    }
-  ],
-  "mean": [
-    {
-      "text": "to mean",
-      "note": "signify"
-    }
-  ],
-  "keep": [
-    {
-      "text": "to keep",
-      "note": "continue/retain"
-    }
-  ],
-  "let": [
-    {
-      "text": "to let",
-      "note": "allow"
-    }
-  ],
-  "begin": [
-    {
-      "text": "to begin",
-      "note": "start"
-    }
-  ],
-  "seem": [
-    {
-      "text": "to seem",
-      "note": "appear to be"
-    }
-  ],
-  "turn_on": [
-    {
-      "text": "to turn on",
-      "note": "operate power"
-    }
-  ],
-  "turn_off": [
-    {
-      "text": "to turn off",
-      "note": "operate power"
-    }
-  ],
-  "move": [
-    {
-      "text": "to move",
-      "note": "change position"
-    }
-  ],
-  "move_in": [
-    {
-      "text": "to move in",
-      "note": "change homes"
-    }
-  ],
-  "move_out": [
-    {
-      "text": "to move out",
-      "note": "change homes"
-    }
-  ],
-  "believe": [
-    {
-      "text": "to believe",
-      "note": "trust"
-    }
-  ],
-  "bring": [
-    {
-      "text": "to bring",
-      "note": "carry to"
-    }
-  ],
-  "bring_up": [
-    {
-      "text": "to bring up",
-      "note": "mention a topic"
-    }
-  ],
-  "happen": [
-    {
-      "text": "to happen",
-      "note": "occur"
-    }
-  ],
-  "sit_down": [
-    {
-      "text": "to sit down",
-      "note": "take a seat"
-    }
-  ],
-  "pay_for": [
-    {
-      "text": "to pay for",
-      "note": "purchase/suffer"
-    }
-  ],
-  "meet": [
-    {
-      "text": "to meet",
-      "note": "encounter"
-    }
-  ],
-  "meet_up": [
-    {
-      "text": "to meet up",
-      "note": "social gathering"
-    }
-  ],
-  "include": [
-    {
-      "text": "to include",
-      "note": "add in"
-    }
-  ],
-  "continue": [
-    {
-      "text": "to continue",
-      "note": "keep going"
-    }
-  ],
-  "set": [
-    {
-      "text": "to set",
-      "note": "place/arrange"
-    }
-  ],
-  "set_up": [
-    {
-      "text": "to set up",
-      "note": "organize/arrange"
-    }
-  ],
-  "change": [
-    {
-      "text": "to change",
-      "note": "alter"
-    }
-  ],
-  "lead": [
-    {
-      "text": "to lead",
-      "note": "guide"
-    }
-  ],
-  "watch_out": [
-    {
-      "text": "to watch out",
-      "note": "be careful"
-    }
-  ],
-  "create": [
-    {
-      "text": "to create",
-      "note": "invent"
-    }
-  ],
-  "add": [
-    {
-      "text": "to add",
-      "note": "join together"
-    }
-  ],
-  "spend": [
-    {
-      "text": "to spend",
-      "note": "use money/time"
-    }
-  ],
-  "grow_up": [
-    {
-      "text": "to grow up",
-      "note": "mature"
-    }
-  ],
-  "offer": [
-    {
-      "text": "to offer",
-      "note": "propose"
-    }
-  ],
-  "remember": [
-    {
-      "text": "to remember",
-      "note": "recall"
-    }
-  ],
-  "consider": [
-    {
-      "text": "to consider",
-      "note": "think about"
-    }
-  ],
-  "appear": [
-    {
-      "text": "to appear",
-      "note": "become visible"
-    }
-  ],
-  "wait_for": [
-    {
-      "text": "to wait for",
-      "note": "anticipate"
-    }
-  ],
-  "serve": [
-    {
-      "text": "to serve",
-      "note": "provide service"
-    }
-  ],
-  "send": [
-    {
-      "text": "to send",
-      "note": "dispatch"
-    }
-  ],
-  "stay": [
-    {
-      "text": "to stay / to remain",
-      "note": "remain / stay behind"
-    }
-  ],
-  "reach": [
-    {
-      "text": "to reach",
-      "note": "arrive at/touch"
-    }
-  ],
-  "require": [
-    {
-      "text": "to require",
-      "note": "need"
-    }
-  ],
-  "report": [
-    {
-      "text": "to report",
-      "note": "state facts"
-    }
-  ],
-  "decide": [
-    {
-      "text": "to decide",
-      "note": "make a choice"
-    }
-  ],
-  "break_down": [
-    {
-      "text": "to break down",
-      "note": "fail mechanically"
-    }
-  ],
-  "agree": [
-    {
-      "text": "to agree",
-      "note": "concur"
-    }
-  ],
-  "explain": [
-    {
-      "text": "to explain",
-      "note": "clarify"
-    }
-  ],
-  "hope": [
-    {
-      "text": "to hope",
-      "note": "desire/expect"
-    }
-  ],
-  "develop": [
-    {
-      "text": "to develop",
-      "note": "evolve/build"
-    }
-  ],
-  "fear": [
-    {
-      "text": "to fear",
-      "note": "be afraid"
-    }
-  ],
-  "thank": [
-    {
-      "text": "to thank",
-      "note": "express gratitude"
-    }
-  ],
-  "receive": [
-    {
-      "text": "to receive",
-      "note": "get"
-    }
-  ],
-  "join": [
-    {
-      "text": "to join",
-      "note": "unite"
-    }
-  ],
-  "now": [
-    {
-      "text": "now"
-    }
-  ],
-  "then": [
-    {
-      "text": "then",
-      "note": "calendar"
-    }
-  ],
-  "then_o": [
-    {
-      "text": "then",
-      "note": "event"
-    }
-  ],
-  "today": [
-    {
-      "text": "today"
-    }
-  ],
-  "tonight": [
-    {
-      "text": "tonight"
-    }
-  ],
-  "yesterday": [
-    {
-      "text": "yesterday"
-    }
-  ],
-  "tomorrow": [
-    {
-      "text": "tomorrow"
-    }
-  ],
-  "soon": [
-    {
-      "text": "soon"
-    }
-  ],
-  "later": [
-    {
-      "text": "later"
-    }
-  ],
-  "earlier": [
-    {
-      "text": "earlier / previously"
-    }
-  ],
-  "recently": [
-    {
-      "text": "recently"
-    }
-  ],
-  "always": [
-    {
-      "text": "always"
-    }
-  ],
-  "often": [
-    {
-      "text": "often"
-    }
-  ],
-  "usually": [
-    {
-      "text": "usually"
-    }
-  ],
-  "sometimes": [
-    {
-      "text": "sometimes"
-    }
-  ],
-  "rarely": [
-    {
-      "text": "rarely / seldom"
-    }
-  ],
-  "never": [
-    {
-      "text": "never"
-    }
-  ],
-  "already": [
-    {
-      "text": "already"
-    }
-  ],
-  "yet": [
-    {
-      "text": "yet / still"
-    }
-  ],
-  "immediately": [
-    {
-      "text": "immediately"
-    }
-  ],
-  "before": [
-    {
-      "text": "before"
-    }
-  ],
-  "after": [
-    {
-      "text": "after"
-    }
-  ],
-  "under": [
-    {
-      "text": "under / below"
-    }
-  ],
-  "over": [
-    {
-      "text": "over / above"
-    }
-  ],
-  "behind": [
-    {
-      "text": "behind"
-    }
-  ],
-  "in_front_of": [
-    {
-      "text": "in front of"
-    }
-  ],
-  "between": [
-    {
-      "text": "between"
-    }
-  ],
-  "beside": [
-    {
-      "text": "beside / next to"
-    }
-  ],
-  "in": [
-    {
-      "text": "in"
-    }
-  ],
-  "inside": [
-    {
-      "text": "inside"
-    }
-  ],
-  "on": [
-    {
-      "text": "on"
-    }
-  ],
-  "near": [
-    {
-      "text": "near / close to"
-    }
-  ],
-  "this": [
-    {
-      "text": "this",
-      "note": "right here"
-    }
-  ],
-  "that": [
-    {
-      "text": "that",
-      "note": "near you"
-    }
-  ],
-  "that_o": [
-    {
-      "text": "that",
-      "note": "over there/distant"
-    }
-  ],
-  "such": [
-    {
-      "text": "such / like this"
-    }
-  ],
-  "such_o": [
-    {
-      "text": "such / like that"
-    }
-  ],
-  "such_o_2": [
-    {
-      "text": "such / like that",
-      "note": "distant"
-    }
-  ],
-  "this_much": [
-    {
-      "text": "this much / this big"
-    }
-  ],
-  "that_much": [
-    {
-      "text": "that much / that big"
-    }
-  ],
-  "this_many": [
-    {
-      "text": "this many / this much"
-    }
-  ],
-  "that_many": [
-    {
-      "text": "that many / that much"
-    }
-  ],
-  "left": [
-    {
-      "text": "left"
-    }
-  ],
-  "right": [
-    {
-      "text": "right"
-    }
-  ],
-  "straight": [
-    {
-      "text": "straight"
-    }
-  ],
-  "forward": [
-    {
-      "text": "forward"
-    }
-  ],
-  "backward": [
-    {
-      "text": "backward"
-    }
-  ],
-  "up": [
-    {
-      "text": "up / upwards"
-    }
-  ],
-  "down": [
-    {
-      "text": "down / downwards"
-    }
-  ],
-  "across": [
-    {
-      "text": "across / opposite"
-    }
-  ],
-  "sideways": [
-    {
-      "text": "sideways"
-    }
-  ],
-  "everywhere": [
-    {
-      "text": "everywhere"
-    }
-  ],
-  "much": [
-    {
-      "text": "much / many"
-    }
-  ],
-  "a_lot": [
-    {
-      "text": "a lot / full"
-    }
-  ],
-  "very": [
-    {
-      "text": "very",
-      "note": "intense"
-    }
-  ],
-  "very_o": [
-    {
-      "text": "very",
-      "note": "formal"
-    }
-  ],
-  "too": [
-    {
-      "text": "too",
-      "note": "excessive"
-    }
-  ],
-  "enough": [
-    {
-      "text": "enough"
-    }
-  ],
-  "little": [
-    {
-      "text": "little / bit"
-    }
-  ],
-  "almost": [
-    {
-      "text": "almost"
-    }
-  ],
-  "more": [
-    {
-      "text": "more"
-    }
-  ],
-  "less": [
-    {
-      "text": "less"
-    }
-  ],
-  "completely": [
-    {
-      "text": "completely / quite"
-    }
-  ],
-  "totally": [
-    {
-      "text": "totally / fully"
-    }
-  ],
-  "exactly": [
-    {
-      "text": "exactly / really",
-      "note": "the ultimate emphasis word"
-    }
-  ],
-  "partially": [
-    {
-      "text": "partially"
-    }
-  ],
-  "mostly": [
-    {
-      "text": "mostly"
-    }
-  ],
-  "only": [
-    {
-      "text": "only"
-    }
-  ],
-  "hardly": [
-    {
-      "text": "hardly / barely"
-    }
-  ],
-  "sufficiently": [
-    {
-      "text": "sufficiently"
-    }
-  ],
-  "exceedingly": [
-    {
-      "text": "exceedingly / terribly",
-      "note": "used like \"terribly good\" or \"terribly fast\""
-    }
-  ],
-  "at_least": [
-    {
-      "text": "at least"
-    }
-  ],
-  "person": [
-    {
-      "text": "person"
-    }
-  ],
-  "man": [
-    {
-      "text": "man"
-    }
-  ],
-  "woman": [
-    {
-      "text": "woman"
-    }
-  ],
-  "child": [
-    {
-      "text": "child"
-    }
-  ],
-  "boy": [
-    {
-      "text": "boy"
-    }
-  ],
-  "girl": [
-    {
-      "text": "girl"
-    }
-  ],
-  "friend": [
-    {
-      "text": "friend"
-    }
-  ],
-  "family": [
-    {
-      "text": "family"
-    }
-  ],
-  "father": [
-    {
-      "text": "father"
-    }
-  ],
-  "mother": [
-    {
-      "text": "mother"
-    }
-  ],
-  "brother": [
-    {
-      "text": "brother"
-    }
-  ],
-  "sister": [
-    {
-      "text": "sister"
-    }
-  ],
-  "husband": [
-    {
-      "text": "husband"
-    }
-  ],
-  "wife": [
-    {
-      "text": "wife"
-    }
-  ],
-  "doctor": [
-    {
-      "text": "doctor"
-    }
-  ],
-  "police": [
-    {
-      "text": "police"
-    }
-  ],
-  "home": [
-    {
-      "text": "home"
-    }
-  ],
-  "city": [
-    {
-      "text": "city"
-    }
-  ],
-  "street": [
-    {
-      "text": "street"
-    }
-  ],
-  "school": [
-    {
-      "text": "school"
-    }
-  ],
-  "store": [
-    {
-      "text": "store"
-    }
-  ],
-  "hospital": [
-    {
-      "text": "hospital"
-    }
-  ],
-  "park": [
-    {
-      "text": "park"
-    }
-  ],
-  "country": [
-    {
-      "text": "country"
-    }
-  ],
-  "land": [
-    {
-      "text": "land"
-    }
-  ],
-  "world": [
-    {
-      "text": "world"
-    }
-  ],
-  "office": [
-    {
-      "text": "office"
-    }
-  ],
-  "room": [
-    {
-      "text": "room"
-    }
-  ],
-  "station": [
-    {
-      "text": "station"
-    }
-  ],
-  "airport": [
-    {
-      "text": "airport"
-    }
-  ],
-  "thing": [
-    {
-      "text": "thing"
-    }
-  ],
-  "car": [
-    {
-      "text": "car"
-    }
-  ],
-  "bus": [
-    {
-      "text": "bus"
-    }
-  ],
-  "book": [
-    {
-      "text": "book"
-    }
-  ],
-  "money": [
-    {
-      "text": "money"
-    }
-  ],
-  "money_n": [
-    {
-      "text": "money",
-      "note": "slang, closer to cash"
-    }
-  ],
-  "water": [
-    {
-      "text": "water"
-    }
-  ],
-  "food": [
-    {
-      "text": "food"
-    }
-  ],
-  "bread": [
-    {
-      "text": "bread"
-    }
-  ],
-  "coffee": [
-    {
-      "text": "coffee"
-    }
-  ],
-  "phone": [
-    {
-      "text": "phone"
-    }
-  ],
-  "computer": [
-    {
-      "text": "computer"
-    }
-  ],
-  "bed": [
-    {
-      "text": "bed"
-    }
-  ],
-  "door": [
-    {
-      "text": "door"
-    }
-  ],
-  "window": [
-    {
-      "text": "window"
-    }
-  ],
-  "table": [
-    {
-      "text": "table"
-    }
-  ],
-  "chair": [
-    {
-      "text": "chair"
-    }
-  ],
-  "bag": [
-    {
-      "text": "bag"
-    }
-  ],
-  "clothing": [
-    {
-      "text": "clothing"
-    }
-  ],
-  "time": [
-    {
-      "text": "time"
-    }
-  ],
-  "year": [
-    {
-      "text": "year"
-    }
-  ],
-  "month": [
-    {
-      "text": "month"
-    }
-  ],
-  "week": [
-    {
-      "text": "week"
-    }
-  ],
-  "day": [
-    {
-      "text": "day"
-    }
-  ],
-  "night": [
-    {
-      "text": "night"
-    }
-  ],
-  "morning": [
-    {
-      "text": "morning"
-    }
-  ],
-  "evening": [
-    {
-      "text": "evening"
-    }
-  ],
-  "sun": [
-    {
-      "text": "sun"
-    }
-  ],
-  "moon": [
-    {
-      "text": "moon"
-    }
-  ],
-  "sky": [
-    {
-      "text": "sky"
-    }
-  ],
-  "rain": [
-    {
-      "text": "rain"
-    }
-  ],
-  "tree": [
-    {
-      "text": "tree"
-    }
-  ],
-  "flower": [
-    {
-      "text": "flower"
-    }
-  ],
-  "animal": [
-    {
-      "text": "animal"
-    }
-  ],
-  "dog": [
-    {
-      "text": "dog"
-    }
-  ],
-  "cat": [
-    {
-      "text": "cat"
-    }
-  ],
-  "life": [
-    {
-      "text": "life"
-    }
-  ],
-  "love_n": [
-    {
-      "text": "love"
-    }
-  ],
-  "work_n": [
-    {
-      "text": "work"
-    }
-  ],
-  "job": [
-    {
-      "text": "job"
-    }
-  ],
-  "problem": [
-    {
-      "text": "problem"
-    }
-  ],
-  "idea": [
-    {
-      "text": "idea"
-    }
-  ],
-  "word": [
-    {
-      "text": "word"
-    }
-  ],
-  "number": [
-    {
-      "text": "number"
-    }
-  ],
-  "name": [
-    {
-      "text": "name"
-    }
-  ],
-  "part": [
-    {
-      "text": "part"
-    }
-  ],
-  "question": [
-    {
-      "text": "question"
-    }
-  ],
-  "answer_n": [
-    {
-      "text": "answer"
-    }
-  ],
-  "reason": [
-    {
-      "text": "reason"
-    }
-  ],
-  "good": [
-    {
-      "text": "good"
-    }
-  ],
-  "bad": [
-    {
-      "text": "bad"
-    }
-  ],
-  "beautiful": [
-    {
-      "text": "beautiful / nice"
-    }
-  ],
-  "ugly": [
-    {
-      "text": "ugly"
-    }
-  ],
-  "big": [
-    {
-      "text": "big / large"
-    }
-  ],
-  "small": [
-    {
-      "text": "small / little"
-    }
-  ],
-  "new": [
-    {
-      "text": "new"
-    }
-  ],
-  "old": [
-    {
-      "text": "old"
-    }
-  ],
-  "cheap": [
-    {
-      "text": "cheap"
-    }
-  ],
-  "expensive": [
-    {
-      "text": "expensive"
-    }
-  ],
-  "easy": [
-    {
-      "text": "easy"
-    }
-  ],
-  "difficult": [
-    {
-      "text": "difficult / heavy"
-    }
-  ],
-  "correct": [
-    {
-      "text": "correct / right"
-    }
-  ],
-  "wrong": [
-    {
-      "text": "wrong / incorrect"
-    }
-  ],
-  "clean_a": [
-    {
-      "text": "clean"
-    }
-  ],
-  "dirty": [
-    {
-      "text": "dirty"
-    }
-  ],
-  "happy": [
-    {
-      "text": "happy"
-    }
-  ],
-  "sad": [
-    {
-      "text": "sad"
-    }
-  ],
-  "hungry": [
-    {
-      "text": "hungry"
-    }
-  ],
-  "thirsty": [
-    {
-      "text": "thirsty"
-    }
-  ],
-  "tired": [
-    {
-      "text": "tired"
-    }
-  ],
-  "young": [
-    {
-      "text": "young"
-    }
-  ],
-  "rich": [
-    {
-      "text": "rich"
-    }
-  ],
-  "poor": [
-    {
-      "text": "poor"
-    }
-  ],
-  "strong": [
-    {
-      "text": "strong"
-    }
-  ],
-  "weak": [
-    {
-      "text": "weak"
-    }
-  ],
-  "smart": [
-    {
-      "text": "smart"
-    }
-  ],
-  "brave": [
-    {
-      "text": "brave"
-    }
-  ],
-  "honest": [
-    {
-      "text": "honest"
-    }
-  ],
-  "angry": [
-    {
-      "text": "angry"
-    }
-  ],
-  "furious": [
-    {
-      "text": "furious"
-    }
-  ],
-  "hot": [
-    {
-      "text": "hot",
-      "note": "temperature"
-    }
-  ],
-  "warm": [
-    {
-      "text": "warm"
-    }
-  ],
-  "cold": [
-    {
-      "text": "cold"
-    }
-  ],
-  "sweet": [
-    {
-      "text": "sweet"
-    }
-  ],
-  "salty": [
-    {
-      "text": "salty"
-    }
-  ],
-  "sour": [
-    {
-      "text": "sour"
-    }
-  ],
-  "bitter": [
-    {
-      "text": "bitter"
-    }
-  ],
-  "spicy": [
-    {
-      "text": "spicy / hot",
-      "note": "taste"
-    }
-  ],
-  "delicious": [
-    {
-      "text": "delicious / tasty"
-    }
-  ],
-  "soft": [
-    {
-      "text": "soft"
-    }
-  ],
-  "hard": [
-    {
-      "text": "hard"
-    }
-  ],
-  "dry": [
-    {
-      "text": "dry"
-    }
-  ],
-  "wet": [
-    {
-      "text": "wet"
-    }
-  ],
-  "fast": [
-    {
-      "text": "fast"
-    }
-  ],
-  "slow": [
-    {
-      "text": "slow"
-    }
-  ],
-  "white": [
-    {
-      "text": "white"
-    }
-  ],
-  "black": [
-    {
-      "text": "black"
-    }
-  ],
-  "red": [
-    {
-      "text": "red"
-    }
-  ],
-  "blue": [
-    {
-      "text": "blue"
-    }
-  ],
-  "green": [
-    {
-      "text": "green"
-    }
-  ],
-  "yellow": [
-    {
-      "text": "yellow"
-    }
-  ],
-  "grey": [
-    {
-      "text": "grey"
-    }
-  ],
-  "brown": [
-    {
-      "text": "brown"
-    }
-  ],
-  "orange": [
-    {
-      "text": "orange"
-    }
-  ],
-  "pink": [
-    {
-      "text": "pink"
-    }
-  ],
-  "purple": [
-    {
-      "text": "purple"
-    }
-  ],
-  "gold": [
-    {
-      "text": "gold"
-    }
-  ],
-  "silver": [
-    {
-      "text": "silver"
-    }
-  ],
-  "beige": [
-    {
-      "text": "beige"
-    }
-  ],
-  "light": [
-    {
-      "text": "light",
-      "note": "-color"
-    }
-  ],
-  "dark": [
-    {
-      "text": "dark",
-      "note": "-color"
-    }
-  ],
-  "bright": [
-    {
-      "text": "bright"
-    }
-  ],
-  "colorful": [
-    {
-      "text": "colorful"
-    }
-  ],
-  "vibrant": [
-    {
-      "text": "vibrant"
-    }
-  ],
-  "pale": [
-    {
-      "text": "pale"
-    }
-  ],
-  "shiny": [
-    {
-      "text": "shiny"
-    }
-  ],
-  "matte": [
-    {
-      "text": "matte"
-    }
-  ],
-  "transparent": [
-    {
-      "text": "transparent"
-    }
-  ],
-  "multicolor": [
-    {
-      "text": "multicolor"
-    }
-  ]
+  "lie_down": {
+    "text": "to lie down"
+  },
+  "arrive": {
+    "text": "to arrive",
+    "note": "reach destination"
+  },
+  "buy": {
+    "text": "to buy",
+    "note": "purchase"
+  },
+  "give": {
+    "text": "to give",
+    "note": "hand to someone"
+  },
+  "sell": {
+    "text": "to sell",
+    "note": "exchange for money"
+  },
+  "smile": {
+    "text": "to smile",
+    "note": "facial expression"
+  },
+  "count": {
+    "text": "to count"
+  },
+  "hold": {
+    "text": "to hold",
+    "note": "grip"
+  },
+  "stand": {
+    "text": "to stand",
+    "note": "be upright"
+  },
+  "run": {
+    "text": "to run",
+    "note": "move fast"
+  },
+  "sit": {
+    "text": "to sit",
+    "note": "rest on seat"
+  },
+  "see": {
+    "text": "to see",
+    "note": "use eyes"
+  },
+  "watch": {
+    "text": "to watch",
+    "note": "observe"
+  },
+  "love": {
+    "text": "to love",
+    "note": "strong affection"
+  },
+  "wish": {
+    "text": "to wish",
+    "note": "long for"
+  },
+  "live": {
+    "text": "to live",
+    "note": "dwell"
+  },
+  "talk": {
+    "text": "to talk",
+    "note": "converse"
+  },
+  "speak": {
+    "text": "to speak",
+    "note": "utter"
+  },
+  "use": {
+    "text": "to use",
+    "note": "employ a tool"
+  },
+  "think": {
+    "text": "to think",
+    "note": "mental action"
+  },
+  "pay": {
+    "text": "to pay",
+    "note": "give money"
+  },
+  "listen": {
+    "text": "to listen",
+    "note": "pay attention to sound"
+  },
+  "work": {
+    "text": "to work",
+    "note": "labor/task"
+  },
+  "learn": {
+    "text": "to learn",
+    "note": "gain knowledge"
+  },
+  "make": {
+    "text": "to make",
+    "note": "create/construct"
+  },
+  "drive": {
+    "text": "to drive",
+    "note": "operate vehicle"
+  },
+  "forget": {
+    "text": "to forget"
+  },
+  "hate": {
+    "text": "to hate"
+  },
+  "wait": {
+    "text": "to wait",
+    "note": "stay/pause"
+  },
+  "read": {
+    "text": "to read",
+    "note": "interpret text"
+  },
+  "play": {
+    "text": "to play",
+    "note": "recreation"
+  },
+  "have": {
+    "text": "to have",
+    "note": "possess/own"
+  },
+  "not_have": {
+    "text": "to not have"
+  },
+  "cook": {
+    "text": "to cook",
+    "note": "prepare food"
+  },
+  "have_to": {
+    "text": "to have to",
+    "note": "must"
+  },
+  "sing": {
+    "text": "to sing"
+  },
+  "swim": {
+    "text": "to swim"
+  },
+  "dream": {
+    "text": "to dream"
+  },
+  "sleep": {
+    "text": "to sleep",
+    "note": "rest"
+  },
+  "can": {
+    "text": "to can",
+    "note": "be able to"
+  },
+  "wear": {
+    "text": "to wear"
+  },
+  "study": {
+    "text": "to study"
+  },
+  "like": {
+    "text": "to like",
+    "note": "enjoy"
+  },
+  "train": {
+    "text": "to train"
+  },
+  "eat_lunch": {
+    "text": "to eat lunch",
+    "note": "consume food"
+  },
+  "eat_dinner": {
+    "text": "to eat dinner",
+    "note": "consume food"
+  },
+  "eat_breakfast": {
+    "text": "to eat breakfast",
+    "note": "consume food"
+  },
+  "know": {
+    "text": "to know",
+    "note": "possess information"
+  },
+  "lie": {
+    "text": "to lie"
+  },
+  "help": {
+    "text": "to help",
+    "note": "assist"
+  },
+  "show": {
+    "text": "to show",
+    "note": "display"
+  },
+  "wave": {
+    "text": "to wave"
+  },
+  "write": {
+    "text": "to write",
+    "note": "record text"
+  },
+  "dance": {
+    "text": "to dance"
+  },
+  "cry": {
+    "text": "to cry"
+  },
+  "jump": {
+    "text": "to jump"
+  },
+  "shout": {
+    "text": "to shout"
+  },
+  "teach": {
+    "text": "to teach"
+  },
+  "expect": {
+    "text": "to expect",
+    "note": "anticipate"
+  },
+  "respect": {
+    "text": "to respect"
+  },
+  "clean": {
+    "text": "to clean"
+  },
+  "travel": {
+    "text": "to travel"
+  },
+  "be_happy": {
+    "text": "to be happy"
+  },
+  "come": {
+    "text": "to come",
+    "note": "move toward"
+  },
+  "go": {
+    "text": "to go",
+    "note": "move to a place"
+  },
+  "bake": {
+    "text": "to bake"
+  },
+  "understand": {
+    "text": "to understand",
+    "note": "comprehend"
+  },
+  "be_allowed_to": {
+    "text": "to be allowed to"
+  },
+  "succeed": {
+    "text": "to succeed"
+  },
+  "be": {
+    "text": "to be",
+    "note": "exist/state"
+  },
+  "want": {
+    "text": "to want",
+    "note": "desire"
+  },
+  "finish": {
+    "text": "to finish",
+    "note": "complete"
+  },
+  "answer": {
+    "text": "to answer",
+    "note": "respond"
+  },
+  "accept": {
+    "text": "to accept",
+    "note": "take/agree"
+  },
+  "raise": {
+    "text": "to raise",
+    "note": "lift up"
+  },
+  "suggest": {
+    "text": "to suggest",
+    "note": "propose idea"
+  },
+  "walk": {
+    "text": "to walk",
+    "note": "step"
+  },
+  "fly": {
+    "text": "to fly"
+  },
+  "stop": {
+    "text": "to stop",
+    "note": "cease"
+  },
+  "follow": {
+    "text": "to follow",
+    "note": "go after"
+  },
+  "say": {
+    "text": "to say",
+    "note": "speak words"
+  },
+  "eat": {
+    "text": "to eat",
+    "note": "consume food"
+  },
+  "drink": {
+    "text": "to drink",
+    "note": "consume liquid"
+  },
+  "kill": {
+    "text": "to kill",
+    "note": "cause death"
+  },
+  "die": {
+    "text": "to die",
+    "note": "cease living"
+  },
+  "laugh": {
+    "text": "to laugh",
+    "note": "express mirth"
+  },
+  "hear": {
+    "text": "to hear",
+    "note": "perceive sound"
+  },
+  "taste": {
+    "text": "to taste"
+  },
+  "touch": {
+    "text": "to touch"
+  },
+  "kiss": {
+    "text": "to kiss"
+  },
+  "burn": {
+    "text": "to burn"
+  },
+  "melt": {
+    "text": "to melt"
+  },
+  "dig": {
+    "text": "to dig"
+  },
+  "explode": {
+    "text": "to explode"
+  },
+  "pass": {
+    "text": "to pass",
+    "note": "go by"
+  },
+  "cut": {
+    "text": "to cut",
+    "note": "divide with blade"
+  },
+  "fight": {
+    "text": "to fight"
+  },
+  "wake_up": {
+    "text": "to wake up",
+    "note": "stop sleeping"
+  },
+  "marry": {
+    "text": "to marry"
+  },
+  "pray": {
+    "text": "to pray"
+  },
+  "win": {
+    "text": "to win / to get",
+    "note": "be victorious / obtain/receive"
+  },
+  "lose": {
+    "text": "to lose",
+    "note": "misplace"
+  },
+  "mixstir": {
+    "text": "to mix/stir"
+  },
+  "bend": {
+    "text": "to bend"
+  },
+  "wash": {
+    "text": "to wash"
+  },
+  "open": {
+    "text": "to open",
+    "note": "unclose"
+  },
+  "close": {
+    "text": "to close"
+  },
+  "call": {
+    "text": "to call",
+    "note": "telephone/shout"
+  },
+  "turn": {
+    "text": "to turn",
+    "note": "rotate/change direction"
+  },
+  "build": {
+    "text": "to build",
+    "note": "construct"
+  },
+  "grow": {
+    "text": "to grow",
+    "note": "increase"
+  },
+  "draw": {
+    "text": "to draw"
+  },
+  "feed": {
+    "text": "to feed"
+  },
+  "catch": {
+    "text": "to catch"
+  },
+  "throw": {
+    "text": "to throw"
+  },
+  "find": {
+    "text": "to find",
+    "note": "locate"
+  },
+  "fall": {
+    "text": "to fall",
+    "note": "drop down"
+  },
+  "push": {
+    "text": "to push",
+    "note": "press away"
+  },
+  "pull": {
+    "text": "to pull",
+    "note": "tug toward"
+  },
+  "carry": {
+    "text": "to carry",
+    "note": "hold and move"
+  },
+  "break": {
+    "text": "to break",
+    "note": "shatter/stop working"
+  },
+  "hang": {
+    "text": "to hang"
+  },
+  "shake": {
+    "text": "to shake"
+  },
+  "sign": {
+    "text": "to sign"
+  },
+  "beat": {
+    "text": "to beat"
+  },
+  "play_instrument": {
+    "text": "to play instrument"
+  },
+  "smell": {
+    "text": "to smell"
+  },
+  "shoot": {
+    "text": "to shoot",
+    "note": "a gun"
+  },
+  "choose": {
+    "text": "to choose",
+    "note": "select"
+  },
+  "check": {
+    "text": "to check",
+    "note": "verify"
+  },
+  "check_out": {
+    "text": "to check out",
+    "note": "examine/leave"
+  },
+  "support": {
+    "text": "to support",
+    "note": "help/hold up"
+  },
+  "care": {
+    "text": "to care",
+    "note": "feel concern"
+  },
+  "do": {
+    "text": "to do",
+    "note": "perform an action"
+  },
+  "get": {
+    "text": "to get",
+    "note": "obtain/receive"
+  },
+  "look_for": {
+    "text": "to look for",
+    "note": "search for something"
+  },
+  "look_at": {
+    "text": "to look at",
+    "note": "view/examine"
+  },
+  "get_up": {
+    "text": "to get up",
+    "note": "rise from bed"
+  },
+  "take": {
+    "text": "to take",
+    "note": "move something/someone"
+  },
+  "find_out": {
+    "text": "to find out",
+    "note": "discover information"
+  },
+  "give_up": {
+    "text": "to give up",
+    "note": "quit/stop trying"
+  },
+  "call_back": {
+    "text": "to call back",
+    "note": "return a call"
+  },
+  "try": {
+    "text": "to try",
+    "note": "attempt"
+  },
+  "try_on": {
+    "text": "to try on",
+    "note": "test clothes"
+  },
+  "ask": {
+    "text": "to ask",
+    "note": "request info"
+  },
+  "need": {
+    "text": "to need",
+    "note": "require"
+  },
+  "feel": {
+    "text": "to feel",
+    "note": "experience emotion/touch"
+  },
+  "become": {
+    "text": "to become",
+    "note": "change state"
+  },
+  "leave": {
+    "text": "to leave",
+    "note": "go away"
+  },
+  "put": {
+    "text": "to put",
+    "note": "place somewhere"
+  },
+  "put_on": {
+    "text": "to put on",
+    "note": "dress yourself"
+  },
+  "take_off": {
+    "text": "to take off",
+    "note": "remove clothes/launch"
+  },
+  "mean": {
+    "text": "to mean",
+    "note": "signify"
+  },
+  "keep": {
+    "text": "to keep",
+    "note": "continue/retain"
+  },
+  "let": {
+    "text": "to let",
+    "note": "allow"
+  },
+  "begin": {
+    "text": "to begin",
+    "note": "start"
+  },
+  "seem": {
+    "text": "to seem",
+    "note": "appear to be"
+  },
+  "turn_on": {
+    "text": "to turn on",
+    "note": "operate power"
+  },
+  "turn_off": {
+    "text": "to turn off",
+    "note": "operate power"
+  },
+  "move": {
+    "text": "to move",
+    "note": "change position"
+  },
+  "move_in": {
+    "text": "to move in",
+    "note": "change homes"
+  },
+  "move_out": {
+    "text": "to move out",
+    "note": "change homes"
+  },
+  "believe": {
+    "text": "to believe",
+    "note": "trust"
+  },
+  "bring": {
+    "text": "to bring",
+    "note": "carry to"
+  },
+  "bring_up": {
+    "text": "to bring up",
+    "note": "mention a topic"
+  },
+  "happen": {
+    "text": "to happen",
+    "note": "occur"
+  },
+  "sit_down": {
+    "text": "to sit down",
+    "note": "take a seat"
+  },
+  "pay_for": {
+    "text": "to pay for",
+    "note": "purchase/suffer"
+  },
+  "meet": {
+    "text": "to meet",
+    "note": "encounter"
+  },
+  "meet_up": {
+    "text": "to meet up",
+    "note": "social gathering"
+  },
+  "include": {
+    "text": "to include",
+    "note": "add in"
+  },
+  "continue": {
+    "text": "to continue",
+    "note": "keep going"
+  },
+  "set": {
+    "text": "to set",
+    "note": "place/arrange"
+  },
+  "set_up": {
+    "text": "to set up",
+    "note": "organize/arrange"
+  },
+  "change": {
+    "text": "to change",
+    "note": "alter"
+  },
+  "lead": {
+    "text": "to lead",
+    "note": "guide"
+  },
+  "watch_out": {
+    "text": "to watch out",
+    "note": "be careful"
+  },
+  "create": {
+    "text": "to create",
+    "note": "invent"
+  },
+  "add": {
+    "text": "to add",
+    "note": "join together"
+  },
+  "spend": {
+    "text": "to spend",
+    "note": "use money/time"
+  },
+  "grow_up": {
+    "text": "to grow up",
+    "note": "mature"
+  },
+  "offer": {
+    "text": "to offer",
+    "note": "propose"
+  },
+  "remember": {
+    "text": "to remember",
+    "note": "recall"
+  },
+  "consider": {
+    "text": "to consider",
+    "note": "think about"
+  },
+  "appear": {
+    "text": "to appear",
+    "note": "become visible"
+  },
+  "wait_for": {
+    "text": "to wait for",
+    "note": "anticipate"
+  },
+  "serve": {
+    "text": "to serve",
+    "note": "provide service"
+  },
+  "send": {
+    "text": "to send",
+    "note": "dispatch"
+  },
+  "stay": {
+    "text": "to stay / to remain",
+    "note": "remain / stay behind"
+  },
+  "reach": {
+    "text": "to reach",
+    "note": "arrive at/touch"
+  },
+  "require": {
+    "text": "to require",
+    "note": "need"
+  },
+  "report": {
+    "text": "to report",
+    "note": "state facts"
+  },
+  "decide": {
+    "text": "to decide",
+    "note": "make a choice"
+  },
+  "break_down": {
+    "text": "to break down",
+    "note": "fail mechanically"
+  },
+  "agree": {
+    "text": "to agree",
+    "note": "concur"
+  },
+  "explain": {
+    "text": "to explain",
+    "note": "clarify"
+  },
+  "hope": {
+    "text": "to hope",
+    "note": "desire/expect"
+  },
+  "develop": {
+    "text": "to develop",
+    "note": "evolve/build"
+  },
+  "fear": {
+    "text": "to fear",
+    "note": "be afraid"
+  },
+  "thank": {
+    "text": "to thank",
+    "note": "express gratitude"
+  },
+  "receive": {
+    "text": "to receive",
+    "note": "get"
+  },
+  "join": {
+    "text": "to join",
+    "note": "unite"
+  },
+  "now": {
+    "text": "now"
+  },
+  "then": {
+    "text": "then",
+    "note": "calendar"
+  },
+  "then_o": {
+    "text": "then",
+    "note": "event"
+  },
+  "today": {
+    "text": "today"
+  },
+  "tonight": {
+    "text": "tonight"
+  },
+  "yesterday": {
+    "text": "yesterday"
+  },
+  "tomorrow": {
+    "text": "tomorrow"
+  },
+  "soon": {
+    "text": "soon"
+  },
+  "later": {
+    "text": "later"
+  },
+  "earlier": {
+    "text": "earlier / previously"
+  },
+  "recently": {
+    "text": "recently"
+  },
+  "always": {
+    "text": "always"
+  },
+  "often": {
+    "text": "often"
+  },
+  "usually": {
+    "text": "usually"
+  },
+  "sometimes": {
+    "text": "sometimes"
+  },
+  "rarely": {
+    "text": "rarely / seldom"
+  },
+  "never": {
+    "text": "never"
+  },
+  "already": {
+    "text": "already"
+  },
+  "yet": {
+    "text": "yet / still"
+  },
+  "immediately": {
+    "text": "immediately"
+  },
+  "before": {
+    "text": "before"
+  },
+  "after": {
+    "text": "after"
+  },
+  "under": {
+    "text": "under / below"
+  },
+  "over": {
+    "text": "over / above"
+  },
+  "behind": {
+    "text": "behind"
+  },
+  "in_front_of": {
+    "text": "in front of"
+  },
+  "between": {
+    "text": "between"
+  },
+  "beside": {
+    "text": "beside / next to"
+  },
+  "in": {
+    "text": "in"
+  },
+  "inside": {
+    "text": "inside"
+  },
+  "on": {
+    "text": "on"
+  },
+  "near": {
+    "text": "near / close to"
+  },
+  "this": {
+    "text": "this",
+    "note": "right here"
+  },
+  "that": {
+    "text": "that",
+    "note": "near you"
+  },
+  "that_o": {
+    "text": "that",
+    "note": "over there/distant"
+  },
+  "such": {
+    "text": "such / like this"
+  },
+  "such_o": {
+    "text": "such / like that"
+  },
+  "such_o_2": {
+    "text": "such / like that",
+    "note": "distant"
+  },
+  "this_much": {
+    "text": "this much / this big"
+  },
+  "that_much": {
+    "text": "that much / that big"
+  },
+  "this_many": {
+    "text": "this many / this much"
+  },
+  "that_many": {
+    "text": "that many / that much"
+  },
+  "left": {
+    "text": "left"
+  },
+  "right": {
+    "text": "right"
+  },
+  "straight": {
+    "text": "straight"
+  },
+  "forward": {
+    "text": "forward"
+  },
+  "backward": {
+    "text": "backward"
+  },
+  "up": {
+    "text": "up / upwards"
+  },
+  "down": {
+    "text": "down / downwards"
+  },
+  "across": {
+    "text": "across / opposite"
+  },
+  "sideways": {
+    "text": "sideways"
+  },
+  "everywhere": {
+    "text": "everywhere"
+  },
+  "much": {
+    "text": "much / many"
+  },
+  "a_lot": {
+    "text": "a lot / full"
+  },
+  "very": {
+    "text": "very",
+    "note": "intense"
+  },
+  "very_o": {
+    "text": "very",
+    "note": "formal"
+  },
+  "too": {
+    "text": "too",
+    "note": "excessive"
+  },
+  "enough": {
+    "text": "enough"
+  },
+  "little": {
+    "text": "little / bit"
+  },
+  "almost": {
+    "text": "almost"
+  },
+  "more": {
+    "text": "more"
+  },
+  "less": {
+    "text": "less"
+  },
+  "completely": {
+    "text": "completely / quite"
+  },
+  "totally": {
+    "text": "totally / fully"
+  },
+  "exactly": {
+    "text": "exactly / really",
+    "note": "the ultimate emphasis word"
+  },
+  "partially": {
+    "text": "partially"
+  },
+  "mostly": {
+    "text": "mostly"
+  },
+  "only": {
+    "text": "only"
+  },
+  "hardly": {
+    "text": "hardly / barely"
+  },
+  "sufficiently": {
+    "text": "sufficiently"
+  },
+  "exceedingly": {
+    "text": "exceedingly / terribly",
+    "note": "used like \"terribly good\" or \"terribly fast\""
+  },
+  "at_least": {
+    "text": "at least"
+  },
+  "person": {
+    "text": "person"
+  },
+  "man": {
+    "text": "man"
+  },
+  "woman": {
+    "text": "woman"
+  },
+  "child": {
+    "text": "child"
+  },
+  "boy": {
+    "text": "boy"
+  },
+  "girl": {
+    "text": "girl"
+  },
+  "friend": {
+    "text": "friend"
+  },
+  "family": {
+    "text": "family"
+  },
+  "father": {
+    "text": "father"
+  },
+  "mother": {
+    "text": "mother"
+  },
+  "brother": {
+    "text": "brother"
+  },
+  "sister": {
+    "text": "sister"
+  },
+  "husband": {
+    "text": "husband"
+  },
+  "wife": {
+    "text": "wife"
+  },
+  "doctor": {
+    "text": "doctor"
+  },
+  "police": {
+    "text": "police"
+  },
+  "home": {
+    "text": "home"
+  },
+  "city": {
+    "text": "city"
+  },
+  "street": {
+    "text": "street"
+  },
+  "school": {
+    "text": "school"
+  },
+  "store": {
+    "text": "store"
+  },
+  "hospital": {
+    "text": "hospital"
+  },
+  "park": {
+    "text": "park"
+  },
+  "country": {
+    "text": "country"
+  },
+  "land": {
+    "text": "land"
+  },
+  "world": {
+    "text": "world"
+  },
+  "office": {
+    "text": "office"
+  },
+  "room": {
+    "text": "room"
+  },
+  "station": {
+    "text": "station"
+  },
+  "airport": {
+    "text": "airport"
+  },
+  "thing": {
+    "text": "thing"
+  },
+  "car": {
+    "text": "car"
+  },
+  "bus": {
+    "text": "bus"
+  },
+  "book": {
+    "text": "book"
+  },
+  "money": {
+    "text": "money"
+  },
+  "money_n": {
+    "text": "money",
+    "note": "slang, closer to cash"
+  },
+  "water": {
+    "text": "water"
+  },
+  "food": {
+    "text": "food"
+  },
+  "bread": {
+    "text": "bread"
+  },
+  "coffee": {
+    "text": "coffee"
+  },
+  "phone": {
+    "text": "phone"
+  },
+  "computer": {
+    "text": "computer"
+  },
+  "bed": {
+    "text": "bed"
+  },
+  "door": {
+    "text": "door"
+  },
+  "window": {
+    "text": "window"
+  },
+  "table": {
+    "text": "table"
+  },
+  "chair": {
+    "text": "chair"
+  },
+  "bag": {
+    "text": "bag"
+  },
+  "clothing": {
+    "text": "clothing"
+  },
+  "time": {
+    "text": "time"
+  },
+  "year": {
+    "text": "year"
+  },
+  "month": {
+    "text": "month"
+  },
+  "week": {
+    "text": "week"
+  },
+  "day": {
+    "text": "day"
+  },
+  "night": {
+    "text": "night"
+  },
+  "morning": {
+    "text": "morning"
+  },
+  "evening": {
+    "text": "evening"
+  },
+  "sun": {
+    "text": "sun"
+  },
+  "moon": {
+    "text": "moon"
+  },
+  "sky": {
+    "text": "sky"
+  },
+  "rain": {
+    "text": "rain"
+  },
+  "tree": {
+    "text": "tree"
+  },
+  "flower": {
+    "text": "flower"
+  },
+  "animal": {
+    "text": "animal"
+  },
+  "dog": {
+    "text": "dog"
+  },
+  "cat": {
+    "text": "cat"
+  },
+  "life": {
+    "text": "life"
+  },
+  "love_n": {
+    "text": "love"
+  },
+  "work_n": {
+    "text": "work"
+  },
+  "job": {
+    "text": "job"
+  },
+  "problem": {
+    "text": "problem"
+  },
+  "idea": {
+    "text": "idea"
+  },
+  "word": {
+    "text": "word"
+  },
+  "number": {
+    "text": "number"
+  },
+  "name": {
+    "text": "name"
+  },
+  "part": {
+    "text": "part"
+  },
+  "question": {
+    "text": "question"
+  },
+  "answer_n": {
+    "text": "answer"
+  },
+  "reason": {
+    "text": "reason"
+  },
+  "good": {
+    "text": "good"
+  },
+  "bad": {
+    "text": "bad"
+  },
+  "beautiful": {
+    "text": "beautiful / nice"
+  },
+  "ugly": {
+    "text": "ugly"
+  },
+  "big": {
+    "text": "big / large"
+  },
+  "small": {
+    "text": "small / little"
+  },
+  "new": {
+    "text": "new"
+  },
+  "old": {
+    "text": "old"
+  },
+  "cheap": {
+    "text": "cheap"
+  },
+  "expensive": {
+    "text": "expensive"
+  },
+  "easy": {
+    "text": "easy"
+  },
+  "difficult": {
+    "text": "difficult / heavy"
+  },
+  "correct": {
+    "text": "correct / right"
+  },
+  "wrong": {
+    "text": "wrong / incorrect"
+  },
+  "clean_a": {
+    "text": "clean"
+  },
+  "dirty": {
+    "text": "dirty"
+  },
+  "happy": {
+    "text": "happy"
+  },
+  "sad": {
+    "text": "sad"
+  },
+  "hungry": {
+    "text": "hungry"
+  },
+  "thirsty": {
+    "text": "thirsty"
+  },
+  "tired": {
+    "text": "tired"
+  },
+  "young": {
+    "text": "young"
+  },
+  "rich": {
+    "text": "rich"
+  },
+  "poor": {
+    "text": "poor"
+  },
+  "strong": {
+    "text": "strong"
+  },
+  "weak": {
+    "text": "weak"
+  },
+  "smart": {
+    "text": "smart"
+  },
+  "brave": {
+    "text": "brave"
+  },
+  "honest": {
+    "text": "honest"
+  },
+  "angry": {
+    "text": "angry"
+  },
+  "furious": {
+    "text": "furious"
+  },
+  "hot": {
+    "text": "hot",
+    "note": "temperature"
+  },
+  "warm": {
+    "text": "warm"
+  },
+  "cold": {
+    "text": "cold"
+  },
+  "sweet": {
+    "text": "sweet"
+  },
+  "salty": {
+    "text": "salty"
+  },
+  "sour": {
+    "text": "sour"
+  },
+  "bitter": {
+    "text": "bitter"
+  },
+  "spicy": {
+    "text": "spicy / hot",
+    "note": "taste"
+  },
+  "delicious": {
+    "text": "delicious / tasty"
+  },
+  "soft": {
+    "text": "soft"
+  },
+  "hard": {
+    "text": "hard"
+  },
+  "dry": {
+    "text": "dry"
+  },
+  "wet": {
+    "text": "wet"
+  },
+  "fast": {
+    "text": "fast"
+  },
+  "slow": {
+    "text": "slow"
+  },
+  "white": {
+    "text": "white"
+  },
+  "black": {
+    "text": "black"
+  },
+  "red": {
+    "text": "red"
+  },
+  "blue": {
+    "text": "blue"
+  },
+  "green": {
+    "text": "green"
+  },
+  "yellow": {
+    "text": "yellow"
+  },
+  "grey": {
+    "text": "grey"
+  },
+  "brown": {
+    "text": "brown"
+  },
+  "orange": {
+    "text": "orange"
+  },
+  "pink": {
+    "text": "pink"
+  },
+  "purple": {
+    "text": "purple"
+  },
+  "gold": {
+    "text": "gold"
+  },
+  "silver": {
+    "text": "silver"
+  },
+  "beige": {
+    "text": "beige"
+  },
+  "light": {
+    "text": "light",
+    "note": "-color"
+  },
+  "dark": {
+    "text": "dark",
+    "note": "-color"
+  },
+  "bright": {
+    "text": "bright"
+  },
+  "colorful": {
+    "text": "colorful"
+  },
+  "vibrant": {
+    "text": "vibrant"
+  },
+  "pale": {
+    "text": "pale"
+  },
+  "shiny": {
+    "text": "shiny"
+  },
+  "matte": {
+    "text": "matte"
+  },
+  "transparent": {
+    "text": "transparent"
+  },
+  "multicolor": {
+    "text": "multicolor"
+  }
 }

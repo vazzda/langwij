@@ -247,5 +247,9 @@
 
   "settingsHide": "Hide",
   "settingsDeveloper": "Developer",
-  "settingsControlsList": "Controls List"
+  "settingsControlsList": "Controls List",
+
+  "quiz_aspectImperfective": "Imperfective:",
+  "quiz_aspectPerfective": "Perfective:",
+  "quiz_aspectPairPrompt": "Type both aspect forms"
 }

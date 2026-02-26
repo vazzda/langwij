@@ -476,4 +476,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsControlsList => 'Controls List';
+
+  @override
+  String get quiz_aspectImperfective => 'Imperfective:';
+
+  @override
+  String get quiz_aspectPerfective => 'Perfective:';
+
+  @override
+  String get quiz_aspectPairPrompt => 'Type both aspect forms';
 }

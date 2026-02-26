@@ -157,10 +157,9 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
   int _countCards(VocabGroupModel group, LanguagePack target, LanguagePack native) {
     int count = 0;
     for (final cid in group.conceptIds) {
-      final t = target.translations[cid];
-      final n = native.translations[cid];
-      if (t != null && t.isNotEmpty && n != null && n.isNotEmpty) {
-        count += t.length;
+      if (target.translations.containsKey(cid) &&
+          native.translations.containsKey(cid)) {
+        count++;
       }
     }
     return count;

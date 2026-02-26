@@ -1272,6 +1272,17 @@
   },
   "groups": [
     {
+      "id": "basic_verbs_00",
+      "labelKey": "groupBasicVerbs04",
+      "concepts": [
+        "lie_down",
+        "lie_down",
+        "lie_down",
+        "lie_down",
+        "work"
+      ]
+    },
+    {
       "id": "basic_verbs_01",
       "labelKey": "groupBasicVerbs01",
       "concepts": [

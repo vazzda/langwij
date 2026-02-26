@@ -35,6 +35,7 @@ class SessionScreen extends ConsumerStatefulWidget {
 
 class _SessionScreenState extends ConsumerState<SessionScreen> {
   final _writeController = TextEditingController();
+  final _writeController2 = TextEditingController();
   final _random = Random();
   bool _hasFinalized = false;
   /// When non-null, user just answered wrong; show this correct answer and Next.
@@ -49,6 +50,7 @@ class _SessionScreenState extends ConsumerState<SessionScreen> {
   @override
   void dispose() {
     _writeController.dispose();
+    _writeController2.dispose();
     super.dispose();
   }
 
@@ -165,6 +167,11 @@ class _SessionScreenState extends ConsumerState<SessionScreen> {
                           : card.nativeNote!,
                     ),
                   ],
+                  if (card is PairVocabCard &&
+                      session.mode == QuizMode.write) ...[
+                    const SizedBox(height: 8),
+                    ProjectNote(text: l10n.quiz_aspectPairPrompt),
+                  ],
                 ],
               ),
             ),
@@ -190,24 +197,57 @@ class _SessionScreenState extends ConsumerState<SessionScreen> {
                 onPressed: () => _onNextAfterWrong(ref),
               ),
             ] else if (session.mode == QuizMode.write) ...[
-              Text(
-                l10n.yourAnswer,
-                style: AppFontStyles.textControlLabel.copyWith(color: t.textPrimary),
-              ),
-              const SizedBox(height: 8),
-              ProjectTextInput(
-                controller: _writeController,
-                onSubmitted: (_) => _submitWrite(context, ref),
-                autofocus: true,
-                textInputAction: TextInputAction.done,
-                autocorrect: false,
-                enableSuggestions: false,
-              ),
-              const SizedBox(height: 16),
-              AccentButton(
-                label: l10n.submit,
-                onPressed: () => _submitWrite(context, ref),
-              ),
+              if (card is PairVocabCard) ...[
+                Text(
+                  l10n.quiz_aspectImperfective,
+                  style: AppFontStyles.textControlLabel.copyWith(color: t.textPrimary),
+                ),
+                const SizedBox(height: 8),
+                ProjectTextInput(
+                  controller: _writeController,
+                  autofocus: true,
+                  textInputAction: TextInputAction.next,
+                  autocorrect: false,
+                  enableSuggestions: false,
+                ),
+                const SizedBox(height: 12),
+                Text(
+                  l10n.quiz_aspectPerfective,
+                  style: AppFontStyles.textControlLabel.copyWith(color: t.textPrimary),
+                ),
+                const SizedBox(height: 8),
+                ProjectTextInput(
+                  controller: _writeController2,
+                  onSubmitted: (_) => _submitWritePair(context, ref),
+                  textInputAction: TextInputAction.done,
+                  autocorrect: false,
+                  enableSuggestions: false,
+                ),
+                const SizedBox(height: 16),
+                AccentButton(
+                  label: l10n.submit,
+                  onPressed: () => _submitWritePair(context, ref),
+                ),
+              ] else ...[
+                Text(
+                  l10n.yourAnswer,
+                  style: AppFontStyles.textControlLabel.copyWith(color: t.textPrimary),
+                ),
+                const SizedBox(height: 8),
+                ProjectTextInput(
+                  controller: _writeController,
+                  onSubmitted: (_) => _submitWrite(context, ref),
+                  autofocus: true,
+                  textInputAction: TextInputAction.done,
+                  autocorrect: false,
+                  enableSuggestions: false,
+                ),
+                const SizedBox(height: 16),
+                AccentButton(
+                  label: l10n.submit,
+                  onPressed: () => _submitWrite(context, ref),
+                ),
+              ],
             ] else ...[
               ..._buildOptions(
                 context,
@@ -282,6 +322,8 @@ class _SessionScreenState extends ConsumerState<SessionScreen> {
       _wrongUserTypedAnswer = null;
       _wrongUserAnswerDisplay = null;
     });
+    _writeController.clear();
+    _writeController2.clear();
   }
 
   String _buildPromptText(CardModel card, QuizMode mode, AppLocalizations l10n) {
@@ -291,6 +333,32 @@ class _SessionScreenState extends ConsumerState<SessionScreen> {
           : displayNativeForCard(card, l10n);
     }
     return mode == QuizMode.targetShown ? card.targetText : card.nativeText;
+  }
+
+  void _submitWritePair(BuildContext context, WidgetRef ref) {
+    final session = ref.read(sessionProvider);
+    if (session == null || session.currentCard == null) return;
+    final card = session.currentCard! as PairVocabCard;
+
+    final raw1 = _writeController.text.trim();
+    final raw2 = _writeController2.text.trim();
+    final ok1 = normalizeForComparison(raw1) ==
+        normalizeForComparison(card.imperfectiveText);
+    final ok2 = normalizeForComparison(raw2) ==
+        normalizeForComparison(card.perfectiveText);
+
+    if (ok1 && ok2) {
+      ref.read(sessionProvider.notifier).answerCorrect();
+    } else {
+      setState(() {
+        _wrongFeedback = card.targetAnswer;
+        _wrongFeedbackDisplay = card.targetAnswer;
+        _wrongUserTypedAnswer = '$raw1 / $raw2';
+        _wrongUserAnswerDisplay = '$raw1 / $raw2';
+      });
+    }
+    _writeController.clear();
+    _writeController2.clear();
   }
 
   List<Widget> _buildOptions(

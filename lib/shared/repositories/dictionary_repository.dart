@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 
 import '../../entities/language/dictionary.dart';
+import '../../entities/language/lang_entry.dart';
 import '../../entities/language/language_pack.dart';
-import '../../entities/language/translation_entry.dart';
 
 /// Available language packs. Add entries here when adding a new language.
 const _languagePacks = <String, String>{
@@ -42,12 +42,10 @@ class DictionaryRepository {
     final json = await rootBundle.loadString(path);
     final data = jsonDecode(json) as Map<String, dynamic>;
 
-    final translations = <String, List<TranslationEntry>>{};
+    final translations = <String, LangEntry>{};
     for (final entry in data.entries) {
-      final list = (entry.value as List<dynamic>)
-          .map((e) => TranslationEntry.fromJson(e as Map<String, dynamic>))
-          .toList();
-      translations[entry.key] = list;
+      translations[entry.key] =
+          LangEntry.fromJson(entry.value as Map<String, dynamic>);
     }
 
     final pack = LanguagePack(

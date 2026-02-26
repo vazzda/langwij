@@ -1,16 +1,17 @@
 import '../../../entities/card/vocab_card.dart';
 import '../../../entities/group/vocab_group_model.dart';
+import '../../../entities/language/lang_entry.dart';
 import '../../../entities/language/language_pack.dart';
-import '../../../entities/language/translation_entry.dart';
 
 /// Generates VocabCards by joining a group's concepts with target + native translations.
 class CardGenerationService {
   /// Build a list of VocabCards for a vocabulary group.
   ///
-  /// One VocabCard per target translation entry. If a concept has aspect pairs
-  /// (e.g., kupovati + kupiti), each gets its own card.
+  /// One VocabCard per concept. Entry type determines card subtype:
+  ///   [AspectPairEntry] → [PairVocabCard] (two-input write quiz)
+  ///   [SimpleEntry] / [AdjectiveEntry] → [SimpleVocabCard]
   ///
-  /// Skips concepts that are missing from either language pack.
+  /// Skips concepts missing from either pack.
   List<VocabCard> buildCards({
     required VocabGroupModel group,
     required LanguagePack targetPack,
@@ -19,43 +20,56 @@ class CardGenerationService {
     final cards = <VocabCard>[];
 
     for (final conceptId in group.conceptIds) {
-      final targetEntries = targetPack.translations[conceptId];
-      final nativeEntries = nativePack.translations[conceptId];
+      final targetEntry = targetPack.translations[conceptId];
+      final nativeEntry = nativePack.translations[conceptId];
+      if (targetEntry == null || nativeEntry == null) continue;
 
-      // Skip concepts missing in either pack.
-      if (targetEntries == null || nativeEntries == null) continue;
-      if (targetEntries.isEmpty || nativeEntries.isEmpty) continue;
+      final nativeText = _nativeText(nativeEntry);
+      final nativeNote = nativeEntry.note;
 
-      final nativeText = _buildNativeText(nativeEntries);
+      switch (targetEntry) {
+        case AspectPairEntry(
+            :final imperfective,
+            :final perfective,
+            :final note,
+          ):
+          cards.add(PairVocabCard(
+            conceptId: conceptId,
+            nativeText: nativeText,
+            imperfectiveText: imperfective,
+            perfectiveText: perfective,
+            nativeNote: nativeNote,
+            targetNote: note,
+          ));
 
-      for (var i = 0; i < targetEntries.length; i++) {
-        final t = targetEntries[i];
-        cards.add(VocabCard(
-          conceptId: conceptId,
-          translationIndex: i,
-          targetText: t.text,
-          nativeText: _nativeWithAspect(nativeText, t),
-          targetNote: t.note,
-          nativeNote: nativeEntries.first.note,
-          gender: t.gender,
-          aspect: t.aspect,
-          forms: t.forms,
-        ));
+        case SimpleEntry(:final text, :final note):
+          cards.add(SimpleVocabCard(
+            conceptId: conceptId,
+            nativeText: nativeText,
+            targetText: text,
+            nativeNote: nativeNote,
+            targetNote: note,
+          ));
+
+        case AdjectiveEntry(:final m, :final note):
+          cards.add(SimpleVocabCard(
+            conceptId: conceptId,
+            nativeText: nativeText,
+            targetText: m,
+            nativeNote: nativeNote,
+            targetNote: note,
+          ));
       }
     }
 
     return cards;
   }
 
-  /// Joins all native entries with " / " (e.g., "to buy / to purchase").
-  String _buildNativeText(List<TranslationEntry> entries) {
-    return entries.map((e) => e.text).join(' / ');
-  }
-
-  /// Appends aspect label to native text if the target entry has an aspect.
-  String _nativeWithAspect(String baseNative, TranslationEntry target) {
-    if (target.aspect == null) return baseNative;
-    final label = target.aspect == 'perfective' ? '(pf.)' : '(impf.)';
-    return '$baseNative $label';
-  }
+  /// Returns the primary display text for the native side of a card.
+  String _nativeText(LangEntry entry) => switch (entry) {
+        SimpleEntry(:final text) => text,
+        AspectPairEntry(:final imperfective, :final perfective) =>
+          '$imperfective / $perfective',
+        AdjectiveEntry(:final m) => m,
+      };
 }

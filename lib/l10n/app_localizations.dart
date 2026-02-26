@@ -975,6 +975,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Controls List'**
   String get settingsControlsList;
+
+  /// No description provided for @quiz_aspectImperfective.
+  ///
+  /// In en, this message translates to:
+  /// **'Imperfective:'**
+  String get quiz_aspectImperfective;
+
+  /// No description provided for @quiz_aspectPerfective.
+  ///
+  /// In en, this message translates to:
+  /// **'Perfective:'**
+  String get quiz_aspectPerfective;
+
+  /// No description provided for @quiz_aspectPairPrompt.
+  ///
+  /// In en, this message translates to:
+  /// **'Type both aspect forms'**
+  String get quiz_aspectPairPrompt;
 }
 
 class _AppLocalizationsDelegate

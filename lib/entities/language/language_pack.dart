@@ -1,4 +1,4 @@
-import 'translation_entry.dart';
+import 'lang_entry.dart';
 
 /// A loaded language translation pack with completeness info.
 ///
@@ -18,8 +18,8 @@ class LanguagePack {
   /// ARB key for the language's display name (e.g., "lang_english").
   final String labelKey;
 
-  /// Concept ID → list of translation entries.
-  final Map<String, List<TranslationEntry>> translations;
+  /// Concept ID → one translation entry per concept.
+  final Map<String, LangEntry> translations;
 
   /// Total number of concepts in the universal dictionary.
   final int totalConcepts;
