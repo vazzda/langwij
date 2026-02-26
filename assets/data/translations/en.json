@@ -1435,5 +1435,101 @@
   },
   "multicolor": {
     "text": "multicolor"
+  },
+  "meta": {
+    "levels": {
+      "intro": {
+        "name": "Intro"
+      },
+      "basic": {
+        "name": "Basic"
+      },
+      "moderate": {
+        "name": "Moderate"
+      },
+      "advanced": {
+        "name": "Advanced"
+      }
+    },
+    "groups": {
+      "basic_verbs_00": {
+        "name": "Basic Verbs (dev)"
+      },
+      "basic_verbs_01": {
+        "name": "Basic Verbs 01"
+      },
+      "basic_verbs_02": {
+        "name": "Basic Verbs 02"
+      },
+      "basic_verbs_03": {
+        "name": "Basic Verbs 03"
+      },
+      "basic_verbs_04": {
+        "name": "Basic Verbs 04"
+      },
+      "basic_verbs_05": {
+        "name": "Basic Verbs 05"
+      },
+      "basic_verbs_06": {
+        "name": "Basic Verbs 06"
+      },
+      "basic_verbs_07": {
+        "name": "Basic Verbs 07"
+      },
+      "basic_verbs_08": {
+        "name": "Basic Verbs 08"
+      },
+      "basic_verbs_09": {
+        "name": "Basic Verbs 09"
+      },
+      "basic_verbs_10": {
+        "name": "Basic Verbs 10"
+      },
+      "basic_verbs_11": {
+        "name": "Basic Verbs 11"
+      },
+      "adverbs_of_time": {
+        "name": "Adverbs of Time"
+      },
+      "prepositions": {
+        "name": "Prepositions"
+      },
+      "demonstrative_pronouns": {
+        "name": "Demonstrative Pronouns"
+      },
+      "relative_direction": {
+        "name": "Relative Direction"
+      },
+      "degree_quantity": {
+        "name": "Degree & Quantity"
+      },
+      "people": {
+        "name": "People"
+      },
+      "places": {
+        "name": "Places"
+      },
+      "daily_items_objects": {
+        "name": "Daily Items & Objects"
+      },
+      "time_nature": {
+        "name": "Time & Nature"
+      },
+      "abstract_concepts": {
+        "name": "Abstract Concepts"
+      },
+      "general_qualities": {
+        "name": "General Qualities"
+      },
+      "people_emotions": {
+        "name": "People & Emotions"
+      },
+      "senses_feelings": {
+        "name": "Senses & Feelings"
+      },
+      "colors": {
+        "name": "Colors"
+      }
+    }
   }
 }

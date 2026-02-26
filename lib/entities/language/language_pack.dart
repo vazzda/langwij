@@ -1,15 +1,18 @@
 import 'lang_entry.dart';
+import '../level/level_meta.dart';
 
 /// A loaded language translation pack with completeness info.
 ///
-/// Contains all translations for a single language, plus metadata
-/// about how complete the pack is relative to the universal dictionary.
+/// Contains all translations for a single language, plus localized metadata
+/// for levels and groups (used for display names and descriptions).
 class LanguagePack {
   const LanguagePack({
     required this.code,
     required this.labelKey,
     required this.translations,
     required this.totalConcepts,
+    this.levelMeta = const {},
+    this.groupMeta = const {},
   });
 
   /// ISO-ish language code: "en", "sr", "ru".
@@ -23,6 +26,12 @@ class LanguagePack {
 
   /// Total number of concepts in the universal dictionary.
   final int totalConcepts;
+
+  /// Level ID → localized display metadata (name, description).
+  final Map<String, LevelMeta> levelMeta;
+
+  /// Group ID → localized display metadata (name, description).
+  final Map<String, GroupMeta> groupMeta;
 
   /// How many concepts have at least one translation in this pack.
   int get translatedCount => translations.length;

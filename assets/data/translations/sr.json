@@ -1578,5 +1578,101 @@
     "m": "višebojan",
     "f": "višebojna",
     "n": "višebojno"
+  },
+  "meta": {
+    "levels": {
+      "intro": {
+        "name": "Uvod"
+      },
+      "basic": {
+        "name": "Osnovno"
+      },
+      "moderate": {
+        "name": "Srednje"
+      },
+      "advanced": {
+        "name": "Napredno"
+      }
+    },
+    "groups": {
+      "basic_verbs_00": {
+        "name": "Osnovni glagoli (dev)"
+      },
+      "basic_verbs_01": {
+        "name": "Osnovni glagoli 01"
+      },
+      "basic_verbs_02": {
+        "name": "Osnovni glagoli 02"
+      },
+      "basic_verbs_03": {
+        "name": "Osnovni glagoli 03"
+      },
+      "basic_verbs_04": {
+        "name": "Osnovni glagoli 04"
+      },
+      "basic_verbs_05": {
+        "name": "Osnovni glagoli 05"
+      },
+      "basic_verbs_06": {
+        "name": "Osnovni glagoli 06"
+      },
+      "basic_verbs_07": {
+        "name": "Osnovni glagoli 07"
+      },
+      "basic_verbs_08": {
+        "name": "Osnovni glagoli 08"
+      },
+      "basic_verbs_09": {
+        "name": "Osnovni glagoli 09"
+      },
+      "basic_verbs_10": {
+        "name": "Osnovni glagoli 10"
+      },
+      "basic_verbs_11": {
+        "name": "Osnovni glagoli 11"
+      },
+      "adverbs_of_time": {
+        "name": "Prilozi za vreme"
+      },
+      "prepositions": {
+        "name": "Predlozi"
+      },
+      "demonstrative_pronouns": {
+        "name": "Pokazne zamenice"
+      },
+      "relative_direction": {
+        "name": "Relativni pravac"
+      },
+      "degree_quantity": {
+        "name": "Stepen i količina"
+      },
+      "people": {
+        "name": "Ljudi"
+      },
+      "places": {
+        "name": "Mesta"
+      },
+      "daily_items_objects": {
+        "name": "Svakodnevni predmeti"
+      },
+      "time_nature": {
+        "name": "Vreme i priroda"
+      },
+      "abstract_concepts": {
+        "name": "Apstraktni pojmovi"
+      },
+      "general_qualities": {
+        "name": "Opšte osobine"
+      },
+      "people_emotions": {
+        "name": "Ljudi i emocije"
+      },
+      "senses_feelings": {
+        "name": "Čula i osećanja"
+      },
+      "colors": {
+        "name": "Boje"
+      }
+    }
   }
 }

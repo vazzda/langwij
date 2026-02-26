@@ -7,11 +7,15 @@ import '../app/providers/app_settings_provider.dart';
 import '../app/providers/dictionary_provider.dart';
 import '../app/providers/group_progress_provider.dart';
 import '../app/providers/groups_provider.dart';
+import '../app/providers/level_progress_provider.dart';
+import '../app/providers/plan_provider.dart';
 import '../app/router/app_router.dart';
 import '../app/theme/app_themes.dart';
 import '../entities/group/vocab_group_model.dart';
 import '../entities/language/dictionary.dart';
 import '../entities/language/language_pack.dart';
+import '../entities/level/level.dart';
+import '../entities/plan/level_tier.dart';
 import '../features/quiz/session_notifier.dart';
 import 'package:srpski_card/shared/lib/group_label.dart';
 import 'package:srpski_card/shared/lib/progress_calculator.dart';
@@ -20,8 +24,13 @@ import '../app/providers/daily_activity_provider.dart';
 import '../shared/repositories/daily_activity_repository.dart';
 import '../shared/ui/bottom_sheet/quiz_bottom_sheets.dart';
 import '../shared/ui/card/project_card.dart';
+import '../shared/ui/progress_bar/project_progress_bar.dart';
 import '../shared/ui/screen_layout/screen_layout_widget.dart';
 import 'group_list_screen.dart' show retentionColor, retentionLabel, formatRelativeDate;
+
+// ---------------------------------------------------------------------------
+// Screen
+// ---------------------------------------------------------------------------
 
 class VocabGroupListScreen extends ConsumerStatefulWidget {
   const VocabGroupListScreen({super.key});
@@ -76,8 +85,8 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
     final allProgress = ref.watch(groupProgressProvider);
     final settings = ref.watch(appSettingsProvider);
     final asyncStats = ref.watch(dailyActivityProvider);
+    final levelTiers = ref.watch(levelTiersProvider).valueOrNull ?? {};
 
-    // When data loads and we have a pending scroll, schedule restore
     if (asyncDict.hasValue &&
         _pendingScrollOffset != null &&
         !_scrollRestored) {
@@ -86,20 +95,13 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
       });
     }
 
-    double getRetention(String groupId) {
-      final progress = allProgress[groupId];
-      if (progress == null) return 0.0;
-      return ProgressCalculator.calculateRetention(
-          progress, settings.decayFormula);
-    }
-
-    // Wait for all three async values
     final dictionary = asyncDict.valueOrNull;
     final targetPack = asyncTarget.valueOrNull;
     final nativePack = asyncNative.valueOrNull;
 
     if (dictionary == null || targetPack == null || nativePack == null) {
-      final hasError = asyncDict.hasError || asyncTarget.hasError || asyncNative.hasError;
+      final hasError =
+          asyncDict.hasError || asyncTarget.hasError || asyncNative.hasError;
       return ScreenLayoutWidget(
         title: l10n.navVocabulary,
         showBottomNav: true,
@@ -111,13 +113,24 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
       );
     }
 
+    // Build flat list items: [dailyCard, levelHeader, group, group, ..., levelHeader, ...]
+    final items = _buildItems(
+      dictionary: dictionary,
+      nativePack: nativePack,
+      targetPack: targetPack,
+      allProgress: allProgress,
+      levelTiers: levelTiers,
+      l10n: l10n,
+      settings: settings,
+    );
+
     return ScreenLayoutWidget(
       title: l10n.navVocabulary,
       showBottomNav: true,
       child: ListView.builder(
         controller: _scrollController,
         padding: const EdgeInsets.all(16),
-        itemCount: dictionary.groups.length + 1,
+        itemCount: items.length + 1,
         itemBuilder: (context, index) {
           if (index == 0) {
             return Padding(
@@ -125,36 +138,94 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
               child: _DailyActivityCard(asyncStats: asyncStats, l10n: l10n),
             );
           }
-          final group = dictionary.groups[index - 1];
-          final progress = allProgress[group.id];
-          final cardCount = _countCards(group, targetPack, nativePack);
-
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 12),
-            child: _VocabGroupTile(
-              group: group,
-              cardCount: cardCount,
-              progress: progress,
-              retention: getRetention(group.id),
-              l10n: l10n,
-              onTap: () => _onGroupTap(
-                context,
-                group,
-                dictionary,
-                targetPack,
-                nativePack,
-                cardCount,
-                l10n,
+          final item = items[index - 1];
+          return switch (item) {
+            _LevelHeaderItem() => Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: _LevelHeader(
+                  item: item,
+                  levelProgress:
+                      ref.watch(levelProgressProvider(item.level.id)),
+                ),
               ),
-            ),
-          );
+            _GroupItem() => Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: _VocabGroupTile(
+                  item: item,
+                  l10n: l10n,
+                  onTap: () => _onGroupTap(
+                    context,
+                    item.group,
+                    dictionary,
+                    targetPack,
+                    nativePack,
+                    item.cardCount,
+                    l10n,
+                  ),
+                ),
+              ),
+          };
         },
       ),
     );
   }
 
-  /// Count how many cards this group will produce (respects missing translations).
-  int _countCards(VocabGroupModel group, LanguagePack target, LanguagePack native) {
+  List<_ListItem> _buildItems({
+    required Dictionary dictionary,
+    required LanguagePack nativePack,
+    required LanguagePack targetPack,
+    required Map<String, GroupProgress> allProgress,
+    required Map<String, LevelTier> levelTiers,
+    required AppLocalizations l10n,
+    required dynamic settings,
+  }) {
+    final groupsById = dictionary.groupsById;
+    final items = <_ListItem>[];
+
+    double getRetention(String groupId) {
+      final progress = allProgress[groupId];
+      if (progress == null) return 0.0;
+      return ProgressCalculator.calculateRetention(
+          progress, settings.decayFormula);
+    }
+
+    for (final level in dictionary.levels) {
+      final tier = levelTiers[level.id] ?? LevelTier.premium;
+      final levelName =
+          nativePack.levelMeta[level.id]?.name ?? level.id;
+
+      items.add(_LevelHeaderItem(
+        level: level,
+        name: levelName,
+        tier: tier,
+      ));
+
+      for (final groupId in level.groupIds) {
+        final group = groupsById[groupId];
+        if (group == null) continue;
+
+        final cardCount = _countCards(group, targetPack, nativePack);
+        final progress = allProgress[groupId];
+        final groupName = nativePack.groupMeta[groupId]?.name ??
+            groupLabel(l10n, group.labelKey);
+        final groupDesc = nativePack.groupMeta[groupId]?.description;
+
+        items.add(_GroupItem(
+          group: group,
+          cardCount: cardCount,
+          progress: progress,
+          retention: getRetention(groupId),
+          name: groupName,
+          description: groupDesc,
+        ));
+      }
+    }
+
+    return items;
+  }
+
+  int _countCards(
+      VocabGroupModel group, LanguagePack target, LanguagePack native) {
     int count = 0;
     for (final cid in group.conceptIds) {
       if (target.translations.containsKey(cid) &&
@@ -186,9 +257,8 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
     );
     if (selectedCount == null || !context.mounted) return;
 
-    final scrollOffset = _scrollController.hasClients
-        ? _scrollController.offset
-        : 0.0;
+    final scrollOffset =
+        _scrollController.hasClients ? _scrollController.offset : 0.0;
 
     ref.read(sessionProvider.notifier).startVocab(
           group: group,
@@ -203,30 +273,106 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
   }
 }
 
-class _VocabGroupTile extends StatelessWidget {
-  const _VocabGroupTile({
+// ---------------------------------------------------------------------------
+// List item types
+// ---------------------------------------------------------------------------
+
+sealed class _ListItem {}
+
+class _LevelHeaderItem extends _ListItem {
+  _LevelHeaderItem({
+    required this.level,
+    required this.name,
+    required this.tier,
+  });
+
+  final Level level;
+  final String name;
+  final LevelTier tier;
+}
+
+class _GroupItem extends _ListItem {
+  _GroupItem({
     required this.group,
     required this.cardCount,
-    required this.l10n,
-    required this.onTap,
+    required this.name,
+    required this.retention,
     this.progress,
-    this.retention = 0.0,
+    this.description,
   });
 
   final VocabGroupModel group;
   final int cardCount;
-  final AppLocalizations l10n;
-  final VoidCallback onTap;
+  final String name;
+  final String? description;
   final GroupProgress? progress;
   final double retention;
+}
+
+// ---------------------------------------------------------------------------
+// Level header widget
+// ---------------------------------------------------------------------------
+
+class _LevelHeader extends ConsumerWidget {
+  const _LevelHeader({required this.item, required this.levelProgress});
+
+  final _LevelHeaderItem item;
+  final double levelProgress;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final t = AppThemes.of(context);
+    final isPremium = item.tier == LevelTier.premium;
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  item.name,
+                  style: AppFontStyles.textContentHeader
+                      .copyWith(color: t.textPrimary),
+                ),
+              ),
+              if (isPremium)
+                Icon(Icons.lock_outline, size: 16, color: t.textSecondary),
+            ],
+          ),
+          const SizedBox(height: 6),
+          ProjectProgressBar(
+            value: (levelProgress / 100.0).clamp(0.0, 1.0),
+          ),
+          const SizedBox(height: 4),
+        ],
+      ),
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Group tile widget
+// ---------------------------------------------------------------------------
+
+class _VocabGroupTile extends StatelessWidget {
+  const _VocabGroupTile({
+    required this.item,
+    required this.l10n,
+    required this.onTap,
+  });
+
+  final _GroupItem item;
+  final AppLocalizations l10n;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     final t = AppThemes.of(context);
-    final label = groupLabel(l10n, group.labelKey);
-
-    // Show badge if there's any progress
-    final showBadge = progress != null && progress!.recentSessions.isNotEmpty;
+    final showBadge =
+        item.progress != null && item.progress!.recentSessions.isNotEmpty;
 
     return ProjectCard(
       onTap: onTap,
@@ -243,15 +389,27 @@ class _VocabGroupTile extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        label,
-                        style: AppFontStyles.textListItem.copyWith(color: t.textPrimary),
+                        item.name,
+                        style: AppFontStyles.textListItem
+                            .copyWith(color: t.textPrimary),
                       ),
+                      if (item.description != null) ...[
+                        const SizedBox(height: 2),
+                        Text(
+                          item.description!,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppFontStyles.textCaption
+                              .copyWith(color: t.textSecondary),
+                        ),
+                      ],
                       const SizedBox(height: 2),
                       Text(
-                        l10n.wordsCount(cardCount),
+                        l10n.wordsCount(item.cardCount),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: AppFontStyles.textCaption.copyWith(color: t.textSecondary),
+                        style: AppFontStyles.textCaption
+                            .copyWith(color: t.textSecondary),
                       ),
                     ],
                   ),
@@ -265,8 +423,8 @@ class _VocabGroupTile extends StatelessWidget {
               top: 0,
               right: 0,
               child: _ProgressBadge(
-                progress: progress!,
-                retention: retention,
+                progress: item.progress!,
+                retention: item.retention,
                 l10n: l10n,
               ),
             ),
@@ -275,6 +433,10 @@ class _VocabGroupTile extends StatelessWidget {
     );
   }
 }
+
+// ---------------------------------------------------------------------------
+// Progress badge (unchanged)
+// ---------------------------------------------------------------------------
 
 class _ProgressBadge extends StatelessWidget {
   const _ProgressBadge({
@@ -358,6 +520,10 @@ class _ProgressBadge extends StatelessWidget {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Daily activity card (unchanged)
+// ---------------------------------------------------------------------------
+
 class _DailyActivityCard extends StatelessWidget {
   const _DailyActivityCard({
     required this.asyncStats,
@@ -393,17 +559,20 @@ class _DailyActivityCard extends StatelessWidget {
                       : '${l10n.correctCount(stats.correct)} · ${l10n.wrongCount(stats.wrong)} · ${l10n.wordsCount(stats.wordsTouched)}',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: AppFontStyles.textCaption.copyWith(color: t.textSecondary),
+                  style:
+                      AppFontStyles.textCaption.copyWith(color: t.textSecondary),
                 );
               },
               loading: () => Text(
                 l10n.dailyActivityEmpty,
-                style: AppFontStyles.textCaption.copyWith(color: t.textSecondary),
+                style:
+                    AppFontStyles.textCaption.copyWith(color: t.textSecondary),
               ),
               // ignore: unnecessary_underscores
               error: (_, __) => Text(
                 l10n.dailyActivityEmpty,
-                style: AppFontStyles.textCaption.copyWith(color: t.textSecondary),
+                style:
+                    AppFontStyles.textCaption.copyWith(color: t.textSecondary),
               ),
             ),
           ],
