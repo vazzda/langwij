@@ -1,5 +1,69 @@
 {
   "concepts": {
+
+    "sorry": {
+      "pos": "other"
+    },
+    "what": {
+      "pos": "pronoun"
+    },
+    "where": {
+      "pos": "adverb"
+    },
+    "when": {
+      "pos": "adverb"
+    },
+    "how_much": {
+      "pos": "adverb"
+    },
+    "why": {
+      "pos": "adverb"
+    },
+    "here": {
+      "pos": "adverb"
+    },
+    "there": {
+      "pos": "adverb"
+    },
+    "hotel": {
+      "pos": "noun"
+    },
+    "bathroom": {
+      "pos": "noun"
+    },
+    "meat": {
+      "pos": "noun"
+    },
+    "fruit": {
+      "pos": "noun"
+    },
+    "danger": {
+      "pos": "noun"
+    },
+    "medicine": {
+      "pos": "noun"
+    },
+    "closed": {
+      "pos": "adjective"
+    },
+    "one": {
+      "pos": "numeral"
+    },
+    "two": {
+      "pos": "numeral"
+    },
+    "three": {
+      "pos": "numeral"
+    },
+    "ticket": {
+      "pos": "noun"
+    },
+    "restaurant": {
+      "pos": "noun"
+    },
+
+
+
     "hello": {
       "pos": "other"
     },

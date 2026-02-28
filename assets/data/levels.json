@@ -1,6 +1,15 @@
 {
   "levels": [
     {
+      "id": "survival",
+      "groups": [
+        "first_contact",
+        "getting_around",
+        "staying_alive",
+        "making_sense"
+      ]
+    },
+    {
       "id": "intro",
       "groups": [
         "base",
@@ -48,6 +57,85 @@
     }
   ],
   "groups": [
+    {
+      "id": "first_contact",
+      "concepts": [
+        "hello",
+        "goodbye",
+        "please",
+        "thank_you",
+        "sorry",
+        "yes",
+        "no",
+        "i",
+        "you",
+        "this",
+        "what",
+        "where",
+        "how_much",
+        "why"
+      ]
+    },
+    {
+      "id": "getting_around",
+      "concepts": [
+        "want",
+        "need",
+        "go",
+        "come",
+        "help",
+        "speak",
+        "understand",
+        "here",
+        "there",
+        "left",
+        "right",
+        "hotel",
+        "airport",
+        "hospital",
+        "bathroom"
+      ]
+    },
+    {
+      "id": "staying_alive",
+      "concepts": [
+        "eat",
+        "drink",
+        "water",
+        "food",
+        "coffee",
+        "bread",
+        "meat",
+        "fruit",
+        "hot",
+        "cold",
+        "doctor",
+        "police",
+        "danger",
+        "money",
+        "medicine"
+      ]
+    },
+    {
+      "id": "making_sense",
+      "concepts": [
+        "good",
+        "bad",
+        "big",
+        "small",
+        "open",
+        "closed",
+        "now",
+        "later",
+        "today",
+        "tomorrow",
+        "one",
+        "two",
+        "three",
+        "ticket",
+        "restaurant"
+      ]
+    },
     {
       "id": "base",
       "concepts": [

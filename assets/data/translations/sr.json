@@ -1,4 +1,66 @@
 {
+
+  "sorry": {
+    "text": "izvini"
+  },
+  "what": {
+    "text": "šta"
+  },
+  "where": {
+    "text": "gde"
+  },
+  "when": {
+    "text": "kada"
+  },
+  "how_much": {
+    "text": "koliko"
+  },
+  "why": {
+    "text": "zašto"
+  },
+  "here": {
+    "text": "ovde"
+  },
+  "there": {
+    "text": "tamo"
+  },
+  "hotel": {
+    "text": "hotel"
+  },
+  "bathroom": {
+    "text": "toalet"
+  },
+  "meat": {
+    "text": "meso"
+  },
+  "fruit": {
+    "text": "voće"
+  },
+  "danger": {
+    "text": "opasnost"
+  },
+  "medicine": {
+    "text": "lek"
+  },
+  "closed": {
+    "text": "zatvoreno"
+  },
+  "one": {
+    "text": "jedan"
+  },
+  "two": {
+    "text": "dva"
+  },
+  "three": {
+    "text": "tri"
+  },
+  "ticket": {
+    "text": "karta"
+  },
+  "restaurant": {
+    "text": "restoran"
+  },
+
   "hello": {
     "text": "cao"
   },
@@ -1605,6 +1667,9 @@
   },
   "meta": {
     "levels": {
+      "survival": {
+        "name": "Prezivljavanje"
+      },
       "intro": {
         "name": "Uvod"
       },
@@ -1619,6 +1684,18 @@
       }
     },
     "groups": {
+      "first_contact": {
+        "name": "Prvi kontakt"
+      },
+      "getting_around": {
+        "name": "Snalaziti se"
+      },
+      "staying_alive": {
+        "name": "Ostati ziv"
+      },
+      "making_sense": {
+        "name": "Imate smisla"
+      },
       "base": {
         "name": "Osnova"
       },

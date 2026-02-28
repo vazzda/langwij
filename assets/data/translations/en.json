@@ -1,4 +1,66 @@
 {
+
+  "sorry": {
+    "text": "sorry"
+  },
+  "what": {
+    "text": "what"
+  },
+  "where": {
+    "text": "where"
+  },
+  "when": {
+    "text": "when"
+  },
+  "how_much": {
+    "text": "how much"
+  },
+  "why": {
+    "text": "why"
+  },
+  "here": {
+    "text": "here"
+  },
+  "there": {
+    "text": "there"
+  },
+  "hotel": {
+    "text": "hotel"
+  },
+  "bathroom": {
+    "text": "bathroom"
+  },
+  "meat": {
+    "text": "meat"
+  },
+  "fruit": {
+    "text": "fruit"
+  },
+  "danger": {
+    "text": "danger"
+  },
+  "medicine": {
+    "text": "medicine"
+  },
+  "closed": {
+    "text": "closed"
+  },
+  "one": {
+    "text": "one"
+  },
+  "two": {
+    "text": "two"
+  },
+  "three": {
+    "text": "three"
+  },
+  "ticket": {
+    "text": "ticket"
+  },
+  "restaurant": {
+    "text": "restaurant"
+  },
+
   "hello": {
     "text": "hello"
   },
@@ -1462,6 +1524,9 @@
   },
   "meta": {
     "levels": {
+      "survival": {
+        "name": "Survival"
+      },
       "intro": {
         "name": "Intro"
       },
@@ -1476,6 +1541,18 @@
       }
     },
     "groups": {
+      "first_contact": {
+        "name": "First contact"
+      },
+      "getting_around": {
+        "name": "Getting around"
+      },
+      "staying_alive": {
+        "name": "Staying alive"
+      },
+      "making_sense": {
+        "name": "Making sense"
+      },
       "base": {
         "name": "Essentials"
       },
