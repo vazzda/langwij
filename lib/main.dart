@@ -4,6 +4,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
+import 'shared/validators/startup_validator.dart';
 import 'shared/repositories/daily_activity_repository.dart';
 import 'shared/repositories/group_progress_repository.dart';
 import 'shared/repositories/language_settings_repository.dart';
@@ -23,6 +24,7 @@ import 'app/theme/app_themes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await StartupValidator.validate();
   FlutterNativeSplash.preserve(widgetsBinding: WidgetsBinding.instance);
   final db = await DatabaseProvider.database;
   final savedTheme = await loadAppTheme();

@@ -2,6 +2,8 @@ import 'dart:convert';
 
 import 'package:sqflite/sqflite.dart';
 
+import 'db_schema.dart';
+
 /// Per-day stats: correct, wrong, and distinct word IDs touched today.
 class DailyActivityStats {
   const DailyActivityStats({
@@ -32,15 +34,15 @@ class DailyActivityRepository {
   Future<DailyActivityStats> readToday(String targetLang) async {
     final key = _dateKey(DateTime.now());
     final rows = await _db.query(
-      'daily_activity',
-      where: 'date = ? AND target_lang = ?',
+      DbSchema.tableDailyActivity,
+      where: '${DbSchema.colDate} = ? AND ${DbSchema.colTargetLang} = ?',
       whereArgs: [key, targetLang],
     );
     if (rows.isEmpty) return const DailyActivityStats();
     final row = rows.first;
-    final correct = (row['correct'] as int?) ?? 0;
-    final wrong = (row['wrong'] as int?) ?? 0;
-    final wordIdsJson = (row['word_ids'] as String?) ?? '[]';
+    final correct = (row[DbSchema.colCorrect] as int?) ?? 0;
+    final wrong = (row[DbSchema.colWrong] as int?) ?? 0;
+    final wordIdsJson = (row[DbSchema.colWordIds] as String?) ?? '[]';
     final wordIds = (jsonDecode(wordIdsJson) as List<dynamic>).cast<String>();
     return DailyActivityStats(
       correct: correct,
@@ -58,8 +60,8 @@ class DailyActivityRepository {
   }) async {
     final key = _dateKey(DateTime.now());
     final rows = await _db.query(
-      'daily_activity',
-      where: 'date = ? AND target_lang = ?',
+      DbSchema.tableDailyActivity,
+      where: '${DbSchema.colDate} = ? AND ${DbSchema.colTargetLang} = ?',
       whereArgs: [key, targetLang],
     );
 
@@ -69,22 +71,22 @@ class DailyActivityRepository {
 
     if (rows.isNotEmpty) {
       final row = rows.first;
-      totalCorrect += (row['correct'] as int?) ?? 0;
-      totalWrong += (row['wrong'] as int?) ?? 0;
-      final existingJson = (row['word_ids'] as String?) ?? '[]';
+      totalCorrect += (row[DbSchema.colCorrect] as int?) ?? 0;
+      totalWrong += (row[DbSchema.colWrong] as int?) ?? 0;
+      final existingJson = (row[DbSchema.colWordIds] as String?) ?? '[]';
       final existingIds =
           (jsonDecode(existingJson) as List<dynamic>).cast<String>();
       allIds.addAll(existingIds);
     }
 
     await _db.insert(
-      'daily_activity',
+      DbSchema.tableDailyActivity,
       {
-        'date': key,
-        'target_lang': targetLang,
-        'correct': totalCorrect,
-        'wrong': totalWrong,
-        'word_ids': jsonEncode(allIds.toList()),
+        DbSchema.colDate: key,
+        DbSchema.colTargetLang: targetLang,
+        DbSchema.colCorrect: totalCorrect,
+        DbSchema.colWrong: totalWrong,
+        DbSchema.colWordIds: jsonEncode(allIds.toList()),
       },
       conflictAlgorithm: ConflictAlgorithm.replace,
     );

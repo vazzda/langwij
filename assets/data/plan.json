@@ -1,12 +1,21 @@
 {
-  "sr→en": {
-    "free": [
-      "intro"
-    ]
-  },
-  "sr→ru": {
-    "free": [
-      "intro"
-    ]
+  "languages": [
+    { "code": "en", "labelKey": "lang_english" },
+    { "code": "sr", "labelKey": "lang_serbian" },
+    { "code": "ru", "labelKey": "lang_russian" }
+  ],
+  "public_languages": ["en", "sr"],
+  "ui_languages": ["en"],
+  "courses": {
+    "sr→en": {
+      "free": [
+        "survival"
+      ]
+    },
+    "sr→ru": {
+      "free": [
+        "survival"
+      ]
+    }
   }
 }

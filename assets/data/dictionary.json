@@ -841,7 +841,7 @@
       "pos": "noun"
     },
     "eight": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "either": {
       "pos": "other"
@@ -1009,7 +1009,7 @@
       "pos": "noun"
     },
     "first": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "fish": {
       "pos": "noun"
@@ -1018,7 +1018,7 @@
       "pos": "noun"
     },
     "five": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "flirt": {
       "pos": "noun"
@@ -1060,7 +1060,7 @@
       "pos": "other"
     },
     "four": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "fracture": {
       "pos": "noun"
@@ -1198,7 +1198,7 @@
       "pos": "noun"
     },
     "half": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "hammer": {
       "pos": "noun"
@@ -1234,7 +1234,7 @@
       "pos": "verb"
     },
     "he": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "head": {
       "pos": "noun"
@@ -1258,7 +1258,7 @@
       "pos": "verb"
     },
     "her": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "here": {
       "pos": "adverb"
@@ -1273,7 +1273,7 @@
       "pos": "verb"
     },
     "his": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "hold": {
       "pos": "verb"
@@ -1339,7 +1339,7 @@
       "pos": "noun"
     },
     "hundred": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "hungry": {
       "pos": "adjective"
@@ -1429,7 +1429,7 @@
       "pos": "noun"
     },
     "it": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "ivory": {
       "pos": "adjective"
@@ -1519,7 +1519,7 @@
       "pos": "noun"
     },
     "last": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "later": {
       "pos": "other"
@@ -1807,7 +1807,7 @@
       "pos": "noun"
     },
     "my": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "nail_clipper": {
       "pos": "noun"
@@ -1864,7 +1864,7 @@
       "pos": "noun"
     },
     "nine": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "no": {
       "pos": "other"
@@ -1918,7 +1918,7 @@
       "pos": "other"
     },
     "one": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "one_night_stand": {
       "pos": "noun"
@@ -1945,7 +1945,7 @@
       "pos": "other"
     },
     "our": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "oven": {
       "pos": "noun"
@@ -2422,7 +2422,7 @@
       "pos": "verb"
     },
     "seven": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "sex": {
       "pos": "noun"
@@ -2440,7 +2440,7 @@
       "pos": "noun"
     },
     "she": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "sheep": {
       "pos": "noun"
@@ -2509,7 +2509,7 @@
       "pos": "verb"
     },
     "six": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "sketch": {
       "pos": "verb"
@@ -2770,7 +2770,7 @@
       "pos": "noun"
     },
     "ten": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "textbook": {
       "pos": "noun"
@@ -2794,7 +2794,7 @@
       "pos": "noun"
     },
     "their": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "then": {
       "pos": "other"
@@ -2809,7 +2809,7 @@
       "pos": "other"
     },
     "they": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "thing": {
       "pos": "noun"
@@ -2824,10 +2824,10 @@
       "pos": "other"
     },
     "thousand": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "three": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "throw": {
       "pos": "verb"
@@ -2959,7 +2959,7 @@
       "pos": "noun"
     },
     "two": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "ugly": {
       "pos": "adjective"
@@ -3103,7 +3103,7 @@
       "pos": "noun"
     },
     "we": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "weak": {
       "pos": "adjective"
@@ -3133,7 +3133,7 @@
       "pos": "noun"
     },
     "what": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "wheel": {
       "pos": "noun"
@@ -3250,10 +3250,10 @@
       "pos": "adjective"
     },
     "your": {
-      "pos": "pronoun"
+      "pos": "other"
     },
     "zero": {
-      "pos": "numeral"
+      "pos": "other"
     },
     "atm": {
       "pos": "noun"

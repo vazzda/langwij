@@ -9,6 +9,7 @@ class LanguagePack {
   const LanguagePack({
     required this.code,
     required this.labelKey,
+    required this.isPublic,
     required this.translations,
     required this.totalConcepts,
     this.levelMeta = const {},
@@ -20,6 +21,9 @@ class LanguagePack {
 
   /// ARB key for the language's display name (e.g., "lang_english").
   final String labelKey;
+
+  /// Whether this pack is visible outside dev mode.
+  final bool isPublic;
 
   /// Concept ID → one translation entry per concept.
   final Map<String, LangEntry> translations;

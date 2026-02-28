@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../l10n/app_localizations.dart';
 import '../app/providers/language_settings_provider.dart';
+import '../entities/language/lang_codes.dart';
 import '../app/router/app_router.dart';
 import '../app/theme/app_themes.dart';
 import '../shared/ui/card/project_card.dart';
@@ -77,7 +78,7 @@ enum _Tool { conjugations, agreement }
 
 List<_Tool> _toolsForLanguage(String targetLang) {
   switch (targetLang) {
-    case 'sr':
+    case LangCodes.serbian:
       return [_Tool.conjugations, _Tool.agreement];
     default:
       return [];

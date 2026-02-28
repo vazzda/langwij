@@ -1,5 +1,6 @@
 import 'package:sqflite/sqflite.dart';
 
+import 'db_schema.dart';
 import 'models/app_settings.dart';
 import 'models/decay_formula.dart';
 
@@ -12,12 +13,12 @@ class AppSettingsRepository {
   /// Returns current app settings.
   Future<AppSettings> getSettings() async {
     final rows = await _db.query(
-      'app_settings',
-      where: 'key = ?',
-      whereArgs: ['decay_formula'],
+      DbSchema.tableAppSettings,
+      where: '${DbSchema.colKey} = ?',
+      whereArgs: [DbSchema.colDecayFormula],
     );
     if (rows.isEmpty) return const AppSettings();
-    final value = rows.first['value'] as String;
+    final value = rows.first[DbSchema.colValue] as String;
     return AppSettings(
       decayFormula: DecayFormulaExtension.fromKey(value),
     );
@@ -26,8 +27,8 @@ class AppSettingsRepository {
   /// Updates the decay formula.
   Future<void> setDecayFormula(DecayFormula formula) async {
     await _db.insert(
-      'app_settings',
-      {'key': 'decay_formula', 'value': formula.key},
+      DbSchema.tableAppSettings,
+      {DbSchema.colKey: DbSchema.colDecayFormula, DbSchema.colValue: formula.key},
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
   }

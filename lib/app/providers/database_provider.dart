@@ -4,6 +4,8 @@ import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
 import 'package:srpski_card/shared/lib/constants.dart';
+import 'package:srpski_card/shared/repositories/db_schema.dart';
+import 'package:srpski_card/entities/language/lang_codes.dart';
 
 /// Singleton database provider. Manages schema creation and upgrades.
 class DatabaseProvider {
@@ -38,53 +40,62 @@ class DatabaseProvider {
 
   static Future<void> _onCreate(Database db, int version) async {
     await db.execute('''
-      CREATE TABLE daily_activity (
-        date TEXT NOT NULL,
-        target_lang TEXT NOT NULL,
-        correct INTEGER NOT NULL DEFAULT 0,
-        wrong INTEGER NOT NULL DEFAULT 0,
-        word_ids TEXT NOT NULL DEFAULT '[]',
-        PRIMARY KEY (date, target_lang)
+      CREATE TABLE ${DbSchema.tableDailyActivity} (
+        ${DbSchema.colDate} TEXT NOT NULL,
+        ${DbSchema.colTargetLang} TEXT NOT NULL,
+        ${DbSchema.colCorrect} INTEGER NOT NULL DEFAULT 0,
+        ${DbSchema.colWrong} INTEGER NOT NULL DEFAULT 0,
+        ${DbSchema.colWordIds} TEXT NOT NULL DEFAULT '[]',
+        PRIMARY KEY (${DbSchema.colDate}, ${DbSchema.colTargetLang})
       )
     ''');
     await db.execute('''
-      CREATE TABLE group_progress (
-        target_lang TEXT NOT NULL,
-        group_id TEXT NOT NULL,
-        target_shown_progress REAL NOT NULL DEFAULT 0,
-        native_shown_progress REAL NOT NULL DEFAULT 0,
-        write_progress REAL NOT NULL DEFAULT 0,
-        peak_retention REAL NOT NULL DEFAULT 0,
-        last_session_date TEXT,
-        PRIMARY KEY (target_lang, group_id)
+      CREATE TABLE ${DbSchema.tableGroupProgress} (
+        ${DbSchema.colTargetLang} TEXT NOT NULL,
+        ${DbSchema.colGroupId} TEXT NOT NULL,
+        ${DbSchema.colTargetShownProgress} REAL NOT NULL DEFAULT 0,
+        ${DbSchema.colNativeShownProgress} REAL NOT NULL DEFAULT 0,
+        ${DbSchema.colWriteProgress} REAL NOT NULL DEFAULT 0,
+        ${DbSchema.colPeakRetention} REAL NOT NULL DEFAULT 0,
+        ${DbSchema.colLastSessionDate} TEXT,
+        PRIMARY KEY (${DbSchema.colTargetLang}, ${DbSchema.colGroupId})
       )
     ''');
     await db.execute('''
-      CREATE TABLE session_records (
+      CREATE TABLE ${DbSchema.tableSessionRecords} (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        target_lang TEXT NOT NULL,
-        group_id TEXT NOT NULL,
-        date TEXT NOT NULL,
-        score REAL NOT NULL,
-        mode TEXT NOT NULL
+        ${DbSchema.colTargetLang} TEXT NOT NULL,
+        ${DbSchema.colGroupId} TEXT NOT NULL,
+        ${DbSchema.colDate} TEXT NOT NULL,
+        ${DbSchema.colScore} REAL NOT NULL,
+        ${DbSchema.colMode} TEXT NOT NULL
       )
     ''');
     await db.execute('''
-      CREATE TABLE language_stats (
-        target_lang TEXT PRIMARY KEY,
-        concepts_touched_ids TEXT NOT NULL DEFAULT '[]'
+      CREATE TABLE ${DbSchema.tableLanguageStats} (
+        ${DbSchema.colTargetLang} TEXT PRIMARY KEY,
+        ${DbSchema.colConceptsTouchedIds} TEXT NOT NULL DEFAULT '[]'
       )
     ''');
     await db.execute('''
-      CREATE TABLE app_settings (
-        key TEXT PRIMARY KEY,
-        value TEXT NOT NULL
+      CREATE TABLE ${DbSchema.tableAppSettings} (
+        ${DbSchema.colKey} TEXT PRIMARY KEY,
+        ${DbSchema.colValue} TEXT NOT NULL
       )
     ''');
     // Default language settings
-    await db.insert('app_settings', {'key': 'target_lang', 'value': 'sr'});
-    await db.insert('app_settings', {'key': 'native_lang', 'value': 'en'});
-    await db.insert('app_settings', {'key': 'ui_lang', 'value': 'en'});
+    await db.insert(DbSchema.tableAppSettings, {
+      DbSchema.colKey: DbSchema.colTargetLang,
+      DbSchema.colValue: LangCodes.serbian,
+    });
+    await db.insert(DbSchema.tableAppSettings, {
+      DbSchema.colKey: DbSchema.colNativeLang,
+      DbSchema.colValue: LangCodes.english,
+    });
+    await db.insert(DbSchema.tableAppSettings, {
+      DbSchema.colKey: DbSchema.colUiLang,
+      DbSchema.colValue: LangCodes.english,
+    });
   }
 
   static Future<void> _onUpgrade(

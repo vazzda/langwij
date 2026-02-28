@@ -1,3 +1,5 @@
+import 'lang_codes.dart';
+
 /// User's language configuration.
 class LanguageSettings {
   const LanguageSettings({
@@ -16,9 +18,9 @@ class LanguageSettings {
   final String uiLang;
 
   static const defaultSettings = LanguageSettings(
-    targetLang: 'sr',
-    nativeLang: 'en',
-    uiLang: 'en',
+    targetLang: LangCodes.serbian,
+    nativeLang: LangCodes.english,
+    uiLang: LangCodes.english,
   );
 
   LanguageSettings copyWith({

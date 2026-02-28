@@ -6,6 +6,17 @@ A PreToolUse hook enforces this — attempts without "unleash" are blocked.
 
 ## PROJECT RULES
 
+### Code quality gate — mandatory before any implementation
+Before writing any code, perform a senior-level design review of the planned implementation:
+
+1. **Identify every antipattern** in the design: magic strings, magic numbers, raw types where enums or typed constants belong, repeated literals, missing abstractions, violated layer boundaries, leaky encapsulation, hardcoded configuration, parallel state, god objects, responsibilities in the wrong layer, or anything a senior developer would reject in a code review.
+
+2. **For each antipattern found**: fix it before writing a single line, OR explicitly name it, state the tradeoff, and get confirmation to proceed as a deliberate shortcut.
+
+3. **No antipattern may land silently.** If it exists in the delivered code, it was either fixed upfront or consciously accepted after open discussion. There is no third option.
+
+This gate runs at plan time — not as a post-implementation cleanup step.
+
 ### No hardcoded colors
 - NEVER hardcode color values (hex, RGB, opacity modifications like `.withOpacity()`, `Color(0x...)`)
 - ALWAYS use themed colors from `AppThemeData` via `AppThemes.of(context)`
