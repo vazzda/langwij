@@ -2667,1138 +2667,1523 @@
     "n": "čulno"
   },
   "accident_car": {
-    "text": "[SR:accident_car]"
+    "text": "udes",
+    "gender": "m"
   },
   "actor": {
-    "text": "[SR:actor]"
+    "text": "glumac",
+    "gender": "m"
   },
   "affair": {
-    "text": "[SR:affair]"
+    "text": "veza",
+    "gender": "f"
   },
   "algorithm": {
-    "text": "[SR:algorithm]"
+    "text": "algoritam",
+    "gender": "m"
   },
   "allergy": {
-    "text": "[SR:allergy]"
+    "text": "alergija",
+    "gender": "f"
   },
   "anniversary": {
-    "text": "[SR:anniversary]"
+    "text": "godišnjica",
+    "gender": "f"
   },
   "ant": {
-    "text": "[SR:ant]"
+    "text": "mrav",
+    "gender": "m"
   },
   "apology": {
-    "text": "[SR:apology]"
+    "text": "izvinjenje",
+    "gender": "n"
   },
   "app": {
-    "text": "[SR:app]"
+    "text": "aplikacija",
+    "gender": "f"
   },
   "argument": {
-    "text": "[SR:argument]"
+    "text": "argument",
+    "gender": "m"
   },
   "arousal": {
-    "text": "[SR:arousal]"
+    "text": "uzbuđenje",
+    "gender": "n"
   },
   "arrest": {
-    "text": "[SR:arrest]"
+    "text": "hapšenje",
+    "gender": "n"
   },
   "artery": {
-    "text": "[SR:artery]"
+    "text": "arterija",
+    "gender": "f"
   },
   "athlete": {
-    "text": "[SR:athlete]"
+    "text": "sportista",
+    "gender": "m"
   },
   "atom": {
-    "text": "[SR:atom]"
+    "text": "atom",
+    "gender": "m"
   },
   "attorney": {
-    "text": "[SR:attorney]"
+    "text": "advokat",
+    "gender": "m"
   },
   "attraction": {
-    "text": "[SR:attraction]"
+    "text": "privlačnost",
+    "gender": "f"
   },
   "audience": {
-    "text": "[SR:audience]"
+    "text": "publika",
+    "gender": "f"
   },
   "baby": {
-    "text": "[SR:baby]"
+    "text": "beba",
+    "gender": "f"
   },
   "ball": {
-    "text": "[SR:ball]"
+    "text": "lopta",
+    "gender": "f"
   },
   "bandage": {
-    "text": "[SR:bandage]"
+    "text": "povez",
+    "gender": "m"
   },
   "basket": {
-    "text": "[SR:basket]"
+    "text": "korpa",
+    "gender": "f"
   },
   "battery": {
-    "text": "[SR:battery]"
+    "text": "baterija",
+    "gender": "f"
   },
   "bee": {
-    "text": "[SR:bee]"
+    "text": "pčela",
+    "gender": "f"
   },
   "birth": {
-    "text": "[SR:birth]"
+    "text": "rođenje",
+    "gender": "n"
   },
   "blood_pressure": {
-    "text": "[SR:blood_pressure]"
+    "text": "krvni pritisak",
+    "gender": "m"
   },
   "border": {
-    "text": "[SR:border]"
+    "text": "granica",
+    "gender": "f"
   },
   "boyfriend": {
-    "text": "[SR:boyfriend]"
+    "text": "dečko",
+    "gender": "m"
   },
   "brake": {
-    "text": "[SR:brake]"
+    "text": "kočnica",
+    "gender": "f"
   },
   "breakup": {
-    "text": "[SR:breakup]"
+    "text": "raskid",
+    "gender": "m"
   },
   "broom": {
-    "text": "[SR:broom]"
+    "text": "metla",
+    "gender": "f"
   },
   "browser": {
-    "text": "[SR:browser]"
+    "text": "pretraživač",
+    "gender": "m"
   },
   "brush_hygiene": {
-    "text": "[SR:brush_hygiene]"
+    "text": "četka",
+    "gender": "f"
   },
   "budget": {
-    "text": "[SR:budget]"
+    "text": "budžet",
+    "gender": "m"
   },
   "bug": {
-    "text": "[SR:bug]"
+    "text": "greška",
+    "gender": "f"
   },
   "cabinet": {
-    "text": "[SR:cabinet]"
+    "text": "ormar",
+    "gender": "m"
   },
   "camera": {
-    "text": "[SR:camera]"
+    "text": "kamera",
+    "gender": "f"
   },
   "canvas": {
-    "text": "[SR:canvas]"
+    "text": "platno",
+    "gender": "n"
   },
   "canyon": {
-    "text": "[SR:canyon]"
+    "text": "kanjon",
+    "gender": "m"
   },
   "cave": {
-    "text": "[SR:cave]"
+    "text": "pećina",
+    "gender": "f"
   },
   "celebration": {
-    "text": "[SR:celebration]"
+    "text": "proslava",
+    "gender": "f"
   },
   "cell": {
-    "text": "[SR:cell]"
+    "text": "ćelija",
+    "gender": "f"
   },
   "ceremony": {
-    "text": "[SR:ceremony]"
+    "text": "ceremonija",
+    "gender": "f"
   },
   "certificate": {
-    "text": "[SR:certificate]"
+    "text": "sertifikat",
+    "gender": "m"
   },
   "champion": {
-    "text": "[SR:champion]"
+    "text": "prvak",
+    "gender": "m"
   },
   "chance": {
-    "text": "[SR:chance]"
+    "text": "šansa",
+    "gender": "f"
   },
   "channel": {
-    "text": "[SR:channel]"
+    "text": "kanal",
+    "gender": "m"
   },
   "chemical": {
-    "text": "[SR:chemical]"
+    "text": "hemijska supstanca",
+    "gender": "f"
   },
   "cinnamon": {
-    "text": "[SR:cinnamon]"
+    "text": "cimet",
+    "gender": "m"
   },
   "classroom": {
-    "text": "[SR:classroom]"
+    "text": "učionica",
+    "gender": "f"
   },
   "clay": {
-    "text": "[SR:clay]"
+    "text": "glina",
+    "gender": "f"
   },
   "client": {
-    "text": "[SR:client]"
+    "text": "klijent",
+    "gender": "m"
   },
   "cliff": {
-    "text": "[SR:cliff]"
+    "text": "litica",
+    "gender": "f"
   },
   "cloth": {
-    "text": "[SR:cloth]"
+    "text": "tkanina",
+    "gender": "f"
   },
   "cloud_computing": {
-    "text": "[SR:cloud_computing]"
+    "text": "računarstvo u oblaku",
+    "gender": "n"
   },
   "coach": {
-    "text": "[SR:coach]"
+    "text": "trener",
+    "gender": "m"
   },
   "coast": {
-    "text": "[SR:coast]"
+    "text": "obala",
+    "gender": "f"
   },
   "code": {
-    "text": "[SR:code]"
+    "text": "kod",
+    "gender": "m"
   },
   "comb": {
-    "text": "[SR:comb]"
+    "text": "grebalo",
+    "gender": "n"
   },
   "company": {
-    "text": "[SR:company]"
+    "text": "kompanija",
+    "gender": "f"
   },
   "compromise": {
-    "text": "[SR:compromise]"
+    "text": "kompromis",
+    "gender": "m"
   },
   "concert": {
-    "text": "[SR:concert]"
+    "text": "koncert",
+    "gender": "m"
   },
   "condom": {
-    "text": "[SR:condom]"
+    "text": "kondomi",
+    "gender": "m"
   },
   "consciousness": {
-    "text": "[SR:consciousness]"
+    "text": "svest",
+    "gender": "f"
   },
   "consent": {
-    "text": "[SR:consent]"
+    "text": "saglasnost",
+    "gender": "f"
   },
   "constitution": {
-    "text": "[SR:constitution]"
+    "text": "ustav",
+    "gender": "m"
   },
   "continent": {
-    "text": "[SR:continent]"
+    "text": "kontinent",
+    "gender": "m"
   },
   "contract": {
-    "text": "[SR:contract]"
+    "text": "ugovor",
+    "gender": "m"
   },
   "coral": {
-    "text": "[SR:coral]"
+    "m": "koralni",
+    "f": "koralna",
+    "n": "koralno"
   },
   "cotton": {
-    "text": "[SR:cotton]"
+    "text": "pamuk",
+    "gender": "m"
   },
   "couple": {
-    "text": "[SR:couple]"
+    "text": "par",
+    "gender": "m"
   },
   "course": {
-    "text": "[SR:course]"
+    "text": "kurs",
+    "gender": "m"
   },
   "court": {
-    "text": "[SR:court]"
+    "text": "sud",
+    "gender": "m"
   },
   "cream": {
-    "text": "[SR:cream]"
+    "text": "krema",
+    "gender": "f"
   },
   "credit_card": {
-    "text": "[SR:credit_card]"
+    "text": "kreditna kartica",
+    "gender": "f"
   },
   "crime": {
-    "text": "[SR:crime]"
+    "text": "zločin",
+    "gender": "m"
   },
   "crimson": {
-    "text": "[SR:crimson]"
+    "m": "grimizni",
+    "f": "grimizna",
+    "n": "grimizno"
   },
   "crocodile": {
-    "text": "[SR:crocodile]"
+    "text": "krokodil",
+    "gender": "m"
   },
   "currency": {
-    "text": "[SR:currency]"
+    "text": "valuta",
+    "gender": "f"
   },
   "data": {
-    "text": "[SR:data]"
+    "text": "podaci",
+    "gender": "m"
   },
   "database": {
-    "text": "[SR:database]"
+    "text": "baza podataka",
+    "gender": "f"
   },
   "date_romantic": {
-    "text": "[SR:date_romantic]"
+    "text": "sastanak",
+    "gender": "m"
   },
   "deadline": {
-    "text": "[SR:deadline]"
+    "text": "rok",
+    "gender": "m"
   },
   "death": {
-    "text": "[SR:death]"
+    "text": "smrt",
+    "gender": "f"
   },
   "deer": {
-    "text": "[SR:deer]"
+    "text": "jelen",
+    "gender": "m"
   },
   "defeat": {
-    "text": "[SR:defeat]"
+    "text": "poraz",
+    "gender": "m"
   },
   "degree_education": {
-    "text": "[SR:degree_education]"
+    "text": "diploma",
+    "gender": "f"
   },
   "deodorant": {
-    "text": "[SR:deodorant]"
+    "text": "deodorans",
+    "gender": "m"
   },
   "department": {
-    "text": "[SR:department]"
+    "text": "odeljenje",
+    "gender": "n"
   },
   "desert": {
-    "text": "[SR:desert]"
+    "text": "pustinja",
+    "gender": "f"
   },
   "desire": {
-    "text": "[SR:desire]"
+    "text": "želja",
+    "gender": "f"
   },
   "destiny": {
-    "text": "[SR:destiny]"
+    "text": "sudbina",
+    "gender": "f"
   },
   "diagnosis": {
-    "text": "[SR:diagnosis]"
+    "text": "dijagnoza",
+    "gender": "f"
   },
   "diploma": {
-    "text": "[SR:diploma]"
+    "text": "diploma",
+    "gender": "f"
   },
   "dishwasher": {
-    "text": "[SR:dishwasher]"
+    "text": "mašina za pranje sudova",
+    "gender": "f"
   },
   "divorce": {
-    "text": "[SR:divorce]"
+    "text": "razvod",
+    "gender": "m"
   },
   "dolphin": {
-    "text": "[SR:dolphin]"
+    "text": "delfin",
+    "gender": "m"
   },
   "dough": {
-    "text": "[SR:dough]"
+    "text": "testo",
+    "gender": "n"
   },
   "drawer": {
-    "text": "[SR:drawer]"
+    "text": "fioka",
+    "gender": "f"
   },
   "dream_n": {
-    "text": "[SR:dream_n]"
+    "text": "san",
+    "gender": "m"
   },
   "dresser": {
-    "text": "[SR:dresser]"
+    "text": "komoda",
+    "gender": "f"
   },
   "drill": {
-    "text": "[SR:drill]"
+    "text": "bušilica",
+    "gender": "f"
   },
   "eagle": {
-    "text": "[SR:eagle]"
+    "text": "orao",
+    "gender": "m"
   },
   "employee": {
-    "text": "[SR:employee]"
+    "text": "zaposlenik",
+    "gender": "m"
   },
   "encryption": {
-    "text": "[SR:encryption]"
+    "text": "enkripcija",
+    "gender": "f"
   },
   "energy": {
-    "text": "[SR:energy]"
+    "text": "energija",
+    "gender": "f"
   },
   "engagement": {
-    "text": "[SR:engagement]"
+    "text": "zaruka",
+    "gender": "f"
   },
   "engine": {
-    "text": "[SR:engine]"
+    "text": "motor",
+    "gender": "m"
   },
   "enlightenment": {
-    "text": "[SR:enlightenment]"
+    "text": "prosvetljenje",
+    "gender": "n"
   },
   "essay": {
-    "text": "[SR:essay]"
+    "text": "esej",
+    "gender": "m"
   },
   "eternity": {
-    "text": "[SR:eternity]"
+    "text": "večnost",
+    "gender": "f"
   },
   "ethics": {
-    "text": "[SR:ethics]"
+    "text": "etika",
+    "gender": "f"
   },
   "evidence": {
-    "text": "[SR:evidence]"
+    "text": "dokaz",
+    "gender": "m"
   },
   "evolution": {
-    "text": "[SR:evolution]"
+    "text": "evolucija",
+    "gender": "f"
   },
   "exam": {
-    "text": "[SR:exam]"
+    "text": "ispit",
+    "gender": "m"
   },
   "exchange_rate": {
-    "text": "[SR:exchange_rate]"
+    "text": "kurs",
+    "gender": "m"
   },
   "exercise": {
-    "text": "[SR:exercise]"
+    "text": "vežba",
+    "gender": "f"
   },
   "existence": {
-    "text": "[SR:existence]"
+    "text": "postojanje",
+    "gender": "n"
   },
   "experience": {
-    "text": "[SR:experience]"
+    "text": "iskustvo",
+    "gender": "n"
   },
   "experiment": {
-    "text": "[SR:experiment]"
+    "text": "eksperiment",
+    "gender": "m"
   },
   "fact": {
-    "text": "[SR:fact]"
+    "text": "činjenica",
+    "gender": "f"
   },
   "failure": {
-    "text": "[SR:failure]"
+    "text": "neuspeh",
+    "gender": "m"
   },
   "fantasy": {
-    "text": "[SR:fantasy]"
+    "text": "fantazija",
+    "gender": "f"
   },
   "fate": {
-    "text": "[SR:fate]"
+    "text": "sudbina",
+    "gender": "f"
   },
   "fear_n": {
-    "text": "[SR:fear_n]"
+    "text": "strah",
+    "gender": "m"
   },
   "fever": {
-    "text": "[SR:fever]"
+    "text": "groznica",
+    "gender": "f"
   },
   "field": {
-    "text": "[SR:field]"
+    "text": "polje",
+    "gender": "n"
   },
   "film": {
-    "text": "[SR:film]"
+    "text": "film",
+    "gender": "m"
   },
   "fine_n": {
-    "text": "[SR:fine_n]"
+    "text": "kazna",
+    "gender": "f"
   },
   "flirt": {
-    "text": "[SR:flirt]"
+    "text": "flertovanje",
+    "gender": "n"
   },
   "flour": {
-    "text": "[SR:flour]"
+    "text": "brašno",
+    "gender": "n"
   },
   "foreplay": {
-    "text": "[SR:foreplay]"
+    "text": "predigra",
+    "gender": "f"
   },
   "fracture": {
-    "text": "[SR:fracture]"
+    "text": "prelom",
+    "gender": "m"
   },
   "freedom": {
-    "text": "[SR:freedom]"
+    "text": "sloboda",
+    "gender": "f"
   },
   "frog": {
-    "text": "[SR:frog]"
+    "text": "žaba",
+    "gender": "f"
   },
   "fuel": {
-    "text": "[SR:fuel]"
+    "text": "gorivo",
+    "gender": "n"
   },
   "game_n": {
-    "text": "[SR:game_n]"
+    "text": "igra",
+    "gender": "f"
   },
   "garage": {
-    "text": "[SR:garage]"
+    "text": "garaža",
+    "gender": "f"
   },
   "garlic": {
-    "text": "[SR:garlic]"
+    "text": "beli luk",
+    "gender": "m"
   },
   "gas_station": {
-    "text": "[SR:gas_station]"
+    "text": "benzinska pumpa",
+    "gender": "f"
   },
   "gene": {
-    "text": "[SR:gene]"
+    "text": "gen",
+    "gender": "m"
   },
   "gift": {
-    "text": "[SR:gift]"
+    "text": "poklon",
+    "gender": "m"
   },
   "ginger": {
-    "text": "[SR:ginger]"
+    "text": "đumbir",
+    "gender": "m"
   },
   "girlfriend": {
-    "text": "[SR:girlfriend]"
+    "text": "devojka",
+    "gender": "f"
   },
   "glass_material": {
-    "text": "[SR:glass_material]"
+    "text": "staklo",
+    "gender": "n"
   },
   "glue": {
-    "text": "[SR:glue]"
+    "text": "lepak",
+    "gender": "m"
   },
   "goal": {
-    "text": "[SR:goal]"
+    "text": "cilj",
+    "gender": "m"
   },
   "god": {
-    "text": "[SR:god]"
+    "text": "bog",
+    "gender": "m"
   },
   "grade": {
-    "text": "[SR:grade]"
+    "text": "ocena",
+    "gender": "f"
   },
   "gravity": {
-    "text": "[SR:gravity]"
+    "text": "gravitacija",
+    "gender": "f"
   },
   "gym": {
-    "text": "[SR:gym]"
+    "text": "teretana",
+    "gender": "f"
   },
   "hammer": {
-    "text": "[SR:hammer]"
+    "text": "čekić",
+    "gender": "m"
   },
   "hardware": {
-    "text": "[SR:hardware]"
+    "text": "hardver",
+    "gender": "m"
   },
   "highway": {
-    "text": "[SR:highway]"
+    "text": "autoput",
+    "gender": "m"
   },
   "hill": {
-    "text": "[SR:hill]"
+    "text": "brdo",
+    "gender": "n"
   },
   "homework": {
-    "text": "[SR:homework]"
+    "text": "domaći zadatak",
+    "gender": "m"
   },
   "honey": {
-    "text": "[SR:honey]"
+    "text": "med",
+    "gender": "m"
   },
   "honeymoon": {
-    "text": "[SR:honeymoon]"
+    "text": "medeni mesec",
+    "gender": "m"
   },
   "hookup": {
-    "text": "[SR:hookup]"
+    "text": "avantura",
+    "gender": "f"
   },
   "hope_n": {
-    "text": "[SR:hope_n]"
+    "text": "nada",
+    "gender": "f"
   },
   "hormone": {
-    "text": "[SR:hormone]"
+    "text": "hormon",
+    "gender": "m"
   },
   "horn": {
-    "text": "[SR:horn]"
+    "text": "rog",
+    "gender": "m"
   },
   "hug": {
-    "text": "[SR:hug]"
+    "text": "zagrlaj",
+    "gender": "m"
   },
   "hypothesis": {
-    "text": "[SR:hypothesis]"
+    "text": "hipoteza",
+    "gender": "f"
   },
   "ignorance": {
-    "text": "[SR:ignorance]"
+    "text": "neznanje",
+    "gender": "n"
   },
   "illusion": {
-    "text": "[SR:illusion]"
+    "text": "iluzija",
+    "gender": "f"
   },
   "infection": {
-    "text": "[SR:infection]"
+    "text": "infekcija",
+    "gender": "f"
   },
   "infinity": {
-    "text": "[SR:infinity]"
+    "text": "beskonačnost",
+    "gender": "f"
   },
   "inflammation": {
-    "text": "[SR:inflammation]"
+    "text": "upala",
+    "gender": "f"
   },
   "insurance": {
-    "text": "[SR:insurance]"
+    "text": "osiguranje",
+    "gender": "n"
   },
   "interface": {
-    "text": "[SR:interface]"
+    "text": "interfejs",
+    "gender": "m"
   },
   "intimacy": {
-    "text": "[SR:intimacy]"
+    "text": "intimnost",
+    "gender": "f"
   },
   "invitation": {
-    "text": "[SR:invitation]"
+    "text": "poziv",
+    "gender": "m"
   },
   "invoice": {
-    "text": "[SR:invoice]"
+    "text": "račun",
+    "gender": "m"
   },
   "iron_appliance": {
-    "text": "[SR:iron_appliance]"
+    "text": "pegla",
+    "gender": "f"
   },
   "island": {
-    "text": "[SR:island]"
+    "text": "ostrvo",
+    "gender": "n"
   },
   "ivory": {
-    "text": "[SR:ivory]"
+    "m": "boje slonovače",
+    "f": "boje slonovače",
+    "n": "boje slonovače"
   },
   "jellyfish": {
-    "text": "[SR:jellyfish]"
+    "text": "meduza",
+    "gender": "f"
   },
   "judge": {
-    "text": "[SR:judge]"
+    "text": "sudija",
+    "gender": "m"
   },
   "jungle": {
-    "text": "[SR:jungle]"
+    "text": "džungla",
+    "gender": "f"
   },
   "justice": {
-    "text": "[SR:justice]"
+    "text": "pravda",
+    "gender": "f"
   },
   "kidney": {
-    "text": "[SR:kidney]"
+    "text": "bubreg",
+    "gender": "m"
   },
   "laboratory": {
-    "text": "[SR:laboratory]"
+    "text": "laboratorija",
+    "gender": "f"
   },
   "ladder": {
-    "text": "[SR:ladder]"
+    "text": "lepeza",
+    "gender": "f"
   },
   "lake": {
-    "text": "[SR:lake]"
+    "text": "jezero",
+    "gender": "n"
   },
   "lamb": {
-    "text": "[SR:lamb]"
+    "text": "jagnje",
+    "gender": "n"
   },
   "language": {
-    "text": "[SR:language]"
+    "text": "jezik",
+    "gender": "m"
   },
   "law": {
-    "text": "[SR:law]"
+    "text": "zakon",
+    "gender": "m"
   },
   "lawsuit": {
-    "text": "[SR:lawsuit]"
+    "text": "tužba",
+    "gender": "f"
   },
   "league": {
-    "text": "[SR:league]"
+    "text": "liga",
+    "gender": "f"
   },
   "leather": {
-    "text": "[SR:leather]"
+    "text": "koža",
+    "gender": "f"
   },
   "lecture": {
-    "text": "[SR:lecture]"
+    "text": "predavanje",
+    "gender": "n"
   },
   "letter": {
-    "text": "[SR:letter]"
+    "text": "pismo",
+    "gender": "n"
   },
   "libido": {
-    "text": "[SR:libido]"
+    "text": "libido",
+    "gender": "m"
   },
   "library": {
-    "text": "[SR:library]"
+    "text": "biblioteka",
+    "gender": "f"
   },
   "license": {
-    "text": "[SR:license]"
+    "text": "dozvola",
+    "gender": "f"
   },
   "lie_n": {
-    "text": "[SR:lie_n]"
+    "text": "laž",
+    "gender": "f"
   },
   "liver": {
-    "text": "[SR:liver]"
+    "text": "jetra",
+    "gender": "f"
   },
   "loan": {
-    "text": "[SR:loan]"
+    "text": "zajam",
+    "gender": "m"
   },
   "lock_n": {
-    "text": "[SR:lock_n]"
+    "text": "brava",
+    "gender": "f"
   },
   "logic": {
-    "text": "[SR:logic]"
+    "text": "logika",
+    "gender": "f"
   },
   "loss_n": {
-    "text": "[SR:loss_n]"
+    "text": "gubitak",
+    "gender": "m"
   },
   "lotion": {
-    "text": "[SR:lotion]"
+    "text": "losion",
+    "gender": "m"
   },
   "lover": {
-    "text": "[SR:lover]"
+    "text": "ljubavnik",
+    "gender": "m"
   },
   "loyalty": {
-    "text": "[SR:loyalty]"
+    "text": "lojalnost",
+    "gender": "f"
   },
   "lung": {
-    "text": "[SR:lung]"
+    "text": "pluća",
+    "gender": "n"
   },
   "makeup": {
-    "text": "[SR:makeup]"
+    "text": "šminka",
+    "gender": "f"
   },
   "maroon": {
-    "text": "[SR:maroon]"
+    "m": "bordo",
+    "f": "bordo",
+    "n": "bordo"
   },
   "match": {
-    "text": "[SR:match]"
+    "text": "utakmica",
+    "gender": "f"
   },
   "meaning": {
-    "text": "[SR:meaning]"
+    "text": "značenje",
+    "gender": "n"
   },
   "meeting": {
-    "text": "[SR:meeting]"
+    "text": "sastanak",
+    "gender": "m"
   },
   "memory": {
-    "text": "[SR:memory]"
+    "text": "sećanje",
+    "gender": "n"
   },
   "message": {
-    "text": "[SR:message]"
+    "text": "poruka",
+    "gender": "f"
   },
   "metal": {
-    "text": "[SR:metal]"
+    "text": "metal",
+    "gender": "m"
   },
   "microwave": {
-    "text": "[SR:microwave]"
+    "text": "mikrotalasna pećnica",
+    "gender": "f"
   },
   "molecule": {
-    "text": "[SR:molecule]"
+    "text": "molekul",
+    "gender": "m"
   },
   "morality": {
-    "text": "[SR:morality]"
+    "text": "moralnost",
+    "gender": "f"
   },
   "movie": {
-    "text": "[SR:movie]"
+    "text": "film",
+    "gender": "m"
   },
   "muscle": {
-    "text": "[SR:muscle]"
+    "text": "mišić",
+    "gender": "m"
   },
   "mushroom": {
-    "text": "[SR:mushroom]"
+    "text": "pečurka",
+    "gender": "f"
   },
   "music": {
-    "text": "[SR:music]"
+    "text": "muzika",
+    "gender": "f"
   },
   "nail_clipper": {
-    "text": "[SR:nail_clipper]"
+    "text": "sekač za nokte",
+    "gender": "m"
   },
   "nail_tool": {
-    "text": "[SR:nail_tool]"
+    "text": "turpija za nokte",
+    "gender": "f"
   },
   "navy": {
-    "text": "[SR:navy]"
+    "m": "tamnoplavi",
+    "f": "tamnoplava",
+    "n": "tamnoplavo"
   },
   "network": {
-    "text": "[SR:network]"
+    "text": "mreža",
+    "gender": "f"
   },
   "news": {
-    "text": "[SR:news]"
+    "text": "vesti",
+    "gender": "f"
   },
   "nightstand": {
-    "text": "[SR:nightstand]"
+    "text": "noćni stočić",
+    "gender": "m"
   },
   "noodle": {
-    "text": "[SR:noodle]"
+    "text": "rezanac",
+    "gender": "m"
   },
   "octopus": {
-    "text": "[SR:octopus]"
+    "text": "hobotnica",
+    "gender": "f"
   },
   "odometer": {
-    "text": "[SR:odometer]"
+    "text": "brojač kilometara",
+    "gender": "m"
   },
   "one_night_stand": {
-    "text": "[SR:one_night_stand]"
+    "text": "avantura za jednu noć",
+    "gender": "f"
   },
   "orgasm": {
-    "text": "[SR:orgasm]"
+    "text": "orgazam",
+    "gender": "m"
   },
   "oven": {
-    "text": "[SR:oven]"
+    "text": "pećnica",
+    "gender": "f"
   },
   "owl": {
-    "text": "[SR:owl]"
+    "text": "sova",
+    "gender": "f"
   },
   "pain": {
-    "text": "[SR:pain]"
+    "text": "bol",
+    "gender": "f"
   },
   "pancreas": {
-    "text": "[SR:pancreas]"
+    "text": "gušterača",
+    "gender": "f"
   },
   "paper": {
-    "text": "[SR:paper]"
+    "text": "papir",
+    "gender": "m"
   },
   "paradox": {
-    "text": "[SR:paradox]"
+    "text": "paradoks",
+    "gender": "m"
   },
   "parking": {
-    "text": "[SR:parking]"
+    "text": "parking",
+    "gender": "m"
   },
   "parrot": {
-    "text": "[SR:parrot]"
+    "text": "papagaj",
+    "gender": "m"
   },
   "partner": {
-    "text": "[SR:partner]"
+    "text": "partner",
+    "gender": "m"
   },
   "passion": {
-    "text": "[SR:passion]"
+    "text": "strast",
+    "gender": "f"
   },
   "password": {
-    "text": "[SR:password]"
+    "text": "lozinka",
+    "gender": "f"
   },
   "pattern": {
-    "text": "[SR:pattern]"
+    "text": "uzorak",
+    "gender": "m"
   },
   "peace": {
-    "text": "[SR:peace]"
+    "text": "mir",
+    "gender": "m"
   },
   "penguin": {
-    "text": "[SR:penguin]"
+    "text": "pingvin",
+    "gender": "m"
   },
   "peninsula": {
-    "text": "[SR:peninsula]"
+    "text": "poluostrvo",
+    "gender": "n"
   },
   "perception": {
-    "text": "[SR:perception]"
+    "text": "percepcija",
+    "gender": "f"
   },
   "perfume": {
-    "text": "[SR:perfume]"
+    "text": "parfem",
+    "gender": "m"
   },
   "photo": {
-    "text": "[SR:photo]"
+    "text": "fotografija",
+    "gender": "f"
   },
   "physics": {
-    "text": "[SR:physics]"
+    "text": "fizika",
+    "gender": "f"
   },
   "pipe": {
-    "text": "[SR:pipe]"
+    "text": "cev",
+    "gender": "f"
   },
   "place": {
-    "text": "[SR:place]"
+    "text": "mesto",
+    "gender": "n"
   },
   "plastic": {
-    "text": "[SR:plastic]"
+    "text": "plastika",
+    "gender": "f"
   },
   "plateau": {
-    "text": "[SR:plateau]"
+    "text": "platou",
+    "gender": "m"
   },
   "player": {
-    "text": "[SR:player]"
+    "text": "igrač",
+    "gender": "m"
   },
   "pleasure": {
-    "text": "[SR:pleasure]"
+    "text": "zadovoljstvo",
+    "gender": "n"
   },
   "plug": {
-    "text": "[SR:plug]"
+    "text": "čep",
+    "gender": "m"
   },
   "power": {
-    "text": "[SR:power]"
+    "text": "moć",
+    "gender": "f"
   },
   "prescription": {
-    "text": "[SR:prescription]"
+    "text": "recept",
+    "gender": "m"
   },
   "presentation": {
-    "text": "[SR:presentation]"
+    "text": "prezentacija",
+    "gender": "f"
   },
   "pressure": {
-    "text": "[SR:pressure]"
+    "text": "pritisak",
+    "gender": "m"
   },
   "professor": {
-    "text": "[SR:professor]"
+    "text": "profesor",
+    "gender": "m"
   },
   "profit": {
-    "text": "[SR:profit]"
+    "text": "profit",
+    "gender": "m"
   },
   "project": {
-    "text": "[SR:project]"
+    "text": "projekat",
+    "gender": "m"
   },
   "proposal_n": {
-    "text": "[SR:proposal_n]"
+    "text": "predlog",
+    "gender": "m"
   },
   "race": {
-    "text": "[SR:race]"
+    "text": "trka",
+    "gender": "f"
   },
   "radiation": {
-    "text": "[SR:radiation]"
+    "text": "radijacija",
+    "gender": "f"
   },
   "radio": {
-    "text": "[SR:radio]"
+    "text": "radio",
+    "gender": "m"
   },
   "razor": {
-    "text": "[SR:razor]"
+    "text": "brijač",
+    "gender": "m"
   },
   "reaction": {
-    "text": "[SR:reaction]"
+    "text": "reakcija",
+    "gender": "f"
   },
   "reality": {
-    "text": "[SR:reality]"
+    "text": "realnost",
+    "gender": "f"
   },
   "referee": {
-    "text": "[SR:referee]"
+    "text": "sudija",
+    "gender": "m"
   },
   "relationship": {
-    "text": "[SR:relationship]"
+    "text": "odnos",
+    "gender": "m"
   },
   "research": {
-    "text": "[SR:research]"
+    "text": "istraživanje",
+    "gender": "n"
   },
   "rights": {
-    "text": "[SR:rights]"
+    "text": "prava",
+    "gender": "n"
   },
   "rope": {
-    "text": "[SR:rope]"
+    "text": "konopac",
+    "gender": "m"
   },
   "rubber": {
-    "text": "[SR:rubber]"
+    "text": "guma",
+    "gender": "f"
   },
   "salary": {
-    "text": "[SR:salary]"
+    "text": "plata",
+    "gender": "f"
   },
   "sauce": {
-    "text": "[SR:sauce]"
+    "text": "sos",
+    "gender": "m"
   },
   "sausage": {
-    "text": "[SR:sausage]"
+    "text": "kobasica",
+    "gender": "f"
   },
   "saw": {
-    "text": "[SR:saw]"
+    "text": "pila",
+    "gender": "f"
   },
   "scholarship": {
-    "text": "[SR:scholarship]"
+    "text": "stipendija",
+    "gender": "f"
   },
   "score": {
-    "text": "[SR:score]"
+    "text": "rezultat",
+    "gender": "m"
   },
   "screen": {
-    "text": "[SR:screen]"
+    "text": "ekran",
+    "gender": "m"
   },
   "screw": {
-    "text": "[SR:screw]"
+    "text": "zavrtanj",
+    "gender": "m"
   },
   "screwdriver": {
-    "text": "[SR:screwdriver]"
+    "text": "zavrtač",
+    "gender": "m"
   },
   "seal": {
-    "text": "[SR:seal]"
+    "text": "foka",
+    "gender": "f"
   },
   "seasoning": {
-    "text": "[SR:seasoning]"
+    "text": "bumbar",
+    "gender": "m"
   },
   "seatbelt": {
-    "text": "[SR:seatbelt]"
+    "text": "sigurnosni pojas",
+    "gender": "m"
   },
   "secret": {
-    "text": "[SR:secret]"
+    "text": "tajnost",
+    "gender": "f"
   },
   "seduce": {
-    "text": "[SR:seduce]"
+    "text": "zavođenje",
+    "gender": "n"
   },
   "seduction": {
-    "text": "[SR:seduction]"
+    "text": "zavođenje",
+    "gender": "n"
   },
   "semester": {
-    "text": "[SR:semester]"
+    "text": "semestar",
+    "gender": "m"
   },
   "sentence_legal": {
-    "text": "[SR:sentence_legal]"
+    "text": "presuda",
+    "gender": "f"
   },
   "series": {
-    "text": "[SR:series]"
+    "text": "serija",
+    "gender": "f"
   },
   "server": {
-    "text": "[SR:server]"
+    "text": "server",
+    "gender": "m"
   },
   "sex": {
-    "text": "[SR:sex]"
+    "text": "seks",
+    "gender": "m"
   },
   "shade": {
-    "text": "[SR:shade]"
+    "text": "senka",
+    "gender": "f"
   },
   "shampoo": {
-    "text": "[SR:shampoo]"
+    "text": "šampon",
+    "gender": "m"
   },
   "shark": {
-    "text": "[SR:shark]"
+    "text": "morski pas",
+    "gender": "m"
   },
   "shelf": {
-    "text": "[SR:shelf]"
+    "text": "polica",
+    "gender": "f"
   },
   "show_n": {
-    "text": "[SR:show_n]"
+    "text": "šou",
+    "gender": "m"
   },
   "shrimp": {
-    "text": "[SR:shrimp]"
+    "text": "rakica",
+    "gender": "f"
   },
   "sin": {
-    "text": "[SR:sin]"
+    "text": "grijeh",
+    "gender": "m"
   },
   "sink": {
-    "text": "[SR:sink]"
+    "text": "sudopera",
+    "gender": "f"
   },
   "software": {
-    "text": "[SR:software]"
+    "text": "softver",
+    "gender": "m"
   },
   "song": {
-    "text": "[SR:song]"
+    "text": "pesma",
+    "gender": "f"
   },
   "soul": {
-    "text": "[SR:soul]"
+    "text": "duša",
+    "gender": "f"
   },
   "species": {
-    "text": "[SR:species]"
+    "text": "vrsta",
+    "gender": "f"
   },
   "speech": {
-    "text": "[SR:speech]"
+    "text": "govor",
+    "gender": "m"
   },
   "speed": {
-    "text": "[SR:speed]"
+    "text": "brzina",
+    "gender": "f"
   },
   "spider": {
-    "text": "[SR:spider]"
+    "text": "pauk",
+    "gender": "m"
   },
   "spine": {
-    "text": "[SR:spine]"
+    "text": "kičma",
+    "gender": "f"
   },
   "steering": {
-    "text": "[SR:steering]"
+    "text": "upravljač",
+    "gender": "m"
   },
   "stone": {
-    "text": "[SR:stone]"
+    "text": "kamen",
+    "gender": "m"
   },
   "story": {
-    "text": "[SR:story]"
+    "text": "priča",
+    "gender": "f"
   },
   "strategy": {
-    "text": "[SR:strategy]"
+    "text": "strategija",
+    "gender": "f"
   },
   "stripe": {
-    "text": "[SR:stripe]"
+    "text": "pruga",
+    "gender": "f"
   },
   "success": {
-    "text": "[SR:success]"
+    "text": "uspeh",
+    "gender": "m"
   },
   "sunscreen": {
-    "text": "[SR:sunscreen]"
+    "text": "zaštita od sunca",
+    "gender": "f"
   },
   "surgery": {
-    "text": "[SR:surgery]"
+    "text": "operacija",
+    "gender": "f"
   },
   "swimming_pool": {
-    "text": "[SR:swimming_pool]"
+    "text": "bazen",
+    "gender": "m"
   },
   "switch_n": {
-    "text": "[SR:switch_n]"
+    "text": "prekidač",
+    "gender": "m"
   },
   "symptom": {
-    "text": "[SR:symptom]"
+    "text": "simptom",
+    "gender": "m"
   },
   "tape": {
-    "text": "[SR:tape]"
+    "text": "traka",
+    "gender": "f"
   },
   "teal": {
-    "text": "[SR:teal]"
+    "m": "tirkiznozeleni",
+    "f": "tirkiznozelena",
+    "n": "tirkiznozeleno"
   },
   "team": {
-    "text": "[SR:team]"
+    "text": "tim",
+    "gender": "m"
   },
   "temperature": {
-    "text": "[SR:temperature]"
+    "text": "temperatura",
+    "gender": "f"
   },
   "textbook": {
-    "text": "[SR:textbook]"
+    "text": "udžbenik",
+    "gender": "m"
   },
   "texture": {
-    "text": "[SR:texture]"
+    "text": "tekstura",
+    "gender": "f"
   },
   "theater": {
-    "text": "[SR:theater]"
+    "text": "pozorište",
+    "gender": "n"
   },
   "theory": {
-    "text": "[SR:theory]"
+    "text": "teorija",
+    "gender": "f"
   },
   "tire": {
-    "text": "[SR:tire]"
+    "text": "guma",
+    "gender": "f"
   },
   "tissue": {
-    "text": "[SR:tissue]"
+    "text": "tkivo",
+    "gender": "n"
   },
   "toolbox": {
-    "text": "[SR:toolbox]"
+    "text": "kutija sa alatima",
+    "gender": "f"
   },
   "toothbrush": {
-    "text": "[SR:toothbrush]"
+    "text": "četkica za zube",
+    "gender": "f"
   },
   "toothpaste": {
-    "text": "[SR:toothpaste]"
+    "text": "pasta za zube",
+    "gender": "f"
   },
   "tournament": {
-    "text": "[SR:tournament]"
+    "text": "turnir",
+    "gender": "m"
   },
   "traffic": {
-    "text": "[SR:traffic]"
+    "text": "saobraćaj",
+    "gender": "m"
   },
   "training_n": {
-    "text": "[SR:training_n]"
+    "text": "trening",
+    "gender": "m"
   },
   "tray": {
-    "text": "[SR:tray]"
+    "text": "pladanj",
+    "gender": "m"
   },
   "trial": {
-    "text": "[SR:trial]"
+    "text": "suđenje",
+    "gender": "n"
   },
   "trust_n": {
-    "text": "[SR:trust_n]"
+    "text": "poverenje",
+    "gender": "n"
   },
   "truth": {
-    "text": "[SR:truth]"
+    "text": "istina",
+    "gender": "f"
   },
   "turquoise": {
-    "text": "[SR:turquoise]"
+    "m": "tirkizni",
+    "f": "tirkizna",
+    "n": "tirkizno"
   },
   "turtle": {
-    "text": "[SR:turtle]"
+    "text": "kornjača",
+    "gender": "f"
   },
   "utensil": {
-    "text": "[SR:utensil]"
+    "text": "priborska stavka",
+    "gender": "f"
   },
   "vacuum": {
-    "text": "[SR:vacuum]"
+    "text": "usisivač",
+    "gender": "m"
   },
   "valley": {
-    "text": "[SR:valley]"
+    "text": "dolina",
+    "gender": "f"
   },
   "vase": {
-    "text": "[SR:vase]"
+    "text": "vaza",
+    "gender": "f"
   },
   "vehicle": {
-    "text": "[SR:vehicle]"
+    "text": "vozilo",
+    "gender": "n"
   },
   "vein": {
-    "text": "[SR:vein]"
+    "text": "vena",
+    "gender": "f"
   },
   "verdict": {
-    "text": "[SR:verdict]"
+    "text": "presuda",
+    "gender": "f"
   },
   "victim": {
-    "text": "[SR:victim]"
+    "text": "žrtva",
+    "gender": "f"
   },
   "victory": {
-    "text": "[SR:victory]"
+    "text": "pobeda",
+    "gender": "f"
   },
   "video": {
-    "text": "[SR:video]"
+    "text": "video",
+    "gender": "m"
   },
   "vinegar": {
-    "text": "[SR:vinegar]"
+    "text": "sirće",
+    "gender": "n"
   },
   "virgin": {
-    "text": "[SR:virgin]"
+    "text": "devojac",
+    "gender": "m"
   },
   "virtue": {
-    "text": "[SR:virtue]"
+    "text": "vrlina",
+    "gender": "f"
   },
   "voice": {
-    "text": "[SR:voice]"
+    "text": "glas",
+    "gender": "m"
   },
   "volcano": {
-    "text": "[SR:volcano]"
+    "text": "vulkan",
+    "gender": "m"
   },
   "war": {
-    "text": "[SR:war]"
+    "text": "rat",
+    "gender": "m"
   },
   "wardrobe": {
-    "text": "[SR:wardrobe]"
+    "text": "garderoba",
+    "gender": "f"
   },
   "washing_machine": {
-    "text": "[SR:washing_machine]"
+    "text": "veš mašina",
+    "gender": "f"
   },
   "waterfall": {
-    "text": "[SR:waterfall]"
+    "text": "vodopad",
+    "gender": "m"
   },
   "way": {
-    "text": "[SR:way]"
+    "text": "put",
+    "gender": "m"
   },
   "website": {
-    "text": "[SR:website]"
+    "text": "veb sajt",
+    "gender": "m"
   },
   "wedding": {
-    "text": "[SR:wedding]"
+    "text": "venčanje",
+    "gender": "n"
   },
   "whale": {
-    "text": "[SR:whale]"
+    "text": "kit",
+    "gender": "m"
   },
   "wheel": {
-    "text": "[SR:wheel]"
+    "text": "točak",
+    "gender": "m"
   },
   "wire": {
-    "text": "[SR:wire]"
+    "text": "žica",
+    "gender": "f"
   },
   "wisdom": {
-    "text": "[SR:wisdom]"
+    "text": "mudrost",
+    "gender": "f"
   },
   "witness": {
-    "text": "[SR:witness]"
+    "text": "svedok",
+    "gender": "m"
   },
   "wolf": {
-    "text": "[SR:wolf]"
+    "text": "vuk",
+    "gender": "m"
   },
   "wood": {
-    "text": "[SR:wood]"
+    "text": "drvo",
+    "gender": "n"
   },
   "wound": {
-    "text": "[SR:wound]"
+    "text": "rana",
+    "gender": "f"
   },
   "wrench": {
-    "text": "[SR:wrench]"
+    "text": "ključ",
+    "gender": "m"
   },
   "meta": {
     "levels": {
