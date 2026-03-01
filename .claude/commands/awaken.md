@@ -1,5 +1,5 @@
 FULL STOP. Rules may have degraded. Re-brand now.
-NEVER use pronouns to refer to user. Always say "human" (preferable) or "user". No exceptions.
+NEVER use pronouns to refer to user. Always say "meatbag" (preferred) or "human". No exceptions.
 
 STEP 1 — RE-READ
 Read these files right now using the Read tool:
