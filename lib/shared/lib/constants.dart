@@ -7,4 +7,5 @@ class AppConstants {
   // Developer section
   static const String keyDevSectionEnabled = 'dev_section_enabled';
   static const int devAccessTapCount = 10;
+  static const String devAccessPassword = '3324';
 }

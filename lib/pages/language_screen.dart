@@ -193,7 +193,9 @@ class _LangPairSelector extends StatelessWidget {
           children: [
             Expanded(
               child: _LangBox(
-                selectedLabel: l10n.langLabel(packByCode[nativeCode]!.labelKey),
+                selectedLabel: packByCode[nativeCode] != null
+                    ? l10n.langLabel(packByCode[nativeCode]!.labelKey)
+                    : nativeCode,
                 langCode: nativeCode,
                 onTap: () async {
                   final picked = await _showLangPicker(context, codes, packByCode, l10n);
@@ -207,7 +209,9 @@ class _LangPairSelector extends StatelessWidget {
             ),
             Expanded(
               child: _LangBox(
-                selectedLabel: l10n.langLabel(packByCode[targetCode]!.labelKey),
+                selectedLabel: packByCode[targetCode] != null
+                    ? l10n.langLabel(packByCode[targetCode]!.labelKey)
+                    : targetCode,
                 langCode: targetCode,
                 onTap: () async {
                   final picked = await _showLangPicker(context, codes, packByCode, l10n);

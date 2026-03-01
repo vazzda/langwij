@@ -350,6 +350,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get lang_italian => 'Italian';
 
   @override
+  String get lang_french => 'French';
+
+  @override
+  String get lang_spanish => 'Spanish';
+
+  @override
+  String get lang_portuguese => 'Portuguese';
+
+  @override
+  String get lang_german => 'German';
+
+  @override
   String get aspect_perfective => 'perfective';
 
   @override
@@ -376,7 +388,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get language_serbianNativeNote =>
-      'Tnx for the hospitality! Now and forever every serbian speaker learning new language get all the languages for free, no need for subscription!';
+      'Thanks for the hospitality! Every Serbian speaker learning a new language gets all languages for free — no subscription needed.';
 
   @override
   String get language_myProgress => 'My progress';
@@ -430,6 +442,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsControlsList => 'Controls List';
+
+  @override
+  String get dev_enterPassword => 'Hello';
+
+  @override
+  String get dev_unlock => 'Unlock';
+
+  @override
+  String get dev_wrongPassword => 'Nope!';
 
   @override
   String get quiz_aspectImperfective => 'Imperfective:';

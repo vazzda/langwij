@@ -1,0 +1,4264 @@
+{
+  "accident_car": {
+    "text": "acidente",
+    "gender": "m"
+  },
+  "account": {
+    "text": "conta",
+    "gender": "f"
+  },
+  "actor": {
+    "text": "ator",
+    "gender": "m"
+  },
+  "affair": {
+    "text": "caso",
+    "gender": "m"
+  },
+  "airport": {
+    "text": "aeroporto",
+    "gender": "m"
+  },
+  "algorithm": {
+    "text": "algoritmo",
+    "gender": "m"
+  },
+  "allergy": {
+    "text": "alergia",
+    "gender": "f"
+  },
+  "animal": {
+    "text": "animal",
+    "gender": "m"
+  },
+  "anniversary": {
+    "text": "aniversário",
+    "gender": "m"
+  },
+  "answer_n": {
+    "text": "resposta",
+    "gender": "f"
+  },
+  "ant": {
+    "text": "formiga",
+    "gender": "f"
+  },
+  "apartment": {
+    "text": "apartamento",
+    "gender": "m"
+  },
+  "apology": {
+    "text": "desculpa",
+    "gender": "f"
+  },
+  "app": {
+    "text": "aplicativo",
+    "gender": "m"
+  },
+  "apple": {
+    "text": "maçã",
+    "gender": "f"
+  },
+  "april": {
+    "text": "abril",
+    "gender": "m"
+  },
+  "argument": {
+    "text": "argumento",
+    "gender": "m"
+  },
+  "arm": {
+    "text": "braço",
+    "gender": "m"
+  },
+  "arousal": {
+    "text": "excitação",
+    "gender": "f"
+  },
+  "arrest": {
+    "text": "prisão",
+    "gender": "f"
+  },
+  "artery": {
+    "text": "artéria",
+    "gender": "f"
+  },
+  "artist": {
+    "text": "artista",
+    "gender": "m"
+  },
+  "athlete": {
+    "text": "atleta",
+    "gender": "m"
+  },
+  "atm": {
+    "text": "caixa eletrônico",
+    "gender": "m"
+  },
+  "atom": {
+    "text": "átomo",
+    "gender": "m"
+  },
+  "attorney": {
+    "text": "advogado",
+    "gender": "m"
+  },
+  "attraction": {
+    "text": "atração",
+    "gender": "f"
+  },
+  "audience": {
+    "text": "público",
+    "gender": "m"
+  },
+  "august": {
+    "text": "agosto",
+    "gender": "m"
+  },
+  "autumn": {
+    "text": "outono",
+    "gender": "m"
+  },
+  "baby": {
+    "text": "bebê",
+    "gender": "m"
+  },
+  "back_body": {
+    "text": "costas",
+    "gender": "f"
+  },
+  "bag": {
+    "text": "bolsa",
+    "gender": "f"
+  },
+  "ball": {
+    "text": "bola",
+    "gender": "f"
+  },
+  "bandage": {
+    "text": "atadura",
+    "gender": "f"
+  },
+  "bank": {
+    "text": "banco",
+    "gender": "m"
+  },
+  "basket": {
+    "text": "cesta",
+    "gender": "f"
+  },
+  "bathroom": {
+    "text": "banheiro",
+    "gender": "m"
+  },
+  "battery": {
+    "text": "bateria",
+    "gender": "f"
+  },
+  "bear": {
+    "text": "urso",
+    "gender": "m"
+  },
+  "bed": {
+    "text": "cama",
+    "gender": "f"
+  },
+  "bedroom": {
+    "text": "quarto",
+    "gender": "m"
+  },
+  "bee": {
+    "text": "abelha",
+    "gender": "f"
+  },
+  "beer": {
+    "text": "cerveja",
+    "gender": "f"
+  },
+  "bicycle": {
+    "text": "bicicleta",
+    "gender": "f"
+  },
+  "bird": {
+    "text": "pássaro",
+    "gender": "m"
+  },
+  "birth": {
+    "text": "nascimento",
+    "gender": "m"
+  },
+  "blanket": {
+    "text": "cobertor",
+    "gender": "m"
+  },
+  "blood": {
+    "text": "sangue",
+    "gender": "m"
+  },
+  "blood_pressure": {
+    "text": "pressão arterial",
+    "gender": "f"
+  },
+  "boat": {
+    "text": "barco",
+    "gender": "m"
+  },
+  "bone": {
+    "text": "osso",
+    "gender": "m"
+  },
+  "book": {
+    "text": "livro",
+    "gender": "m"
+  },
+  "boot": {
+    "text": "bota",
+    "gender": "f"
+  },
+  "border": {
+    "text": "fronteira",
+    "gender": "f"
+  },
+  "boss": {
+    "text": "chefe",
+    "gender": "m"
+  },
+  "bottle": {
+    "text": "garrafa",
+    "gender": "f"
+  },
+  "bowl": {
+    "text": "tigela",
+    "gender": "f"
+  },
+  "box": {
+    "text": "caixa",
+    "gender": "f"
+  },
+  "boy": {
+    "text": "menino",
+    "gender": "m"
+  },
+  "boyfriend": {
+    "text": "namorado",
+    "gender": "m"
+  },
+  "brain": {
+    "text": "cérebro",
+    "gender": "m"
+  },
+  "brake": {
+    "text": "freio",
+    "gender": "m"
+  },
+  "bread": {
+    "text": "pão",
+    "gender": "m"
+  },
+  "breakup": {
+    "text": "separação",
+    "gender": "f"
+  },
+  "bridge": {
+    "text": "ponte",
+    "gender": "f"
+  },
+  "broom": {
+    "text": "vassoura",
+    "gender": "f"
+  },
+  "brother": {
+    "text": "irmão",
+    "gender": "m"
+  },
+  "browser": {
+    "text": "navegador",
+    "gender": "m"
+  },
+  "brush_hygiene": {
+    "text": "escova",
+    "gender": "f"
+  },
+  "budget": {
+    "text": "orçamento",
+    "gender": "m"
+  },
+  "bug": {
+    "text": "inseto",
+    "gender": "m"
+  },
+  "bus": {
+    "text": "ônibus",
+    "gender": "m"
+  },
+  "butter": {
+    "text": "manteiga",
+    "gender": "f"
+  },
+  "cabinet": {
+    "text": "armário",
+    "gender": "m"
+  },
+  "camera": {
+    "text": "câmera",
+    "gender": "f"
+  },
+  "canvas": {
+    "text": "tela",
+    "gender": "f"
+  },
+  "canyon": {
+    "text": "cânion",
+    "gender": "m"
+  },
+  "car": {
+    "text": "carro",
+    "gender": "m"
+  },
+  "cash": {
+    "text": "dinheiro",
+    "gender": "m"
+  },
+  "cat": {
+    "text": "gato",
+    "gender": "m"
+  },
+  "cave": {
+    "text": "caverna",
+    "gender": "f"
+  },
+  "celebration": {
+    "text": "celebração",
+    "gender": "f"
+  },
+  "cell": {
+    "text": "célula",
+    "gender": "f"
+  },
+  "ceremony": {
+    "text": "cerimônia",
+    "gender": "f"
+  },
+  "certificate": {
+    "text": "certificado",
+    "gender": "m"
+  },
+  "chair": {
+    "text": "cadeira",
+    "gender": "f"
+  },
+  "champion": {
+    "text": "campeão",
+    "gender": "m"
+  },
+  "chance": {
+    "text": "chance",
+    "gender": "f"
+  },
+  "channel": {
+    "text": "canal",
+    "gender": "m"
+  },
+  "cheese": {
+    "text": "queijo",
+    "gender": "m"
+  },
+  "chemical": {
+    "text": "químico",
+    "gender": "m"
+  },
+  "chest": {
+    "text": "peito",
+    "gender": "m"
+  },
+  "chicken_animal": {
+    "text": "galinha",
+    "gender": "f"
+  },
+  "chicken_meat": {
+    "text": "frango",
+    "gender": "m"
+  },
+  "child": {
+    "text": "criança",
+    "gender": "f"
+  },
+  "chocolate": {
+    "text": "chocolate",
+    "gender": "m"
+  },
+  "church": {
+    "text": "igreja",
+    "gender": "f"
+  },
+  "cinnamon": {
+    "text": "canela",
+    "gender": "f"
+  },
+  "city": {
+    "text": "cidade",
+    "gender": "f"
+  },
+  "classroom": {
+    "text": "sala de aula",
+    "gender": "f"
+  },
+  "clay": {
+    "text": "argila",
+    "gender": "f"
+  },
+  "client": {
+    "text": "cliente",
+    "gender": "m"
+  },
+  "cliff": {
+    "text": "penhasco",
+    "gender": "m"
+  },
+  "clock": {
+    "text": "relógio",
+    "gender": "m"
+  },
+  "cloth": {
+    "text": "pano",
+    "gender": "m"
+  },
+  "clothing": {
+    "text": "roupa",
+    "gender": "f"
+  },
+  "cloud": {
+    "text": "nuvem",
+    "gender": "f"
+  },
+  "cloud_computing": {
+    "text": "computação em nuvem",
+    "gender": "f"
+  },
+  "coach": {
+    "text": "treinador",
+    "gender": "m"
+  },
+  "coast": {
+    "text": "costa",
+    "gender": "f"
+  },
+  "coat": {
+    "text": "casaco",
+    "gender": "m"
+  },
+  "code": {
+    "text": "código",
+    "gender": "m"
+  },
+  "coffee": {
+    "text": "café",
+    "gender": "m"
+  },
+  "comb": {
+    "text": "pente",
+    "gender": "m"
+  },
+  "company": {
+    "text": "empresa",
+    "gender": "f"
+  },
+  "compromise": {
+    "text": "compromisso",
+    "gender": "m"
+  },
+  "computer": {
+    "text": "computador",
+    "gender": "m"
+  },
+  "concert": {
+    "text": "concerto",
+    "gender": "m"
+  },
+  "condom": {
+    "text": "camisinha",
+    "gender": "f"
+  },
+  "consciousness": {
+    "text": "consciência",
+    "gender": "f"
+  },
+  "consent": {
+    "text": "consentimento",
+    "gender": "m"
+  },
+  "constitution": {
+    "text": "constituição",
+    "gender": "f"
+  },
+  "continent": {
+    "text": "continente",
+    "gender": "m"
+  },
+  "contract": {
+    "text": "contrato",
+    "gender": "m"
+  },
+  "cotton": {
+    "text": "algodão",
+    "gender": "m"
+  },
+  "country": {
+    "text": "país",
+    "gender": "m"
+  },
+  "couple": {
+    "text": "casal",
+    "gender": "m"
+  },
+  "course": {
+    "text": "curso",
+    "gender": "m"
+  },
+  "court": {
+    "text": "tribunal",
+    "gender": "m"
+  },
+  "cow": {
+    "text": "vaca",
+    "gender": "f"
+  },
+  "cream": {
+    "text": "creme",
+    "gender": "m"
+  },
+  "credit_card": {
+    "text": "cartão de crédito",
+    "gender": "m"
+  },
+  "crime": {
+    "text": "crime",
+    "gender": "m"
+  },
+  "crocodile": {
+    "text": "crocodilo",
+    "gender": "m"
+  },
+  "cup": {
+    "text": "xícara",
+    "gender": "f"
+  },
+  "currency": {
+    "text": "moeda",
+    "gender": "f"
+  },
+  "currency_exchange": {
+    "text": "câmbio",
+    "gender": "m"
+  },
+  "customs": {
+    "text": "alfândega",
+    "gender": "f"
+  },
+  "danger": {
+    "text": "perigo",
+    "gender": "m"
+  },
+  "data": {
+    "text": "dados",
+    "gender": "m"
+  },
+  "database": {
+    "text": "banco de dados",
+    "gender": "m"
+  },
+  "date_romantic": {
+    "text": "encontro",
+    "gender": "m"
+  },
+  "day": {
+    "text": "dia",
+    "gender": "m"
+  },
+  "deadline": {
+    "text": "prazo",
+    "gender": "m"
+  },
+  "death": {
+    "text": "morte",
+    "gender": "f"
+  },
+  "december": {
+    "text": "dezembro",
+    "gender": "m"
+  },
+  "deer": {
+    "text": "cervo",
+    "gender": "m"
+  },
+  "defeat": {
+    "text": "derrota",
+    "gender": "f"
+  },
+  "degree_education": {
+    "text": "grau",
+    "gender": "m"
+  },
+  "deodorant": {
+    "text": "desodorante",
+    "gender": "m"
+  },
+  "department": {
+    "text": "departamento",
+    "gender": "m"
+  },
+  "desert": {
+    "text": "deserto",
+    "gender": "m"
+  },
+  "desire": {
+    "text": "desejo",
+    "gender": "m"
+  },
+  "destination": {
+    "text": "destino",
+    "gender": "m"
+  },
+  "destiny": {
+    "text": "destino",
+    "gender": "m"
+  },
+  "diagnosis": {
+    "text": "diagnóstico",
+    "gender": "m"
+  },
+  "diploma": {
+    "text": "diploma",
+    "gender": "m"
+  },
+  "dishwasher": {
+    "text": "lava-louças",
+    "gender": "m"
+  },
+  "divorce": {
+    "text": "divórcio",
+    "gender": "m"
+  },
+  "doctor": {
+    "text": "médico",
+    "gender": "m"
+  },
+  "dog": {
+    "text": "cachorro",
+    "gender": "m"
+  },
+  "dolphin": {
+    "text": "golfinho",
+    "gender": "m"
+  },
+  "door": {
+    "text": "porta",
+    "gender": "f"
+  },
+  "dough": {
+    "text": "massa",
+    "gender": "f"
+  },
+  "drawer": {
+    "text": "gaveta",
+    "gender": "f"
+  },
+  "dream_n": {
+    "text": "sonho",
+    "gender": "m"
+  },
+  "dress": {
+    "text": "vestido",
+    "gender": "m"
+  },
+  "dresser": {
+    "text": "penteadeira",
+    "gender": "f"
+  },
+  "drill": {
+    "text": "broca",
+    "gender": "f"
+  },
+  "driver": {
+    "text": "motorista",
+    "gender": "m"
+  },
+  "eagle": {
+    "text": "águia",
+    "gender": "f"
+  },
+  "ear": {
+    "text": "orelha",
+    "gender": "f"
+  },
+  "earth": {
+    "text": "terra",
+    "gender": "f"
+  },
+  "egg": {
+    "text": "ovo",
+    "gender": "m"
+  },
+  "elephant": {
+    "text": "elefante",
+    "gender": "m"
+  },
+  "embassy": {
+    "text": "embaixada",
+    "gender": "f"
+  },
+  "employee": {
+    "text": "funcionário",
+    "gender": "m"
+  },
+  "encryption": {
+    "text": "criptografia",
+    "gender": "f"
+  },
+  "energy": {
+    "text": "energia",
+    "gender": "f"
+  },
+  "engagement": {
+    "text": "noivado",
+    "gender": "m"
+  },
+  "engine": {
+    "text": "motor",
+    "gender": "m"
+  },
+  "engineer": {
+    "text": "engenheiro",
+    "gender": "m"
+  },
+  "enlightenment": {
+    "text": "iluminação",
+    "gender": "f"
+  },
+  "essay": {
+    "text": "ensaio",
+    "gender": "m"
+  },
+  "eternity": {
+    "text": "eternidade",
+    "gender": "f"
+  },
+  "ethics": {
+    "text": "ética",
+    "gender": "f"
+  },
+  "evening": {
+    "text": "noite",
+    "gender": "f"
+  },
+  "evidence": {
+    "text": "prova",
+    "gender": "f"
+  },
+  "evolution": {
+    "text": "evolução",
+    "gender": "f"
+  },
+  "exam": {
+    "text": "exame",
+    "gender": "m"
+  },
+  "exchange_rate": {
+    "text": "taxa de câmbio",
+    "gender": "f"
+  },
+  "exercise": {
+    "text": "exercício",
+    "gender": "m"
+  },
+  "existence": {
+    "text": "existência",
+    "gender": "f"
+  },
+  "experience": {
+    "text": "experiência",
+    "gender": "f"
+  },
+  "experiment": {
+    "text": "experimento",
+    "gender": "m"
+  },
+  "eye": {
+    "text": "olho",
+    "gender": "m"
+  },
+  "fact": {
+    "text": "fato",
+    "gender": "m"
+  },
+  "failure": {
+    "text": "fracasso",
+    "gender": "m"
+  },
+  "family": {
+    "text": "família",
+    "gender": "f"
+  },
+  "fantasy": {
+    "text": "fantasia",
+    "gender": "f"
+  },
+  "farmer": {
+    "text": "fazendeiro",
+    "gender": "m"
+  },
+  "fate": {
+    "text": "destino",
+    "gender": "m"
+  },
+  "father": {
+    "text": "pai",
+    "gender": "m"
+  },
+  "fear_n": {
+    "text": "medo",
+    "gender": "m"
+  },
+  "february": {
+    "text": "fevereiro",
+    "gender": "m"
+  },
+  "fever": {
+    "text": "febre",
+    "gender": "f"
+  },
+  "field": {
+    "text": "campo",
+    "gender": "m"
+  },
+  "film": {
+    "text": "filme",
+    "gender": "m"
+  },
+  "fine_n": {
+    "text": "multa",
+    "gender": "f"
+  },
+  "finger": {
+    "text": "dedo",
+    "gender": "m"
+  },
+  "fire": {
+    "text": "fogo",
+    "gender": "m"
+  },
+  "fish": {
+    "text": "peixe",
+    "gender": "m"
+  },
+  "fish_animal": {
+    "text": "peixe",
+    "gender": "m"
+  },
+  "flirt": {
+    "text": "flerte",
+    "gender": "m"
+  },
+  "floor": {
+    "text": "piso",
+    "gender": "m"
+  },
+  "flour": {
+    "text": "farinha",
+    "gender": "f"
+  },
+  "flower": {
+    "text": "flor",
+    "gender": "f"
+  },
+  "food": {
+    "text": "comida",
+    "gender": "f"
+  },
+  "foot": {
+    "text": "pé",
+    "gender": "m"
+  },
+  "foreplay": {
+    "text": "preliminares",
+    "gender": "m"
+  },
+  "forest": {
+    "text": "floresta",
+    "gender": "f"
+  },
+  "fork": {
+    "text": "garfo",
+    "gender": "m"
+  },
+  "fracture": {
+    "text": "fratura",
+    "gender": "f"
+  },
+  "freedom": {
+    "text": "liberdade",
+    "gender": "f"
+  },
+  "friday": {
+    "text": "sexta-feira",
+    "gender": "f"
+  },
+  "friend": {
+    "text": "amigo",
+    "gender": "m"
+  },
+  "frog": {
+    "text": "sapo",
+    "gender": "m"
+  },
+  "fruit": {
+    "text": "fruta",
+    "gender": "f"
+  },
+  "fuel": {
+    "text": "combustível",
+    "gender": "m"
+  },
+  "game_n": {
+    "text": "jogo",
+    "gender": "m"
+  },
+  "garage": {
+    "text": "garagem",
+    "gender": "f"
+  },
+  "garlic": {
+    "text": "alho",
+    "gender": "m"
+  },
+  "gas_station": {
+    "text": "posto de gasolina",
+    "gender": "m"
+  },
+  "gene": {
+    "text": "gene",
+    "gender": "m"
+  },
+  "gift": {
+    "text": "presente",
+    "gender": "m"
+  },
+  "ginger": {
+    "text": "gengibre",
+    "gender": "m"
+  },
+  "girl": {
+    "text": "menina",
+    "gender": "f"
+  },
+  "girlfriend": {
+    "text": "namorada",
+    "gender": "f"
+  },
+  "glass_cup": {
+    "text": "copo",
+    "gender": "m"
+  },
+  "glass_material": {
+    "text": "vidro",
+    "gender": "m"
+  },
+  "glasses": {
+    "text": "óculos",
+    "gender": "m"
+  },
+  "glove": {
+    "text": "luva",
+    "gender": "f"
+  },
+  "glue": {
+    "text": "cola",
+    "gender": "f"
+  },
+  "goal": {
+    "text": "objetivo",
+    "gender": "m"
+  },
+  "god": {
+    "text": "deus",
+    "gender": "m"
+  },
+  "grade": {
+    "text": "nota",
+    "gender": "f"
+  },
+  "grass": {
+    "text": "grama",
+    "gender": "f"
+  },
+  "gravity": {
+    "text": "gravidade",
+    "gender": "f"
+  },
+  "guide": {
+    "text": "guia",
+    "gender": "m"
+  },
+  "gym": {
+    "text": "academia",
+    "gender": "f"
+  },
+  "hair": {
+    "text": "cabelo",
+    "gender": "m"
+  },
+  "hammer": {
+    "text": "martelo",
+    "gender": "m"
+  },
+  "hand": {
+    "text": "mão",
+    "gender": "f"
+  },
+  "hardware": {
+    "text": "hardware",
+    "gender": "m"
+  },
+  "hat": {
+    "text": "chapéu",
+    "gender": "m"
+  },
+  "head": {
+    "text": "cabeça",
+    "gender": "f"
+  },
+  "heart_organ": {
+    "text": "coração",
+    "gender": "m"
+  },
+  "highway": {
+    "text": "rodovia",
+    "gender": "f"
+  },
+  "hill": {
+    "text": "colina",
+    "gender": "f"
+  },
+  "home": {
+    "text": "casa",
+    "gender": "f"
+  },
+  "homework": {
+    "text": "dever de casa",
+    "gender": "m"
+  },
+  "honey": {
+    "text": "mel",
+    "gender": "m"
+  },
+  "honeymoon": {
+    "text": "lua de mel",
+    "gender": "f"
+  },
+  "hookup": {
+    "text": "encontro casual",
+    "gender": "m"
+  },
+  "hope_n": {
+    "text": "esperança",
+    "gender": "f"
+  },
+  "hormone": {
+    "text": "hormônio",
+    "gender": "m"
+  },
+  "horn": {
+    "text": "buzina",
+    "gender": "f"
+  },
+  "horse": {
+    "text": "cavalo",
+    "gender": "m"
+  },
+  "hospital": {
+    "text": "hospital",
+    "gender": "m"
+  },
+  "hostel": {
+    "text": "albergue",
+    "gender": "m"
+  },
+  "hotel": {
+    "text": "hotel",
+    "gender": "m"
+  },
+  "hour": {
+    "text": "hora",
+    "gender": "f"
+  },
+  "hug": {
+    "text": "abraço",
+    "gender": "m"
+  },
+  "husband": {
+    "text": "marido",
+    "gender": "m"
+  },
+  "hypothesis": {
+    "text": "hipótese",
+    "gender": "f"
+  },
+  "ice": {
+    "text": "gelo",
+    "gender": "m"
+  },
+  "idea": {
+    "text": "ideia",
+    "gender": "f"
+  },
+  "ignorance": {
+    "text": "ignorância",
+    "gender": "f"
+  },
+  "illusion": {
+    "text": "ilusão",
+    "gender": "f"
+  },
+  "infection": {
+    "text": "infecção",
+    "gender": "f"
+  },
+  "infinity": {
+    "text": "infinidade",
+    "gender": "f"
+  },
+  "inflammation": {
+    "text": "inflamação",
+    "gender": "f"
+  },
+  "insect": {
+    "text": "inseto",
+    "gender": "m"
+  },
+  "insurance": {
+    "text": "seguro",
+    "gender": "m"
+  },
+  "interface": {
+    "text": "interface",
+    "gender": "f"
+  },
+  "intimacy": {
+    "text": "intimidade",
+    "gender": "f"
+  },
+  "invitation": {
+    "text": "convite",
+    "gender": "m"
+  },
+  "invoice": {
+    "text": "fatura",
+    "gender": "f"
+  },
+  "iron_appliance": {
+    "text": "ferro de passar",
+    "gender": "m"
+  },
+  "island": {
+    "text": "ilha",
+    "gender": "f"
+  },
+  "jacket": {
+    "text": "jaqueta",
+    "gender": "f"
+  },
+  "january": {
+    "text": "janeiro",
+    "gender": "m"
+  },
+  "jellyfish": {
+    "text": "água-viva",
+    "gender": "f"
+  },
+  "job": {
+    "text": "emprego",
+    "gender": "m"
+  },
+  "judge": {
+    "text": "juiz",
+    "gender": "m"
+  },
+  "juice": {
+    "text": "suco",
+    "gender": "m"
+  },
+  "july": {
+    "text": "julho",
+    "gender": "m"
+  },
+  "june": {
+    "text": "junho",
+    "gender": "m"
+  },
+  "jungle": {
+    "text": "selva",
+    "gender": "f"
+  },
+  "justice": {
+    "text": "justiça",
+    "gender": "f"
+  },
+  "key": {
+    "text": "chave",
+    "gender": "f"
+  },
+  "kidney": {
+    "text": "rim",
+    "gender": "m"
+  },
+  "kitchen": {
+    "text": "cozinha",
+    "gender": "f"
+  },
+  "knee": {
+    "text": "joelho",
+    "gender": "m"
+  },
+  "knife_utensil": {
+    "text": "faca",
+    "gender": "f"
+  },
+  "laboratory": {
+    "text": "laboratório",
+    "gender": "m"
+  },
+  "ladder": {
+    "text": "escada",
+    "gender": "f"
+  },
+  "lake": {
+    "text": "lago",
+    "gender": "m"
+  },
+  "lamb": {
+    "text": "carneiro",
+    "gender": "m"
+  },
+  "lamp": {
+    "text": "lâmpada",
+    "gender": "f"
+  },
+  "land": {
+    "text": "terra",
+    "gender": "f"
+  },
+  "language": {
+    "text": "língua",
+    "gender": "f"
+  },
+  "law": {
+    "text": "lei",
+    "gender": "f"
+  },
+  "lawsuit": {
+    "text": "processo",
+    "gender": "m"
+  },
+  "lawyer": {
+    "text": "advogado",
+    "gender": "m"
+  },
+  "league": {
+    "text": "liga",
+    "gender": "f"
+  },
+  "leather": {
+    "text": "couro",
+    "gender": "m"
+  },
+  "lecture": {
+    "text": "aula",
+    "gender": "f"
+  },
+  "leg": {
+    "text": "perna",
+    "gender": "f"
+  },
+  "letter": {
+    "text": "letra",
+    "gender": "f"
+  },
+  "libido": {
+    "text": "libido",
+    "gender": "f"
+  },
+  "library": {
+    "text": "biblioteca",
+    "gender": "f"
+  },
+  "license": {
+    "text": "licença",
+    "gender": "f"
+  },
+  "lie_n": {
+    "text": "mentira",
+    "gender": "f"
+  },
+  "life": {
+    "text": "vida",
+    "gender": "f"
+  },
+  "lion": {
+    "text": "leão",
+    "gender": "m"
+  },
+  "liver": {
+    "text": "fígado",
+    "gender": "m"
+  },
+  "loan": {
+    "text": "empréstimo",
+    "gender": "m"
+  },
+  "lock_n": {
+    "text": "fechadura",
+    "gender": "f"
+  },
+  "logic": {
+    "text": "lógica",
+    "gender": "f"
+  },
+  "loss_n": {
+    "text": "perda",
+    "gender": "f"
+  },
+  "lotion": {
+    "text": "loção",
+    "gender": "f"
+  },
+  "love_n": {
+    "text": "amor",
+    "gender": "m"
+  },
+  "lover": {
+    "text": "amante",
+    "gender": "m"
+  },
+  "loyalty": {
+    "text": "lealdade",
+    "gender": "f"
+  },
+  "luggage": {
+    "text": "bagagem",
+    "gender": "f"
+  },
+  "lung": {
+    "text": "pulmão",
+    "gender": "m"
+  },
+  "makeup": {
+    "text": "maquiagem",
+    "gender": "f"
+  },
+  "man": {
+    "text": "homem",
+    "gender": "m"
+  },
+  "map": {
+    "text": "mapa",
+    "gender": "m"
+  },
+  "march": {
+    "text": "março",
+    "gender": "m"
+  },
+  "market": {
+    "text": "mercado",
+    "gender": "m"
+  },
+  "match": {
+    "text": "fósforo",
+    "gender": "m"
+  },
+  "may": {
+    "text": "maio",
+    "gender": "m"
+  },
+  "meaning": {
+    "text": "significado",
+    "gender": "m"
+  },
+  "meat": {
+    "text": "carne",
+    "gender": "f"
+  },
+  "medicine": {
+    "text": "medicina",
+    "gender": "f"
+  },
+  "meeting": {
+    "text": "reunião",
+    "gender": "f"
+  },
+  "memory": {
+    "text": "memória",
+    "gender": "f"
+  },
+  "message": {
+    "text": "mensagem",
+    "gender": "f"
+  },
+  "metal": {
+    "text": "metal",
+    "gender": "m"
+  },
+  "microwave": {
+    "text": "micro-ondas",
+    "gender": "m"
+  },
+  "milk": {
+    "text": "leite",
+    "gender": "m"
+  },
+  "minute": {
+    "text": "minuto",
+    "gender": "m"
+  },
+  "mirror": {
+    "text": "espelho",
+    "gender": "m"
+  },
+  "molecule": {
+    "text": "molécula",
+    "gender": "f"
+  },
+  "monday": {
+    "text": "segunda-feira",
+    "gender": "f"
+  },
+  "money": {
+    "text": "dinheiro",
+    "gender": "m"
+  },
+  "monkey": {
+    "text": "macaco",
+    "gender": "m"
+  },
+  "month": {
+    "text": "mês",
+    "gender": "m"
+  },
+  "moon": {
+    "text": "lua",
+    "gender": "f"
+  },
+  "morality": {
+    "text": "moralidade",
+    "gender": "f"
+  },
+  "morning": {
+    "text": "manhã",
+    "gender": "f"
+  },
+  "mother": {
+    "text": "mãe",
+    "gender": "f"
+  },
+  "mountain": {
+    "text": "montanha",
+    "gender": "f"
+  },
+  "mouse": {
+    "text": "rato",
+    "gender": "m"
+  },
+  "mouth": {
+    "text": "boca",
+    "gender": "f"
+  },
+  "movie": {
+    "text": "filme",
+    "gender": "m"
+  },
+  "muscle": {
+    "text": "músculo",
+    "gender": "m"
+  },
+  "mushroom": {
+    "text": "cogumelo",
+    "gender": "m"
+  },
+  "music": {
+    "text": "música",
+    "gender": "f"
+  },
+  "nail_clipper": {
+    "text": "cortador de unhas",
+    "gender": "m"
+  },
+  "nail_tool": {
+    "text": "prego",
+    "gender": "m"
+  },
+  "name": {
+    "text": "nome",
+    "gender": "m"
+  },
+  "neck": {
+    "text": "pescoço",
+    "gender": "m"
+  },
+  "neighbor": {
+    "text": "vizinho",
+    "gender": "m"
+  },
+  "network": {
+    "text": "rede",
+    "gender": "f"
+  },
+  "news": {
+    "text": "notícia",
+    "gender": "f"
+  },
+  "night": {
+    "text": "noite",
+    "gender": "f"
+  },
+  "nightstand": {
+    "text": "criado-mudo",
+    "gender": "m"
+  },
+  "noodle": {
+    "text": "macarrão",
+    "gender": "m"
+  },
+  "nose": {
+    "text": "nariz",
+    "gender": "m"
+  },
+  "november": {
+    "text": "novembro",
+    "gender": "m"
+  },
+  "number": {
+    "text": "número",
+    "gender": "m"
+  },
+  "nurse": {
+    "text": "enfermeiro",
+    "gender": "m"
+  },
+  "ocean": {
+    "text": "oceano",
+    "gender": "m"
+  },
+  "october": {
+    "text": "outubro",
+    "gender": "m"
+  },
+  "octopus": {
+    "text": "polvo",
+    "gender": "m"
+  },
+  "odometer": {
+    "text": "odômetro",
+    "gender": "m"
+  },
+  "office": {
+    "text": "escritório",
+    "gender": "m"
+  },
+  "oil": {
+    "text": "óleo",
+    "gender": "m"
+  },
+  "one_night_stand": {
+    "text": "encontro de uma noite",
+    "gender": "m"
+  },
+  "onion": {
+    "text": "cebola",
+    "gender": "f"
+  },
+  "orgasm": {
+    "text": "orgasmo",
+    "gender": "m"
+  },
+  "oven": {
+    "text": "forno",
+    "gender": "m"
+  },
+  "owl": {
+    "text": "coruja",
+    "gender": "f"
+  },
+  "pain": {
+    "text": "dor",
+    "gender": "f"
+  },
+  "pan": {
+    "text": "panela",
+    "gender": "f"
+  },
+  "pancreas": {
+    "text": "pâncreas",
+    "gender": "m"
+  },
+  "pants": {
+    "text": "calça",
+    "gender": "f"
+  },
+  "paper": {
+    "text": "papel",
+    "gender": "m"
+  },
+  "paradox": {
+    "text": "paradoxo",
+    "gender": "m"
+  },
+  "parent": {
+    "text": "pai",
+    "gender": "m"
+  },
+  "park": {
+    "text": "parque",
+    "gender": "m"
+  },
+  "parking": {
+    "text": "estacionamento",
+    "gender": "m"
+  },
+  "parrot": {
+    "text": "papagaio",
+    "gender": "m"
+  },
+  "part": {
+    "text": "parte",
+    "gender": "f"
+  },
+  "partner": {
+    "text": "parceiro",
+    "gender": "m"
+  },
+  "passion": {
+    "text": "paixão",
+    "gender": "f"
+  },
+  "passport": {
+    "text": "passaporte",
+    "gender": "m"
+  },
+  "password": {
+    "text": "senha",
+    "gender": "f"
+  },
+  "pattern": {
+    "text": "padrão",
+    "gender": "m"
+  },
+  "payment": {
+    "text": "pagamento",
+    "gender": "m"
+  },
+  "peace": {
+    "text": "paz",
+    "gender": "f"
+  },
+  "pen": {
+    "text": "caneta",
+    "gender": "f"
+  },
+  "penguin": {
+    "text": "pinguim",
+    "gender": "m"
+  },
+  "peninsula": {
+    "text": "península",
+    "gender": "f"
+  },
+  "pepper": {
+    "text": "pimenta",
+    "gender": "f"
+  },
+  "perception": {
+    "text": "percepção",
+    "gender": "f"
+  },
+  "perfume": {
+    "text": "perfume",
+    "gender": "m"
+  },
+  "person": {
+    "text": "pessoa",
+    "gender": "f"
+  },
+  "phone": {
+    "text": "telefone",
+    "gender": "m"
+  },
+  "photo": {
+    "text": "foto",
+    "gender": "f"
+  },
+  "physics": {
+    "text": "física",
+    "gender": "f"
+  },
+  "pig": {
+    "text": "porco",
+    "gender": "m"
+  },
+  "pillow": {
+    "text": "almofada",
+    "gender": "f"
+  },
+  "pipe": {
+    "text": "cano",
+    "gender": "m"
+  },
+  "place": {
+    "text": "lugar",
+    "gender": "m"
+  },
+  "plane": {
+    "text": "avião",
+    "gender": "m"
+  },
+  "plastic": {
+    "text": "plástico",
+    "gender": "m"
+  },
+  "plate": {
+    "text": "prato",
+    "gender": "m"
+  },
+  "plateau": {
+    "text": "planalto",
+    "gender": "m"
+  },
+  "player": {
+    "text": "jogador",
+    "gender": "m"
+  },
+  "pleasure": {
+    "text": "prazer",
+    "gender": "m"
+  },
+  "plug": {
+    "text": "plugue",
+    "gender": "m"
+  },
+  "police": {
+    "text": "polícia",
+    "gender": "f"
+  },
+  "pot": {
+    "text": "pote",
+    "gender": "m"
+  },
+  "potato": {
+    "text": "batata",
+    "gender": "f"
+  },
+  "power": {
+    "text": "poder",
+    "gender": "m"
+  },
+  "prescription": {
+    "text": "prescrição",
+    "gender": "f"
+  },
+  "presentation": {
+    "text": "apresentação",
+    "gender": "f"
+  },
+  "pressure": {
+    "text": "pressão",
+    "gender": "f"
+  },
+  "price": {
+    "text": "preço",
+    "gender": "m"
+  },
+  "problem": {
+    "text": "problema",
+    "gender": "m"
+  },
+  "professor": {
+    "text": "professor",
+    "gender": "m"
+  },
+  "profit": {
+    "text": "lucro",
+    "gender": "m"
+  },
+  "project": {
+    "text": "projeto",
+    "gender": "m"
+  },
+  "proposal_n": {
+    "text": "proposta",
+    "gender": "f"
+  },
+  "question": {
+    "text": "pergunta",
+    "gender": "f"
+  },
+  "rabbit": {
+    "text": "coelho",
+    "gender": "m"
+  },
+  "race": {
+    "text": "raça",
+    "gender": "f"
+  },
+  "radiation": {
+    "text": "radiação",
+    "gender": "f"
+  },
+  "radio": {
+    "text": "rádio",
+    "gender": "m"
+  },
+  "rain": {
+    "text": "chuva",
+    "gender": "f"
+  },
+  "razor": {
+    "text": "lâmina de barbear",
+    "gender": "f"
+  },
+  "reaction": {
+    "text": "reação",
+    "gender": "f"
+  },
+  "reality": {
+    "text": "realidade",
+    "gender": "f"
+  },
+  "reason": {
+    "text": "razão",
+    "gender": "f"
+  },
+  "receipt": {
+    "text": "recibo",
+    "gender": "m"
+  },
+  "referee": {
+    "text": "árbitro",
+    "gender": "m"
+  },
+  "relationship": {
+    "text": "relacionamento",
+    "gender": "m"
+  },
+  "research": {
+    "text": "pesquisa",
+    "gender": "f"
+  },
+  "reservation": {
+    "text": "reserva",
+    "gender": "f"
+  },
+  "restaurant": {
+    "text": "restaurante",
+    "gender": "m"
+  },
+  "rice": {
+    "text": "arroz",
+    "gender": "m"
+  },
+  "rights": {
+    "text": "direito",
+    "gender": "m"
+  },
+  "river": {
+    "text": "rio",
+    "gender": "m"
+  },
+  "road": {
+    "text": "estrada",
+    "gender": "f"
+  },
+  "roof": {
+    "text": "telhado",
+    "gender": "m"
+  },
+  "room": {
+    "text": "quarto",
+    "gender": "m"
+  },
+  "rope": {
+    "text": "corda",
+    "gender": "f"
+  },
+  "rubber": {
+    "text": "borracha",
+    "gender": "f"
+  },
+  "salad": {
+    "text": "salada",
+    "gender": "f"
+  },
+  "salary": {
+    "text": "salário",
+    "gender": "m"
+  },
+  "salt": {
+    "text": "sal",
+    "gender": "m"
+  },
+  "saturday": {
+    "text": "sábado",
+    "gender": "m"
+  },
+  "sauce": {
+    "text": "molho",
+    "gender": "m"
+  },
+  "sausage": {
+    "text": "salsicha",
+    "gender": "f"
+  },
+  "saw": {
+    "text": "serra",
+    "gender": "f"
+  },
+  "scarf": {
+    "text": "lenço",
+    "gender": "m"
+  },
+  "scholarship": {
+    "text": "bolsa",
+    "gender": "f"
+  },
+  "school": {
+    "text": "escola",
+    "gender": "f"
+  },
+  "scissors": {
+    "text": "tesoura",
+    "gender": "f"
+  },
+  "score": {
+    "text": "pontuação",
+    "gender": "f"
+  },
+  "screen": {
+    "text": "tela",
+    "gender": "f"
+  },
+  "screw": {
+    "text": "parafuso",
+    "gender": "m"
+  },
+  "screwdriver": {
+    "text": "chave de fenda",
+    "gender": "f"
+  },
+  "sea": {
+    "text": "mar",
+    "gender": "m"
+  },
+  "seal": {
+    "text": "foca",
+    "gender": "f"
+  },
+  "seasoning": {
+    "text": "tempero",
+    "gender": "m"
+  },
+  "seatbelt": {
+    "text": "cinto de segurança",
+    "gender": "m"
+  },
+  "secret": {
+    "text": "segredo",
+    "gender": "m"
+  },
+  "seduce": {
+    "text": "sedução",
+    "gender": "f"
+  },
+  "seduction": {
+    "text": "sedução",
+    "gender": "f"
+  },
+  "semester": {
+    "text": "semestre",
+    "gender": "m"
+  },
+  "sentence_legal": {
+    "text": "sentença",
+    "gender": "f"
+  },
+  "september": {
+    "text": "setembro",
+    "gender": "m"
+  },
+  "series": {
+    "text": "série",
+    "gender": "f"
+  },
+  "server": {
+    "text": "servidor",
+    "gender": "m"
+  },
+  "sex": {
+    "text": "sexo",
+    "gender": "m"
+  },
+  "shade": {
+    "text": "sombra",
+    "gender": "f"
+  },
+  "shampoo": {
+    "text": "xampu",
+    "gender": "m"
+  },
+  "shark": {
+    "text": "tubarão",
+    "gender": "m"
+  },
+  "sheep": {
+    "text": "ovelha",
+    "gender": "f"
+  },
+  "shelf": {
+    "text": "prateleira",
+    "gender": "f"
+  },
+  "shirt": {
+    "text": "camisa",
+    "gender": "f"
+  },
+  "shoe": {
+    "text": "sapato",
+    "gender": "m"
+  },
+  "shoulder": {
+    "text": "ombro",
+    "gender": "m"
+  },
+  "show_n": {
+    "text": "show",
+    "gender": "m"
+  },
+  "shrimp": {
+    "text": "camarão",
+    "gender": "m"
+  },
+  "sin": {
+    "text": "pecado",
+    "gender": "m"
+  },
+  "sink": {
+    "text": "pia",
+    "gender": "f"
+  },
+  "sister": {
+    "text": "irmã",
+    "gender": "f"
+  },
+  "skin": {
+    "text": "pele",
+    "gender": "f"
+  },
+  "skirt": {
+    "text": "saia",
+    "gender": "f"
+  },
+  "sky": {
+    "text": "céu",
+    "gender": "m"
+  },
+  "snake": {
+    "text": "cobra",
+    "gender": "f"
+  },
+  "snow": {
+    "text": "neve",
+    "gender": "f"
+  },
+  "soap": {
+    "text": "sabonete",
+    "gender": "m"
+  },
+  "sock": {
+    "text": "meia",
+    "gender": "f"
+  },
+  "software": {
+    "text": "software",
+    "gender": "m"
+  },
+  "soldier": {
+    "text": "soldado",
+    "gender": "m"
+  },
+  "song": {
+    "text": "música",
+    "gender": "f"
+  },
+  "soul": {
+    "text": "alma",
+    "gender": "f"
+  },
+  "soup": {
+    "text": "sopa",
+    "gender": "f"
+  },
+  "species": {
+    "text": "espécie",
+    "gender": "f"
+  },
+  "speech": {
+    "text": "discurso",
+    "gender": "m"
+  },
+  "speed": {
+    "text": "velocidade",
+    "gender": "f"
+  },
+  "spider": {
+    "text": "aranha",
+    "gender": "f"
+  },
+  "spine": {
+    "text": "coluna vertebral",
+    "gender": "f"
+  },
+  "spoon": {
+    "text": "colher",
+    "gender": "f"
+  },
+  "spring": {
+    "text": "primavera",
+    "gender": "f"
+  },
+  "stairs": {
+    "text": "escadas",
+    "gender": "f"
+  },
+  "star": {
+    "text": "estrela",
+    "gender": "f"
+  },
+  "station": {
+    "text": "estação",
+    "gender": "f"
+  },
+  "steering": {
+    "text": "volante",
+    "gender": "m"
+  },
+  "stomach": {
+    "text": "estômago",
+    "gender": "m"
+  },
+  "stone": {
+    "text": "pedra",
+    "gender": "f"
+  },
+  "store": {
+    "text": "loja",
+    "gender": "f"
+  },
+  "storm": {
+    "text": "tempestade",
+    "gender": "f"
+  },
+  "story": {
+    "text": "história",
+    "gender": "f"
+  },
+  "strategy": {
+    "text": "estratégia",
+    "gender": "f"
+  },
+  "street": {
+    "text": "rua",
+    "gender": "f"
+  },
+  "stripe": {
+    "text": "faixa",
+    "gender": "f"
+  },
+  "student": {
+    "text": "estudante",
+    "gender": "m"
+  },
+  "success": {
+    "text": "sucesso",
+    "gender": "m"
+  },
+  "sugar": {
+    "text": "açúcar",
+    "gender": "m"
+  },
+  "summer": {
+    "text": "verão",
+    "gender": "m"
+  },
+  "sun": {
+    "text": "sol",
+    "gender": "m"
+  },
+  "sunday": {
+    "text": "domingo",
+    "gender": "m"
+  },
+  "sunscreen": {
+    "text": "protetor solar",
+    "gender": "m"
+  },
+  "surgery": {
+    "text": "cirurgia",
+    "gender": "f"
+  },
+  "swimming_pool": {
+    "text": "piscina",
+    "gender": "f"
+  },
+  "switch_n": {
+    "text": "interruptor",
+    "gender": "m"
+  },
+  "symptom": {
+    "text": "sintoma",
+    "gender": "m"
+  },
+  "table": {
+    "text": "mesa",
+    "gender": "f"
+  },
+  "tape": {
+    "text": "fita",
+    "gender": "f"
+  },
+  "tax": {
+    "text": "imposto",
+    "gender": "m"
+  },
+  "taxi": {
+    "text": "táxi",
+    "gender": "m"
+  },
+  "tea": {
+    "text": "chá",
+    "gender": "m"
+  },
+  "teacher": {
+    "text": "professor",
+    "gender": "m"
+  },
+  "team": {
+    "text": "equipe",
+    "gender": "f"
+  },
+  "temperature": {
+    "text": "temperatura",
+    "gender": "f"
+  },
+  "textbook": {
+    "text": "livro didático",
+    "gender": "m"
+  },
+  "texture": {
+    "text": "textura",
+    "gender": "f"
+  },
+  "theater": {
+    "text": "teatro",
+    "gender": "m"
+  },
+  "theory": {
+    "text": "teoria",
+    "gender": "f"
+  },
+  "thing": {
+    "text": "coisa",
+    "gender": "f"
+  },
+  "thursday": {
+    "text": "quinta-feira",
+    "gender": "f"
+  },
+  "ticket": {
+    "text": "passagem",
+    "gender": "f"
+  },
+  "time": {
+    "text": "tempo",
+    "gender": "m"
+  },
+  "tire": {
+    "text": "pneu",
+    "gender": "m"
+  },
+  "tissue": {
+    "text": "tecido",
+    "gender": "m"
+  },
+  "toe": {
+    "text": "dedo do pé",
+    "gender": "m"
+  },
+  "tomato": {
+    "text": "tomate",
+    "gender": "m"
+  },
+  "tongue": {
+    "text": "língua",
+    "gender": "f"
+  },
+  "toolbox": {
+    "text": "caixa de ferramentas",
+    "gender": "f"
+  },
+  "tooth": {
+    "text": "dente",
+    "gender": "m"
+  },
+  "toothbrush": {
+    "text": "escova de dentes",
+    "gender": "f"
+  },
+  "toothpaste": {
+    "text": "pasta de dentes",
+    "gender": "f"
+  },
+  "tournament": {
+    "text": "torneio",
+    "gender": "m"
+  },
+  "towel": {
+    "text": "toalha",
+    "gender": "f"
+  },
+  "traffic": {
+    "text": "tráfego",
+    "gender": "m"
+  },
+  "train_vehicle": {
+    "text": "trem",
+    "gender": "m"
+  },
+  "training_n": {
+    "text": "treinamento",
+    "gender": "m"
+  },
+  "transfer": {
+    "text": "transferência",
+    "gender": "f"
+  },
+  "tray": {
+    "text": "bandeja",
+    "gender": "f"
+  },
+  "tree": {
+    "text": "árvore",
+    "gender": "f"
+  },
+  "trial": {
+    "text": "julgamento",
+    "gender": "m"
+  },
+  "trip": {
+    "text": "viagem",
+    "gender": "f"
+  },
+  "trust_n": {
+    "text": "confiança",
+    "gender": "f"
+  },
+  "truth": {
+    "text": "verdade",
+    "gender": "f"
+  },
+  "tuesday": {
+    "text": "terça-feira",
+    "gender": "f"
+  },
+  "turtle": {
+    "text": "tartaruga",
+    "gender": "f"
+  },
+  "utensil": {
+    "text": "utensílio",
+    "gender": "m"
+  },
+  "vacuum": {
+    "text": "aspirador",
+    "gender": "m"
+  },
+  "valley": {
+    "text": "vale",
+    "gender": "m"
+  },
+  "vase": {
+    "text": "vaso",
+    "gender": "m"
+  },
+  "vegetable": {
+    "text": "legume",
+    "gender": "m"
+  },
+  "vehicle": {
+    "text": "veículo",
+    "gender": "m"
+  },
+  "vein": {
+    "text": "veia",
+    "gender": "f"
+  },
+  "verdict": {
+    "text": "veredicto",
+    "gender": "m"
+  },
+  "victim": {
+    "text": "vítima",
+    "gender": "f"
+  },
+  "victory": {
+    "text": "vitória",
+    "gender": "f"
+  },
+  "video": {
+    "text": "vídeo",
+    "gender": "m"
+  },
+  "vinegar": {
+    "text": "vinagre",
+    "gender": "m"
+  },
+  "virgin": {
+    "text": "virgem",
+    "gender": "f"
+  },
+  "virtue": {
+    "text": "virtude",
+    "gender": "f"
+  },
+  "visa": {
+    "text": "visto",
+    "gender": "m"
+  },
+  "voice": {
+    "text": "voz",
+    "gender": "f"
+  },
+  "volcano": {
+    "text": "vulcão",
+    "gender": "m"
+  },
+  "waiter": {
+    "text": "garçom",
+    "gender": "m"
+  },
+  "wall": {
+    "text": "parede",
+    "gender": "f"
+  },
+  "war": {
+    "text": "guerra",
+    "gender": "f"
+  },
+  "wardrobe": {
+    "text": "guarda-roupa",
+    "gender": "m"
+  },
+  "washing_machine": {
+    "text": "máquina de lavar",
+    "gender": "f"
+  },
+  "water": {
+    "text": "água",
+    "gender": "f"
+  },
+  "waterfall": {
+    "text": "cachoeira",
+    "gender": "f"
+  },
+  "way": {
+    "text": "caminho",
+    "gender": "m"
+  },
+  "weather": {
+    "text": "tempo",
+    "gender": "m"
+  },
+  "website": {
+    "text": "site",
+    "gender": "m"
+  },
+  "wedding": {
+    "text": "casamento",
+    "gender": "m"
+  },
+  "wednesday": {
+    "text": "quarta-feira",
+    "gender": "f"
+  },
+  "week": {
+    "text": "semana",
+    "gender": "f"
+  },
+  "whale": {
+    "text": "baleia",
+    "gender": "f"
+  },
+  "wheel": {
+    "text": "roda",
+    "gender": "f"
+  },
+  "wife": {
+    "text": "esposa",
+    "gender": "f"
+  },
+  "wind": {
+    "text": "vento",
+    "gender": "m"
+  },
+  "window": {
+    "text": "janela",
+    "gender": "f"
+  },
+  "wine": {
+    "text": "vinho",
+    "gender": "m"
+  },
+  "winter": {
+    "text": "inverno",
+    "gender": "m"
+  },
+  "wire": {
+    "text": "fio",
+    "gender": "m"
+  },
+  "wisdom": {
+    "text": "sabedoria",
+    "gender": "f"
+  },
+  "witness": {
+    "text": "testemunha",
+    "gender": "f"
+  },
+  "wolf": {
+    "text": "lobo",
+    "gender": "m"
+  },
+  "woman": {
+    "text": "mulher",
+    "gender": "f"
+  },
+  "wood": {
+    "text": "madeira",
+    "gender": "f"
+  },
+  "word": {
+    "text": "palavra",
+    "gender": "f"
+  },
+  "work_n": {
+    "text": "trabalho",
+    "gender": "m"
+  },
+  "worker": {
+    "text": "trabalhador",
+    "gender": "m"
+  },
+  "world": {
+    "text": "mundo",
+    "gender": "m"
+  },
+  "wound": {
+    "text": "ferida",
+    "gender": "f"
+  },
+  "wrench": {
+    "text": "chave inglesa",
+    "gender": "f"
+  },
+  "year": {
+    "text": "ano",
+    "gender": "m"
+  },
+  "accept": {
+    "text": "aceitar"
+  },
+  "add": {
+    "text": "adicionar"
+  },
+  "agree": {
+    "text": "concordar"
+  },
+  "answer": {
+    "text": "responder"
+  },
+  "appear": {
+    "text": "aparecer"
+  },
+  "arrive": {
+    "text": "chegar"
+  },
+  "ask": {
+    "text": "pedir"
+  },
+  "bake": {
+    "text": "assar"
+  },
+  "be": {
+    "text": "ser"
+  },
+  "be_allowed_to": {
+    "text": "poder"
+  },
+  "be_happy": {
+    "text": "ser feliz"
+  },
+  "become": {
+    "text": "tornar-se"
+  },
+  "begin": {
+    "text": "começar"
+  },
+  "believe": {
+    "text": "acreditar"
+  },
+  "break": {
+    "text": "quebrar"
+  },
+  "break_down": {
+    "text": "quebrar-se"
+  },
+  "bring": {
+    "text": "trazer"
+  },
+  "bring_up": {
+    "text": "criar"
+  },
+  "build": {
+    "text": "construir"
+  },
+  "burn": {
+    "text": "queimar"
+  },
+  "buy": {
+    "text": "comprar"
+  },
+  "call": {
+    "text": "chamar"
+  },
+  "call_back": {
+    "text": "ligar de volta"
+  },
+  "can": {
+    "text": "poder"
+  },
+  "care": {
+    "text": "cuidar"
+  },
+  "carry": {
+    "text": "carregar"
+  },
+  "catch": {
+    "text": "pegar"
+  },
+  "change": {
+    "text": "mudar"
+  },
+  "check": {
+    "text": "verificar"
+  },
+  "check_out": {
+    "text": "sair"
+  },
+  "choose": {
+    "text": "escolher"
+  },
+  "clean": {
+    "text": "limpar"
+  },
+  "close": {
+    "text": "fechar"
+  },
+  "come": {
+    "text": "vir"
+  },
+  "consider": {
+    "text": "considerar"
+  },
+  "continue": {
+    "text": "continuar"
+  },
+  "cook": {
+    "text": "cozinhar"
+  },
+  "count": {
+    "text": "contar"
+  },
+  "create": {
+    "text": "criar"
+  },
+  "cry": {
+    "text": "chorar"
+  },
+  "cut": {
+    "text": "cortar"
+  },
+  "dance": {
+    "text": "dançar"
+  },
+  "decide": {
+    "text": "decidir"
+  },
+  "develop": {
+    "text": "desenvolver"
+  },
+  "die": {
+    "text": "morrer"
+  },
+  "do": {
+    "text": "fazer"
+  },
+  "download": {
+    "text": "baixar"
+  },
+  "draw": {
+    "text": "desenhar"
+  },
+  "dream": {
+    "text": "sonhar"
+  },
+  "drink": {
+    "text": "beber"
+  },
+  "drive": {
+    "text": "dirigir"
+  },
+  "eat": {
+    "text": "comer"
+  },
+  "eat_breakfast": {
+    "text": "tomar café da manhã"
+  },
+  "eat_dinner": {
+    "text": "jantar"
+  },
+  "eat_lunch": {
+    "text": "almoçar"
+  },
+  "expect": {
+    "text": "esperar"
+  },
+  "explain": {
+    "text": "explicar"
+  },
+  "fall": {
+    "text": "cair"
+  },
+  "fear": {
+    "text": "temer"
+  },
+  "feed": {
+    "text": "alimentar"
+  },
+  "feel": {
+    "text": "sentir"
+  },
+  "fight": {
+    "text": "lutar"
+  },
+  "find": {
+    "text": "encontrar"
+  },
+  "find_out": {
+    "text": "descobrir"
+  },
+  "finish": {
+    "text": "terminar"
+  },
+  "fly": {
+    "text": "voar"
+  },
+  "follow": {
+    "text": "seguir"
+  },
+  "forget": {
+    "text": "esquecer"
+  },
+  "get": {
+    "text": "obter"
+  },
+  "get_up": {
+    "text": "acordar"
+  },
+  "give": {
+    "text": "dar"
+  },
+  "give_up": {
+    "text": "desistir"
+  },
+  "go": {
+    "text": "ir"
+  },
+  "grill": {
+    "text": "grelhar"
+  },
+  "grow": {
+    "text": "crescer"
+  },
+  "grow_up": {
+    "text": "crescer"
+  },
+  "happen": {
+    "text": "acontecer"
+  },
+  "hate": {
+    "text": "odiar"
+  },
+  "have": {
+    "text": "ter"
+  },
+  "have_to": {
+    "text": "ter que"
+  },
+  "hear": {
+    "text": "ouvir"
+  },
+  "help": {
+    "text": "ajudar"
+  },
+  "hire": {
+    "text": "contratar"
+  },
+  "hold": {
+    "text": "segurar"
+  },
+  "hope": {
+    "text": "esperar"
+  },
+  "include": {
+    "text": "incluir"
+  },
+  "invite": {
+    "text": "convidar"
+  },
+  "join": {
+    "text": "entrar"
+  },
+  "jump": {
+    "text": "pular"
+  },
+  "keep": {
+    "text": "manter"
+  },
+  "kill": {
+    "text": "matar"
+  },
+  "kiss": {
+    "text": "beijar"
+  },
+  "know": {
+    "text": "saber"
+  },
+  "laugh": {
+    "text": "rir"
+  },
+  "lead": {
+    "text": "liderar"
+  },
+  "learn": {
+    "text": "aprender"
+  },
+  "leave": {
+    "text": "partir"
+  },
+  "let": {
+    "text": "deixar"
+  },
+  "lie": {
+    "text": "mentir"
+  },
+  "lie_down": {
+    "text": "deitar"
+  },
+  "like": {
+    "text": "gostar"
+  },
+  "listen": {
+    "text": "ouvir"
+  },
+  "live": {
+    "text": "viver"
+  },
+  "look_at": {
+    "text": "olhar"
+  },
+  "look_for": {
+    "text": "procurar"
+  },
+  "lose": {
+    "text": "perder"
+  },
+  "love": {
+    "text": "amar"
+  },
+  "make": {
+    "text": "fazer"
+  },
+  "marinate": {
+    "text": "marinar"
+  },
+  "marry": {
+    "text": "casar"
+  },
+  "mean": {
+    "text": "significar"
+  },
+  "meet": {
+    "text": "conhecer"
+  },
+  "meet_up": {
+    "text": "encontrar-se"
+  },
+  "move": {
+    "text": "mover"
+  },
+  "move_in": {
+    "text": "mudar para"
+  },
+  "move_out": {
+    "text": "mudar de"
+  },
+  "need": {
+    "text": "precisar"
+  },
+  "negotiate": {
+    "text": "negociar"
+  },
+  "offer": {
+    "text": "oferecer"
+  },
+  "open": {
+    "text": "abrir"
+  },
+  "pass": {
+    "text": "passar"
+  },
+  "pay": {
+    "text": "pagar"
+  },
+  "pay_for": {
+    "text": "pagar por"
+  },
+  "play": {
+    "text": "jogar"
+  },
+  "play_instrument": {
+    "text": "tocar"
+  },
+  "pray": {
+    "text": "orar"
+  },
+  "promise": {
+    "text": "prometer"
+  },
+  "promote": {
+    "text": "promover"
+  },
+  "protect": {
+    "text": "proteger"
+  },
+  "pull": {
+    "text": "puxar"
+  },
+  "push": {
+    "text": "empurrar"
+  },
+  "put": {
+    "text": "colocar"
+  },
+  "put_on": {
+    "text": "colocar"
+  },
+  "raise": {
+    "text": "levantar"
+  },
+  "reach": {
+    "text": "alcançar"
+  },
+  "read": {
+    "text": "ler"
+  },
+  "receive": {
+    "text": "receber"
+  },
+  "remember": {
+    "text": "lembrar"
+  },
+  "report": {
+    "text": "informar"
+  },
+  "require": {
+    "text": "exigir"
+  },
+  "resign": {
+    "text": "renunciar"
+  },
+  "respect": {
+    "text": "respeitar"
+  },
+  "roast": {
+    "text": "assar"
+  },
+  "run": {
+    "text": "correr"
+  },
+  "save": {
+    "text": "salvar"
+  },
+  "say": {
+    "text": "dizer"
+  },
+  "see": {
+    "text": "ver"
+  },
+  "seem": {
+    "text": "parecer"
+  },
+  "sell": {
+    "text": "vender"
+  },
+  "send": {
+    "text": "enviar"
+  },
+  "serve": {
+    "text": "servir"
+  },
+  "set": {
+    "text": "colocar"
+  },
+  "set_up": {
+    "text": "preparar"
+  },
+  "shake": {
+    "text": "sacudir"
+  },
+  "shoot": {
+    "text": "atirar"
+  },
+  "shout": {
+    "text": "gritar"
+  },
+  "show": {
+    "text": "mostrar"
+  },
+  "sing": {
+    "text": "cantar"
+  },
+  "sit": {
+    "text": "sentar"
+  },
+  "sit_down": {
+    "text": "sentar-se"
+  },
+  "sketch": {
+    "text": "esboçar"
+  },
+  "sleep": {
+    "text": "dormir"
+  },
+  "smell": {
+    "text": "cheirar"
+  },
+  "smile": {
+    "text": "sorrir"
+  },
+  "speak": {
+    "text": "falar"
+  },
+  "spend": {
+    "text": "gastar"
+  },
+  "stand": {
+    "text": "ficar em pé"
+  },
+  "stay": {
+    "text": "ficar"
+  },
+  "steam": {
+    "text": "vaporizar"
+  },
+  "stop": {
+    "text": "parar"
+  },
+  "study": {
+    "text": "estudar"
+  },
+  "succeed": {
+    "text": "conseguir"
+  },
+  "sue": {
+    "text": "processar"
+  },
+  "suggest": {
+    "text": "sugerir"
+  },
+  "support": {
+    "text": "apoiar"
+  },
+  "swim": {
+    "text": "nadar"
+  },
+  "take": {
+    "text": "pegar"
+  },
+  "take_off": {
+    "text": "decolar"
+  },
+  "talk": {
+    "text": "conversar"
+  },
+  "taste": {
+    "text": "provar"
+  },
+  "teach": {
+    "text": "ensinar"
+  },
+  "thank": {
+    "text": "agradecer"
+  },
+  "think": {
+    "text": "pensar"
+  },
+  "throw": {
+    "text": "jogar"
+  },
+  "touch": {
+    "text": "tocar"
+  },
+  "train": {
+    "text": "treinar"
+  },
+  "travel": {
+    "text": "viajar"
+  },
+  "try": {
+    "text": "tentar"
+  },
+  "try_on": {
+    "text": "provar"
+  },
+  "turn": {
+    "text": "virar"
+  },
+  "turn_off": {
+    "text": "desligar"
+  },
+  "turn_on": {
+    "text": "ligar"
+  },
+  "understand": {
+    "text": "entender"
+  },
+  "update": {
+    "text": "atualizar"
+  },
+  "upload": {
+    "text": "enviar"
+  },
+  "use": {
+    "text": "usar"
+  },
+  "wait": {
+    "text": "esperar"
+  },
+  "wait_for": {
+    "text": "esperar por"
+  },
+  "wake_up": {
+    "text": "acordar"
+  },
+  "walk": {
+    "text": "caminhar"
+  },
+  "want": {
+    "text": "querer"
+  },
+  "warn": {
+    "text": "avisar"
+  },
+  "wash": {
+    "text": "lavar"
+  },
+  "watch": {
+    "text": "assistir"
+  },
+  "watch_out": {
+    "text": "tomar cuidado"
+  },
+  "wave": {
+    "text": "acenar"
+  },
+  "wear": {
+    "text": "vestir"
+  },
+  "win": {
+    "text": "ganhar"
+  },
+  "wish": {
+    "text": "desejar"
+  },
+  "work": {
+    "text": "trabalhar"
+  },
+  "write": {
+    "text": "escrever"
+  },
+  "alive": {
+    "m": "vivo",
+    "f": "viva"
+  },
+  "angry": {
+    "m": "bravo",
+    "f": "brava"
+  },
+  "bad": {
+    "m": "mau",
+    "f": "má"
+  },
+  "beautiful": {
+    "m": "bonito",
+    "f": "bonita"
+  },
+  "beige": {
+    "m": "bege",
+    "f": "bege"
+  },
+  "big": {
+    "m": "grande",
+    "f": "grande"
+  },
+  "bitter": {
+    "m": "amargo",
+    "f": "amarga"
+  },
+  "black": {
+    "m": "preto",
+    "f": "preta"
+  },
+  "blind": {
+    "m": "cego",
+    "f": "cega"
+  },
+  "blue": {
+    "m": "azul",
+    "f": "azul"
+  },
+  "brave": {
+    "m": "corajoso",
+    "f": "corajosa"
+  },
+  "bright": {
+    "m": "brilhante",
+    "f": "brilhante"
+  },
+  "brown": {
+    "m": "marrom",
+    "f": "marrom"
+  },
+  "cheap": {
+    "m": "barato",
+    "f": "barata"
+  },
+  "clean_a": {
+    "m": "limpo",
+    "f": "limpa"
+  },
+  "closed": {
+    "m": "fechado",
+    "f": "fechada"
+  },
+  "cold": {
+    "m": "frio",
+    "f": "fria"
+  },
+  "colorful": {
+    "m": "colorido",
+    "f": "colorida"
+  },
+  "coral": {
+    "m": "coral",
+    "f": "coral"
+  },
+  "correct": {
+    "m": "correto",
+    "f": "correta"
+  },
+  "crimson": {
+    "m": "carmesim",
+    "f": "carmesim"
+  },
+  "dark": {
+    "m": "escuro",
+    "f": "escura"
+  },
+  "dead": {
+    "m": "morto",
+    "f": "morta"
+  },
+  "deaf": {
+    "m": "surdo",
+    "f": "surda"
+  },
+  "deep": {
+    "m": "profundo",
+    "f": "profunda"
+  },
+  "delicious": {
+    "m": "delicioso",
+    "f": "deliciosa"
+  },
+  "different": {
+    "m": "diferente",
+    "f": "diferente"
+  },
+  "difficult": {
+    "m": "difícil",
+    "f": "difícil"
+  },
+  "dirty": {
+    "m": "sujo",
+    "f": "suja"
+  },
+  "dry": {
+    "m": "seco",
+    "f": "seca"
+  },
+  "easy": {
+    "m": "fácil",
+    "f": "fácil"
+  },
+  "empty": {
+    "m": "vazio",
+    "f": "vazia"
+  },
+  "erotic": {
+    "m": "erótico",
+    "f": "erótica"
+  },
+  "expensive": {
+    "m": "caro",
+    "f": "cara"
+  },
+  "fast": {
+    "m": "rápido",
+    "f": "rápida"
+  },
+  "full": {
+    "m": "cheio",
+    "f": "cheia"
+  },
+  "furious": {
+    "m": "furioso",
+    "f": "furiosa"
+  },
+  "gold": {
+    "m": "dourado",
+    "f": "dourada"
+  },
+  "good": {
+    "m": "bom",
+    "f": "boa"
+  },
+  "green": {
+    "m": "verde",
+    "f": "verde"
+  },
+  "grey": {
+    "m": "cinzento",
+    "f": "cinzenta"
+  },
+  "guilty": {
+    "m": "culpado",
+    "f": "culpada"
+  },
+  "happy": {
+    "m": "feliz",
+    "f": "feliz"
+  },
+  "hard": {
+    "m": "duro",
+    "f": "dura"
+  },
+  "healthy": {
+    "m": "saudável",
+    "f": "saudável"
+  },
+  "heavy": {
+    "m": "pesado",
+    "f": "pesada"
+  },
+  "honest": {
+    "m": "honesto",
+    "f": "honesta"
+  },
+  "hot": {
+    "m": "quente",
+    "f": "quente"
+  },
+  "hungry": {
+    "m": "faminto",
+    "f": "faminta"
+  },
+  "important": {
+    "m": "importante",
+    "f": "importante"
+  },
+  "innocent": {
+    "m": "inocente",
+    "f": "inocente"
+  },
+  "ivory": {
+    "m": "marfim",
+    "f": "marfim"
+  },
+  "light": {
+    "m": "leve",
+    "f": "leve"
+  },
+  "long": {
+    "m": "longo",
+    "f": "longa"
+  },
+  "loud": {
+    "m": "alto",
+    "f": "alta"
+  },
+  "maroon": {
+    "m": "bordô",
+    "f": "bordô"
+  },
+  "matte": {
+    "m": "fosco",
+    "f": "fosca"
+  },
+  "multicolor": {
+    "m": "multicolorido",
+    "f": "multicolorida"
+  },
+  "naked": {
+    "m": "nu",
+    "f": "nua"
+  },
+  "navy": {
+    "m": "azul-marinho",
+    "f": "azul-marinho"
+  },
+  "necessary": {
+    "m": "necessário",
+    "f": "necessária"
+  },
+  "new": {
+    "m": "novo",
+    "f": "nova"
+  },
+  "old": {
+    "m": "velho",
+    "f": "velha"
+  },
+  "orange": {
+    "m": "laranja",
+    "f": "laranja"
+  },
+  "pale": {
+    "m": "pálido",
+    "f": "pálida"
+  },
+  "pink": {
+    "m": "rosa",
+    "f": "rosa"
+  },
+  "poor": {
+    "m": "pobre",
+    "f": "pobre"
+  },
+  "possible": {
+    "m": "possível",
+    "f": "possível"
+  },
+  "pregnant": {
+    "m": "grávido",
+    "f": "grávida"
+  },
+  "purple": {
+    "m": "roxo",
+    "f": "roxa"
+  },
+  "quiet": {
+    "m": "silencioso",
+    "f": "silenciosa"
+  },
+  "red": {
+    "m": "vermelho",
+    "f": "vermelha"
+  },
+  "rich": {
+    "m": "rico",
+    "f": "rica"
+  },
+  "round": {
+    "m": "redondo",
+    "f": "redonda"
+  },
+  "sad": {
+    "m": "triste",
+    "f": "triste"
+  },
+  "salty": {
+    "m": "salgado",
+    "f": "salgada"
+  },
+  "same": {
+    "m": "mesmo",
+    "f": "mesma"
+  },
+  "sensual": {
+    "m": "sensual",
+    "f": "sensual"
+  },
+  "shiny": {
+    "m": "brilhoso",
+    "f": "brilhosa"
+  },
+  "short": {
+    "m": "curto",
+    "f": "curta"
+  },
+  "sick": {
+    "m": "doente",
+    "f": "doente"
+  },
+  "silver": {
+    "m": "prateado",
+    "f": "prateada"
+  },
+  "single": {
+    "m": "solteiro",
+    "f": "solteira"
+  },
+  "slow": {
+    "m": "lento",
+    "f": "lenta"
+  },
+  "small": {
+    "m": "pequeno",
+    "f": "pequena"
+  },
+  "smart": {
+    "m": "inteligente",
+    "f": "inteligente"
+  },
+  "soft": {
+    "m": "macio",
+    "f": "macia"
+  },
+  "sour": {
+    "m": "azedo",
+    "f": "azeda"
+  },
+  "spicy": {
+    "m": "apimentado",
+    "f": "apimentada"
+  },
+  "strong": {
+    "m": "forte",
+    "f": "forte"
+  },
+  "sweet": {
+    "m": "doce",
+    "f": "doce"
+  },
+  "tall": {
+    "m": "alto",
+    "f": "alta"
+  },
+  "teal": {
+    "m": "azul-esverdeado",
+    "f": "azul-esverdeada"
+  },
+  "thirsty": {
+    "m": "sedento",
+    "f": "sedenta"
+  },
+  "tired": {
+    "m": "cansado",
+    "f": "cansada"
+  },
+  "transparent": {
+    "m": "transparente",
+    "f": "transparente"
+  },
+  "turquoise": {
+    "m": "turquesa",
+    "f": "turquesa"
+  },
+  "ugly": {
+    "m": "feio",
+    "f": "feia"
+  },
+  "vibrant": {
+    "m": "vibrante",
+    "f": "vibrante"
+  },
+  "warm": {
+    "m": "quente",
+    "f": "quente"
+  },
+  "weak": {
+    "m": "fraco",
+    "f": "fraca"
+  },
+  "wet": {
+    "m": "molhado",
+    "f": "molhada"
+  },
+  "white": {
+    "m": "branco",
+    "f": "branca"
+  },
+  "wide": {
+    "m": "largo",
+    "f": "larga"
+  },
+  "wrong": {
+    "m": "errado",
+    "f": "errada"
+  },
+  "yellow": {
+    "m": "amarelo",
+    "f": "amarela"
+  },
+  "young": {
+    "m": "jovem",
+    "f": "jovem"
+  },
+  "here": {
+    "text": "aqui"
+  },
+  "how_much": {
+    "text": "quanto"
+  },
+  "there": {
+    "text": "lá"
+  },
+  "when": {
+    "text": "quando"
+  },
+  "where": {
+    "text": "onde"
+  },
+  "why": {
+    "text": "por quê"
+  },
+  "a_lot": {
+    "text": "muito"
+  },
+  "across": {
+    "text": "através"
+  },
+  "after": {
+    "text": "depois"
+  },
+  "almost": {
+    "text": "quase"
+  },
+  "already": {
+    "text": "já"
+  },
+  "also": {
+    "text": "também"
+  },
+  "although": {
+    "text": "embora"
+  },
+  "always": {
+    "text": "sempre"
+  },
+  "and": {
+    "text": "e"
+  },
+  "at_least": {
+    "text": "pelo menos"
+  },
+  "backward": {
+    "text": "para trás"
+  },
+  "because": {
+    "text": "porque"
+  },
+  "before": {
+    "text": "antes"
+  },
+  "behind": {
+    "text": "atrás"
+  },
+  "beside": {
+    "text": "ao lado"
+  },
+  "between": {
+    "text": "entre"
+  },
+  "but": {
+    "text": "mas"
+  },
+  "completely": {
+    "text": "completamente"
+  },
+  "down": {
+    "text": "para baixo"
+  },
+  "earlier": {
+    "text": "mais cedo"
+  },
+  "eight": {
+    "text": "oito"
+  },
+  "either": {
+    "text": "um ou outro"
+  },
+  "enough": {
+    "text": "suficiente"
+  },
+  "everywhere": {
+    "text": "em todos os lugares"
+  },
+  "exactly": {
+    "text": "exatamente"
+  },
+  "first": {
+    "text": "primeiro"
+  },
+  "five": {
+    "text": "cinco"
+  },
+  "forward": {
+    "text": "para frente"
+  },
+  "four": {
+    "text": "quatro"
+  },
+  "goodbye": {
+    "text": "tchau"
+  },
+  "half": {
+    "text": "metade"
+  },
+  "hardly": {
+    "text": "dificilmente"
+  },
+  "he": {
+    "text": "ele"
+  },
+  "hello": {
+    "text": "olá"
+  },
+  "her": {
+    "text": "dela"
+  },
+  "his": {
+    "text": "dele"
+  },
+  "how": {
+    "text": "como"
+  },
+  "however": {
+    "text": "porém"
+  },
+  "hundred": {
+    "text": "cem"
+  },
+  "i": {
+    "text": "eu"
+  },
+  "if": {
+    "text": "se"
+  },
+  "immediately": {
+    "text": "imediatamente"
+  },
+  "in": {
+    "text": "em"
+  },
+  "in_front_of": {
+    "text": "na frente de"
+  },
+  "inside": {
+    "text": "dentro"
+  },
+  "instead": {
+    "text": "em vez de"
+  },
+  "it": {
+    "text": "isso"
+  },
+  "last": {
+    "text": "último"
+  },
+  "later": {
+    "text": "mais tarde"
+  },
+  "left": {
+    "text": "esquerda"
+  },
+  "less": {
+    "text": "menos"
+  },
+  "little": {
+    "text": "pouco"
+  },
+  "more": {
+    "text": "mais"
+  },
+  "mostly": {
+    "text": "principalmente"
+  },
+  "much": {
+    "text": "muito"
+  },
+  "my": {
+    "text": "meu"
+  },
+  "near": {
+    "text": "perto"
+  },
+  "neither": {
+    "text": "nem"
+  },
+  "never": {
+    "text": "nunca"
+  },
+  "nine": {
+    "text": "nove"
+  },
+  "no": {
+    "text": "não"
+  },
+  "now": {
+    "text": "agora"
+  },
+  "often": {
+    "text": "frequentemente"
+  },
+  "on": {
+    "text": "em"
+  },
+  "one": {
+    "text": "um"
+  },
+  "only": {
+    "text": "apenas"
+  },
+  "or": {
+    "text": "ou"
+  },
+  "otherwise": {
+    "text": "caso contrário"
+  },
+  "our": {
+    "text": "nosso"
+  },
+  "over": {
+    "text": "sobre"
+  },
+  "partially": {
+    "text": "parcialmente"
+  },
+  "please": {
+    "text": "por favor"
+  },
+  "rarely": {
+    "text": "raramente"
+  },
+  "recently": {
+    "text": "recentemente"
+  },
+  "right": {
+    "text": "direita"
+  },
+  "seven": {
+    "text": "sete"
+  },
+  "she": {
+    "text": "ela"
+  },
+  "sideways": {
+    "text": "para o lado"
+  },
+  "six": {
+    "text": "seis"
+  },
+  "sometimes": {
+    "text": "às vezes"
+  },
+  "soon": {
+    "text": "em breve"
+  },
+  "sorry": {
+    "text": "desculpa"
+  },
+  "straight": {
+    "text": "reto"
+  },
+  "such": {
+    "text": "tal"
+  },
+  "ten": {
+    "text": "dez"
+  },
+  "thank_you": {
+    "text": "obrigado"
+  },
+  "that": {
+    "text": "aquele"
+  },
+  "that_o": {
+    "text": "que"
+  },
+  "their": {
+    "text": "deles"
+  },
+  "then": {
+    "text": "então"
+  },
+  "therefore": {
+    "text": "portanto"
+  },
+  "they": {
+    "text": "eles"
+  },
+  "this": {
+    "text": "este"
+  },
+  "thousand": {
+    "text": "mil"
+  },
+  "three": {
+    "text": "três"
+  },
+  "today": {
+    "text": "hoje"
+  },
+  "tomorrow": {
+    "text": "amanhã"
+  },
+  "tonight": {
+    "text": "hoje à noite"
+  },
+  "too": {
+    "text": "também"
+  },
+  "totally": {
+    "text": "totalmente"
+  },
+  "two": {
+    "text": "dois"
+  },
+  "under": {
+    "text": "sob"
+  },
+  "unless": {
+    "text": "a menos que"
+  },
+  "up": {
+    "text": "para cima"
+  },
+  "usually": {
+    "text": "geralmente"
+  },
+  "very": {
+    "text": "muito"
+  },
+  "we": {
+    "text": "nós"
+  },
+  "what": {
+    "text": "o quê"
+  },
+  "whether": {
+    "text": "se"
+  },
+  "while": {
+    "text": "enquanto"
+  },
+  "who": {
+    "text": "quem"
+  },
+  "yes": {
+    "text": "sim"
+  },
+  "yesterday": {
+    "text": "ontem"
+  },
+  "yet": {
+    "text": "ainda"
+  },
+  "you": {
+    "text": "você"
+  },
+  "your": {
+    "text": "seu"
+  },
+  "zero": {
+    "text": "zero"
+  },
+  "meta": {
+    "levels": {
+      "survival": {
+        "name": "Sobrevivência"
+      },
+      "foundation": {
+        "name": "Fundação"
+      },
+      "elementary": {
+        "name": "Elementar"
+      },
+      "intermediate": {
+        "name": "Intermediário"
+      },
+      "advanced": {
+        "name": "Avançado"
+      },
+      "specialized": {
+        "name": "Especializado"
+      }
+    },
+    "groups": {
+      "first_contact": {
+        "name": "Primeiro contato"
+      },
+      "getting_around": {
+        "name": "Locomovendo-se"
+      },
+      "staying_alive": {
+        "name": "Sobrevivendo"
+      },
+      "making_sense": {
+        "name": "Fazendo sentido"
+      },
+      "core_verbs": {
+        "name": "Ser e ter"
+      },
+      "daily_actions": {
+        "name": "Comer, dormir, repetir"
+      },
+      "head_to_toe": {
+        "name": "Da cabeça aos pés"
+      },
+      "my_people": {
+        "name": "Minha gente"
+      },
+      "bread_and_water": {
+        "name": "Pão e água"
+      },
+      "four_walls": {
+        "name": "Quatro paredes"
+      },
+      "zero_to_ten": {
+        "name": "De zero a dez"
+      },
+      "on_the_road": {
+        "name": "Na estrada"
+      },
+      "good_and_bad": {
+        "name": "Bom e mau"
+      },
+      "glue_words": {
+        "name": "Palavras de ligação"
+      },
+      "doing_things": {
+        "name": "Fazendo coisas"
+      },
+      "hands_on": {
+        "name": "Mãos à obra"
+      },
+      "laugh_and_cry": {
+        "name": "Rir e chorar"
+      },
+      "shoulder_to_knee": {
+        "name": "Do ombro ao joelho"
+      },
+      "brothers_and_sisters": {
+        "name": "Irmãos e irmãs"
+      },
+      "market_basket": {
+        "name": "Cesta de compras"
+      },
+      "around_the_house": {
+        "name": "Pela casa"
+      },
+      "rainbow": {
+        "name": "Arco-íris"
+      },
+      "days_and_months": {
+        "name": "Dias e meses"
+      },
+      "when_and_how_often": {
+        "name": "Quando e com que frequência"
+      },
+      "creatures_and_sky": {
+        "name": "Criaturas e céu"
+      },
+      "city_life": {
+        "name": "Vida urbana"
+      },
+      "how_things_are": {
+        "name": "Como as coisas são"
+      },
+      "world_words": {
+        "name": "Palavras do mundo"
+      },
+      "bags_packed": {
+        "name": "Malas prontas"
+      },
+      "heart_and_mind": {
+        "name": "Coração e mente"
+      },
+      "coming_and_going": {
+        "name": "Indo e vindo"
+      },
+      "build_and_break": {
+        "name": "Construir e quebrar"
+      },
+      "two_word_wonders": {
+        "name": "Expressões de duas palavras"
+      },
+      "skin_deep": {
+        "name": "À flor da pele"
+      },
+      "home_sweet_home": {
+        "name": "Lar doce lar"
+      },
+      "at_the_table": {
+        "name": "À mesa"
+      },
+      "wild_side": {
+        "name": "Lado selvagem"
+      },
+      "taste_and_touch": {
+        "name": "Gosto e tato"
+      },
+      "people_and_places": {
+        "name": "Pessoas e lugares"
+      },
+      "life_and_work": {
+        "name": "Vida e trabalho"
+      },
+      "when_and_where": {
+        "name": "Quando e onde"
+      },
+      "going_places": {
+        "name": "Indo a lugares"
+      },
+      "dating_scene": {
+        "name": "Cena de encontros"
+      },
+      "sick_and_stuff": {
+        "name": "Doença e companhia"
+      },
+      "higher_ground": {
+        "name": "Terreno elevado"
+      },
+      "making_it_happen": {
+        "name": "Fazendo acontecer"
+      },
+      "tying_loose_ends": {
+        "name": "Amarrando pontas soltas"
+      },
+      "three_word_moves": {
+        "name": "Expressões de três palavras"
+      },
+      "bones_and_blood": {
+        "name": "Ossos e sangue"
+      },
+      "what_matters": {
+        "name": "O que importa"
+      },
+      "shades_of_grey": {
+        "name": "Tons de cinza"
+      },
+      "words_and_stories": {
+        "name": "Palavras e histórias"
+      },
+      "peace_and_war": {
+        "name": "Paz e guerra"
+      },
+      "however_therefore": {
+        "name": "Porém e portanto"
+      },
+      "stuff_and_coins": {
+        "name": "Coisas e moedas"
+      },
+      "after_dark": {
+        "name": "Depois do anoitecer"
+      },
+      "last_of_the_wild": {
+        "name": "Os últimos selvagens"
+      },
+      "medical_anatomy": {
+        "name": "Medicina e anatomia"
+      },
+      "extended_animals": {
+        "name": "Animais e vida marinha"
+      },
+      "extended_food": {
+        "name": "Alimentação e culinária"
+      },
+      "extended_colors_art": {
+        "name": "Cores e arte"
+      },
+      "business": {
+        "name": "Negócios"
+      },
+      "legal": {
+        "name": "Jurídico"
+      },
+      "tech_it": {
+        "name": "Tecnologia e TI"
+      },
+      "science": {
+        "name": "Ciência"
+      },
+      "furniture_utensils": {
+        "name": "Móveis e eletrodomésticos"
+      },
+      "philosophy": {
+        "name": "Filosofia e abstrato"
+      },
+      "sports_fitness": {
+        "name": "Esporte e fitness"
+      },
+      "hygiene": {
+        "name": "Higiene e cuidados pessoais"
+      },
+      "entertainment": {
+        "name": "Entretenimento e mídia"
+      },
+      "education": {
+        "name": "Educação"
+      },
+      "geography": {
+        "name": "Geografia e paisagens"
+      },
+      "automotive": {
+        "name": "Automotivo e direção"
+      },
+      "tools_repair": {
+        "name": "Ferramentas e reparo"
+      },
+      "relationships": {
+        "name": "Relacionamentos e vida social"
+      },
+      "romance_intimacy": {
+        "name": "Romance e intimidade"
+      }
+    }
+  }
+}

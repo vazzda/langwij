@@ -14,7 +14,9 @@ import '../app/router/app_router.dart';
 import '../app/theme/app_themes.dart';
 import '../entities/language/language_pack.dart';
 import '../shared/ui/buttons/project_button_group.dart';
-import '../shared/ui/buttons/project_buttons.dart' show BaseButton, ButtonSize;
+import '../shared/ui/bottom_sheet/project_bottom_sheet.dart';
+import '../shared/ui/buttons/project_buttons.dart';
+import '../shared/ui/inputs/project_text_input.dart';
 import '../shared/ui/screen_layout/screen_layout_widget.dart';
 import '../shared/ui/card/project_card.dart';
 import '../shared/ui/inputs/project_radio_tile.dart';
@@ -32,14 +34,114 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   int _settingsTapCount = 0;
 
   void _handleTitleTap() {
-    setState(() {
-      _settingsTapCount++;
-      if (_settingsTapCount >= AppConstants.devAccessTapCount) {
-        ref.read(devSectionEnabledProvider.notifier).state = true;
-        saveDevSectionEnabled(true);
-        _settingsTapCount = 0;
-      }
-    });
+    _settingsTapCount++;
+    if (_settingsTapCount >= AppConstants.devAccessTapCount) {
+      _settingsTapCount = 0;
+      _showDevPasswordSheet();
+    }
+  }
+
+  void _showDevPasswordSheet() {
+    final passwordController = TextEditingController();
+    showProjectBottomSheet<void>(
+      context: context,
+      isDismissible: false,
+      builder: (sheetContext) {
+        final t = AppThemes.of(sheetContext);
+        final l10n = AppLocalizations.of(sheetContext)!;
+        String? error;
+        var listenerAdded = false;
+        return StatefulBuilder(
+          builder: (stateContext, setSheetState) {
+            if (!listenerAdded) {
+              listenerAdded = true;
+              passwordController.addListener(() => setSheetState(() {}));
+            }
+            final hasText = passwordController.text.isNotEmpty;
+            return Padding(
+            padding: EdgeInsets.only(
+              left: t.bottomSheetPadding,
+              right: t.bottomSheetPadding,
+              top: t.bottomSheetPadding,
+              bottom: t.bottomSheetPadding +
+                  MediaQuery.of(stateContext).viewInsets.bottom,
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  l10n.dev_enterPassword,
+                  style: AppFontStyles.textSheetTitle
+                      .copyWith(color: t.textPrimary),
+                ),
+                const SizedBox(height: 16),
+                ProjectTextInput(
+                  controller: passwordController,
+                  autofocus: true,
+                  obscureText: true,
+                  autocorrect: false,
+                  enableSuggestions: false,
+                  onSubmitted: hasText
+                      ? (_) {
+                          if (passwordController.text ==
+                              AppConstants.devAccessPassword) {
+                            Navigator.of(stateContext).pop();
+                            ref.read(devSectionEnabledProvider.notifier).state =
+                                true;
+                            saveDevSectionEnabled(true);
+                          } else {
+                            setSheetState(
+                                () => error = l10n.dev_wrongPassword);
+                          }
+                        }
+                      : null,
+                ),
+                const SizedBox(height: 8),
+                Opacity(
+                  opacity: error != null ? 1.0 : 0.0,
+                  child: Text(
+                    error ?? ' ',
+                    style: AppFontStyles.textFormError
+                        .copyWith(color: t.dangerColor),
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    ProjectTextButton(
+                      label: l10n.cancel,
+                      onPressed: () => Navigator.of(stateContext).pop(),
+                    ),
+                    const SizedBox(width: 8),
+                    AccentButton(
+                      label: l10n.dev_unlock,
+                      onPressed: hasText
+                          ? () {
+                              if (passwordController.text ==
+                                  AppConstants.devAccessPassword) {
+                                Navigator.of(stateContext).pop();
+                                ref
+                                    .read(devSectionEnabledProvider.notifier)
+                                    .state = true;
+                                saveDevSectionEnabled(true);
+                              } else {
+                                setSheetState(
+                                    () => error = l10n.dev_wrongPassword);
+                              }
+                            }
+                          : null,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          );
+          },
+        );
+      },
+    );
   }
 
   void _handleHideDevSection() {

@@ -42,6 +42,22 @@ abstract final class LangGrammarProfiles {
       hasNeuter: false,
       hasAspectPairs: false,
     ),
+    LangCodes.french: LanguageGrammarProfile(
+      hasNeuter: false,
+      hasAspectPairs: false,
+    ),
+    LangCodes.spanish: LanguageGrammarProfile(
+      hasNeuter: false,
+      hasAspectPairs: false,
+    ),
+    LangCodes.portuguese: LanguageGrammarProfile(
+      hasNeuter: false,
+      hasAspectPairs: false,
+    ),
+    LangCodes.german: LanguageGrammarProfile(
+      hasNeuter: true,
+      hasAspectPairs: false,
+    ),
   };
 
   static LanguageGrammarProfile of(String langCode) =>

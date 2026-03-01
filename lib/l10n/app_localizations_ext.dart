@@ -14,6 +14,14 @@ extension AppLocalizationsLangLabel on AppLocalizations {
         return lang_russian;
       case 'lang_italian':
         return lang_italian;
+      case 'lang_french':
+        return lang_french;
+      case 'lang_spanish':
+        return lang_spanish;
+      case 'lang_portuguese':
+        return lang_portuguese;
+      case 'lang_german':
+        return lang_german;
       default:
         throw ArgumentError(
           'langLabel: unknown labelKey "$labelKey" — add it to app_en.arb and this extension',

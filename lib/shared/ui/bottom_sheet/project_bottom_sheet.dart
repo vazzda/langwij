@@ -21,12 +21,14 @@ Future<T?> showProjectBottomSheet<T>({
   double draggableInitialSize = 0.5,
   double draggableMinSize = 0.3,
   double draggableMaxSize = 0.9,
+  bool isDismissible = true,
 }) {
   final theme = AppThemes.of(context);
 
   return showModalBottomSheet<T>(
     context: context,
     isScrollControlled: isScrollControlled,
+    isDismissible: isDismissible,
     backgroundColor: Colors.transparent,
     barrierColor: theme.bottomSheetScrimColor,
     shape: RoundedRectangleBorder(

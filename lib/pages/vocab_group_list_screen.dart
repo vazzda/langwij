@@ -117,8 +117,8 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
       settings: settings,
     );
 
-    final specializedId = dictionary.levels.last.id;
-    final activeLevelId = _computeActiveLevelId(levels);
+    final firstLevelId = dictionary.levels.first.id;
+    final lastLevelId = dictionary.levels.last.id;
 
     return ScreenLayoutWidget(
       title: l10n.navVocabulary,
@@ -140,8 +140,8 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
           final levelId = level.level.id;
           final isExpanded = _isLevelExpanded(
             levelId: levelId,
-            specializedId: specializedId,
-            activeLevelId: activeLevelId,
+            firstLevelId: firstLevelId,
+            lastLevelId: lastLevelId,
             overrides: foldOverrides,
           );
           return Padding(
@@ -292,31 +292,17 @@ class _VocabGroupListScreenState extends ConsumerState<VocabGroupListScreen> {
     return ProgressCalculator.getRetentionLevel(avgRetention, levelProgress);
   }
 
-  /// Returns the id of the most recently sessioned level, or null if none.
-  String? _computeActiveLevelId(List<VocabLevelData> levels) {
-    String? activeId;
-    DateTime? latest;
-    for (final level in levels) {
-      final d = level.latestDate;
-      if (d != null && (latest == null || d.isAfter(latest))) {
-        latest = d;
-        activeId = level.level.id;
-      }
-    }
-    return activeId;
-  }
-
-  /// Computes whether a level should be expanded, respecting user overrides
-  /// and falling back to defaults (specialized + active = expanded).
+/// Computes whether a level should be expanded, respecting user overrides.
+  /// Default: first and last levels are open. User toggle overrides everything.
   bool _isLevelExpanded({
     required String levelId,
-    required String specializedId,
-    required String? activeLevelId,
+    required String firstLevelId,
+    required String lastLevelId,
     required Map<String, bool> overrides,
   }) {
     if (overrides.containsKey(levelId)) return overrides[levelId]!;
-    if (levelId == specializedId) return true;
-    if (levelId == activeLevelId) return true;
+    if (levelId == firstLevelId) return true;
+    if (levelId == lastLevelId) return true;
     return false;
   }
 

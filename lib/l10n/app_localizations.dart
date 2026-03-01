@@ -736,6 +736,30 @@ abstract class AppLocalizations {
   /// **'Italian'**
   String get lang_italian;
 
+  /// No description provided for @lang_french.
+  ///
+  /// In en, this message translates to:
+  /// **'French'**
+  String get lang_french;
+
+  /// No description provided for @lang_spanish.
+  ///
+  /// In en, this message translates to:
+  /// **'Spanish'**
+  String get lang_spanish;
+
+  /// No description provided for @lang_portuguese.
+  ///
+  /// In en, this message translates to:
+  /// **'Portuguese'**
+  String get lang_portuguese;
+
+  /// No description provided for @lang_german.
+  ///
+  /// In en, this message translates to:
+  /// **'German'**
+  String get lang_german;
+
   /// No description provided for @aspect_perfective.
   ///
   /// In en, this message translates to:
@@ -787,7 +811,7 @@ abstract class AppLocalizations {
   /// No description provided for @language_serbianNativeNote.
   ///
   /// In en, this message translates to:
-  /// **'Tnx for the hospitality! Now and forever every serbian speaker learning new language get all the languages for free, no need for subscription!'**
+  /// **'Thanks for the hospitality! Every Serbian speaker learning a new language gets all languages for free — no subscription needed.'**
   String get language_serbianNativeNote;
 
   /// No description provided for @language_myProgress.
@@ -879,6 +903,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Controls List'**
   String get settingsControlsList;
+
+  /// No description provided for @dev_enterPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Hello'**
+  String get dev_enterPassword;
+
+  /// No description provided for @dev_unlock.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock'**
+  String get dev_unlock;
+
+  /// No description provided for @dev_wrongPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Nope!'**
+  String get dev_wrongPassword;
 
   /// No description provided for @quiz_aspectImperfective.
   ///

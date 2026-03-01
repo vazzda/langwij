@@ -17,6 +17,7 @@ class ProjectTextInput extends StatelessWidget {
     this.inputFormatters,
     this.autocorrect = true,
     this.enableSuggestions = true,
+    this.obscureText = false,
   });
 
   final TextEditingController? controller;
@@ -29,6 +30,7 @@ class ProjectTextInput extends StatelessWidget {
   final List<TextInputFormatter>? inputFormatters;
   final bool autocorrect;
   final bool enableSuggestions;
+  final bool obscureText;
 
   @override
   Widget build(BuildContext context) {
@@ -60,6 +62,7 @@ class ProjectTextInput extends StatelessWidget {
       inputFormatters: inputFormatters,
       autocorrect: autocorrect,
       enableSuggestions: enableSuggestions,
+      obscureText: obscureText,
       style: AppFontStyles.textFormInput.copyWith(color: t.controlForeground),
     );
   }

@@ -182,6 +182,10 @@
   "lang_serbian": "Serbian",
   "lang_russian": "Russian",
   "lang_italian": "Italian",
+  "lang_french": "French",
+  "lang_spanish": "Spanish",
+  "lang_portuguese": "Portuguese",
+  "lang_german": "German",
 
   "aspect_perfective": "perfective",
   "aspect_imperfective": "imperfective",
@@ -192,7 +196,7 @@
   "language_native": "Native language",
   "language_appLanguage": "App language",
   "language_sameAsLearning": "Not gonna work! Same as learning language selected",
-  "language_serbianNativeNote": "Tnx for the hospitality! Now and forever every serbian speaker learning new language get all the languages for free, no need for subscription!",
+  "language_serbianNativeNote": "Thanks for the hospitality! Every Serbian speaker learning a new language gets all languages for free — no subscription needed.",
   "language_myProgress": "My progress",
   "language_progression": "Progression",
   "language_incompleteDictionaries": "Incomplete dictionaries",
@@ -233,6 +237,10 @@
   "settingsHide": "Hide",
   "settingsDeveloper": "Developer",
   "settingsControlsList": "Controls List",
+
+  "dev_enterPassword": "Hello",
+  "dev_unlock": "Unlock",
+  "dev_wrongPassword": "Nope!",
 
   "quiz_aspectImperfective": "Imperfective:",
   "quiz_aspectPerfective": "Perfective:",

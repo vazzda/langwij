@@ -3,7 +3,11 @@
     { "code": "en", "labelKey": "lang_english" },
     { "code": "sr", "labelKey": "lang_serbian" },
     { "code": "ru", "labelKey": "lang_russian" },
-    { "code": "it", "labelKey": "lang_italian" }
+    { "code": "it", "labelKey": "lang_italian" },
+    { "code": "fr", "labelKey": "lang_french" },
+    { "code": "es", "labelKey": "lang_spanish" },
+    { "code": "pt", "labelKey": "lang_portuguese" },
+    { "code": "de", "labelKey": "lang_german" }
   ],
   "public_languages": ["en", "sr"],
   "ui_languages": ["en"],
