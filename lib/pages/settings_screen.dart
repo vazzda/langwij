@@ -61,15 +61,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               passwordController.addListener(() => setSheetState(() {}));
             }
             final hasText = passwordController.text.isNotEmpty;
-            return Padding(
-            padding: EdgeInsets.only(
-              left: t.bottomSheetPadding,
-              right: t.bottomSheetPadding,
-              top: t.bottomSheetPadding,
-              bottom: t.bottomSheetPadding +
-                  MediaQuery.of(stateContext).viewInsets.bottom,
-            ),
-            child: Column(
+            return Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -139,8 +131,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   ],
                 ),
               ],
-            ),
-          );
+            );
           },
         );
       },

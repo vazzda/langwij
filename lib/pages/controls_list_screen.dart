@@ -1108,27 +1108,24 @@ class _ControlsListScreenState extends State<ControlsListScreen> {
                     final t = VesselThemes.of(context);
                     showVesselBottomSheet(
                       context: context,
-                      builder: (sheetContext) => Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              'Project Bottom Sheet',
-                              style: VesselFonts.textSheetTitle.copyWith(color: t.textPrimary),
-                            ),
-                            const SizedBox(height: 12),
-                            Text(
-                              'With blur support. Content goes here.',
-                              style: VesselFonts.textBody.copyWith(color: t.textSecondary),
-                            ),
-                            const SizedBox(height: 16),
-                            VesselButton(
-                              label: 'Close',
-                              onPressed: () => Navigator.of(sheetContext).pop(),
-                            ),
-                          ],
-                        ),
+                      builder: (sheetContext) => Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'Project Bottom Sheet',
+                            style: VesselFonts.textSheetTitle.copyWith(color: t.textPrimary),
+                          ),
+                          const VesselGap.m(),
+                          Text(
+                            'With blur support. Content goes here.',
+                            style: VesselFonts.textBody.copyWith(color: t.textSecondary),
+                          ),
+                          const VesselGap.l(),
+                          VesselButton(
+                            label: 'Close',
+                            onPressed: () => Navigator.of(sheetContext).pop(),
+                          ),
+                        ],
                       ),
                     );
                   },

@@ -118,26 +118,22 @@ Future<String?> _showLangPicker(
   return showVesselBottomSheet<String>(
     context: context,
     builder: (sheetContext) {
-      final t = VesselThemes.of(sheetContext);
-      return Padding(
-        padding: EdgeInsets.all(t.bottomSheetPadding),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            ...codes.map((code) {
-              final pack = packByCode[code]!;
-              return Padding(
-                padding: const EdgeInsets.only(bottom: VesselLayout.listItemGapSmall),
-                child: VesselLangButton(
-                  langCode: code,
-                  label: l10n.langLabel(pack.labelKey),
-                  onPressed: () => Navigator.of(sheetContext).pop(code),
-                ),
-              );
-            }),
-          ],
-        ),
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          ...codes.map((code) {
+            final pack = packByCode[code]!;
+            return Padding(
+              padding: const EdgeInsets.only(bottom: VesselLayout.listItemGapSmall),
+              child: VesselLangButton(
+                langCode: code,
+                label: l10n.langLabel(pack.labelKey),
+                onPressed: () => Navigator.of(sheetContext).pop(code),
+              ),
+            );
+          }),
+        ],
       );
     },
   );

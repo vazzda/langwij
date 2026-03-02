@@ -12,10 +12,12 @@ import 'package:srpski_card/app/theme/vessel_themes.dart';
 /// - blurSigma: bottomSheetBlurSigma (0 = no blur, 10+ = strong blur)
 ///
 /// The [builder] receives the BuildContext and should return the sheet content.
-/// Content should use `theme.bottomSheetPadding` for consistent padding.
+/// Default padding (`theme.bottomSheetPadding`) is applied automatically.
+/// Pass [padding] to override (e.g. to account for keyboard insets).
 Future<T?> showVesselBottomSheet<T>({
   required BuildContext context,
   required Widget Function(BuildContext context) builder,
+  EdgeInsetsGeometry? padding,
   bool isScrollControlled = true,
   bool useDraggableSheet = false,
   double draggableInitialSize = 0.5,
@@ -37,6 +39,12 @@ Future<T?> showVesselBottomSheet<T>({
       ),
     ),
     builder: (sheetContext) {
+      final effectivePadding =
+          padding ?? EdgeInsets.all(theme.bottomSheetPadding);
+
+      Widget applyPadding(Widget child) =>
+          Padding(padding: effectivePadding, child: child);
+
       final content = useDraggableSheet
           ? DraggableScrollableSheet(
               initialChildSize: draggableInitialSize,
@@ -45,12 +53,12 @@ Future<T?> showVesselBottomSheet<T>({
               expand: false,
               builder: (context, scrollController) => SafeArea(
                 top: false,
-                child: builder(context),
+                child: applyPadding(builder(context)),
               ),
             )
           : SafeArea(
               top: false,
-              child: builder(sheetContext),
+              child: applyPadding(builder(sheetContext)),
             );
 
       return _buildBlurredSheet(

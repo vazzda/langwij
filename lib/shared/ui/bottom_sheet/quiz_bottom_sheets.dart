@@ -46,49 +46,14 @@ Future<ModeSelection?> showModeBottomSheet(
       constraints: const BoxConstraints(
         minHeight: VesselLayout.modeSheetMinHeight,
       ),
-      child: Padding(
-        padding: EdgeInsets.all(t.bottomSheetPadding),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // GUESSING section
-            if (showAllModes) ...[
-            Text(
-              l10n.mode_guessingHeader.toUpperCase(),
-              style: VesselFonts.textModeTileSectionHeader
-                  .copyWith(color: t.textSecondary),
-            ),
-            const VesselGap.s(),
-            _ModeTileRow(
-              tiles: [
-                _ModeTileData(
-                  label: l10n.mode_langCards(nativeLangName),
-                  langCode: nativeLangCode,
-                  typeIcon: PhosphorIconsRegular.cards,
-                  isAccent: false,
-                  onTap: () => Navigator.of(context).pop(
-                    const ModeSelection(
-                        mode: QuizMode.nativeShown, isTest: false),
-                  ),
-                ),
-                _ModeTileData(
-                  label: l10n.mode_langCards(targetLangName),
-                  langCode: targetLangCode,
-                  typeIcon: PhosphorIconsRegular.cards,
-                  isAccent: false,
-                  onTap: () => Navigator.of(context).pop(
-                    const ModeSelection(
-                        mode: QuizMode.targetShown, isTest: false),
-                  ),
-                ),
-              ],
-            ),
-            const VesselGap.l(),
-          ],
-          // WRITING section
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          // GUESSING section
+          if (showAllModes) ...[
           Text(
-            l10n.mode_writingHeader.toUpperCase(),
+            l10n.mode_guessingHeader.toUpperCase(),
             style: VesselFonts.textModeTileSectionHeader
                 .copyWith(color: t.textSecondary),
           ),
@@ -96,33 +61,65 @@ Future<ModeSelection?> showModeBottomSheet(
           _ModeTileRow(
             tiles: [
               _ModeTileData(
-                label: l10n.mode_training,
-                langCode: targetLangCode,
-                typeIcon: PhosphorIconsRegular.pencilSimpleLine,
+                label: l10n.mode_langCards(nativeLangName),
+                langCode: nativeLangCode,
+                typeIcon: PhosphorIconsRegular.cards,
                 isAccent: false,
                 onTap: () => Navigator.of(context).pop(
-                  const ModeSelection(mode: QuizMode.write, isTest: false),
+                  const ModeSelection(
+                      mode: QuizMode.nativeShown, isTest: false),
                 ),
               ),
               _ModeTileData(
-                label: l10n.mode_test,
+                label: l10n.mode_langCards(targetLangName),
                 langCode: targetLangCode,
-                typeIcon: PhosphorIconsRegular.pencilSimpleLine,
-                isAccent: true,
+                typeIcon: PhosphorIconsRegular.cards,
+                isAccent: false,
                 onTap: () => Navigator.of(context).pop(
-                  const ModeSelection(mode: QuizMode.write, isTest: true),
+                  const ModeSelection(
+                      mode: QuizMode.targetShown, isTest: false),
                 ),
               ),
             ],
           ),
           const VesselGap.l(),
-          // Cancel
-          VesselTextButton(
-            label: l10n.cancel,
-            onPressed: () => Navigator.of(context).pop(),
-          ),
         ],
+        // WRITING section
+        Text(
+          l10n.mode_writingHeader.toUpperCase(),
+          style: VesselFonts.textModeTileSectionHeader
+              .copyWith(color: t.textSecondary),
         ),
+        const VesselGap.s(),
+        _ModeTileRow(
+          tiles: [
+            _ModeTileData(
+              label: l10n.mode_training,
+              langCode: targetLangCode,
+              typeIcon: PhosphorIconsRegular.pencilSimpleLine,
+              isAccent: false,
+              onTap: () => Navigator.of(context).pop(
+                const ModeSelection(mode: QuizMode.write, isTest: false),
+              ),
+            ),
+            _ModeTileData(
+              label: l10n.mode_test,
+              langCode: targetLangCode,
+              typeIcon: PhosphorIconsRegular.pencilSimpleLine,
+              isAccent: true,
+              onTap: () => Navigator.of(context).pop(
+                const ModeSelection(mode: QuizMode.write, isTest: true),
+              ),
+            ),
+          ],
+        ),
+        const VesselGap.l(),
+        // Cancel
+        VesselTextButton(
+          label: l10n.cancel,
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ],
       ),
     ),
   );
@@ -303,31 +300,28 @@ Future<int?> showCountBottomSheet(
       constraints: const BoxConstraints(
         minHeight: VesselLayout.modeSheetMinHeight,
       ),
-      child: Padding(
-        padding: EdgeInsets.all(t.bottomSheetPadding),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              l10n.chooseQuestionsCount.toUpperCase(),
-              style: VesselFonts.textModeTileSectionHeader.copyWith(color: t.textSecondary),
-            ),
-            const VesselGap.l(),
-            _CountTileGrid(
-              counts: counts,
-              labels: labels,
-              icons: icons,
-              accentIndex: lastIndex,
-              onSelect: (value) => Navigator.of(context).pop(value),
-            ),
-            const VesselGap.l(),
-            VesselTextButton(
-              label: l10n.cancel,
-              onPressed: () => Navigator.of(context).pop(),
-            ),
-          ],
-        ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            l10n.chooseQuestionsCount.toUpperCase(),
+            style: VesselFonts.textModeTileSectionHeader.copyWith(color: t.textSecondary),
+          ),
+          const VesselGap.l(),
+          _CountTileGrid(
+            counts: counts,
+            labels: labels,
+            icons: icons,
+            accentIndex: lastIndex,
+            onSelect: (value) => Navigator.of(context).pop(value),
+          ),
+          const VesselGap.l(),
+          VesselTextButton(
+            label: l10n.cancel,
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+        ],
       ),
     ),
   );

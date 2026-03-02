@@ -16,6 +16,7 @@ class Theme01Palette {
   static const Color pureBlackA40 = Color(0x66000000);
   static const Color pureBlackA12 = Color(0x20000000);
   static const Color pureBlackA06 = Color(0x10000000);
+  static const Color powderTealA25 = Color(0x40a8dadc);
 
   static const Color gunMetal = Color(0xFF373D43);
 
@@ -53,16 +54,16 @@ const VesselThemeData theme01Theme = VesselThemeData(
   displayBackground: Theme01Palette.pureWhite,
   displayBorderRadius: 12.0,
   // AppBar
-  appBarBackground: Theme01Palette.pureWhite,
+  appBarBackground: Theme01Palette.platinum,
   appBarForeground: Theme01Palette.gunMetal,
-  appBarBorderColor: Theme01Palette.gunMetal,
-  appBarBorderWidth: 2,
+  appBarBorderColor: Theme01Palette.pureBlackA12,
+  appBarBorderWidth: 1.5,
   appBarIconColor: Theme01Palette.gunMetal,
   appBarTitleColor: Theme01Palette.gunMetal,
   // Navbar
-  navbarBackground: Theme01Palette.pureWhite,
-  navbarBorderColor: Theme01Palette.gunMetal,
-  navbarBorderWidth: 2.0,
+  navbarBackground: Theme01Palette.platinum,
+  navbarBorderColor: Theme01Palette.pureBlackA40,
+  navbarBorderWidth: 1.5,
   navbarIconColor: Theme01Palette.pureBlackA67,
   navbarDisabledIconColor: Theme01Palette.gunMetal,
   // Fab
