@@ -472,4 +472,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get language_resetButton => 'Reset';
+
+  @override
+  String get settings_validateConfigs => 'Validate All Configs';
+
+  @override
+  String get settings_validateSuccess => 'All configs valid';
+
+  @override
+  String settings_validateError(String message) {
+    return 'Validation failed: $message';
+  }
 }

@@ -23,13 +23,44 @@ import 'app/router/app_router.dart';
 import 'app/theme/vessel_themes.dart';
 
 Future<void> main() async {
+  final sw = Stopwatch()..start();
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — ensureInitialized');
   WidgetsFlutterBinding.ensureInitialized();
-  await StartupValidator.validate();
-  FlutterNativeSplash.preserve(widgetsBinding: WidgetsBinding.instance);
+
+  // DB first — sqflite uses file system, not rootBundle platform channels.
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — DB START');
   final db = await DatabaseProvider.database;
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — DB DONE');
+
+  // Read language settings to know which translations to validate.
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — lang settings START');
+  final langSettings = await LanguageSettingsRepository(db: db).load();
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — lang settings DONE '
+      '(target=${langSettings.targetLang}, native=${langSettings.nativeLang})');
+
+  // Validate core configs + active translations only (5 rootBundle calls).
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — validate START');
+  await StartupValidator.validate(
+    targetLang: langSettings.targetLang,
+    nativeLang: langSettings.nativeLang,
+  );
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — validate DONE');
+
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — preserve START');
+  FlutterNativeSplash.preserve(widgetsBinding: WidgetsBinding.instance);
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — preserve DONE');
+
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — theme START');
   final savedTheme = await loadAppTheme();
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — theme DONE');
+
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — devSection START');
   final savedDevSection = await loadDevSectionEnabled();
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — devSection DONE');
+
   final router = createAppRouter();
+
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — runApp');
   runApp(
     ProviderScope(
       overrides: [
@@ -54,7 +85,10 @@ Future<void> main() async {
       child: SrpskiCardApp(router: router),
     ),
   );
+
+  debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — postFrameCallback registered');
   WidgetsBinding.instance.addPostFrameCallback((_) {
+    debugPrint('[BOOT] ${sw.elapsedMilliseconds}ms — splash remove');
     FlutterNativeSplash.remove();
   });
 }

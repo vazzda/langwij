@@ -939,6 +939,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reset'**
   String get language_resetButton;
+
+  /// No description provided for @settings_validateConfigs.
+  ///
+  /// In en, this message translates to:
+  /// **'Validate All Configs'**
+  String get settings_validateConfigs;
+
+  /// No description provided for @settings_validateSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'All configs valid'**
+  String get settings_validateSuccess;
+
+  /// No description provided for @settings_validateError.
+  ///
+  /// In en, this message translates to:
+  /// **'Validation failed: {message}'**
+  String settings_validateError(String message);
 }
 
 class _AppLocalizationsDelegate

@@ -9,12 +9,62 @@ class ConfigValidationError implements Exception {
   String toString() => 'ConfigValidationError: $message';
 }
 
+/// Return type for [ConfigValidator.validateCore].
+class CoreValidationIds {
+  const CoreValidationIds({
+    required this.termIds,
+    required this.deckIds,
+    required this.levelIds,
+  });
+
+  final Set<String> termIds;
+  final Set<String> deckIds;
+  final Set<String> levelIds;
+}
+
 /// Validates all config JSON maps and their cross-references.
-/// Call [validateAll] with already-decoded maps — it throws [ConfigValidationError]
-/// with the exact file, field path, and bad value on any issue.
+/// Throws [ConfigValidationError] with exact file, field path, and bad value.
 class ConfigValidator {
   static const _allowedPos = {'verb', 'noun', 'adjective', 'adverb', 'other'};
 
+  /// Validates core config files (dictionary, levels, plan structure).
+  /// Does NOT validate translation files or check that every declared
+  /// language has a corresponding translation file.
+  static CoreValidationIds validateCore({
+    required Map<String, dynamic> planData,
+    required Map<String, dynamic> dictionaryData,
+    required Map<String, dynamic> levelsData,
+  }) {
+    final termIds = _validateDictionary(dictionaryData);
+    final (deckIds, levelIds) = _validateLevels(levelsData, termIds);
+    _validatePlanStructure(planData, levelIds);
+    return CoreValidationIds(
+      termIds: termIds,
+      deckIds: deckIds,
+      levelIds: levelIds,
+    );
+  }
+
+  /// Validates a single translation file against dictionary/levels.
+  static void validateTranslation(
+    String langCode,
+    Map<String, dynamic> data,
+    Set<String> termIds,
+    Set<String> levelIds,
+    Set<String> deckIds,
+  ) {
+    _validateTranslation(
+      langCode,
+      data,
+      termIds,
+      levelIds,
+      deckIds,
+      LangGrammarProfiles.of(langCode),
+    );
+  }
+
+  /// Full validation: core + all translations + plan↔translation cross-check.
+  /// Used by the dev validation button — not at startup.
   static void validateAll({
     required Map<String, dynamic> planData,
     required Map<String, dynamic> dictionaryData,
@@ -23,7 +73,7 @@ class ConfigValidator {
   }) {
     final termIds = _validateDictionary(dictionaryData);
     final (deckIds, levelIds) = _validateLevels(levelsData, termIds);
-    _validatePlan(planData, levelIds, translationsByCode.keys.toSet());
+    _validatePlanFull(planData, levelIds, translationsByCode.keys.toSet());
     for (final entry in translationsByCode.entries) {
       _validateTranslation(
         entry.key,
@@ -208,21 +258,41 @@ class ConfigValidator {
   // plan.json
   // ---------------------------------------------------------------------------
 
-  static void _validatePlan(
+  /// Validates plan structure only (language entries, public/ui lists, courses).
+  /// Does NOT check that every declared language has a translation file.
+  static void _validatePlanStructure(
     Map<String, dynamic> data,
     Set<String> levelIds,
-    Set<String> loadedCodes,
   ) {
-    final declaredCodes = _validatePlanLanguages(data, loadedCodes);
+    final declaredCodes = _validatePlanLanguageEntries(data);
     _validatePlanPublicLanguages(data, declaredCodes);
     _validatePlanUiLanguages(data, declaredCodes);
     _validatePlanCourses(data, levelIds);
   }
 
-  static Set<String> _validatePlanLanguages(
+  /// Full plan validation — also checks every declared language has a loaded
+  /// translation file. Used by [validateAll] only.
+  static void _validatePlanFull(
     Map<String, dynamic> data,
+    Set<String> levelIds,
     Set<String> loadedCodes,
   ) {
+    final declaredCodes = _validatePlanLanguageEntries(data);
+    for (final code in declaredCodes) {
+      if (!loadedCodes.contains(code)) {
+        throw ConfigValidationError(
+          'plan.json: language "$code" declared but '
+          'no translation file found at assets/data/translations/$code.json',
+        );
+      }
+    }
+    _validatePlanPublicLanguages(data, declaredCodes);
+    _validatePlanUiLanguages(data, declaredCodes);
+    _validatePlanCourses(data, levelIds);
+  }
+
+  /// Validates language entries structure. Returns declared codes.
+  static Set<String> _validatePlanLanguageEntries(Map<String, dynamic> data) {
     final langsRaw = data['languages'];
     if (langsRaw == null) {
       throw const ConfigValidationError('plan.json: missing required key "languages"');
@@ -245,12 +315,6 @@ class ConfigValidator {
       }
       if (code is! String) {
         throw ConfigValidationError('plan.json: languages[$i].code must be a string');
-      }
-      if (!loadedCodes.contains(code)) {
-        throw ConfigValidationError(
-          'plan.json: languages[$i].code = "$code" — '
-          'no translation file found at assets/data/translations/$code.json',
-        );
       }
       final labelKey = lang['labelKey'];
       if (labelKey == null) {

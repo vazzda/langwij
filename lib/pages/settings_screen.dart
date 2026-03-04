@@ -19,9 +19,12 @@ import '../shared/ui/inputs/vessel_text_input.dart';
 import '../shared/ui/screen_layout/vessel_scaffold.dart';
 import '../shared/ui/card/vessel_card.dart';
 import '../shared/ui/inputs/vessel_radio_tile.dart';
+import '../shared/ui/snackbar/vessel_snackbar.dart';
 import 'package:srpski_card/shared/lib/constants.dart';
 import '../shared/ui/gap/vessel_gap.dart';
 import '../app/layout/vessel_layout.dart';
+import '../shared/validators/startup_validator.dart';
+import '../shared/validators/config_validator.dart';
 
 /// Settings screen for app configuration.
 class SettingsScreen extends ConsumerStatefulWidget {
@@ -33,6 +36,7 @@ class SettingsScreen extends ConsumerStatefulWidget {
 
 class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   int _settingsTapCount = 0;
+  bool _validating = false;
 
   void _handleTitleTap() {
     _settingsTapCount++;
@@ -139,6 +143,25 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   void _handleHideDevSection() {
     ref.read(devSectionEnabledProvider.notifier).state = false;
     saveDevSectionEnabled(false);
+  }
+
+  Future<void> _handleValidateConfigs() async {
+    if (_validating) return;
+    setState(() => _validating = true);
+    try {
+      await StartupValidator.validateAll();
+      if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
+        VesselSnackBar.show(context, l10n.settings_validateSuccess);
+      }
+    } on ConfigValidationError catch (e) {
+      if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
+        VesselSnackBar.show(context, l10n.settings_validateError(e.message));
+      }
+    } finally {
+      if (mounted) setState(() => _validating = false);
+    }
   }
 
   @override
@@ -257,6 +280,32 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                     ),
                   ),
                   Icon(PhosphorIconsRegular.caretRight, color: t.textPrimary),
+                ],
+              ),
+            ),
+            const VesselGap.s(),
+            VesselCard(
+              onTap: _validating ? null : _handleValidateConfigs,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      l10n.settings_validateConfigs,
+                      style: VesselFonts.textListItem
+                          .copyWith(color: t.textPrimary),
+                    ),
+                  ),
+                  if (_validating)
+                    SizedBox(
+                      width: 24,
+                      height: 24,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: t.textSecondary,
+                      ),
+                    )
+                  else
+                    Icon(PhosphorIconsRegular.caretRight, color: t.textPrimary),
                 ],
               ),
             ),

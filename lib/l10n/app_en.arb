@@ -266,5 +266,14 @@
       "language": { "type": "String" }
     }
   },
-  "language_resetButton": "Reset"
+  "language_resetButton": "Reset",
+
+  "settings_validateConfigs": "Validate All Configs",
+  "settings_validateSuccess": "All configs valid",
+  "settings_validateError": "Validation failed: {message}",
+  "@settings_validateError": {
+    "placeholders": {
+      "message": { "type": "String" }
+    }
+  }
 }
