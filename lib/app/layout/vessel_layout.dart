@@ -114,6 +114,8 @@ abstract class VesselLayout {
   static const double langBoxPaddingTop = 14.0;
   static const double langBoxPaddingRight = 12.0;
   static const double langBoxPaddingBottom = 8.0;
+  static const double langPickerQualityIconSize = 16.0;
+  static const double langPickerQualitySegmentWidth = 56.0;
 
   // ==========================================================================
   // WRAP (tag/chip grids)

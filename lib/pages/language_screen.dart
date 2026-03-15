@@ -1,6 +1,7 @@
 import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 import '../l10n/app_localizations.dart';
@@ -12,12 +13,12 @@ import '../app/providers/dev_section_provider.dart';
 import '../app/providers/dictionary_provider.dart';
 import '../app/providers/language_settings_provider.dart';
 import '../app/providers/plan_provider.dart';
+import '../app/router/app_router.dart';
 import '../shared/repositories/models/decay_formula.dart';
 import '../app/theme/vessel_themes.dart';
 import '../entities/language/lang_codes.dart';
 import '../entities/language/language_pack.dart';
-import '../shared/ui/bottom_sheet/vessel_bottom_sheet.dart';
-import '../shared/ui/lang_button/vessel_lang_button.dart';
+import '../shared/ui/bottom_sheet/vessel_bottom_sheet.dart'; // used by _confirmReset
 import '../shared/ui/buttons/vessel_buttons.dart';
 import '../shared/ui/card/vessel_card.dart';
 import '../shared/ui/note/vessel_note.dart';
@@ -25,6 +26,7 @@ import '../shared/ui/progress_bar/vessel_progress_bar.dart';
 import '../shared/ui/screen_layout/vessel_scaffold.dart';
 import '../shared/ui/gap/vessel_gap.dart';
 import '../app/layout/vessel_layout.dart';
+import 'lang_picker_screen.dart';
 
 class LanguageScreen extends ConsumerWidget {
   const LanguageScreen({super.key});
@@ -48,14 +50,12 @@ class LanguageScreen extends ConsumerWidget {
         // ignore: unnecessary_underscores
         error: (_, __) => Center(child: Text(l10n.loadError)),
         data: (packs) {
-          final allCodes = packs.map((p) => p.code).toList();
           final packByCode = {for (final p in packs) p.code: p};
 
           return ListView(
             padding: const EdgeInsets.all(VesselLayout.screenPadding),
             children: [
               _LangPairSelector(
-                codes: allCodes,
                 packByCode: packByCode,
                 nativeCode: langSettings.nativeLang,
                 targetCode: langSettings.targetLang,
@@ -240,39 +240,8 @@ void _confirmReset(
   );
 }
 
-Future<String?> _showLangPicker(
-  BuildContext context,
-  List<String> codes,
-  Map<String, LanguagePack> packByCode,
-  AppLocalizations l10n,
-) {
-  return showVesselBottomSheet<String>(
-    context: context,
-    builder: (sheetContext) {
-      return Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          ...codes.map((code) {
-            final pack = packByCode[code]!;
-            return Padding(
-              padding: const EdgeInsets.only(bottom: VesselLayout.listItemGapSmall),
-              child: VesselLangButton(
-                langCode: code,
-                label: l10n.langLabel(pack.labelKey),
-                onPressed: () => Navigator.of(sheetContext).pop(code),
-              ),
-            );
-          }),
-        ],
-      );
-    },
-  );
-}
-
 class _LangPairSelector extends StatelessWidget {
   const _LangPairSelector({
-    required this.codes,
     required this.packByCode,
     required this.nativeCode,
     required this.targetCode,
@@ -281,7 +250,6 @@ class _LangPairSelector extends StatelessWidget {
     required this.onTargetSelected,
   });
 
-  final List<String> codes;
   final Map<String, LanguagePack> packByCode;
   final String nativeCode;
   final String targetCode;
@@ -328,7 +296,10 @@ class _LangPairSelector extends StatelessWidget {
                     : nativeCode,
                 langCode: nativeCode,
                 onTap: () async {
-                  final picked = await _showLangPicker(context, codes, packByCode, l10n);
+                  final picked = await context.push<String>(
+                    AppRoutes.langPicker,
+                    extra: LangPickerMode.native,
+                  );
                   if (picked != null) onNativeSelected(picked);
                 },
               ),
@@ -352,7 +323,10 @@ class _LangPairSelector extends StatelessWidget {
                     : targetCode,
                 langCode: targetCode,
                 onTap: () async {
-                  final picked = await _showLangPicker(context, codes, packByCode, l10n);
+                  final picked = await context.push<String>(
+                    AppRoutes.langPicker,
+                    extra: LangPickerMode.target,
+                  );
                   if (picked != null) onTargetSelected(picked);
                 },
               ),

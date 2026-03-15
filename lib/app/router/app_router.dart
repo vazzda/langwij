@@ -5,6 +5,7 @@ import '../../l10n/app_localizations.dart';
 import '../../pages/agreement_group_list_screen.dart';
 import '../../pages/controls_list_screen.dart';
 import '../../pages/group_list_screen.dart';
+import '../../pages/lang_picker_screen.dart';
 import '../../pages/language_screen.dart';
 import '../../pages/result_screen.dart';
 import '../../pages/round_screen.dart';
@@ -24,6 +25,7 @@ class AppRoutes {
   static const String tools = '/tools';
   static const String settings = '/settings';
   static const String devControls = '/dev-controls';
+  static const String langPicker = '/lang-picker';
 }
 
 /// No-animation page for tab-level navigation.
@@ -123,6 +125,14 @@ GoRouter createAppRouter() {
         ),
       ),
       // Push-style routes — slide animation
+      GoRoute(
+        path: AppRoutes.langPicker,
+        pageBuilder: (context, state) => _slidePage(
+          context,
+          LangPickerScreen(mode: state.extra as LangPickerMode),
+          state,
+        ),
+      ),
       GoRoute(
         path: AppRoutes.round,
         pageBuilder: (context, state) => _slidePage(

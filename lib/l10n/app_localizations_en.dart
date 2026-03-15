@@ -466,7 +466,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get result_techWork => 'Tech work — no progress contribution';
 
   @override
-  String get language_progressionEmpty => 'Time to start learning languages!';
+  String get language_progressionEmpty =>
+      'No progress have been made. Time to start learning languages!';
 
   @override
   String get language_resetConfirmTitle => 'Reset progress';

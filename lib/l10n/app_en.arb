@@ -269,7 +269,7 @@
 
   "result_techWork": "Tech work — no progress contribution",
 
-  "language_progressionEmpty": "Time to start learning languages!",
+  "language_progressionEmpty": "No progress have been made. Time to start learning languages!",
   "language_resetConfirmTitle": "Reset progress",
   "language_resetConfirmBody": "Reset all progress for {language}? This cannot be undone.",
   "@language_resetConfirmBody": {

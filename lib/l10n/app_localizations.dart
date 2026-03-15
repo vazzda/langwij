@@ -925,7 +925,7 @@ abstract class AppLocalizations {
   /// No description provided for @language_progressionEmpty.
   ///
   /// In en, this message translates to:
-  /// **'Time to start learning languages!'**
+  /// **'No progress have been made. Time to start learning languages!'**
   String get language_progressionEmpty;
 
   /// No description provided for @language_resetConfirmTitle.
