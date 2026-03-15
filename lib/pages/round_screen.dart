@@ -535,6 +535,7 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
                 ref,
                 correctCard,
                 e.$2,
+                allCards,
                 l10n,
                 col: e.$1 % 2,
               ),
@@ -555,8 +556,9 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
               onTap: () => _onOptionSelectedEnglishShown(
                 context,
                 ref,
-                correctAnswer,
+                correctCard,
                 e.$2,
+                allCards,
                 l10n,
                 col: e.$1 % 2,
               ),
@@ -581,10 +583,16 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
     WidgetRef ref,
     CardModel correctCard,
     CardModel chosenCard,
+    List<CardModel> allCards,
     AppLocalizations l10n, {
     required int col,
   }) {
-    if (identical(chosenCard, correctCard)) {
+    final validAnswers = validAnswersForPrompt(
+      currentCard: correctCard,
+      mode: QuizMode.targetShown,
+      allCards: allCards,
+    );
+    if (validAnswers.contains(chosenCard.nativeText)) {
       _fireCorrectLabel(col: col);
       ref.read(roundProvider.notifier).answerCorrect();
     } else {
@@ -600,18 +608,24 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
   void _onOptionSelectedEnglishShown(
     BuildContext context,
     WidgetRef ref,
-    String correctAnswer,
+    CardModel correctCard,
     String chosen,
+    List<CardModel> allCards,
     AppLocalizations l10n, {
     required int col,
   }) {
-    if (chosen == correctAnswer) {
+    final validAnswers = validAnswersForPrompt(
+      currentCard: correctCard,
+      mode: QuizMode.nativeShown,
+      allCards: allCards,
+    );
+    if (validAnswers.contains(chosen)) {
       _fireCorrectLabel(col: col);
       ref.read(roundProvider.notifier).answerCorrect();
     } else {
       setState(() {
-        _wrongFeedback = correctAnswer;
-        _wrongFeedbackDisplay = correctAnswer;
+        _wrongFeedback = correctCard.targetAnswer;
+        _wrongFeedbackDisplay = correctCard.targetAnswer;
         _wrongUserTypedAnswer = null;
         _wrongUserAnswerDisplay = chosen;
       });
@@ -622,13 +636,20 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
     final round = ref.read(roundProvider);
     if (round == null || round.currentCard == null) return;
     final card = round.currentCard!;
+    final allCards = round.allCards ?? [];
     final correctAnswer = round.mode == QuizMode.targetShown
         ? card.nativeText
         : card.targetAnswer;
     final raw = _writeController.text.trim();
     final normalized = normalizeForComparison(raw);
-    final expected = normalizeForComparison(correctAnswer);
-    if (normalized == expected) {
+    final validAnswers = validAnswersForPrompt(
+      currentCard: card,
+      mode: round.mode,
+      allCards: allCards,
+    );
+    final isCorrect = validAnswers
+        .any((a) => normalizeForComparison(a) == normalized);
+    if (isCorrect) {
       _fireCorrectLabel();
       ref.read(roundProvider.notifier).answerCorrect();
       _requestWriteFocus();
