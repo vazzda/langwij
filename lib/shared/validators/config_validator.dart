@@ -327,6 +327,28 @@ class ConfigValidator {
           'plan.json: languages[$i].labelKey must be a string',
         );
       }
+      final nativeNote = lang['nativeNote'];
+      if (nativeNote != null && nativeNote is! String) {
+        throw ConfigValidationError(
+          'plan.json: languages[$i].nativeNote must be a string',
+        );
+      }
+      final humanVerified = lang['humanVerified'];
+      if (humanVerified == null) {
+        throw ConfigValidationError(
+          'plan.json: languages[$i] (code="$code") missing required field "humanVerified"',
+        );
+      }
+      if (humanVerified is! int) {
+        throw ConfigValidationError(
+          'plan.json: languages[$i].humanVerified must be an integer',
+        );
+      }
+      if (humanVerified < 0 || humanVerified > 100) {
+        throw ConfigValidationError(
+          'plan.json: languages[$i].humanVerified must be 0–100, got $humanVerified',
+        );
+      }
       if (declaredCodes.contains(code)) {
         throw ConfigValidationError('plan.json: duplicate language code "$code"');
       }
@@ -403,6 +425,12 @@ class ConfigValidator {
       final course = courseEntry.value;
       if (course is! Map<String, dynamic>) {
         throw ConfigValidationError('plan.json: course "$courseId" must be an object');
+      }
+      final note = course['note'];
+      if (note != null && note is! String) {
+        throw ConfigValidationError(
+          'plan.json: course "$courseId".note must be a string',
+        );
       }
       final free = course['free'];
       if (free == null) {

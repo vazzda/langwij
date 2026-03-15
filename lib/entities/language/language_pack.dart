@@ -14,6 +14,8 @@ class LanguagePack {
     required this.totalTerms,
     this.levelMeta = const {},
     this.deckMeta = const {},
+    required this.humanVerified,
+    this.nativeNote,
   });
 
   /// ISO-ish language code: "en", "sr", "ru".
@@ -36,6 +38,12 @@ class LanguagePack {
 
   /// Deck ID → localized display metadata (name, description).
   final Map<String, DeckMeta> deckMeta;
+
+  /// Optional note shown when this language is selected as native.
+  final String? nativeNote;
+
+  /// Percentage of dictionary entries that are human-verified (0–100).
+  final int humanVerified;
 
   /// How many terms have at least one translation in this pack.
   int get translatedCount => translations.length;

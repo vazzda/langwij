@@ -136,8 +136,12 @@ class VesselFonts {
   // Score
   static TextStyle get textScore => _headerS;
 
+  // Quality block (language screen)
+  static TextStyle get textQualityPrimary => _bodySAccented;
+  static TextStyle get textQualitySecondary => _bodyS;
+
   // Lang picker
-  static TextStyle get textLangPickerLabel => _bodyMAccented;
+  static TextStyle get textLangPickerLabel => _headerL;
   static TextStyle get textLangPickerValue => _bodyLAccented;
 
   // Mode tile (quiz mode selection sheet)

@@ -20,3 +20,11 @@ final levelTiersProvider = FutureProvider<Map<String, LevelTier>>((ref) async {
   final levelIds = dictionary.levels.map((l) => l.id).toList();
   return repo.getTiers(courseId, levelIds);
 });
+
+/// Optional note for the current course pair (target→native).
+final courseNoteProvider = FutureProvider<String?>((ref) async {
+  final repo = ref.watch(planRepositoryProvider);
+  final settings = ref.watch(languageSettingsProvider);
+  final courseId = '${settings.targetLang}\u2192${settings.nativeLang}';
+  return repo.getCourseNote(courseId);
+});

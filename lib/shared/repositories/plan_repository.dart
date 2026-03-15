@@ -13,6 +13,7 @@ class PlanRepository {
   static const String _planPath = 'assets/data/plan.json';
 
   Map<String, List<String>>? _cachedCourses;
+  Map<String, String>? _cachedCourseNotes;
   List<String>? _cachedPublicLanguages;
   List<LanguageEntry>? _cachedLanguages;
   Set<String>? _cachedUiLanguages;
@@ -28,6 +29,8 @@ class PlanRepository {
           return LanguageEntry(
             code: map['code'] as String,
             labelKey: map['labelKey'] as String,
+            humanVerified: map['humanVerified'] as int,
+            nativeNote: map['nativeNote'] as String?,
           );
         })
         .toList();
@@ -39,12 +42,16 @@ class PlanRepository {
         (data['ui_languages'] as List<dynamic>).cast<String>().toSet();
 
     _cachedCourses = {};
+    _cachedCourseNotes = {};
     final coursesRaw = data['courses'] as Map<String, dynamic>;
     for (final entry in coursesRaw.entries) {
-      final freeList =
-          ((entry.value as Map<String, dynamic>)['free'] as List<dynamic>)
-              .cast<String>();
+      final courseMap = entry.value as Map<String, dynamic>;
+      final freeList = (courseMap['free'] as List<dynamic>).cast<String>();
       _cachedCourses![entry.key] = freeList;
+      final note = courseMap['note'] as String?;
+      if (note != null) {
+        _cachedCourseNotes![entry.key] = note;
+      }
     }
   }
 
@@ -72,6 +79,12 @@ class PlanRepository {
   Future<Set<String>> getUiLanguages() async {
     await _load();
     return _cachedUiLanguages!;
+  }
+
+  /// Returns the optional note for a course (e.g., "sr→ru").
+  Future<String?> getCourseNote(String courseId) async {
+    await _load();
+    return _cachedCourseNotes![courseId];
   }
 
   /// Resolves tiers for all given [levelIds] in one call.

@@ -39,6 +39,8 @@ class DictionaryRepository {
     String langCode, {
     required String labelKey,
     required bool isPublic,
+    required int humanVerified,
+    String? nativeNote,
   }) async {
     if (_cachedPacks.containsKey(langCode)) return _cachedPacks[langCode]!;
 
@@ -78,6 +80,8 @@ class DictionaryRepository {
       totalTerms: dictionary.terms.length,
       levelMeta: levelMeta,
       deckMeta: deckMeta,
+      nativeNote: nativeNote,
+      humanVerified: humanVerified,
     );
 
     _cachedPacks[langCode] = pack;
@@ -96,6 +100,8 @@ class DictionaryRepository {
           entry.code,
           labelKey: entry.labelKey,
           isPublic: publicCodes.contains(entry.code),
+          nativeNote: entry.nativeNote,
+          humanVerified: entry.humanVerified,
         ),
       );
     }

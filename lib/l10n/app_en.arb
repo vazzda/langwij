@@ -204,7 +204,18 @@
   "language_native": "Native language",
   "language_appLanguage": "App language",
   "language_sameAsLearning": "Not gonna work! Same as learning language selected",
-  "language_serbianNativeNote": "Thanks for the hospitality! Every Serbian speaker learning a new language gets all languages for free — no subscription needed.",
+  "language_qualityAi": "{aiPct}% AI made",
+  "@language_qualityAi": {
+    "placeholders": {
+      "aiPct": { "type": "int" }
+    }
+  },
+  "language_qualityHuman": "{humanPct}% human made",
+  "@language_qualityHuman": {
+    "placeholders": {
+      "humanPct": { "type": "int" }
+    }
+  },
   "language_myProgress": "My progress",
   "language_progression": "Progression",
   "language_incompleteDictionaries": "Incomplete dictionaries",

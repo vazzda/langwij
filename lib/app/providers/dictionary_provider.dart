@@ -53,6 +53,8 @@ final targetPackProvider = FutureProvider<LanguagePack>((ref) async {
     entry.code,
     labelKey: entry.labelKey,
     isPublic: publicCodes.contains(entry.code),
+    nativeNote: entry.nativeNote,
+    humanVerified: entry.humanVerified,
   );
 });
 
@@ -72,6 +74,8 @@ final nativePackProvider = FutureProvider<LanguagePack>((ref) async {
     entry.code,
     labelKey: entry.labelKey,
     isPublic: publicCodes.contains(entry.code),
+    nativeNote: entry.nativeNote,
+    humanVerified: entry.humanVerified,
   );
 });
 

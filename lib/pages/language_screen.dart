@@ -11,6 +11,7 @@ import '../app/providers/app_settings_provider.dart';
 import '../app/providers/dev_section_provider.dart';
 import '../app/providers/dictionary_provider.dart';
 import '../app/providers/language_settings_provider.dart';
+import '../app/providers/plan_provider.dart';
 import '../shared/repositories/models/decay_formula.dart';
 import '../app/theme/vessel_themes.dart';
 import '../entities/language/lang_codes.dart';
@@ -35,6 +36,7 @@ class LanguageScreen extends ConsumerWidget {
     final langSettings = ref.watch(languageSettingsProvider);
     final asyncAllPacks = ref.watch(allPacksProvider);
     final asyncAllLangProgress = ref.watch(allLanguagesProgressProvider);
+    final asyncCourseNote = ref.watch(courseNoteProvider);
     final settings = ref.watch(appSettingsProvider);
     final showDevSection = ref.watch(devSectionEnabledProvider);
 
@@ -63,15 +65,14 @@ class LanguageScreen extends ConsumerWidget {
                 onTargetSelected: (code) =>
                     ref.read(languageSettingsProvider.notifier).setTargetLang(code),
               ),
-              if (langSettings.nativeLang == LangCodes.serbian) ...[
-                const VesselGap.l(),
-                VesselNote(text: l10n.language_serbianNativeNote, accented: true),
-              ],
-              if (langSettings.targetLang == langSettings.nativeLang) ...[
-                const VesselGap.s(),
-                VesselNote(text: l10n.language_sameAsLearning),
-              ],
-              const VesselGap.l(),
+              ..._buildLanguageNotes(
+                packByCode: packByCode,
+                nativeCode: langSettings.nativeLang,
+                targetCode: langSettings.targetLang,
+                asyncCourseNote: asyncCourseNote,
+                l10n: l10n,
+              ),
+              const VesselGap.xl(),
 
               // Progression
               Padding(
@@ -154,6 +155,38 @@ class LanguageScreen extends ConsumerWidget {
       ),
     );
   }
+}
+
+List<Widget> _buildLanguageNotes({
+  required Map<String, LanguagePack> packByCode,
+  required String nativeCode,
+  required String targetCode,
+  required AsyncValue<String?> asyncCourseNote,
+  required AppLocalizations l10n,
+}) {
+  final notes = <Widget>[];
+
+  // Native language note
+  final nativePack = packByCode[nativeCode];
+  if (nativePack?.nativeNote != null) {
+    notes.add(const VesselGap.l());
+    notes.add(VesselNote(text: nativePack!.nativeNote!, accented: true));
+  }
+
+  // Same language warning
+  if (targetCode == nativeCode) {
+    notes.add(const VesselGap.l());
+    notes.add(VesselNote(text: l10n.language_sameAsLearning));
+  }
+
+  // Course-specific note
+  final courseNote = asyncCourseNote.valueOrNull;
+  if (courseNote != null) {
+    notes.add(const VesselGap.l());
+    notes.add(VesselNote(text: courseNote));
+  }
+
+  return notes;
 }
 
 void _confirmReset(
@@ -302,7 +335,15 @@ class _LangPairSelector extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: VesselLayout.gapS),
-              child: Icon(PhosphorIconsRegular.arrowRight, color: t.textSecondary, size: 20),
+              child: Icon(
+                nativeCode == LangCodes.serbian ||
+                        (nativeCode == LangCodes.russian &&
+                            targetCode == LangCodes.serbian)
+                    ? PhosphorIconsFill.heart
+                    : PhosphorIconsBold.arrowRight,
+                color: t.textSecondary,
+                size: 20,
+              ),
             ),
             Expanded(
               child: _LangBox(
@@ -314,6 +355,24 @@ class _LangPairSelector extends StatelessWidget {
                   final picked = await _showLangPicker(context, codes, packByCode, l10n);
                   if (picked != null) onTargetSelected(picked);
                 },
+              ),
+            ),
+          ],
+        ),
+        const VesselGap.l(),
+        // Quality row
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: _QualityBlock(
+                humanVerified: packByCode[nativeCode]?.humanVerified ?? 0,
+              ),
+            ),
+            SizedBox(width: _arrowZoneWidth),
+            Expanded(
+              child: _QualityBlock(
+                humanVerified: packByCode[targetCode]?.humanVerified ?? 0,
               ),
             ),
           ],
@@ -378,6 +437,88 @@ class _LangBox extends StatelessWidget {
             ),
           ),
         );
+  }
+}
+
+class _QualityBlock extends StatelessWidget {
+  const _QualityBlock({required this.humanVerified});
+
+  final int humanVerified;
+
+  @override
+  Widget build(BuildContext context) {
+    final t = VesselThemes.of(context);
+    final l10n = AppLocalizations.of(context)!;
+    final aiPct = 100 - humanVerified;
+    final humanFirst = humanVerified >= 80;
+
+    final humanRow = _qualityRow(
+      icon: humanFirst
+          ? PhosphorIconsFill.smiley
+          : PhosphorIconsBold.smiley,
+      label: l10n.language_qualityHuman(humanVerified),
+      style: humanFirst
+          ? VesselFonts.textQualityPrimary
+          : VesselFonts.textQualitySecondary,
+      color: t.textPrimary,
+    );
+
+    final aiRow = _qualityRow(
+      icon: humanFirst
+          ? PhosphorIconsBold.robot
+          : PhosphorIconsFill.robot,
+      label: l10n.language_qualityAi(aiPct),
+      style: humanFirst
+          ? VesselFonts.textQualitySecondary
+          : VesselFonts.textQualityPrimary,
+      color: t.textPrimary,
+    );
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(
+        horizontal: VesselLayout.gapS,
+        vertical: VesselLayout.gapXs,
+      ),
+      decoration: BoxDecoration(
+        color: t.cardBackground,
+        border: Border.all(
+          color: t.tileBorderColor,
+          width: t.tileBorderWidth,
+        ),
+        borderRadius: BorderRadius.circular(t.tileBorderRadius),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (humanFirst) ...[humanRow, const VesselGap.xxs(), aiRow]
+          else ...[aiRow, const VesselGap.xxs(), humanRow],
+        ],
+      ),
+    );
+  }
+
+  static const double _iconSize = 25.0;
+
+  static Widget _qualityRow({
+    required IconData icon,
+    required String label,
+    required TextStyle style,
+    required Color color,
+  }) {
+    return Row(
+      children: [
+        Icon(icon, size: _iconSize, color: color),
+        const VesselGap.hs(),
+        Expanded(
+          child: Text(
+            label,
+            style: style.copyWith(color: color),
+          ),
+        ),
+      ],
+    );
   }
 }
 

@@ -1,13 +1,18 @@
 {
   "languages": [
-    { "code": "en", "labelKey": "lang_english" },
-    { "code": "sr", "labelKey": "lang_serbian" },
-    { "code": "ru", "labelKey": "lang_russian" },
-    { "code": "it", "labelKey": "lang_italian" },
-    { "code": "fr", "labelKey": "lang_french" },
-    { "code": "es", "labelKey": "lang_spanish" },
-    { "code": "pt", "labelKey": "lang_portuguese" },
-    { "code": "de", "labelKey": "lang_german" }
+    { "code": "en", "labelKey": "lang_english", "humanVerified": 100 },
+    {
+      "code": "sr",
+      "labelKey": "lang_serbian",
+      "nativeNote": "❤️❤️❤️ Thanks for the hospitality! Every Serbian speaker learning a new language gets all languages for free — no subscription needed. ❤️❤️❤️",
+      "humanVerified": 100
+    },
+    { "code": "ru", "labelKey": "lang_russian", "humanVerified": 80 },
+    { "code": "it", "labelKey": "lang_italian", "humanVerified": 60 },
+    { "code": "fr", "labelKey": "lang_french", "humanVerified": 0 },
+    { "code": "es", "labelKey": "lang_spanish", "humanVerified": 0 },
+    { "code": "pt", "labelKey": "lang_portuguese", "humanVerified": 0 },
+    { "code": "de", "labelKey": "lang_german", "humanVerified": 0 }
   ],
   "public_languages": ["en", "sr"],
   "ui_languages": ["en"],
@@ -20,7 +25,8 @@
     "sr→ru": {
       "free": [
         "survival"
-      ]
+      ],
+      "note": "❤️ Free for Russian speakers learning Serbian! ❤️"
     }
   }
 }

@@ -379,8 +379,14 @@ class AppLocalizationsEn extends AppLocalizations {
       'Not gonna work! Same as learning language selected';
 
   @override
-  String get language_serbianNativeNote =>
-      'Thanks for the hospitality! Every Serbian speaker learning a new language gets all languages for free — no subscription needed.';
+  String language_qualityAi(int aiPct) {
+    return '$aiPct% AI made';
+  }
+
+  @override
+  String language_qualityHuman(int humanPct) {
+    return '$humanPct% human made';
+  }
 
   @override
   String get language_myProgress => 'My progress';
