@@ -103,6 +103,8 @@ class VesselThemeData {
   final Color roundAnswerTileBackground;
   final Color roundAnswerTileBorderColor;
   final double roundAnswerTileBorderWidth;
+  final Color roundAnswerTileCorrectColor;
+  final Color roundAnswerTileWrongColor;
 
   // ==========================================================================
   // DECK ICON
@@ -342,6 +344,8 @@ class VesselThemeData {
     required this.roundAnswerTileBackground,
     required this.roundAnswerTileBorderColor,
     required this.roundAnswerTileBorderWidth,
+    required this.roundAnswerTileCorrectColor,
+    required this.roundAnswerTileWrongColor,
     // Deck icon
     required this.deckIconColor,
     required this.deckIconBackground,

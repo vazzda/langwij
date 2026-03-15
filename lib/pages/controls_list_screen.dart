@@ -25,6 +25,7 @@ import '../shared/ui/snackbar/vessel_snackbar.dart';
 import '../shared/ui/tag/vessel_tag_chip.dart';
 import '../shared/ui/tag/vessel_tag_label.dart';
 import '../shared/ui/text/vessel_header.dart';
+import '../shared/ui/answer_tile/vessel_answer_tile.dart';
 import '../shared/ui/tile/vessel_tile.dart';
 import '../shared/ui/bottom_sheet/vessel_bottom_sheet.dart';
 import '../shared/ui/bottom_sheet/quiz_bottom_sheets.dart';
@@ -227,6 +228,25 @@ class _ControlsListScreenState extends State<ControlsListScreen> {
                     ),
                   ],
                 ),
+              ),
+            ),
+          ]),
+
+          // 1c. ANSWER TILES
+          _buildSection('Answer Tiles', [
+            SizedBox(
+              height: 80,
+              child: GridView.count(
+                crossAxisCount: 2,
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                crossAxisSpacing: VesselLayout.gapS,
+                mainAxisSpacing: VesselLayout.gapS,
+                childAspectRatio: VesselLayout.roundOptionTileAspectRatio,
+                children: [
+                  VesselAnswerTile(label: 'kupiti', onTap: () {}),
+                  VesselAnswerTile(label: 'prodati', onTap: () {}),
+                ],
               ),
             ),
           ]),

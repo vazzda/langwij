@@ -26,7 +26,7 @@ import '../shared/ui/card/vessel_card.dart';
 import '../shared/ui/note/vessel_note.dart';
 import '../shared/ui/screen_layout/vessel_scaffold.dart';
 import '../shared/ui/inputs/vessel_text_input.dart';
-import '../shared/ui/tile/vessel_tile.dart';
+import '../shared/ui/answer_tile/vessel_answer_tile.dart';
 import '../shared/ui/gap/vessel_gap.dart';
 import '../app/layout/vessel_layout.dart';
 
@@ -54,10 +54,14 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
   ({String typed, String correct, bool ok})? _pairImperfective;
   ({String typed, String correct, bool ok})? _pairPerfective;
 
+  final _correctLabelNotifier =
+      ValueNotifier<({int seq, int col})>((seq: 0, col: -1));
+
   @override
   void dispose() {
     _writeController.dispose();
     _writeController2.dispose();
+    _correctLabelNotifier.dispose();
     super.dispose();
   }
 
@@ -80,7 +84,6 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
     });
 
     if (round == null) {
-      // Round ended - navigation should already be handled by exit button
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
 
@@ -182,136 +185,176 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
               ),
             ),
             const Spacer(),
-            if (_wrongFeedback != null) ...[
-              if (_pairImperfective != null && _pairPerfective != null) ...[
-                Text(
-                  _pairImperfective!.ok ? l10n.correct : l10n.wrong,
-                  style: VesselFonts.textContentHeader.copyWith(
-                    color: _pairImperfective!.ok ? t.accentColor : t.dangerColor,
-                  ),
-                ),
-                const VesselGap.s(),
-                Text(
-                  '${l10n.quiz_aspectImperfective} ${_pairImperfective!.typed.isEmpty ? l10n.emptyAnswer : _pairImperfective!.typed}',
-                  style: VesselFonts.textBodyLarge.copyWith(
-                    color: _pairImperfective!.ok ? t.textPrimary : t.dangerColor,
-                  ),
-                ),
-                if (!_pairImperfective!.ok) ...[
-                  const VesselGap.xs(),
-                  Text(
-                    '${l10n.correctAnswerLabel} ${_pairImperfective!.correct}',
-                    style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
-                  ),
-                ],
-                const VesselGap.l(),
-                Text(
-                  _pairPerfective!.ok ? l10n.correct : l10n.wrong,
-                  style: VesselFonts.textContentHeader.copyWith(
-                    color: _pairPerfective!.ok ? t.accentColor : t.dangerColor,
-                  ),
-                ),
-                const VesselGap.s(),
-                Text(
-                  '${l10n.quiz_aspectPerfective} ${_pairPerfective!.typed.isEmpty ? l10n.emptyAnswer : _pairPerfective!.typed}',
-                  style: VesselFonts.textBodyLarge.copyWith(
-                    color: _pairPerfective!.ok ? t.textPrimary : t.dangerColor,
-                  ),
-                ),
-                if (!_pairPerfective!.ok) ...[
-                  const VesselGap.xs(),
-                  Text(
-                    '${l10n.correctAnswerLabel} ${_pairPerfective!.correct}',
-                    style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
-                  ),
-                ],
-              ] else ...[
-                Text(
-                  l10n.wrong,
-                  style: VesselFonts.textContentHeader.copyWith(color: t.dangerColor),
-                ),
-                const VesselGap.s(),
-                Text(
-                  '${round.mode == QuizMode.write ? l10n.youWrote : l10n.youPicked} ${(_wrongUserAnswerDisplay ?? '').isEmpty ? l10n.emptyAnswer : _wrongUserAnswerDisplay}',
-                  style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
-                ),
-                const VesselGap.s(),
-                Text(
-                  '${l10n.correctAnswerLabel} ${_wrongFeedbackDisplay ?? _wrongFeedback}',
-                  style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
+            Stack(
+              clipBehavior: Clip.none,
+              children: [
+                _CorrectLabel(notifier: _correctLabelNotifier),
+                _buildInteractiveSection(
+                  context, round, card, correctAnswer,
+                  allCardsForOptions, ref, l10n, t,
                 ),
               ],
-              const VesselGap.xl(),
-              VesselAccentButton(
-                label: l10n.next,
-                onPressed: () => _onNextAfterWrong(ref),
-              ),
-            ] else if (round.mode == QuizMode.write) ...[
-              if (card is PairVocabCard) ...[
-                Text(
-                  l10n.quiz_aspectImperfective,
-                  style: VesselFonts.textControlLabel.copyWith(color: t.textPrimary),
-                ),
-                const VesselGap.s(),
-                VesselTextInput(
-                  controller: _writeController,
-                  autofocus: true,
-                  textInputAction: TextInputAction.next,
-                  autocorrect: false,
-                  enableSuggestions: false,
-                ),
-                const VesselGap.m(),
-                Text(
-                  l10n.quiz_aspectPerfective,
-                  style: VesselFonts.textControlLabel.copyWith(color: t.textPrimary),
-                ),
-                const VesselGap.s(),
-                VesselTextInput(
-                  controller: _writeController2,
-                  onSubmitted: (_) => _submitWritePair(context, ref),
-                  textInputAction: TextInputAction.done,
-                  autocorrect: false,
-                  enableSuggestions: false,
-                ),
-                const VesselGap.l(),
-                VesselAccentButton(
-                  label: l10n.submit,
-                  onPressed: () => _submitWritePair(context, ref),
-                ),
-              ] else ...[
-                Text(
-                  l10n.yourAnswer,
-                  style: VesselFonts.textControlLabel.copyWith(color: t.textPrimary),
-                ),
-                const VesselGap.s(),
-                VesselTextInput(
-                  controller: _writeController,
-                  onSubmitted: (_) => _submitWrite(context, ref),
-                  autofocus: true,
-                  textInputAction: TextInputAction.done,
-                  autocorrect: false,
-                  enableSuggestions: false,
-                ),
-                const VesselGap.l(),
-                VesselAccentButton(
-                  label: l10n.submit,
-                  onPressed: () => _submitWrite(context, ref),
-                ),
-              ],
-            ] else ...[
-              _buildOptionsTileGrid(
-                context,
-                round.mode,
-                card,
-                correctAnswer,
-                allCardsForOptions,
-                ref,
-                l10n,
-              ),
-            ],
+            ),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildInteractiveSection(
+    BuildContext context,
+    RoundState round,
+    CardModel card,
+    String correctAnswer,
+    List<CardModel> allCardsForOptions,
+    WidgetRef ref,
+    AppLocalizations l10n,
+    VesselThemeData t,
+  ) {
+    if (_wrongFeedback != null) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (_pairImperfective != null && _pairPerfective != null) ...[
+            Text(
+              _pairImperfective!.ok ? l10n.correct : l10n.wrong,
+              style: VesselFonts.textContentHeader.copyWith(
+                color: _pairImperfective!.ok ? t.accentColor : t.dangerColor,
+              ),
+            ),
+            const VesselGap.s(),
+            Text(
+              '${l10n.quiz_aspectImperfective} ${_pairImperfective!.typed.isEmpty ? l10n.emptyAnswer : _pairImperfective!.typed}',
+              style: VesselFonts.textBodyLarge.copyWith(
+                color: _pairImperfective!.ok ? t.textPrimary : t.dangerColor,
+              ),
+            ),
+            if (!_pairImperfective!.ok) ...[
+              const VesselGap.xs(),
+              Text(
+                '${l10n.correctAnswerLabel} ${_pairImperfective!.correct}',
+                style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
+              ),
+            ],
+            const VesselGap.l(),
+            Text(
+              _pairPerfective!.ok ? l10n.correct : l10n.wrong,
+              style: VesselFonts.textContentHeader.copyWith(
+                color: _pairPerfective!.ok ? t.accentColor : t.dangerColor,
+              ),
+            ),
+            const VesselGap.s(),
+            Text(
+              '${l10n.quiz_aspectPerfective} ${_pairPerfective!.typed.isEmpty ? l10n.emptyAnswer : _pairPerfective!.typed}',
+              style: VesselFonts.textBodyLarge.copyWith(
+                color: _pairPerfective!.ok ? t.textPrimary : t.dangerColor,
+              ),
+            ),
+            if (!_pairPerfective!.ok) ...[
+              const VesselGap.xs(),
+              Text(
+                '${l10n.correctAnswerLabel} ${_pairPerfective!.correct}',
+                style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
+              ),
+            ],
+          ] else ...[
+            Text(
+              l10n.wrong,
+              style: VesselFonts.textContentHeader.copyWith(color: t.dangerColor),
+            ),
+            const VesselGap.s(),
+            Text(
+              '${round.mode == QuizMode.write ? l10n.youWrote : l10n.youPicked} ${(_wrongUserAnswerDisplay ?? '').isEmpty ? l10n.emptyAnswer : _wrongUserAnswerDisplay}',
+              style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
+            ),
+            const VesselGap.s(),
+            Text(
+              '${l10n.correctAnswerLabel} ${_wrongFeedbackDisplay ?? _wrongFeedback}',
+              style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
+            ),
+          ],
+          const VesselGap.xl(),
+          VesselAccentButton(
+            label: l10n.next,
+            onPressed: () => _onNextAfterWrong(ref),
+          ),
+        ],
+      );
+    }
+
+    if (round.mode == QuizMode.write) {
+      if (card is PairVocabCard) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              l10n.quiz_aspectImperfective,
+              style: VesselFonts.textControlLabel.copyWith(color: t.textPrimary),
+            ),
+            const VesselGap.s(),
+            VesselTextInput(
+              controller: _writeController,
+              autofocus: true,
+              textInputAction: TextInputAction.next,
+              autocorrect: false,
+              enableSuggestions: false,
+            ),
+            const VesselGap.m(),
+            Text(
+              l10n.quiz_aspectPerfective,
+              style: VesselFonts.textControlLabel.copyWith(color: t.textPrimary),
+            ),
+            const VesselGap.s(),
+            VesselTextInput(
+              controller: _writeController2,
+              onSubmitted: (_) => _submitWritePair(context, ref),
+              textInputAction: TextInputAction.done,
+              autocorrect: false,
+              enableSuggestions: false,
+            ),
+            const VesselGap.l(),
+            VesselAccentButton(
+              label: l10n.submit,
+              onPressed: () => _submitWritePair(context, ref),
+            ),
+          ],
+        );
+      }
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            l10n.yourAnswer,
+            style: VesselFonts.textControlLabel.copyWith(color: t.textPrimary),
+          ),
+          const VesselGap.s(),
+          VesselTextInput(
+            controller: _writeController,
+            onSubmitted: (_) => _submitWrite(context, ref),
+            autofocus: true,
+            textInputAction: TextInputAction.done,
+            autocorrect: false,
+            enableSuggestions: false,
+          ),
+          const VesselGap.l(),
+          VesselAccentButton(
+            label: l10n.submit,
+            onPressed: () => _submitWrite(context, ref),
+          ),
+        ],
+      );
+    }
+
+    return _buildOptionsTileGrid(
+      context, round.mode, card, correctAnswer,
+      allCardsForOptions, ref, l10n,
+    );
+  }
+
+  void _fireCorrectLabel({int col = -1}) {
+    _correctLabelNotifier.value = (
+      seq: _correctLabelNotifier.value.seq + 1,
+      col: col,
     );
   }
 
@@ -400,8 +443,10 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
         normalizeForComparison(card.perfectiveText);
 
     if (ok1 && ok2) {
+      _fireCorrectLabel();
       ref.read(roundProvider.notifier).answerCorrect();
     } else {
+
       setState(() {
         _wrongFeedback = card.targetAnswer;
         _wrongFeedbackDisplay = null;
@@ -424,8 +469,6 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
     WidgetRef ref,
     AppLocalizations l10n,
   ) {
-    final t = VesselThemes.of(context);
-
     final List<Widget> tiles;
     if (mode == QuizMode.targetShown) {
       final optionCards = buildMultipleChoiceOptionCards(
@@ -434,23 +477,13 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
         random: _random,
       );
       tiles = optionCards
+          .indexed
           .map(
-            (optionCard) => VesselTile(
-              variant: VesselTileVariant.roundAnswer,
+            (e) => VesselAnswerTile(
+              label: displayNativeForCard(e.$2, l10n),
               onTap: () => _onOptionSelectedSerbianShown(
-                context, ref, correctCard, optionCard, l10n,
-              ),
-              child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(VesselLayout.gapS),
-                  child: Text(
-                    displayNativeForCard(optionCard, l10n),
-                    style: VesselFonts.textRoundAnswer.copyWith(
-                      color: t.textPrimary,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
+                context, ref, correctCard, e.$2, l10n,
+                col: e.$1 % 2,
               ),
             ),
           )
@@ -463,23 +496,13 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
         random: _random,
       );
       tiles = options
+          .indexed
           .map(
-            (opt) => VesselTile(
-              variant: VesselTileVariant.roundAnswer,
+            (e) => VesselAnswerTile(
+              label: e.$2,
               onTap: () => _onOptionSelectedEnglishShown(
-                context, ref, correctAnswer, opt, l10n,
-              ),
-              child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(VesselLayout.gapS),
-                  child: Text(
-                    opt,
-                    style: VesselFonts.textRoundAnswer.copyWith(
-                      color: t.textPrimary,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
+                context, ref, correctAnswer, e.$2, l10n,
+                col: e.$1 % 2,
               ),
             ),
           )
@@ -502,11 +525,14 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
     WidgetRef ref,
     CardModel correctCard,
     CardModel chosenCard,
-    AppLocalizations l10n,
-  ) {
+    AppLocalizations l10n, {
+    required int col,
+  }) {
     if (identical(chosenCard, correctCard)) {
+      _fireCorrectLabel(col: col);
       ref.read(roundProvider.notifier).answerCorrect();
     } else {
+
       setState(() {
         _wrongFeedback = correctCard.nativeText;
         _wrongFeedbackDisplay = displayNativeForCard(correctCard, l10n);
@@ -521,11 +547,14 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
     WidgetRef ref,
     String correctAnswer,
     String chosen,
-    AppLocalizations l10n,
-  ) {
+    AppLocalizations l10n, {
+    required int col,
+  }) {
     if (chosen == correctAnswer) {
+      _fireCorrectLabel(col: col);
       ref.read(roundProvider.notifier).answerCorrect();
     } else {
+
       setState(() {
         _wrongFeedback = correctAnswer;
         _wrongFeedbackDisplay = correctAnswer;
@@ -546,8 +575,10 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
     final normalized = normalizeForComparison(raw);
     final expected = normalizeForComparison(correctAnswer);
     if (normalized == expected) {
+      _fireCorrectLabel();
       ref.read(roundProvider.notifier).answerCorrect();
     } else {
+
       final l10n = AppLocalizations.of(context)!;
       final display = round.mode == QuizMode.targetShown
           ? displayNativeForCard(card, l10n)
@@ -560,5 +591,113 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
       });
     }
     _writeController.clear();
+  }
+}
+
+// =============================================================================
+// Correct label animation (private to round screen)
+// =============================================================================
+
+const _correctLabelDuration = Duration(milliseconds: 200);
+
+class _CorrectLabel extends StatefulWidget {
+  const _CorrectLabel({required this.notifier});
+
+  final ValueNotifier<({int seq, int col})> notifier;
+
+  @override
+  State<_CorrectLabel> createState() => _CorrectLabelState();
+}
+
+class _CorrectLabelState extends State<_CorrectLabel>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller;
+  int _col = -1;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: _correctLabelDuration,
+    );
+    widget.notifier.addListener(_onEvent);
+  }
+
+  void _onEvent() {
+    _col = widget.notifier.value.col;
+    _controller.forward(from: 0.0);
+  }
+
+  @override
+  void dispose() {
+    widget.notifier.removeListener(_onEvent);
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final t = VesselThemes.of(context);
+    final l10n = AppLocalizations.of(context)!;
+
+    return Positioned(
+      left: 0,
+      right: 0,
+      top: 0,
+      child: IgnorePointer(
+        child: AnimatedBuilder(
+          animation: _controller,
+          builder: (context, _) {
+            if (!_controller.isAnimating && _controller.value == 0.0) {
+              return const SizedBox.shrink();
+            }
+
+            final progress = _controller.value;
+            final opacity = 1.0 - progress;
+            final offsetY = -10.0 - (40.0 * progress);
+
+            final label = Text(
+              l10n.correct.toUpperCase(),
+              style: VesselFonts.textContentHeader.copyWith(
+                color: t.roundAnswerTileCorrectColor,
+              ),
+            );
+
+            final Widget positioned;
+            if (_col < 0) {
+              positioned = Center(child: label);
+            } else {
+              positioned = Row(
+                children: [
+                  Expanded(
+                    child: _col == 0
+                        ? Center(child: label)
+                        : const SizedBox.shrink(),
+                  ),
+                  const SizedBox(width: VesselLayout.gapS),
+                  Expanded(
+                    child: _col == 1
+                        ? Center(child: label)
+                        : const SizedBox.shrink(),
+                  ),
+                ],
+              );
+            }
+
+            return FractionalTranslation(
+              translation: const Offset(0, -1),
+              child: Transform.translate(
+                offset: Offset(0, offsetY),
+                child: Opacity(
+                  opacity: opacity,
+                  child: positioned,
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
   }
 }

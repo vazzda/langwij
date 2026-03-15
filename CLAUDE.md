@@ -79,6 +79,7 @@ Controls inventory:
 - **Tags**: `VesselTagChip`, `VesselTagLabel`
 - **Lang button**: `VesselLangButton`
 - **Navbar**: `VesselNavBar`, `VesselNavBarIcon`
+- **Answer tile**: `VesselAnswerTile`
 
 **Copy** (`AppLocalizations`)
 - NEVER hardcode user-facing text — ALWAYS use `AppLocalizations` (accessed as `l10n`)

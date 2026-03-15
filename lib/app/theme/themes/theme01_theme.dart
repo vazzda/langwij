@@ -139,6 +139,8 @@ const VesselThemeData theme01Theme = VesselThemeData(
   roundAnswerTileBackground: Theme01Palette.platinum,
   roundAnswerTileBorderColor: Theme01Palette.platinum,
   roundAnswerTileBorderWidth: 2.0,
+  roundAnswerTileCorrectColor: Theme01Palette.gunMetal,
+  roundAnswerTileWrongColor: Theme01Colors.danger,
   // Deck icon
   deckIconColor: Theme01Palette.gunMetal,
   deckIconBackground: Theme01Palette.pureBlackA12,
