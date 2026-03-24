@@ -946,6 +946,48 @@ abstract class AppLocalizations {
   /// **'Reset'**
   String get language_resetButton;
 
+  /// No description provided for @result_correctTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Review Correct'**
+  String get result_correctTitle;
+
+  /// No description provided for @result_correctSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Words you answered correctly'**
+  String get result_correctSubtitle;
+
+  /// No description provided for @bugReport_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Report Issue'**
+  String get bugReport_title;
+
+  /// No description provided for @bugReport_typeBadTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Bad translation'**
+  String get bugReport_typeBadTranslation;
+
+  /// No description provided for @bugReport_typeUiBug.
+  ///
+  /// In en, this message translates to:
+  /// **'UI bug'**
+  String get bugReport_typeUiBug;
+
+  /// No description provided for @bugReport_messagePlaceholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe the issue...'**
+  String get bugReport_messagePlaceholder;
+
+  /// No description provided for @bugReport_submit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit'**
+  String get bugReport_submit;
+
   /// No description provided for @settings_validateConfigs.
   ///
   /// In en, this message translates to:

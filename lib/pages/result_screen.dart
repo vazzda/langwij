@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 import '../l10n/app_localizations.dart';
 import '../app/providers/groups_provider.dart';
+import '../entities/card/card_model.dart';
 import '../features/quiz/display_english.dart' show displayNativeForCard;
 import '../features/quiz/services/quiz_round_service.dart';
 import '../features/quiz/quiz_mode.dart';
@@ -12,6 +14,7 @@ import '../features/quiz/round_state.dart';
 import '../app/router/app_router.dart';
 import '../app/theme/vessel_themes.dart';
 import '../shared/ui/buttons/vessel_buttons.dart';
+import '../shared/ui/bottom_sheet/bug_report_sheet.dart';
 import '../shared/ui/card/vessel_card.dart';
 import '../shared/ui/screen_layout/vessel_scaffold.dart';
 import '../shared/ui/gap/vessel_gap.dart';
@@ -148,7 +151,27 @@ class ResultScreen extends ConsumerWidget {
               ),
               const VesselGap.m(),
               ...round.missedEntries.map(
-                (entry) => _MissedEntryTile(entry: entry, mode: round.mode),
+                (entry) => _ResultEntryTile(
+                  card: entry.card,
+                  mode: round.mode,
+                  userTypedAnswer: entry.userTypedAnswer,
+                ),
+              ),
+            ],
+            if (round.correctEntries.isNotEmpty) ...[
+              const VesselGap.xl(),
+              Text(
+                l10n.result_correctTitle,
+                style: VesselFonts.textContentHeader.copyWith(color: t.textPrimary),
+              ),
+              const VesselGap.xs(),
+              Text(
+                l10n.result_correctSubtitle,
+                style: VesselFonts.textBody.copyWith(color: t.textPrimary),
+              ),
+              const VesselGap.m(),
+              ...round.correctEntries.map(
+                (card) => _ResultEntryTile(card: card, mode: round.mode),
               ),
             ],
           ],
@@ -158,63 +181,82 @@ class ResultScreen extends ConsumerWidget {
   }
 }
 
-class _MissedEntryTile extends StatelessWidget {
-  const _MissedEntryTile({required this.entry, required this.mode});
+class _ResultEntryTile extends StatelessWidget {
+  const _ResultEntryTile({
+    required this.card,
+    required this.mode,
+    this.userTypedAnswer,
+  });
 
-  final MissedEntry entry;
+  final CardModel card;
   final QuizMode mode;
+  /// Non-null only for missed entries in write mode.
+  final String? userTypedAnswer;
 
   @override
   Widget build(BuildContext context) {
     final t = VesselThemes.of(context);
     final l10n = AppLocalizations.of(context)!;
-    final card = entry.card;
 
-    final isWriteWithTyped = mode == QuizMode.write && entry.userTypedAnswer != null;
+    final isWriteWithTyped = mode == QuizMode.write && userTypedAnswer != null;
 
     return Padding(
       padding: const EdgeInsets.only(bottom: VesselLayout.listItemGapSmall),
       child: VesselCard(
         padding: const EdgeInsets.symmetric(vertical: VesselLayout.resultEntryPaddingV, horizontal: VesselLayout.resultEntryPaddingH),
-        child: isWriteWithTyped
-            ? Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    '${l10n.youWrote} ${entry.userTypedAnswer!.isEmpty ? l10n.emptyAnswer : entry.userTypedAnswer}',
-                    style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
-                  ),
-                  const VesselGap.xs(),
-                  Text(
-                    '${l10n.correctAnswerLabel} ${card.targetAnswer} → ${displayNativeForCard(card, l10n)}',
-                    style: VesselFonts.textBodyLargeAccented.copyWith(color: t.textPrimary),
-                  ),
-                ],
-              )
-            : Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Expanded(
-                    child: Text(
-                      card.targetAnswer,
-                      style: VesselFonts.textBodyLargeAccented.copyWith(
-                        color: t.textPrimary,
-                      ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Expanded(
+              child: isWriteWithTyped
+                  ? Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          '${l10n.youWrote} ${userTypedAnswer!.isEmpty ? l10n.emptyAnswer : userTypedAnswer}',
+                          style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
+                        ),
+                        const VesselGap.xs(),
+                        Text(
+                          '${l10n.correctAnswerLabel} ${card.targetAnswer} → ${displayNativeForCard(card, l10n)}',
+                          style: VesselFonts.textBodyLargeAccented.copyWith(color: t.textPrimary),
+                        ),
+                      ],
+                    )
+                  : Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            card.targetAnswer,
+                            style: VesselFonts.textBodyLargeAccented.copyWith(
+                              color: t.textPrimary,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          ' → ',
+                          style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
+                        ),
+                        Expanded(
+                          child: Text(
+                            displayNativeForCard(card, l10n),
+                            style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                  Text(
-                    ' → ',
-                    style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
-                  ),
-                  Expanded(
-                    child: Text(
-                      displayNativeForCard(card, l10n),
-                      style: VesselFonts.textBodyLarge.copyWith(color: t.textPrimary),
-                    ),
-                  ),
-                ],
-              ),
+            ),
+            const VesselGap.hs(),
+            VesselDangerButton(
+              icon: PhosphorIconsBold.bug,
+              size: VesselButtonSize.small,
+              margin: EdgeInsets.zero,
+              onPressed: () => showBugReportSheet(context, card: card),
+            ),
+          ],
+        ),
       ),
     );
   }

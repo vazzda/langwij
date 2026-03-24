@@ -19,6 +19,8 @@ class VesselTextInput extends StatelessWidget {
     this.autocorrect = true,
     this.enableSuggestions = true,
     this.obscureText = false,
+    this.maxLines = 1,
+    this.minLines,
   });
 
   final TextEditingController? controller;
@@ -33,6 +35,8 @@ class VesselTextInput extends StatelessWidget {
   final bool autocorrect;
   final bool enableSuggestions;
   final bool obscureText;
+  final int? maxLines;
+  final int? minLines;
 
   @override
   Widget build(BuildContext context) {
@@ -58,6 +62,8 @@ class VesselTextInput extends StatelessWidget {
           borderSide: BorderSide(color: t.accentColor, width: t.controlBorderWidth),
         ),
       ),
+      maxLines: maxLines,
+      minLines: minLines,
       onSubmitted: onSubmitted,
       autofocus: autofocus,
       textInputAction: textInputAction,

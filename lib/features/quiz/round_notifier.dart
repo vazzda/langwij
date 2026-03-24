@@ -147,6 +147,9 @@ class RoundNotifier extends StateNotifier<RoundState?> {
       firstPassCorrect:
           isFirstAttempt ? state!.firstPassCorrect + 1 : state!.firstPassCorrect,
       attemptedCardIds: {...state!.attemptedCardIds, cardId},
+      correctEntries: isFirstAttempt
+          ? [...state!.correctEntries, card]
+          : null,
     );
   }
 

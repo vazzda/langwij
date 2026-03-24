@@ -279,6 +279,15 @@
   },
   "language_resetButton": "Reset",
 
+  "result_correctTitle": "Review Correct",
+  "result_correctSubtitle": "Words you answered correctly",
+
+  "bugReport_title": "Report Issue",
+  "bugReport_typeBadTranslation": "Bad translation",
+  "bugReport_typeUiBug": "UI bug",
+  "bugReport_messagePlaceholder": "Describe the issue...",
+  "bugReport_submit": "Submit",
+
   "settings_validateConfigs": "Validate All Configs",
   "settings_validateSuccess": "All configs valid",
   "settings_validateError": "Validation failed: {message}",

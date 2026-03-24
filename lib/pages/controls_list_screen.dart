@@ -16,6 +16,7 @@ import '../shared/ui/inputs/vessel_input_styles.dart';
 import '../shared/ui/inputs/vessel_radio_grid.dart';
 import '../shared/ui/inputs/vessel_radio_tile.dart';
 import '../shared/ui/inputs/vessel_slider_input.dart';
+import '../shared/ui/inputs/vessel_dropdown.dart';
 import '../shared/ui/inputs/vessel_text_input.dart';
 import '../shared/ui/inputs/vessel_time_slider.dart';
 import '../shared/ui/inputs/vessel_toggles.dart';
@@ -67,6 +68,9 @@ class _ControlsListScreenState extends State<ControlsListScreen> {
   int _demoSliderCounterButtons = 250;
   int _demoSliderTime = 90;
   int _demoSliderTimeButtons = 75;
+
+  // State for VesselDropdown demo
+  String _demoDropdownValue = 'apple';
 
   // State for hour picker
   int _selectedHour = 9;
@@ -707,6 +711,29 @@ class _ControlsListScreenState extends State<ControlsListScreen> {
               controller: _textController,
               label: 'Label',
               hint: 'Placeholder text',
+            ),
+            const SizedBox(height: 16),
+            const Text('VesselTextInput (multiline):'),
+            const SizedBox(height: 8),
+            VesselTextInput(
+              hint: 'Multiline input...',
+              maxLines: 4,
+              minLines: 3,
+              textInputAction: TextInputAction.newline,
+              keyboardType: TextInputType.multiline,
+            ),
+            const SizedBox(height: 16),
+            const Text('VesselDropdown:'),
+            const SizedBox(height: 8),
+            VesselDropdown<String>(
+              value: _demoDropdownValue,
+              onChanged: (v) => setState(() => _demoDropdownValue = v),
+              label: 'Fruit',
+              items: const [
+                VesselDropdownItem(value: 'apple', label: 'Apple'),
+                VesselDropdownItem(value: 'banana', label: 'Banana'),
+                VesselDropdownItem(value: 'cherry', label: 'Cherry'),
+              ],
             ),
           ]),
 

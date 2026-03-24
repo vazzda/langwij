@@ -481,6 +481,27 @@ class AppLocalizationsEn extends AppLocalizations {
   String get language_resetButton => 'Reset';
 
   @override
+  String get result_correctTitle => 'Review Correct';
+
+  @override
+  String get result_correctSubtitle => 'Words you answered correctly';
+
+  @override
+  String get bugReport_title => 'Report Issue';
+
+  @override
+  String get bugReport_typeBadTranslation => 'Bad translation';
+
+  @override
+  String get bugReport_typeUiBug => 'UI bug';
+
+  @override
+  String get bugReport_messagePlaceholder => 'Describe the issue...';
+
+  @override
+  String get bugReport_submit => 'Submit';
+
+  @override
   String get settings_validateConfigs => 'Validate All Configs';
 
   @override

@@ -33,6 +33,7 @@ class RoundState {
     this.firstPassCorrect = 0,
     this.attemptedCardIds = const {},
     this.missedEntries = const [],
+    this.correctEntries = const [],
     this.roundWordIds = const {},
   });
 
@@ -74,6 +75,9 @@ class RoundState {
   /// Entries that were answered wrong (for review at end). Write mode stores userTypedAnswer.
   final List<MissedEntry> missedEntries;
 
+  /// Cards answered correctly on first attempt (for review at end).
+  final List<CardModel> correctEntries;
+
   /// Distinct word IDs in this round (for daily "words touched").
   final Set<String> roundWordIds;
 
@@ -91,6 +95,7 @@ class RoundState {
     int? firstPassCorrect,
     Set<String>? attemptedCardIds,
     List<MissedEntry>? missedEntries,
+    List<CardModel>? correctEntries,
     Set<String>? roundWordIds,
   }) {
     return RoundState(
@@ -111,6 +116,7 @@ class RoundState {
       firstPassCorrect: firstPassCorrect ?? this.firstPassCorrect,
       attemptedCardIds: attemptedCardIds ?? this.attemptedCardIds,
       missedEntries: missedEntries ?? this.missedEntries,
+      correctEntries: correctEntries ?? this.correctEntries,
       roundWordIds: roundWordIds ?? this.roundWordIds,
     );
   }
