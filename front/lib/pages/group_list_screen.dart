@@ -12,14 +12,11 @@ import '../app/providers/app_settings_provider.dart';
 import '../app/providers/deck_progress_provider.dart';
 import '../app/providers/groups_provider.dart';
 import '../app/router/app_router.dart';
-import '../app/theme/vessel_themes.dart';
-import '../shared/ui/card/vessel_card.dart';
-import '../shared/ui/screen_layout/vessel_scaffold.dart';
-import '../shared/ui/bottom_sheet/quiz_bottom_sheets.dart';
-import 'package:srpski_card/shared/lib/group_label.dart';
-import 'package:srpski_card/shared/lib/progress_calculator.dart';
-import '../shared/ui/gap/vessel_gap.dart';
-import '../app/layout/vessel_layout.dart';
+import '../shared/ui/langwij_main_nav_bar.dart';
+import '../shared/ui/bottom_sheet/langwij_quiz_bottom_sheets.dart';
+import 'package:langwij/shared/lib/group_label.dart';
+import 'package:flessel/flessel.dart';
+import 'package:langwij/shared/lib/progress_calculator.dart';
 
 enum ParentCategory { vocabulary, conjugations }
 
@@ -41,22 +38,6 @@ String formatRelativeDate(DateTime date, AppLocalizations l10n) {
   } else {
     final years = (days / 365).floor();
     return l10n.relativeDateYears(years);
-  }
-}
-
-/// Returns background color for a retention level.
-Color retentionColor(RetentionLevel level, VesselThemeData t) {
-  switch (level) {
-    case RetentionLevel.none:
-      return t.retentionNone;
-    case RetentionLevel.weak:
-      return t.retentionWeak;
-    case RetentionLevel.good:
-      return t.retentionGood;
-    case RetentionLevel.strong:
-      return t.retentionStrong;
-    case RetentionLevel.super_:
-      return t.retentionSuper;
   }
 }
 
@@ -93,7 +74,7 @@ class _GroupTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final label = groupLabel(l10n, group.labelKey);
     final count = wordCount(group);
     final preview = groupPreviewText(group);
@@ -104,16 +85,16 @@ class _GroupTile extends StatelessWidget {
     // Show badge if there's any progress
     final showBadge = progress != null && progress!.recentRounds.isNotEmpty;
 
-    return VesselCard(
+    return FlesselCard(
       onTap: onTap,
-      padding: EdgeInsets.zero,
+      padding: FlesselSize.xxs,
       child: LayoutBuilder(
         builder: (context, constraints) {
           return Stack(
             children: [
               // Main content
               Padding(
-                padding: const EdgeInsets.all(VesselLayout.screenPadding),
+                padding: const EdgeInsets.all(FlesselLayout.screenPadding),
                 child: Row(
                   children: [
                     Expanded(
@@ -121,19 +102,19 @@ class _GroupTile extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(label, style: VesselFonts.textListItem.copyWith(color: t.textPrimary)),
-                          const VesselGap.xxs(),
+                          Text(label, style: FlesselFonts.contentM.copyWith(color: t.textPrimary)),
+                          const FlesselGap.xxs(),
                           Text(
                             countText,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: VesselFonts.textCaption.copyWith(color: t.textSecondary),
+                            style: FlesselFonts.contentS.copyWith(color: t.textSecondary),
                           ),
                         ],
                       ),
                     ),
                     // Space reserved for badge
-                    const VesselGap.hl(),
+                    const FlesselGap.l(),
                   ],
                 ),
               ),
@@ -169,73 +150,24 @@ class _ProgressBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
     final percentage = progress.totalProgress.round();
     final level = ProgressCalculator.getRetentionLevel(
       retention,
       progress.totalProgress,
     );
-    final levelColor = retentionColor(level, t);
     final levelLabel = retentionLabel(level, l10n);
     final dateText = progress.lastRoundDate != null
         ? formatRelativeDate(progress.lastRoundDate!, l10n)
         : '-';
 
-    const chipPadding = EdgeInsets.symmetric(horizontal: VesselLayout.chipPaddingH, vertical: VesselLayout.chipPaddingV);
-    final outlinedChipStyle = VesselFonts.textProgressChip.copyWith(
-      color: t.textPrimary,
-    );
-    final filledChipStyle = VesselFonts.textProgressChip.copyWith(
-      color: t.retentionText,
-    );
-
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        // Chip 1: Percentage (outlined)
-        Container(
-          padding: chipPadding,
-          decoration: BoxDecoration(
-            color: t.cardBackground,
-            border: Border.all(
-              color: t.textPrimary,
-              width: t.cardBorderWidth,
-            ),
-            borderRadius: const BorderRadius.only(
-              bottomLeft: Radius.circular(10),
-            ),
-          ),
-          child: Text('$percentage%', style: outlinedChipStyle),
-        ),
-        const VesselGap.hxs(),
-        // Chip 2: Date (outlined)
-        Container(
-          padding: chipPadding,
-          decoration: BoxDecoration(
-            color: t.cardBackground,
-            border: Border.all(
-              color: t.textPrimary,
-              width: t.cardBorderWidth,
-            ),
-          ),
-          child: Text(dateText, style: outlinedChipStyle),
-        ),
-        const VesselGap.hxs(),
-        // Chip 3: Retention level (filled with level color)
-        Container(
-          padding: chipPadding,
-          decoration: BoxDecoration(
-            color: levelColor,
-            border: Border.all(
-              color: t.textPrimary,
-              width: t.cardBorderWidth,
-            ),
-            borderRadius: const BorderRadius.only(
-              topRight: Radius.circular(10),
-            ),
-          ),
-          child: Text(levelLabel, style: filledChipStyle),
-        ),
+        FlesselTag(label: '$percentage%'),
+        const FlesselGap.xs(),
+        FlesselTag(label: dateText),
+        const FlesselGap.xs(),
+        FlesselTag(label: levelLabel),
       ],
     );
   }
@@ -290,7 +222,7 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final asyncGroups = ref.watch(groupsProvider);
     final allProgress = ref.watch(deckProgressProvider);
     final settings = ref.watch(appSettingsProvider);
@@ -323,10 +255,11 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
       onPopInvokedWithResult: (didPop, result) {
         if (!didPop) context.go(AppRoutes.tools);
       },
-      child: VesselScaffold(
+      child: FlesselScaffold(
         title: title,
-        showBottomNav: true,
-        leading: BackButton(onPressed: () => context.go(AppRoutes.tools)),
+        uppercaseTitle: true,
+        bottomNavBar: const LangwijMainNavBar(),
+        onBackPressed: () => context.go(AppRoutes.tools),
         child: asyncGroups.when(
           data: (groups) {
             final childGroups = groups
@@ -335,13 +268,13 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
             if (filterType == GroupType.endings) {
               return ListView.builder(
                 controller: _scrollController,
-                padding: const EdgeInsets.all(VesselLayout.screenPadding),
+                padding: const EdgeInsets.all(FlesselLayout.screenPadding),
                 itemCount: childGroups.length,
                 itemBuilder: (context, index) {
                   final group = childGroups[index];
                   final progress = allProgress[group.id];
                   return Padding(
-                    padding: const EdgeInsets.only(bottom: VesselLayout.listItemGap),
+                    padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
                     child: _GroupTile(
                       group: group,
                       l10n: l10n,
@@ -406,26 +339,26 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
             }
             return ListView.builder(
               controller: _scrollController,
-              padding: const EdgeInsets.all(VesselLayout.screenPadding),
+              padding: const EdgeInsets.all(FlesselLayout.screenPadding),
               itemCount: items.length,
               itemBuilder: (context, index) {
                 final item = items[index];
                 if (item is String) {
                   return Padding(
                     padding: EdgeInsets.only(
-                      top: index == 0 ? 0 : VesselLayout.listItemGap,
-                      bottom: VesselLayout.listItemGapSmall,
+                      top: index == 0 ? 0 : FlesselLayout.listItemGap,
+                      bottom: FlesselLayout.listItemGapSmall,
                     ),
                     child: Text(
                       item,
-                      style: VesselFonts.textSectionHeader.copyWith(color: t.textPrimary),
+                      style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
                     ),
                   );
                 }
                 final group = item as GroupModel;
                 final progress = allProgress[group.id];
                 return Padding(
-                  padding: const EdgeInsets.only(bottom: VesselLayout.listItemGap),
+                  padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
                   child: _GroupTile(
                     group: group,
                     l10n: l10n,
@@ -437,7 +370,7 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
               },
             );
           },
-          loading: () => const Center(child: CircularProgressIndicator()),
+          loading: () => const Center(child: FlesselSpinner()),
           error: (e, st) => Center(child: Text(l10n.loadError)),
         ),
       ),
@@ -456,7 +389,7 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
 
     ref.read(selectedGroupProvider.notifier).state = group;
 
-    final selection = await showModeBottomSheet(
+    final selection = await showLangwijModeSelectionSheet(
       context, l10n,
       showAllModes: false,
       targetLangCode: LangCodes.serbian,
@@ -468,7 +401,7 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
     if (selection.isTest) {
       selectedCount = totalCards;
     } else {
-      final picked = await showCountBottomSheet(
+      final picked = await showLangwijQuestionCountSheet(
         context,
         l10n,
         totalCount: totalCards,

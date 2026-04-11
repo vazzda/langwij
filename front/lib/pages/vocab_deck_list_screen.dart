@@ -17,16 +17,16 @@ import '../entities/language/language_pack.dart';
 import '../entities/plan/level_tier.dart';
 import '../features/quiz/round_notifier.dart';
 import '../features/vocab/services/level_fold_notifier.dart';
-import '../features/vocab/widgets/vocab_daily_activity_card.dart';
-import '../app/layout/vessel_layout.dart';
-import '../features/vocab/widgets/vocab_level_card.dart';
+import '../features/vocab/widgets/langwij_vocab_daily_activity_card.dart';
+import '../features/vocab/widgets/langwij_vocab_level_card.dart';
 import '../features/vocab/widgets/vocab_deck_tile_data.dart';
 import '../shared/repositories/models/deck_progress.dart';
 import '../shared/repositories/models/retention_level.dart';
 import '../app/providers/daily_activity_provider.dart';
-import '../shared/ui/bottom_sheet/quiz_bottom_sheets.dart';
-import '../shared/ui/screen_layout/vessel_scaffold.dart';
-import 'package:srpski_card/shared/lib/progress_calculator.dart';
+import '../shared/ui/bottom_sheet/langwij_quiz_bottom_sheets.dart';
+import '../shared/ui/langwij_main_nav_bar.dart';
+import 'package:flessel/flessel.dart';
+import 'package:langwij/shared/lib/progress_calculator.dart';
 
 class VocabDeckListScreen extends ConsumerStatefulWidget {
   const VocabDeckListScreen({super.key});
@@ -98,13 +98,14 @@ class _VocabDeckListScreenState extends ConsumerState<VocabDeckListScreen> {
     if (dictionary == null || targetPack == null || nativePack == null) {
       final hasError =
           asyncDict.hasError || asyncTarget.hasError || asyncNative.hasError;
-      return VesselScaffold(
+      return FlesselScaffold(
         title: l10n.navVocabulary,
-        showBottomNav: true,
+        uppercaseTitle: true,
+        bottomNavBar: const LangwijMainNavBar(),
         child: Center(
           child: hasError
               ? Text(l10n.loadError)
-              : const CircularProgressIndicator(),
+              : const FlesselSpinner(),
         ),
       );
     }
@@ -121,20 +122,20 @@ class _VocabDeckListScreenState extends ConsumerState<VocabDeckListScreen> {
     final firstLevelId = dictionary.levels.first.id;
     final lastLevelId = dictionary.levels.last.id;
 
-    return VesselScaffold(
+    return FlesselScaffold(
       title: l10n.navVocabulary,
-      showBottomNav: true,
-      child: ListView.builder(
+      uppercaseTitle: true,
+      bottomNavBar: const LangwijMainNavBar(),
+      child: ListView.separated(
         controller: _scrollController,
-        padding: const EdgeInsets.all(VesselLayout.vocabListPadding),
+        padding: const EdgeInsets.all(FlesselLayout.screenPadding),
         itemCount: levels.length + 1,
+        separatorBuilder: (_, _) => const FlesselGap.m(),
         itemBuilder: (context, index) {
           if (index == 0) {
-            return Padding(
-              padding: const EdgeInsets.only(
-                bottom: VesselLayout.vocabDailyCardBottomGap,
-              ),
-              child: VocabDailyActivityCard(asyncStats: asyncStats, l10n: l10n),
+            return LangwijVocabDailyActivityCard(
+              asyncStats: asyncStats,
+              l10n: l10n,
             );
           }
           final level = levels[index - 1];
@@ -145,24 +146,21 @@ class _VocabDeckListScreenState extends ConsumerState<VocabDeckListScreen> {
             lastLevelId: lastLevelId,
             overrides: foldOverrides,
           );
-          return Padding(
-            padding: const EdgeInsets.only(bottom: VesselLayout.vocabLevelCardBottomGap),
-            child: VocabLevelCard(
-              item: level,
-              l10n: l10n,
-              isExpanded: isExpanded,
-              onToggle: () => ref
-                  .read(levelFoldOverridesProvider.notifier)
-                  .toggle(levelId, currentlyExpanded: isExpanded),
-              onDeckTap: (deck, cardCount) => _onDeckTap(
-                context,
-                deck,
-                dictionary,
-                targetPack,
-                nativePack,
-                cardCount,
-                l10n,
-              ),
+          return LangwijVocabLevelCard(
+            item: level,
+            l10n: l10n,
+            isExpanded: isExpanded,
+            onToggle: () => ref
+                .read(levelFoldOverridesProvider.notifier)
+                .toggle(levelId, currentlyExpanded: isExpanded),
+            onDeckTap: (deck, cardCount) => _onDeckTap(
+              context,
+              deck,
+              dictionary,
+              targetPack,
+              nativePack,
+              cardCount,
+              l10n,
             ),
           );
         },
@@ -334,7 +332,7 @@ class _VocabDeckListScreenState extends ConsumerState<VocabDeckListScreen> {
   ) async {
     if (cardCount <= 0) return;
 
-    final selection = await showModeBottomSheet(
+    final selection = await showLangwijModeSelectionSheet(
       context,
       l10n,
       targetLangCode: targetPack.code,
@@ -349,7 +347,7 @@ class _VocabDeckListScreenState extends ConsumerState<VocabDeckListScreen> {
     if (selection.isTest) {
       selectedCount = cardCount;
     } else {
-      final picked = await showCountBottomSheet(
+      final picked = await showLangwijQuestionCountSheet(
         context,
         l10n,
         totalCount: cardCount,

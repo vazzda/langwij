@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 import '../l10n/app_localizations.dart';
 import '../app/providers/language_settings_provider.dart';
 import '../entities/language/lang_codes.dart';
 import '../app/router/app_router.dart';
-import '../app/theme/vessel_themes.dart';
-import '../shared/ui/card/vessel_card.dart';
-import '../shared/ui/screen_layout/vessel_scaffold.dart';
-import '../app/layout/vessel_layout.dart';
+import 'package:flessel/flessel.dart';
+import '../shared/ui/langwij_main_nav_bar.dart';
 
 /// Tools screen — language-specific practice tools.
 /// For Serbian: conjugation endings and gender agreement drills.
@@ -20,36 +17,37 @@ class ToolsScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final langSettings = ref.watch(languageSettingsProvider);
 
     // Tools available per target language.
     final tools = _toolsForLanguage(langSettings.targetLang);
 
-    return VesselScaffold(
+    return FlesselScaffold(
       title: l10n.navTools,
-      showBottomNav: true,
+      uppercaseTitle: true,
+      bottomNavBar: const LangwijMainNavBar(),
       child: tools.isEmpty
           ? Center(
               child: Text(
                 l10n.tools_emptyState,
-                style: VesselFonts.textBody.copyWith(color: t.textSecondary),
+                style: FlesselFonts.contentM.copyWith(color: t.textSecondary),
               ),
             )
           : ListView(
-              padding: const EdgeInsets.all(VesselLayout.screenPadding),
+              padding: const EdgeInsets.all(FlesselLayout.screenPadding),
               children: tools.map((tool) {
                 final label = _toolLabel(tool, l10n);
                 return Padding(
-                  padding: const EdgeInsets.only(bottom: VesselLayout.listItemGap),
-                  child: VesselCard(
+                  padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
+                  child: FlesselCard(
                     onTap: () => _onToolTap(context, tool),
                     child: Row(
                       children: [
                         Expanded(
                           child: Text(
                             label,
-                            style: VesselFonts.textListItem.copyWith(color: t.textPrimary),
+                            style: FlesselFonts.contentM.copyWith(color: t.textPrimary),
                           ),
                         ),
                         Icon(

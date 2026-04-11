@@ -1,7 +1,33 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep \"\\\\.dart$\")"
+      "Bash(grep \"\\\\.dart$\")",
+      "Bash(flutter analyze:*)",
+      "Bash(python -c ':*)",
+      "Bash(rm -f shared/ui/divider/vessel_divider.dart shared/ui/gap/vessel_gap.dart shared/ui/note/vessel_note.dart shared/ui/progress_bar/vessel_progress_bar.dart shared/ui/inputs/vessel_radio_tile.dart shared/ui/snackbar/vessel_snackbar.dart shared/ui/tile/vessel_tile.dart shared/ui/inputs/vessel_toggles.dart)",
+      "Bash(rmdir shared/ui/divider shared/ui/gap shared/ui/note shared/ui/progress_bar shared/ui/snackbar shared/ui/tile)",
+      "Bash(ls *.md)",
+      "Bash(find .vessel/packages/flessel/lib/src/controls/scaffold -type f)",
+      "Bash(find .vessel/packages/flessel/lib/src/controls/screen* -type f)",
+      "Bash(rm \"C:/_pet/srpski_card/front/lib/shared/ui/text/vessel_header.dart\")",
+      "Bash(rmdir \"C:/_pet/srpski_card/front/lib/shared/ui/text\")",
+      "Bash(rm \"C:/_pet/srpski_card/front/lib/shared/ui/answer_tile/vessel_answer_tile.dart\")",
+      "Bash(rmdir \"C:/_pet/srpski_card/front/lib/shared/ui/answer_tile\")",
+      "Bash(sed -i -e '6d' -e '27d' -e '119,126d' front/lib/app/router/app_router.dart)",
+      "Bash(sed -i '263,278d' front/lib/pages/settings_screen.dart)",
+      "Bash(sed -n '1,30p;115,130p' front/lib/app/router/app_router.dart)",
+      "Bash(sed -n '255,275p' front/lib/pages/settings_screen.dart)",
+      "Bash(rm lib/shared/ui/buttons/vessel_button_group.dart lib/shared/ui/buttons/vessel_buttons.dart lib/shared/ui/buttons/vessel_button_styles.dart lib/shared/ui/inputs/vessel_input_row.dart lib/shared/ui/inputs/vessel_radio_grid.dart lib/shared/ui/inputs/vessel_input_styles.dart)",
+      "Bash(rmdir lib/shared/ui/buttons lib/shared/ui/inputs)",
+      "Bash(sed -i -e \"/^import 'package:go_router\\\\/go_router.dart';/d\" -e \"/^import '..\\\\/app\\\\/router\\\\/app_router.dart';/d\" lib/pages/settings_screen.dart)",
+      "Bash(sed -n '1,15p' lib/pages/settings_screen.dart)",
+      "Bash(xargs grep:*)",
+      "Bash(grep -l \"retention\" lib/app/theme/themes/*.dart)",
+      "Bash(cat)",
+      "Read(//tmp/**)",
+      "Bash(python3:*)",
+      "Bash(flutter pub:*)",
+      "Bash(flutter build:*)"
     ]
   }
 }

@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:phosphor_flutter/phosphor_flutter.dart';
+import 'package:flessel/flessel.dart';
 
-import '../../../app/theme/vessel_themes.dart';
 import '../../../entities/deck/vocab_deck_model.dart';
 import '../../../entities/plan/level_tier.dart';
 import '../../../l10n/app_localizations.dart';
-import '../../../shared/ui/card/vessel_card.dart';
-import '../../../shared/ui/progress_bar/vessel_progress_bar.dart';
-import 'vocab_deck_tile.dart';
-import '../../../app/layout/vessel_layout.dart';
-import 'vocab_level_stats_row.dart';
+import '../../../shared/ui/layout/langwij_layout.dart';
+import 'langwij_vocab_deck_tile.dart';
+import 'langwij_vocab_level_stats_row.dart';
 import 'vocab_deck_tile_data.dart';
 
-class VocabLevelCard extends StatelessWidget {
-  const VocabLevelCard({
+/// Langwij composite: a single level card on the vocab list screen.
+///
+/// The header (level name + progress row) is tappable and toggles
+/// [isExpanded] via [onToggle]. When expanded, the body shows an optional
+/// description, a [Wrap] of [LangwijVocabDeckTile] children sized via
+/// [LayoutBuilder], and a closing [LangwijVocabLevelStatsRow].
+class LangwijVocabLevelCard extends StatelessWidget {
+  const LangwijVocabLevelCard({
     super.key,
     required this.item,
     required this.l10n,
@@ -30,11 +33,12 @@ class VocabLevelCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final isPremium = item.tier == LevelTier.premium;
+    final counterStyle =
+        FlesselFonts.contentBodyAccent.copyWith(color: t.textPrimary);
 
-    return VesselCard(
-      padding: const EdgeInsets.all(VesselLayout.vocabLevelCardPadding),
+    return FlesselCard(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
@@ -51,44 +55,43 @@ class VocabLevelCard extends StatelessWidget {
                     Expanded(
                       child: Text(
                         item.name,
-                        style: VesselFonts.textLevelHeader.copyWith(
-                          color: t.textPrimary,
-                        ),
+                        style: FlesselFonts.displayXl
+                            .copyWith(color: t.textPrimary),
                       ),
                     ),
                     if (isPremium)
-                      Icon(PhosphorIconsRegular.lock, size: 16, color: t.textSecondary),
+                      Icon(
+                        PhosphorIconsRegular.lock,
+                        size: FlesselLayout.iconS,
+                        color: t.textSecondary,
+                      ),
                   ],
                 ),
-                const SizedBox(height: VesselLayout.vocabHeaderToProgressGap),
+                const FlesselGap.s(),
                 Row(
                   children: [
                     SizedBox(
-                      width: VesselLayout.vocabProgressWordsWidth,
+                      width: LangwijLayout.vocabProgressWordsWidth,
                       child: Text(
                         '${item.totalCardCount}',
                         textAlign: TextAlign.start,
-                        style: VesselFonts.textLevelCounter.copyWith(
-                          color: t.textPrimary,
-                        ),
+                        style: counterStyle,
                       ),
                     ),
-                    const SizedBox(width: VesselLayout.vocabProgressPercentGap),
+                    const FlesselGap.xs(),
                     Expanded(
-                      child: VesselProgressBar(
+                      child: FlesselProgressBar(
                         value: (item.levelProgress / 100.0).clamp(0.0, 1.0),
-                        mode: VesselProgressBarMode.detailed,
+                        mode: FlesselProgressBarMode.detailed,
                       ),
                     ),
-                    const SizedBox(width: VesselLayout.vocabProgressPercentGap),
+                    const FlesselGap.xs(),
                     SizedBox(
-                      width: VesselLayout.vocabProgressPercentWidth,
+                      width: LangwijLayout.vocabProgressPercentWidth,
                       child: Text(
                         '${item.levelProgress.round()}%',
                         textAlign: TextAlign.end,
-                        style: VesselFonts.textLevelCounter.copyWith(
-                          color: t.textPrimary,
-                        ),
+                        style: counterStyle,
                       ),
                     ),
                   ],
@@ -98,29 +101,31 @@ class VocabLevelCard extends StatelessWidget {
           ),
           // Body: visible only when expanded
           if (isExpanded) ...[
-            const SizedBox(height: VesselLayout.vocabProgressSpacingAfter),
+            const SizedBox(
+              height: LangwijLayout.vocabProgressSpacingAfter,
+            ),
             if (item.description != null) ...[
               Text(
                 item.description!,
-                style: VesselFonts.textCaption.copyWith(color: t.textSecondary),
+                style: FlesselFonts.contentCaption
+                    .copyWith(color: t.textSecondary),
               ),
-              const SizedBox(height: VesselLayout.vocabDescSpacingAfter),
+              const FlesselGap.s(),
             ],
             LayoutBuilder(
               builder: (context, constraints) {
-                final n =
-                    ((constraints.maxWidth + VesselLayout.vocabTileGap) /
-                            (VesselLayout.vocabTileMinWidth + VesselLayout.vocabTileGap))
-                        .floor()
-                        .clamp(1, 100);
+                final n = ((constraints.maxWidth + FlesselLayout.gapM) /
+                        (LangwijLayout.vocabTileMinWidth + FlesselLayout.gapM))
+                    .floor()
+                    .clamp(1, 100);
                 final tileWidth =
-                    (constraints.maxWidth - VesselLayout.vocabTileGap * (n - 1)) / n;
+                    (constraints.maxWidth - FlesselLayout.gapM * (n - 1)) / n;
                 return Wrap(
-                  spacing: VesselLayout.vocabTileGap,
-                  runSpacing: VesselLayout.vocabTileGap,
+                  spacing: FlesselLayout.gapM,
+                  runSpacing: FlesselLayout.gapM,
                   children: item.decks
                       .map(
-                        (g) => VocabDeckTile(
+                        (g) => LangwijVocabDeckTile(
                           item: g,
                           l10n: l10n,
                           width: tileWidth,
@@ -131,8 +136,8 @@ class VocabLevelCard extends StatelessWidget {
                 );
               },
             ),
-            const SizedBox(height: VesselLayout.vocabTilesToStatsGap),
-            VocabLevelStatsRow(item: item, l10n: l10n),
+            const FlesselGap.l(),
+            LangwijVocabLevelStatsRow(item: item, l10n: l10n),
           ],
         ],
       ),

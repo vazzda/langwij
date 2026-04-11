@@ -4,7 +4,7 @@ import 'db_schema.dart';
 import 'models/deck_progress.dart';
 import 'models/round_record.dart';
 import '../../features/quiz/quiz_mode.dart';
-import 'package:srpski_card/shared/lib/progress_constants.dart';
+import 'package:langwij/shared/lib/progress_constants.dart';
 
 /// Persists and reads deck progress via SQLite, scoped by target language.
 class DeckProgressRepository {

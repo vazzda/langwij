@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flessel/flessel.dart';
 
-import '../../../app/theme/vessel_themes.dart';
-import 'package:srpski_card/shared/lib/deck_icons.dart';
+import 'package:langwij/shared/lib/deck_icons.dart';
 import '../../../l10n/app_localizations.dart';
-import '../../../shared/ui/progress_bar/vessel_progress_bar.dart';
-import '../../../shared/ui/tile/vessel_tile.dart';
-import '../../../app/layout/vessel_layout.dart';
+import '../../../shared/ui/layout/langwij_layout.dart';
 import 'vocab_deck_tile_data.dart';
 
-class VocabDeckTile extends StatelessWidget {
-  const VocabDeckTile({
+/// Langwij composite: a single deck tile inside a vocab level card.
+///
+/// Wraps [FlesselTile] with a fixed [LangwijLayout.vocabTileHeight] envelope.
+/// `onTap` is gated to null when the deck has no cards. The internal layout
+/// is a stack of three [Positioned] children: header (icon + counter +
+/// progress bar), title, and word preview.
+class LangwijVocabDeckTile extends StatelessWidget {
+  const LangwijVocabDeckTile({
     super.key,
     required this.item,
     required this.l10n,
@@ -24,45 +28,36 @@ class VocabDeckTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final barValue = item.percentage != null ? item.percentage! / 100.0 : 0.0;
     final iconData = item.icon != null
         ? DeckIcons.fromString(item.icon!)
         : DeckIcons.fallback;
+    final dimmedTextColor = t.textPrimary.withValues(alpha: t.disabledOpacity);
 
     return SizedBox(
       width: width,
-      height: VesselLayout.vocabTileHeight,
-      child: VesselTile(
+      height: LangwijLayout.vocabTileHeight,
+      child: FlesselTile(
         onTap: item.cardCount > 0 ? onTap : null,
         child: Stack(
           children: [
             // Header: icon (left) + stats column (right)
             Positioned(
-              top: VesselLayout.vocabTileHeaderTop,
-              left: VesselLayout.vocabTileHeaderLeft,
-              right: VesselLayout.vocabTileHeaderRight,
+              top: LangwijLayout.vocabTileHeaderTop,
+              left: LangwijLayout.vocabTileHeaderLeft,
+              right: LangwijLayout.vocabTileHeaderRight,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Transform.translate(
-                    offset: const Offset(0, VesselLayout.deckIconTopOffset),
-                    child: Container(
-                      padding: const EdgeInsets.all(VesselLayout.deckIconPadding),
-                      decoration: BoxDecoration(
-                        color: t.deckIconBackground,
-                        borderRadius: BorderRadius.circular(
-                          t.deckIconBorderRadius,
-                        ),
-                      ),
-                      child: Icon(
-                        iconData,
-                        size: VesselLayout.vocabTileIconSize,
-                        color: t.deckIconColor,
-                      ),
+                    offset: const Offset(0, LangwijLayout.vocabTileIconTopOffset),
+                    child: FlesselIconContainer(
+                      icon: iconData,
+                      iconSize: LangwijLayout.vocabTileIconSize,
                     ),
                   ),
-                  SizedBox(width: VesselLayout.vocabTileHeaderGap),
+                  const SizedBox(width: LangwijLayout.vocabTileHeaderGap),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -71,31 +66,34 @@ class VocabDeckTile extends StatelessWidget {
                         Text(
                           l10n.vocab_termsCount(item.cardCount),
                           textAlign: TextAlign.start,
-                          style: VesselFonts.textTileCounter.copyWith(
-                            color: t.tileForeground,
+                          style: FlesselFonts.contentSAccent.copyWith(
+                            color: t.textPrimary,
                           ),
                         ),
-                        SizedBox(height: VesselLayout.vocabTileHeaderRowGap),
+                        const SizedBox(
+                          height: LangwijLayout.vocabTileHeaderRowGap,
+                        ),
                         Row(
                           children: [
                             Expanded(
-                              child: VesselProgressBar(
+                              child: FlesselProgressBar(
                                 value: barValue,
-                                mode: VesselProgressBarMode.compact,
+                                mode: FlesselProgressBarMode.compact,
                               ),
                             ),
                             const SizedBox(
-                              width: VesselLayout.vocabTileProgressPercentGap,
+                              width: LangwijLayout.vocabTileProgressPercentGap,
                             ),
                             SizedBox(
-                              width: VesselLayout.vocabTileProgressPercentWidth,
+                              width:
+                                  LangwijLayout.vocabTileProgressPercentWidth,
                               child: Text(
                                 '${item.percentage ?? 0}%',
                                 textAlign: TextAlign.start,
-                                style: VesselFonts.textProgressPercentage.copyWith(
+                                style: FlesselFonts.contentXsAccent.copyWith(
                                   color: item.percentage != null
-                                      ? t.tileForeground
-                                      : t.textPrimaryDimmed,
+                                      ? t.textPrimary
+                                      : dimmedTextColor,
                                 ),
                               ),
                             ),
@@ -109,29 +107,27 @@ class VocabDeckTile extends StatelessWidget {
             ),
             // Title
             Positioned(
-              top: VesselLayout.vocabTileNameTop,
-              left: VesselLayout.vocabTileNameLeft,
-              right: VesselLayout.vocabTileNameRight,
+              top: LangwijLayout.vocabTileNameTop,
+              left: LangwijLayout.vocabTileNameLeft,
+              right: LangwijLayout.vocabTileNameRight,
               child: Text(
                 item.name,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: VesselFonts.textTileHeader.copyWith(
-                  color: t.tileForeground,
-                ),
+                style: FlesselFonts.displayM.copyWith(color: t.textPrimary),
               ),
             ),
             // Word list
             Positioned(
-              top: VesselLayout.vocabTileWordsTop,
-              left: VesselLayout.vocabTileWordsLeft,
-              right: VesselLayout.vocabTileWordsRight,
+              top: LangwijLayout.vocabTileWordsTop,
+              left: LangwijLayout.vocabTileWordsLeft,
+              right: LangwijLayout.vocabTileWordsRight,
               child: Text(
                 item.words.join(', '),
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
-                style: VesselFonts.textTileContent.copyWith(
-                  color: t.tileForeground,
+                style: FlesselFonts.contentCaption.copyWith(
+                  color: t.textPrimary,
                 ),
               ),
             ),

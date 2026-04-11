@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:flessel/flessel.dart';
 
 import 'shared/validators/startup_validator.dart';
 import 'shared/repositories/daily_activity_repository.dart';
@@ -20,12 +21,11 @@ import 'app/providers/app_settings_provider.dart';
 import 'app/providers/dev_section_provider.dart';
 import 'app/providers/theme_provider.dart';
 import 'app/router/app_router.dart';
-import 'app/theme/vessel_themes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // DB first — sqflite uses file system, not rootBundle platform channels.
+  // DB first - sqflite uses file system, not rootBundle platform channels.
   final db = await DatabaseProvider.database;
 
   // Read language settings to know which translations to validate.
@@ -64,7 +64,7 @@ Future<void> main() async {
         themeProvider.overrideWith((ref) => savedTheme),
         devSectionEnabledProvider.overrideWith((ref) => savedDevSection),
       ],
-      child: SrpskiCardApp(router: router),
+      child: LangwijApp(router: router),
     ),
   );
 
@@ -73,17 +73,19 @@ Future<void> main() async {
   });
 }
 
-class SrpskiCardApp extends ConsumerWidget {
-  const SrpskiCardApp({super.key, required this.router});
+class LangwijApp extends ConsumerWidget {
+  const LangwijApp({super.key, required this.router});
 
   final GoRouter router;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = ref.watch(themeProvider);
+    final flesselData = FlesselThemeCatalog.byId(theme.flesselId).data;
+    final themeData = FlesselThemes.buildFlutterTheme(flesselData);
     return MaterialApp.router(
-      title: 'Srpski Card',
-      theme: VesselThemes.getFlutterThemeData(theme),
+      title: 'Langwij',
+      theme: themeData,
       routerConfig: router,
       debugShowCheckedModeBanner: false,
       localizationsDelegates: const [

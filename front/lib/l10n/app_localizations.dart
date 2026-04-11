@@ -97,13 +97,13 @@ abstract class AppLocalizations {
   /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
-  /// **'Srpski Card'**
+  /// **'Langwij'**
   String get appTitle;
 
   /// No description provided for @appBarTitle.
   ///
   /// In en, this message translates to:
-  /// **'Srpski'**
+  /// **'Langwij'**
   String get appBarTitle;
 
   /// No description provided for @parentVocabulary.

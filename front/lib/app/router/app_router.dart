@@ -3,7 +3,6 @@ import 'package:go_router/go_router.dart';
 
 import '../../l10n/app_localizations.dart';
 import '../../pages/agreement_group_list_screen.dart';
-import '../../pages/controls_list_screen.dart';
 import '../../pages/group_list_screen.dart';
 import '../../pages/lang_picker_screen.dart';
 import '../../pages/language_screen.dart';
@@ -12,7 +11,7 @@ import '../../pages/round_screen.dart';
 import '../../pages/settings_screen.dart';
 import '../../pages/tools_screen.dart';
 import '../../pages/vocab_deck_list_screen.dart';
-import '../theme/vessel_themes.dart';
+import 'package:flessel/flessel.dart';
 
 /// Route names/paths.
 class AppRoutes {
@@ -24,7 +23,6 @@ class AppRoutes {
   static const String language = '/language';
   static const String tools = '/tools';
   static const String settings = '/settings';
-  static const String devControls = '/dev-controls';
   static const String langPicker = '/lang-picker';
 }
 
@@ -38,7 +36,7 @@ Page<void> _noTransitionPage(Widget child, GoRouterState state) {
 
 /// Slide page for push-style navigation (round, result).
 Page<void> _slidePage(BuildContext context, Widget child, GoRouterState state) {
-  final scaffoldBg = VesselThemes.of(context).scaffoldBackground;
+  final scaffoldBg = FlesselThemes.of(context).scaffoldBackground;
   return CustomTransitionPage<void>(
     key: state.pageKey,
     child: Container(
@@ -113,14 +111,6 @@ GoRouter createAppRouter() {
         path: AppRoutes.agreement,
         pageBuilder: (context, state) => _noTransitionPage(
           const AgreementGroupListScreen(),
-          state,
-        ),
-      ),
-      // Developer routes
-      GoRoute(
-        path: AppRoutes.devControls,
-        pageBuilder: (context, state) => _noTransitionPage(
-          const ControlsListScreen(),
           state,
         ),
       ),

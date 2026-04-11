@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:srpski_card/shared/lib/constants.dart';
+import 'package:langwij/shared/lib/constants.dart';
 
 /// Developer section enabled state provider.
 final devSectionEnabledProvider = StateProvider<bool>((ref) {

@@ -269,9 +269,33 @@ Checklist:
 
 ## Current state
 
-**Phase**: Phase 0 — Alignment: complete.
-**Next**: Phase 1 — produce `MIGRATION_MATRIX.md`.
-**Last updated**: 2026-04-09.
+**Phase**: Phases 1, 2a, 3a–3n, 4, 5, and 6 (in-session items) complete. Only the manual screen-verification gate (Phase 6 #11) and external Phase 2b folder rename / Phase 2c post-restart verification remain.
+
+**Principle 1 deviation reverted (2026-04-10)**: a previous session created `front/lib/shared/theme/langwij_theme.dart` (`LangwijThemeData` with retention/testBadge color fields) as a workaround for the deferred retention color grow. This violated locked principle 1 ("No `LangwijTheme`, no `LangwijFonts`") and the matrix row 48 deferral. The file has been deleted, both `_ProgressBadge` widgets in `group_list_screen.dart` and `agreement_group_list_screen.dart` rewritten to render plain neutral `FlesselTag`s per matrix row 48, and the `retentionColor()` helper dropped. Retention coloring remains DEFERRED and will land as a per-property flessel grow proposal in a future row.
+
+**Phase 5 verified complete (2026-04-10)**: localization sweep over `front/lib/` found zero hardcoded user-facing copy literals. The sweep covered `Text(...)` first-arg positions, plus `label:` / `title:` / `hint:` / `tooltip:` / similar copy slots. Twenty literal hits were classified into three tiers: 11 acceptable as-is (the MaterialApp app identity `'Langwij'`, a heart-emoji glyph, pure percentage / integer interpolations like `'$pct%'`, the `' → '` visual separator between result_screen columns, the framework error fallback in app_router); 9 pre-localized compositions where every text token comes from `l10n.*` joined with `" "` or `" → "` glue at the widget layer (round_screen.dart and result_screen.dart quiz-feedback strings, langwij_bug_report_sheet.dart card preview); 0 hardcoded user-facing English copy. The 9 compositions are deferred to a future i18n cleanup pass that would convert them to ICU placeholder keys; that work is gated on a second locale being added, since `front/lib/l10n/` currently holds only `app_en.arb`. No file changes in `front/lib/` for Phase 5.
+
+**Phase 6 in-session items complete (2026-04-10)**: ten of twelve checklist items resolved in-session.
+
+- **Block A — regression greps (#5–10)**: clean. Zero hits for `Vessel`, `Project[A-Z]`, `srpski_card`, `Color(0x`, `.withOpacity(`, raw hex literals. Initial sweep surfaced two regression classes that survived Phase 3/4 quality gates and were fixed in cleanup CL-Phase6-A:
+  - **10 raw `CircularProgressIndicator` sites** across 8 files (`agreement_group_list_screen.dart`, `group_list_screen.dart`, `language_screen.dart`, `lang_picker_screen.dart`, `vocab_deck_list_screen.dart`, `result_screen.dart`, `round_screen.dart` ×3, `settings_screen.dart`) — replaced with `FlesselSpinner()` (default `FlesselSize.s`) for full-screen loaders and `FlesselSpinner(size: FlesselSize.xs, color: t.textSecondary)` for the inline settings validator. The settings spinner change also eliminated a `SizedBox(width: 24, height: 24, ..., strokeWidth: 2)` triple-magic-number wrapper.
+  - **1 `SizedBox`-as-spacer site** in `round_screen.dart:776` — `const SizedBox(width: FlesselLayout.gapS)` between two `Expanded` columns replaced with `const FlesselGap.s()` per consumer rule "All spacing between widgets uses `FlesselGap` (not raw `SizedBox`)".
+- **Block B — flutter analyze (#1–3)**: zero errors on all three packages. Pre-existing non-blocking findings recorded:
+  - `.vessel/packages/flessel/lib/src/theme/flessel_fonts.dart:12,14` — `_m08` and `_m08b` unused private declarations (warning level). Flessel-internal hygiene; deferred to flessel maintenance.
+  - `front/lib/pages/lang_picker_screen.dart:37,42` — two `unnecessary_underscores` info-level lints in `(_, __)` error callbacks. The same pattern in `language_screen.dart:44` is suppressed with an `// ignore: unnecessary_underscores` directive; lang_picker_screen lacks the directive. Trivial fix deferred.
+- **Block C — flutter build apk (#4)**: success. `flutter build apk` (release) completed in ~75s and produced `front/build/app/outputs/flutter-apk/app-release.apk` (70.6 MB). Build log surfaced one pre-existing pubspec issue: `cupertino_icons` font is referenced via an `IconData` somewhere but not declared in pubspec assets — non-blocking, build still succeeds via tree-shaking.
+- **Block D — matrix sign-off (#12)**: `MIGRATION_MATRIX.md` updated. All 60 row statuses (48 widget rows + 12 enum/data-class rows) flipped from `APPROVED` to `DONE`, both in the summary table and per-row blocks. A new `## Sign-off (2026-04-10)` section at the top of the matrix records the completion date and the residual gates not covered by per-row sign-off.
+- **Phase 5 localization sweep (#10)**: already verified above; counts as Phase 6 #10.
+
+**Phase 6 residual gates (not done in-session, by design):**
+
+1. **Phase 6 #11 — manual screen verification on a running build.** Meatbag's task. Build artifact at `front/build/app/outputs/flutter-apk/app-release.apk`; install on a device or emulator and walk every screen.
+2. **Phase 2b — folder rename `srpski_card/` → `langwij/`** at the parent directory. External, by project owner. Closes the session, performs the rename, reopens.
+3. **Phase 2c — post-restart `flutter clean` / `pub get` / `analyze` / `build`** after Phase 2b. External.
+
+After items 1–3 are resolved, the migration is fully shipped.
+
+**Last updated**: 2026-04-10.
 
 This section updates at each phase boundary. Updates are small targeted edits; no other section of this document changes during the migration.
 

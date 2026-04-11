@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flessel/flessel.dart';
 
-import '../../../app/theme/vessel_themes.dart';
 import '../../../l10n/app_localizations.dart';
 import '../../../shared/repositories/daily_activity_repository.dart';
-import '../../../shared/ui/card/vessel_card.dart';
-import '../../../app/layout/vessel_layout.dart';
 
-class VocabDailyActivityCard extends StatelessWidget {
-  const VocabDailyActivityCard({
+/// Langwij composite: daily activity summary card for the vocab list screen.
+///
+/// Renders a [FlesselCard] containing the daily activity title plus a single
+/// summary line derived from [asyncStats]. Empty/loading/error states all
+/// fall back to [AppLocalizations.dailyActivityEmpty].
+class LangwijVocabDailyActivityCard extends StatelessWidget {
+  const LangwijVocabDailyActivityCard({
     super.key,
     required this.asyncStats,
     required this.l10n,
@@ -19,8 +22,15 @@ class VocabDailyActivityCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
-    return VesselCard(
+    final t = FlesselThemes.of(context);
+    final captionStyle = FlesselFonts.contentCaption.copyWith(
+      color: t.textSecondary,
+    );
+
+    return FlesselCard(
+      // Accepted escape hatch: FlesselCard's headerless path does not stretch
+      // its child to the parent ListView's max cross-axis extent. Tracked for
+      // a future FlesselCard stretch fix.
       child: SizedBox(
         width: double.infinity,
         child: Column(
@@ -29,13 +39,12 @@ class VocabDailyActivityCard extends StatelessWidget {
           children: [
             Text(
               l10n.dailyActivityTitle,
-              style: VesselFonts.textListItem.copyWith(color: t.textPrimary),
+              style: FlesselFonts.contentBody.copyWith(color: t.textPrimary),
             ),
-            const SizedBox(height: VesselLayout.vocabDailyCardTitleGap),
+            const FlesselGap.xs(),
             asyncStats.when(
               data: (stats) {
-                final isEmpty =
-                    stats.correct == 0 &&
+                final isEmpty = stats.correct == 0 &&
                     stats.wrong == 0 &&
                     stats.wordsTouched == 0;
                 return Text(
@@ -44,24 +53,12 @@ class VocabDailyActivityCard extends StatelessWidget {
                       : '${l10n.correctCount(stats.correct)} · ${l10n.wrongCount(stats.wrong)} · ${l10n.wordsCount(stats.wordsTouched)}',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: VesselFonts.textCaption.copyWith(
-                    color: t.textSecondary,
-                  ),
+                  style: captionStyle,
                 );
               },
-              loading: () => Text(
-                l10n.dailyActivityEmpty,
-                style: VesselFonts.textCaption.copyWith(
-                  color: t.textSecondary,
-                ),
-              ),
-              // ignore: unnecessary_underscores
-              error: (_, __) => Text(
-                l10n.dailyActivityEmpty,
-                style: VesselFonts.textCaption.copyWith(
-                  color: t.textSecondary,
-                ),
-              ),
+              loading: () => Text(l10n.dailyActivityEmpty, style: captionStyle),
+              error: (_, _) =>
+                  Text(l10n.dailyActivityEmpty, style: captionStyle),
             ),
           ],
         ),

@@ -9,10 +9,10 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'Srpski Card';
+  String get appTitle => 'Langwij';
 
   @override
-  String get appBarTitle => 'Srpski';
+  String get appBarTitle => 'Langwij';
 
   @override
   String get parentVocabulary => 'Vocabulary';

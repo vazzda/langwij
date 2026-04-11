@@ -1,4 +1,4 @@
-import 'package:srpski_card/shared/lib/progress_constants.dart';
+import 'package:langwij/shared/lib/progress_constants.dart';
 import 'round_record.dart';
 
 /// Progress tracking for a single deck, scoped by target language.

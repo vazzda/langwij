@@ -1,4 +1,4 @@
-package com.example.srpski_card
+package com.example.langwij
 
 import io.flutter.embedding.android.FlutterActivity
 

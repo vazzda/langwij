@@ -2,17 +2,14 @@ import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 import '../l10n/app_localizations.dart';
 import '../l10n/app_localizations_ext.dart';
 import '../app/providers/dictionary_provider.dart';
-import '../app/layout/vessel_layout.dart';
-import '../app/theme/vessel_themes.dart';
+import '../shared/ui/layout/langwij_layout.dart';
 import '../entities/language/lang_codes.dart';
 import '../entities/language/language_pack.dart';
-import '../shared/ui/screen_layout/vessel_scaffold.dart';
-import '../shared/ui/gap/vessel_gap.dart';
+import 'package:flessel/flessel.dart';
 
 enum LangPickerMode { native, target }
 
@@ -31,17 +28,18 @@ class LangPickerScreen extends ConsumerWidget {
       LangPickerMode.target => l10n.language_iLearn,
     };
 
-    return VesselScaffold(
+    return FlesselScaffold(
       title: title,
-      showBottomNav: false,
+      uppercaseTitle: true,
+      onBackPressed: () => context.pop(),
       child: asyncAllPacks.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => const Center(child: FlesselSpinner()),
         error: (_, __) => Center(child: Text(l10n.loadError)),
         data: (packs) {
           return ListView.separated(
-            padding: const EdgeInsets.all(VesselLayout.screenPadding),
+            padding: const EdgeInsets.all(FlesselLayout.screenPadding),
             itemCount: packs.length,
-            separatorBuilder: (_, __) => const VesselGap.s(),
+            separatorBuilder: (_, __) => const FlesselGap.s(),
             itemBuilder: (_, index) {
               final pack = packs[index];
               return _LangPickerTile(
@@ -70,14 +68,14 @@ class _LangPickerTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final countryCode = LangCodes.flagCountryCode(pack.code);
     final aiPct = 100 - pack.humanVerified;
 
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.all(VesselLayout.gapM),
+        padding: const EdgeInsets.all(FlesselLayout.gapM),
         decoration: BoxDecoration(
           color: t.cardBackground,
           border: Border.all(
@@ -92,12 +90,12 @@ class _LangPickerTile extends StatelessWidget {
               CountryFlag.fromCountryCode(
                 countryCode,
                 theme: const ImageTheme(
-                  width: VesselLayout.langFlagWidth,
-                  height: VesselLayout.langFlagHeight,
+                  width: LangwijLayout.langFlagWidth,
+                  height: LangwijLayout.langFlagHeight,
                   shape: RoundedRectangle(4),
                 ),
               ),
-            const VesselGap.hm(),
+            const FlesselGap.m(),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -105,10 +103,10 @@ class _LangPickerTile extends StatelessWidget {
                 children: [
                   Text(
                     label,
-                    style: VesselFonts.textLangPickerValue
+                    style: FlesselFonts.contentLAccent
                         .copyWith(color: t.textPrimary),
                   ),
-                  const VesselGap.xxs(),
+                  const FlesselGap.xxs(),
                   Row(
                     children: [
                       _qualitySegment(
@@ -116,14 +114,14 @@ class _LangPickerTile extends StatelessWidget {
                         pct: pack.humanVerified,
                         color: t.textSecondary,
                       ),
-                      const VesselGap.hs(),
+                      const FlesselGap.s(),
                       _qualitySegment(
                         icon: PhosphorIconsBold.robot,
                         pct: aiPct,
                         color: t.textSecondary,
                       ),
                       if (pack.code == LangCodes.serbian) ...[
-                        const VesselGap.hs(),
+                        const FlesselGap.s(),
                         const Text('\u2764\uFE0F'),
                       ],
                     ],
@@ -143,14 +141,14 @@ class _LangPickerTile extends StatelessWidget {
     required Color color,
   }) {
     return SizedBox(
-      width: VesselLayout.langPickerQualitySegmentWidth,
+      width: LangwijLayout.langPickerQualitySegmentWidth,
       child: Row(
         children: [
-          Icon(icon, size: VesselLayout.langPickerQualityIconSize, color: color),
-          const VesselGap.hxs(),
+          Icon(icon, size: FlesselLayout.iconS, color: color),
+          const FlesselGap.xs(),
           Text(
             '$pct%',
-            style: VesselFonts.textQualityPrimary.copyWith(color: color),
+            style: FlesselFonts.contentSAccent.copyWith(color: color),
           ),
         ],
       ),

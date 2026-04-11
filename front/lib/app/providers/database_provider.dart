@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
-import 'package:srpski_card/shared/lib/constants.dart';
-import 'package:srpski_card/shared/repositories/db_schema.dart';
-import 'package:srpski_card/entities/language/lang_codes.dart';
+import 'package:langwij/shared/lib/constants.dart';
+import 'package:langwij/shared/repositories/db_schema.dart';
+import 'package:langwij/entities/language/lang_codes.dart';
 
 /// Singleton database provider. Manages schema creation and upgrades.
 class DatabaseProvider {

@@ -1,39 +1,34 @@
+import 'package:flessel/flessel.dart';
 import 'package:flutter/material.dart';
 
-import '../../../app/theme/vessel_themes.dart';
 import '../../../entities/card/card_model.dart';
 import '../../../l10n/app_localizations.dart';
-import '../buttons/vessel_buttons.dart';
-import '../gap/vessel_gap.dart';
-import '../inputs/vessel_dropdown.dart';
-import '../inputs/vessel_text_input.dart';
 import 'bug_report_type.dart';
-import 'vessel_bottom_sheet.dart';
 
-/// Opens a bug report bottom sheet for a specific card.
+/// Opens a bug-report bottom sheet for a specific card.
 ///
 /// [card] — the card being reported (shown as context in the sheet).
 /// Submit is a no-op for now; both buttons close the sheet.
-Future<void> showBugReportSheet(
+Future<void> showLangwijBugReportSheet(
   BuildContext context, {
   required CardModel card,
 }) {
-  return showVesselBottomSheet(
+  return showFlesselBottomSheet<void>(
     context: context,
-    builder: (context) => _BugReportSheetContent(card: card),
+    builder: (_) => _LangwijBugReportForm(card: card),
   );
 }
 
-class _BugReportSheetContent extends StatefulWidget {
-  const _BugReportSheetContent({required this.card});
+class _LangwijBugReportForm extends StatefulWidget {
+  const _LangwijBugReportForm({required this.card});
 
   final CardModel card;
 
   @override
-  State<_BugReportSheetContent> createState() => _BugReportSheetContentState();
+  State<_LangwijBugReportForm> createState() => _LangwijBugReportFormState();
 }
 
-class _BugReportSheetContentState extends State<_BugReportSheetContent> {
+class _LangwijBugReportFormState extends State<_LangwijBugReportForm> {
   BugReportType _selectedType = BugReportType.badTranslation;
   final _messageController = TextEditingController();
 
@@ -45,7 +40,7 @@ class _BugReportSheetContentState extends State<_BugReportSheetContent> {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final l10n = AppLocalizations.of(context)!;
 
     return Column(
@@ -54,53 +49,49 @@ class _BugReportSheetContentState extends State<_BugReportSheetContent> {
       children: [
         Text(
           l10n.bugReport_title,
-          style: VesselFonts.textSheetTitle.copyWith(color: t.textPrimary),
+          style: FlesselFonts.contentTitle.copyWith(color: t.textPrimary),
         ),
-        const VesselGap.m(),
-        // Card context
+        const FlesselGap.m(),
         Text(
           '${widget.card.targetAnswer} → ${widget.card.nativeText}',
-          style: VesselFonts.textBodyAccent.copyWith(color: t.textPrimary),
+          style: FlesselFonts.contentBodyAccent.copyWith(color: t.textPrimary),
         ),
-        const VesselGap.m(),
-        // Bug type selector
-        VesselDropdown<BugReportType>(
+        const FlesselGap.m(),
+        FlesselDropdown<BugReportType>(
           value: _selectedType,
           onChanged: (v) => setState(() => _selectedType = v),
+          expanded: true,
           items: [
-            VesselDropdownItem(
+            FlesselDropdownItem(
               value: BugReportType.badTranslation,
               label: l10n.bugReport_typeBadTranslation,
             ),
-            VesselDropdownItem(
+            FlesselDropdownItem(
               value: BugReportType.uiBug,
               label: l10n.bugReport_typeUiBug,
             ),
           ],
         ),
-        const VesselGap.m(),
-        // Message textarea
-        VesselTextInput(
+        const FlesselGap.m(),
+        FlesselTextInput(
           controller: _messageController,
           hint: l10n.bugReport_messagePlaceholder,
           maxLines: 4,
           minLines: 3,
-          textInputAction: TextInputAction.newline,
           keyboardType: TextInputType.multiline,
         ),
-        const VesselGap.l(),
-        // Action buttons
+        const FlesselGap.l(),
         Row(
           children: [
             Expanded(
-              child: VesselButton(
+              child: FlesselButton(
                 label: l10n.cancel,
                 onPressed: () => Navigator.of(context).pop(),
               ),
             ),
-            const VesselGap.hm(),
+            const FlesselGap.m(),
             Expanded(
-              child: VesselAccentButton(
+              child: FlesselAccentButton(
                 label: l10n.bugReport_submit,
                 onPressed: () {
                   // No-op for now. Persistence comes later.

@@ -2,7 +2,6 @@ import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 import '../l10n/app_localizations.dart';
 import '../l10n/app_localizations_ext.dart';
@@ -15,17 +14,11 @@ import '../app/providers/language_settings_provider.dart';
 import '../app/providers/plan_provider.dart';
 import '../app/router/app_router.dart';
 import '../shared/repositories/models/decay_formula.dart';
-import '../app/theme/vessel_themes.dart';
 import '../entities/language/lang_codes.dart';
 import '../entities/language/language_pack.dart';
-import '../shared/ui/bottom_sheet/vessel_bottom_sheet.dart'; // used by _confirmReset
-import '../shared/ui/buttons/vessel_buttons.dart';
-import '../shared/ui/card/vessel_card.dart';
-import '../shared/ui/note/vessel_note.dart';
-import '../shared/ui/progress_bar/vessel_progress_bar.dart';
-import '../shared/ui/screen_layout/vessel_scaffold.dart';
-import '../shared/ui/gap/vessel_gap.dart';
-import '../app/layout/vessel_layout.dart';
+import 'package:flessel/flessel.dart';
+import '../shared/ui/langwij_main_nav_bar.dart';
+import '../shared/ui/layout/langwij_layout.dart';
 import 'lang_picker_screen.dart';
 
 class LanguageScreen extends ConsumerWidget {
@@ -34,7 +27,7 @@ class LanguageScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final langSettings = ref.watch(languageSettingsProvider);
     final asyncAllPacks = ref.watch(allPacksProvider);
     final asyncAllLangProgress = ref.watch(allLanguagesProgressProvider);
@@ -42,18 +35,19 @@ class LanguageScreen extends ConsumerWidget {
     final settings = ref.watch(appSettingsProvider);
     final showDevSection = ref.watch(devSectionEnabledProvider);
 
-    return VesselScaffold(
+    return FlesselScaffold(
       title: l10n.navLanguage,
-      showBottomNav: true,
+      uppercaseTitle: true,
+      bottomNavBar: const LangwijMainNavBar(),
       child: asyncAllPacks.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => const Center(child: FlesselSpinner()),
         // ignore: unnecessary_underscores
         error: (_, __) => Center(child: Text(l10n.loadError)),
         data: (packs) {
           final packByCode = {for (final p in packs) p.code: p};
 
           return ListView(
-            padding: const EdgeInsets.all(VesselLayout.screenPadding),
+            padding: const EdgeInsets.all(FlesselLayout.screenPadding),
             children: [
               _LangPairSelector(
                 packByCode: packByCode,
@@ -72,14 +66,14 @@ class LanguageScreen extends ConsumerWidget {
                 asyncCourseNote: asyncCourseNote,
                 l10n: l10n,
               ),
-              const VesselGap.xl(),
+              const FlesselGap.xl(),
 
               // Progression
               Padding(
-                padding: const EdgeInsets.only(bottom: VesselLayout.listItemGap),
+                padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
                 child: Text(
                   l10n.language_progression,
-                  style: VesselFonts.textSectionHeader.copyWith(color: t.textPrimary),
+                  style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
                 ),
               ),
               _ProgressionCard(
@@ -88,14 +82,14 @@ class LanguageScreen extends ConsumerWidget {
                 l10n: l10n,
                 onReset: (langCode) => _confirmReset(context, ref, langCode, packByCode, l10n),
               ),
-              const VesselGap.xl(),
+              const FlesselGap.xl(),
 
               // Decay / learning pace
               Padding(
-                padding: const EdgeInsets.only(bottom: VesselLayout.listItemGap),
+                padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
                 child: Text(
                   l10n.settingsDecaySpeed,
-                  style: VesselFonts.textSectionHeader.copyWith(color: t.textPrimary),
+                  style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
                 ),
               ),
               _DecayOption(
@@ -106,7 +100,7 @@ class LanguageScreen extends ConsumerWidget {
                     .read(appSettingsProvider.notifier)
                     .setDecayFormula(DecayFormula.relaxed),
               ),
-              const VesselGap.s(),
+              const FlesselGap.s(),
               _DecayOption(
                 title: l10n.decayStandard,
                 description: l10n.decayStandardDesc,
@@ -115,7 +109,7 @@ class LanguageScreen extends ConsumerWidget {
                     .read(appSettingsProvider.notifier)
                     .setDecayFormula(DecayFormula.standard),
               ),
-              const VesselGap.s(),
+              const FlesselGap.s(),
               _DecayOption(
                 title: l10n.decayIntensive,
                 description: l10n.decayIntensiveDesc,
@@ -124,7 +118,7 @@ class LanguageScreen extends ConsumerWidget {
                     .read(appSettingsProvider.notifier)
                     .setDecayFormula(DecayFormula.intensive),
               ),
-              const VesselGap.s(),
+              const FlesselGap.s(),
               _DecayOption(
                 title: l10n.decayHardcore,
                 description: l10n.decayHardcoreDesc,
@@ -136,12 +130,12 @@ class LanguageScreen extends ConsumerWidget {
 
               // Incomplete dictionaries (dev mode only)
               if (showDevSection) ...[
-                const VesselGap.xl(),
+                const FlesselGap.xl(),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: VesselLayout.listItemGap),
+                  padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
                   child: Text(
                     l10n.language_incompleteDictionaries,
-                    style: VesselFonts.textSectionHeader.copyWith(color: t.textPrimary),
+                    style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
                   ),
                 ),
                 _IncompleteDictionariesCard(
@@ -169,21 +163,21 @@ List<Widget> _buildLanguageNotes({
   // Native language note
   final nativePack = packByCode[nativeCode];
   if (nativePack?.nativeNote != null) {
-    notes.add(const VesselGap.l());
-    notes.add(VesselNote(text: nativePack!.nativeNote!, accented: true));
+    notes.add(const FlesselGap.l());
+    notes.add(FlesselNote(text: nativePack!.nativeNote!, accented: true));
   }
 
   // Same language warning
   if (targetCode == nativeCode) {
-    notes.add(const VesselGap.l());
-    notes.add(VesselNote(text: l10n.language_sameAsLearning));
+    notes.add(const FlesselGap.l());
+    notes.add(FlesselNote(text: l10n.language_sameAsLearning));
   }
 
   // Course-specific note
   final courseNote = asyncCourseNote.valueOrNull;
   if (courseNote != null) {
-    notes.add(const VesselGap.l());
-    notes.add(VesselNote(text: courseNote));
+    notes.add(const FlesselGap.l());
+    notes.add(FlesselNote(text: courseNote));
   }
 
   return notes;
@@ -199,33 +193,33 @@ void _confirmReset(
   final langName = packByCode[langCode] != null
       ? l10n.langLabel(packByCode[langCode]!.labelKey)
       : langCode;
-  showVesselBottomSheet<void>(
+  showFlesselBottomSheet<void>(
     context: context,
     builder: (sheetContext) {
-      final t = VesselThemes.of(sheetContext);
+      final t = FlesselThemes.of(sheetContext);
       return Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
             l10n.language_resetConfirmTitle,
-            style: VesselFonts.textSheetTitle.copyWith(color: t.textPrimary),
+            style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
           ),
-          const VesselGap.m(),
+          const FlesselGap.m(),
           Text(
             l10n.language_resetConfirmBody(langName),
-            style: VesselFonts.textSheetContent.copyWith(color: t.textPrimary),
+            style: FlesselFonts.contentM.copyWith(color: t.textPrimary),
           ),
-          const VesselGap.xl(),
+          const FlesselGap.xl(),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              VesselTextButton(
+              FlesselTextButton(
                 label: l10n.cancel,
                 onPressed: () => Navigator.of(sheetContext).pop(),
               ),
-              const VesselGap.hs(),
-              VesselDangerButton(
+              const FlesselGap.s(),
+              FlesselDangerButton(
                 label: l10n.language_resetButton,
                 onPressed: () {
                   Navigator.of(sheetContext).pop();
@@ -258,11 +252,11 @@ class _LangPairSelector extends StatelessWidget {
   final ValueChanged<String> onTargetSelected;
 
   // Width of the arrow zone (icon 20 + padding 8×2) — keeps labels aligned with boxes.
-  static const _arrowZoneWidth = VesselLayout.langArrowZoneWidth;
+  static const _arrowZoneWidth = LangwijLayout.langArrowZoneWidth;
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -272,19 +266,19 @@ class _LangPairSelector extends StatelessWidget {
             Expanded(
               child: Text(
                 l10n.language_iSpeak.toUpperCase(),
-                style: VesselFonts.textLangPickerLabel.copyWith(color: t.textSecondary),
+                style: FlesselFonts.contentXxlAccent.copyWith(color: t.textSecondary),
               ),
             ),
             const SizedBox(width: _arrowZoneWidth),
             Expanded(
               child: Text(
                 l10n.language_iLearn.toUpperCase(),
-                style: VesselFonts.textLangPickerLabel.copyWith(color: t.textSecondary),
+                style: FlesselFonts.contentXxlAccent.copyWith(color: t.textSecondary),
               ),
             ),
           ],
         ),
-        const VesselGap.xs(),
+        const FlesselGap.xs(),
         // Boxes row
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -305,7 +299,7 @@ class _LangPairSelector extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: VesselLayout.gapS),
+              padding: const EdgeInsets.symmetric(horizontal: FlesselLayout.gapS),
               child: Icon(
                 nativeCode == LangCodes.serbian ||
                         (nativeCode == LangCodes.russian &&
@@ -333,7 +327,7 @@ class _LangPairSelector extends StatelessWidget {
             ),
           ],
         ),
-        const VesselGap.l(),
+        const FlesselGap.l(),
         // Quality row
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -369,13 +363,13 @@ class _LangBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final countryCode = LangCodes.flagCountryCode(langCode);
     return GestureDetector(
       onTap: onTap,
       child: Container(
             width: double.infinity,
-            padding: const EdgeInsets.fromLTRB(VesselLayout.langBoxPaddingLeft, VesselLayout.langBoxPaddingTop, VesselLayout.langBoxPaddingRight, VesselLayout.langBoxPaddingBottom),
+            padding: const EdgeInsets.fromLTRB(LangwijLayout.langBoxPaddingLeft, LangwijLayout.langBoxPaddingTop, LangwijLayout.langBoxPaddingRight, LangwijLayout.langBoxPaddingBottom),
             decoration: BoxDecoration(
               color: t.cardBackground,
               border: Border.all(
@@ -392,17 +386,17 @@ class _LangBox extends StatelessWidget {
                   CountryFlag.fromCountryCode(
                     countryCode,
                     theme: const ImageTheme(
-                      width: VesselLayout.langFlagWidth,
-                      height: VesselLayout.langFlagHeight,
+                      width: LangwijLayout.langFlagWidth,
+                      height: LangwijLayout.langFlagHeight,
                       shape: RoundedRectangle(4),
                     ),
                   )
                 else
                   Icon(PhosphorIconsRegular.caretDown, color: t.textSecondary, size: 18),
-                const VesselGap.xs(),
+                const FlesselGap.xs(),
                 Text(
                   selectedLabel,
-                  style: VesselFonts.textLangPickerValue
+                  style: FlesselFonts.contentLAccent
                       .copyWith(color: t.textPrimary),
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
@@ -421,7 +415,7 @@ class _QualityBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final l10n = AppLocalizations.of(context)!;
     final aiPct = 100 - humanVerified;
     final humanFirst = humanVerified >= 80;
@@ -432,8 +426,8 @@ class _QualityBlock extends StatelessWidget {
           : PhosphorIconsBold.smiley,
       label: l10n.language_qualityHuman(humanVerified),
       style: humanFirst
-          ? VesselFonts.textQualityPrimary
-          : VesselFonts.textQualitySecondary,
+          ? FlesselFonts.contentSAccent
+          : FlesselFonts.contentS,
       color: t.textPrimary,
     );
 
@@ -443,16 +437,16 @@ class _QualityBlock extends StatelessWidget {
           : PhosphorIconsFill.robot,
       label: l10n.language_qualityAi(aiPct),
       style: humanFirst
-          ? VesselFonts.textQualitySecondary
-          : VesselFonts.textQualityPrimary,
+          ? FlesselFonts.contentS
+          : FlesselFonts.contentSAccent,
       color: t.textPrimary,
     );
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(
-        horizontal: VesselLayout.gapS,
-        vertical: VesselLayout.gapXs,
+        horizontal: FlesselLayout.gapS,
+        vertical: FlesselLayout.gapXs,
       ),
       decoration: BoxDecoration(
         color: t.cardBackground,
@@ -466,8 +460,8 @@ class _QualityBlock extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (humanFirst) ...[humanRow, const VesselGap.xxs(), aiRow]
-          else ...[aiRow, const VesselGap.xxs(), humanRow],
+          if (humanFirst) ...[humanRow, const FlesselGap.xxs(), aiRow]
+          else ...[aiRow, const FlesselGap.xxs(), humanRow],
         ],
       ),
     );
@@ -484,7 +478,7 @@ class _QualityBlock extends StatelessWidget {
     return Row(
       children: [
         Icon(icon, size: _iconSize, color: color),
-        const VesselGap.hs(),
+        const FlesselGap.s(),
         Expanded(
           child: Text(
             label,
@@ -511,8 +505,8 @@ class _ProgressionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
-    return VesselCard(
+    final t = FlesselThemes.of(context);
+    return FlesselCard(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
@@ -523,7 +517,7 @@ class _ProgressionCard extends StatelessWidget {
                   .where((e) => e.value > 0 && packByCode.containsKey(e.key))
                   .toList();
               if (entries.isEmpty) {
-                return VesselNote(text: l10n.language_progressionEmpty);
+                return FlesselNote(text: l10n.language_progressionEmpty);
               }
               return Column(
                 mainAxisSize: MainAxisSize.min,
@@ -536,51 +530,51 @@ class _ProgressionCard extends StatelessWidget {
                     final countryCode = LangCodes.flagCountryCode(e.key);
                     return Padding(
                       padding: EdgeInsets.only(
-                          bottom: i < entries.length - 1 ? VesselLayout.listItemGapSmall : 0),
+                          bottom: i < entries.length - 1 ? FlesselLayout.listItemGapSmall : 0),
                       child: Row(
                         children: [
                           if (countryCode != null) ...[
                             CountryFlag.fromCountryCode(
                               countryCode,
                               theme: const ImageTheme(
-                                width: VesselLayout.langProgressionFlagWidth,
-                                height: VesselLayout.langProgressionFlagHeight,
+                                width: LangwijLayout.langProgressionFlagWidth,
+                                height: LangwijLayout.langProgressionFlagHeight,
                                 shape: RoundedRectangle(2),
                               ),
                             ),
-                            const VesselGap.hs(),
+                            const FlesselGap.s(),
                           ],
                           SizedBox(
-                            width: VesselLayout.langProgressLabelWidth,
+                            width: LangwijLayout.langProgressLabelWidth,
                             child: Text(
                               label,
-                              style: VesselFonts.textBodyAccent.copyWith(
+                              style: FlesselFonts.contentMAccent.copyWith(
                                 color: t.textSecondary,
                               ),
                             ),
                           ),
-                          const VesselGap.hs(),
+                          const FlesselGap.s(),
                           Expanded(
-                            child: VesselProgressBar(
+                            child: FlesselProgressBar(
                               value: e.value,
-                              mode: VesselProgressBarMode.detailed,
+                              mode: FlesselProgressBarMode.detailed,
                             ),
                           ),
-                          const VesselGap.hs(),
+                          const FlesselGap.s(),
                           SizedBox(
-                            width: VesselLayout.langProgressPercentWidth,
+                            width: LangwijLayout.langProgressPercentWidth,
                             child: Text(
                               '$pct%',
                               textAlign: TextAlign.end,
-                              style: VesselFonts.textCaption.copyWith(
+                              style: FlesselFonts.contentS.copyWith(
                                 color: t.textPrimary,
                               ),
                             ),
                           ),
-                          const VesselGap.hs(),
-                          VesselButton(
+                          const FlesselGap.s(),
+                          FlesselButton(
                             icon: PhosphorIconsRegular.trash,
-                            size: VesselButtonSize.small,
+                            size: FlesselSize.s,
                             onPressed: () => onReset(e.key),
                           ),
                         ],
@@ -615,9 +609,9 @@ class _DecayOption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
 
-    return VesselCard(
+    return FlesselCard(
       onTap: onTap,
       child: Row(
         children: [
@@ -628,14 +622,14 @@ class _DecayOption extends StatelessWidget {
                 Text(
                   title,
                   style: isSelected
-                      ? VesselFonts.textListItemAccented
+                      ? FlesselFonts.contentMAccent
                           .copyWith(color: t.textPrimary)
-                      : VesselFonts.textListItem.copyWith(color: t.textPrimary),
+                      : FlesselFonts.contentM.copyWith(color: t.textPrimary),
                 ),
-                const VesselGap.xxs(),
+                const FlesselGap.xxs(),
                 Text(
                   description,
-                  style: VesselFonts.textCaption.copyWith(color: t.textSecondary),
+                  style: FlesselFonts.contentS.copyWith(color: t.textSecondary),
                 ),
               ],
             ),
@@ -663,8 +657,8 @@ class _IncompleteDictionariesCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (packs.isEmpty) return const SizedBox.shrink();
-    final t = VesselThemes.of(context);
-    return VesselCard(
+    final t = FlesselThemes.of(context);
+    return FlesselCard(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
@@ -673,19 +667,19 @@ class _IncompleteDictionariesCard extends StatelessWidget {
             final p = packs[i];
             return Padding(
               padding: EdgeInsets.only(
-                bottom: i < packs.length - 1 ? VesselLayout.listItemGapSmall : 0,
+                bottom: i < packs.length - 1 ? FlesselLayout.listItemGapSmall : 0,
               ),
               child: Row(
                 children: [
                   Expanded(
                     child: Text(
                       l10n.langLabel(p.labelKey),
-                      style: VesselFonts.textCaption.copyWith(color: t.textSecondary),
+                      style: FlesselFonts.contentS.copyWith(color: t.textSecondary),
                     ),
                   ),
                   Text(
                     l10n.language_termsCount(p.translatedCount, p.totalTerms),
-                    style: VesselFonts.textCaption.copyWith(color: t.dangerColor),
+                    style: FlesselFonts.contentS.copyWith(color: t.dangerColor),
                   ),
                 ],
               ),

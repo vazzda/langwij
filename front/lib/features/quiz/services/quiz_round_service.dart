@@ -8,8 +8,8 @@ import '../../../app/providers/groups_provider.dart';
 import '../../../app/providers/language_settings_provider.dart';
 import '../../../app/providers/language_stats_provider.dart';
 import '../../../app/router/app_router.dart';
-import 'package:srpski_card/shared/lib/progress_calculator.dart';
-import 'package:srpski_card/shared/lib/progress_constants.dart';
+import 'package:langwij/shared/lib/progress_calculator.dart';
+import 'package:langwij/shared/lib/progress_constants.dart';
 import '../quiz_mode.dart';
 import '../round_notifier.dart';
 

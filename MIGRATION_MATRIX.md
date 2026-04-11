@@ -2,6 +2,21 @@
 
 Per-widget decision matrix for the srpski_card to flessel migration. Companion to `MIGRATION_PLAN.md`.
 
+## Sign-off (2026-04-10)
+
+**All 60 rows `DONE`** — 48 widget rows + 12 enum/data-class rows. Implementation work for every row is complete: call sites rewritten, vessel sources deleted, analyzer reports zero errors on `front/`, `.vessel/packages/flessel/`, and `.vessel/packages/flessel/example/`.
+
+**Residual gates not covered by per-row sign-off** (tracked in `MIGRATION_PLAN.md` Current state, not in individual rows):
+
+- **Phase 6 #11** — manual screen verification on a running build. Meatbag's task, not automatable.
+- **Phase 6 #4** — `flutter build apk` for the front app. Outcome recorded in `MIGRATION_PLAN.md` Current state.
+- **Phase 2b** — folder rename `srpski_card/` → `langwij/` at the parent directory. External, performed by the project owner.
+- **Phase 2c** — post-restart `flutter clean` / `pub get` / `analyze` / `build` after Phase 2b. External.
+- **Row 48 deferral** — retention coloring (5 vessel theme fields) remains DEFERRED until per-property flessel grow proposals are made. Both `_ProgressBadge` widgets currently render plain neutral `FlesselTag`s.
+- **Pre-existing analyzer warnings/info** (non-blocking):
+  - `.vessel/packages/flessel/lib/src/theme/flessel_fonts.dart:12,14` — `_m08` and `_m08b` unused private declarations (flessel-internal hygiene, not introduced by this migration).
+  - `front/lib/pages/lang_picker_screen.dart:37,42` — two `unnecessary_underscores` info-level lints in `(_, __)` error callbacks. Same pattern in `language_screen.dart:44` is suppressed with an `// ignore:` directive; lang_picker_screen lacks the directive.
+
 ## How to use
 
 Each row is a widget, widget group, or support class. Each row has a proposed decision. Approval is row-by-row. Nothing is executed until a row's status is `APPROVED` and an `unleash` is given for that specific execution. Approvals can be batched verbally (for example "approve rows 1–6") but execution still needs `unleash`.
@@ -48,71 +63,71 @@ Audit implications: when auditing call sites for a widget, usages inside the srp
 
 | # | Vessel item | Category | Decision | Status |
 |---|---|---|---|---|
-| 1 | VesselButton | Buttons | SWITCH | APPROVED |
-| 2 | VesselAccentButton | Buttons | SWITCH | APPROVED |
-| 3 | VesselDangerButton | Buttons | SWITCH | APPROVED |
-| 4 | VesselTextButton | Buttons | SWITCH | APPROVED |
-| 5 | VesselAccentTextButton | Buttons | SWITCH | APPROVED |
-| 6 | VesselDangerTextButton | Buttons | SWITCH | APPROVED |
-| 7 | ProjectButtonGroup | Buttons | SWITCH | APPROVED |
-| 8 | VesselButtonStyleResolver | Buttons support | DELETE | APPROVED |
-| 9 | VesselCard | Cards | EXTEND_FLESSEL | APPROVED |
-| 10 | VesselAttentionCard | Cards | SWITCH + inherits row 9 API | APPROVED |
-| 11 | VesselDivider | Divider | SWITCH | APPROVED |
-| 12 | VesselGap | Gap | SWITCH | APPROVED |
-| 13 | VesselTextInput | Inputs | EXTEND_FLESSEL | APPROVED |
-| 14 | VesselDropdown | Inputs | EXTEND_FLESSEL (flessel bug fix) | APPROVED |
-| 15 | VesselInputRow / ProjectInputRow | Inputs | DELETE | APPROVED |
-| 16 | VesselRadioTile | Inputs | SWITCH | APPROVED |
-| 17 | ProjectRadioGrid | Inputs | SWITCH (to FlesselButtonGrid) | APPROVED |
-| 18 | VesselSliderInput | Inputs | SWITCH | APPROVED |
-| 19 | VesselTimeSlider | Inputs | SWITCH | APPROVED |
-| 20 | VesselDatePicker | Inputs | SWITCH | APPROVED |
-| 21 | VesselHourPicker | Inputs | SWITCH | APPROVED |
-| 22 | VesselCheckbox | Inputs | SWITCH | APPROVED |
-| 23 | VesselSwitch | Inputs | SWITCH | APPROVED |
-| 24 | VesselCheckboxLabeled | Inputs | SWITCH | APPROVED |
-| 25 | VesselSwitchLabeled | Inputs | SWITCH | APPROVED |
-| 26 | VesselInputStyles | Inputs support | DELETE | APPROVED |
-| 27 | VesselLangButton | Lang button | DELETE | APPROVED |
-| 28 | VesselNote | Note | SWITCH | APPROVED |
-| 29 | VesselProgressBar | Progress | SWITCH | APPROVED |
-| 30 | VesselScaffold | Scaffold | EXTEND_FLESSEL | APPROVED |
-| 31 | VesselSnackBar | Snackbar | SWITCH | APPROVED |
-| 32 | VesselTagChip | Tag | DELETE | APPROVED |
-| 33 | VesselTagColorPreview | Tag | DELETE | APPROVED |
-| 34 | VesselTagLabel | Tag | DELETE | APPROVED |
-| 35 | VesselHeader | Text | DELETE | APPROVED |
-| 36 | VesselTile | Tile | SWITCH | APPROVED |
-| 37 | VesselAnswerTile | Answer tile | LANGWIJ_COMPOSITE | APPROVED |
-| 38 | VesselNavBar | Bottom navbar | EXTEND_FLESSEL + LANGWIJ_COMPOSITE | APPROVED |
-| 39 | VesselNavBarIcon | Bottom navbar | DELETE | APPROVED |
-| 40 | showVesselBottomSheet | Bottom sheet | EXTEND_FLESSEL | APPROVED |
-| 41 | showBugReportSheet | Bottom sheet | LANGWIJ_COMPOSITE | APPROVED |
-| 42 | _BugReportSheetContent | Bottom sheet (private) | DELETE (absorbed into #41) | APPROVED |
-| 43 | showModeBottomSheet + showCountBottomSheet | Bottom sheet | LANGWIJ_COMPOSITE | APPROVED |
-| 44 | _ModeTileData / _ModeTileRow / _ModeTile / _CountTileGrid / _CountTile | Bottom sheet (private) | DELETE (absorbed into #43) | APPROVED |
-| 45 | VocabDailyActivityCard | Features/vocab | LANGWIJ_COMPOSITE | APPROVED |
-| 46 | VocabDeckTile | Features/vocab | LANGWIJ_COMPOSITE | APPROVED |
-| 47 | VocabLevelCard | Features/vocab | LANGWIJ_COMPOSITE | APPROVED |
-| 48 | VocabLevelStatsRow | Features/vocab | LANGWIJ_COMPOSITE | APPROVED |
+| 1 | VesselButton | Buttons | SWITCH | DONE |
+| 2 | VesselAccentButton | Buttons | SWITCH | DONE |
+| 3 | VesselDangerButton | Buttons | SWITCH | DONE |
+| 4 | VesselTextButton | Buttons | SWITCH | DONE |
+| 5 | VesselAccentTextButton | Buttons | SWITCH | DONE |
+| 6 | VesselDangerTextButton | Buttons | SWITCH | DONE |
+| 7 | ProjectButtonGroup | Buttons | SWITCH | DONE |
+| 8 | VesselButtonStyleResolver | Buttons support | DELETE | DONE |
+| 9 | VesselCard | Cards | EXTEND_FLESSEL | DONE |
+| 10 | VesselAttentionCard | Cards | SWITCH + inherits row 9 API | DONE |
+| 11 | VesselDivider | Divider | SWITCH | DONE |
+| 12 | VesselGap | Gap | SWITCH | DONE |
+| 13 | VesselTextInput | Inputs | EXTEND_FLESSEL | DONE |
+| 14 | VesselDropdown | Inputs | EXTEND_FLESSEL (flessel bug fix) | DONE |
+| 15 | VesselInputRow / ProjectInputRow | Inputs | DELETE | DONE |
+| 16 | VesselRadioTile | Inputs | SWITCH | DONE |
+| 17 | ProjectRadioGrid | Inputs | SWITCH (to FlesselButtonGrid) | DONE |
+| 18 | VesselSliderInput | Inputs | SWITCH | DONE |
+| 19 | VesselTimeSlider | Inputs | SWITCH | DONE |
+| 20 | VesselDatePicker | Inputs | SWITCH | DONE |
+| 21 | VesselHourPicker | Inputs | SWITCH | DONE |
+| 22 | VesselCheckbox | Inputs | SWITCH | DONE |
+| 23 | VesselSwitch | Inputs | SWITCH | DONE |
+| 24 | VesselCheckboxLabeled | Inputs | SWITCH | DONE |
+| 25 | VesselSwitchLabeled | Inputs | SWITCH | DONE |
+| 26 | VesselInputStyles | Inputs support | DELETE | DONE |
+| 27 | VesselLangButton | Lang button | DELETE | DONE |
+| 28 | VesselNote | Note | SWITCH | DONE |
+| 29 | VesselProgressBar | Progress | SWITCH | DONE |
+| 30 | VesselScaffold | Scaffold | EXTEND_FLESSEL | DONE |
+| 31 | VesselSnackBar | Snackbar | SWITCH | DONE |
+| 32 | VesselTagChip | Tag | DELETE | DONE |
+| 33 | VesselTagColorPreview | Tag | DELETE | DONE |
+| 34 | VesselTagLabel | Tag | DELETE | DONE |
+| 35 | VesselHeader | Text | DELETE | DONE |
+| 36 | VesselTile | Tile | SWITCH | DONE |
+| 37 | VesselAnswerTile | Answer tile | LANGWIJ_COMPOSITE | DONE |
+| 38 | VesselNavBar | Bottom navbar | EXTEND_FLESSEL + LANGWIJ_COMPOSITE | DONE |
+| 39 | VesselNavBarIcon | Bottom navbar | DELETE | DONE |
+| 40 | showVesselBottomSheet | Bottom sheet | EXTEND_FLESSEL | DONE |
+| 41 | showBugReportSheet | Bottom sheet | LANGWIJ_COMPOSITE | DONE |
+| 42 | _BugReportSheetContent | Bottom sheet (private) | DELETE (absorbed into #41) | DONE |
+| 43 | showModeBottomSheet + showCountBottomSheet | Bottom sheet | LANGWIJ_COMPOSITE | DONE |
+| 44 | _ModeTileData / _ModeTileRow / _ModeTile / _CountTileGrid / _CountTile | Bottom sheet (private) | DELETE (absorbed into #43) | DONE |
+| 45 | VocabDailyActivityCard | Features/vocab | LANGWIJ_COMPOSITE | DONE |
+| 46 | VocabDeckTile | Features/vocab | LANGWIJ_COMPOSITE | DONE |
+| 47 | VocabLevelCard | Features/vocab | LANGWIJ_COMPOSITE | DONE |
+| 48 | VocabLevelStatsRow | Features/vocab | LANGWIJ_COMPOSITE | DONE |
 
 ### Enum and support data classes (retired with their owners)
 
 | # | Item | Decision | Status |
 |---|---|---|---|
-| E1 | AppTheme enum | DELETE (replaced by FlesselThemeCatalog.byId('theme_01')) | APPROVED |
-| E2 | VesselButtonSize enum | DELETE (replaced by FlesselSize) | APPROVED |
-| E3 | ButtonVariant enum | DELETE (implicit in flessel variant classes) | APPROVED |
-| E4 | VesselProgressBarMode enum | DELETE (replaced by FlesselProgressBarMode) | APPROVED |
-| E5 | VesselTagLabelSize enum | DELETE (legacy-only, absorbed into #34 deletion) | APPROVED |
-| E6 | VesselLabelPosition enum | DELETE (replaced by flessel LabelPosition) | APPROVED |
-| E7 | VesselSliderInputMode enum | DELETE (replaced by flessel SliderInputMode) | APPROVED |
-| E8 | VesselButtonColors data class | DELETE | APPROVED |
-| E9 | VesselButtonGroupItem data class | DELETE (replaced by FlesselButtonGroupItem) | APPROVED |
-| E10 | VesselInputRowField data class | DELETE (with #15) | APPROVED |
-| E11 | VesselDropdownItem<T> data class | DELETE (replaced by FlesselDropdownItem<T>) | APPROVED |
-| E12 | VesselRadioGridOption<T> data class | DELETE (replaced by FlesselButtonGridOption<T>) | APPROVED |
+| E1 | AppTheme enum | DELETE (replaced by FlesselThemeCatalog.byId('theme_01')) | DONE |
+| E2 | VesselButtonSize enum | DELETE (replaced by FlesselSize) | DONE |
+| E3 | ButtonVariant enum | DELETE (implicit in flessel variant classes) | DONE |
+| E4 | VesselProgressBarMode enum | DELETE (replaced by FlesselProgressBarMode) | DONE |
+| E5 | VesselTagLabelSize enum | DELETE (legacy-only, absorbed into #34 deletion) | DONE |
+| E6 | VesselLabelPosition enum | DELETE (replaced by flessel LabelPosition) | DONE |
+| E7 | VesselSliderInputMode enum | DELETE (replaced by flessel SliderInputMode) | DONE |
+| E8 | VesselButtonColors data class | DELETE | DONE |
+| E9 | VesselButtonGroupItem data class | DELETE (replaced by FlesselButtonGroupItem) | DONE |
+| E10 | VesselInputRowField data class | DELETE (with #15) | DONE |
+| E11 | VesselDropdownItem<T> data class | DELETE (replaced by FlesselDropdownItem<T>) | DONE |
+| E12 | VesselRadioGridOption<T> data class | DELETE (replaced by FlesselButtonGridOption<T>) | DONE |
 
 Domain enums and data classes (`TagColor`, `BugReportType`, `LevelTier`, `ModeSelection`, `VocabDeckTileData`, `VocabLevelData`, `DailyActivityStats`) stay — they are domain, not UI.
 
@@ -144,7 +159,7 @@ Domain enums and data classes (`TagColor`, `BugReportType`, `LevelTier`, `ModeSe
   - Import swap: `package:srpski_card/shared/ui/buttons/vessel_buttons.dart` → `package:flessel/flessel.dart`
 - **Grow points needed**: none
 - **Example app page**: Already documented in `controls_list_screen.dart` Buttons section
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 2. VesselAccentButton
 
@@ -155,7 +170,7 @@ Domain enums and data classes (`TagColor`, `BugReportType`, `LevelTier`, `ModeSe
 - **Divergences**: same as row 1 — both accepted as-is
 - **Decision**: `SWITCH`
 - **Grow points needed**: none
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 3. VesselDangerButton
 
@@ -163,7 +178,7 @@ Domain enums and data classes (`TagColor`, `BugReportType`, `LevelTier`, `ModeSe
 - **Flessel equivalent**: `FlesselDangerButton`
 - **Divergences**: same as row 1 — both accepted as-is
 - **Decision**: `SWITCH`
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 4. VesselTextButton
 
@@ -171,7 +186,7 @@ Domain enums and data classes (`TagColor`, `BugReportType`, `LevelTier`, `ModeSe
 - **Flessel equivalent**: `FlesselTextButton`
 - **Divergences**: same as row 1 — both accepted as-is
 - **Decision**: `SWITCH`
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 5. VesselAccentTextButton
 
@@ -179,7 +194,7 @@ Domain enums and data classes (`TagColor`, `BugReportType`, `LevelTier`, `ModeSe
 - **Flessel equivalent**: `FlesselAccentTextButton`
 - **Divergences**: same as row 1 — both accepted as-is
 - **Decision**: `SWITCH`
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 6. VesselDangerTextButton
 
@@ -187,7 +202,7 @@ Domain enums and data classes (`TagColor`, `BugReportType`, `LevelTier`, `ModeSe
 - **Flessel equivalent**: `FlesselDangerTextButton`
 - **Divergences**: same as row 1 — both accepted as-is
 - **Decision**: `SWITCH`
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 7. ProjectButtonGroup
 
@@ -224,7 +239,7 @@ Domain enums and data classes (`TagColor`, `BugReportType`, `LevelTier`, `ModeSe
   - G-BG-1 (port `maxPerRow` as count-based wrap to flessel): REJECT — zero usages
   - G-BG-2 (add `LangwijActionGroup` composite wrapper): REJECT — flessel already supports pure-action mode
 - **Example app page**: Already has Button Groups section in `controls_list_screen.dart`
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 8. VesselButtonStyleResolver
 
@@ -238,7 +253,7 @@ Domain enums and data classes (`TagColor`, `BugReportType`, `LevelTier`, `ModeSe
 - **Decision**: `DELETE` (bundled with E2 + E3 + E8 — same file)
 - **Ordering dependency**: blocked until rows 1-7 are all DONE. Row 27 is no longer a blocker.
 - **Execution**: when rows 1-7 are DONE, delete `front/lib/shared/ui/buttons/vessel_button_styles.dart` as a single step. Can be bundled with row 27's deletion commit if convenient (both are dead code at that point).
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 9. VesselCard
 
@@ -329,7 +344,7 @@ All external `Padding` wrappers around `FlesselCard` are **deleted at execution 
 - Row 10 (`VesselAttentionCard`) inherits G-CARD-1 (`onTap`). Execute together in the same commit.
 - Layout constants `vocabLevelCardPadding`, `resultEntryPaddingV/H` retire via the MIGRATION_PLAN.md per-constant layout policy.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 10. VesselAttentionCard
 
@@ -351,7 +366,7 @@ All external `Padding` wrappers around `FlesselCard` are **deleted at execution 
 - **Example app**: attention card section extended alongside row 9's Cards updates (tap demo, padding/margin size variants).
 - **consumer.claude.md**: update `FlesselAttentionCard` inventory line alongside `FlesselCard` in the same commit.
 - **Ordering dependency**: must execute in the same commit as row 9 — API inheritance requires both widgets gain the new props together.
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 11. VesselDivider
 
@@ -365,7 +380,7 @@ All external `Padding` wrappers around `FlesselCard` are **deleted at execution 
 - **Grow points**: none
 - **Decision**: `SWITCH`
 - **Call-site retargeting**: single mechanical rename — `VesselDivider()` → `FlesselDivider()` at `controls_list_screen.dart:988`
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 12. VesselGap
 
@@ -383,7 +398,7 @@ All external `Padding` wrappers around `FlesselCard` are **deleted at execution 
 - **Call-site retargeting** (120 sites across 12 files):
   - **86 vertical variants** (`.xxs..xxl`) — mechanical class rename only, same suffix: `VesselGap.s()` → `FlesselGap.s()`
   - **34 horizontal variants** (`.hxxs..hxl`) — rename + strip `h` prefix: `VesselGap.hs()` → `FlesselGap.s()`, `VesselGap.hm()` → `FlesselGap.m()`, etc.
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 13. VesselTextInput
 
@@ -454,7 +469,7 @@ Existing Inputs section extended with:
 #### consumer.claude.md
 Update `FlesselTextInput` inventory line to mention new `autocorrect`, `enableSuggestions`, `textInputAction` props.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 14. VesselDropdown
 
@@ -522,7 +537,7 @@ No new props to document — the fix makes existing (broken) props actually work
 #### Ordering dependency
 - E11 (`VesselDropdownItem<T>` data class) renames bundle with row 14.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 15. VesselInputRow / ProjectInputRow
 
@@ -553,7 +568,7 @@ Original matrix proposal listed `ADD_TO_FLESSEL` as a fallback "if the pattern i
 - E10 (`VesselInputRowField` data class) retires in the same file deletion — bundled with this row's execution.
 - Execution is independent of the legacy-screen deletion strategy (either strategy A or B works).
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 16. VesselRadioTile
 
@@ -606,7 +621,7 @@ Delete `front/lib/shared/ui/inputs/vessel_radio_tile.dart` once all call sites h
 
 `FlesselRadioTile` is **not currently showcased** in `.vessel/packages/flessel/example/lib/pages/controls_list_screen.dart`. Row 16 has no API change, so the "grow points must update the example app" rule does not trigger. Flagged for separate attention — meatbag may want to add a demo page entry independently of the migration.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 17. ProjectRadioGrid
 
@@ -679,7 +694,7 @@ Delete `front/lib/shared/ui/inputs/vessel_radio_grid.dart` (both the `ProjectRad
 
 Execution is independent of legacy-screen deletion strategy. If strategy B (delete legacy at end of migration), the transitional retarget happens as described. If strategy A (delete legacy early), the legacy file is gone by the time this row executes and the only remaining action is deleting `vessel_radio_grid.dart`.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 18. VesselSliderInput
 
@@ -774,7 +789,7 @@ Delete `front/lib/shared/ui/inputs/vessel_slider_input.dart` — removes the cla
 
 `FlesselSliderInput` is already showcased in `.vessel/packages/flessel/example/lib/pages/controls_list_screen.dart` — no flessel example app update required for this row.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 19. VesselTimeSlider
 
@@ -846,7 +861,7 @@ Delete `front/lib/shared/ui/inputs/vessel_time_slider.dart`.
 
 `FlesselTimeSlider` is already showcased in `.vessel/packages/flessel/example/lib/pages/controls_list_screen.dart` — no flessel example app update required.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 20. VesselDatePicker
 
@@ -931,7 +946,7 @@ Delete `front/lib/shared/ui/inputs/vessel_date_picker.dart`.
 
 `FlesselDatePicker` is already showcased in `.vessel/packages/flessel/example/lib/pages/controls_list_screen.dart` — no flessel example app update required.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 21. VesselHourPicker
 
@@ -1014,7 +1029,7 @@ Delete `front/lib/shared/ui/inputs/vessel_hour_picker.dart` (removes both `Vesse
 
 `FlesselHourPicker` is **NOT** currently showcased in `.vessel/packages/flessel/example/lib/pages/controls_list_screen.dart` — unlike rows 16-20 where the flessel example app already demonstrated each widget. Row 21 has no API change, so the "grow points must update the example app" rule does not trigger. Flagged as informational — the flessel example app has a coverage gap for `FlesselHourPicker` that meatbag may want to address separately. This is the second such case in this migration (first was `FlesselRadioTile` in row 16).
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 22. VesselCheckbox
 
@@ -1026,7 +1041,7 @@ Delete `front/lib/shared/ui/inputs/vessel_hour_picker.dart` (removes both `Vesse
 - **Call-site audit**: zero production call sites. Only 1 bare usage in legacy `controls_list_screen.dart:744` and 1 internal use inside `VesselCheckboxLabeled` (row 24) — both are retargeted transparently when those rows execute.
 - **Note**: vessel's `value` is `bool`; flessel's is `bool?` for tristate support. Type widening is trivially safe (every `bool` fits `bool?`). Flessel's `tristate: false` default preserves vessel behavior. Vessel's `onChanged` is already `ValueChanged<bool?>?`, identical to flessel's — no callback signature change.
 - **Part of**: toggle-family bundle (rows 22–25), all four widgets live in `vessel_toggles.dart`.
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 23. VesselSwitch
 
@@ -1038,7 +1053,7 @@ Delete `front/lib/shared/ui/inputs/vessel_hour_picker.dart` (removes both `Vesse
 - **Call-site audit**: zero production call sites. Only 1 bare usage in legacy `controls_list_screen.dart:785` and 1 internal use inside `VesselSwitchLabeled` (row 25) — both are retargeted transparently when those rows execute.
 - **Note**: prop surfaces are an exact match. Pure rename.
 - **Part of**: toggle-family bundle (rows 22–25).
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 24. VesselCheckboxLabeled
 
@@ -1051,7 +1066,7 @@ Delete `front/lib/shared/ui/inputs/vessel_hour_picker.dart` (removes both `Vesse
 - **Call-site mapping**: `VesselLabelPosition.left/right` → `LabelPosition.left/right` (same semantics, same defaults). No callable changes.
 - **Note**: flessel is a strict superset — same required props, same defaults, two additive optional props (`tristate`, `size`) with behavior-preserving defaults.
 - **Part of**: toggle-family bundle (rows 22–25). Drives E6 (`VesselLabelPosition` enum retirement).
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 25. VesselSwitchLabeled
 
@@ -1064,7 +1079,7 @@ Delete `front/lib/shared/ui/inputs/vessel_hour_picker.dart` (removes both `Vesse
 - **Call-site mapping**: `VesselLabelPosition.left/right` → `LabelPosition.left/right`. Same default (`left`).
 - **Note**: strict superset with one enum rename and one additive optional (`size`).
 - **Part of**: toggle-family bundle (rows 22–25). Drives E6 (`VesselLabelPosition` enum retirement).
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### Toggle-family bundle note (rows 22–25)
 
@@ -1096,7 +1111,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   3. Delete `vessel_input_styles.dart`.
   4. No flessel grow points. No `flessel/example/` or `consumer.claude.md` updates.
 - **Ordering**: row 26 can execute together with or after row 15. No hard constraint.
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 27. VesselLangButton
 
@@ -1125,7 +1140,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   4. `flutter analyze` should be clean
 - **Flessel impact**: none. No grow points. No `flessel/example/` updates. No `consumer.claude.md` updates.
 - **This is the sixth instance** of the audit-before-propose pattern — matrix pre-proposals continue to reflect planning-time guesses that don't match real call-site data.
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 28. VesselNote
 
@@ -1152,7 +1167,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   3. Per-call-site `contentSized: true` (or not) decided at execution time to preserve 14px
   4. Delete `front/lib/shared/ui/note/vessel_note.dart`
   5. `flutter analyze` clean
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 29. VesselProgressBar
 
@@ -1184,7 +1199,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   4. Row 47 (VocabLevelCard) execution absorbs its `VesselProgressBar` usage
   5. Delete `front/lib/shared/ui/progress_bar/vessel_progress_bar.dart` (widget + enum in same file)
   6. `flutter analyze` clean
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 30. VesselScaffold
 
@@ -1265,7 +1280,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
 - **Example app**: Update scaffold/topbar demo section in `.vessel/packages/flessel/example/lib/pages/controls_list_screen.dart` — showcase `uppercaseTitle: true` vs `false`, `centerTitle: true/false/null` (platform default). Verify title no longer animates (G3 cleanup).
 
 - **Decision**: `EXTEND_FLESSEL` (5 grow points/library changes G1–G5)
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 31. VesselSnackBar
 
@@ -1305,7 +1320,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   4. Legacy `controls_list_screen.dart:1099/1106` — transitional retarget OR leave until legacy file deletion (per the open legacy-file strategic question)
   5. Delete `front/lib/shared/ui/snackbar/vessel_snackbar.dart`
   6. `flutter analyze` clean
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 32. VesselTagChip
 
@@ -1339,7 +1354,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   4. File-level deletion of `vessel_tag_chip.dart` — **deferred** to row 33 coordination
   5. Theme properties `tagBorderRadius`, `tagBorderWidth`, `tagChipBorder`, `controlAccentForeground` — **do NOT touch in row 32**. May still be consumed by rows 33/34. Phase 4 theme retirement handles these
   6. `flutter analyze` clean
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 33. VesselTagColorPreview
 
@@ -1372,7 +1387,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   4. Delete the now-orphan import at `controls_list_screen.dart:26` (coordinated with row 32's import cleanup)
   5. Theme properties `tagBorderRadius`, `tagBorderWidth`, `tagChipBorder`, `accentColor`, `controlAccentForeground` — **do NOT touch in row 33**. `VesselTagLabel` (row 34) may still consume them. Phase 4 theme retirement handles these.
   6. `flutter analyze` clean
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 34. VesselTagLabel
 
@@ -1429,7 +1444,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   7. Entity types `Tag`, `TagColor` in `front/lib/entities/tag/tag.dart` — **NOT in scope** (domain layer)
   8. `PhosphorIconsRegular.tag` — shared icon lib, **NOT in scope**
   9. `flutter analyze` clean
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 35. VesselHeader
 
@@ -1461,7 +1476,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   4. `VesselFonts.textSubtitle` — **do NOT touch in row 35**. Likely shared across other widgets; Phase 4 font retirement handles unused getters after the broader migration completes
   5. `VesselThemeData.textPrimary` — core theme property, definitely shared; **NOT in scope**
   6. `flutter analyze` clean
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 36. VesselTile
 
@@ -1537,7 +1552,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   5. Theme-ID remapping concern — **do NOT touch in row 36**. Flag at Phase 4 entry
   6. Theme props `tileBorderRadius`, `tileBackground`, `tileBorderColor`, `tileBorderWidth` stay in `VesselThemeData` during the transition (other widgets may still use them; Phase 4 retirement handles)
   7. `flutter analyze` clean
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 37. VesselAnswerTile
 
@@ -1613,7 +1628,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   - Delete `roundAnswerTileBackground`, `roundAnswerTileBorderColor`, `roundAnswerTileBorderWidth` (absorbed into generic `tile*`, subject to the universal `tileBorderWidth` 2.0→1.0 drift from row 36).
   - **Keep** `roundAnswerTileCorrectColor` / `roundAnswerTileWrongColor` — used by `round_screen.dart` floating feedback overlay, NOT the tile. Migrate these to an app-level theme extension during Phase 4 theme retirement.
   - Delete `VesselFonts.textRoundAnswer` (replaced inline by `FlesselFonts.contentXxlAccent`).
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 38. VesselNavBar
 
@@ -1774,7 +1789,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
 
 - **Example app**: Update navbar demo section in `.vessel/packages/flessel/example/lib/pages/controls_list_screen.dart` — add a `FlesselNavBarItem` with `secretTapCount: 5` + `onSecretTapsReached` callback that shows a snackbar. Demonstrates the hidden-counter mechanic for documentation purposes.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 39. VesselNavBarIcon
 
@@ -1803,7 +1818,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   - Bundles with **row 38** (`VesselNavBar` → `LangwijMainNavBar` + flessel grow points G1-G3). When row 38 deletes `vessel_navbar.dart`, `vessel_navbar_icon.dart` becomes orphaned and is deleted in the same commit.
   - The full directory `front/lib/shared/ui/bottom_navbar/` becomes empty after both files are unlinked → directory itself can be removed.
 - **Phase 4 cleanup follow-up**: `VesselLayout.navbarIconPadding` is used only by `vessel_navbar_icon.dart` per this row's scope. Becomes orphaned when the file is deleted; should be removed during Phase 4 vessel-layout retirement. **Verify orphaning at Phase 4 time** — per-row scope did not include grepping all `VesselLayout.*` constants.
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 40. showVesselBottomSheet
 
@@ -1886,7 +1901,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
 
 - **Phase 4 cleanup debt flagged**: `bottomSheetPadding` is duplicated — defined both as `FlesselLayout.bottomSheetPadding = 16.0` (static const, `flessel_layout.dart:186`) AND as a per-theme `FlesselThemeData.bottomSheetPadding` field (all 5 themes set to 16.0, identical to the layout constant). Phase 4 should collapse one side. Lean: delete the per-theme field and use `FlesselLayout.bottomSheetPadding` directly (matches the pattern used by other layout constants). Not acted on in row 40 — out of scope.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 41. showBugReportSheet
 
@@ -2090,7 +2105,7 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
   - `VesselFonts.textSheetTitle` (Iosevka 20 w700) orphans when all 4 consumer sheets migrate (row 41 + 3 screen-level sheets in settings/round/language); deletable during Phase 4 vessel-fonts retirement.
   - `VesselFonts.textBodyAccent` orphans when this row's call site is the last consumer of that font style — **to verify at Phase 4 time**, not scoped here.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 42. _BugReportSheetContent (private)
 
@@ -2099,14 +2114,14 @@ The entire `vessel_toggles.dart` file has **zero production call sites across al
 - **Decision**: `DELETE` — absorbed into row 41's file creation
 - **Rationale**: private helper. Replaced in the new `langwij_bug_report_sheet.dart` by `_LangwijBugReportForm` (same state shape: `BugReportType _selectedType = badTranslation` + `TextEditingController _messageController`; same dispose logic; same build-method layout, just using flessel primitives per row 41's sketch).
 - **Execution**: no separate commit. When row 41's Phase 3 creates `langwij_bug_report_sheet.dart` and deletes `bug_report_sheet.dart`, `_BugReportSheetContent` disappears with the file.
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 43. showModeBottomSheet + showCountBottomSheet
 
 - **Location**: `front/lib/shared/ui/bottom_sheet/quiz_bottom_sheets.dart`
 - **Type**: two public functions (`showModeBottomSheet`, `showCountBottomSheet`) + 5 private helpers + 1 domain value class
 - **Decision**: `LANGWIJ_COMPOSITE`
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 **Scope correction (caught during row 43 audit).** Matrix row title originally listed only `showModeBottomSheet`. The actual scope of this row is the **entire** `quiz_bottom_sheets.dart` file:
 
@@ -2220,7 +2235,7 @@ Composite uses `FlesselTile(accent: data.isAccent, onTap: ..., child: ...)` for 
 
 - **Location**: `front/lib/shared/ui/bottom_sheet/quiz_bottom_sheets.dart`
 - **Decision**: `DELETE` (absorbed into #43)
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 **Helper count correction**: matrix originally listed 4 helpers, actual is **5** — `_ModeTileData` (`quiz_bottom_sheets.dart:132-146`, the tile prop bag passed to `_ModeTileRow`) was missing from the enumeration. Caught during row 43 audit.
 
@@ -2292,7 +2307,7 @@ The migrated widget retains `SizedBox(width: double.infinity)` around the inner 
 - **8 Quality gate**: **accepted** — same antipattern as area 3, consciously tracked.
 - **9 State ownership**: pass — no new state, upstream-owned via provider.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 46. VocabDeckTile
 
@@ -2403,7 +2418,7 @@ Barrel export added to `lib/flessel.dart`. Consumer rules `consumer.claude.md` c
 - **8 Quality gate**: pass — no untracked antipatterns. Envelope `SizedBox` is legitimate (composite owns its dimensions).
 - **9 State ownership**: n/a — stateless.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 47. VocabLevelCard
 
@@ -2499,7 +2514,7 @@ Reused from row 46 (already in LangwijLayout / FlesselLayout):
 - **8 Quality gate**: pass — lock icon `size: 16` fixed to `FlesselLayout.iconS`.
 - **9 State ownership**: n/a — stateless, expand/collapse state owned by screen.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ### 48. VocabLevelStatsRow
 
@@ -2558,7 +2573,7 @@ Reused from row 46 (already in LangwijLayout / FlesselLayout):
 - **8 Quality gate**: pass — no antipatterns.
 - **9 State ownership**: n/a.
 
-- **Status**: `APPROVED`
+- **Status**: `DONE`
 
 ---
 

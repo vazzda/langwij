@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "srpski_card" "\0"
+            VALUE "FileDescription", "langwij" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "srpski_card" "\0"
+            VALUE "InternalName", "langwij" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "srpski_card.exe" "\0"
-            VALUE "ProductName", "srpski_card" "\0"
+            VALUE "OriginalFilename", "langwij.exe" "\0"
+            VALUE "ProductName", "langwij" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

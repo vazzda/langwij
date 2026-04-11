@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
-import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 import '../l10n/app_localizations.dart';
 import '../l10n/app_localizations_ext.dart';
@@ -9,20 +7,10 @@ import '../app/providers/dev_section_provider.dart';
 import '../app/providers/dictionary_provider.dart';
 import '../app/providers/language_settings_provider.dart';
 import '../app/providers/theme_provider.dart';
-import '../app/router/app_router.dart';
-import '../app/theme/vessel_themes.dart';
 import '../entities/language/language_pack.dart';
-import '../shared/ui/buttons/vessel_button_group.dart';
-import '../shared/ui/bottom_sheet/vessel_bottom_sheet.dart';
-import '../shared/ui/buttons/vessel_buttons.dart';
-import '../shared/ui/inputs/vessel_text_input.dart';
-import '../shared/ui/screen_layout/vessel_scaffold.dart';
-import '../shared/ui/card/vessel_card.dart';
-import '../shared/ui/inputs/vessel_radio_tile.dart';
-import '../shared/ui/snackbar/vessel_snackbar.dart';
-import 'package:srpski_card/shared/lib/constants.dart';
-import '../shared/ui/gap/vessel_gap.dart';
-import '../app/layout/vessel_layout.dart';
+import 'package:flessel/flessel.dart';
+import '../shared/ui/langwij_main_nav_bar.dart';
+import 'package:langwij/shared/lib/constants.dart';
 import '../shared/validators/startup_validator.dart';
 import '../shared/validators/config_validator.dart';
 
@@ -35,24 +23,15 @@ class SettingsScreen extends ConsumerStatefulWidget {
 }
 
 class _SettingsScreenState extends ConsumerState<SettingsScreen> {
-  int _settingsTapCount = 0;
   bool _validating = false;
-
-  void _handleTitleTap() {
-    _settingsTapCount++;
-    if (_settingsTapCount >= AppConstants.devAccessTapCount) {
-      _settingsTapCount = 0;
-      _showDevPasswordSheet();
-    }
-  }
 
   void _showDevPasswordSheet() {
     final passwordController = TextEditingController();
-    showVesselBottomSheet<void>(
+    showFlesselBottomSheet<void>(
       context: context,
       isDismissible: false,
       builder: (sheetContext) {
-        final t = VesselThemes.of(sheetContext);
+        final t = FlesselThemes.of(sheetContext);
         final l10n = AppLocalizations.of(sheetContext)!;
         String? error;
         var listenerAdded = false;
@@ -69,11 +48,11 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               children: [
                 Text(
                   l10n.dev_enterPassword,
-                  style: VesselFonts.textSheetTitle
+                  style: FlesselFonts.contentXxlAccent
                       .copyWith(color: t.textPrimary),
                 ),
-                const VesselGap.l(),
-                VesselTextInput(
+                const FlesselGap.l(),
+                FlesselTextInput(
                   controller: passwordController,
                   autofocus: true,
                   obscureText: true,
@@ -94,25 +73,25 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                         }
                       : null,
                 ),
-                const VesselGap.s(),
+                const FlesselGap.s(),
                 Opacity(
                   opacity: error != null ? 1.0 : 0.0,
                   child: Text(
                     error ?? ' ',
-                    style: VesselFonts.textFormError
+                    style: FlesselFonts.contentS
                         .copyWith(color: t.dangerColor),
                   ),
                 ),
-                const VesselGap.xxs(),
+                const FlesselGap.xxs(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    VesselTextButton(
+                    FlesselTextButton(
                       label: l10n.cancel,
                       onPressed: () => Navigator.of(stateContext).pop(),
                     ),
-                    const VesselGap.hs(),
-                    VesselAccentButton(
+                    const FlesselGap.s(),
+                    FlesselAccentButton(
                       label: l10n.dev_unlock,
                       onPressed: hasText
                           ? () {
@@ -152,12 +131,12 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       await StartupValidator.validateAll();
       if (mounted) {
         final l10n = AppLocalizations.of(context)!;
-        VesselSnackBar.show(context, l10n.settings_validateSuccess);
+        FlesselSnackBar.show(context, l10n.settings_validateSuccess);
       }
     } on ConfigValidationError catch (e) {
       if (mounted) {
         final l10n = AppLocalizations.of(context)!;
-        VesselSnackBar.show(context, l10n.settings_validateError(e.message));
+        FlesselSnackBar.show(context, l10n.settings_validateError(e.message));
       }
     } finally {
       if (mounted) setState(() => _validating = false);
@@ -167,29 +146,23 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final t = VesselThemes.of(context);
+    final t = FlesselThemes.of(context);
     final currentTheme = ref.watch(themeProvider);
     final showDevSection = ref.watch(devSectionEnabledProvider);
     final langSettings = ref.watch(languageSettingsProvider);
     final asyncAllPacks = ref.watch(allPacksProvider);
     final asyncUiLanguages = ref.watch(uiLanguagesProvider);
 
-    return VesselScaffold(
+    return FlesselScaffold(
       title: l10n.settingsTitle,
-      showBottomNav: true,
-      onSettingsDisabledTap: _handleTitleTap,
+      uppercaseTitle: true,
+      bottomNavBar: LangwijMainNavBar(
+        onDevAccessTapsReached: _showDevPasswordSheet,
+      ),
       child: ListView(
-        padding: const EdgeInsets.all(VesselLayout.screenPadding),
+        padding: const EdgeInsets.all(FlesselLayout.screenPadding),
         children: [
           // App language section
-          Padding(
-            padding: const EdgeInsets.only(bottom: VesselLayout.listItemGapSmall),
-            child: Text(
-              l10n.language_appLanguage,
-              style:
-                  VesselFonts.textSectionHeader.copyWith(color: t.textPrimary),
-            ),
-          ),
           asyncAllPacks.when(
             loading: () => const SizedBox.shrink(),
             // ignore: unnecessary_underscores
@@ -200,41 +173,76 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                 loading: () => const SizedBox.shrink(),
                 // ignore: unnecessary_underscores
                 error: (_, __) => const SizedBox.shrink(),
-                data: (uiCodes) => ProjectButtonGroup(
-                  expanded: true,
-                  size: VesselButtonSize.small,
-                  items: uiCodes.map((code) {
-                    final pack = packByCode[code] as LanguagePack;
-                    final isSelected = code == langSettings.uiLang;
-                    return VesselButtonGroupItem(
+                data: (uiCodes) {
+                  final uiCodesList = uiCodes.toList();
+                  if (uiCodesList.isEmpty) return const SizedBox.shrink();
+
+                  final Widget picker;
+                  if (uiCodesList.length == 1) {
+                    final pack =
+                        packByCode[uiCodesList.first] as LanguagePack;
+                    picker = FlesselButton(
                       label: l10n.langLabel(pack.labelKey),
-                      isSelected: isSelected,
-                      onPressed: isSelected
-                          ? null
-                          : () => ref
-                              .read(languageSettingsProvider.notifier)
-                              .setUiLang(code),
+                      size: FlesselSize.s,
+                      onPressed: null,
                     );
-                  }).toList(),
-                ),
+                  } else {
+                    final selectedIndex =
+                        uiCodesList.indexOf(langSettings.uiLang);
+                    picker = FlesselButtonGroup(
+                      expanded: true,
+                      size: FlesselSize.s,
+                      selectedIndices:
+                          selectedIndex >= 0 ? {selectedIndex} : const {},
+                      items: uiCodesList.map((code) {
+                        final pack = packByCode[code] as LanguagePack;
+                        final isSelected = code == langSettings.uiLang;
+                        return FlesselButtonGroupItem(
+                          label: l10n.langLabel(pack.labelKey),
+                          onPressed: isSelected
+                              ? null
+                              : () => ref
+                                  .read(languageSettingsProvider.notifier)
+                                  .setUiLang(code),
+                        );
+                      }).toList(),
+                    );
+                  }
+
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            bottom: FlesselLayout.listItemGapSmall),
+                        child: Text(
+                          l10n.language_appLanguage,
+                          style: FlesselFonts.contentXxlAccent
+                              .copyWith(color: t.textPrimary),
+                        ),
+                      ),
+                      picker,
+                      const FlesselGap.xl(),
+                    ],
+                  );
+                },
               );
             },
           ),
-          const VesselGap.xl(),
           // Theme section
           Padding(
-            padding: const EdgeInsets.only(bottom: VesselLayout.listItemGap),
+            padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
             child: Text(
               l10n.settingsTheme,
               style:
-                  VesselFonts.textSectionHeader.copyWith(color: t.textPrimary),
+                  FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
             ),
           ),
-          VesselCard(
+          FlesselCard(
             child: Column(
               children: [
                 for (final theme in AppTheme.values)
-                  VesselRadioTile<AppTheme>(
+                  FlesselRadioTile<AppTheme>(
                     value: theme,
                     groupValue: currentTheme,
                     label: theme.getDisplayName(l10n),
@@ -250,59 +258,39 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           ),
           // Developer section (hidden until unlocked)
           if (showDevSection) ...[
-            const VesselGap.xl(),
+            const FlesselGap.xl(),
             Padding(
-              padding: const EdgeInsets.only(bottom: VesselLayout.listItemGap),
+              padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     l10n.settingsDeveloper,
-                    style: VesselFonts.textSectionHeader
+                    style: FlesselFonts.contentXxlAccent
                         .copyWith(color: t.textPrimary),
                   ),
-                  VesselButton(
+                  FlesselButton(
                     label: l10n.settingsHide,
                     onPressed: _handleHideDevSection,
                   ),
                 ],
               ),
             ),
-            VesselCard(
-              onTap: () => context.push(AppRoutes.devControls),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      l10n.settingsControlsList,
-                      style: VesselFonts.textListItem
-                          .copyWith(color: t.textPrimary),
-                    ),
-                  ),
-                  Icon(PhosphorIconsRegular.caretRight, color: t.textPrimary),
-                ],
-              ),
-            ),
-            const VesselGap.s(),
-            VesselCard(
+            FlesselCard(
               onTap: _validating ? null : _handleValidateConfigs,
               child: Row(
                 children: [
                   Expanded(
                     child: Text(
                       l10n.settings_validateConfigs,
-                      style: VesselFonts.textListItem
+                      style: FlesselFonts.contentM
                           .copyWith(color: t.textPrimary),
                     ),
                   ),
                   if (_validating)
-                    SizedBox(
-                      width: 24,
-                      height: 24,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: t.textSecondary,
-                      ),
+                    FlesselSpinner(
+                      size: FlesselSize.xs,
+                      color: t.textSecondary,
                     )
                   else
                     Icon(PhosphorIconsRegular.caretRight, color: t.textPrimary),
