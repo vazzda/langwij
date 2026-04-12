@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/srpski_card.iml" filepath="$PROJECT_DIR$/srpski_card.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/srpski_card_android.iml" filepath="$PROJECT_DIR$/android/srpski_card_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/langwij.iml" filepath="$PROJECT_DIR$/langwij.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/langwij_android.iml" filepath="$PROJECT_DIR$/android/langwij_android.iml" />
     </modules>
   </component>
 </project>

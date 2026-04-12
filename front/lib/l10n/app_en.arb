@@ -180,11 +180,11 @@
   "underDevelopmentBody": "This feature is under development.",
   "settingsTheme": "Theme",
 
-  "theme_01": "Clean",
-  "theme_02": "Ocean",
+  "theme_01": "Light",
+  "theme_02": "Dark",
   "theme_03": "Newspaper",
-  "theme_04": "Warm",
-  "theme_05": "Dark",
+  "theme_04": "Langwij",
+  "theme_05": "Levvero",
 
   "lang_english": "English",
   "lang_serbian": "Serbian",

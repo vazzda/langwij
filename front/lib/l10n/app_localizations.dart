@@ -649,13 +649,13 @@ abstract class AppLocalizations {
   /// No description provided for @theme_01.
   ///
   /// In en, this message translates to:
-  /// **'Clean'**
+  /// **'Light'**
   String get theme_01;
 
   /// No description provided for @theme_02.
   ///
   /// In en, this message translates to:
-  /// **'Ocean'**
+  /// **'Dark'**
   String get theme_02;
 
   /// No description provided for @theme_03.
@@ -667,13 +667,13 @@ abstract class AppLocalizations {
   /// No description provided for @theme_04.
   ///
   /// In en, this message translates to:
-  /// **'Warm'**
+  /// **'Langwij'**
   String get theme_04;
 
   /// No description provided for @theme_05.
   ///
   /// In en, this message translates to:
-  /// **'Dark'**
+  /// **'Levvero'**
   String get theme_05;
 
   /// No description provided for @lang_english.
