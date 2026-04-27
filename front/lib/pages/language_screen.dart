@@ -40,6 +40,9 @@ class LanguageScreen extends ConsumerWidget {
       uppercaseTitle: true,
       navBarItems: LangwijMainNavBar.items(context),
       navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
+      notchedNavBar: true,
+      navBarSize: FlesselSize.xs,
+      floatingActionButton: LangwijMainNavBar.fab(context),
       child: asyncAllPacks.when(
         loading: () => const Center(child: FlesselSpinner()),
         // ignore: unnecessary_underscores
@@ -48,7 +51,9 @@ class LanguageScreen extends ConsumerWidget {
           final packByCode = {for (final p in packs) p.code: p};
 
           return ListView(
-            padding: FlesselLayout.screenPaddingInsets(context),
+            padding: FlesselLayout.screenPaddingInsets(context).copyWith(
+              bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+            ),
             children: [
               _LangPairSelector(
                 packByCode: packByCode,

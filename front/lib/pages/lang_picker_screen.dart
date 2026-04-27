@@ -7,6 +7,7 @@ import '../l10n/app_localizations.dart';
 import '../l10n/app_localizations_ext.dart';
 import '../app/providers/dictionary_provider.dart';
 import '../shared/ui/layout/langwij_layout.dart';
+import '../shared/ui/langwij_main_nav_bar.dart';
 import '../entities/language/lang_codes.dart';
 import '../entities/language/language_pack.dart';
 import 'package:flessel/flessel.dart';
@@ -32,12 +33,19 @@ class LangPickerScreen extends ConsumerWidget {
       title: title,
       uppercaseTitle: true,
       onBackPressed: () => context.pop(),
+      navBarItems: LangwijMainNavBar.items(context),
+      navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
+      notchedNavBar: true,
+      navBarSize: FlesselSize.xs,
+      floatingActionButton: LangwijMainNavBar.fab(context),
       child: asyncAllPacks.when(
         loading: () => const Center(child: FlesselSpinner()),
         error: (_, _) => Center(child: Text(l10n.loadError)),
         data: (packs) {
           return ListView.separated(
-            padding: FlesselLayout.screenPaddingInsets(context),
+            padding: FlesselLayout.screenPaddingInsets(context).copyWith(
+              bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+            ),
             itemCount: packs.length,
             separatorBuilder: (_, _) => const FlesselGap.s(),
             itemBuilder: (_, index) {

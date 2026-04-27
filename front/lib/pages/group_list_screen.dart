@@ -260,6 +260,9 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
         uppercaseTitle: true,
         navBarItems: LangwijMainNavBar.items(context),
         navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
+        notchedNavBar: true,
+        navBarSize: FlesselSize.s,
+        floatingActionButton: LangwijMainNavBar.fab(context),
         onBackPressed: () => context.go(AppRoutes.tools),
         child: asyncGroups.when(
           data: (groups) {
@@ -269,7 +272,9 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
             if (filterType == GroupType.endings) {
               return ListView.builder(
                 controller: _scrollController,
-                padding: FlesselLayout.screenPaddingInsets(context),
+                padding: FlesselLayout.screenPaddingInsets(context).copyWith(
+                  bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+                ),
                 itemCount: childGroups.length,
                 itemBuilder: (context, index) {
                   final group = childGroups[index];
@@ -340,7 +345,9 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
             }
             return ListView.builder(
               controller: _scrollController,
-              padding: FlesselLayout.screenPaddingInsets(context),
+              padding: FlesselLayout.screenPaddingInsets(context).copyWith(
+                bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+              ),
               itemCount: items.length,
               itemBuilder: (context, index) {
                 final item = items[index];

@@ -610,6 +610,12 @@ abstract class AppLocalizations {
   /// **'Language'**
   String get navLanguage;
 
+  /// No description provided for @navProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress'**
+  String get navProgress;
+
   /// No description provided for @navVocabulary.
   ///
   /// In en, this message translates to:
@@ -645,36 +651,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Theme'**
   String get settingsTheme;
-
-  /// No description provided for @theme_01.
-  ///
-  /// In en, this message translates to:
-  /// **'Light'**
-  String get theme_01;
-
-  /// No description provided for @theme_02.
-  ///
-  /// In en, this message translates to:
-  /// **'Dark'**
-  String get theme_02;
-
-  /// No description provided for @theme_03.
-  ///
-  /// In en, this message translates to:
-  /// **'Newspaper'**
-  String get theme_03;
-
-  /// No description provided for @theme_04.
-  ///
-  /// In en, this message translates to:
-  /// **'Langwij'**
-  String get theme_04;
-
-  /// No description provided for @theme_05.
-  ///
-  /// In en, this message translates to:
-  /// **'Levvero'**
-  String get theme_05;
 
   /// No description provided for @lang_english.
   ///

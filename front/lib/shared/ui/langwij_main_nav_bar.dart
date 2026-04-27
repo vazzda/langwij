@@ -7,9 +7,9 @@ import '../../app/router/app_router.dart';
 import '../../l10n/app_localizations.dart';
 
 /// Langwij's main navigation — items + current-index helpers for
-/// [FlesselScaffold]. Maps the four primary tabs (Language, Vocabulary,
-/// Tools, Settings) to router paths. Dev gate on Settings is handled by
-/// [FlesselDevGate] via the [devGate] property.
+/// [FlesselScaffold]. Maps the four peripheral tabs (Language, Progress,
+/// Tools, Settings) to router paths, plus a center FAB for Vocabulary.
+/// Absorbs the dev-access secret-tap mechanic on Settings.
 class LangwijMainNavBar {
   const LangwijMainNavBar._();
 
@@ -23,10 +23,10 @@ class LangwijMainNavBar {
         onTap: () => context.go(AppRoutes.language),
       ),
       FlesselNavBarItem(
-        icon: PhosphorIconsRegular.books,
-        activeIcon: PhosphorIconsFill.books,
-        tooltip: l10n.navVocabulary,
-        onTap: () => context.go(AppRoutes.home),
+        icon: PhosphorIconsRegular.chartLine,
+        activeIcon: PhosphorIconsFill.chartLine,
+        tooltip: l10n.navProgress,
+        onTap: () => context.go(AppRoutes.progress),
       ),
       FlesselNavBarItem(
         icon: PhosphorIconsRegular.puzzlePiece,
@@ -50,10 +50,19 @@ class LangwijMainNavBar {
     ];
   }
 
+  static Widget fab(BuildContext context) {
+    final isActive = GoRouterState.of(context).uri.path == AppRoutes.home;
+    return FlesselFab(
+      onPressed: () => context.go(AppRoutes.home),
+      accented: isActive,
+      child: Icon(isActive ? PhosphorIconsFill.books : PhosphorIconsRegular.books),
+    );
+  }
+
   static int currentIndex(BuildContext context) {
     final path = GoRouterState.of(context).uri.path;
     if (path == AppRoutes.language) return 0;
-    if (path == AppRoutes.home) return 1;
+    if (path == AppRoutes.progress) return 1;
     if (path == AppRoutes.tools ||
         path == AppRoutes.conjugations ||
         path == AppRoutes.agreement) {

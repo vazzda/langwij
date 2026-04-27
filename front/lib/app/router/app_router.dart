@@ -6,6 +6,7 @@ import '../../pages/agreement_group_list_screen.dart';
 import '../../pages/group_list_screen.dart';
 import '../../pages/lang_picker_screen.dart';
 import '../../pages/language_screen.dart';
+import '../../pages/progress_screen.dart';
 import '../../pages/result_screen.dart';
 import '../../pages/round_screen.dart';
 import '../../pages/settings_screen.dart';
@@ -21,6 +22,7 @@ class AppRoutes {
   static const String round = '/round';
   static const String result = '/result';
   static const String language = '/language';
+  static const String progress = '/progress';
   static const String tools = '/tools';
   static const String settings = '/settings';
   static const String langPicker = '/lang-picker';
@@ -82,6 +84,13 @@ GoRouter createAppRouter() {
         path: AppRoutes.language,
         pageBuilder: (context, state) => _noTransitionPage(
           const LanguageScreen(),
+          state,
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.progress,
+        pageBuilder: (context, state) => _noTransitionPage(
+          const ProgressScreen(),
           state,
         ),
       ),

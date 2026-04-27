@@ -17,12 +17,10 @@ import '../entities/language/language_pack.dart';
 import '../entities/plan/level_tier.dart';
 import '../features/quiz/round_notifier.dart';
 import '../features/vocab/services/level_fold_notifier.dart';
-import '../features/vocab/widgets/langwij_vocab_daily_activity_card.dart';
 import '../features/vocab/widgets/langwij_vocab_level_card.dart';
 import '../features/vocab/widgets/vocab_deck_tile_data.dart';
 import '../shared/repositories/models/deck_progress.dart';
 import '../shared/repositories/models/retention_level.dart';
-import '../app/providers/daily_activity_provider.dart';
 import '../shared/ui/bottom_sheet/langwij_quiz_bottom_sheets.dart';
 import '../shared/ui/langwij_main_nav_bar.dart';
 import 'package:flessel/flessel.dart';
@@ -79,7 +77,6 @@ class _VocabDeckListScreenState extends ConsumerState<VocabDeckListScreen> {
     final asyncNative = ref.watch(nativePackProvider);
     final allProgress = ref.watch(deckProgressProvider);
     final settings = ref.watch(appSettingsProvider);
-    final asyncStats = ref.watch(dailyActivityProvider);
     final levelTiers = ref.watch(levelTiersProvider).valueOrNull ?? {};
 
     if (asyncDict.hasValue &&
@@ -103,6 +100,9 @@ class _VocabDeckListScreenState extends ConsumerState<VocabDeckListScreen> {
         uppercaseTitle: true,
         navBarItems: LangwijMainNavBar.items(context),
         navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
+        notchedNavBar: true,
+        navBarSize: FlesselSize.s,
+        floatingActionButton: LangwijMainNavBar.fab(context),
         child: Center(
           child: hasError
               ? Text(l10n.loadError)
@@ -128,19 +128,18 @@ class _VocabDeckListScreenState extends ConsumerState<VocabDeckListScreen> {
       uppercaseTitle: true,
       navBarItems: LangwijMainNavBar.items(context),
       navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
+      notchedNavBar: true,
+      navBarSize: FlesselSize.s,
+      floatingActionButton: LangwijMainNavBar.fab(context),
       child: ListView.separated(
         controller: _scrollController,
-        padding: FlesselLayout.screenPaddingInsets(context),
-        itemCount: levels.length + 1,
+        padding: FlesselLayout.screenPaddingInsets(context).copyWith(
+          bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+        ),
+        itemCount: levels.length,
         separatorBuilder: (_, _) => const FlesselGap.m(),
         itemBuilder: (context, index) {
-          if (index == 0) {
-            return LangwijVocabDailyActivityCard(
-              asyncStats: asyncStats,
-              l10n: l10n,
-            );
-          }
-          final level = levels[index - 1];
+          final level = levels[index];
           final levelId = level.level.id;
           final isExpanded = _isLevelExpanded(
             levelId: levelId,

@@ -95,6 +95,9 @@ class _AgreementGroupListScreenState extends ConsumerState<AgreementGroupListScr
         uppercaseTitle: true,
         navBarItems: LangwijMainNavBar.items(context),
         navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
+        notchedNavBar: true,
+        navBarSize: FlesselSize.s,
+        floatingActionButton: LangwijMainNavBar.fab(context),
         onBackPressed: () => context.go(AppRoutes.tools),
         child: asyncGroups.when(
           data: (groups) {
@@ -109,7 +112,9 @@ class _AgreementGroupListScreenState extends ConsumerState<AgreementGroupListScr
             }
             return ListView.builder(
               controller: _scrollController,
-              padding: FlesselLayout.screenPaddingInsets(context),
+              padding: FlesselLayout.screenPaddingInsets(context).copyWith(
+                bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+              ),
               itemCount: adjectiveGroupsList.length,
               itemBuilder: (context, index) {
                 final group = adjectiveGroupsList[index];

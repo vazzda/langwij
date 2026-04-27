@@ -83,7 +83,7 @@ class LangwijApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = ref.watch(themeProvider);
-    final flesselData = FlesselThemeCatalog.byId(theme.flesselId).data;
+    final flesselData = FlesselThemeCatalog.byId(theme).data;
     final themeData = FlesselThemes.buildFlutterTheme(flesselData);
     return MaterialApp.router(
       title: 'Langwij',

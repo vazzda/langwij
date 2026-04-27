@@ -28,6 +28,9 @@ class ToolsScreen extends ConsumerWidget {
       uppercaseTitle: true,
       navBarItems: LangwijMainNavBar.items(context),
       navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
+      notchedNavBar: true,
+      navBarSize: FlesselSize.s,
+      floatingActionButton: LangwijMainNavBar.fab(context),
       child: tools.isEmpty
           ? Center(
               child: Text(
@@ -36,7 +39,9 @@ class ToolsScreen extends ConsumerWidget {
               ),
             )
           : ListView(
-              padding: FlesselLayout.screenPaddingInsets(context),
+              padding: FlesselLayout.screenPaddingInsets(context).copyWith(
+                bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+              ),
               children: tools.map((tool) {
                 final label = _toolLabel(tool, l10n);
                 return Padding(

@@ -297,6 +297,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navLanguage => 'Language';
 
   @override
+  String get navProgress => 'Progress';
+
+  @override
   String get navVocabulary => 'Vocabulary';
 
   @override
@@ -313,21 +316,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsTheme => 'Theme';
-
-  @override
-  String get theme_01 => 'Light';
-
-  @override
-  String get theme_02 => 'Dark';
-
-  @override
-  String get theme_03 => 'Newspaper';
-
-  @override
-  String get theme_04 => 'Langwij';
-
-  @override
-  String get theme_05 => 'Levvero';
 
   @override
   String get lang_english => 'English';

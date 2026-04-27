@@ -60,8 +60,13 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       uppercaseTitle: true,
       navBarItems: LangwijMainNavBar.items(context),
       navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
+      notchedNavBar: true,
+      navBarSize: FlesselSize.s,
+      floatingActionButton: LangwijMainNavBar.fab(context),
       child: ListView(
-        padding: FlesselLayout.screenPaddingInsets(context),
+        padding: FlesselLayout.screenPaddingInsets(context).copyWith(
+          bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+        ),
         children: [
           // App language section
           asyncAllPacks.when(
@@ -142,11 +147,11 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           FlesselCard(
             child: Column(
               children: [
-                for (final theme in AppTheme.values)
-                  FlesselRadioTile<AppTheme>(
-                    value: theme,
+                for (final entry in FlesselThemeCatalog.all)
+                  FlesselRadioTile<String>(
+                    value: entry.id,
                     groupValue: currentTheme,
-                    label: theme.getDisplayName(l10n),
+                    label: entry.displayName,
                     onChanged: (value) {
                       if (value != null) {
                         ref.read(themeProvider.notifier).state = value;
