@@ -244,7 +244,6 @@ class _ResultEntryTile extends StatelessWidget {
           FlesselDangerButton(
             icon: PhosphorIconsBold.bug,
             size: FlesselSize.s,
-            margin: EdgeInsets.zero,
             onPressed: () => showLangwijBugReportSheet(context, card: card),
           ),
         ],

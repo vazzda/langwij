@@ -8,15 +8,12 @@ import '../../l10n/app_localizations.dart';
 
 /// Langwij's main navigation — items + current-index helpers for
 /// [FlesselScaffold]. Maps the four primary tabs (Language, Vocabulary,
-/// Tools, Settings) to router paths and absorbs the dev-access secret-tap
-/// mechanic on Settings.
+/// Tools, Settings) to router paths. Dev gate on Settings is handled by
+/// [FlesselDevGate] via the [devGate] property.
 class LangwijMainNavBar {
   const LangwijMainNavBar._();
 
-  static List<FlesselNavBarItem> items(
-    BuildContext context, {
-    VoidCallback? onDevAccessTapsReached,
-  }) {
+  static List<FlesselNavBarItem> items(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return [
       FlesselNavBarItem(
@@ -42,8 +39,13 @@ class LangwijMainNavBar {
         activeIcon: PhosphorIconsFill.gearSix,
         tooltip: l10n.navSettings,
         onTap: () => context.go(AppRoutes.settings),
-        secretTapCount: AppConstants.devAccessTapCount,
-        onSecretTapsReached: onDevAccessTapsReached,
+        devGate: FlesselDevGateConfig(
+          password: AppConstants.devAccessPassword,
+          title: l10n.dev_enterPassword,
+          unlockLabel: l10n.dev_unlock,
+          cancelLabel: l10n.cancel,
+          errorMessage: l10n.dev_wrongPassword,
+        ),
       ),
     ];
   }

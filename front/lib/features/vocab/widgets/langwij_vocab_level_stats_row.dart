@@ -39,7 +39,6 @@ class LangwijVocabLevelStatsRow extends StatelessWidget {
           label: l10n.vocab_train,
           onPressed: null,
           size: FlesselSize.s,
-          margin: EdgeInsets.zero,
         ),
       ],
     );

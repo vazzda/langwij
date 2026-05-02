@@ -40,7 +40,10 @@ Future<void> main() async {
   FlutterNativeSplash.preserve(widgetsBinding: WidgetsBinding.instance);
 
   final savedTheme = await loadAppTheme();
-  final savedDevSection = await loadDevSectionEnabled();
+  await FlesselDevGate.init(
+    load: loadDevSectionEnabled,
+    save: saveDevSectionEnabled,
+  );
   final router = createAppRouter();
 
   runApp(
@@ -62,7 +65,6 @@ Future<void> main() async {
           (ref) => AppSettingsRepository(db: db),
         ),
         themeProvider.overrideWith((ref) => savedTheme),
-        devSectionEnabledProvider.overrideWith((ref) => savedDevSection),
       ],
       child: LangwijApp(router: router),
     ),

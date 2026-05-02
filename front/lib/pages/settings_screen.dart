@@ -3,14 +3,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../l10n/app_localizations.dart';
 import '../l10n/app_localizations_ext.dart';
-import '../app/providers/dev_section_provider.dart';
 import '../app/providers/dictionary_provider.dart';
 import '../app/providers/language_settings_provider.dart';
 import '../app/providers/theme_provider.dart';
 import '../entities/language/language_pack.dart';
 import 'package:flessel/flessel.dart';
 import '../shared/ui/langwij_main_nav_bar.dart';
-import 'package:langwij/shared/lib/constants.dart';
 import '../shared/validators/startup_validator.dart';
 import '../shared/validators/config_validator.dart';
 
@@ -25,103 +23,8 @@ class SettingsScreen extends ConsumerStatefulWidget {
 class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   bool _validating = false;
 
-  void _showDevPasswordSheet() {
-    final passwordController = TextEditingController();
-    showFlesselBottomSheet<void>(
-      context: context,
-      isDismissible: false,
-      builder: (sheetContext) {
-        final t = FlesselThemes.of(sheetContext);
-        final l10n = AppLocalizations.of(sheetContext)!;
-        String? error;
-        var listenerAdded = false;
-        return StatefulBuilder(
-          builder: (stateContext, setSheetState) {
-            if (!listenerAdded) {
-              listenerAdded = true;
-              passwordController.addListener(() => setSheetState(() {}));
-            }
-            final hasText = passwordController.text.isNotEmpty;
-            return Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text(
-                  l10n.dev_enterPassword,
-                  style: FlesselFonts.contentXxlAccent
-                      .copyWith(color: t.textPrimary),
-                ),
-                const FlesselGap.l(),
-                FlesselTextInput(
-                  controller: passwordController,
-                  autofocus: true,
-                  obscureText: true,
-                  autocorrect: false,
-                  enableSuggestions: false,
-                  onSubmitted: hasText
-                      ? (_) {
-                          if (passwordController.text ==
-                              AppConstants.devAccessPassword) {
-                            Navigator.of(stateContext).pop();
-                            ref.read(devSectionEnabledProvider.notifier).state =
-                                true;
-                            saveDevSectionEnabled(true);
-                          } else {
-                            setSheetState(
-                                () => error = l10n.dev_wrongPassword);
-                          }
-                        }
-                      : null,
-                ),
-                const FlesselGap.s(),
-                Opacity(
-                  opacity: error != null ? 1.0 : 0.0,
-                  child: Text(
-                    error ?? ' ',
-                    style: FlesselFonts.contentS
-                        .copyWith(color: t.dangerColor),
-                  ),
-                ),
-                const FlesselGap.xxs(),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    FlesselTextButton(
-                      label: l10n.cancel,
-                      onPressed: () => Navigator.of(stateContext).pop(),
-                    ),
-                    const FlesselGap.s(),
-                    FlesselAccentButton(
-                      label: l10n.dev_unlock,
-                      onPressed: hasText
-                          ? () {
-                              if (passwordController.text ==
-                                  AppConstants.devAccessPassword) {
-                                Navigator.of(stateContext).pop();
-                                ref
-                                    .read(devSectionEnabledProvider.notifier)
-                                    .state = true;
-                                saveDevSectionEnabled(true);
-                              } else {
-                                setSheetState(
-                                    () => error = l10n.dev_wrongPassword);
-                              }
-                            }
-                          : null,
-                    ),
-                  ],
-                ),
-              ],
-            );
-          },
-        );
-      },
-    );
-  }
-
   void _handleHideDevSection() {
-    ref.read(devSectionEnabledProvider.notifier).state = false;
-    saveDevSectionEnabled(false);
+    FlesselDevGate.enabled.value = false;
   }
 
   Future<void> _handleValidateConfigs() async {
@@ -148,7 +51,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     final l10n = AppLocalizations.of(context)!;
     final t = FlesselThemes.of(context);
     final currentTheme = ref.watch(themeProvider);
-    final showDevSection = ref.watch(devSectionEnabledProvider);
     final langSettings = ref.watch(languageSettingsProvider);
     final asyncAllPacks = ref.watch(allPacksProvider);
     final asyncUiLanguages = ref.watch(uiLanguagesProvider);
@@ -156,10 +58,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     return FlesselScaffold(
       title: l10n.settingsTitle,
       uppercaseTitle: true,
-      navBarItems: LangwijMainNavBar.items(
-        context,
-        onDevAccessTapsReached: _showDevPasswordSheet,
-      ),
+      navBarItems: LangwijMainNavBar.items(context),
       navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
       child: ListView(
         padding: FlesselLayout.screenPaddingInsets(context),
@@ -259,47 +158,55 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             ),
           ),
           // Developer section (hidden until unlocked)
-          if (showDevSection) ...[
-            const FlesselGap.xl(),
-            Padding(
-              padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    l10n.settingsDeveloper,
-                    style: FlesselFonts.contentXxlAccent
-                        .copyWith(color: t.textPrimary),
-                  ),
-                  FlesselButton(
-                    label: l10n.settingsHide,
-                    onPressed: _handleHideDevSection,
-                  ),
-                ],
-              ),
-            ),
-            FlesselCard(
-              onTap: _validating ? null : _handleValidateConfigs,
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      l10n.settings_validateConfigs,
-                      style: FlesselFonts.contentM
-                          .copyWith(color: t.textPrimary),
-                    ),
-                  ),
-                  if (_validating)
-                    FlesselSpinner(
-                      size: FlesselSize.xs,
-                      color: t.textSecondary,
-                    )
-                  else
-                    Icon(PhosphorIconsRegular.caretRight, color: t.textPrimary),
-                ],
-              ),
-            ),
-          ],
+          ValueListenableBuilder<bool>(
+            valueListenable: FlesselDevGate.enabled,
+            builder: (_, show, _) => show
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const FlesselGap.xl(),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              l10n.settingsDeveloper,
+                              style: FlesselFonts.contentXxlAccent
+                                  .copyWith(color: t.textPrimary),
+                            ),
+                            FlesselButton(
+                              label: l10n.settingsHide,
+                              onPressed: _handleHideDevSection,
+                            ),
+                          ],
+                        ),
+                      ),
+                      FlesselCard(
+                        onTap: _validating ? null : _handleValidateConfigs,
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                l10n.settings_validateConfigs,
+                                style: FlesselFonts.contentM
+                                    .copyWith(color: t.textPrimary),
+                              ),
+                            ),
+                            if (_validating)
+                              FlesselSpinner(
+                                size: FlesselSize.xs,
+                                color: t.textSecondary,
+                              )
+                            else
+                              Icon(PhosphorIconsRegular.caretRight, color: t.textPrimary),
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+                : const SizedBox.shrink(),
+          ),
         ],
       ),
     );
