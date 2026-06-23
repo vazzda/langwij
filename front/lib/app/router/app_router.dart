@@ -42,7 +42,7 @@ Page<void> _slidePage(BuildContext context, Widget child, GoRouterState state) {
   return CustomTransitionPage<void>(
     key: state.pageKey,
     child: Container(
-      color: scaffoldBg,
+      color: scaffoldBg.colorValue,
       child: child,
     ),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {

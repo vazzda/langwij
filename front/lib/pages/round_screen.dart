@@ -152,7 +152,7 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
                 ),
                 Text(
                   l10n.questionsLeft(round.queue.length),
-                  style: FlesselFonts.displayM.copyWith(color: t.textPrimary),
+                  style: FlesselFonts.displayM.copyWith(color: t.fg),
                 ),
               ],
             ),
@@ -164,7 +164,7 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
                   Text(
                     promptText,
                     style: FlesselFonts.contentXxxlAccent.copyWith(
-                      color: t.textPrimary,
+                      color: t.fg,
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -236,14 +236,14 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
             Text(
               '${l10n.quiz_aspectImperfective} ${_pairImperfective!.typed.isEmpty ? l10n.emptyAnswer : _pairImperfective!.typed}',
               style: FlesselFonts.contentL.copyWith(
-                color: _pairImperfective!.ok ? t.textPrimary : t.dangerColor,
+                color: _pairImperfective!.ok ? t.fg : t.dangerColor,
               ),
             ),
             if (!_pairImperfective!.ok) ...[
               const FlesselGap.xs(),
               Text(
                 '${l10n.correctAnswerLabel} ${_pairImperfective!.correct}',
-                style: FlesselFonts.contentL.copyWith(color: t.textPrimary),
+                style: FlesselFonts.contentL.copyWith(color: t.fg),
               ),
             ],
             const FlesselGap.l(),
@@ -257,14 +257,14 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
             Text(
               '${l10n.quiz_aspectPerfective} ${_pairPerfective!.typed.isEmpty ? l10n.emptyAnswer : _pairPerfective!.typed}',
               style: FlesselFonts.contentL.copyWith(
-                color: _pairPerfective!.ok ? t.textPrimary : t.dangerColor,
+                color: _pairPerfective!.ok ? t.fg : t.dangerColor,
               ),
             ),
             if (!_pairPerfective!.ok) ...[
               const FlesselGap.xs(),
               Text(
                 '${l10n.correctAnswerLabel} ${_pairPerfective!.correct}',
-                style: FlesselFonts.contentL.copyWith(color: t.textPrimary),
+                style: FlesselFonts.contentL.copyWith(color: t.fg),
               ),
             ],
           ] else ...[
@@ -277,16 +277,17 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
             const FlesselGap.s(),
             Text(
               '${round.mode == QuizMode.write ? l10n.youWrote : l10n.youPicked} ${(_wrongUserAnswerDisplay ?? '').isEmpty ? l10n.emptyAnswer : _wrongUserAnswerDisplay}',
-              style: FlesselFonts.contentL.copyWith(color: t.textPrimary),
+              style: FlesselFonts.contentL.copyWith(color: t.fg),
             ),
             const FlesselGap.s(),
             Text(
               '${l10n.correctAnswerLabel} ${_wrongFeedbackDisplay ?? _wrongFeedback}',
-              style: FlesselFonts.contentL.copyWith(color: t.textPrimary),
+              style: FlesselFonts.contentL.copyWith(color: t.fg),
             ),
           ],
           const FlesselGap.xl(),
-          FlesselAccentButton(
+          FlesselButton(
+            variant: FlesselVariant.accent,
             label: l10n.next,
             onPressed: () => _onNextAfterWrong(ref),
           ),
@@ -302,7 +303,7 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
             Text(
               l10n.quiz_aspectImperfective,
               style: FlesselFonts.contentL.copyWith(
-                color: t.textPrimary,
+                color: t.fg,
               ),
             ),
             const FlesselGap.s(),
@@ -318,7 +319,7 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
             Text(
               l10n.quiz_aspectPerfective,
               style: FlesselFonts.contentL.copyWith(
-                color: t.textPrimary,
+                color: t.fg,
               ),
             ),
             const FlesselGap.s(),
@@ -330,7 +331,8 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
               enableSuggestions: false,
             ),
             const FlesselGap.l(),
-            FlesselAccentButton(
+            FlesselButton(
+            variant: FlesselVariant.accent,
               label: l10n.submit,
               onPressed: () => _submitWritePair(context, ref),
             ),
@@ -342,7 +344,7 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
         children: [
           Text(
             l10n.yourAnswer,
-            style: FlesselFonts.contentL.copyWith(color: t.textPrimary),
+            style: FlesselFonts.contentL.copyWith(color: t.fg),
           ),
           const FlesselGap.s(),
           FlesselTextInput(
@@ -355,7 +357,8 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
             enableSuggestions: false,
           ),
           const FlesselGap.l(),
-          FlesselAccentButton(
+          FlesselButton(
+            variant: FlesselVariant.accent,
             label: l10n.submit,
             onPressed: () => _submitWrite(context, ref),
           ),
@@ -396,12 +399,12 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
         children: [
           Text(
             l10n.exitRound,
-            style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
+            style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
           ),
           const FlesselGap.m(),
           Text(
             l10n.exitRoundConfirm,
-            style: FlesselFonts.contentM.copyWith(color: t.textPrimary),
+            style: FlesselFonts.contentM.copyWith(color: t.fg),
           ),
           const FlesselGap.xl(),
           Row(
@@ -412,7 +415,8 @@ class _RoundScreenState extends ConsumerState<RoundScreen> {
                 onPressed: () => Navigator.of(sheetContext).pop(),
               ),
               const FlesselGap.s(),
-              FlesselDangerTextButton(
+              FlesselTextButton(
+                variant: FlesselVariant.danger,
                 label: l10n.exit,
                 onPressed: () {
                   Navigator.of(sheetContext).pop();

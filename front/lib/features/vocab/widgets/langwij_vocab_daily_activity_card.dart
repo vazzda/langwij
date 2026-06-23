@@ -24,7 +24,7 @@ class LangwijVocabDailyActivityCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
     final captionStyle = FlesselFonts.contentCaption.copyWith(
-      color: t.textSecondary,
+      color: t.fgSecondary,
     );
 
     return FlesselCard(
@@ -39,7 +39,7 @@ class LangwijVocabDailyActivityCard extends StatelessWidget {
           children: [
             Text(
               l10n.dailyActivityTitle,
-              style: FlesselFonts.contentBody.copyWith(color: t.textPrimary),
+              style: FlesselFonts.contentBody.copyWith(color: t.fg),
             ),
             const FlesselGap.xs(),
             asyncStats.when(

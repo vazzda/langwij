@@ -106,7 +106,7 @@ class _AgreementGroupListScreenState extends ConsumerState<AgreementGroupListScr
               return Center(
                 child: Text(
                   l10n.loadError,
-                  style: FlesselFonts.contentM.copyWith(color: t.textPrimary),
+                  style: FlesselFonts.contentM.copyWith(color: t.fg),
                 ),
               );
             }
@@ -236,14 +236,14 @@ class _AgreementGroupTile extends StatelessWidget {
                     children: [
                       Text(
                         label,
-                        style: FlesselFonts.contentM.copyWith(color: t.textPrimary),
+                        style: FlesselFonts.contentM.copyWith(color: t.fg),
                       ),
                       const FlesselGap.xxs(),
                       Text(
                         countText,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: FlesselFonts.contentS.copyWith(color: t.textSecondary),
+                        style: FlesselFonts.contentS.copyWith(color: t.fgSecondary),
                       ),
                     ],
                   ),

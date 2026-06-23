@@ -79,7 +79,7 @@ class LanguageScreen extends ConsumerWidget {
                 padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
                 child: Text(
                   l10n.language_progression,
-                  style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
+                  style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
                 ),
               ),
               _ProgressionCard(
@@ -95,7 +95,7 @@ class LanguageScreen extends ConsumerWidget {
                 padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
                 child: Text(
                   l10n.settingsDecaySpeed,
-                  style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
+                  style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
                 ),
               ),
               _DecayOption(
@@ -141,7 +141,7 @@ class LanguageScreen extends ConsumerWidget {
                   padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
                   child: Text(
                     l10n.language_incompleteDictionaries,
-                    style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
+                    style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
                   ),
                 ),
                 _IncompleteDictionariesCard(
@@ -209,12 +209,12 @@ void _confirmReset(
         children: [
           Text(
             l10n.language_resetConfirmTitle,
-            style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
+            style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
           ),
           const FlesselGap.m(),
           Text(
             l10n.language_resetConfirmBody(langName),
-            style: FlesselFonts.contentM.copyWith(color: t.textPrimary),
+            style: FlesselFonts.contentM.copyWith(color: t.fg),
           ),
           const FlesselGap.xl(),
           Row(
@@ -225,7 +225,8 @@ void _confirmReset(
                 onPressed: () => Navigator.of(sheetContext).pop(),
               ),
               const FlesselGap.s(),
-              FlesselDangerButton(
+              FlesselButton(
+                variant: FlesselVariant.danger,
                 label: l10n.language_resetButton,
                 onPressed: () {
                   Navigator.of(sheetContext).pop();
@@ -272,14 +273,14 @@ class _LangPairSelector extends StatelessWidget {
             Expanded(
               child: Text(
                 l10n.language_iSpeak.toUpperCase(),
-                style: FlesselFonts.contentXxlAccent.copyWith(color: t.textSecondary),
+                style: FlesselFonts.contentXxlAccent.copyWith(color: t.fgSecondary),
               ),
             ),
             const SizedBox(width: _arrowZoneWidth),
             Expanded(
               child: Text(
                 l10n.language_iLearn.toUpperCase(),
-                style: FlesselFonts.contentXxlAccent.copyWith(color: t.textSecondary),
+                style: FlesselFonts.contentXxlAccent.copyWith(color: t.fgSecondary),
               ),
             ),
           ],
@@ -312,7 +313,7 @@ class _LangPairSelector extends StatelessWidget {
                             targetCode == LangCodes.serbian)
                     ? PhosphorIconsFill.heart
                     : PhosphorIconsBold.arrowRight,
-                color: t.textSecondary,
+                color: t.fgSecondary,
                 size: 20,
               ),
             ),
@@ -377,9 +378,9 @@ class _LangBox extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.fromLTRB(LangwijLayout.langBoxPaddingLeft, LangwijLayout.langBoxPaddingTop, LangwijLayout.langBoxPaddingRight, LangwijLayout.langBoxPaddingBottom),
             decoration: BoxDecoration(
-              color: t.cardBackground,
+              color: t.surface01.regular.bg.colorValue,
               border: Border.all(
-                color: t.tileBorderColor,
+                color: t.surface02.regular.border,
                 width: t.tileBorderWidth,
               ),
               borderRadius: BorderRadius.circular(t.tileBorderRadius),
@@ -398,12 +399,12 @@ class _LangBox extends StatelessWidget {
                     ),
                   )
                 else
-                  Icon(PhosphorIconsRegular.caretDown, color: t.textSecondary, size: 18),
+                  Icon(PhosphorIconsRegular.caretDown, color: t.fgSecondary, size: 18),
                 const FlesselGap.xs(),
                 Text(
                   selectedLabel,
                   style: FlesselFonts.contentLAccent
-                      .copyWith(color: t.textPrimary),
+                      .copyWith(color: t.fg),
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
                 ),
@@ -434,7 +435,7 @@ class _QualityBlock extends StatelessWidget {
       style: humanFirst
           ? FlesselFonts.contentSAccent
           : FlesselFonts.contentS,
-      color: t.textPrimary,
+      color: t.fg,
     );
 
     final aiRow = _qualityRow(
@@ -445,7 +446,7 @@ class _QualityBlock extends StatelessWidget {
       style: humanFirst
           ? FlesselFonts.contentS
           : FlesselFonts.contentSAccent,
-      color: t.textPrimary,
+      color: t.fg,
     );
 
     return Container(
@@ -455,9 +456,9 @@ class _QualityBlock extends StatelessWidget {
         vertical: FlesselLayout.gapXs,
       ),
       decoration: BoxDecoration(
-        color: t.cardBackground,
+        color: t.surface01.regular.bg.colorValue,
         border: Border.all(
-          color: t.tileBorderColor,
+          color: t.surface02.regular.border,
           width: t.tileBorderWidth,
         ),
         borderRadius: BorderRadius.circular(t.tileBorderRadius),
@@ -555,7 +556,7 @@ class _ProgressionCard extends StatelessWidget {
                             child: Text(
                               label,
                               style: FlesselFonts.contentMAccent.copyWith(
-                                color: t.textSecondary,
+                                color: t.fgSecondary,
                               ),
                             ),
                           ),
@@ -573,7 +574,7 @@ class _ProgressionCard extends StatelessWidget {
                               '$pct%',
                               textAlign: TextAlign.end,
                               style: FlesselFonts.contentS.copyWith(
-                                color: t.textPrimary,
+                                color: t.fg,
                               ),
                             ),
                           ),
@@ -629,13 +630,13 @@ class _DecayOption extends StatelessWidget {
                   title,
                   style: isSelected
                       ? FlesselFonts.contentMAccent
-                          .copyWith(color: t.textPrimary)
-                      : FlesselFonts.contentM.copyWith(color: t.textPrimary),
+                          .copyWith(color: t.fg)
+                      : FlesselFonts.contentM.copyWith(color: t.fg),
                 ),
                 const FlesselGap.xxs(),
                 Text(
                   description,
-                  style: FlesselFonts.contentS.copyWith(color: t.textSecondary),
+                  style: FlesselFonts.contentS.copyWith(color: t.fgSecondary),
                 ),
               ],
             ),
@@ -680,7 +681,7 @@ class _IncompleteDictionariesCard extends StatelessWidget {
                   Expanded(
                     child: Text(
                       l10n.langLabel(p.labelKey),
-                      style: FlesselFonts.contentS.copyWith(color: t.textSecondary),
+                      style: FlesselFonts.contentS.copyWith(color: t.fgSecondary),
                     ),
                   ),
                   Text(

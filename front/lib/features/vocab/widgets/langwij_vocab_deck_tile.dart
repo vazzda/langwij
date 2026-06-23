@@ -33,7 +33,7 @@ class LangwijVocabDeckTile extends StatelessWidget {
     final iconData = item.icon != null
         ? DeckIcons.fromString(item.icon!)
         : DeckIcons.fallback;
-    final dimmedTextColor = t.textPrimary.withValues(alpha: t.disabledOpacity);
+    final dimmedTextColor = t.fg.withValues(alpha: t.disabledOpacity);
 
     return SizedBox(
       width: width,
@@ -67,7 +67,7 @@ class LangwijVocabDeckTile extends StatelessWidget {
                           l10n.vocab_termsCount(item.cardCount),
                           textAlign: TextAlign.start,
                           style: FlesselFonts.contentSAccent.copyWith(
-                            color: t.textPrimary,
+                            color: t.fg,
                           ),
                         ),
                         const SizedBox(
@@ -92,7 +92,7 @@ class LangwijVocabDeckTile extends StatelessWidget {
                                 textAlign: TextAlign.start,
                                 style: FlesselFonts.contentXsAccent.copyWith(
                                   color: item.percentage != null
-                                      ? t.textPrimary
+                                      ? t.fg
                                       : dimmedTextColor,
                                 ),
                               ),
@@ -114,7 +114,7 @@ class LangwijVocabDeckTile extends StatelessWidget {
                 item.name,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: FlesselFonts.displayM.copyWith(color: t.textPrimary),
+                style: FlesselFonts.displayM.copyWith(color: t.fg),
               ),
             ),
             // Word list
@@ -127,7 +127,7 @@ class LangwijVocabDeckTile extends StatelessWidget {
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
                 style: FlesselFonts.contentCaption.copyWith(
-                  color: t.textPrimary,
+                  color: t.fg,
                 ),
               ),
             ),

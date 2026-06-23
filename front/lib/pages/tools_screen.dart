@@ -35,7 +35,7 @@ class ToolsScreen extends ConsumerWidget {
           ? Center(
               child: Text(
                 l10n.tools_emptyState,
-                style: FlesselFonts.contentM.copyWith(color: t.textSecondary),
+                style: FlesselFonts.contentM.copyWith(color: t.fgSecondary),
               ),
             )
           : ListView(
@@ -53,13 +53,13 @@ class ToolsScreen extends ConsumerWidget {
                         Expanded(
                           child: Text(
                             label,
-                            style: FlesselFonts.contentM.copyWith(color: t.textPrimary),
+                            style: FlesselFonts.contentM.copyWith(color: t.fg),
                           ),
                         ),
                         Icon(
                           PhosphorIconsRegular.caretRight,
                           size: 16,
-                          color: t.textPrimary,
+                          color: t.fg,
                         ),
                       ],
                     ),

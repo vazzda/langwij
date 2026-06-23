@@ -35,7 +35,8 @@ class LangwijVocabLevelStatsRow extends StatelessWidget {
         const FlesselGap.xs(),
         FlesselTag(label: levelLabel),
         const Spacer(),
-        FlesselAccentButton(
+        FlesselButton(
+          variant: FlesselVariant.accent,
           label: l10n.vocab_train,
           onPressed: null,
           size: FlesselSize.s,

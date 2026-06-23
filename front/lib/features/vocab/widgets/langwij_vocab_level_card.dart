@@ -36,7 +36,7 @@ class LangwijVocabLevelCard extends StatelessWidget {
     final t = FlesselThemes.of(context);
     final isPremium = item.tier == LevelTier.premium;
     final counterStyle =
-        FlesselFonts.contentBodyAccent.copyWith(color: t.textPrimary);
+        FlesselFonts.contentBodyAccent.copyWith(color: t.fg);
 
     return FlesselCard(
       child: Column(
@@ -56,14 +56,14 @@ class LangwijVocabLevelCard extends StatelessWidget {
                       child: Text(
                         item.name,
                         style: FlesselFonts.displayXl
-                            .copyWith(color: t.textPrimary),
+                            .copyWith(color: t.fg),
                       ),
                     ),
                     if (isPremium)
                       Icon(
                         PhosphorIconsRegular.lock,
                         size: FlesselLayout.iconS,
-                        color: t.textSecondary,
+                        color: t.fgSecondary,
                       ),
                   ],
                 ),
@@ -108,7 +108,7 @@ class LangwijVocabLevelCard extends StatelessWidget {
               Text(
                 item.description!,
                 style: FlesselFonts.contentCaption
-                    .copyWith(color: t.textSecondary),
+                    .copyWith(color: t.fgSecondary),
               ),
               const FlesselGap.s(),
             ],

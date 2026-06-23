@@ -40,7 +40,7 @@ class LangwijMainNavBar {
         tooltip: l10n.navSettings,
         onTap: () => context.go(AppRoutes.settings),
         devGate: FlesselDevGateConfig(
-          password: AppConstants.devAccessPassword,
+          passwordHashes: [AppConstants.devAccessPasswordHash],
           title: l10n.dev_enterPassword,
           unlockLabel: l10n.dev_unlock,
           cancelLabel: l10n.cancel,

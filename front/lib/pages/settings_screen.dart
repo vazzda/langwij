@@ -124,7 +124,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                         child: Text(
                           l10n.language_appLanguage,
                           style: FlesselFonts.contentXxlAccent
-                              .copyWith(color: t.textPrimary),
+                              .copyWith(color: t.fg),
                         ),
                       ),
                       picker,
@@ -141,7 +141,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             child: Text(
               l10n.settingsTheme,
               style:
-                  FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
+                  FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
             ),
           ),
           FlesselCard(
@@ -178,7 +178,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                             Text(
                               l10n.settingsDeveloper,
                               style: FlesselFonts.contentXxlAccent
-                                  .copyWith(color: t.textPrimary),
+                                  .copyWith(color: t.fg),
                             ),
                             FlesselButton(
                               label: l10n.settingsHide,
@@ -195,16 +195,16 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                               child: Text(
                                 l10n.settings_validateConfigs,
                                 style: FlesselFonts.contentM
-                                    .copyWith(color: t.textPrimary),
+                                    .copyWith(color: t.fg),
                               ),
                             ),
                             if (_validating)
                               FlesselSpinner(
                                 size: FlesselSize.xs,
-                                color: t.textSecondary,
+                                color: t.fgSecondary,
                               )
                             else
-                              Icon(PhosphorIconsRegular.caretRight, color: t.textPrimary),
+                              Icon(PhosphorIconsRegular.caretRight, color: t.fg),
                           ],
                         ),
                       ),

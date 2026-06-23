@@ -44,6 +44,12 @@ dependencies:
   flessel:
     path: ../.vessel/packages/flessel
 
+dependency_overrides:
+  phosphor_flutter:
+    git:
+      url: https://github.com/subarnaPdl/phosphor_icons.git
+      ref: main
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

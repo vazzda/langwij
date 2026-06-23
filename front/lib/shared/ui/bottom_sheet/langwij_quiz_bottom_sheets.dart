@@ -42,7 +42,7 @@ Future<ModeSelection?> showLangwijModeSelectionSheet(
             Text(
               l10n.mode_guessingHeader.toUpperCase(),
               style: FlesselFonts.contentXlAccent
-                  .copyWith(color: t.textSecondary),
+                  .copyWith(color: t.fgSecondary),
             ),
             const FlesselGap.s(),
             _ModeTileRow(
@@ -74,7 +74,7 @@ Future<ModeSelection?> showLangwijModeSelectionSheet(
           Text(
             l10n.mode_writingHeader.toUpperCase(),
             style: FlesselFonts.contentXlAccent
-                .copyWith(color: t.textSecondary),
+                .copyWith(color: t.fgSecondary),
           ),
           const FlesselGap.s(),
           _ModeTileRow(
@@ -163,7 +163,7 @@ Future<int?> showLangwijQuestionCountSheet(
           Text(
             l10n.chooseQuestionsCount.toUpperCase(),
             style: FlesselFonts.contentXlAccent
-                .copyWith(color: t.textSecondary),
+                .copyWith(color: t.fgSecondary),
           ),
           const FlesselGap.l(),
           _CountTileGrid(
@@ -243,11 +243,11 @@ class _ModeTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
-    final fg = data.isAccent ? t.tileAccentForeground : t.textPrimary;
+    final fg = data.isAccent ? t.surface02.accent.fg : t.fg;
     final countryCode = LangCodes.flagCountryCode(data.langCode);
 
     return FlesselTile(
-      accent: data.isAccent,
+      variant: data.isAccent ? FlesselVariant.accent : FlesselVariant.regular,
       onTap: data.onTap,
       child: Padding(
         padding: const EdgeInsets.all(FlesselLayout.gapM),
@@ -376,10 +376,10 @@ class _CountTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
-    final fg = isAccent ? t.tileAccentForeground : t.textPrimary;
+    final fg = isAccent ? t.surface02.accent.fg : t.fg;
 
     return FlesselTile(
-      accent: isAccent,
+      variant: isAccent ? FlesselVariant.accent : FlesselVariant.regular,
       onTap: onTap,
       child: Padding(
         padding: const EdgeInsets.all(FlesselLayout.gapM),

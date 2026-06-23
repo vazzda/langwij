@@ -102,13 +102,13 @@ class _GroupTile extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(label, style: FlesselFonts.contentM.copyWith(color: t.textPrimary)),
+                          Text(label, style: FlesselFonts.contentM.copyWith(color: t.fg)),
                           const FlesselGap.xxs(),
                           Text(
                             countText,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: FlesselFonts.contentS.copyWith(color: t.textSecondary),
+                            style: FlesselFonts.contentS.copyWith(color: t.fgSecondary),
                           ),
                         ],
                       ),
@@ -359,7 +359,7 @@ class _ChildGroupListScreenState extends ConsumerState<ChildGroupListScreen> {
                     ),
                     child: Text(
                       item,
-                      style: FlesselFonts.contentXxlAccent.copyWith(color: t.textPrimary),
+                      style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
                     ),
                   );
                 }

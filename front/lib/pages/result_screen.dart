@@ -56,7 +56,8 @@ class ResultScreen extends ConsumerWidget {
             Row(
               children: [
                 Expanded(
-                  child: FlesselAccentButton(
+                  child: FlesselButton(
+                    variant: FlesselVariant.accent,
                     label: l10n.again,
                     onPressed: () {
                       final round = ref.read(roundProvider);
@@ -136,12 +137,12 @@ class ResultScreen extends ConsumerWidget {
               const FlesselGap.xl(),
               Text(
                 l10n.reviewWrongTitle,
-                style: FlesselFonts.contentXxxlAccent.copyWith(color: t.textPrimary),
+                style: FlesselFonts.contentXxxlAccent.copyWith(color: t.fg),
               ),
               const FlesselGap.xs(),
               Text(
                 l10n.reviewWrongSubtitle,
-                style: FlesselFonts.contentM.copyWith(color: t.textPrimary),
+                style: FlesselFonts.contentM.copyWith(color: t.fg),
               ),
               const FlesselGap.m(),
               ...round.missedEntries.map(
@@ -156,12 +157,12 @@ class ResultScreen extends ConsumerWidget {
               const FlesselGap.xl(),
               Text(
                 l10n.result_correctTitle,
-                style: FlesselFonts.contentXxxlAccent.copyWith(color: t.textPrimary),
+                style: FlesselFonts.contentXxxlAccent.copyWith(color: t.fg),
               ),
               const FlesselGap.xs(),
               Text(
                 l10n.result_correctSubtitle,
-                style: FlesselFonts.contentM.copyWith(color: t.textPrimary),
+                style: FlesselFonts.contentM.copyWith(color: t.fg),
               ),
               const FlesselGap.m(),
               ...round.correctEntries.map(
@@ -207,12 +208,12 @@ class _ResultEntryTile extends StatelessWidget {
                     children: [
                       Text(
                         '${l10n.youWrote} ${userTypedAnswer!.isEmpty ? l10n.emptyAnswer : userTypedAnswer}',
-                        style: FlesselFonts.contentL.copyWith(color: t.textPrimary),
+                        style: FlesselFonts.contentL.copyWith(color: t.fg),
                       ),
                       const FlesselGap.xs(),
                       Text(
                         '${l10n.correctAnswerLabel} ${card.targetAnswer} → ${displayNativeForCard(card, l10n)}',
-                        style: FlesselFonts.contentLAccent.copyWith(color: t.textPrimary),
+                        style: FlesselFonts.contentLAccent.copyWith(color: t.fg),
                       ),
                     ],
                   )
@@ -223,25 +224,26 @@ class _ResultEntryTile extends StatelessWidget {
                         child: Text(
                           card.targetAnswer,
                           style: FlesselFonts.contentLAccent.copyWith(
-                            color: t.textPrimary,
+                            color: t.fg,
                           ),
                         ),
                       ),
                       Text(
                         ' → ',
-                        style: FlesselFonts.contentL.copyWith(color: t.textPrimary),
+                        style: FlesselFonts.contentL.copyWith(color: t.fg),
                       ),
                       Expanded(
                         child: Text(
                           displayNativeForCard(card, l10n),
-                          style: FlesselFonts.contentL.copyWith(color: t.textPrimary),
+                          style: FlesselFonts.contentL.copyWith(color: t.fg),
                         ),
                       ),
                     ],
                   ),
           ),
           const FlesselGap.s(),
-          FlesselDangerButton(
+          FlesselButton(
+            variant: FlesselVariant.danger,
             icon: PhosphorIconsBold.bug,
             size: FlesselSize.s,
             onPressed: () => showLangwijBugReportSheet(context, card: card),

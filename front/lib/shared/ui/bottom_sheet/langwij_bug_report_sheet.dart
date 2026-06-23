@@ -49,12 +49,12 @@ class _LangwijBugReportFormState extends State<_LangwijBugReportForm> {
       children: [
         Text(
           l10n.bugReport_title,
-          style: FlesselFonts.contentTitle.copyWith(color: t.textPrimary),
+          style: FlesselFonts.contentTitle.copyWith(color: t.fg),
         ),
         const FlesselGap.m(),
         Text(
           '${widget.card.targetAnswer} → ${widget.card.nativeText}',
-          style: FlesselFonts.contentBodyAccent.copyWith(color: t.textPrimary),
+          style: FlesselFonts.contentBodyAccent.copyWith(color: t.fg),
         ),
         const FlesselGap.m(),
         FlesselDropdown<BugReportType>(
@@ -91,7 +91,8 @@ class _LangwijBugReportFormState extends State<_LangwijBugReportForm> {
             ),
             const FlesselGap.m(),
             Expanded(
-              child: FlesselAccentButton(
+              child: FlesselButton(
+                variant: FlesselVariant.accent,
                 label: l10n.bugReport_submit,
                 onPressed: () {
                   // No-op for now. Persistence comes later.

@@ -85,9 +85,9 @@ class _LangPickerTile extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(FlesselLayout.gapM),
         decoration: BoxDecoration(
-          color: t.cardBackground,
+          color: t.surface01.regular.bg.colorValue,
           border: Border.all(
-            color: t.tileBorderColor,
+            color: t.surface02.regular.border,
             width: t.tileBorderWidth,
           ),
           borderRadius: BorderRadius.circular(t.tileBorderRadius),
@@ -112,7 +112,7 @@ class _LangPickerTile extends StatelessWidget {
                   Text(
                     label,
                     style: FlesselFonts.contentLAccent
-                        .copyWith(color: t.textPrimary),
+                        .copyWith(color: t.fg),
                   ),
                   const FlesselGap.xxs(),
                   Row(
@@ -120,13 +120,13 @@ class _LangPickerTile extends StatelessWidget {
                       _qualitySegment(
                         icon: PhosphorIconsBold.smiley,
                         pct: pack.humanVerified,
-                        color: t.textSecondary,
+                        color: t.fgSecondary,
                       ),
                       const FlesselGap.s(),
                       _qualitySegment(
                         icon: PhosphorIconsBold.robot,
                         pct: aiPct,
-                        color: t.textSecondary,
+                        color: t.fgSecondary,
                       ),
                       if (pack.code == LangCodes.serbian) ...[
                         const FlesselGap.s(),
