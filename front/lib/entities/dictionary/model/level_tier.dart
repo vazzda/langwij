@@ -1,0 +1,1 @@
+enum LevelTier { free, premium }

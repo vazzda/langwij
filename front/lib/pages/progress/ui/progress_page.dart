@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flessel/flessel.dart';
+
+import 'package:langwij/l10n/app_localizations.dart';
+import 'package:langwij/entities/activity/activity.dart';
+import 'package:langwij/shared/nav_bar/nav_bar.dart';
+import 'package:langwij/widgets/vocab/vocab.dart';
+
+class ProgressPage extends ConsumerWidget {
+  const ProgressPage({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context)!;
+    final asyncStats = ref.watch(ActivityService.todayStats);
+
+    return FlesselScaffold(
+      title: l10n.navProgress,
+      uppercaseTitle: true,
+      navBarItems: LangwijMainNavBar.items(context),
+      navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
+      notchedNavBar: true,
+      navBarSize: FlesselSize.s,
+      floatingActionButton: LangwijMainNavBar.fab(context),
+      child: ListView(
+        padding: FlesselLayout.screenPaddingInsets(context).copyWith(
+          bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+        ),
+        children: [
+          LangwijVocabDailyActivityCard(
+            asyncStats: asyncStats,
+            l10n: l10n,
+          ),
+        ],
+      ),
+    );
+  }
+}

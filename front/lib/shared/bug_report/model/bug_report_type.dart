@@ -1,0 +1,1 @@
+enum BugReportType { badTranslation, uiBug }

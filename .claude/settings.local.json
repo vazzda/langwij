@@ -29,7 +29,8 @@
       "Bash(grep -l \"AnimatedOpacity\\\\|AnimatedPositioned\" *.dart)",
       "Bash(grep -E \"\\\\.\\(dart|yaml\\)$\")",
       "Bash(grep:*)",
-      "Bash(flutter gen-l10n *)"
+      "Bash(flutter gen-l10n *)",
+      "PowerShell(Remove-Item *)"
     ]
   }
 }

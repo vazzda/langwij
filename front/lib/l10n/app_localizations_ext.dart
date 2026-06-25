@@ -28,4 +28,39 @@ extension AppLocalizationsLangLabel on AppLocalizations {
         );
     }
   }
+
+  String groupLabel(String labelKey) {
+    switch (labelKey) {
+      case 'groupWords':
+        return groupWords;
+      case 'groupEndingsImEAti':
+        return groupEndingsImEAti;
+      case 'groupEndingsImEEti':
+        return groupEndingsImEEti;
+      case 'groupEndingsImEIti':
+        return groupEndingsImEIti;
+      case 'groupEndingsAmAju':
+        return groupEndingsAmAju;
+      case 'groupEndingsEmUGati':
+        return groupEndingsEmUGati;
+      case 'groupEndingsEmUHati':
+        return groupEndingsEmUHati;
+      case 'groupEndingsEmUKati':
+        return groupEndingsEmUKati;
+      case 'groupEndingsEmUAvati':
+        return groupEndingsEmUAvati;
+      case 'groupEndingsEmUIvati':
+        return groupEndingsEmUIvati;
+      case 'groupEndingsEmUOvati':
+        return groupEndingsEmUOvati;
+      case 'groupEndingsEmUCi':
+        return groupEndingsEmUCi;
+      case 'groupEndingsEmEju':
+        return groupEndingsEmEju;
+      case 'groupIrregular':
+        return groupIrregular;
+      default:
+        return labelKey;
+    }
+  }
 }
