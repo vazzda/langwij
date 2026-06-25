@@ -6,7 +6,7 @@ import 'package:flessel/flessel.dart';
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
-import 'package:langwij/shared/nav_bar/nav_bar.dart';
+import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
 
 class ToolsPage extends ConsumerWidget {
   const ToolsPage({super.key});

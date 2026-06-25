@@ -4,12 +4,16 @@ import 'package:flessel/flessel.dart';
 
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
-import 'package:langwij/pages/vocab/vocab.dart';
-import 'package:langwij/pages/quiz/quiz.dart';
-import 'package:langwij/pages/language/language.dart';
-import 'package:langwij/pages/progress/progress.dart';
-import 'package:langwij/pages/tools/tools.dart';
-import 'package:langwij/pages/settings/settings.dart';
+import 'package:langwij/pages/language/language/language_page.dart';
+import 'package:langwij/pages/language/picker/lang_picker_page.dart';
+import 'package:langwij/pages/progress/ui/progress_page.dart';
+import 'package:langwij/pages/quiz/result/result_page.dart';
+import 'package:langwij/pages/quiz/round/round_page.dart';
+import 'package:langwij/pages/settings/ui/settings_page.dart';
+import 'package:langwij/pages/tools/agreement/agreement_page.dart';
+import 'package:langwij/pages/tools/conjugations/conjugations_page.dart';
+import 'package:langwij/pages/tools/home/tools_page.dart';
+import 'package:langwij/pages/vocab/ui/vocab_deck_list_page.dart';
 
 Page<void> _noTransitionPage(Widget child, GoRouterState state) {
   return NoTransitionPage<void>(

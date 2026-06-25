@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:flessel/flessel.dart';
 
 import 'package:langwij/l10n/app_localizations.dart';
-import 'package:langwij/shared/app/theme/services/theme_service.dart';
+import 'package:langwij/shared/app/theme/theme.dart';
 import 'package:langwij/boot/initialization.dart';
 import 'package:langwij/boot/router.dart';
 

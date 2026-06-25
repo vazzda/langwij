@@ -33,18 +33,37 @@ FSD's top-level divisions are renamed to **levels** in Classel. They describe pr
 - **Segment** — internal folder within a slice. Named after the layer it represents. Folder names match layer names.
 - **Layer** — architectural responsibility boundary. One of: model, repository, service, ui, @x. Governs what code is allowed to do — not where it sits. Segments are the physical folders; layers are the rules those folders follow.
 
-**Barrel files:** a barrel is a `.dart` file named after its slice (`group.dart`, `config.dart`), containing only `export` statements. It re-exports selected internals — public models, service, and UI components — and hides everything else. Consumers import the barrel, never the internal files directly. Segments (model/, service/, repository/, ui/) are invisible to the outside. The `@x/` folder contains separate barrels for cross-import APIs — one per consumer entity, each exporting a single cross-import service class.
+**Barrel files:** a barrel is a `.dart` file named after its slice (`group.dart`, `config.dart`), containing only `export` statements. It re-exports selected internals — public models and service — and hides everything else. Consumers import the barrel, never the internal files directly. Segments (model/, service/, repository/, ui/) are invisible to the outside. The `@x/` folder contains separate barrels for cross-import APIs — one per consumer entity, each exporting a single cross-import service class.
+
+Barrel scope: model + service only. UI widgets are public but not barrel-exported — consumers import them directly by file path. Repositories and internal services are never importable from outside the slice. This keeps the barrel focused on hiding internals without forcing Flutter/Material dependencies into pure-logic consumers.
 
 ## FSD Levels (top to bottom)
 
 - **boot** — application shell: initialization, routing. Imports everything, nothing imports it. No slices — flat files.
 - **pages** — screen shells that compose features and widgets. Thin — no business logic, no direct provider declarations. One slice per screen group.
 - **widgets** — reusable UI compositions that import from entities. Too smart for shared (entity-aware), too small for features (no standalone use case). Example: deck tile used across multiple pages.
-- **features** — user actions / use cases. Own UI, service, and optionally model and repository. Cannot import other features. Export a widget through barrel. Example: quiz round management.
+- **features** — user actions / use cases. Own UI, service, and optionally model and repository. Cannot import other features. Export model + service through barrel; UI imported directly by path. Example: quiz round management.
 - **entities** — domain concepts. Own model, repository, service, ui, @x cross-import surfaces. Avoid importing other entities except through @x. Example: Group, Progress, Dictionary.
 - **shared** — cross-cutting services, UI, models, repositories. No business domain. Imported freely by all levels above.
 
 Import rule: a module can only import from levels strictly below. No lateral imports within the same level. Exception: entity @x — domain entities naturally reference each other. FSD prohibits lateral imports, so @x is the controlled compromise.
+
+### Import Matrix
+
+| Level | Can import from | Cannot import from |
+|---|---|---|
+| `boot/` | pages, widgets, features, entities, shared | — (top level) |
+| `pages/` | widgets, features, entities, shared | boot, other pages |
+| `widgets/` | features, entities, shared | boot, pages, other widgets |
+| `features/` | entities, shared | boot, pages, widgets, other features |
+| `entities/` | shared, other entities via @x only | boot, pages, widgets, features |
+| `shared/` | — (bottom level) | everything above |
+
+No exceptions beyond entity @x. "Strictly below" means the matrix above — not adjacency, not "one level down," not "anything lower-sounding." If the cell says "cannot," no justification overrides it.
+
+### Composition Rule
+
+A slice name must be unique across all levels. If `group/` exists in `entities/`, no other level may have a slice named `group/`. Same concept at two levels is a structural violation — impossible to navigate, impossible to reason about ownership.
 
 Slice rule: shared, widgets, features, entities, and pages MUST contain slices. No files directly in the level folder. Every module is a slice with a barrel file and segments. Boot is the exception — flat files, no slices.
 
@@ -126,7 +145,7 @@ widgets/
 
 features/
   quiz/
-    quiz.dart                          <- barrel (exports service, model, UI)
+    quiz.dart                          <- barrel (exports model + service)
     model/
       missed_entry.dart                <- MissedEntry data class
       mode_selection.dart              <- ModeSelection data class
@@ -212,6 +231,8 @@ shared/
       model/
         app_settings.dart                <- AppSettings data class
         decay_formula.dart               <- DecayFormula enum
+        lang_codes.dart                  <- LangCodes (language code constants)
+        lang_grammar_profile.dart        <- LangGrammarProfile (per-language grammar rules)
         language_settings.dart           <- LanguageSettings data class
       repository/
         app_settings_repository.dart     <- AppSettingsRepository (SQLite)
@@ -219,13 +240,6 @@ shared/
       service/
         config_service.dart              <- ConfigService (language, settings mutations)
         config_internal_service.dart     <- ConfigInternalService (revision, internal providers)
-    constants/
-      constants.dart                     <- barrel
-      model/
-        app_constants.dart               <- AppConstants (DB name, question counts, misc)
-        app_routes.dart                  <- AppRoutes (route path strings)
-        lang_codes.dart                  <- LangCodes (language code constants)
-        lang_grammar_profile.dart        <- LangGrammarProfile (per-language grammar rules)
     database/
       database.dart                      <- barrel
       model/
@@ -236,6 +250,10 @@ shared/
       layout.dart                        <- barrel
       model/
         langwij_layout.dart              <- LangwijLayout (product-specific dimensions)
+    routing/
+      routing.dart                       <- barrel
+      model/
+        app_routes.dart                  <- AppRoutes (route path strings)
     theme/
       theme.dart                         <- barrel
       service/
@@ -250,7 +268,7 @@ shared/
 - **boot** — flat files, no slices. Initialization + routing. Imports everything, nothing imports it.
 - **pages** — one slice per screen group. Composes features and widgets — no business logic. Segments: model, repository, service, ui.
 - **widgets** — entity-aware reusable UI. Too smart for shared, too small for features. Segments: model, repository, service, ui.
-- **features** — one slice per domain action group. Exports entry widget via barrel. Segments: model, repository, service, ui.
+- **features** — one slice per domain action group. Exports model + service via barrel; UI imported directly. Segments: model, repository, service, ui.
 - **entities** — domain concepts. Full layered architecture. Segments: model, repository, service, ui, @x. One service class per visibility level.
 - **shared** — cross-cutting, no business domain. Sliced by concern (config, database, theme). Segments: model, repository, service, ui. Imported freely by all levels above.
 
@@ -283,7 +301,7 @@ Service visibility levels:
 - Models CANNOT have dependencies
 - Each class gets its own file. Every abstraction follows the same structural treatment — same file conventions, same naming pattern, same folder placement. A class with one static field is treated identically to a class with twenty. Size does not determine the pattern.
 - No `src/` folder — barrel controls visibility, not folder depth
-- Barrel file per slice — named after the slice (`group.dart`)
+- Barrel file per slice — named after the slice (`group.dart`). Exports model and service segments only. UI widgets are public but imported directly by path, not through the barrel. This keeps the barrel focused on hiding internals (repositories, internal services) without forcing Flutter/Material dependencies into pure-logic consumers.
 - `@x/` folder for cross-import barrels — one file per consumer entity
 - Only layers documented in the Classel Architecture are allowed. No inventing new layers silently — if the existing types are insufficient, a new layer must be explicitly proposed and approved before use.
 - Folders represent layers. No folder is allowed unless it maps to a layer documented in the Classel Architecture. No folder for convenience or organization without a documented concept behind it.
@@ -308,9 +326,9 @@ Revision signal convention:
 
 Compile-time module boundaries (multi-package monorepo) rejected as too heavy. Enforcement via:
 
-- Barrel files per slice — each module exports only its public API
+- Barrel files per slice — each module exports its model + service public API
 - `custom_lint` rules — flag imports that bypass barrel files across feature/entity boundaries
-- Import-path linting: "if import path contains `/features/X/` and importing file is not under `/features/X/`, it must import the barrel and nothing else"
+- Import-path linting: "if import path contains `/features/X/` or `/entities/X/` and importing file is not under that slice, model and service imports must go through the barrel. UI imports may reference the file directly. Repository and internal service imports are always forbidden from outside the slice."
 
 ### Precedent 2: Cross-cutting config in shared
 
@@ -321,6 +339,10 @@ Language settings and app settings are consumed by nearly every entity. If they 
 ### Precedent 3: One feature per domain action group
 
 A feature slice covers a full domain action group — not individual operations. `quiz` (round lifecycle, mode selection, answer checking, card generation) is one feature. Not `quiz-round` + `quiz-options` + `quiz-cards`. Granularity follows user intent, not technical operations.
+
+### Precedent 4: Fine-grained split for multi-entity features
+
+Features that span multiple entities or serve distinct use cases get their own slices — not one monolith. Each slice is independently composable.
 
 ---
 
@@ -384,7 +406,7 @@ This example validates the architecture end-to-end. A quiz round starts from a d
 **shared:**
 - `ConfigService.languageSettings` — cross-cutting language config
 - `DatabaseService` — SQLite provider
-- `AppConstants`, `AppRoutes` — app-wide constants
+- `AppRoutes` — route path constants
 
 **entities:**
 - **Group entity** — owns group model, card model, group repo. Public: `GroupService`.

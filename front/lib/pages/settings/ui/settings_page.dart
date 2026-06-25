@@ -6,9 +6,9 @@ import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/l10n/app_localizations_ext.dart';
 import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/shared/app/config/config.dart';
-import 'package:langwij/shared/nav_bar/nav_bar.dart';
+import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
 import 'package:langwij/shared/app/validators/validators.dart';
-import 'package:langwij/shared/app/theme/services/theme_service.dart';
+import 'package:langwij/shared/app/theme/theme.dart';
 
 class SettingsPage extends ConsumerStatefulWidget {
   const SettingsPage({super.key});

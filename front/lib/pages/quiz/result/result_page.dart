@@ -7,8 +7,9 @@ import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/entities/group/group.dart';
 import 'package:langwij/entities/progress/progress.dart';
 import 'package:langwij/features/quiz/quiz.dart';
+import 'package:langwij/features/quiz/ui/display_english.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
-import 'package:langwij/shared/bug_report/bug_report.dart';
+import 'package:langwij/shared/bug_report/ui/bug_report_sheet.dart';
 
 class ResultPage extends ConsumerWidget {
   const ResultPage({super.key});

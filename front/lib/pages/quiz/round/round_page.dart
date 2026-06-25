@@ -9,6 +9,8 @@ import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/entities/group/group.dart';
 import 'package:langwij/entities/progress/progress.dart';
 import 'package:langwij/features/quiz/quiz.dart';
+import 'package:langwij/features/quiz/ui/answer_tile.dart';
+import 'package:langwij/features/quiz/ui/display_english.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/l10n/app_localizations_ext.dart';
 import 'package:langwij/shared/app/layout/layout.dart';

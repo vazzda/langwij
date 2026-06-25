@@ -11,7 +11,7 @@ import 'package:langwij/entities/progress/progress.dart';
 import 'package:langwij/shared/app/config/config.dart';
 import 'language_page_service.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
-import 'package:langwij/shared/nav_bar/nav_bar.dart';
+import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
 import '../picker/lang_picker_page.dart';
 

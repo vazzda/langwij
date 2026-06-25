@@ -4,8 +4,8 @@ import 'package:flessel/flessel.dart';
 
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/entities/activity/activity.dart';
-import 'package:langwij/shared/nav_bar/nav_bar.dart';
-import 'package:langwij/widgets/vocab/vocab.dart';
+import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
+import 'package:langwij/widgets/vocab/daily_activity_card/vocab_daily_activity_card.dart';
 
 class ProgressPage extends ConsumerWidget {
   const ProgressPage({super.key});

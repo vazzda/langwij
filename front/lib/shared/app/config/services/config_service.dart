@@ -1,8 +1,10 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sqflite/sqflite.dart';
 
 import '../model/app_settings.dart';
 import '../model/decay_formula.dart';
 import '../model/language_settings.dart';
+import '../repository/language_settings_repository.dart';
 import 'config_internal_service.dart';
 
 class ConfigService {
@@ -10,6 +12,11 @@ class ConfigService {
   final Ref _ref;
 
   static final instance = Provider((ref) => ConfigService(ref));
+
+  // Pre-DI escape hatch — used by boot before the Riverpod container exists.
+  static Future<LanguageSettings> loadEagerly(Database db) async {
+    return LanguageSettingsRepository(db: db).load();
+  }
 
   static final languageSettings = FutureProvider<LanguageSettings>((ref) async {
     ref.watch(ConfigInternalService.revision);

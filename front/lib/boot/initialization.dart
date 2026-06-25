@@ -2,11 +2,11 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flessel/flessel.dart';
 
+import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/database/database.dart';
-import 'package:langwij/shared/app/config/repository/language_settings_repository.dart';
+import 'package:langwij/shared/app/theme/theme.dart';
 import 'package:langwij/shared/app/validators/validators.dart';
-import 'package:langwij/shared/app/theme/services/theme_service.dart';
-import 'package:langwij/shared/dev_section/services/dev_section_service.dart';
+import 'package:langwij/shared/dev_section/dev_section.dart';
 
 class AppInitialization {
   const AppInitialization._();
@@ -18,7 +18,7 @@ class AppInitialization {
 
     final db = await DatabaseService.openEagerly();
 
-    final langSettings = await LanguageSettingsRepository(db: db).load();
+    final langSettings = await ConfigService.loadEagerly(db);
 
     await StartupValidator.validate(
       targetLang: langSettings.targetLang,
