@@ -12,7 +12,7 @@ import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
 import 'package:langwij/features/quiz/ui/mode_selection_sheet.dart';
-import 'package:langwij/widgets/vocab/level_card/vocab_level_card.dart';
+import 'package:langwij/widgets/vocab/level_card/ui/vocab_level_card.dart';
 import 'package:langwij/widgets/vocab/vocab.dart';
 
 class VocabDeckListPage extends ConsumerStatefulWidget {

@@ -2,9 +2,10 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 
-import 'config_validator.dart';
+import '../model/config_validation_error.dart';
+import 'config_validation_service.dart';
 
-class StartupValidator {
+class StartupValidationService {
   static const String _planPath = 'assets/data/plan.json';
   static const String _dictionaryPath = 'assets/data/dictionary.json';
   static const String _levelsPath = 'assets/data/levels.json';
@@ -20,7 +21,7 @@ class StartupValidator {
     final dictRaw = await rootBundle.loadString(_dictionaryPath);
     final levelsRaw = await rootBundle.loadString(_levelsPath);
 
-    final ids = ConfigValidator.validateCore(
+    final ids = ConfigValidationService.validateCore(
       planData: planData,
       dictionaryData: jsonDecode(dictRaw) as Map<String, dynamic>,
       levelsData: jsonDecode(levelsRaw) as Map<String, dynamic>,
@@ -32,7 +33,7 @@ class StartupValidator {
       try {
         final raw = await rootBundle.loadString(path);
         final data = jsonDecode(raw) as Map<String, dynamic>;
-        ConfigValidator.validateTranslation(
+        ConfigValidationService.validateTranslation(
           code,
           data,
           ids.termIds,
@@ -92,7 +93,7 @@ class StartupValidator {
       }
     }
 
-    ConfigValidator.validateAll(
+    ConfigValidationService.validateAll(
       planData: planData,
       dictionaryData: jsonDecode(dictRaw) as Map<String, dynamic>,
       levelsData: jsonDecode(levelsRaw) as Map<String, dynamic>,

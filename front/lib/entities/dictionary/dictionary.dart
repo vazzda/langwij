@@ -3,6 +3,7 @@ export 'model/lang_entry.dart';
 export 'model/language_entry.dart';
 export 'model/language_pack.dart';
 export 'model/level.dart';
+export 'model/deck_meta.dart';
 export 'model/level_meta.dart';
 export 'model/level_tier.dart';
 export 'model/term.dart';

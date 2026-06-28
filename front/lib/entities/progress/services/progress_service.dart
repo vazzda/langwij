@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:langwij/entities/dictionary/dictionary.dart';
+import 'package:langwij/entities/dictionary/@x/progress.dart';
 import 'package:langwij/shared/app/config/config.dart';
 import '../model/quiz_mode.dart';
 import '../model/deck_progress.dart';

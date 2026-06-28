@@ -1,4 +1,8 @@
 import 'card_model.dart';
+import 'adjective_card.dart';
+import 'ending_card.dart';
+import 'noun_card.dart';
+import 'word_card.dart';
 
 enum GroupCategory { noun, adjective, verb, other }
 

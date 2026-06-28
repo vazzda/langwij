@@ -1,3 +1,4 @@
+import 'deck_meta.dart';
 import 'lang_entry.dart';
 import 'level_meta.dart';
 

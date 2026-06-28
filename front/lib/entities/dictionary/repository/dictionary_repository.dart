@@ -6,6 +6,7 @@ import '../model/dictionary.dart';
 import '../model/lang_entry.dart';
 import '../model/language_entry.dart';
 import '../model/language_pack.dart';
+import '../model/deck_meta.dart';
 import '../model/level_meta.dart';
 
 class DictionaryRepository {

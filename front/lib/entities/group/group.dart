@@ -1,4 +1,9 @@
+export 'model/adjective_card.dart';
 export 'model/card_model.dart';
+export 'model/ending_card.dart';
 export 'model/group_model.dart';
+export 'model/noun_card.dart';
+export 'model/phrase_card.dart';
 export 'model/test_result.dart';
+export 'model/word_card.dart';
 export 'services/group_service.dart';

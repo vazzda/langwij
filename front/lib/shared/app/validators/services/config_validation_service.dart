@@ -1,26 +1,9 @@
 import 'package:langwij/shared/app/config/config.dart';
 
-class ConfigValidationError implements Exception {
-  const ConfigValidationError(this.message);
-  final String message;
+import '../model/config_validation_error.dart';
+import '../model/core_validation_ids.dart';
 
-  @override
-  String toString() => 'ConfigValidationError: $message';
-}
-
-class CoreValidationIds {
-  const CoreValidationIds({
-    required this.termIds,
-    required this.deckIds,
-    required this.levelIds,
-  });
-
-  final Set<String> termIds;
-  final Set<String> deckIds;
-  final Set<String> levelIds;
-}
-
-class ConfigValidator {
+class ConfigValidationService {
   static const _allowedPos = {'verb', 'noun', 'adjective', 'adverb', 'other'};
 
   static CoreValidationIds validateCore({

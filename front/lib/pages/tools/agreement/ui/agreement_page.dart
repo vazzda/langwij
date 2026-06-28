@@ -13,7 +13,7 @@ import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/date_format/date_format.dart';
 import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
 import 'package:langwij/l10n/app_localizations_ext.dart';
-import '../conjugations/conjugations_page.dart' show retentionLabel;
+import '../../conjugations/ui/conjugations_page.dart' show retentionLabel;
 
 class AgreementPage extends ConsumerStatefulWidget {
   const AgreementPage({super.key});

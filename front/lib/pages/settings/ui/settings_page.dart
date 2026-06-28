@@ -28,7 +28,7 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
     if (_validating) return;
     setState(() => _validating = true);
     try {
-      await StartupValidator.validateAll();
+      await StartupValidationService.validateAll();
       if (mounted) {
         final l10n = AppLocalizations.of(context)!;
         FlesselSnackBar.show(context, l10n.settings_validateSuccess);

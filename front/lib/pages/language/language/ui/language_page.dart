@@ -9,11 +9,11 @@ import 'package:langwij/l10n/app_localizations_ext.dart';
 import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/entities/progress/progress.dart';
 import 'package:langwij/shared/app/config/config.dart';
-import 'language_page_service.dart';
+import '../service/language_page_service.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
-import '../picker/lang_picker_page.dart';
+import '../../picker/ui/lang_picker_page.dart';
 
 class LanguagePage extends ConsumerWidget {
   const LanguagePage({super.key});

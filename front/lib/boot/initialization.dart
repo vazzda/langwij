@@ -20,7 +20,7 @@ class AppInitialization {
 
     final langSettings = await ConfigService.loadEagerly(db);
 
-    await StartupValidator.validate(
+    await StartupValidationService.validate(
       targetLang: langSettings.targetLang,
       nativeLang: langSettings.nativeLang,
     );

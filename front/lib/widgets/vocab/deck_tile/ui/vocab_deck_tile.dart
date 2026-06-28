@@ -4,7 +4,7 @@ import 'package:flessel/flessel.dart';
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/shared/deck_icons/deck_icons.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
-import 'vocab_deck_tile_data.dart';
+import '../model/vocab_deck_tile_data.dart';
 
 class LangwijVocabDeckTile extends StatelessWidget {
   const LangwijVocabDeckTile({

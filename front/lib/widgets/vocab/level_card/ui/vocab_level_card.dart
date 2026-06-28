@@ -4,8 +4,8 @@ import 'package:flessel/flessel.dart';
 import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
-import '../deck_tile/vocab_deck_tile.dart';
-import '../deck_tile/vocab_deck_tile_data.dart';
+import '../../deck_tile/ui/vocab_deck_tile.dart';
+import '../../deck_tile/model/vocab_level_data.dart';
 import 'vocab_level_stats_row.dart';
 
 class LangwijVocabLevelCard extends StatelessWidget {
