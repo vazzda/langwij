@@ -10,7 +10,7 @@ Overarching principles. Apply across all groups, all projects, all platforms.
 
 ## B -- Boundaries
 
-**B1. Layer separation.** Data, service, UI are distinct layers. Specific pattern (MVC, MVVM, MVP) is per-project, documented in `arch.md`. The separation is non-negotiable.
+**B1. Layer separation.** Data, service, UI are distinct layers. Specific pattern (CLASSEl, MVC, MVVM, MVP) is per-project, documented in `arch.md`. The separation is non-negotiable.
 
 **B2. Top-down dependency direction.** High-level modules never import low-level modules. UI depends on services, services depend on repositories. Never reversed. Lower layers communicate upward only through reactive mechanisms (streams, signals, observers, callbacks).
 
@@ -91,10 +91,10 @@ Overarching principles. Apply across all groups, all projects, all platforms.
 
 ## D -- Documentation
 
-**D1. Mandatory project files.** Every project has `arch.md` and `modulemap.md` in the project root. No file? Create it before writing code.
+**D1. Mandatory project files.** Every project has `arch.md` and `*-map.md, like fsd-map, module-map, depends on the arch` in the project root. No file? Create it before writing code.
 
 **D2. arch.md -- written first.** Created before any code. Sections: Stack, Layer pattern, State flow model, Dependency direction, Encapsulation conventions, Error handling strategy, Naming conventions. Changes rarely -- only when an architectural decision changes, applied as a deliberate migration.
 
-**D3. modulemap.md -- module-first.** Organized by code module. Each module lists: what it owns, what screens/consumers it serves, its dependencies, its public API. This is the responsibility enumeration -- a growing list is the signal that a module needs splitting.
+**D3. fsd-map, module-map.md -- structure-first.** Organized by code module. Each module lists: what it owns, what screens/consumers it serves, its dependencies, its public API according to arch.md and chosen architecutre. 
 
 **D4. Same-commit updates.** When code changes a module's responsibilities, public API, or ownership -- `modulemap.md` is updated in the same commit. Never trailing. Stale documentation is a violation.
