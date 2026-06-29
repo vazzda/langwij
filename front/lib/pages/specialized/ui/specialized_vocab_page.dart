@@ -15,15 +15,15 @@ import 'package:langwij/features/quiz/ui/mode_selection_sheet.dart';
 import 'package:langwij/widgets/vocab/level_card/ui/vocab_level_card.dart';
 import 'package:langwij/widgets/vocab/vocab.dart';
 
-class VocabDeckListPage extends ConsumerStatefulWidget {
-  const VocabDeckListPage({super.key});
+class SpecializedVocabPage extends ConsumerStatefulWidget {
+  const SpecializedVocabPage({super.key});
 
   @override
-  ConsumerState<VocabDeckListPage> createState() =>
-      _VocabDeckListPageState();
+  ConsumerState<SpecializedVocabPage> createState() =>
+      _SpecializedVocabPageState();
 }
 
-class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
+class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
   final _scrollController = ScrollController();
   double? _pendingScrollOffset;
   bool _scrollRestored = false;
@@ -81,13 +81,12 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
     final nativePack = asyncNative.valueOrNull;
     final allProgress = asyncProgress.valueOrNull ?? {};
     final settings = asyncSettings.valueOrNull;
-    final foldOverrides = ref.watch(ConfigService.levelFoldOverrides).valueOrNull ?? {};
 
     if (dictionary == null || targetPack == null || nativePack == null || settings == null) {
       final hasError =
           asyncDict.hasError || asyncTarget.hasError || asyncNative.hasError;
       return LangwijScaffold(
-        title: l10n.navVocabulary,
+        title: l10n.navSpecialized,
         child: Center(
           child: hasError
               ? Text(l10n.loadError)
@@ -96,7 +95,16 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       );
     }
 
-    final levels = _buildLevels(
+    final specializedLevel = _findSpecializedLevel(dictionary);
+    if (specializedLevel == null) {
+      return LangwijScaffold(
+        title: l10n.navSpecialized,
+        child: Center(child: Text(l10n.loadError)),
+      );
+    }
+
+    final levelData = _buildLevelData(
+      level: specializedLevel,
       dictionary: dictionary,
       nativePack: nativePack,
       targetPack: targetPack,
@@ -105,35 +113,22 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       settings: settings,
     );
 
-    final firstLevelId = dictionary.levels.first.id;
-    final lastLevelId = dictionary.levels.last.id;
+    final title = nativePack.levelMeta[specializedLevel.id]?.name
+        ?? l10n.navSpecialized;
 
     return LangwijScaffold(
-      title: l10n.navVocabulary,
-      child: ListView.separated(
+      title: title,
+      child: ListView(
         controller: _scrollController,
         padding: FlesselLayout.screenPaddingInsets(context).copyWith(
           bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
         ),
-        itemCount: levels.length,
-        separatorBuilder: (_, _) => const FlesselGap.m(),
-        itemBuilder: (context, index) {
-          final level = levels[index];
-          final levelId = level.level.id;
-          final isExpanded = _isLevelExpanded(
-            levelId: levelId,
-            firstLevelId: firstLevelId,
-            lastLevelId: lastLevelId,
-            overrides: foldOverrides,
-          );
-          return LangwijVocabLevelCard(
-            item: level,
+        children: [
+          LangwijVocabLevelCard(
+            item: levelData,
             l10n: l10n,
-            isExpanded: isExpanded,
-            onToggle: () => ref.read(ConfigService.instance).toggleLevelFold(
-              levelId,
-              currentlyExpanded: isExpanded,
-            ),
+            isExpanded: true,
+            onToggle: () {},
             onDeckTap: (deck, cardCount) => _onDeckTap(
               context,
               deck,
@@ -143,13 +138,21 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
               cardCount,
               l10n,
             ),
-          );
-        },
+          ),
+        ],
       ),
     );
   }
 
-  List<VocabLevelData> _buildLevels({
+  Level? _findSpecializedLevel(Dictionary dictionary) {
+    for (final level in dictionary.levels) {
+      if (level.id == Level.specializedLevelId) return level;
+    }
+    return null;
+  }
+
+  VocabLevelData _buildLevelData({
+    required Level level,
     required Dictionary dictionary,
     required LanguagePack nativePack,
     required LanguagePack targetPack,
@@ -158,83 +161,70 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
     required AppSettings settings,
   }) {
     final decksById = dictionary.decksById;
-    final result = <VocabLevelData>[];
+    final tier = levelTiers[level.id] ?? LevelTier.premium;
+    final levelName = nativePack.levelMeta[level.id]?.name ?? level.id;
+    final levelDesc = nativePack.levelMeta[level.id]?.description;
 
-    for (final level in dictionary.levels) {
-      if (level.id == Level.specializedLevelId) continue;
-      final tier = levelTiers[level.id] ?? LevelTier.premium;
-      final levelName = nativePack.levelMeta[level.id]?.name ?? level.id;
-      final levelDesc = nativePack.levelMeta[level.id]?.description;
+    final decks = <VocabDeckCardData>[];
+    for (final deckId in level.deckIds) {
+      final deck = decksById[deckId];
+      if (deck == null) continue;
 
-      final decks = <VocabDeckCardData>[];
-      for (final deckId in level.deckIds) {
-        final deck = decksById[deckId];
-        if (deck == null) continue;
-
-        final cardCount = _countCards(deck, targetPack, nativePack);
-        final progress = allProgress[deckId];
-        final deckName = nativePack.deckMeta[deckId]?.name ?? deck.id;
-        final retention = progress != null
-            ? ProgressCalculator.calculateRetention(
-                progress,
-                settings.decayFormula,
-              )
-            : 0.0;
-        final percentage =
-            progress != null && progress.recentRounds.isNotEmpty
-            ? progress.totalProgress.round()
-            : null;
-        final words = <String>[];
-        for (final cid in deck.termIds) {
-          final entry = targetPack.translations[cid];
-          if (entry == null) continue;
-          if (entry is SimpleEntry) {
-            words.add(entry.text);
-          } else if (entry is AspectPairEntry) {
-            words.add(entry.imperfective);
-          } else if (entry is AdjectiveEntry) {
-            words.add(entry.m);
-          }
+      final cardCount = _countCards(deck, targetPack, nativePack);
+      final progress = allProgress[deckId];
+      final deckName = nativePack.deckMeta[deckId]?.name ?? deck.id;
+      final retention = progress != null
+          ? ProgressCalculator.calculateRetention(
+              progress,
+              settings.decayFormula,
+            )
+          : 0.0;
+      final percentage =
+          progress != null && progress.recentRounds.isNotEmpty
+          ? progress.totalProgress.round()
+          : null;
+      final words = <String>[];
+      for (final cid in deck.termIds) {
+        final entry = targetPack.translations[cid];
+        if (entry == null) continue;
+        if (entry is SimpleEntry) {
+          words.add(entry.text);
+        } else if (entry is AspectPairEntry) {
+          words.add(entry.imperfective);
+        } else if (entry is AdjectiveEntry) {
+          words.add(entry.m);
         }
-
-        decks.add(
-          VocabDeckCardData(
-            deck: deck,
-            name: deckName,
-            icon: deck.icon,
-            cardCount: cardCount,
-            words: words,
-            percentage: percentage,
-            progress: progress,
-            retention: retention,
-          ),
-        );
       }
 
-      final levelProgress = _computeLevelProgress(decks);
-      final latestDate = _computeLatestDate(decks);
-      final strengthLevel = _computeStrengthLevel(
-        decks,
-        levelProgress,
-        settings,
-      );
-
-      result.add(
-        VocabLevelData(
-          level: level,
-          name: levelName,
-          description: levelDesc,
-          tier: tier,
-          levelProgress: levelProgress,
-          decks: decks,
-          latestDate: latestDate,
-          strengthLevel: strengthLevel,
-          totalCardCount: decks.fold(0, (s, g) => s + g.cardCount),
+      decks.add(
+        VocabDeckCardData(
+          deck: deck,
+          name: deckName,
+          icon: deck.icon,
+          cardCount: cardCount,
+          words: words,
+          percentage: percentage,
+          progress: progress,
+          retention: retention,
         ),
       );
     }
 
-    return result;
+    final levelProgress = _computeLevelProgress(decks);
+    final latestDate = _computeLatestDate(decks);
+    final strengthLevel = _computeStrengthLevel(decks, levelProgress, settings);
+
+    return VocabLevelData(
+      level: level,
+      name: levelName,
+      description: levelDesc,
+      tier: tier,
+      levelProgress: levelProgress,
+      decks: decks,
+      latestDate: latestDate,
+      strengthLevel: strengthLevel,
+      totalCardCount: decks.fold(0, (s, g) => s + g.cardCount),
+    );
   }
 
   double _computeLevelProgress(List<VocabDeckCardData> decks) {
@@ -272,18 +262,6 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
         withRounds.map((g) => g.retention).reduce((a, b) => a + b) /
         withRounds.length;
     return ProgressCalculator.getRetentionLevel(avgRetention, levelProgress);
-  }
-
-  bool _isLevelExpanded({
-    required String levelId,
-    required String firstLevelId,
-    required String lastLevelId,
-    required Map<String, bool> overrides,
-  }) {
-    if (overrides.containsKey(levelId)) return overrides[levelId]!;
-    if (levelId == firstLevelId) return true;
-    if (levelId == lastLevelId) return true;
-    return false;
   }
 
   int _countCards(
@@ -347,7 +325,7 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
           nativePack: nativePack,
           mode: selection.mode,
           questionCount: selectedCount,
-          originRoute: AppRoutes.home,
+          originRoute: AppRoutes.specialized,
           originScrollOffset: scrollOffset,
           isTest: selection.isTest,
         );

@@ -1,4 +1,6 @@
 class Level {
+  static const String specializedLevelId = 'specialized';
+
   const Level({required this.id, required this.deckIds});
 
   final String id;

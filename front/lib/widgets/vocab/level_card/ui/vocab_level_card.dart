@@ -4,9 +4,8 @@ import 'package:flessel/flessel.dart';
 import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
-import '../../deck_tile/ui/vocab_deck_tile.dart';
-import '../../deck_tile/model/vocab_level_data.dart';
-import 'vocab_level_stats_row.dart';
+import '../../deck_card/ui/vocab_deck_card.dart';
+import '../../deck_card/model/vocab_level_data.dart';
 
 class LangwijVocabLevelCard extends StatelessWidget {
   const LangwijVocabLevelCard({
@@ -57,6 +56,13 @@ class LangwijVocabLevelCard extends StatelessWidget {
                         size: FlesselLayout.iconS,
                         color: t.fgSecondary,
                       ),
+                    Icon(
+                      isExpanded
+                          ? PhosphorIconsRegular.caretDown
+                          : PhosphorIconsRegular.caretRight,
+                      size: FlesselLayout.iconS,
+                      color: t.fgSecondary,
+                    ),
                   ],
                 ),
                 const FlesselGap.s(),
@@ -86,6 +92,13 @@ class LangwijVocabLevelCard extends StatelessWidget {
                         style: counterStyle,
                       ),
                     ),
+                    const FlesselGap.xs(),
+                    FlesselButton(
+                      variant: FlesselVariant.accent,
+                      label: l10n.vocab_train,
+                      onPressed: item.levelProgress >= 100.0 ? () {} : null,
+                      size: FlesselSize.s,
+                    ),
                   ],
                 ),
               ],
@@ -103,32 +116,13 @@ class LangwijVocabLevelCard extends StatelessWidget {
               ),
               const FlesselGap.s(),
             ],
-            LayoutBuilder(
-              builder: (context, constraints) {
-                final n = ((constraints.maxWidth + FlesselLayout.gapM) /
-                        (LangwijLayout.vocabTileMinWidth + FlesselLayout.gapM))
-                    .floor()
-                    .clamp(1, 100);
-                final tileWidth =
-                    (constraints.maxWidth - FlesselLayout.gapM * (n - 1)) / n;
-                return Wrap(
-                  spacing: FlesselLayout.gapM,
-                  runSpacing: FlesselLayout.gapM,
-                  children: item.decks
-                      .map(
-                        (g) => LangwijVocabDeckTile(
-                          item: g,
-                          l10n: l10n,
-                          width: tileWidth,
-                          onTap: () => onDeckTap(g.deck, g.cardCount),
-                        ),
-                      )
-                      .toList(),
-                );
-              },
+            ...item.decks.map(
+              (g) => LangwijVocabDeckCard(
+                item: g,
+                l10n: l10n,
+                onTap: () => onDeckTap(g.deck, g.cardCount),
+              ),
             ),
-            const FlesselGap.l(),
-            LangwijVocabLevelStatsRow(item: item, l10n: l10n),
           ],
         ],
       ),

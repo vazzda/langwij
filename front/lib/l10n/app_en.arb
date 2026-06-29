@@ -175,6 +175,7 @@
   "navLanguage": "Language",
   "navProgress": "Progress",
   "navVocabulary": "Vocabulary",
+  "navSpecialized": "Specialized",
   "navTools": "Tools",
   "navSettings": "Settings",
   "underDevelopmentTitle": "Coming soon",
@@ -261,6 +262,9 @@
   "quiz_aspectPairPrompt": "Type both aspect forms",
 
   "vocab_train": "Train",
+  "vocab_studied": "Studied",
+  "vocab_trained": "Trained",
+  "vocab_lastTrained": "last trained:",
 
   "result_techWork": "Tech work — no progress contribution",
 

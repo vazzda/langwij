@@ -1,8 +1,8 @@
 import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/entities/progress/progress.dart';
 
-class VocabDeckTileData {
-  VocabDeckTileData({
+class VocabDeckCardData {
+  VocabDeckCardData({
     required this.deck,
     required this.name,
     required this.cardCount,

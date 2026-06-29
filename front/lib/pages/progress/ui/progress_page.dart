@@ -4,7 +4,7 @@ import 'package:flessel/flessel.dart';
 
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/entities/activity/activity.dart';
-import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
+import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/widgets/vocab/daily_activity_card/ui/vocab_daily_activity_card.dart';
 
 class ProgressPage extends ConsumerWidget {
@@ -15,17 +15,11 @@ class ProgressPage extends ConsumerWidget {
     final l10n = AppLocalizations.of(context)!;
     final asyncStats = ref.watch(ActivityService.todayStats);
 
-    return FlesselScaffold(
+    return LangwijScaffold(
       title: l10n.navProgress,
-      uppercaseTitle: true,
-      navBarItems: LangwijMainNavBar.items(context),
-      navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
-      notchedNavBar: true,
-      navBarSize: FlesselSize.s,
-      floatingActionButton: LangwijMainNavBar.fab(context),
       child: ListView(
         padding: FlesselLayout.screenPaddingInsets(context).copyWith(
-          bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+          bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
         ),
         children: [
           LangwijVocabDailyActivityCard(

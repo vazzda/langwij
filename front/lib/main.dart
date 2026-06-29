@@ -12,7 +12,9 @@ import 'package:langwij/boot/router.dart';
 Future<void> main() async {
   await AppInitialization.run();
 
-  final router = createAppRouter();
+  final router = createAppRouter(
+    isLanguageConfigured: AppInitialization.isLanguageConfigured,
+  );
 
   runApp(
     ProviderScope(

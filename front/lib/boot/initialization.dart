@@ -12,6 +12,7 @@ class AppInitialization {
   const AppInitialization._();
 
   static late final String savedThemeId;
+  static late final bool isLanguageConfigured;
 
   static Future<void> run() async {
     WidgetsFlutterBinding.ensureInitialized();
@@ -28,6 +29,7 @@ class AppInitialization {
     FlutterNativeSplash.preserve(widgetsBinding: WidgetsBinding.instance);
 
     savedThemeId = await ThemeService.load();
+    isLanguageConfigured = await ConfigService.hasConfiguredLanguages();
     await FlesselDevGate.init(
       load: DevSectionService.load,
       save: DevSectionService.save,

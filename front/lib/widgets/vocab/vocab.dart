@@ -1,1 +1,1 @@
-export 'deck_tile/deck_tile.dart';
+export 'deck_card/deck_card.dart';

@@ -11,7 +11,7 @@ import 'package:langwij/entities/progress/progress.dart';
 import 'package:langwij/shared/app/config/config.dart';
 import '../service/language_page_service.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
-import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
+import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
 import '../../picker/ui/lang_picker_page.dart';
 
@@ -33,26 +33,14 @@ class LanguagePage extends ConsumerWidget {
     final settings = asyncSettings.valueOrNull;
 
     if (langSettings == null || settings == null) {
-      return FlesselScaffold(
+      return LangwijScaffold(
         title: l10n.navLanguage,
-        uppercaseTitle: true,
-        navBarItems: LangwijMainNavBar.items(context),
-        navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
-        notchedNavBar: true,
-        navBarSize: FlesselSize.xs,
-        floatingActionButton: LangwijMainNavBar.fab(context),
         child: const Center(child: FlesselSpinner()),
       );
     }
 
-    return FlesselScaffold(
+    return LangwijScaffold(
       title: l10n.navLanguage,
-      uppercaseTitle: true,
-      navBarItems: LangwijMainNavBar.items(context),
-      navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
-      notchedNavBar: true,
-      navBarSize: FlesselSize.xs,
-      floatingActionButton: LangwijMainNavBar.fab(context),
       child: asyncAllPacks.when(
         loading: () => const Center(child: FlesselSpinner()),
         error: (_, _) => Center(child: Text(l10n.loadError)),
@@ -61,7 +49,7 @@ class LanguagePage extends ConsumerWidget {
 
           return ListView(
             padding: FlesselLayout.screenPaddingInsets(context).copyWith(
-              bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+              bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
             ),
             children: [
               _LangPairSelector(

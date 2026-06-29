@@ -9,4 +9,5 @@ class AppRoutes {
   static const String tools = '/tools';
   static const String settings = '/settings';
   static const String langPicker = '/lang-picker';
+  static const String specialized = '/specialized';
 }

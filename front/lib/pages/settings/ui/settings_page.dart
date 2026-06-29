@@ -6,7 +6,7 @@ import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/l10n/app_localizations_ext.dart';
 import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/shared/app/config/config.dart';
-import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
+import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/shared/app/validators/validators.dart';
 import 'package:langwij/shared/app/theme/theme.dart';
 
@@ -54,17 +54,11 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
 
     final langSettings = asyncLangSettings.valueOrNull;
 
-    return FlesselScaffold(
+    return LangwijScaffold(
       title: l10n.settingsTitle,
-      uppercaseTitle: true,
-      navBarItems: LangwijMainNavBar.items(context),
-      navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
-      notchedNavBar: true,
-      navBarSize: FlesselSize.s,
-      floatingActionButton: LangwijMainNavBar.fab(context),
       child: ListView(
         padding: FlesselLayout.screenPaddingInsets(context).copyWith(
-          bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+          bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
         ),
         children: [
           if (langSettings != null)

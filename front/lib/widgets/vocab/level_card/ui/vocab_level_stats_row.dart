@@ -4,7 +4,7 @@ import 'package:flessel/flessel.dart';
 import 'package:langwij/entities/progress/progress.dart';
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/shared/date_format/date_format.dart';
-import '../../deck_tile/model/vocab_level_data.dart';
+import '../../deck_card/model/vocab_level_data.dart';
 
 class LangwijVocabLevelStatsRow extends StatelessWidget {
   const LangwijVocabLevelStatsRow({

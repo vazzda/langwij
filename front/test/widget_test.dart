@@ -6,7 +6,7 @@ import 'package:langwij/boot/router.dart';
 
 void main() {
   testWidgets('App starts and shows group list', (WidgetTester tester) async {
-    final router = createAppRouter();
+    final router = createAppRouter(isLanguageConfigured: true);
     await tester.pumpWidget(
       ProviderScope(
         child: LangwijApp(router: router),

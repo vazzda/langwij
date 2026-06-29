@@ -140,6 +140,10 @@ lib/
 │   │       └── ui/
 │   │           └── tools_page.dart                     tools hub screen
 │   │
+│   ├── specialized/                               specialized vocabulary
+│   │   └── ui/
+│   │       └── specialized_vocab_page.dart            specialized vocab deck screen
+│   │
 │   └── vocab/                                     vocabulary deck list
 │       └── ui/
 │           └── vocab_deck_list_page.dart             deck list screen
@@ -149,18 +153,18 @@ lib/
 │       ├── daily_activity_card/                     activity card subslice
 │       │   └── ui/
 │       │       └── vocab_daily_activity_card.dart      daily activity card widget
-│       ├── deck_tile/                               deck tile subslice
+│       ├── deck_card/                               deck card subslice
 │       │   ├── model/
-│       │   │   ├── vocab_deck_tile_data.dart            VocabDeckTileData
+│       │   │   ├── vocab_deck_card_data.dart            VocabDeckCardData
 │       │   │   └── vocab_level_data.dart                VocabLevelData
 │       │   ├── ui/
-│       │   │   └── vocab_deck_tile.dart                 LangwijVocabDeckTile widget
-│       │   └── deck_tile.dart                         barrel (exports model/)
+│       │   │   └── vocab_deck_card.dart                 LangwijVocabDeckCard widget
+│       │   └── deck_card.dart                         barrel (exports model/)
 │       ├── level_card/                              level card subslice
 │       │   └── ui/
 │       │       ├── vocab_level_card.dart                LangwijVocabLevelCard widget
 │       │       └── vocab_level_stats_row.dart           LangwijVocabLevelStatsRow widget
-│       └── vocab.dart                               slice barrel (re-exports deck_tile)
+│       └── vocab.dart                               slice barrel (re-exports deck_card)
 │
 ├── shared/                                      — infrastructure, no domain
 │   ├── app/                                       app-infrastructure subslice group
@@ -237,7 +241,8 @@ lib/
 │   │
 │   └── nav_bar/                                   bottom navigation bar
 │       └── ui/
-│           └── main_nav_bar.dart                    MainNavBar (bottom navigation bar builder)
+│           ├── langwij_scaffold.dart                 LangwijScaffold (app scaffold with shared navbar + app bar actions)
+│           └── main_nav_bar.dart                    LangwijMainNavBar (navbar items + index resolver)
 │
 └── l10n/                                        — localization (outside FSD — Flutter convention)
     ├── app_en.arb                                 English strings (source of truth)

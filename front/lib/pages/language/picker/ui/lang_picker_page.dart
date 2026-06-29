@@ -8,7 +8,7 @@ import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/l10n/app_localizations_ext.dart';
 import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/shared/app/config/config.dart';
-import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
+import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
 
 enum LangPickerMode { native, target }
@@ -28,22 +28,16 @@ class LangPickerPage extends ConsumerWidget {
       LangPickerMode.target => l10n.language_iLearn,
     };
 
-    return FlesselScaffold(
+    return LangwijScaffold(
       title: title,
-      uppercaseTitle: true,
       onBackPressed: () => context.pop(),
-      navBarItems: LangwijMainNavBar.items(context),
-      navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
-      notchedNavBar: true,
-      navBarSize: FlesselSize.xs,
-      floatingActionButton: LangwijMainNavBar.fab(context),
       child: asyncAllPacks.when(
         loading: () => const Center(child: FlesselSpinner()),
         error: (_, _) => Center(child: Text(l10n.loadError)),
         data: (packs) {
           return ListView.separated(
             padding: FlesselLayout.screenPaddingInsets(context).copyWith(
-              bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+              bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
             ),
             itemCount: packs.length,
             separatorBuilder: (_, _) => const FlesselGap.s(),

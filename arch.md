@@ -2,7 +2,7 @@
 - Language: Dart
 - Framework: Flutter
 - State management: Riverpod (flutter_riverpod)
-- Persistence: SQLite via sqflite (structured data)
+- Persistence: SQLite via sqflite (structured data), SharedPreferences (lightweight key-value flags)
 - Error reporting: Cresset (cressetRecordError) — not yet integrated, pending adoption
 - Navigation: GoRouter (go_router)
 - Localization: Flutter gen-l10n (AppLocalizations)

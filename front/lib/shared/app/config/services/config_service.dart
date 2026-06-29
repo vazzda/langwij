@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../model/app_settings.dart';
@@ -6,6 +7,8 @@ import '../model/decay_formula.dart';
 import '../model/language_settings.dart';
 import '../repository/language_settings_repository.dart';
 import 'config_internal_service.dart';
+
+const _hasConfiguredLanguagesKey = 'has_configured_languages';
 
 class ConfigService {
   ConfigService(this._ref);
@@ -16,6 +19,16 @@ class ConfigService {
   // Pre-DI escape hatch — used by boot before the Riverpod container exists.
   static Future<LanguageSettings> loadEagerly(Database db) async {
     return LanguageSettingsRepository(db: db).load();
+  }
+
+  static Future<bool> hasConfiguredLanguages() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getBool(_hasConfiguredLanguagesKey) ?? false;
+  }
+
+  static Future<void> _markLanguagesConfigured() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_hasConfiguredLanguagesKey, true);
   }
 
   static final languageSettings = FutureProvider<LanguageSettings>((ref) async {
@@ -40,12 +53,14 @@ class ConfigService {
   Future<void> setTargetLang(String code) async {
     final repo = await _ref.read(ConfigInternalService.langSettingsRepository.future);
     await repo.setTargetLang(code);
+    await _markLanguagesConfigured();
     _ref.read(ConfigInternalService.revision.notifier).state++;
   }
 
   Future<void> setNativeLang(String code) async {
     final repo = await _ref.read(ConfigInternalService.langSettingsRepository.future);
     await repo.setNativeLang(code);
+    await _markLanguagesConfigured();
     _ref.read(ConfigInternalService.revision.notifier).state++;
   }
 

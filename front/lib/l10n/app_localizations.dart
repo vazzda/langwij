@@ -622,6 +622,12 @@ abstract class AppLocalizations {
   /// **'Vocabulary'**
   String get navVocabulary;
 
+  /// No description provided for @navSpecialized.
+  ///
+  /// In en, this message translates to:
+  /// **'Specialized'**
+  String get navSpecialized;
+
   /// No description provided for @navTools.
   ///
   /// In en, this message translates to:
@@ -891,6 +897,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Train'**
   String get vocab_train;
+
+  /// No description provided for @vocab_studied.
+  ///
+  /// In en, this message translates to:
+  /// **'Studied'**
+  String get vocab_studied;
+
+  /// No description provided for @vocab_trained.
+  ///
+  /// In en, this message translates to:
+  /// **'Trained'**
+  String get vocab_trained;
+
+  /// No description provided for @vocab_lastTrained.
+  ///
+  /// In en, this message translates to:
+  /// **'last trained:'**
+  String get vocab_lastTrained;
 
   /// No description provided for @result_techWork.
   ///

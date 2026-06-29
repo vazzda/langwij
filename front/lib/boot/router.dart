@@ -13,6 +13,7 @@ import 'package:langwij/pages/settings/ui/settings_page.dart';
 import 'package:langwij/pages/tools/agreement/ui/agreement_page.dart';
 import 'package:langwij/pages/tools/conjugations/ui/conjugations_page.dart';
 import 'package:langwij/pages/tools/home/ui/tools_page.dart';
+import 'package:langwij/pages/specialized/ui/specialized_vocab_page.dart';
 import 'package:langwij/pages/vocab/ui/vocab_deck_list_page.dart';
 
 Page<void> _noTransitionPage(Widget child, GoRouterState state) {
@@ -52,9 +53,9 @@ Page<void> _slidePage(BuildContext context, Widget child, GoRouterState state) {
   );
 }
 
-GoRouter createAppRouter() {
+GoRouter createAppRouter({required bool isLanguageConfigured}) {
   return GoRouter(
-    initialLocation: AppRoutes.home,
+    initialLocation: isLanguageConfigured ? AppRoutes.home : AppRoutes.language,
     routes: [
       GoRoute(
         path: AppRoutes.home,
@@ -81,6 +82,13 @@ GoRouter createAppRouter() {
         path: AppRoutes.tools,
         pageBuilder: (context, state) => _noTransitionPage(
           const ToolsPage(),
+          state,
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.specialized,
+        pageBuilder: (context, state) => _noTransitionPage(
+          const SpecializedVocabPage(),
           state,
         ),
       ),

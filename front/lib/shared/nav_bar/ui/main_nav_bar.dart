@@ -14,16 +14,16 @@ class LangwijMainNavBar {
     final l10n = AppLocalizations.of(context)!;
     return [
       FlesselNavBarItem(
-        icon: PhosphorIconsRegular.globe,
-        activeIcon: PhosphorIconsFill.globe,
-        tooltip: l10n.navLanguage,
-        onTap: () => context.go(AppRoutes.language),
+        icon: PhosphorIconsRegular.books,
+        activeIcon: PhosphorIconsFill.books,
+        tooltip: l10n.navVocabulary,
+        onTap: () => context.go(AppRoutes.home),
       ),
       FlesselNavBarItem(
-        icon: PhosphorIconsRegular.chartLine,
-        activeIcon: PhosphorIconsFill.chartLine,
-        tooltip: l10n.navProgress,
-        onTap: () => context.go(AppRoutes.progress),
+        icon: PhosphorIconsRegular.graduationCap,
+        activeIcon: PhosphorIconsFill.graduationCap,
+        tooltip: l10n.navSpecialized,
+        onTap: () => context.go(AppRoutes.specialized),
       ),
       FlesselNavBarItem(
         icon: PhosphorIconsRegular.puzzlePiece,
@@ -32,40 +32,35 @@ class LangwijMainNavBar {
         onTap: () => context.go(AppRoutes.tools),
       ),
       FlesselNavBarItem(
-        icon: PhosphorIconsRegular.gearSix,
-        activeIcon: PhosphorIconsFill.gearSix,
-        tooltip: l10n.navSettings,
-        onTap: () => context.go(AppRoutes.settings),
-        devGate: FlesselDevGateConfig(
-          passwordHashes: [_devAccessPasswordHash],
-          title: l10n.dev_enterPassword,
-          unlockLabel: l10n.dev_unlock,
-          cancelLabel: l10n.cancel,
-          errorMessage: l10n.dev_wrongPassword,
-        ),
+        icon: PhosphorIconsRegular.globe,
+        activeIcon: PhosphorIconsFill.globe,
+        tooltip: l10n.navLanguage,
+        onTap: () => context.go(AppRoutes.language),
       ),
     ];
   }
 
-  static Widget fab(BuildContext context) {
-    final isActive = GoRouterState.of(context).uri.path == AppRoutes.home;
-    return FlesselFab(
-      onPressed: () => context.go(AppRoutes.home),
-      accented: isActive,
-      child: Icon(isActive ? PhosphorIconsFill.books : PhosphorIconsRegular.books),
+  static FlesselDevGateConfig settingsDevGateConfig(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return FlesselDevGateConfig(
+      passwordHashes: [_devAccessPasswordHash],
+      title: l10n.dev_enterPassword,
+      unlockLabel: l10n.dev_unlock,
+      cancelLabel: l10n.cancel,
+      errorMessage: l10n.dev_wrongPassword,
     );
   }
 
   static int currentIndex(BuildContext context) {
     final path = GoRouterState.of(context).uri.path;
-    if (path == AppRoutes.language) return 0;
-    if (path == AppRoutes.progress) return 1;
+    if (path == AppRoutes.home) return 0;
+    if (path == AppRoutes.specialized) return 1;
     if (path == AppRoutes.tools ||
         path == AppRoutes.conjugations ||
         path == AppRoutes.agreement) {
       return 2;
     }
-    if (path == AppRoutes.settings) return 3;
+    if (path == AppRoutes.language) return 3;
     return -1;
   }
 }

@@ -303,6 +303,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navVocabulary => 'Vocabulary';
 
   @override
+  String get navSpecialized => 'Specialized';
+
+  @override
   String get navTools => 'Tools';
 
   @override
@@ -449,6 +452,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get vocab_train => 'Train';
+
+  @override
+  String get vocab_studied => 'Studied';
+
+  @override
+  String get vocab_trained => 'Trained';
+
+  @override
+  String get vocab_lastTrained => 'last trained:';
 
   @override
   String get result_techWork => 'Tech work — no progress contribution';

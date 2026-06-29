@@ -47,5 +47,7 @@ class LangwijLayout {
   static const double langBoxPaddingBottom = 8.0;
   static const double langPickerQualitySegmentWidth = 56.0;
 
+  static const double vocabProgressLabelWidth = 48.0;
+
   static const double deckIconPadding = 8.0;
 }

@@ -11,7 +11,7 @@ import 'package:langwij/features/quiz/ui/mode_selection_sheet.dart';
 import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/date_format/date_format.dart';
-import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
+import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/l10n/app_localizations_ext.dart';
 
 enum ParentCategory { vocabulary, conjugations }
@@ -225,14 +225,8 @@ class _ConjugationsPageState extends ConsumerState<ConjugationsPage> {
       onPopInvokedWithResult: (didPop, result) {
         if (!didPop) context.go(AppRoutes.tools);
       },
-      child: FlesselScaffold(
+      child: LangwijScaffold(
         title: title,
-        uppercaseTitle: true,
-        navBarItems: LangwijMainNavBar.items(context),
-        navBarCurrentIndex: LangwijMainNavBar.currentIndex(context),
-        notchedNavBar: true,
-        navBarSize: FlesselSize.s,
-        floatingActionButton: LangwijMainNavBar.fab(context),
         onBackPressed: () => context.go(AppRoutes.tools),
         child: asyncGroups.when(
           data: (groups) {
@@ -243,7 +237,7 @@ class _ConjugationsPageState extends ConsumerState<ConjugationsPage> {
               return ListView.builder(
                 controller: _scrollController,
                 padding: FlesselLayout.screenPaddingInsets(context).copyWith(
-                  bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+                  bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
                 ),
                 itemCount: childGroups.length,
                 itemBuilder: (context, index) {
@@ -300,7 +294,7 @@ class _ConjugationsPageState extends ConsumerState<ConjugationsPage> {
             return ListView.builder(
               controller: _scrollController,
               padding: FlesselLayout.screenPaddingInsets(context).copyWith(
-                bottom: FlesselLayout.screenPaddingInsets(context).bottom + FlesselLayout.navbarSpacer(context),
+                bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
               ),
               itemCount: items.length,
               itemBuilder: (context, index) {
