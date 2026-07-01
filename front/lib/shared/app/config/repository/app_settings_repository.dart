@@ -4,7 +4,6 @@ import 'package:sqflite/sqflite.dart';
 
 import 'package:langwij/shared/app/database/database.dart';
 import '../model/app_settings.dart';
-import '../model/decay_formula.dart';
 
 class AppSettingsRepository {
   AppSettingsRepository({required Database db}) : _db = db;
@@ -12,29 +11,10 @@ class AppSettingsRepository {
   final Database _db;
 
   Future<AppSettings> getSettings() async {
-    final rows = await _db.query(
-      DbSchema.tableAppSettings,
-      where: '${DbSchema.colKey} = ?',
-      whereArgs: [DbSchema.colDecayFormula],
-    );
-    if (rows.isEmpty) return const AppSettings();
-    final value = rows.first[DbSchema.colValue] as String;
-    return AppSettings(
-      decayFormula: DecayFormulaExtension.fromKey(value),
-    );
+    return const AppSettings();
   }
 
-  Future<void> setDecayFormula(DecayFormula formula) async {
-    await _db.insert(
-      DbSchema.tableAppSettings,
-      {DbSchema.colKey: DbSchema.colDecayFormula, DbSchema.colValue: formula.key},
-      conflictAlgorithm: ConflictAlgorithm.replace,
-    );
-  }
-
-  Future<void> saveSettings(AppSettings settings) async {
-    await setDecayFormula(settings.decayFormula);
-  }
+  Future<void> saveSettings(AppSettings settings) async {}
 
   Future<Map<String, bool>> getLevelFoldOverrides(String targetLang) async {
     final key = DbSchema.colLevelFoldOverridesPrefix + targetLang;

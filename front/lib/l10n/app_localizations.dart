@@ -514,95 +514,11 @@ abstract class AppLocalizations {
   /// **'ALL ({count})'**
   String questionsAll(int count);
 
-  /// No description provided for @retentionNone.
-  ///
-  /// In en, this message translates to:
-  /// **'None'**
-  String get retentionNone;
-
-  /// No description provided for @retentionWeak.
-  ///
-  /// In en, this message translates to:
-  /// **'Weak'**
-  String get retentionWeak;
-
-  /// No description provided for @retentionGood.
-  ///
-  /// In en, this message translates to:
-  /// **'Good'**
-  String get retentionGood;
-
-  /// No description provided for @retentionStrong.
-  ///
-  /// In en, this message translates to:
-  /// **'Strong'**
-  String get retentionStrong;
-
-  /// No description provided for @retentionSuper.
-  ///
-  /// In en, this message translates to:
-  /// **'Super'**
-  String get retentionSuper;
-
   /// No description provided for @settingsTitle.
   ///
   /// In en, this message translates to:
   /// **'Settings'**
   String get settingsTitle;
-
-  /// No description provided for @settingsDecaySpeed.
-  ///
-  /// In en, this message translates to:
-  /// **'Learning pace'**
-  String get settingsDecaySpeed;
-
-  /// No description provided for @decayRelaxed.
-  ///
-  /// In en, this message translates to:
-  /// **'Relaxed'**
-  String get decayRelaxed;
-
-  /// No description provided for @decayRelaxedDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Slow decay (14 days)'**
-  String get decayRelaxedDesc;
-
-  /// No description provided for @decayStandard.
-  ///
-  /// In en, this message translates to:
-  /// **'Standard'**
-  String get decayStandard;
-
-  /// No description provided for @decayStandardDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Balanced (7 days)'**
-  String get decayStandardDesc;
-
-  /// No description provided for @decayIntensive.
-  ///
-  /// In en, this message translates to:
-  /// **'Intensive'**
-  String get decayIntensive;
-
-  /// No description provided for @decayIntensiveDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Fast decay (4 days)'**
-  String get decayIntensiveDesc;
-
-  /// No description provided for @decayHardcore.
-  ///
-  /// In en, this message translates to:
-  /// **'Hardcore'**
-  String get decayHardcore;
-
-  /// No description provided for @decayHardcoreDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Very fast (2 days)'**
-  String get decayHardcoreDesc;
 
   /// No description provided for @navLanguage.
   ///

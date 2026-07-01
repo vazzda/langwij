@@ -13,7 +13,6 @@ import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/date_format/date_format.dart';
 import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/l10n/app_localizations_ext.dart';
-import '../../conjugations/ui/conjugations_page.dart' show retentionLabel;
 
 class AgreementPage extends ConsumerStatefulWidget {
   const AgreementPage({super.key});
@@ -64,21 +63,12 @@ class _AgreementPageState extends ConsumerState<AgreementPage> {
     final t = FlesselThemes.of(context);
     final asyncGroups = ref.watch(GroupService.groups);
     final asyncProgress = ref.watch(ProgressService.allDeckProgress);
-    final asyncSettings = ref.watch(ConfigService.appSettings);
     final allProgress = asyncProgress.valueOrNull ?? {};
-    final settings = asyncSettings.valueOrNull;
 
     if (asyncGroups.hasValue && _pendingScrollOffset != null && !_scrollRestored) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) _restoreScrollPosition();
       });
-    }
-
-    double getRetention(String groupId) {
-      final progress = allProgress[groupId];
-      if (progress == null || settings == null) return 0.0;
-      return ProgressCalculator.calculateRetention(
-          progress, settings.decayFormula);
     }
 
     return PopScope(
@@ -116,7 +106,6 @@ class _AgreementPageState extends ConsumerState<AgreementPage> {
                     group: group,
                     l10n: l10n,
                     progress: progress,
-                    retention: getRetention(groupId),
                     onTap: () => _onGroupTap(context, group, groups, l10n),
                   ),
                 );
@@ -183,14 +172,12 @@ class _AgreementGroupTile extends StatelessWidget {
     required this.l10n,
     required this.onTap,
     this.progress,
-    this.retention = 0.0,
   });
 
   final GroupModel group;
   final AppLocalizations l10n;
   final VoidCallback onTap;
   final DeckProgress? progress;
-  final double retention;
 
   @override
   Widget build(BuildContext context) {
@@ -202,7 +189,7 @@ class _AgreementGroupTile extends StatelessWidget {
         ? l10n.wordsCountWithPreview(count, preview)
         : l10n.wordsCount(count);
 
-    final showBadge = progress != null && progress!.recentRounds.isNotEmpty;
+    final showBadge = progress != null && progress!.lastRoundDate != null;
 
     return FlesselCard(
       onTap: onTap,
@@ -242,7 +229,6 @@ class _AgreementGroupTile extends StatelessWidget {
               right: 0,
               child: _ProgressBadge(
                 progress: progress!,
-                retention: retention,
                 l10n: l10n,
               ),
             ),
@@ -255,22 +241,15 @@ class _AgreementGroupTile extends StatelessWidget {
 class _ProgressBadge extends StatelessWidget {
   const _ProgressBadge({
     required this.progress,
-    required this.retention,
     required this.l10n,
   });
 
   final DeckProgress progress;
-  final double retention;
   final AppLocalizations l10n;
 
   @override
   Widget build(BuildContext context) {
     final percentage = progress.totalProgress.round();
-    final level = ProgressCalculator.getRetentionLevel(
-      retention,
-      progress.totalProgress,
-    );
-    final levelLabel = retentionLabel(level, l10n);
     final dateText = progress.lastRoundDate != null
         ? RelativeDateFormat.format(progress.lastRoundDate!, l10n)
         : '-';
@@ -281,8 +260,6 @@ class _ProgressBadge extends StatelessWidget {
         FlesselTag(label: '$percentage%'),
         const FlesselGap.xs(),
         FlesselTag(label: dateText),
-        const FlesselGap.xs(),
-        FlesselTag(label: levelLabel),
       ],
     );
   }

@@ -1,5 +1,4 @@
 import 'package:langwij/entities/dictionary/dictionary.dart';
-import 'package:langwij/entities/progress/progress.dart';
 
 import 'vocab_deck_card_data.dart';
 
@@ -10,7 +9,6 @@ class VocabLevelData {
     required this.tier,
     required this.levelProgress,
     required this.decks,
-    required this.strengthLevel,
     required this.totalCardCount,
     this.description,
     this.latestDate,
@@ -23,6 +21,5 @@ class VocabLevelData {
   final double levelProgress;
   final List<VocabDeckCardData> decks;
   final DateTime? latestDate;
-  final RetentionLevel strengthLevel;
   final int totalCardCount;
 }

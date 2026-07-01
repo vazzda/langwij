@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:langwij/entities/activity/activity.dart';
 import 'package:langwij/entities/group/group.dart';
 import 'package:langwij/entities/progress/progress.dart';
-import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
 
 import '../model/round_state.dart';
@@ -167,13 +166,6 @@ class QuizService {
       accuracy: accuracy,
     );
 
-    final settings = await _ref.read(ConfigService.appSettings.future);
-    final allProgress = await _ref.read(ProgressService.allDeckProgress.future);
-    final progress = allProgress[roundState.deckId] ?? DeckProgress(deckId: roundState.deckId);
-    final retention = ProgressCalculator.calculateRetention(progress, settings.decayFormula);
-    if (ProgressCalculator.shouldUpdatePeak(progress, retention)) {
-      await _ref.read(ProgressService.instance).updatePeakRetention(roundState.deckId, retention);
-    }
   }
 
   static double _modeCap(QuizMode mode) {

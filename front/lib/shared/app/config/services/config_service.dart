@@ -3,7 +3,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../model/app_settings.dart';
-import '../model/decay_formula.dart';
 import '../model/language_settings.dart';
 import '../repository/language_settings_repository.dart';
 import 'config_internal_service.dart';
@@ -67,12 +66,6 @@ class ConfigService {
   Future<void> setUiLang(String code) async {
     final repo = await _ref.read(ConfigInternalService.langSettingsRepository.future);
     await repo.setUiLang(code);
-    _ref.read(ConfigInternalService.revision.notifier).state++;
-  }
-
-  Future<void> setDecayFormula(DecayFormula formula) async {
-    final repo = await _ref.read(ConfigInternalService.appSettingsRepository.future);
-    await repo.setDecayFormula(formula);
     _ref.read(ConfigInternalService.revision.notifier).state++;
   }
 

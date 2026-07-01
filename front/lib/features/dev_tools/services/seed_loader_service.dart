@@ -56,7 +56,6 @@ class SeedLoaderService {
 
   static Future<void> _truncateDataTables(Transaction txn) async {
     await txn.delete(DbSchema.tableDeckProgress);
-    await txn.delete(DbSchema.tableRoundRecords);
     await txn.delete(DbSchema.tableDailyActivity);
     await txn.delete(DbSchema.tableLanguageStats);
     await txn.delete(DbSchema.tableTermCoverage);
@@ -135,7 +134,6 @@ class SeedLoaderService {
           DbSchema.colTargetLang: targetLang,
           DbSchema.colDeckId: deckId,
           DbSchema.colProgress: deckCoverage,
-          DbSchema.colPeakRetention: 0.0,
           DbSchema.colLastRoundDate: lastRoundDate,
           DbSchema.colPractice: practice,
           DbSchema.colMastery: mastery,

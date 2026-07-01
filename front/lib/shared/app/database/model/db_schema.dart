@@ -1,7 +1,6 @@
 abstract final class DbSchema {
   static const String tableAppSettings    = 'app_settings';
   static const String tableDeckProgress   = 'deck_progress';
-  static const String tableRoundRecords   = 'round_records';
   static const String tableDailyActivity  = 'daily_activity';
   static const String tableLanguageStats  = 'language_stats';
 
@@ -11,7 +10,6 @@ abstract final class DbSchema {
   static const String colTargetLang          = 'target_lang';
   static const String colNativeLang          = 'native_lang';
   static const String colUiLang              = 'ui_lang';
-  static const String colDecayFormula        = 'decay_formula';
   static const String colLevelFoldOverridesPrefix = 'level_fold_overrides_';
 
   static const String colDeckId  = 'deck_id';
@@ -24,7 +22,6 @@ abstract final class DbSchema {
   static const String colWordIds  = 'word_ids';
 
   static const String colProgress         = 'progress';
-  static const String colPeakRetention   = 'peak_retention';
   static const String colLastRoundDate   = 'last_round_date';
   static const String colPractice        = 'practice';
   static const String colMastery         = 'mastery';

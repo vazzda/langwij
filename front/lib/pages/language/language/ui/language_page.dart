@@ -26,13 +26,11 @@ class LanguagePage extends ConsumerWidget {
     final asyncAllPacks = ref.watch(DictionaryService.allPacks);
     final asyncAllLangProgress = ref.watch(ProgressService.allLanguagesProgress);
     final asyncCourseNote = ref.watch(DictionaryService.courseNote);
-    final asyncSettings = ref.watch(ConfigService.appSettings);
     final showDevSection = FlesselDevGate.enabled.value;
 
     final langSettings = asyncLangSettings.valueOrNull;
-    final settings = asyncSettings.valueOrNull;
 
-    if (langSettings == null || settings == null) {
+    if (langSettings == null) {
       return LangwijScaffold(
         title: l10n.navLanguage,
         child: const Center(child: FlesselSpinner()),
@@ -83,42 +81,6 @@ class LanguagePage extends ConsumerWidget {
                 packByCode: packByCode,
                 l10n: l10n,
                 onReset: (langCode) => _confirmReset(context, ref, langCode, packByCode, l10n),
-              ),
-              const FlesselGap.xl(),
-
-              Padding(
-                padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
-                child: Text(
-                  l10n.settingsDecaySpeed,
-                  style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
-                ),
-              ),
-              _DecayOption(
-                title: l10n.decayRelaxed,
-                description: l10n.decayRelaxedDesc,
-                isSelected: settings.decayFormula == DecayFormula.relaxed,
-                onTap: () => ref.read(ConfigService.instance).setDecayFormula(DecayFormula.relaxed),
-              ),
-              const FlesselGap.s(),
-              _DecayOption(
-                title: l10n.decayStandard,
-                description: l10n.decayStandardDesc,
-                isSelected: settings.decayFormula == DecayFormula.standard,
-                onTap: () => ref.read(ConfigService.instance).setDecayFormula(DecayFormula.standard),
-              ),
-              const FlesselGap.s(),
-              _DecayOption(
-                title: l10n.decayIntensive,
-                description: l10n.decayIntensiveDesc,
-                isSelected: settings.decayFormula == DecayFormula.intensive,
-                onTap: () => ref.read(ConfigService.instance).setDecayFormula(DecayFormula.intensive),
-              ),
-              const FlesselGap.s(),
-              _DecayOption(
-                title: l10n.decayHardcore,
-                description: l10n.decayHardcoreDesc,
-                isSelected: settings.decayFormula == DecayFormula.hardcore,
-                onTap: () => ref.read(ConfigService.instance).setDecayFormula(DecayFormula.hardcore),
               ),
 
               if (showDevSection) ...[
@@ -573,57 +535,6 @@ class _ProgressionCard extends StatelessWidget {
             loading: () => const SizedBox.shrink(),
             error: (_, _) => const SizedBox.shrink(),
           ),
-        ],
-      ),
-    );
-  }
-}
-
-class _DecayOption extends StatelessWidget {
-  const _DecayOption({
-    required this.title,
-    required this.description,
-    required this.isSelected,
-    required this.onTap,
-  });
-
-  final String title;
-  final String description;
-  final bool isSelected;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final t = FlesselThemes.of(context);
-
-    return FlesselCard(
-      onTap: onTap,
-      child: Row(
-        children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: isSelected
-                      ? FlesselFonts.contentMAccent
-                          .copyWith(color: t.fg)
-                      : FlesselFonts.contentM.copyWith(color: t.fg),
-                ),
-                const FlesselGap.xxs(),
-                Text(
-                  description,
-                  style: FlesselFonts.contentS.copyWith(color: t.fgSecondary),
-                ),
-              ],
-            ),
-          ),
-          if (isSelected)
-            Icon(
-              PhosphorIconsRegular.checkCircle,
-              color: t.accentColor,
-            ),
         ],
       ),
     );

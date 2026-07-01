@@ -124,13 +124,6 @@ class ProgressService {
     return result;
   }
 
-  Future<void> updatePeakRetention(String deckId, double retention) async {
-    final langSettings = await _ref.read(ConfigService.languageSettings.future);
-    final repo = await _ref.read(ProgressInternalService.deckProgressRepository.future);
-    await repo.updatePeakRetention(langSettings.targetLang, deckId, retention);
-    _ref.read(ProgressInternalService.revision.notifier).state++;
-  }
-
   Future<int> addTermsTouched(Set<String> termIds) async {
     final langSettings = await _ref.read(ConfigService.languageSettings.future);
     final repo = await _ref.read(ProgressInternalService.languageStatsRepository.future);

@@ -16,35 +16,18 @@ import 'package:langwij/l10n/app_localizations_ext.dart';
 
 enum ParentCategory { vocabulary, conjugations }
 
-String retentionLabel(RetentionLevel level, AppLocalizations l10n) {
-  switch (level) {
-    case RetentionLevel.none:
-      return l10n.retentionNone;
-    case RetentionLevel.weak:
-      return l10n.retentionWeak;
-    case RetentionLevel.good:
-      return l10n.retentionGood;
-    case RetentionLevel.strong:
-      return l10n.retentionStrong;
-    case RetentionLevel.super_:
-      return l10n.retentionSuper;
-  }
-}
-
 class _GroupTile extends StatelessWidget {
   const _GroupTile({
     required this.group,
     required this.l10n,
     required this.onTap,
     this.progress,
-    this.retention = 0.0,
   });
 
   final GroupModel group;
   final AppLocalizations l10n;
   final VoidCallback onTap;
   final DeckProgress? progress;
-  final double retention;
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +39,7 @@ class _GroupTile extends StatelessWidget {
         ? l10n.wordsCountWithPreview(count, preview)
         : l10n.wordsCount(count);
 
-    final showBadge = progress != null && progress!.recentRounds.isNotEmpty;
+    final showBadge = progress != null && progress!.lastRoundDate != null;
 
     return FlesselCard(
       onTap: onTap,
@@ -95,7 +78,6 @@ class _GroupTile extends StatelessWidget {
                   right: 0,
                   child: _ProgressBadge(
                     progress: progress!,
-                    retention: retention,
                     l10n: l10n,
                   ),
                 ),
@@ -110,22 +92,15 @@ class _GroupTile extends StatelessWidget {
 class _ProgressBadge extends StatelessWidget {
   const _ProgressBadge({
     required this.progress,
-    required this.retention,
     required this.l10n,
   });
 
   final DeckProgress progress;
-  final double retention;
   final AppLocalizations l10n;
 
   @override
   Widget build(BuildContext context) {
     final percentage = progress.totalProgress.round();
-    final level = ProgressCalculator.getRetentionLevel(
-      retention,
-      progress.totalProgress,
-    );
-    final levelLabel = retentionLabel(level, l10n);
     final dateText = progress.lastRoundDate != null
         ? RelativeDateFormat.format(progress.lastRoundDate!, l10n)
         : '-';
@@ -136,8 +111,6 @@ class _ProgressBadge extends StatelessWidget {
         FlesselTag(label: '$percentage%'),
         const FlesselGap.xs(),
         FlesselTag(label: dateText),
-        const FlesselGap.xs(),
-        FlesselTag(label: levelLabel),
       ],
     );
   }
@@ -195,9 +168,7 @@ class _ConjugationsPageState extends ConsumerState<ConjugationsPage> {
     final t = FlesselThemes.of(context);
     final asyncGroups = ref.watch(GroupService.groups);
     final asyncProgress = ref.watch(ProgressService.allDeckProgress);
-    final asyncSettings = ref.watch(ConfigService.appSettings);
     final allProgress = asyncProgress.valueOrNull ?? {};
-    final settings = asyncSettings.valueOrNull;
     final title = widget.parent == ParentCategory.vocabulary
         ? l10n.parentVocabulary
         : l10n.parentConjugations;
@@ -211,13 +182,6 @@ class _ConjugationsPageState extends ConsumerState<ConjugationsPage> {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) _restoreScrollPosition();
       });
-    }
-
-    double getRetention(String groupId) {
-      final progress = allProgress[groupId];
-      if (progress == null || settings == null) return 0.0;
-      return ProgressCalculator.calculateRetention(
-          progress, settings.decayFormula);
     }
 
     return PopScope(
@@ -249,7 +213,7 @@ class _ConjugationsPageState extends ConsumerState<ConjugationsPage> {
                       group: group,
                       l10n: l10n,
                       progress: progress,
-                      retention: getRetention(group.id),
+
                       onTap: () => _onGroupTap(context, group, l10n),
                     ),
                   );
@@ -319,7 +283,6 @@ class _ConjugationsPageState extends ConsumerState<ConjugationsPage> {
                     group: group,
                     l10n: l10n,
                     progress: progress,
-                    retention: getRetention(group.id),
                     onTap: () => _onGroupTap(context, group, l10n),
                   ),
                 );

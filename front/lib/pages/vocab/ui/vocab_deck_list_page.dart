@@ -65,7 +65,6 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
     final asyncTarget = ref.watch(DictionaryService.targetPack);
     final asyncNative = ref.watch(DictionaryService.nativePack);
     final asyncProgress = ref.watch(ProgressService.allDeckProgress);
-    final asyncSettings = ref.watch(ConfigService.appSettings);
     final levelTiers = ref.watch(DictionaryService.levelTiers).valueOrNull ?? {};
 
     if (asyncDict.hasValue &&
@@ -80,10 +79,9 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
     final targetPack = asyncTarget.valueOrNull;
     final nativePack = asyncNative.valueOrNull;
     final allProgress = asyncProgress.valueOrNull ?? {};
-    final settings = asyncSettings.valueOrNull;
     final foldOverrides = ref.watch(ConfigService.levelFoldOverrides).valueOrNull ?? {};
 
-    if (dictionary == null || targetPack == null || nativePack == null || settings == null) {
+    if (dictionary == null || targetPack == null || nativePack == null) {
       final hasError =
           asyncDict.hasError || asyncTarget.hasError || asyncNative.hasError;
       return LangwijScaffold(
@@ -102,7 +100,6 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       targetPack: targetPack,
       allProgress: allProgress,
       levelTiers: levelTiers,
-      settings: settings,
     );
 
     final firstLevelId = dictionary.levels.first.id;
@@ -168,7 +165,6 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
     required LanguagePack targetPack,
     required Map<String, DeckProgress> allProgress,
     required Map<String, LevelTier> levelTiers,
-    required AppSettings settings,
   }) {
     final decksById = dictionary.decksById;
     final result = <VocabLevelData>[];
@@ -223,10 +219,6 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
 
       final levelProgress = _computeLevelProgress(decks);
       final latestDate = _computeLatestDate(decks);
-      final strengthLevel = _computeStrengthLevel(
-        decks,
-        levelProgress,
-      );
 
       result.add(
         VocabLevelData(
@@ -237,7 +229,6 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
           levelProgress: levelProgress,
           decks: decks,
           latestDate: latestDate,
-          strengthLevel: strengthLevel,
           totalCardCount: decks.fold(0, (s, g) => s + g.cardCount),
         ),
       );
@@ -264,22 +255,6 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       }
     }
     return latest;
-  }
-
-  RetentionLevel _computeStrengthLevel(
-    List<VocabDeckCardData> decks,
-    double levelProgress,
-  ) {
-    final withProgress = decks
-        .where(
-          (g) => g.progress != null && g.progress!.totalProgress > 0,
-        )
-        .toList();
-    if (withProgress.isEmpty) return RetentionLevel.none;
-    final avgPractice =
-        withProgress.map((g) => g.practice).reduce((a, b) => a + b) /
-        withProgress.length;
-    return ProgressCalculator.getRetentionLevel(avgPractice, levelProgress);
   }
 
   bool _isLevelExpanded({

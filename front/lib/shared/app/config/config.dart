@@ -1,5 +1,4 @@
 export 'model/app_settings.dart';
-export 'model/decay_formula.dart';
 export 'model/lang_codes.dart';
 export 'model/lang_grammar_profile.dart';
 export 'model/language_settings.dart';

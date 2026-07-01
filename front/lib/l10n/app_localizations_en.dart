@@ -249,49 +249,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get retentionNone => 'None';
-
-  @override
-  String get retentionWeak => 'Weak';
-
-  @override
-  String get retentionGood => 'Good';
-
-  @override
-  String get retentionStrong => 'Strong';
-
-  @override
-  String get retentionSuper => 'Super';
-
-  @override
   String get settingsTitle => 'Settings';
-
-  @override
-  String get settingsDecaySpeed => 'Learning pace';
-
-  @override
-  String get decayRelaxed => 'Relaxed';
-
-  @override
-  String get decayRelaxedDesc => 'Slow decay (14 days)';
-
-  @override
-  String get decayStandard => 'Standard';
-
-  @override
-  String get decayStandardDesc => 'Balanced (7 days)';
-
-  @override
-  String get decayIntensive => 'Intensive';
-
-  @override
-  String get decayIntensiveDesc => 'Fast decay (4 days)';
-
-  @override
-  String get decayHardcore => 'Hardcore';
-
-  @override
-  String get decayHardcoreDesc => 'Very fast (2 days)';
 
   @override
   String get navLanguage => 'Language';
