@@ -79,6 +79,75 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
     );
   }
 
+  void startLevelTraining({
+    required List<({VocabDeckModel deck, double practice})> deckPool,
+    required LanguagePack targetPack,
+    required LanguagePack nativePack,
+    required QuizMode mode,
+    required int questionCount,
+    required String levelId,
+    required String levelName,
+    required String originRoute,
+    double originScrollOffset = 0.0,
+  }) {
+    if (deckPool.isEmpty) return;
+
+    final sorted = [...deckPool]
+      ..sort((a, b) => a.practice.compareTo(b.practice));
+
+    final service = CardGenerationService();
+    final deckCards = <String, List<VocabCard>>{};
+    final deckTermCounts = <String, int>{};
+    for (final entry in sorted) {
+      final cards = service.buildCards(
+        deck: entry.deck,
+        targetPack: targetPack,
+        nativePack: nativePack,
+      );
+      deckCards[entry.deck.id] = cards;
+      deckTermCounts[entry.deck.id] = entry.deck.termIds.length;
+    }
+
+    final selected = <VocabCard>[];
+    final termDeckMap = <String, String>{};
+    var remaining = questionCount;
+
+    for (final entry in sorted) {
+      if (remaining <= 0) break;
+      final cards = deckCards[entry.deck.id]!;
+      final shuffled = [...cards]..shuffle(Random());
+      final take = remaining.clamp(0, shuffled.length);
+      for (var i = 0; i < take; i++) {
+        selected.add(shuffled[i]);
+        termDeckMap[shuffled[i].termId] = entry.deck.id;
+      }
+      remaining -= take;
+    }
+
+    if (selected.isEmpty) return;
+
+    selected.shuffle(Random());
+    final wordIds = selected.map((c) => c.wordId).toSet();
+    final allCards = deckCards.values.expand((c) => c).toList();
+
+    state = RoundState(
+      deckId: levelId,
+      deckName: levelName,
+      mode: mode,
+      requestedCount: questionCount,
+      roundType: RoundType.vocabulary,
+      originRoute: originRoute,
+      originScrollOffset: originScrollOffset,
+      isLevelTraining: true,
+      totalDeckTerms: deckTermCounts.values.fold(0, (s, v) => s + v),
+      termDeckMap: termDeckMap,
+      deckTermCounts: deckTermCounts,
+      queue: selected,
+      allCards: allCards,
+      roundWordIds: wordIds,
+    );
+  }
+
   void start({
     required GroupModel group,
     required QuizMode mode,

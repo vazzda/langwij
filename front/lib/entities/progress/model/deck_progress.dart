@@ -8,6 +8,9 @@ class DeckProgress {
     this.peakRetention = 0.0,
     this.recentRounds = const [],
     this.lastRoundDate,
+    this.practice = 0.0,
+    this.mastery = 0,
+    this.lastPracticeDate,
   });
 
   final String deckId;
@@ -15,6 +18,9 @@ class DeckProgress {
   final double peakRetention;
   final List<RoundRecord> recentRounds;
   final DateTime? lastRoundDate;
+  final double practice;
+  final int mastery;
+  final DateTime? lastPracticeDate;
 
   double get totalProgress => progress;
 
@@ -26,6 +32,9 @@ class DeckProgress {
     double? peakRetention,
     List<RoundRecord>? recentRounds,
     DateTime? lastRoundDate,
+    double? practice,
+    int? mastery,
+    DateTime? lastPracticeDate,
   }) {
     return DeckProgress(
       deckId: deckId,
@@ -33,6 +42,9 @@ class DeckProgress {
       peakRetention: peakRetention ?? this.peakRetention,
       recentRounds: recentRounds ?? this.recentRounds,
       lastRoundDate: lastRoundDate ?? this.lastRoundDate,
+      practice: practice ?? this.practice,
+      mastery: mastery ?? this.mastery,
+      lastPracticeDate: lastPracticeDate ?? this.lastPracticeDate,
     );
   }
 
@@ -42,6 +54,9 @@ class DeckProgress {
         'peakRetention': peakRetention,
         'recentRounds': recentRounds.map((s) => s.toMap()).toList(),
         'lastRoundDate': lastRoundDate?.toIso8601String(),
+        'practice': practice,
+        'mastery': mastery,
+        'lastPracticeDate': lastPracticeDate?.toIso8601String(),
       };
 
   factory DeckProgress.fromMap(Map<dynamic, dynamic> map) {
@@ -50,6 +65,7 @@ class DeckProgress {
             .toList() ??
         [];
     final lastDateStr = map['lastRoundDate'] as String?;
+    final lastPracticeDateStr = map['lastPracticeDate'] as String?;
     return DeckProgress(
       deckId: map['deckId'] as String,
       progress: (map['progress'] as num?)?.toDouble() ?? 0.0,
@@ -57,6 +73,10 @@ class DeckProgress {
       recentRounds: roundsList,
       lastRoundDate:
           lastDateStr != null ? DateTime.parse(lastDateStr) : null,
+      practice: (map['practice'] as num?)?.toDouble() ?? 0.0,
+      mastery: (map['mastery'] as num?)?.toInt() ?? 0,
+      lastPracticeDate:
+          lastPracticeDateStr != null ? DateTime.parse(lastPracticeDateStr) : null,
     );
   }
 }

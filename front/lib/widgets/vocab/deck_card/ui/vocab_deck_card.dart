@@ -7,7 +7,7 @@ import 'package:langwij/shared/deck_icons/deck_icons.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
 import '../model/vocab_deck_card_data.dart';
 
-enum _DeckCardPhase { idle, studying, training }
+enum _DeckCardPhase { idle, studying, training, trainingLost }
 
 class LangwijVocabDeckCard extends StatelessWidget {
   const LangwijVocabDeckCard({
@@ -24,12 +24,23 @@ class LangwijVocabDeckCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
-    final phase = item.percentage == null || item.percentage! <= 0
-        ? _DeckCardPhase.idle
-        : item.percentage! >= 100
-            ? _DeckCardPhase.training
-            : _DeckCardPhase.studying;
-    final barValue = item.percentage != null ? item.percentage! / 100.0 : 0.0;
+
+    final _DeckCardPhase phase;
+    if (item.coverage == null || item.coverage! <= 0) {
+      phase = _DeckCardPhase.idle;
+    } else if (item.coverage! < 100) {
+      phase = _DeckCardPhase.studying;
+    } else if (item.mastery >= 1 && item.practice < 50) {
+      phase = _DeckCardPhase.trainingLost;
+    } else {
+      phase = _DeckCardPhase.training;
+    }
+
+    final iconVariant = phase == _DeckCardPhase.trainingLost
+        ? FlesselVariant.danger
+        : FlesselVariant.regular;
+
+    final coverageBar = item.coverage != null ? item.coverage! / 100.0 : 0.0;
     final iconData = item.icon != null
         ? DeckIcons.fromString(item.icon!)
         : DeckIcons.fallback;
@@ -52,9 +63,30 @@ class LangwijVocabDeckCard extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              FlesselIconContainer(
-                icon: iconData,
-                iconSize: LangwijLayout.vocabTileIconSize,
+              Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  FlesselCard(
+                    surface: FlesselSurface.s21,
+                    colorVariant: iconVariant,
+                    padding: FlesselSize.xs,
+                    margin: FlesselSize.none,
+                    child: Icon(
+                      iconData,
+                      size: LangwijLayout.vocabTileIconSize,
+                      color: t.surface21.resolve(iconVariant).fg,
+                    ),
+                  ),
+                  if (item.mastery > 0)
+                    Positioned(
+                      bottom: -FlesselLayout.gapS,
+                      right: -FlesselLayout.gapXs,
+                      child: FlesselTag(
+                        label: l10n.vocab_masteryCount(item.mastery),
+                        size: FlesselSize.xxs,
+                      ),
+                    ),
+                ],
               ),
               const FlesselGap.s(),
               Expanded(
@@ -98,15 +130,16 @@ class LangwijVocabDeckCard extends StatelessWidget {
                           const FlesselGap.xxs(),
                           Expanded(
                             child: FlesselProgressBar(
-                              value: barValue,
+                              value: coverageBar,
                               mode: FlesselProgressBarMode.compact,
+                              variant: FlesselProgressBarVariant.accent,
                             ),
                           ),
                           const FlesselGap.xxs(),
                           SizedBox(
                             width: LangwijLayout.vocabTileProgressPercentWidth,
                             child: Text(
-                              '${item.percentage ?? 0}%',
+                              '${item.coverage ?? 0}%',
                               textAlign: TextAlign.end,
                               style: FlesselFonts.contentXsAccent.copyWith(
                                 color: t.fg,
@@ -116,7 +149,8 @@ class LangwijVocabDeckCard extends StatelessWidget {
                         ],
                       ),
                     ],
-                    if (phase == _DeckCardPhase.training) ...[
+                    if (phase == _DeckCardPhase.training ||
+                        phase == _DeckCardPhase.trainingLost) ...[
                       const FlesselGap.xxs(),
                       Row(
                         children: [
@@ -132,15 +166,16 @@ class LangwijVocabDeckCard extends StatelessWidget {
                           const FlesselGap.xxs(),
                           Expanded(
                             child: FlesselProgressBar(
-                              value: (item.retention / 100.0).clamp(0.0, 1.0),
+                              value: (item.practice / 100.0).clamp(0.0, 1.0),
                               mode: FlesselProgressBarMode.compact,
+                              variant: FlesselProgressBarVariant.accent,
                             ),
                           ),
                           const FlesselGap.xxs(),
                           SizedBox(
                             width: LangwijLayout.vocabTileProgressPercentWidth,
                             child: Text(
-                              '${item.retention.round()}%',
+                              '${item.practice.round()}%',
                               textAlign: TextAlign.end,
                               style: FlesselFonts.contentXsAccent.copyWith(
                                 color: t.fg,
@@ -152,33 +187,45 @@ class LangwijVocabDeckCard extends StatelessWidget {
                     ],
                     if (item.progress?.lastRoundDate != null) ...[
                       const FlesselGap.xxs(),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Text(
-                            l10n.vocab_lastTrained,
-                            style: FlesselFonts.contentXsAccent.copyWith(
-                              color: t.fgSecondary,
+                      Builder(builder: (context) {
+                        final now = DateTime.now();
+                        final last = item.progress!.lastRoundDate!;
+                        final daysDiff = DateTime(now.year, now.month, now.day)
+                            .difference(DateTime(last.year, last.month, last.day))
+                            .inDays;
+                        final indicatorColor = daysDiff <= 0
+                            ? t.surface21.regular.bg.colorValue
+                            : daysDiff == 1
+                                ? t.surface21.accent.bg.colorValue
+                                : t.surface21.danger.bg.colorValue;
+                        return Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Text(
+                              l10n.vocab_lastTrained,
+                              style: FlesselFonts.contentXs.copyWith(
+                                color: t.fgSecondary,
+                              ),
                             ),
-                          ),
-                          const FlesselGap.xxs(),
-                          Text(
-                            RelativeDateFormat.format(
-                              item.progress!.lastRoundDate!,
-                              l10n,
-                            ).toUpperCase(),
-                            style: FlesselFonts.contentXsAccent.copyWith(
-                              color: t.fg,
+                            const FlesselGap.xxs(),
+                            Icon(
+                              PhosphorIconsFill.circle,
+                              size: FlesselLayout.iconXxxs,
+                              color: indicatorColor,
                             ),
-                          ),
-                          const FlesselGap.xxs(),
-                          Icon(
-                            PhosphorIconsFill.circle,
-                            size: FlesselLayout.iconXxxs,
-                            color: t.fgSecondary,
-                          ),
-                        ],
-                      ),
+                            const FlesselGap.xxs(),
+                            Text(
+                              RelativeDateFormat.format(
+                                last,
+                                l10n,
+                              ).toUpperCase(),
+                              style: FlesselFonts.contentXsAccent.copyWith(
+                                color: t.fg,
+                              ),
+                            ),
+                          ],
+                        );
+                      }),
                     ],
                   ],
                 ),

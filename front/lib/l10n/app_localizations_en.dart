@@ -463,6 +463,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get vocab_lastTrained => 'last trained:';
 
   @override
+  String get vocab_termsLabel => 'terms:';
+
+  @override
+  String get vocab_masteryLabel => 'mastery:';
+
+  @override
+  String vocab_masteryCount(int count) {
+    return '$count mastery';
+  }
+
+  @override
   String get result_techWork => 'Tech work — no progress contribution';
 
   @override
@@ -511,4 +522,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String settings_validateError(String message) {
     return 'Validation failed: $message';
   }
+
+  @override
+  String get settings_seeds => 'Seeds';
+
+  @override
+  String get settings_seedFull => 'Full';
+
+  @override
+  String get settings_deleteContent => 'Delete content';
+
+  @override
+  String get settings_seedLoaded => 'Seed loaded';
+
+  @override
+  String settings_seedError(String message) {
+    return 'Seed failed: $message';
+  }
+
+  @override
+  String get settings_contentDeleted => 'Content deleted';
 }

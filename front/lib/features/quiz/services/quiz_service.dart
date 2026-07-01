@@ -8,6 +8,8 @@ import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
 
 import '../model/round_state.dart';
+import '../model/round_type.dart';
+import '../model/vocab_card.dart';
 import 'quiz_round_state_notifier_service.dart';
 
 class QuizService {
@@ -58,18 +60,10 @@ class QuizService {
       final total = roundState.correctCount + roundState.wrongCount;
       final score = total > 0 ? (roundState.correctCount * 100.0 / total) : 0.0;
 
-      if (roundState.isTest) {
-        await _persistTestRound(roundState, score);
+      if (roundState.roundType == RoundType.vocabulary) {
+        await _persistVocabRound(roundState, score);
       } else {
-        await _persistTrainingRound(roundState, score);
-      }
-
-      final settings = await _ref.read(ConfigService.appSettings.future);
-      final allProgress = await _ref.read(ProgressService.allDeckProgress.future);
-      final progress = allProgress[roundState.deckId] ?? DeckProgress(deckId: roundState.deckId);
-      final retention = ProgressCalculator.calculateRetention(progress, settings.decayFormula);
-      if (ProgressCalculator.shouldUpdatePeak(progress, retention)) {
-        await _ref.read(ProgressService.instance).updatePeakRetention(roundState.deckId, retention);
+        await _persistNonVocabRound(roundState, score);
       }
 
       if (roundState.allCards != null) {
@@ -83,21 +77,79 @@ class QuizService {
     }
   }
 
-  Future<void> _persistTestRound(RoundState roundState, double roundScore) async {
-    final totalTerms = roundState.totalDeckTerms;
-    final firstPassScore = totalTerms > 0
-        ? (roundState.firstPassCorrect * 100.0 / totalTerms)
-        : 0.0;
+  Future<void> _persistVocabRound(RoundState roundState, double roundScore) async {
+    if (roundState.isLevelTraining) {
+      await _persistLevelTrainingRound(roundState, roundScore);
+      return;
+    }
 
-    _ref.read(lastRoundContributed.notifier).state = await _ref.read(ProgressService.instance).recordTestResult(
+    final missedTermIds = <String>{};
+    for (final entry in roundState.missedEntries) {
+      if (entry.card is VocabCard) {
+        missedTermIds.add((entry.card as VocabCard).wordId);
+      }
+    }
+
+    final cardResults = roundState.roundWordIds.map((termId) => CardResult(
+      termId: termId,
+      hadWrongAttempt: missedTermIds.contains(termId),
+    )).toList();
+
+    await _ref.read(ProgressService.instance).recordVocabRound(
       deckId: roundState.deckId,
-      firstPassScore: firstPassScore,
-      roundScore: roundScore,
       mode: roundState.mode,
+      cardResults: cardResults,
+      totalDeckTerms: roundState.totalDeckTerms,
+      roundScore: roundScore,
     );
+
+    _ref.read(lastRoundContributed.notifier).state = true;
   }
 
-  Future<void> _persistTrainingRound(RoundState roundState, double roundScore) async {
+  Future<void> _persistLevelTrainingRound(RoundState roundState, double roundScore) async {
+    if (roundState.mode != QuizMode.write) {
+      _ref.read(lastRoundContributed.notifier).state = false;
+      return;
+    }
+
+    final termDeckMap = roundState.termDeckMap!;
+    final deckTermCounts = roundState.deckTermCounts!;
+
+    final missedTermIds = <String>{};
+    for (final entry in roundState.missedEntries) {
+      if (entry.card is VocabCard) {
+        missedTermIds.add((entry.card as VocabCard).wordId);
+      }
+    }
+
+    final resultsByDeck = <String, List<CardResult>>{};
+    for (final termId in roundState.roundWordIds) {
+      final deckId = termDeckMap[termId];
+      if (deckId == null) continue;
+      resultsByDeck.putIfAbsent(deckId, () => []).add(
+        CardResult(
+          termId: termId,
+          hadWrongAttempt: missedTermIds.contains(termId),
+        ),
+      );
+    }
+
+    for (final entry in resultsByDeck.entries) {
+      final deckId = entry.key;
+      final cardResults = entry.value;
+      await _ref.read(ProgressService.instance).recordVocabRound(
+        deckId: deckId,
+        mode: roundState.mode,
+        cardResults: cardResults,
+        totalDeckTerms: deckTermCounts[deckId] ?? 0,
+        roundScore: roundScore,
+      );
+    }
+
+    _ref.read(lastRoundContributed.notifier).state = true;
+  }
+
+  Future<void> _persistNonVocabRound(RoundState roundState, double roundScore) async {
     final modeCap = _modeCap(roundState.mode);
     final totalTerms = roundState.totalDeckTerms;
     final coverage = totalTerms > 0
@@ -114,6 +166,14 @@ class QuizService {
       coverage: coverage,
       accuracy: accuracy,
     );
+
+    final settings = await _ref.read(ConfigService.appSettings.future);
+    final allProgress = await _ref.read(ProgressService.allDeckProgress.future);
+    final progress = allProgress[roundState.deckId] ?? DeckProgress(deckId: roundState.deckId);
+    final retention = ProgressCalculator.calculateRetention(progress, settings.decayFormula);
+    if (ProgressCalculator.shouldUpdatePeak(progress, retention)) {
+      await _ref.read(ProgressService.instance).updatePeakRetention(roundState.deckId, retention);
+    }
   }
 
   static double _modeCap(QuizMode mode) {

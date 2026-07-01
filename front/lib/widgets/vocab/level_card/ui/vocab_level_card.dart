@@ -15,6 +15,7 @@ class LangwijVocabLevelCard extends StatelessWidget {
     required this.isExpanded,
     required this.onToggle,
     required this.onDeckTap,
+    this.onTrainTap,
   });
 
   final VocabLevelData item;
@@ -22,13 +23,25 @@ class LangwijVocabLevelCard extends StatelessWidget {
   final bool isExpanded;
   final VoidCallback onToggle;
   final void Function(VocabDeckModel deck, int cardCount) onDeckTap;
+  final VoidCallback? onTrainTap;
 
   @override
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
-    final isPremium = item.tier == LevelTier.premium;
     final counterStyle =
         FlesselFonts.contentBodyAccent.copyWith(color: t.fg);
+    final labelStyle =
+        FlesselFonts.contentBody.copyWith(color: t.fg);
+    final allInPractice = item.decks.isNotEmpty &&
+        item.decks.every((d) => d.coverage != null && d.coverage! >= 100);
+    final levelMastery = item.decks.isNotEmpty
+        ? item.decks.map((d) => d.mastery).reduce((a, b) => a < b ? a : b)
+        : 0;
+    final avgPractice = allInPractice
+        ? item.decks.map((d) => d.practice).reduce((a, b) => a + b) /
+            item.decks.length /
+            100.0
+        : 0.0;
 
     return FlesselCard(
       child: Column(
@@ -50,12 +63,6 @@ class LangwijVocabLevelCard extends StatelessWidget {
                             .copyWith(color: t.fg),
                       ),
                     ),
-                    if (isPremium)
-                      Icon(
-                        PhosphorIconsRegular.lock,
-                        size: FlesselLayout.iconS,
-                        color: t.fgSecondary,
-                      ),
                     Icon(
                       isExpanded
                           ? PhosphorIconsRegular.caretDown
@@ -70,17 +77,20 @@ class LangwijVocabLevelCard extends StatelessWidget {
                   children: [
                     SizedBox(
                       width: LangwijLayout.vocabProgressWordsWidth,
-                      child: Text(
-                        '${item.totalCardCount}',
-                        textAlign: TextAlign.start,
-                        style: counterStyle,
+                      child: Row(
+                        children: [
+                          Text(l10n.vocab_termsLabel, style: labelStyle),
+                          const Spacer(),
+                          Text('${item.totalCardCount}', style: counterStyle),
+                        ],
                       ),
                     ),
-                    const FlesselGap.xs(),
+                    const FlesselGap.m(),
                     Expanded(
                       child: FlesselProgressBar(
                         value: (item.levelProgress / 100.0).clamp(0.0, 1.0),
                         mode: FlesselProgressBarMode.detailed,
+                        variant: FlesselProgressBarVariant.accent,
                       ),
                     ),
                     const FlesselGap.xs(),
@@ -92,15 +102,42 @@ class LangwijVocabLevelCard extends StatelessWidget {
                         style: counterStyle,
                       ),
                     ),
-                    const FlesselGap.xs(),
-                    FlesselButton(
-                      variant: FlesselVariant.accent,
-                      label: l10n.vocab_train,
-                      onPressed: item.levelProgress >= 100.0 ? () {} : null,
-                      size: FlesselSize.s,
-                    ),
                   ],
                 ),
+                if (allInPractice) ...[
+                  const FlesselGap.xs(),
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: LangwijLayout.vocabProgressWordsWidth,
+                        child: Row(
+                          children: [
+                            Text(l10n.vocab_masteryLabel, style: labelStyle),
+                            const Spacer(),
+                            Text('$levelMastery', style: counterStyle),
+                          ],
+                        ),
+                      ),
+                      const FlesselGap.m(),
+                      Expanded(
+                        child: FlesselProgressBar(
+                          value: avgPractice.clamp(0.0, 1.0),
+                          mode: FlesselProgressBarMode.detailed,
+                          variant: FlesselProgressBarVariant.accent,
+                        ),
+                      ),
+                      const FlesselGap.xs(),
+                      SizedBox(
+                        width: LangwijLayout.vocabProgressPercentWidth,
+                        child: Text(
+                          '${(avgPractice * 100).round()}%',
+                          textAlign: TextAlign.end,
+                          style: counterStyle,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ],
             ),
           ),
@@ -122,6 +159,20 @@ class LangwijVocabLevelCard extends StatelessWidget {
                 l10n: l10n,
                 onTap: () => onDeckTap(g.deck, g.cardCount),
               ),
+            ),
+          ],
+          if (allInPractice) ...[
+            const FlesselGap.s(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                FlesselButton(
+                  surface: FlesselSurface.s21,
+                  label: l10n.vocab_train,
+                  onPressed: onTrainTap,
+                  size: FlesselSize.s,
+                ),
+              ],
             ),
           ],
         ],

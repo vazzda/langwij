@@ -23,9 +23,16 @@ abstract final class DbSchema {
   static const String colWrong    = 'wrong';
   static const String colWordIds  = 'word_ids';
 
-  static const String colProgress        = 'progress';
+  static const String colProgress         = 'progress';
   static const String colPeakRetention   = 'peak_retention';
   static const String colLastRoundDate   = 'last_round_date';
+  static const String colPractice        = 'practice';
+  static const String colMastery         = 'mastery';
+  static const String colLastPracticeDate = 'last_practice_date';
+
+  static const String tableTermCoverage  = 'term_coverage';
+  static const String colTermId          = 'term_id';
+  static const String colCoverage        = 'coverage';
 
   static const String colTermsTouchedIds = 'terms_touched_ids';
 

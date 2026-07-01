@@ -916,6 +916,24 @@ abstract class AppLocalizations {
   /// **'last trained:'**
   String get vocab_lastTrained;
 
+  /// No description provided for @vocab_termsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'terms:'**
+  String get vocab_termsLabel;
+
+  /// No description provided for @vocab_masteryLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'mastery:'**
+  String get vocab_masteryLabel;
+
+  /// No description provided for @vocab_masteryCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} mastery'**
+  String vocab_masteryCount(int count);
+
   /// No description provided for @result_techWork.
   ///
   /// In en, this message translates to:
@@ -1005,6 +1023,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Validation failed: {message}'**
   String settings_validateError(String message);
+
+  /// No description provided for @settings_seeds.
+  ///
+  /// In en, this message translates to:
+  /// **'Seeds'**
+  String get settings_seeds;
+
+  /// No description provided for @settings_seedFull.
+  ///
+  /// In en, this message translates to:
+  /// **'Full'**
+  String get settings_seedFull;
+
+  /// No description provided for @settings_deleteContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete content'**
+  String get settings_deleteContent;
+
+  /// No description provided for @settings_seedLoaded.
+  ///
+  /// In en, this message translates to:
+  /// **'Seed loaded'**
+  String get settings_seedLoaded;
+
+  /// No description provided for @settings_seedError.
+  ///
+  /// In en, this message translates to:
+  /// **'Seed failed: {message}'**
+  String settings_seedError(String message);
+
+  /// No description provided for @settings_contentDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Content deleted'**
+  String get settings_contentDeleted;
 }
 
 class _AppLocalizationsDelegate

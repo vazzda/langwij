@@ -15,6 +15,9 @@ Project structure: [fsd-map.md](fsd-map.md) — the exact current structure of t
 Coding princips: [ruleset.md](ruleset.md)
 Core rules: [meta.md](meta.md)
 
+## Database migration policy
+Prototype stage — no user data to preserve. Schema changes are destructive: modify CREATE TABLE in _onCreate, bump version, drop-and-recreate in _onUpgrade. No ALTER TABLE migrations until production release.
+
 ## Error handling strategy
 - Services catch and log via debugPrint (pending Cresset adoption)
 - User-facing errors surfaced via return values (bool success) and snackbar messages

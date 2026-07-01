@@ -265,6 +265,16 @@
   "vocab_studied": "Studied",
   "vocab_trained": "Trained",
   "vocab_lastTrained": "last trained:",
+  "vocab_termsLabel": "terms:",
+  "vocab_masteryLabel": "mastery:",
+  "vocab_masteryCount": "{count} mastery",
+  "@vocab_masteryCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
 
   "result_techWork": "Tech work — no progress contribution",
 
@@ -294,5 +304,17 @@
     "placeholders": {
       "message": { "type": "String" }
     }
-  }
+  },
+
+  "settings_seeds": "Seeds",
+  "settings_seedFull": "Full",
+  "settings_deleteContent": "Delete content",
+  "settings_seedLoaded": "Seed loaded",
+  "settings_seedError": "Seed failed: {message}",
+  "@settings_seedError": {
+    "placeholders": {
+      "message": { "type": "String" }
+    }
+  },
+  "settings_contentDeleted": "Content deleted"
 }

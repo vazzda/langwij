@@ -1,0 +1,88 @@
+{
+  "target_lang": "sr",
+  "decks": [
+    {
+      "deck_id": "first_contact",
+      "term_coverages": {"100": 14},
+      "practice": 100,
+      "mastery": 2,
+      "last_practice_days_ago": 0
+    },
+    {
+      "deck_id": "getting_around",
+      "term_coverages": {"100": 15},
+      "practice": 30,
+      "mastery": 0,
+      "last_practice_days_ago": 1
+    },
+    {
+      "deck_id": "staying_alive",
+      "term_coverages": {"100": 15},
+      "practice": 95,
+      "mastery": 1,
+      "last_practice_days_ago": 2
+    },
+    {
+      "deck_id": "making_sense",
+      "term_coverages": {"100": 15},
+      "practice": 100,
+      "mastery": 3,
+      "last_practice_days_ago": 10
+    },
+    {
+      "deck_id": "core_verbs",
+      "term_coverages": {"100": 13},
+      "practice": 80,
+      "mastery": 1,
+      "last_practice_days_ago": 6
+    },
+    {
+      "deck_id": "daily_actions",
+      "term_coverages": {"100": 14},
+      "practice": 55,
+      "mastery": 2,
+      "last_practice_days_ago": 10
+    },
+    {
+      "deck_id": "head_to_toe",
+      "term_coverages": {"100": 3, "75": 5, "50": 3},
+      "last_round_days_ago": 2
+    },
+    {
+      "deck_id": "my_people",
+      "term_coverages": {"50": 13},
+      "last_round_days_ago": 3
+    },
+    {
+      "deck_id": "bread_and_water",
+      "term_coverages": {"50": 4, "40": 3, "20": 3, "10": 3},
+      "last_round_days_ago": 5
+    },
+    {
+      "deck_id": "four_walls",
+      "term_coverages": {"30": 2, "20": 3, "10": 4, "0": 3},
+      "last_round_days_ago": 8
+    },
+    {
+      "deck_id": "doing_things",
+      "term_coverages": {"10": 5, "0": 10},
+      "last_round_days_ago": 12
+    },
+    {
+      "deck_id": "hands_on"
+    },
+    {
+      "deck_id": "laugh_and_cry",
+      "term_coverages": {"100": 16},
+      "practice": 50,
+      "mastery": 1,
+      "last_practice_days_ago": 30
+    }
+  ],
+  "activity": {
+    "history_days": 60,
+    "correct": 15,
+    "wrong": 4,
+    "words_per_day": 8
+  }
+}

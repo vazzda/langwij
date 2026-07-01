@@ -73,6 +73,7 @@ flutter:
     - assets/data/translations/
     - assets/data/tools/sr/
     - assets/icon/
+    - assets/seeds/
   generate: true
 
   fonts:

@@ -14,7 +14,10 @@ class RoundState {
     this.adjectiveGroupId,
     this.deckName,
     this.isTest = false,
+    this.isLevelTraining = false,
     this.totalDeckTerms = 0,
+    this.termDeckMap,
+    this.deckTermCounts,
     this.queue = const [],
     this.allCards,
     this.correctCount = 0,
@@ -35,7 +38,10 @@ class RoundState {
   final String? adjectiveGroupId;
   final String? deckName;
   final bool isTest;
+  final bool isLevelTraining;
   final int totalDeckTerms;
+  final Map<String, String>? termDeckMap;
+  final Map<String, int>? deckTermCounts;
   final List<CardModel> queue;
   final List<CardModel>? allCards;
   final int correctCount;
@@ -70,7 +76,10 @@ class RoundState {
       adjectiveGroupId: adjectiveGroupId,
       deckName: deckName,
       isTest: isTest,
+      isLevelTraining: isLevelTraining,
       totalDeckTerms: totalDeckTerms,
+      termDeckMap: termDeckMap,
+      deckTermCounts: deckTermCounts,
       queue: queue ?? this.queue,
       allCards: allCards,
       correctCount: correctCount ?? this.correctCount,

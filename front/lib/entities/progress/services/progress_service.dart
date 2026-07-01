@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:langwij/entities/dictionary/@x/progress.dart';
 import 'package:langwij/shared/app/config/config.dart';
+import '../model/card_result.dart';
 import '../model/quiz_mode.dart';
 import '../model/deck_progress.dart';
 import 'progress_internal_service.dart';
@@ -60,6 +61,26 @@ class ProgressService {
     final repo = await ref.watch(ProgressInternalService.languageStatsRepository.future);
     return repo.getTermsTouched(langSettings.targetLang);
   });
+
+  Future<void> recordVocabRound({
+    required String deckId,
+    required QuizMode mode,
+    required List<CardResult> cardResults,
+    required int totalDeckTerms,
+    required double roundScore,
+  }) async {
+    final langSettings = await _ref.read(ConfigService.languageSettings.future);
+    final repo = await _ref.read(ProgressInternalService.deckProgressRepository.future);
+    await repo.recordVocabRound(
+      targetLang: langSettings.targetLang,
+      deckId: deckId,
+      mode: mode,
+      cardResults: cardResults,
+      totalDeckTerms: totalDeckTerms,
+      roundScore: roundScore,
+    );
+    _ref.read(ProgressInternalService.revision.notifier).state++;
+  }
 
   Future<bool> recordRound({
     required String deckId,

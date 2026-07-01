@@ -12,6 +12,7 @@ Future<ModeSelection?> showLangwijModeSelectionSheet(
   BuildContext context,
   AppLocalizations l10n, {
   bool showAllModes = true,
+  bool enableTest = true,
   required String targetLangCode,
   String nativeLangCode = '',
   String nativeLangName = '',
@@ -83,9 +84,12 @@ Future<ModeSelection?> showLangwijModeSelectionSheet(
                 langCode: targetLangCode,
                 typeIcon: PhosphorIconsRegular.pencilSimpleLine,
                 isAccent: true,
-                onTap: () => Navigator.of(context).pop(
-                  const ModeSelection(mode: QuizMode.write, isTest: true),
-                ),
+                onTap: enableTest
+                    ? () => Navigator.of(context).pop(
+                          const ModeSelection(
+                              mode: QuizMode.write, isTest: true),
+                        )
+                    : null,
               ),
             ],
           ),
@@ -104,9 +108,10 @@ Future<int?> showLangwijQuestionCountSheet(
   BuildContext context,
   AppLocalizations l10n, {
   required int totalCount,
+  bool showAll = true,
 }) async {
   if (totalCount <= 0) return null;
-  if (totalCount <= 5) return totalCount;
+  if (totalCount <= 5 && showAll) return totalCount;
 
   final counts = <int>[];
   final labels = <String>[];
@@ -119,8 +124,10 @@ Future<int?> showLangwijQuestionCountSheet(
     labels.add(l10n.questions10);
   }
 
-  counts.add(totalCount);
-  labels.add(l10n.questionsAll(totalCount));
+  if (showAll) {
+    counts.add(totalCount);
+    labels.add(l10n.questionsAll(totalCount));
+  }
 
   final t = FlesselThemes.of(context);
   final lastIndex = counts.length - 1;
@@ -171,14 +178,14 @@ class _ModeTileData {
     required this.langCode,
     required this.typeIcon,
     required this.isAccent,
-    required this.onTap,
+    this.onTap,
   });
 
   final String label;
   final String langCode;
   final IconData typeIcon;
   final bool isAccent;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
 }
 
 class _ModeTileRow extends StatelessWidget {
@@ -215,7 +222,7 @@ class _ModeTile extends StatelessWidget {
     final fg = data.isAccent ? t.surface02.accent.fg : t.fg;
     final countryCode = LangCodes.flagCountryCode(data.langCode);
 
-    return FlesselTile(
+    final tile = FlesselTile(
       variant: data.isAccent ? FlesselVariant.accent : FlesselVariant.regular,
       onTap: data.onTap,
       child: Padding(
@@ -255,6 +262,10 @@ class _ModeTile extends StatelessWidget {
         ),
       ),
     );
+
+    return data.onTap != null
+        ? tile
+        : Opacity(opacity: 0.3, child: tile);
   }
 }
 

@@ -143,6 +143,19 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
               cardCount,
               l10n,
             ),
+            onTrainTap: level.decks.isNotEmpty &&
+                level.decks.every((d) => d.coverage != null && d.coverage! >= 100)
+                ? () => _onTrainTap(
+                    context,
+                    level,
+                    dictionary,
+                    targetPack,
+                    nativePack,
+                    allProgress,
+                    l10n,
+                    AppRoutes.home,
+                  )
+                : null,
           );
         },
       ),
@@ -174,14 +187,10 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
         final cardCount = _countCards(deck, targetPack, nativePack);
         final progress = allProgress[deckId];
         final deckName = nativePack.deckMeta[deckId]?.name ?? deck.id;
-        final retention = progress != null
-            ? ProgressCalculator.calculateRetention(
-                progress,
-                settings.decayFormula,
-              )
-            : 0.0;
-        final percentage =
-            progress != null && progress.recentRounds.isNotEmpty
+        final practice = progress?.practice ?? 0.0;
+        final mastery = progress?.mastery ?? 0;
+        final coverage =
+            progress != null && progress.totalProgress > 0
             ? progress.totalProgress.round()
             : null;
         final words = <String>[];
@@ -204,9 +213,10 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
             icon: deck.icon,
             cardCount: cardCount,
             words: words,
-            percentage: percentage,
+            coverage: coverage,
             progress: progress,
-            retention: retention,
+            practice: practice,
+            mastery: mastery,
           ),
         );
       }
@@ -216,7 +226,6 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       final strengthLevel = _computeStrengthLevel(
         decks,
         levelProgress,
-        settings,
       );
 
       result.add(
@@ -260,18 +269,17 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
   RetentionLevel _computeStrengthLevel(
     List<VocabDeckCardData> decks,
     double levelProgress,
-    AppSettings settings,
   ) {
-    final withRounds = decks
+    final withProgress = decks
         .where(
-          (g) => g.progress != null && g.progress!.recentRounds.isNotEmpty,
+          (g) => g.progress != null && g.progress!.totalProgress > 0,
         )
         .toList();
-    if (withRounds.isEmpty) return RetentionLevel.none;
-    final avgRetention =
-        withRounds.map((g) => g.retention).reduce((a, b) => a + b) /
-        withRounds.length;
-    return ProgressCalculator.getRetentionLevel(avgRetention, levelProgress);
+    if (withProgress.isEmpty) return RetentionLevel.none;
+    final avgPractice =
+        withProgress.map((g) => g.practice).reduce((a, b) => a + b) /
+        withProgress.length;
+    return ProgressCalculator.getRetentionLevel(avgPractice, levelProgress);
   }
 
   bool _isLevelExpanded({
@@ -299,6 +307,81 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       }
     }
     return count;
+  }
+
+  Future<void> _onTrainTap(
+    BuildContext context,
+    VocabLevelData level,
+    Dictionary dictionary,
+    LanguagePack targetPack,
+    LanguagePack nativePack,
+    Map<String, DeckProgress> allProgress,
+    AppLocalizations l10n,
+    String originRoute,
+  ) async {
+    final pool = <({VocabDeckModel deck, double practice})>[];
+    for (final d in level.decks) {
+      final progress = allProgress[d.deck.id];
+      final practice = progress?.practice ?? 0.0;
+      if (practice < ProgressConstants.practiceMax) {
+        pool.add((deck: d.deck, practice: practice));
+      }
+    }
+
+    final useAll = pool.isNotEmpty;
+    final deckSource = pool.isNotEmpty ? pool : level.decks.map(
+      (d) => (deck: d.deck, practice: allProgress[d.deck.id]?.practice ?? 0.0),
+    ).toList();
+
+    int totalTerms = 0;
+    for (final entry in deckSource) {
+      totalTerms += _countCards(entry.deck, targetPack, nativePack);
+    }
+    if (totalTerms <= 0) return;
+
+    final selection = await showLangwijModeSelectionSheet(
+      context,
+      l10n,
+      enableTest: false,
+      targetLangCode: targetPack.code,
+      nativeLangCode: nativePack.code,
+      nativeLangName: l10n.langLabel(nativePack.labelKey),
+      targetLangName: l10n.langLabel(targetPack.labelKey),
+    );
+    if (selection == null || !context.mounted) return;
+
+    final int selectedCount;
+    if (selection.isTest) {
+      selectedCount = totalTerms;
+    } else {
+      final picked = await showLangwijQuestionCountSheet(
+        context,
+        l10n,
+        totalCount: totalTerms,
+        showAll: useAll,
+      );
+      if (picked == null || !context.mounted) return;
+      selectedCount = picked;
+    }
+
+    final scrollOffset = _scrollController.hasClients
+        ? _scrollController.offset
+        : 0.0;
+
+    final levelName = nativePack.levelMeta[level.level.id]?.name ?? level.level.id;
+
+    ref.read(QuizService.round.notifier).startLevelTraining(
+      deckPool: deckSource.toList(),
+      targetPack: targetPack,
+      nativePack: nativePack,
+      mode: selection.mode,
+      questionCount: selectedCount,
+      levelId: level.level.id,
+      levelName: levelName,
+      originRoute: originRoute,
+      originScrollOffset: scrollOffset,
+    );
+    if (context.mounted) context.go(AppRoutes.round);
   }
 
   Future<void> _onDeckTap(

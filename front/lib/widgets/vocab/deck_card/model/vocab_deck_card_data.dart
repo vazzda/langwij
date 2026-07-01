@@ -6,10 +6,11 @@ class VocabDeckCardData {
     required this.deck,
     required this.name,
     required this.cardCount,
-    required this.retention,
+    required this.practice,
+    required this.mastery,
     required this.words,
     this.icon,
-    this.percentage,
+    this.coverage,
     this.progress,
   });
 
@@ -18,7 +19,8 @@ class VocabDeckCardData {
   final String? icon;
   final int cardCount;
   final List<String> words;
-  final int? percentage;
+  final int? coverage;
   final DeckProgress? progress;
-  final double retention;
+  final double practice;
+  final int mastery;
 }

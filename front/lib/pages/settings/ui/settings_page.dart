@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flessel/flessel.dart';
+import 'package:go_router/go_router.dart';
 
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/l10n/app_localizations_ext.dart';
 import 'package:langwij/entities/dictionary/dictionary.dart';
+import 'package:langwij/features/dev_tools/dev_tools.dart';
 import 'package:langwij/shared/app/config/config.dart';
+import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/shared/app/validators/validators.dart';
 import 'package:langwij/shared/app/theme/theme.dart';
@@ -22,6 +25,60 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
 
   void _handleHideDevSection() {
     FlesselDevGate.enabled.value = false;
+  }
+
+  Future<void> _handleLoadSeeds(
+    BuildContext context,
+    WidgetRef ref,
+    String seedName,
+  ) async {
+    final navigator = Navigator.of(context);
+    final router = GoRouter.of(context);
+    final l10n = AppLocalizations.of(context)!;
+
+    try {
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => const Center(child: FlesselSpinner()),
+      );
+
+      await ref.read(DevDataService.instance).loadSeeds(seedName: seedName);
+
+      if (!context.mounted) return;
+      navigator.pop();
+      router.go(AppRoutes.home);
+    } catch (e) {
+      if (!context.mounted) return;
+      navigator.pop();
+      FlesselSnackBar.show(context, l10n.settings_seedError(e.toString()));
+    }
+  }
+
+  Future<void> _handleDeleteContent(
+    BuildContext context,
+    WidgetRef ref,
+  ) async {
+    final navigator = Navigator.of(context);
+    final l10n = AppLocalizations.of(context)!;
+
+    try {
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => const Center(child: FlesselSpinner()),
+      );
+
+      await ref.read(DevDataService.instance).deleteContent();
+
+      if (!context.mounted) return;
+      navigator.pop();
+      FlesselSnackBar.show(context, l10n.settings_contentDeleted);
+    } catch (e) {
+      if (!context.mounted) return;
+      navigator.pop();
+      FlesselSnackBar.show(context, l10n.settings_seedError(e.toString()));
+    }
   }
 
   Future<void> _handleValidateConfigs() async {
@@ -191,6 +248,27 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
                               )
                             else
                               Icon(PhosphorIconsRegular.caretRight, color: t.fg),
+                          ],
+                        ),
+                      ),
+                      const FlesselGap.s(),
+                      FlesselCard(
+                        header: l10n.settings_seeds,
+                        child: Wrap(
+                          spacing: FlesselLayout.gapS,
+                          runSpacing: FlesselLayout.gapS,
+                          children: [
+                            FlesselButton(
+                              label: l10n.settings_seedFull,
+                              onPressed: () =>
+                                  _handleLoadSeeds(context, ref, 'full'),
+                            ),
+                            FlesselButton(
+                              label: l10n.settings_deleteContent,
+                              variant: FlesselVariant.danger,
+                              onPressed: () =>
+                                  _handleDeleteContent(context, ref),
+                            ),
                           ],
                         ),
                       ),

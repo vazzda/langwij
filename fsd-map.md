@@ -82,6 +82,12 @@ lib/
 │       └── progress.dart                            barrel
 │
 ├── features/                                    — cross-cutting product features
+│   ├── dev_tools/                                 dev infrastructure
+│   │   ├── dev_tools.dart                         barrel
+│   │   └── services/
+│   │       ├── seed_loader_service.dart              SeedLoaderService (JSON → DB seed loading)
+│   │       └── dev_data_service.dart                 DevDataService (wipe + seed + revision orchestration)
+│   │
 │   └── quiz/                                      quiz round lifecycle
 │       ├── model/
 │       │   ├── missed_entry.dart                    MissedEntry (card + user typed answer)

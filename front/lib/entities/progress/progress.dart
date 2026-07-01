@@ -1,3 +1,4 @@
+export 'model/card_result.dart';
 export 'model/deck_progress.dart';
 export 'model/quiz_mode.dart';
 export 'model/progress_calculator.dart';

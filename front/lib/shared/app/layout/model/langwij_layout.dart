@@ -9,7 +9,7 @@ class LangwijLayout {
 
   static const double vocabTileHeight = 180.0;
   static const double vocabTileMinWidth = 120.0;
-  static const double vocabTileIconSize = 40.0;
+  static const double vocabTileIconSize = 50.0;
   static const double vocabTileIconTopOffset = -2.0;
   static const double vocabTileHeaderTop = 49.0;
   static const double vocabTileHeaderLeft = 8.0;
@@ -25,9 +25,9 @@ class LangwijLayout {
   static const double vocabTileProgressPercentGap = 4.0;
   static const double vocabTileProgressPercentWidth = 30.0;
 
-  static const double vocabProgressSpacingAfter = 18.0;
-  static const double vocabProgressWordsWidth = 30.0;
-  static const double vocabProgressPercentWidth = 30.0;
+  static const double vocabProgressSpacingAfter = 48.0;
+  static const double vocabProgressWordsWidth = 70.0;
+  static const double vocabProgressPercentWidth = 40.0;
 
   static const double roundOptionTileAspectRatio = 1.8;
 

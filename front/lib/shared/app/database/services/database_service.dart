@@ -8,7 +8,7 @@ import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/database/database.dart';
 
 const _databaseName = 'langwij.db';
-const _databaseVersion = 6;
+const _databaseVersion = 7;
 
 class DatabaseService {
   DatabaseService._();
@@ -58,7 +58,19 @@ class DatabaseService {
         ${DbSchema.colProgress} REAL NOT NULL DEFAULT 0,
         ${DbSchema.colPeakRetention} REAL NOT NULL DEFAULT 0,
         ${DbSchema.colLastRoundDate} TEXT,
+        ${DbSchema.colPractice} REAL NOT NULL DEFAULT 0,
+        ${DbSchema.colMastery} INTEGER NOT NULL DEFAULT 0,
+        ${DbSchema.colLastPracticeDate} TEXT,
         PRIMARY KEY (${DbSchema.colTargetLang}, ${DbSchema.colDeckId})
+      )
+    ''');
+    await db.execute('''
+      CREATE TABLE ${DbSchema.tableTermCoverage} (
+        ${DbSchema.colTargetLang} TEXT NOT NULL,
+        ${DbSchema.colDeckId} TEXT NOT NULL,
+        ${DbSchema.colTermId} TEXT NOT NULL,
+        ${DbSchema.colCoverage} INTEGER NOT NULL DEFAULT 0,
+        PRIMARY KEY (${DbSchema.colTargetLang}, ${DbSchema.colDeckId}, ${DbSchema.colTermId})
       )
     ''');
     await db.execute('''
