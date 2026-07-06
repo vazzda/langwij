@@ -77,6 +77,11 @@ class QuizService {
   }
 
   Future<void> _persistVocabRound(RoundState roundState, double roundScore) async {
+    if (roundState.isTest) {
+      await _persistTestRound(roundState);
+      return;
+    }
+
     if (roundState.isLevelTraining) {
       await _persistLevelTrainingRound(roundState, roundScore);
       return;
@@ -100,6 +105,19 @@ class QuizService {
       cardResults: cardResults,
       totalDeckTerms: roundState.totalDeckTerms,
       roundScore: roundScore,
+    );
+
+    _ref.read(lastRoundContributed.notifier).state = true;
+  }
+
+  Future<void> _persistTestRound(RoundState roundState) async {
+    final testCoverage = roundState.totalDeckTerms > 0
+        ? (roundState.firstPassCorrect / roundState.totalDeckTerms) * 100.0
+        : 0.0;
+
+    await _ref.read(ProgressService.instance).recordTestResult(
+      deckId: roundState.deckId,
+      testCoverage: testCoverage,
     );
 
     _ref.read(lastRoundContributed.notifier).state = true;

@@ -141,26 +141,30 @@ class LangwijVocabLevelCard extends StatelessWidget {
               ],
             ),
           ),
-          if (isExpanded) ...[
-            const SizedBox(
-              height: LangwijLayout.vocabProgressSpacingAfter,
-            ),
-            if (item.description != null) ...[
-              Text(
-                item.description!,
-                style: FlesselFonts.contentCaption
-                    .copyWith(color: t.fgSecondary),
+          if (isExpanded)
+            Padding(
+              padding: const EdgeInsets.only(top: FlesselLayout.gapXl),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  if (item.description != null) ...[
+                    Text(
+                      item.description!,
+                      style: FlesselFonts.contentCaption
+                          .copyWith(color: t.fgSecondary),
+                    ),
+                    const FlesselGap.s(),
+                  ],
+                  ...item.decks.map(
+                    (g) => LangwijVocabDeckCard(
+                      item: g,
+                      l10n: l10n,
+                      onTap: () => onDeckTap(g.deck, g.cardCount),
+                    ),
+                  ),
+                ],
               ),
-              const FlesselGap.s(),
-            ],
-            ...item.decks.map(
-              (g) => LangwijVocabDeckCard(
-                item: g,
-                l10n: l10n,
-                onTap: () => onDeckTap(g.deck, g.cardCount),
-              ),
             ),
-          ],
           if (allInPractice) ...[
             const FlesselGap.s(),
             Row(

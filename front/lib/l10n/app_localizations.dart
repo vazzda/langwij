@@ -268,6 +268,12 @@ abstract class AppLocalizations {
   /// **'10'**
   String get questions10;
 
+  /// No description provided for @questions20.
+  ///
+  /// In en, this message translates to:
+  /// **'20'**
+  String get questions20;
+
   /// No description provided for @start.
   ///
   /// In en, this message translates to:
@@ -975,6 +981,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Content deleted'**
   String get settings_contentDeleted;
+
+  /// No description provided for @language_aiDictionaryWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'AI-generated dictionary. May contain errors. Human review in progress — use at your own risk.'**
+  String get language_aiDictionaryWarning;
+
+  /// No description provided for @language_pairUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'This language pair is not available yet.'**
+  String get language_pairUnavailable;
 }
 
 class _AppLocalizationsDelegate

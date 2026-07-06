@@ -206,23 +206,41 @@ class DeckProgressRepository {
     return true;
   }
 
-  Future<bool> recordTestResult({
+  Future<void> recordTestResult({
     required String targetLang,
     required String deckId,
-    required double firstPassScore,
-    required double roundScore,
-    required QuizMode mode,
+    required double testCoverage,
   }) async {
-    final current = await getProgress(targetLang, deckId);
     final now = DateTime.now();
+    final currentRow = await _db.query(
+      DbSchema.tableDeckProgress,
+      where: '${DbSchema.colTargetLang} = ? AND ${DbSchema.colDeckId} = ?',
+      whereArgs: [targetLang, deckId],
+    );
 
-    final newProgress = firstPassScore > current.progress
-        ? firstPassScore.clamp(0.0, ProgressConstants.capTest)
-        : current.progress;
-    final progressed = newProgress > current.progress;
+    final practice = currentRow.isNotEmpty
+        ? (currentRow.first[DbSchema.colPractice] as num?)?.toDouble() ?? 0.0
+        : 0.0;
+    final mastery = currentRow.isNotEmpty
+        ? (currentRow.first[DbSchema.colMastery] as num?)?.toInt() ?? 0
+        : 0;
+    final lastPracticeDateStr = currentRow.isNotEmpty
+        ? currentRow.first[DbSchema.colLastPracticeDate] as String?
+        : null;
 
-    await _upsertProgress(targetLang, deckId, newProgress, now);
-    return progressed;
+    await _db.insert(
+      DbSchema.tableDeckProgress,
+      {
+        DbSchema.colTargetLang: targetLang,
+        DbSchema.colDeckId: deckId,
+        DbSchema.colProgress: testCoverage,
+        DbSchema.colLastRoundDate: now.toIso8601String(),
+        DbSchema.colPractice: practice,
+        DbSchema.colMastery: mastery,
+        DbSchema.colLastPracticeDate: lastPracticeDateStr,
+      },
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
   }
 
   Future<Map<String, double>> getSumProgressAllLanguages() async {

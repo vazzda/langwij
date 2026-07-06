@@ -105,23 +105,18 @@ class ProgressService {
     return result;
   }
 
-  Future<bool> recordTestResult({
+  Future<void> recordTestResult({
     required String deckId,
-    required double firstPassScore,
-    required double roundScore,
-    required QuizMode mode,
+    required double testCoverage,
   }) async {
     final langSettings = await _ref.read(ConfigService.languageSettings.future);
     final repo = await _ref.read(ProgressInternalService.deckProgressRepository.future);
-    final result = await repo.recordTestResult(
+    await repo.recordTestResult(
       targetLang: langSettings.targetLang,
       deckId: deckId,
-      firstPassScore: firstPassScore,
-      roundScore: roundScore,
-      mode: mode,
+      testCoverage: testCoverage,
     );
     _ref.read(ProgressInternalService.revision.notifier).state++;
-    return result;
   }
 
   Future<int> addTermsTouched(Set<String> termIds) async {

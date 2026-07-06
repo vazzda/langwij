@@ -60,6 +60,7 @@
   "chooseQuestionsCount": "How many terms?",
   "questions5": "5",
   "questions10": "10",
+  "questions20": "20",
   "start": "Start",
   "cancel": "Cancel",
   "next": "Next",
@@ -302,5 +303,8 @@
       "message": { "type": "String" }
     }
   },
-  "settings_contentDeleted": "Content deleted"
+  "settings_contentDeleted": "Content deleted",
+
+  "language_aiDictionaryWarning": "AI-generated dictionary. May contain errors. Human review in progress — use at your own risk.",
+  "language_pairUnavailable": "This language pair is not available yet."
 }

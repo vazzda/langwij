@@ -78,6 +78,11 @@ class DictionaryService {
     return repo.getTiers(courseId, levelIds);
   });
 
+  static final availableCourseIds = FutureProvider<Set<String>>((ref) async {
+    final repo = ref.watch(DictionaryInternalService.planRepository);
+    return repo.getAvailableCourseIds();
+  });
+
   static final courseNote = FutureProvider<String?>((ref) async {
     final repo = ref.watch(DictionaryInternalService.planRepository);
     final langSettings = await ref.watch(ConfigService.languageSettings.future);

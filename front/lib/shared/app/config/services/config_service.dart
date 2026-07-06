@@ -25,7 +25,7 @@ class ConfigService {
     return prefs.getBool(_hasConfiguredLanguagesKey) ?? false;
   }
 
-  static Future<void> _markLanguagesConfigured() async {
+  static Future<void> markLanguagesConfigured() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_hasConfiguredLanguagesKey, true);
   }
@@ -49,17 +49,14 @@ class ConfigService {
     return repo.getLevelFoldOverrides(langSettings.targetLang);
   });
 
-  Future<void> setTargetLang(String code) async {
+  Future<void> setLanguagePair({
+    required String targetLang,
+    required String nativeLang,
+  }) async {
     final repo = await _ref.read(ConfigInternalService.langSettingsRepository.future);
-    await repo.setTargetLang(code);
-    await _markLanguagesConfigured();
-    _ref.read(ConfigInternalService.revision.notifier).state++;
-  }
-
-  Future<void> setNativeLang(String code) async {
-    final repo = await _ref.read(ConfigInternalService.langSettingsRepository.future);
-    await repo.setNativeLang(code);
-    await _markLanguagesConfigured();
+    await repo.setTargetLang(targetLang);
+    await repo.setNativeLang(nativeLang);
+    await markLanguagesConfigured();
     _ref.read(ConfigInternalService.revision.notifier).state++;
   }
 

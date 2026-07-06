@@ -55,9 +55,7 @@ class LangwijMainNavBar {
     final path = GoRouterState.of(context).uri.path;
     if (path == AppRoutes.home) return 0;
     if (path == AppRoutes.specialized) return 1;
-    if (path == AppRoutes.tools ||
-        path == AppRoutes.conjugations ||
-        path == AppRoutes.agreement) {
+    if (path == AppRoutes.tools) {
       return 2;
     }
     if (path == AppRoutes.language) return 3;

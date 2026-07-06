@@ -370,9 +370,13 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
   ) async {
     if (cardCount <= 0) return;
 
+    final allProgress = ref.read(ProgressService.allDeckProgress).valueOrNull ?? {};
+    final deckCoverage = allProgress[deck.id]?.progress ?? 0.0;
+
     final selection = await showLangwijModeSelectionSheet(
       context,
       l10n,
+      enableTest: deckCoverage < ProgressConstants.coverageMax,
       targetLangCode: targetPack.code,
       nativeLangCode: nativePack.code,
       nativeLangName: l10n.langLabel(nativePack.labelKey),

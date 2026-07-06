@@ -115,28 +115,32 @@ Future<int?> showLangwijQuestionCountSheet(
 
   final counts = <int>[];
   final labels = <String>[];
+  final icons = <IconData>[];
 
   counts.add(5);
   labels.add(l10n.questions5);
+  icons.add(PhosphorIconsRegular.chartPieSlice);
 
   if (totalCount > 10) {
     counts.add(10);
     labels.add(l10n.questions10);
+    icons.add(PhosphorIconsRegular.chartPie);
+  }
+
+  if (totalCount > 20) {
+    counts.add(20);
+    labels.add(l10n.questions20);
+    icons.add(PhosphorIconsFill.chartPie);
   }
 
   if (showAll) {
     counts.add(totalCount);
     labels.add(l10n.questionsAll(totalCount));
+    icons.add(PhosphorIconsFill.chartPolar);
   }
 
   final t = FlesselThemes.of(context);
   final lastIndex = counts.length - 1;
-
-  final icons = <IconData>[
-    PhosphorIconsRegular.chartPieSlice,
-    if (counts.length > 2) PhosphorIconsRegular.chartPie,
-    PhosphorIconsFill.chartPolar,
-  ];
 
   return showFlesselBottomSheet<int>(
     context: context,

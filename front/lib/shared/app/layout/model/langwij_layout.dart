@@ -25,7 +25,6 @@ class LangwijLayout {
   static const double vocabTileProgressPercentGap = 4.0;
   static const double vocabTileProgressPercentWidth = 30.0;
 
-  static const double vocabProgressSpacingAfter = 48.0;
   static const double vocabProgressWordsWidth = 70.0;
   static const double vocabProgressPercentWidth = 40.0;
 
@@ -36,11 +35,14 @@ class LangwijLayout {
 
   static const double langFlagWidth = 64.0;
   static const double langFlagHeight = 44.0;
+  static const double langFlagBorderRadius = 4.0;
+  static const double langArrowIconSize = 20.0;
+  static const double langQualityIconSize = 25.0;
   static const double langProgressLabelWidth = 72.0;
   static const double langProgressPercentWidth = 36.0;
   static const double langProgressionFlagWidth = 24.0;
   static const double langProgressionFlagHeight = 16.0;
-  static const double langArrowZoneWidth = 36.0;
+  static const double langProgressionFlagBorderRadius = 2.0;
   static const double langBoxPaddingLeft = 12.0;
   static const double langBoxPaddingTop = 14.0;
   static const double langBoxPaddingRight = 12.0;

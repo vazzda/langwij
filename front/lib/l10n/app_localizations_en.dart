@@ -110,6 +110,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get questions10 => '10';
 
   @override
+  String get questions20 => '20';
+
+  @override
   String get start => 'Start';
 
   @override
@@ -500,4 +503,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settings_contentDeleted => 'Content deleted';
+
+  @override
+  String get language_aiDictionaryWarning =>
+      'AI-generated dictionary. May contain errors. Human review in progress — use at your own risk.';
+
+  @override
+  String get language_pairUnavailable =>
+      'This language pair is not available yet.';
 }

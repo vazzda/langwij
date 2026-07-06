@@ -23,6 +23,5 @@ class ProgressConstants {
   static const double capNativeShown = 20.0;
   static const double capTargetShown = 40.0;
   static const double capWrite = 80.0;
-  static const double capTest = 100.0;
   static const double baseContribution = 10.0;
 }

@@ -92,13 +92,10 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
   }) {
     if (deckPool.isEmpty) return;
 
-    final sorted = [...deckPool]
-      ..sort((a, b) => a.practice.compareTo(b.practice));
-
     final service = CardGenerationService();
     final deckCards = <String, List<VocabCard>>{};
     final deckTermCounts = <String, int>{};
-    for (final entry in sorted) {
+    for (final entry in deckPool) {
       final cards = service.buildCards(
         deck: entry.deck,
         targetPack: targetPack,
@@ -108,27 +105,26 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
       deckTermCounts[entry.deck.id] = entry.deck.termIds.length;
     }
 
-    final selected = <VocabCard>[];
-    final termDeckMap = <String, String>{};
-    var remaining = questionCount;
-
-    for (final entry in sorted) {
-      if (remaining <= 0) break;
-      final cards = deckCards[entry.deck.id]!;
-      final shuffled = [...cards]..shuffle(Random());
-      final take = remaining.clamp(0, shuffled.length);
-      for (var i = 0; i < take; i++) {
-        selected.add(shuffled[i]);
-        termDeckMap[shuffled[i].termId] = entry.deck.id;
+    final cardToDeck = <VocabCard, String>{};
+    for (final entry in deckCards.entries) {
+      for (final card in entry.value) {
+        cardToDeck[card] = entry.key;
       }
-      remaining -= take;
+    }
+
+    final allCards = deckCards.values.expand((c) => c).toList();
+    final pool = [...allCards]..shuffle(Random());
+    final take = questionCount.clamp(1, pool.length);
+    final selected = pool.take(take).toList();
+
+    final termDeckMap = <String, String>{};
+    for (final card in selected) {
+      termDeckMap[card.termId] = cardToDeck[card]!;
     }
 
     if (selected.isEmpty) return;
 
-    selected.shuffle(Random());
     final wordIds = selected.map((c) => c.wordId).toSet();
-    final allCards = deckCards.values.expand((c) => c).toList();
 
     state = RoundState(
       deckId: levelId,
@@ -167,6 +163,7 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
       originRoute: originRoute,
       originScrollOffset: originScrollOffset,
       queue: result.queue,
+      allCards: group.cards,
       roundWordIds: result.wordIds,
     );
   }
@@ -197,6 +194,7 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
       originScrollOffset: originScrollOffset,
       adjectiveGroupId: adjectiveGroup.id,
       queue: result.queue,
+      allCards: result.queue,
       roundWordIds: result.wordIds,
     );
   }

@@ -113,13 +113,13 @@ class _LangPickerTile extends StatelessWidget {
                       _qualitySegment(
                         icon: PhosphorIconsBold.smiley,
                         pct: pack.humanVerified,
-                        color: t.fgSecondary,
+                        color: t.fg,
                       ),
                       const FlesselGap.s(),
                       _qualitySegment(
                         icon: PhosphorIconsBold.robot,
                         pct: aiPct,
-                        color: t.fgSecondary,
+                        color: aiPct > 0 ? t.surface01.danger.fg : t.fg,
                       ),
                       if (pack.code == LangCodes.serbian) ...[
                         const FlesselGap.s(),

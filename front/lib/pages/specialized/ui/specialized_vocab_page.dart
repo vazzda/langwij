@@ -11,7 +11,7 @@ import 'package:langwij/features/quiz/quiz.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/features/quiz/ui/mode_selection_sheet.dart';
-import 'package:langwij/widgets/vocab/level_card/ui/vocab_level_card.dart';
+import 'package:langwij/widgets/vocab/deck_card/ui/vocab_deck_card.dart';
 import 'package:langwij/widgets/vocab/vocab.dart';
 
 class SpecializedVocabPage extends ConsumerStatefulWidget {
@@ -112,42 +112,34 @@ class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
     final title = nativePack.levelMeta[specializedLevel.id]?.name
         ?? l10n.navSpecialized;
 
+    final decks = levelData.decks;
+
     return LangwijScaffold(
       title: title,
-      child: ListView(
+      child: ListView.separated(
         controller: _scrollController,
         padding: FlesselLayout.screenPaddingInsets(context).copyWith(
           bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
         ),
-        children: [
-          LangwijVocabLevelCard(
-            item: levelData,
+        itemCount: decks.length,
+        separatorBuilder: (_, _) => const FlesselGap.m(),
+        itemBuilder: (context, index) {
+          final deck = decks[index];
+          return LangwijVocabDeckCard(
+            item: deck,
             l10n: l10n,
-            isExpanded: true,
-            onToggle: () {},
-            onDeckTap: (deck, cardCount) => _onDeckTap(
+            transparent: false,
+            onTap: () => _onDeckTap(
               context,
-              deck,
+              deck.deck,
               dictionary,
               targetPack,
               nativePack,
-              cardCount,
+              deck.cardCount,
               l10n,
             ),
-            onTrainTap: levelData.decks.isNotEmpty &&
-                levelData.decks.every((d) => d.coverage != null && d.coverage! >= 100)
-                ? () => _onTrainTap(
-                    context,
-                    levelData,
-                    dictionary,
-                    targetPack,
-                    nativePack,
-                    allProgress,
-                    l10n,
-                  )
-                : null,
-          ),
-        ],
+          );
+        },
       ),
     );
   }
@@ -264,80 +256,6 @@ class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
     return count;
   }
 
-  Future<void> _onTrainTap(
-    BuildContext context,
-    VocabLevelData level,
-    Dictionary dictionary,
-    LanguagePack targetPack,
-    LanguagePack nativePack,
-    Map<String, DeckProgress> allProgress,
-    AppLocalizations l10n,
-  ) async {
-    final pool = <({VocabDeckModel deck, double practice})>[];
-    for (final d in level.decks) {
-      final progress = allProgress[d.deck.id];
-      final practice = progress?.practice ?? 0.0;
-      if (practice < ProgressConstants.practiceMax) {
-        pool.add((deck: d.deck, practice: practice));
-      }
-    }
-
-    final useAll = pool.isNotEmpty;
-    final deckSource = pool.isNotEmpty ? pool : level.decks.map(
-      (d) => (deck: d.deck, practice: allProgress[d.deck.id]?.practice ?? 0.0),
-    ).toList();
-
-    int totalTerms = 0;
-    for (final entry in deckSource) {
-      totalTerms += _countCards(entry.deck, targetPack, nativePack);
-    }
-    if (totalTerms <= 0) return;
-
-    final selection = await showLangwijModeSelectionSheet(
-      context,
-      l10n,
-      enableTest: false,
-      targetLangCode: targetPack.code,
-      nativeLangCode: nativePack.code,
-      nativeLangName: l10n.langLabel(nativePack.labelKey),
-      targetLangName: l10n.langLabel(targetPack.labelKey),
-    );
-    if (selection == null || !context.mounted) return;
-
-    final int selectedCount;
-    if (selection.isTest) {
-      selectedCount = totalTerms;
-    } else {
-      final picked = await showLangwijQuestionCountSheet(
-        context,
-        l10n,
-        totalCount: totalTerms,
-        showAll: useAll,
-      );
-      if (picked == null || !context.mounted) return;
-      selectedCount = picked;
-    }
-
-    final scrollOffset = _scrollController.hasClients
-        ? _scrollController.offset
-        : 0.0;
-
-    final levelName = nativePack.levelMeta[level.level.id]?.name ?? level.level.id;
-
-    ref.read(QuizService.round.notifier).startLevelTraining(
-      deckPool: deckSource.toList(),
-      targetPack: targetPack,
-      nativePack: nativePack,
-      mode: selection.mode,
-      questionCount: selectedCount,
-      levelId: level.level.id,
-      levelName: levelName,
-      originRoute: AppRoutes.specialized,
-      originScrollOffset: scrollOffset,
-    );
-    if (context.mounted) context.go(AppRoutes.round);
-  }
-
   Future<void> _onDeckTap(
     BuildContext context,
     VocabDeckModel deck,
@@ -349,9 +267,13 @@ class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
   ) async {
     if (cardCount <= 0) return;
 
+    final allProgress = ref.read(ProgressService.allDeckProgress).valueOrNull ?? {};
+    final deckCoverage = allProgress[deck.id]?.progress ?? 0.0;
+
     final selection = await showLangwijModeSelectionSheet(
       context,
       l10n,
+      enableTest: deckCoverage < ProgressConstants.coverageMax,
       targetLangCode: targetPack.code,
       nativeLangCode: nativePack.code,
       nativeLangName: l10n.langLabel(nativePack.labelKey),

@@ -111,17 +111,17 @@ lib/
 ├── pages/                                       — screen-level slices
 │   ├── language/                                  language management (subslices)
 │   │   ├── language/                                language settings subslice
-│   │   │   ├── service/
-│   │   │   │   └── language_page_service.dart          LanguagePageService
 │   │   │   └── ui/
-│   │   │       └── language_page.dart                  language settings screen
+│   │   │       └── language_page.dart                  language selection screen
 │   │   └── picker/                                  language picker subslice
 │   │       └── ui/
 │   │           └── lang_picker_page.dart               language picker screen
 │   │
 │   ├── progress/                                  progress overview
+│   │   ├── service/
+│   │   │   └── progress_page_service.dart           ProgressPageService (reset language progress)
 │   │   └── ui/
-│   │       └── progress_page.dart                   progress stats screen
+│   │       └── progress_page.dart                   progress stats + language progression screen
 │   │
 │   ├── quiz/                                      quiz screens (subslices)
 │   │   ├── result/                                  quiz result subslice
@@ -135,16 +135,10 @@ lib/
 │   │   └── ui/
 │   │       └── settings_page.dart                   settings screen
 │   │
-│   ├── tools/                                     tools hub (subslices)
-│   │   ├── agreement/                               agreement practice subslice
-│   │   │   └── ui/
-│   │   │       └── agreement_page.dart                 agreement practice screen
-│   │   ├── conjugations/                            conjugation practice subslice
-│   │   │   └── ui/
-│   │   │       └── conjugations_page.dart              conjugation practice screen
-│   │   └── home/                                    tools hub subslice
+│   ├── tools/                                     tools — drill levels for conjugations + agreement
+│   │   └── home/                                    tools page subslice
 │   │       └── ui/
-│   │           └── tools_page.dart                     tools hub screen
+│   │           └── tools_page.dart                     tools page with foldable drill levels
 │   │
 │   ├── specialized/                               specialized vocabulary
 │   │   └── ui/
@@ -155,6 +149,18 @@ lib/
 │           └── vocab_deck_list_page.dart             deck list screen
 │
 ├── widgets/                                     — reusable composed widgets
+│   ├── drill/                                     drill practice display widgets (subslices)
+│   │   ├── group_card/                              drill group card subslice
+│   │   │   ├── model/
+│   │   │   │   ├── drill_group_card_data.dart           DrillGroupCardData
+│   │   │   │   └── drill_level_data.dart                DrillLevelData
+│   │   │   ├── ui/
+│   │   │   │   └── drill_group_card.dart                LangwijDrillGroupCard widget
+│   │   │   └── group_card.dart                        barrel (exports model/)
+│   │   ├── level_card/                              drill level card subslice
+│   │   │   └── ui/
+│   │   │       └── drill_level_card.dart               LangwijDrillLevelCard widget
+│   │   └── drill.dart                               slice barrel (re-exports group_card)
 │   └── vocab/                                     vocabulary display widgets (subslices)
 │       ├── daily_activity_card/                     activity card subslice
 │       │   └── ui/

@@ -10,8 +10,6 @@ import 'package:langwij/pages/progress/ui/progress_page.dart';
 import 'package:langwij/pages/quiz/result/ui/result_page.dart';
 import 'package:langwij/pages/quiz/round/ui/round_page.dart';
 import 'package:langwij/pages/settings/ui/settings_page.dart';
-import 'package:langwij/pages/tools/agreement/ui/agreement_page.dart';
-import 'package:langwij/pages/tools/conjugations/ui/conjugations_page.dart';
 import 'package:langwij/pages/tools/home/ui/tools_page.dart';
 import 'package:langwij/pages/specialized/ui/specialized_vocab_page.dart';
 import 'package:langwij/pages/vocab/ui/vocab_deck_list_page.dart';
@@ -99,21 +97,7 @@ GoRouter createAppRouter({required bool isLanguageConfigured}) {
           state,
         ),
       ),
-      GoRoute(
-        path: AppRoutes.conjugations,
-        pageBuilder: (context, state) => _noTransitionPage(
-          const ConjugationsPage(parent: ParentCategory.conjugations),
-          state,
-        ),
-      ),
-      GoRoute(
-        path: AppRoutes.agreement,
-        pageBuilder: (context, state) => _noTransitionPage(
-          const AgreementPage(),
-          state,
-        ),
-      ),
-      GoRoute(
+GoRoute(
         path: AppRoutes.langPicker,
         pageBuilder: (context, state) => _slidePage(
           context,

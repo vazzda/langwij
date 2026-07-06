@@ -78,6 +78,11 @@ class PlanRepository {
     return _cachedCourseNotes![courseId];
   }
 
+  Future<Set<String>> getAvailableCourseIds() async {
+    await _load();
+    return _cachedCourses!.keys.toSet();
+  }
+
   Future<Map<String, LevelTier>> getTiers(
     String courseId,
     List<String> levelIds,
