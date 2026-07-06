@@ -2,7 +2,7 @@
   "a_lot": {
     "text": "a lot / full"
   },
-  "accept": {
+  "to_accept": {
     "text": "to accept",
     "note": "take/agree"
   },
@@ -19,7 +19,7 @@
   "actor": {
     "text": "actor"
   },
-  "add": {
+  "to_add": {
     "text": "to add",
     "note": "join together"
   },
@@ -29,7 +29,7 @@
   "after": {
     "text": "after"
   },
-  "agree": {
+  "to_agree": {
     "text": "to agree",
     "note": "concur"
   },
@@ -72,7 +72,7 @@
   "anniversary": {
     "text": "anniversary"
   },
-  "answer": {
+  "to_answer": {
     "text": "to answer",
     "note": "respond"
   },
@@ -91,7 +91,7 @@
   "app": {
     "text": "app"
   },
-  "appear": {
+  "to_appear": {
     "text": "to appear",
     "note": "become visible"
   },
@@ -113,7 +113,7 @@
   "arrest": {
     "text": "arrest"
   },
-  "arrive": {
+  "to_arrive": {
     "text": "to arrive",
     "note": "reach destination"
   },
@@ -123,7 +123,7 @@
   "artist": {
     "text": "artist"
   },
-  "ask": {
+  "to_ask": {
     "text": "to ask",
     "note": "request info"
   },
@@ -167,7 +167,7 @@
   "bag": {
     "text": "bag"
   },
-  "bake": {
+  "to_bake": {
     "text": "to bake"
   },
   "ball": {
@@ -188,14 +188,14 @@
   "battery": {
     "text": "battery"
   },
-  "be": {
+  "to_be": {
     "text": "to be",
     "note": "exist/state"
   },
-  "be_allowed_to": {
+  "to_be_allowed_to": {
     "text": "to be allowed to"
   },
-  "be_happy": {
+  "to_be_happy": {
     "text": "to be happy"
   },
   "bear": {
@@ -207,7 +207,7 @@
   "because": {
     "text": "because"
   },
-  "become": {
+  "to_become": {
     "text": "to become",
     "note": "change state"
   },
@@ -226,7 +226,7 @@
   "before": {
     "text": "before"
   },
-  "begin": {
+  "to_begin": {
     "text": "to begin",
     "note": "start"
   },
@@ -236,7 +236,7 @@
   "beige": {
     "text": "beige"
   },
-  "believe": {
+  "to_believe": {
     "text": "to believe",
     "note": "trust"
   },
@@ -324,11 +324,11 @@
   "bread": {
     "text": "bread"
   },
-  "break": {
+  "to_break": {
     "text": "to break",
     "note": "shatter/stop working"
   },
-  "break_down": {
+  "to_break_down": {
     "text": "to break down",
     "note": "fail mechanically"
   },
@@ -341,11 +341,11 @@
   "bright": {
     "text": "bright"
   },
-  "bring": {
+  "to_bring": {
     "text": "to bring",
     "note": "carry to"
   },
-  "bring_up": {
+  "to_bring_up": {
     "text": "to bring up",
     "note": "mention a topic"
   },
@@ -371,11 +371,11 @@
   "bug": {
     "text": "bug"
   },
-  "build": {
+  "to_build": {
     "text": "to build",
     "note": "construct"
   },
-  "burn": {
+  "to_burn": {
     "text": "to burn"
   },
   "bus": {
@@ -387,25 +387,25 @@
   "butter": {
     "text": "butter"
   },
-  "buy": {
+  "to_buy": {
     "text": "to buy",
     "note": "purchase"
   },
   "cabinet": {
     "text": "cabinet"
   },
-  "call": {
+  "to_call": {
     "text": "to call",
     "note": "telephone/shout"
   },
-  "call_back": {
+  "to_call_back": {
     "text": "to call back",
     "note": "return a call"
   },
   "camera": {
     "text": "camera"
   },
-  "can": {
+  "to_can": {
     "text": "to can",
     "note": "be able to"
   },
@@ -418,11 +418,11 @@
   "car": {
     "text": "car"
   },
-  "care": {
+  "to_care": {
     "text": "to care",
     "note": "feel concern"
   },
-  "carry": {
+  "to_carry": {
     "text": "to carry",
     "note": "hold and move"
   },
@@ -432,7 +432,7 @@
   "cat": {
     "text": "cat"
   },
-  "catch": {
+  "to_catch": {
     "text": "to catch"
   },
   "cave": {
@@ -459,7 +459,7 @@
   "chance": {
     "text": "chance"
   },
-  "change": {
+  "to_change": {
     "text": "to change",
     "note": "alter"
   },
@@ -469,11 +469,11 @@
   "cheap": {
     "text": "cheap"
   },
-  "check": {
+  "to_check": {
     "text": "to check",
     "note": "verify"
   },
-  "check_out": {
+  "to_check_out": {
     "text": "to check out",
     "note": "examine/leave"
   },
@@ -500,7 +500,7 @@
   "chocolate": {
     "text": "chocolate"
   },
-  "choose": {
+  "to_choose": {
     "text": "to choose",
     "note": "select"
   },
@@ -519,7 +519,7 @@
   "clay": {
     "text": "clay"
   },
-  "clean": {
+  "to_clean": {
     "text": "to clean"
   },
   "clean_a": {
@@ -534,7 +534,7 @@
   "clock": {
     "text": "clock"
   },
-  "close": {
+  "to_close": {
     "text": "to close"
   },
   "closed": {
@@ -577,7 +577,7 @@
   "comb": {
     "text": "comb"
   },
-  "come": {
+  "to_come": {
     "text": "to come",
     "note": "move toward"
   },
@@ -605,7 +605,7 @@
   "consent": {
     "text": "consent"
   },
-  "consider": {
+  "to_consider": {
     "text": "to consider",
     "note": "think about"
   },
@@ -615,14 +615,14 @@
   "continent": {
     "text": "continent"
   },
-  "continue": {
+  "to_continue": {
     "text": "to continue",
     "note": "keep going"
   },
   "contract": {
     "text": "contract"
   },
-  "cook": {
+  "to_cook": {
     "text": "to cook",
     "note": "prepare food"
   },
@@ -635,7 +635,7 @@
   "cotton": {
     "text": "cotton"
   },
-  "count": {
+  "to_count": {
     "text": "to count"
   },
   "country": {
@@ -656,7 +656,7 @@
   "cream": {
     "text": "cream"
   },
-  "create": {
+  "to_create": {
     "text": "to create",
     "note": "invent"
   },
@@ -672,7 +672,7 @@
   "crocodile": {
     "text": "crocodile"
   },
-  "cry": {
+  "to_cry": {
     "text": "to cry"
   },
   "cup": {
@@ -687,11 +687,11 @@
   "customs": {
     "text": "customs"
   },
-  "cut": {
+  "to_cut": {
     "text": "to cut",
     "note": "divide with blade"
   },
-  "dance": {
+  "to_dance": {
     "text": "to dance"
   },
   "danger": {
@@ -728,7 +728,7 @@
   "december": {
     "text": "December"
   },
-  "decide": {
+  "to_decide": {
     "text": "to decide",
     "note": "make a choice"
   },
@@ -766,14 +766,14 @@
   "destiny": {
     "text": "destiny"
   },
-  "develop": {
+  "to_develop": {
     "text": "to develop",
     "note": "evolve/build"
   },
   "diagnosis": {
     "text": "diagnosis"
   },
-  "die": {
+  "to_die": {
     "text": "to die",
     "note": "cease living"
   },
@@ -795,7 +795,7 @@
   "divorce": {
     "text": "divorce"
   },
-  "do": {
+  "to_do": {
     "text": "to do",
     "note": "perform an action"
   },
@@ -817,16 +817,16 @@
   "down": {
     "text": "down / downwards"
   },
-  "download": {
+  "to_download": {
     "text": "to download"
   },
-  "draw": {
+  "to_draw": {
     "text": "to draw"
   },
   "drawer": {
     "text": "drawer"
   },
-  "dream": {
+  "to_dream": {
     "text": "to dream"
   },
   "dream_n": {
@@ -842,11 +842,11 @@
   "drill": {
     "text": "drill"
   },
-  "drink": {
+  "to_drink": {
     "text": "to drink",
     "note": "consume liquid"
   },
-  "drive": {
+  "to_drive": {
     "text": "to drive",
     "note": "operate vehicle"
   },
@@ -871,19 +871,19 @@
   "easy": {
     "text": "easy"
   },
-  "eat": {
+  "to_eat": {
     "text": "to eat",
     "note": "consume food"
   },
-  "eat_breakfast": {
+  "to_eat_breakfast": {
     "text": "to eat breakfast",
     "note": "consume food"
   },
-  "eat_dinner": {
+  "to_eat_dinner": {
     "text": "to eat dinner",
     "note": "consume food"
   },
-  "eat_lunch": {
+  "to_eat_lunch": {
     "text": "to eat lunch",
     "note": "consume food"
   },
@@ -969,7 +969,7 @@
   "existence": {
     "text": "existence"
   },
-  "expect": {
+  "to_expect": {
     "text": "to expect",
     "note": "anticipate"
   },
@@ -982,7 +982,7 @@
   "experiment": {
     "text": "experiment"
   },
-  "explain": {
+  "to_explain": {
     "text": "to explain",
     "note": "clarify"
   },
@@ -995,7 +995,7 @@
   "failure": {
     "text": "failure"
   },
-  "fall": {
+  "to_fall": {
     "text": "to fall",
     "note": "drop down"
   },
@@ -1017,7 +1017,7 @@
   "father": {
     "text": "father"
   },
-  "fear": {
+  "to_fear": {
     "text": "to fear",
     "note": "be afraid"
   },
@@ -1028,10 +1028,10 @@
   "february": {
     "text": "February"
   },
-  "feed": {
+  "to_feed": {
     "text": "to feed"
   },
-  "feel": {
+  "to_feel": {
     "text": "to feel",
     "note": "experience emotion/touch"
   },
@@ -1041,17 +1041,17 @@
   "field": {
     "text": "field"
   },
-  "fight": {
+  "to_fight": {
     "text": "to fight"
   },
   "film": {
     "text": "film"
   },
-  "find": {
+  "to_find": {
     "text": "to find",
     "note": "locate"
   },
-  "find_out": {
+  "to_find_out": {
     "text": "to find out",
     "note": "discover information"
   },
@@ -1062,7 +1062,7 @@
   "finger": {
     "text": "finger"
   },
-  "finish": {
+  "to_finish": {
     "text": "to finish",
     "note": "complete"
   },
@@ -1094,10 +1094,10 @@
   "flower": {
     "text": "flower"
   },
-  "fly": {
+  "to_fly": {
     "text": "to fly"
   },
-  "follow": {
+  "to_follow": {
     "text": "to follow",
     "note": "go after"
   },
@@ -1113,7 +1113,7 @@
   "forest": {
     "text": "forest"
   },
-  "forget": {
+  "to_forget": {
     "text": "to forget"
   },
   "fork": {
@@ -1168,11 +1168,11 @@
   "gene": {
     "text": "gene"
   },
-  "get": {
+  "to_get": {
     "text": "to get",
     "note": "obtain/receive"
   },
-  "get_up": {
+  "to_get_up": {
     "text": "to get up",
     "note": "rise from bed"
   },
@@ -1188,11 +1188,11 @@
   "girlfriend": {
     "text": "girlfriend"
   },
-  "give": {
+  "to_give": {
     "text": "to give",
     "note": "hand to someone"
   },
-  "give_up": {
+  "to_give_up": {
     "text": "to give up",
     "note": "quit/stop trying"
   },
@@ -1213,7 +1213,7 @@
   "glue": {
     "text": "glue"
   },
-  "go": {
+  "to_go": {
     "text": "to go",
     "note": "move to a place"
   },
@@ -1247,14 +1247,14 @@
   "grey": {
     "text": "grey"
   },
-  "grill": {
+  "to_grill": {
     "text": "to grill"
   },
-  "grow": {
+  "to_grow": {
     "text": "to grow",
     "note": "increase"
   },
-  "grow_up": {
+  "to_grow_up": {
     "text": "to grow up",
     "note": "mature"
   },
@@ -1279,7 +1279,7 @@
   "hand": {
     "text": "hand"
   },
-  "happen": {
+  "to_happen": {
     "text": "to happen",
     "note": "occur"
   },
@@ -1298,14 +1298,14 @@
   "hat": {
     "text": "hat"
   },
-  "hate": {
+  "to_hate": {
     "text": "to hate"
   },
-  "have": {
+  "to_have": {
     "text": "to have",
     "note": "possess/own"
   },
-  "have_to": {
+  "to_have_to": {
     "text": "to have to",
     "note": "must"
   },
@@ -1318,7 +1318,7 @@
   "healthy": {
     "text": "healthy"
   },
-  "hear": {
+  "to_hear": {
     "text": "to hear",
     "note": "perceive sound"
   },
@@ -1332,7 +1332,7 @@
   "hello": {
     "text": "hello"
   },
-  "help": {
+  "to_help": {
     "text": "to help",
     "note": "assist"
   },
@@ -1348,13 +1348,13 @@
   "hill": {
     "text": "hill"
   },
-  "hire": {
+  "to_hire": {
     "text": "to hire"
   },
   "his": {
     "text": "his"
   },
-  "hold": {
+  "to_hold": {
     "text": "to hold",
     "note": "grip"
   },
@@ -1376,7 +1376,7 @@
   "hookup": {
     "text": "hookup"
   },
-  "hope": {
+  "to_hope": {
     "text": "to hope",
     "note": "desire/expect"
   },
@@ -1463,7 +1463,7 @@
   "in_front_of": {
     "text": "in front of"
   },
-  "include": {
+  "to_include": {
     "text": "to include",
     "note": "add in"
   },
@@ -1500,7 +1500,7 @@
   "invitation": {
     "text": "invitation"
   },
-  "invite": {
+  "to_invite": {
     "text": "to invite"
   },
   "invoice": {
@@ -1531,7 +1531,7 @@
   "job": {
     "text": "job"
   },
-  "join": {
+  "to_join": {
     "text": "to join",
     "note": "unite"
   },
@@ -1544,7 +1544,7 @@
   "july": {
     "text": "July"
   },
-  "jump": {
+  "to_jump": {
     "text": "to jump"
   },
   "june": {
@@ -1556,7 +1556,7 @@
   "justice": {
     "text": "justice"
   },
-  "keep": {
+  "to_keep": {
     "text": "to keep",
     "note": "continue/retain"
   },
@@ -1566,11 +1566,11 @@
   "kidney": {
     "text": "kidney"
   },
-  "kill": {
+  "to_kill": {
     "text": "to kill",
     "note": "cause death"
   },
-  "kiss": {
+  "to_kiss": {
     "text": "to kiss"
   },
   "kitchen": {
@@ -1583,7 +1583,7 @@
     "text": "knife",
     "note": "utensil"
   },
-  "know": {
+  "to_know": {
     "text": "to know",
     "note": "possess information"
   },
@@ -1614,7 +1614,7 @@
   "later": {
     "text": "later"
   },
-  "laugh": {
+  "to_laugh": {
     "text": "to laugh",
     "note": "express mirth"
   },
@@ -1627,21 +1627,21 @@
   "lawyer": {
     "text": "lawyer"
   },
-  "lead": {
+  "to_lead": {
     "text": "to lead",
     "note": "guide"
   },
   "league": {
     "text": "league"
   },
-  "learn": {
+  "to_learn": {
     "text": "to learn",
     "note": "gain knowledge"
   },
   "leather": {
     "text": "leather"
   },
-  "leave": {
+  "to_leave": {
     "text": "to leave",
     "note": "go away"
   },
@@ -1657,7 +1657,7 @@
   "less": {
     "text": "less"
   },
-  "let": {
+  "to_let": {
     "text": "to let",
     "note": "allow"
   },
@@ -1673,10 +1673,10 @@
   "license": {
     "text": "license"
   },
-  "lie": {
+  "to_lie": {
     "text": "to lie"
   },
-  "lie_down": {
+  "to_lie_down": {
     "text": "to lie down"
   },
   "lie_n": {
@@ -1690,21 +1690,21 @@
     "text": "light",
     "note": "-color"
   },
-  "like": {
+  "to_like": {
     "text": "to like",
     "note": "enjoy"
   },
   "lion": {
     "text": "lion"
   },
-  "listen": {
+  "to_listen": {
     "text": "to listen",
     "note": "pay attention to sound"
   },
   "little": {
     "text": "little / bit"
   },
-  "live": {
+  "to_live": {
     "text": "to live",
     "note": "dwell"
   },
@@ -1723,15 +1723,15 @@
   "long": {
     "text": "long"
   },
-  "look_at": {
+  "to_look_at": {
     "text": "to look at",
     "note": "view/examine"
   },
-  "look_for": {
+  "to_look_for": {
     "text": "to look for",
     "note": "search for something"
   },
-  "lose": {
+  "to_lose": {
     "text": "to lose",
     "note": "misplace"
   },
@@ -1745,7 +1745,7 @@
   "loud": {
     "text": "loud"
   },
-  "love": {
+  "to_love": {
     "text": "to love",
     "note": "strong affection"
   },
@@ -1764,7 +1764,7 @@
   "lung": {
     "text": "lung"
   },
-  "make": {
+  "to_make": {
     "text": "to make",
     "note": "create/construct"
   },
@@ -1780,7 +1780,7 @@
   "march": {
     "text": "March"
   },
-  "marinate": {
+  "to_marinate": {
     "text": "to marinate"
   },
   "market": {
@@ -1789,7 +1789,7 @@
   "maroon": {
     "text": "maroon"
   },
-  "marry": {
+  "to_marry": {
     "text": "to marry"
   },
   "match": {
@@ -1801,7 +1801,7 @@
   "may": {
     "text": "May"
   },
-  "mean": {
+  "to_mean": {
     "text": "to mean",
     "note": "signify"
   },
@@ -1814,11 +1814,11 @@
   "medicine": {
     "text": "medicine"
   },
-  "meet": {
+  "to_meet": {
     "text": "to meet",
     "note": "encounter"
   },
-  "meet_up": {
+  "to_meet_up": {
     "text": "to meet up",
     "note": "social gathering"
   },
@@ -1888,15 +1888,15 @@
   "mouth": {
     "text": "mouth"
   },
-  "move": {
+  "to_move": {
     "text": "to move",
     "note": "change position"
   },
-  "move_in": {
+  "to_move_in": {
     "text": "to move in",
     "note": "change homes"
   },
-  "move_out": {
+  "to_move_out": {
     "text": "to move out",
     "note": "change homes"
   },
@@ -1946,11 +1946,11 @@
   "neck": {
     "text": "neck"
   },
-  "need": {
+  "to_need": {
     "text": "to need",
     "note": "require"
   },
-  "negotiate": {
+  "to_negotiate": {
     "text": "to negotiate"
   },
   "neighbor": {
@@ -2013,7 +2013,7 @@
   "odometer": {
     "text": "odometer"
   },
-  "offer": {
+  "to_offer": {
     "text": "to offer",
     "note": "propose"
   },
@@ -2044,7 +2044,7 @@
   "only": {
     "text": "only"
   },
-  "open": {
+  "to_open": {
     "text": "to open",
     "note": "unclose"
   },
@@ -2114,7 +2114,7 @@
   "partner": {
     "text": "partner"
   },
-  "pass": {
+  "to_pass": {
     "text": "to pass",
     "note": "go by"
   },
@@ -2130,11 +2130,11 @@
   "pattern": {
     "text": "pattern"
   },
-  "pay": {
+  "to_pay": {
     "text": "to pay",
     "note": "give money"
   },
-  "pay_for": {
+  "to_pay_for": {
     "text": "to pay for",
     "note": "purchase/suffer"
   },
@@ -2201,11 +2201,11 @@
   "plateau": {
     "text": "plateau"
   },
-  "play": {
+  "to_play": {
     "text": "to play",
     "note": "recreation"
   },
-  "play_instrument": {
+  "to_play_instrument": {
     "text": "to play instrument"
   },
   "player": {
@@ -2238,7 +2238,7 @@
   "power": {
     "text": "power"
   },
-  "pray": {
+  "to_pray": {
     "text": "to pray"
   },
   "pregnant": {
@@ -2268,35 +2268,35 @@
   "project": {
     "text": "project"
   },
-  "promise": {
+  "to_promise": {
     "text": "to promise"
   },
-  "promote": {
+  "to_promote": {
     "text": "to promote"
   },
   "proposal_n": {
     "text": "proposal",
     "note": "formal suggestion"
   },
-  "protect": {
+  "to_protect": {
     "text": "to protect"
   },
-  "pull": {
+  "to_pull": {
     "text": "to pull",
     "note": "tug toward"
   },
   "purple": {
     "text": "purple"
   },
-  "push": {
+  "to_push": {
     "text": "to push",
     "note": "press away"
   },
-  "put": {
+  "to_put": {
     "text": "to put",
     "note": "place somewhere"
   },
-  "put_on": {
+  "to_put_on": {
     "text": "to put on",
     "note": "dress yourself"
   },
@@ -2321,7 +2321,7 @@
   "rain": {
     "text": "rain"
   },
-  "raise": {
+  "to_raise": {
     "text": "to raise",
     "note": "lift up"
   },
@@ -2331,14 +2331,14 @@
   "razor": {
     "text": "razor"
   },
-  "reach": {
+  "to_reach": {
     "text": "to reach",
     "note": "arrive at/touch"
   },
   "reaction": {
     "text": "reaction"
   },
-  "read": {
+  "to_read": {
     "text": "to read",
     "note": "interpret text"
   },
@@ -2351,7 +2351,7 @@
   "receipt": {
     "text": "receipt"
   },
-  "receive": {
+  "to_receive": {
     "text": "to receive",
     "note": "get"
   },
@@ -2367,15 +2367,15 @@
   "relationship": {
     "text": "relationship"
   },
-  "remember": {
+  "to_remember": {
     "text": "to remember",
     "note": "recall"
   },
-  "report": {
+  "to_report": {
     "text": "to report",
     "note": "state facts"
   },
-  "require": {
+  "to_require": {
     "text": "to require",
     "note": "need"
   },
@@ -2385,10 +2385,10 @@
   "reservation": {
     "text": "reservation"
   },
-  "resign": {
+  "to_resign": {
     "text": "to resign"
   },
-  "respect": {
+  "to_respect": {
     "text": "to respect"
   },
   "restaurant": {
@@ -2412,7 +2412,7 @@
   "road": {
     "text": "road"
   },
-  "roast": {
+  "to_roast": {
     "text": "to roast"
   },
   "roof": {
@@ -2430,7 +2430,7 @@
   "rubber": {
     "text": "rubber"
   },
-  "run": {
+  "to_run": {
     "text": "to run",
     "note": "move fast"
   },
@@ -2461,13 +2461,13 @@
   "sausage": {
     "text": "sausage"
   },
-  "save": {
+  "to_save": {
     "text": "to save"
   },
   "saw": {
     "text": "saw"
   },
-  "say": {
+  "to_say": {
     "text": "to say",
     "note": "speak words"
   },
@@ -2516,22 +2516,22 @@
   "seduction": {
     "text": "seduction"
   },
-  "see": {
+  "to_see": {
     "text": "to see",
     "note": "use eyes"
   },
-  "seem": {
+  "to_seem": {
     "text": "to seem",
     "note": "appear to be"
   },
-  "sell": {
+  "to_sell": {
     "text": "to sell",
     "note": "exchange for money"
   },
   "semester": {
     "text": "semester"
   },
-  "send": {
+  "to_send": {
     "text": "to send",
     "note": "dispatch"
   },
@@ -2548,18 +2548,18 @@
   "series": {
     "text": "series"
   },
-  "serve": {
+  "to_serve": {
     "text": "to serve",
     "note": "provide service"
   },
   "server": {
     "text": "server"
   },
-  "set": {
+  "to_set": {
     "text": "to set",
     "note": "place/arrange"
   },
-  "set_up": {
+  "to_set_up": {
     "text": "to set up",
     "note": "organize/arrange"
   },
@@ -2572,7 +2572,7 @@
   "shade": {
     "text": "shade"
   },
-  "shake": {
+  "to_shake": {
     "text": "to shake"
   },
   "shampoo": {
@@ -2599,7 +2599,7 @@
   "shoe": {
     "text": "shoe"
   },
-  "shoot": {
+  "to_shoot": {
     "text": "to shoot",
     "note": "a gun"
   },
@@ -2609,10 +2609,10 @@
   "shoulder": {
     "text": "shoulder"
   },
-  "shout": {
+  "to_shout": {
     "text": "to shout"
   },
-  "show": {
+  "to_show": {
     "text": "to show",
     "note": "display"
   },
@@ -2635,7 +2635,7 @@
   "sin": {
     "text": "sin"
   },
-  "sing": {
+  "to_sing": {
     "text": "to sing"
   },
   "single": {
@@ -2647,18 +2647,18 @@
   "sister": {
     "text": "sister"
   },
-  "sit": {
+  "to_sit": {
     "text": "to sit",
     "note": "rest on seat"
   },
-  "sit_down": {
+  "to_sit_down": {
     "text": "to sit down",
     "note": "take a seat"
   },
   "six": {
     "text": "six"
   },
-  "sketch": {
+  "to_sketch": {
     "text": "to sketch"
   },
   "skin": {
@@ -2670,7 +2670,7 @@
   "sky": {
     "text": "sky"
   },
-  "sleep": {
+  "to_sleep": {
     "text": "to sleep",
     "note": "rest"
   },
@@ -2683,10 +2683,10 @@
   "smart": {
     "text": "smart"
   },
-  "smell": {
+  "to_smell": {
     "text": "to smell"
   },
-  "smile": {
+  "to_smile": {
     "text": "to smile",
     "note": "facial expression"
   },
@@ -2732,7 +2732,7 @@
   "sour": {
     "text": "sour"
   },
-  "speak": {
+  "to_speak": {
     "text": "to speak",
     "note": "utter"
   },
@@ -2745,7 +2745,7 @@
   "speed": {
     "text": "speed"
   },
-  "spend": {
+  "to_spend": {
     "text": "to spend",
     "note": "use money/time"
   },
@@ -2768,7 +2768,7 @@
   "stairs": {
     "text": "stairs"
   },
-  "stand": {
+  "to_stand": {
     "text": "to stand",
     "note": "be upright"
   },
@@ -2778,11 +2778,11 @@
   "station": {
     "text": "station"
   },
-  "stay": {
+  "to_stay": {
     "text": "to stay / to remain",
     "note": "remain / stay behind"
   },
-  "steam": {
+  "to_steam": {
     "text": "to steam"
   },
   "steering": {
@@ -2794,7 +2794,7 @@
   "stone": {
     "text": "stone"
   },
-  "stop": {
+  "to_stop": {
     "text": "to stop",
     "note": "cease"
   },
@@ -2825,10 +2825,10 @@
   "student": {
     "text": "student"
   },
-  "study": {
+  "to_study": {
     "text": "to study"
   },
-  "succeed": {
+  "to_succeed": {
     "text": "to succeed"
   },
   "success": {
@@ -2837,13 +2837,13 @@
   "such": {
     "text": "such / like this"
   },
-  "sue": {
+  "to_sue": {
     "text": "to sue"
   },
   "sugar": {
     "text": "sugar"
   },
-  "suggest": {
+  "to_suggest": {
     "text": "to suggest",
     "note": "propose idea"
   },
@@ -2859,7 +2859,7 @@
   "sunscreen": {
     "text": "sunscreen"
   },
-  "support": {
+  "to_support": {
     "text": "to support",
     "note": "help/hold up"
   },
@@ -2869,7 +2869,7 @@
   "sweet": {
     "text": "sweet"
   },
-  "swim": {
+  "to_swim": {
     "text": "to swim"
   },
   "swimming_pool": {
@@ -2884,15 +2884,15 @@
   "table": {
     "text": "table"
   },
-  "take": {
+  "to_take": {
     "text": "to take",
     "note": "move something/someone"
   },
-  "take_off": {
+  "to_take_off": {
     "text": "to take off",
     "note": "remove clothes/launch"
   },
-  "talk": {
+  "to_talk": {
     "text": "to talk",
     "note": "converse"
   },
@@ -2902,7 +2902,7 @@
   "tape": {
     "text": "tape"
   },
-  "taste": {
+  "to_taste": {
     "text": "to taste"
   },
   "tax": {
@@ -2914,7 +2914,7 @@
   "tea": {
     "text": "tea"
   },
-  "teach": {
+  "to_teach": {
     "text": "to teach"
   },
   "teacher": {
@@ -2938,7 +2938,7 @@
   "texture": {
     "text": "texture"
   },
-  "thank": {
+  "to_thank": {
     "text": "to thank",
     "note": "express gratitude"
   },
@@ -2978,7 +2978,7 @@
   "thing": {
     "text": "thing"
   },
-  "think": {
+  "to_think": {
     "text": "to think",
     "note": "mental action"
   },
@@ -2995,7 +2995,7 @@
   "three": {
     "text": "three"
   },
-  "throw": {
+  "to_throw": {
     "text": "to throw"
   },
   "thursday": {
@@ -3053,7 +3053,7 @@
   "totally": {
     "text": "totally / fully"
   },
-  "touch": {
+  "to_touch": {
     "text": "to touch"
   },
   "tournament": {
@@ -3065,7 +3065,7 @@
   "traffic": {
     "text": "traffic"
   },
-  "train": {
+  "to_train": {
     "text": "to train"
   },
   "train_vehicle": {
@@ -3082,7 +3082,7 @@
   "transparent": {
     "text": "transparent"
   },
-  "travel": {
+  "to_travel": {
     "text": "to travel"
   },
   "tray": {
@@ -3104,26 +3104,26 @@
   "truth": {
     "text": "truth"
   },
-  "try": {
+  "to_try": {
     "text": "to try",
     "note": "attempt"
   },
-  "try_on": {
+  "to_try_on": {
     "text": "to try on",
     "note": "test clothes"
   },
   "tuesday": {
     "text": "Tuesday"
   },
-  "turn": {
+  "to_turn": {
     "text": "to turn",
     "note": "rotate/change direction"
   },
-  "turn_off": {
+  "to_turn_off": {
     "text": "to turn off",
     "note": "operate power"
   },
-  "turn_on": {
+  "to_turn_on": {
     "text": "to turn on",
     "note": "operate power"
   },
@@ -3142,7 +3142,7 @@
   "under": {
     "text": "under / below"
   },
-  "understand": {
+  "to_understand": {
     "text": "to understand",
     "note": "comprehend"
   },
@@ -3152,13 +3152,13 @@
   "up": {
     "text": "up / upwards"
   },
-  "update": {
+  "to_update": {
     "text": "to update"
   },
-  "upload": {
+  "to_upload": {
     "text": "to upload"
   },
-  "use": {
+  "to_use": {
     "text": "to use",
     "note": "employ a tool"
   },
@@ -3223,29 +3223,29 @@
   "volcano": {
     "text": "volcano"
   },
-  "wait": {
+  "to_wait": {
     "text": "to wait",
     "note": "stay/pause"
   },
-  "wait_for": {
+  "to_wait_for": {
     "text": "to wait for",
     "note": "anticipate"
   },
   "waiter": {
     "text": "waiter"
   },
-  "wake_up": {
+  "to_wake_up": {
     "text": "to wake up",
     "note": "stop sleeping"
   },
-  "walk": {
+  "to_walk": {
     "text": "to walk",
     "note": "step"
   },
   "wall": {
     "text": "wall"
   },
-  "want": {
+  "to_want": {
     "text": "to want",
     "note": "desire"
   },
@@ -3258,20 +3258,20 @@
   "warm": {
     "text": "warm"
   },
-  "warn": {
+  "to_warn": {
     "text": "to warn"
   },
-  "wash": {
+  "to_wash": {
     "text": "to wash"
   },
   "washing_machine": {
     "text": "washing machine"
   },
-  "watch": {
+  "to_watch": {
     "text": "to watch",
     "note": "observe"
   },
-  "watch_out": {
+  "to_watch_out": {
     "text": "to watch out",
     "note": "be careful"
   },
@@ -3281,7 +3281,7 @@
   "waterfall": {
     "text": "waterfall"
   },
-  "wave": {
+  "to_wave": {
     "text": "to wave"
   },
   "way": {
@@ -3293,7 +3293,7 @@
   "weak": {
     "text": "weak"
   },
-  "wear": {
+  "to_wear": {
     "text": "to wear"
   },
   "weather": {
@@ -3350,7 +3350,7 @@
   "wife": {
     "text": "wife"
   },
-  "win": {
+  "to_win": {
     "text": "to win / to get",
     "note": "be victorious / obtain/receive"
   },
@@ -3372,7 +3372,7 @@
   "wisdom": {
     "text": "wisdom"
   },
-  "wish": {
+  "to_wish": {
     "text": "to wish",
     "note": "long for"
   },
@@ -3391,7 +3391,7 @@
   "word": {
     "text": "word"
   },
-  "work": {
+  "to_work": {
     "text": "to work",
     "note": "labor/task"
   },
@@ -3410,7 +3410,7 @@
   "wrench": {
     "text": "wrench"
   },
-  "write": {
+  "to_write": {
     "text": "to write",
     "note": "record text"
   },

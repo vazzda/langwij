@@ -2579,637 +2579,637 @@
     "text": "ano",
     "gender": "m"
   },
-  "accept": {
+  "to_accept": {
     "text": "aceitar"
   },
-  "add": {
+  "to_add": {
     "text": "adicionar"
   },
-  "agree": {
+  "to_agree": {
     "text": "concordar"
   },
-  "answer": {
+  "to_answer": {
     "text": "responder"
   },
-  "appear": {
+  "to_appear": {
     "text": "aparecer"
   },
-  "arrive": {
+  "to_arrive": {
     "text": "chegar"
   },
-  "ask": {
+  "to_ask": {
     "text": "pedir"
   },
-  "bake": {
+  "to_bake": {
     "text": "assar"
   },
-  "be": {
+  "to_be": {
     "text": "ser"
   },
-  "be_allowed_to": {
+  "to_be_allowed_to": {
     "text": "poder"
   },
-  "be_happy": {
+  "to_be_happy": {
     "text": "ser feliz"
   },
-  "become": {
+  "to_become": {
     "text": "tornar-se"
   },
-  "begin": {
+  "to_begin": {
     "text": "começar"
   },
-  "believe": {
+  "to_believe": {
     "text": "acreditar"
   },
-  "break": {
+  "to_break": {
     "text": "quebrar"
   },
-  "break_down": {
+  "to_break_down": {
     "text": "quebrar-se"
   },
-  "bring": {
+  "to_bring": {
     "text": "trazer"
   },
-  "bring_up": {
+  "to_bring_up": {
     "text": "criar"
   },
-  "build": {
+  "to_build": {
     "text": "construir"
   },
-  "burn": {
+  "to_burn": {
     "text": "queimar"
   },
-  "buy": {
+  "to_buy": {
     "text": "comprar"
   },
-  "call": {
+  "to_call": {
     "text": "chamar"
   },
-  "call_back": {
+  "to_call_back": {
     "text": "ligar de volta"
   },
-  "can": {
+  "to_can": {
     "text": "poder"
   },
-  "care": {
+  "to_care": {
     "text": "cuidar"
   },
-  "carry": {
+  "to_carry": {
     "text": "carregar"
   },
-  "catch": {
+  "to_catch": {
     "text": "pegar"
   },
-  "change": {
+  "to_change": {
     "text": "mudar"
   },
-  "check": {
+  "to_check": {
     "text": "verificar"
   },
-  "check_out": {
+  "to_check_out": {
     "text": "sair"
   },
-  "choose": {
+  "to_choose": {
     "text": "escolher"
   },
-  "clean": {
+  "to_clean": {
     "text": "limpar"
   },
-  "close": {
+  "to_close": {
     "text": "fechar"
   },
-  "come": {
+  "to_come": {
     "text": "vir"
   },
-  "consider": {
+  "to_consider": {
     "text": "considerar"
   },
-  "continue": {
+  "to_continue": {
     "text": "continuar"
   },
-  "cook": {
+  "to_cook": {
     "text": "cozinhar"
   },
-  "count": {
+  "to_count": {
     "text": "contar"
   },
-  "create": {
+  "to_create": {
     "text": "criar"
   },
-  "cry": {
+  "to_cry": {
     "text": "chorar"
   },
-  "cut": {
+  "to_cut": {
     "text": "cortar"
   },
-  "dance": {
+  "to_dance": {
     "text": "dançar"
   },
-  "decide": {
+  "to_decide": {
     "text": "decidir"
   },
-  "develop": {
+  "to_develop": {
     "text": "desenvolver"
   },
-  "die": {
+  "to_die": {
     "text": "morrer"
   },
-  "do": {
+  "to_do": {
     "text": "fazer"
   },
-  "download": {
+  "to_download": {
     "text": "baixar"
   },
-  "draw": {
+  "to_draw": {
     "text": "desenhar"
   },
-  "dream": {
+  "to_dream": {
     "text": "sonhar"
   },
-  "drink": {
+  "to_drink": {
     "text": "beber"
   },
-  "drive": {
+  "to_drive": {
     "text": "dirigir"
   },
-  "eat": {
+  "to_eat": {
     "text": "comer"
   },
-  "eat_breakfast": {
+  "to_eat_breakfast": {
     "text": "tomar café da manhã"
   },
-  "eat_dinner": {
+  "to_eat_dinner": {
     "text": "jantar"
   },
-  "eat_lunch": {
+  "to_eat_lunch": {
     "text": "almoçar"
   },
-  "expect": {
+  "to_expect": {
     "text": "esperar"
   },
-  "explain": {
+  "to_explain": {
     "text": "explicar"
   },
-  "fall": {
+  "to_fall": {
     "text": "cair"
   },
-  "fear": {
+  "to_fear": {
     "text": "temer"
   },
-  "feed": {
+  "to_feed": {
     "text": "alimentar"
   },
-  "feel": {
+  "to_feel": {
     "text": "sentir"
   },
-  "fight": {
+  "to_fight": {
     "text": "lutar"
   },
-  "find": {
+  "to_find": {
     "text": "encontrar"
   },
-  "find_out": {
+  "to_find_out": {
     "text": "descobrir"
   },
-  "finish": {
+  "to_finish": {
     "text": "terminar"
   },
-  "fly": {
+  "to_fly": {
     "text": "voar"
   },
-  "follow": {
+  "to_follow": {
     "text": "seguir"
   },
-  "forget": {
+  "to_forget": {
     "text": "esquecer"
   },
-  "get": {
+  "to_get": {
     "text": "obter"
   },
-  "get_up": {
+  "to_get_up": {
     "text": "acordar"
   },
-  "give": {
+  "to_give": {
     "text": "dar"
   },
-  "give_up": {
+  "to_give_up": {
     "text": "desistir"
   },
-  "go": {
+  "to_go": {
     "text": "ir"
   },
-  "grill": {
+  "to_grill": {
     "text": "grelhar"
   },
-  "grow": {
+  "to_grow": {
     "text": "crescer"
   },
-  "grow_up": {
+  "to_grow_up": {
     "text": "crescer"
   },
-  "happen": {
+  "to_happen": {
     "text": "acontecer"
   },
-  "hate": {
+  "to_hate": {
     "text": "odiar"
   },
-  "have": {
+  "to_have": {
     "text": "ter"
   },
-  "have_to": {
+  "to_have_to": {
     "text": "ter que"
   },
-  "hear": {
+  "to_hear": {
     "text": "ouvir"
   },
-  "help": {
+  "to_help": {
     "text": "ajudar"
   },
-  "hire": {
+  "to_hire": {
     "text": "contratar"
   },
-  "hold": {
+  "to_hold": {
     "text": "segurar"
   },
-  "hope": {
+  "to_hope": {
     "text": "esperar"
   },
-  "include": {
+  "to_include": {
     "text": "incluir"
   },
-  "invite": {
+  "to_invite": {
     "text": "convidar"
   },
-  "join": {
+  "to_join": {
     "text": "entrar"
   },
-  "jump": {
+  "to_jump": {
     "text": "pular"
   },
-  "keep": {
+  "to_keep": {
     "text": "manter"
   },
-  "kill": {
+  "to_kill": {
     "text": "matar"
   },
-  "kiss": {
+  "to_kiss": {
     "text": "beijar"
   },
-  "know": {
+  "to_know": {
     "text": "saber"
   },
-  "laugh": {
+  "to_laugh": {
     "text": "rir"
   },
-  "lead": {
+  "to_lead": {
     "text": "liderar"
   },
-  "learn": {
+  "to_learn": {
     "text": "aprender"
   },
-  "leave": {
+  "to_leave": {
     "text": "partir"
   },
-  "let": {
+  "to_let": {
     "text": "deixar"
   },
-  "lie": {
+  "to_lie": {
     "text": "mentir"
   },
-  "lie_down": {
+  "to_lie_down": {
     "text": "deitar"
   },
-  "like": {
+  "to_like": {
     "text": "gostar"
   },
-  "listen": {
+  "to_listen": {
     "text": "ouvir"
   },
-  "live": {
+  "to_live": {
     "text": "viver"
   },
-  "look_at": {
+  "to_look_at": {
     "text": "olhar"
   },
-  "look_for": {
+  "to_look_for": {
     "text": "procurar"
   },
-  "lose": {
+  "to_lose": {
     "text": "perder"
   },
-  "love": {
+  "to_love": {
     "text": "amar"
   },
-  "make": {
+  "to_make": {
     "text": "fazer"
   },
-  "marinate": {
+  "to_marinate": {
     "text": "marinar"
   },
-  "marry": {
+  "to_marry": {
     "text": "casar"
   },
-  "mean": {
+  "to_mean": {
     "text": "significar"
   },
-  "meet": {
+  "to_meet": {
     "text": "conhecer"
   },
-  "meet_up": {
+  "to_meet_up": {
     "text": "encontrar-se"
   },
-  "move": {
+  "to_move": {
     "text": "mover"
   },
-  "move_in": {
+  "to_move_in": {
     "text": "mudar para"
   },
-  "move_out": {
+  "to_move_out": {
     "text": "mudar de"
   },
-  "need": {
+  "to_need": {
     "text": "precisar"
   },
-  "negotiate": {
+  "to_negotiate": {
     "text": "negociar"
   },
-  "offer": {
+  "to_offer": {
     "text": "oferecer"
   },
-  "open": {
+  "to_open": {
     "text": "abrir"
   },
-  "pass": {
+  "to_pass": {
     "text": "passar"
   },
-  "pay": {
+  "to_pay": {
     "text": "pagar"
   },
-  "pay_for": {
+  "to_pay_for": {
     "text": "pagar por"
   },
-  "play": {
+  "to_play": {
     "text": "jogar"
   },
-  "play_instrument": {
+  "to_play_instrument": {
     "text": "tocar"
   },
-  "pray": {
+  "to_pray": {
     "text": "orar"
   },
-  "promise": {
+  "to_promise": {
     "text": "prometer"
   },
-  "promote": {
+  "to_promote": {
     "text": "promover"
   },
-  "protect": {
+  "to_protect": {
     "text": "proteger"
   },
-  "pull": {
+  "to_pull": {
     "text": "puxar"
   },
-  "push": {
+  "to_push": {
     "text": "empurrar"
   },
-  "put": {
+  "to_put": {
     "text": "colocar"
   },
-  "put_on": {
+  "to_put_on": {
     "text": "colocar"
   },
-  "raise": {
+  "to_raise": {
     "text": "levantar"
   },
-  "reach": {
+  "to_reach": {
     "text": "alcançar"
   },
-  "read": {
+  "to_read": {
     "text": "ler"
   },
-  "receive": {
+  "to_receive": {
     "text": "receber"
   },
-  "remember": {
+  "to_remember": {
     "text": "lembrar"
   },
-  "report": {
+  "to_report": {
     "text": "informar"
   },
-  "require": {
+  "to_require": {
     "text": "exigir"
   },
-  "resign": {
+  "to_resign": {
     "text": "renunciar"
   },
-  "respect": {
+  "to_respect": {
     "text": "respeitar"
   },
-  "roast": {
+  "to_roast": {
     "text": "assar"
   },
-  "run": {
+  "to_run": {
     "text": "correr"
   },
-  "save": {
+  "to_save": {
     "text": "salvar"
   },
-  "say": {
+  "to_say": {
     "text": "dizer"
   },
-  "see": {
+  "to_see": {
     "text": "ver"
   },
-  "seem": {
+  "to_seem": {
     "text": "parecer"
   },
-  "sell": {
+  "to_sell": {
     "text": "vender"
   },
-  "send": {
+  "to_send": {
     "text": "enviar"
   },
-  "serve": {
+  "to_serve": {
     "text": "servir"
   },
-  "set": {
+  "to_set": {
     "text": "colocar"
   },
-  "set_up": {
+  "to_set_up": {
     "text": "preparar"
   },
-  "shake": {
+  "to_shake": {
     "text": "sacudir"
   },
-  "shoot": {
+  "to_shoot": {
     "text": "atirar"
   },
-  "shout": {
+  "to_shout": {
     "text": "gritar"
   },
-  "show": {
+  "to_show": {
     "text": "mostrar"
   },
-  "sing": {
+  "to_sing": {
     "text": "cantar"
   },
-  "sit": {
+  "to_sit": {
     "text": "sentar"
   },
-  "sit_down": {
+  "to_sit_down": {
     "text": "sentar-se"
   },
-  "sketch": {
+  "to_sketch": {
     "text": "esboçar"
   },
-  "sleep": {
+  "to_sleep": {
     "text": "dormir"
   },
-  "smell": {
+  "to_smell": {
     "text": "cheirar"
   },
-  "smile": {
+  "to_smile": {
     "text": "sorrir"
   },
-  "speak": {
+  "to_speak": {
     "text": "falar"
   },
-  "spend": {
+  "to_spend": {
     "text": "gastar"
   },
-  "stand": {
+  "to_stand": {
     "text": "ficar em pé"
   },
-  "stay": {
+  "to_stay": {
     "text": "ficar"
   },
-  "steam": {
+  "to_steam": {
     "text": "vaporizar"
   },
-  "stop": {
+  "to_stop": {
     "text": "parar"
   },
-  "study": {
+  "to_study": {
     "text": "estudar"
   },
-  "succeed": {
+  "to_succeed": {
     "text": "conseguir"
   },
-  "sue": {
+  "to_sue": {
     "text": "processar"
   },
-  "suggest": {
+  "to_suggest": {
     "text": "sugerir"
   },
-  "support": {
+  "to_support": {
     "text": "apoiar"
   },
-  "swim": {
+  "to_swim": {
     "text": "nadar"
   },
-  "take": {
+  "to_take": {
     "text": "pegar"
   },
-  "take_off": {
+  "to_take_off": {
     "text": "decolar"
   },
-  "talk": {
+  "to_talk": {
     "text": "conversar"
   },
-  "taste": {
+  "to_taste": {
     "text": "provar"
   },
-  "teach": {
+  "to_teach": {
     "text": "ensinar"
   },
-  "thank": {
+  "to_thank": {
     "text": "agradecer"
   },
-  "think": {
+  "to_think": {
     "text": "pensar"
   },
-  "throw": {
+  "to_throw": {
     "text": "jogar"
   },
-  "touch": {
+  "to_touch": {
     "text": "tocar"
   },
-  "train": {
+  "to_train": {
     "text": "treinar"
   },
-  "travel": {
+  "to_travel": {
     "text": "viajar"
   },
-  "try": {
+  "to_try": {
     "text": "tentar"
   },
-  "try_on": {
+  "to_try_on": {
     "text": "provar"
   },
-  "turn": {
+  "to_turn": {
     "text": "virar"
   },
-  "turn_off": {
+  "to_turn_off": {
     "text": "desligar"
   },
-  "turn_on": {
+  "to_turn_on": {
     "text": "ligar"
   },
-  "understand": {
+  "to_understand": {
     "text": "entender"
   },
-  "update": {
+  "to_update": {
     "text": "atualizar"
   },
-  "upload": {
+  "to_upload": {
     "text": "enviar"
   },
-  "use": {
+  "to_use": {
     "text": "usar"
   },
-  "wait": {
+  "to_wait": {
     "text": "esperar"
   },
-  "wait_for": {
+  "to_wait_for": {
     "text": "esperar por"
   },
-  "wake_up": {
+  "to_wake_up": {
     "text": "acordar"
   },
-  "walk": {
+  "to_walk": {
     "text": "caminhar"
   },
-  "want": {
+  "to_want": {
     "text": "querer"
   },
-  "warn": {
+  "to_warn": {
     "text": "avisar"
   },
-  "wash": {
+  "to_wash": {
     "text": "lavar"
   },
-  "watch": {
+  "to_watch": {
     "text": "assistir"
   },
-  "watch_out": {
+  "to_watch_out": {
     "text": "tomar cuidado"
   },
-  "wave": {
+  "to_wave": {
     "text": "acenar"
   },
-  "wear": {
+  "to_wear": {
     "text": "vestir"
   },
-  "win": {
+  "to_win": {
     "text": "ganhar"
   },
-  "wish": {
+  "to_wish": {
     "text": "desejar"
   },
-  "work": {
+  "to_work": {
     "text": "trabalhar"
   },
-  "write": {
+  "to_write": {
     "text": "escrever"
   },
   "alive": {

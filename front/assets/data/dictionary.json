@@ -1,10 +1,1324 @@
 {
   "terms": {
-    "a_lot": {
-      "pos": "other"
+    "goodbye": {
+      "pos": "phrase"
     },
-    "accept": {
+    "hello": {
+      "pos": "phrase"
+    },
+    "no": {
+      "pos": "phrase"
+    },
+    "sorry": {
+      "pos": "phrase"
+    },
+    "thank_you": {
+      "pos": "phrase"
+    },
+    "yes": {
+      "pos": "phrase"
+    },
+    "how": {
+      "pos": "interrogative"
+    },
+    "how_much": {
+      "pos": "interrogative"
+    },
+    "what": {
+      "pos": "interrogative"
+    },
+    "when": {
+      "pos": "interrogative"
+    },
+    "where": {
+      "pos": "interrogative"
+    },
+    "who": {
+      "pos": "interrogative"
+    },
+    "why": {
+      "pos": "interrogative"
+    },
+    "he": {
+      "pos": "pronoun"
+    },
+    "her": {
+      "pos": "pronoun"
+    },
+    "his": {
+      "pos": "pronoun"
+    },
+    "i": {
+      "pos": "pronoun"
+    },
+    "it": {
+      "pos": "pronoun"
+    },
+    "our": {
+      "pos": "pronoun"
+    },
+    "she": {
+      "pos": "pronoun"
+    },
+    "that": {
+      "pos": "pronoun"
+    },
+    "that_o": {
+      "pos": "pronoun"
+    },
+    "their": {
+      "pos": "pronoun"
+    },
+    "they": {
+      "pos": "pronoun"
+    },
+    "this": {
+      "pos": "pronoun"
+    },
+    "we": {
+      "pos": "pronoun"
+    },
+    "you": {
+      "pos": "pronoun"
+    },
+    "your": {
+      "pos": "pronoun"
+    },
+    "across": {
+      "pos": "preposition"
+    },
+    "after": {
+      "pos": "preposition"
+    },
+    "before": {
+      "pos": "preposition"
+    },
+    "behind": {
+      "pos": "preposition"
+    },
+    "beside": {
+      "pos": "preposition"
+    },
+    "between": {
+      "pos": "preposition"
+    },
+    "in": {
+      "pos": "preposition"
+    },
+    "in_front_of": {
+      "pos": "preposition"
+    },
+    "inside": {
+      "pos": "preposition"
+    },
+    "near": {
+      "pos": "preposition"
+    },
+    "on": {
+      "pos": "preposition"
+    },
+    "over": {
+      "pos": "preposition"
+    },
+    "under": {
+      "pos": "preposition"
+    },
+    "although": {
+      "pos": "conjunction"
+    },
+    "and": {
+      "pos": "conjunction"
+    },
+    "because": {
+      "pos": "conjunction"
+    },
+    "but": {
+      "pos": "conjunction"
+    },
+    "either": {
+      "pos": "conjunction"
+    },
+    "however": {
+      "pos": "conjunction"
+    },
+    "if": {
+      "pos": "conjunction"
+    },
+    "neither": {
+      "pos": "conjunction"
+    },
+    "or": {
+      "pos": "conjunction"
+    },
+    "therefore": {
+      "pos": "conjunction"
+    },
+    "unless": {
+      "pos": "conjunction"
+    },
+    "whether": {
+      "pos": "conjunction"
+    },
+    "while": {
+      "pos": "conjunction"
+    },
+    "eight": {
+      "pos": "numeral"
+    },
+    "first": {
+      "pos": "numeral"
+    },
+    "five": {
+      "pos": "numeral"
+    },
+    "four": {
+      "pos": "numeral"
+    },
+    "half": {
+      "pos": "numeral"
+    },
+    "hundred": {
+      "pos": "numeral"
+    },
+    "last": {
+      "pos": "numeral"
+    },
+    "nine": {
+      "pos": "numeral"
+    },
+    "one": {
+      "pos": "numeral"
+    },
+    "seven": {
+      "pos": "numeral"
+    },
+    "six": {
+      "pos": "numeral"
+    },
+    "ten": {
+      "pos": "numeral"
+    },
+    "thousand": {
+      "pos": "numeral"
+    },
+    "three": {
+      "pos": "numeral"
+    },
+    "two": {
+      "pos": "numeral"
+    },
+    "zero": {
+      "pos": "numeral"
+    },
+    "to_accept": {
       "pos": "verb"
+    },
+    "to_add": {
+      "pos": "verb"
+    },
+    "to_agree": {
+      "pos": "verb"
+    },
+    "to_answer": {
+      "pos": "verb"
+    },
+    "to_appear": {
+      "pos": "verb"
+    },
+    "to_arrive": {
+      "pos": "verb"
+    },
+    "to_ask": {
+      "pos": "verb"
+    },
+    "to_bake": {
+      "pos": "verb"
+    },
+    "to_be": {
+      "pos": "verb"
+    },
+    "to_be_allowed_to": {
+      "pos": "verb"
+    },
+    "to_be_happy": {
+      "pos": "verb"
+    },
+    "to_become": {
+      "pos": "verb"
+    },
+    "to_begin": {
+      "pos": "verb"
+    },
+    "to_believe": {
+      "pos": "verb"
+    },
+    "to_break": {
+      "pos": "verb"
+    },
+    "to_break_down": {
+      "pos": "verb"
+    },
+    "to_bring": {
+      "pos": "verb"
+    },
+    "to_bring_up": {
+      "pos": "verb"
+    },
+    "to_build": {
+      "pos": "verb"
+    },
+    "to_burn": {
+      "pos": "verb"
+    },
+    "to_buy": {
+      "pos": "verb"
+    },
+    "to_call": {
+      "pos": "verb"
+    },
+    "to_call_back": {
+      "pos": "verb"
+    },
+    "to_can": {
+      "pos": "verb"
+    },
+    "to_care": {
+      "pos": "verb"
+    },
+    "to_carry": {
+      "pos": "verb"
+    },
+    "to_catch": {
+      "pos": "verb"
+    },
+    "to_change": {
+      "pos": "verb"
+    },
+    "to_check": {
+      "pos": "verb"
+    },
+    "to_check_out": {
+      "pos": "verb"
+    },
+    "to_choose": {
+      "pos": "verb"
+    },
+    "to_clean": {
+      "pos": "verb"
+    },
+    "to_close": {
+      "pos": "verb"
+    },
+    "to_come": {
+      "pos": "verb"
+    },
+    "to_consider": {
+      "pos": "verb"
+    },
+    "to_continue": {
+      "pos": "verb"
+    },
+    "to_cook": {
+      "pos": "verb"
+    },
+    "to_count": {
+      "pos": "verb"
+    },
+    "to_create": {
+      "pos": "verb"
+    },
+    "to_cry": {
+      "pos": "verb"
+    },
+    "to_cut": {
+      "pos": "verb"
+    },
+    "to_dance": {
+      "pos": "verb"
+    },
+    "to_decide": {
+      "pos": "verb"
+    },
+    "to_develop": {
+      "pos": "verb"
+    },
+    "to_die": {
+      "pos": "verb"
+    },
+    "to_do": {
+      "pos": "verb"
+    },
+    "to_download": {
+      "pos": "verb"
+    },
+    "to_draw": {
+      "pos": "verb"
+    },
+    "to_dream": {
+      "pos": "verb"
+    },
+    "to_drink": {
+      "pos": "verb"
+    },
+    "to_drive": {
+      "pos": "verb"
+    },
+    "to_eat": {
+      "pos": "verb"
+    },
+    "to_eat_breakfast": {
+      "pos": "verb"
+    },
+    "to_eat_dinner": {
+      "pos": "verb"
+    },
+    "to_eat_lunch": {
+      "pos": "verb"
+    },
+    "to_expect": {
+      "pos": "verb"
+    },
+    "to_explain": {
+      "pos": "verb"
+    },
+    "to_fall": {
+      "pos": "verb"
+    },
+    "to_fear": {
+      "pos": "verb"
+    },
+    "to_feed": {
+      "pos": "verb"
+    },
+    "to_feel": {
+      "pos": "verb"
+    },
+    "to_fight": {
+      "pos": "verb"
+    },
+    "to_find": {
+      "pos": "verb"
+    },
+    "to_find_out": {
+      "pos": "verb"
+    },
+    "to_finish": {
+      "pos": "verb"
+    },
+    "to_fly": {
+      "pos": "verb"
+    },
+    "to_follow": {
+      "pos": "verb"
+    },
+    "to_forget": {
+      "pos": "verb"
+    },
+    "to_get": {
+      "pos": "verb"
+    },
+    "to_get_up": {
+      "pos": "verb"
+    },
+    "to_give": {
+      "pos": "verb"
+    },
+    "to_give_up": {
+      "pos": "verb"
+    },
+    "to_go": {
+      "pos": "verb"
+    },
+    "to_grill": {
+      "pos": "verb"
+    },
+    "to_grow": {
+      "pos": "verb"
+    },
+    "to_grow_up": {
+      "pos": "verb"
+    },
+    "to_happen": {
+      "pos": "verb"
+    },
+    "to_hate": {
+      "pos": "verb"
+    },
+    "to_have": {
+      "pos": "verb"
+    },
+    "to_have_to": {
+      "pos": "verb"
+    },
+    "to_hear": {
+      "pos": "verb"
+    },
+    "to_help": {
+      "pos": "verb"
+    },
+    "to_hire": {
+      "pos": "verb"
+    },
+    "to_hold": {
+      "pos": "verb"
+    },
+    "to_hope": {
+      "pos": "verb"
+    },
+    "to_include": {
+      "pos": "verb"
+    },
+    "to_invite": {
+      "pos": "verb"
+    },
+    "to_join": {
+      "pos": "verb"
+    },
+    "to_jump": {
+      "pos": "verb"
+    },
+    "to_keep": {
+      "pos": "verb"
+    },
+    "to_kill": {
+      "pos": "verb"
+    },
+    "to_kiss": {
+      "pos": "verb"
+    },
+    "to_know": {
+      "pos": "verb"
+    },
+    "to_laugh": {
+      "pos": "verb"
+    },
+    "to_lead": {
+      "pos": "verb"
+    },
+    "to_learn": {
+      "pos": "verb"
+    },
+    "to_leave": {
+      "pos": "verb"
+    },
+    "to_let": {
+      "pos": "verb"
+    },
+    "to_lie": {
+      "pos": "verb"
+    },
+    "to_lie_down": {
+      "pos": "verb"
+    },
+    "to_like": {
+      "pos": "verb"
+    },
+    "to_listen": {
+      "pos": "verb"
+    },
+    "to_live": {
+      "pos": "verb"
+    },
+    "to_look_at": {
+      "pos": "verb"
+    },
+    "to_look_for": {
+      "pos": "verb"
+    },
+    "to_lose": {
+      "pos": "verb"
+    },
+    "to_love": {
+      "pos": "verb"
+    },
+    "to_make": {
+      "pos": "verb"
+    },
+    "to_marinate": {
+      "pos": "verb"
+    },
+    "to_marry": {
+      "pos": "verb"
+    },
+    "to_mean": {
+      "pos": "verb"
+    },
+    "to_meet": {
+      "pos": "verb"
+    },
+    "to_meet_up": {
+      "pos": "verb"
+    },
+    "to_move": {
+      "pos": "verb"
+    },
+    "to_move_in": {
+      "pos": "verb"
+    },
+    "to_move_out": {
+      "pos": "verb"
+    },
+    "to_need": {
+      "pos": "verb"
+    },
+    "to_negotiate": {
+      "pos": "verb"
+    },
+    "to_offer": {
+      "pos": "verb"
+    },
+    "to_open": {
+      "pos": "verb"
+    },
+    "to_pass": {
+      "pos": "verb"
+    },
+    "to_pay": {
+      "pos": "verb"
+    },
+    "to_pay_for": {
+      "pos": "verb"
+    },
+    "to_play": {
+      "pos": "verb"
+    },
+    "to_play_instrument": {
+      "pos": "verb"
+    },
+    "to_pray": {
+      "pos": "verb"
+    },
+    "to_promise": {
+      "pos": "verb"
+    },
+    "to_promote": {
+      "pos": "verb"
+    },
+    "to_protect": {
+      "pos": "verb"
+    },
+    "to_pull": {
+      "pos": "verb"
+    },
+    "to_push": {
+      "pos": "verb"
+    },
+    "to_put": {
+      "pos": "verb"
+    },
+    "to_put_on": {
+      "pos": "verb"
+    },
+    "to_raise": {
+      "pos": "verb"
+    },
+    "to_reach": {
+      "pos": "verb"
+    },
+    "to_read": {
+      "pos": "verb"
+    },
+    "to_receive": {
+      "pos": "verb"
+    },
+    "to_remember": {
+      "pos": "verb"
+    },
+    "to_report": {
+      "pos": "verb"
+    },
+    "to_require": {
+      "pos": "verb"
+    },
+    "to_resign": {
+      "pos": "verb"
+    },
+    "to_respect": {
+      "pos": "verb"
+    },
+    "to_roast": {
+      "pos": "verb"
+    },
+    "to_run": {
+      "pos": "verb"
+    },
+    "to_save": {
+      "pos": "verb"
+    },
+    "to_say": {
+      "pos": "verb"
+    },
+    "to_see": {
+      "pos": "verb"
+    },
+    "to_seem": {
+      "pos": "verb"
+    },
+    "to_sell": {
+      "pos": "verb"
+    },
+    "to_send": {
+      "pos": "verb"
+    },
+    "to_serve": {
+      "pos": "verb"
+    },
+    "to_set": {
+      "pos": "verb"
+    },
+    "to_set_up": {
+      "pos": "verb"
+    },
+    "to_shake": {
+      "pos": "verb"
+    },
+    "to_shoot": {
+      "pos": "verb"
+    },
+    "to_shout": {
+      "pos": "verb"
+    },
+    "to_show": {
+      "pos": "verb"
+    },
+    "to_sing": {
+      "pos": "verb"
+    },
+    "to_sit": {
+      "pos": "verb"
+    },
+    "to_sit_down": {
+      "pos": "verb"
+    },
+    "to_sketch": {
+      "pos": "verb"
+    },
+    "to_sleep": {
+      "pos": "verb"
+    },
+    "to_smell": {
+      "pos": "verb"
+    },
+    "to_smile": {
+      "pos": "verb"
+    },
+    "to_speak": {
+      "pos": "verb"
+    },
+    "to_spend": {
+      "pos": "verb"
+    },
+    "to_stand": {
+      "pos": "verb"
+    },
+    "to_stay": {
+      "pos": "verb"
+    },
+    "to_steam": {
+      "pos": "verb"
+    },
+    "to_stop": {
+      "pos": "verb"
+    },
+    "to_study": {
+      "pos": "verb"
+    },
+    "to_succeed": {
+      "pos": "verb"
+    },
+    "to_sue": {
+      "pos": "verb"
+    },
+    "to_suggest": {
+      "pos": "verb"
+    },
+    "to_support": {
+      "pos": "verb"
+    },
+    "to_swim": {
+      "pos": "verb"
+    },
+    "to_take": {
+      "pos": "verb"
+    },
+    "to_take_off": {
+      "pos": "verb"
+    },
+    "to_talk": {
+      "pos": "verb"
+    },
+    "to_taste": {
+      "pos": "verb"
+    },
+    "to_teach": {
+      "pos": "verb"
+    },
+    "to_thank": {
+      "pos": "verb"
+    },
+    "to_think": {
+      "pos": "verb"
+    },
+    "to_throw": {
+      "pos": "verb"
+    },
+    "to_touch": {
+      "pos": "verb"
+    },
+    "to_train": {
+      "pos": "verb"
+    },
+    "to_travel": {
+      "pos": "verb"
+    },
+    "to_try": {
+      "pos": "verb"
+    },
+    "to_try_on": {
+      "pos": "verb"
+    },
+    "to_turn": {
+      "pos": "verb"
+    },
+    "to_turn_off": {
+      "pos": "verb"
+    },
+    "to_turn_on": {
+      "pos": "verb"
+    },
+    "to_understand": {
+      "pos": "verb"
+    },
+    "to_update": {
+      "pos": "verb"
+    },
+    "to_upload": {
+      "pos": "verb"
+    },
+    "to_use": {
+      "pos": "verb"
+    },
+    "to_wait": {
+      "pos": "verb"
+    },
+    "to_wait_for": {
+      "pos": "verb"
+    },
+    "to_wake_up": {
+      "pos": "verb"
+    },
+    "to_walk": {
+      "pos": "verb"
+    },
+    "to_want": {
+      "pos": "verb"
+    },
+    "to_warn": {
+      "pos": "verb"
+    },
+    "to_wash": {
+      "pos": "verb"
+    },
+    "to_watch": {
+      "pos": "verb"
+    },
+    "to_watch_out": {
+      "pos": "verb"
+    },
+    "to_wave": {
+      "pos": "verb"
+    },
+    "to_wear": {
+      "pos": "verb"
+    },
+    "to_win": {
+      "pos": "verb"
+    },
+    "to_wish": {
+      "pos": "verb"
+    },
+    "to_work": {
+      "pos": "verb"
+    },
+    "to_write": {
+      "pos": "verb"
+    },
+    "a_lot": {
+      "pos": "adverb"
+    },
+    "almost": {
+      "pos": "adverb"
+    },
+    "already": {
+      "pos": "adverb"
+    },
+    "also": {
+      "pos": "adverb"
+    },
+    "always": {
+      "pos": "adverb"
+    },
+    "at_least": {
+      "pos": "adverb"
+    },
+    "backward": {
+      "pos": "adverb"
+    },
+    "completely": {
+      "pos": "adverb"
+    },
+    "down": {
+      "pos": "adverb"
+    },
+    "earlier": {
+      "pos": "adverb"
+    },
+    "enough": {
+      "pos": "adverb"
+    },
+    "everywhere": {
+      "pos": "adverb"
+    },
+    "exactly": {
+      "pos": "adverb"
+    },
+    "forward": {
+      "pos": "adverb"
+    },
+    "hardly": {
+      "pos": "adverb"
+    },
+    "here": {
+      "pos": "adverb"
+    },
+    "immediately": {
+      "pos": "adverb"
+    },
+    "instead": {
+      "pos": "adverb"
+    },
+    "later": {
+      "pos": "adverb"
+    },
+    "left": {
+      "pos": "adverb"
+    },
+    "less": {
+      "pos": "adverb"
+    },
+    "little": {
+      "pos": "adverb"
+    },
+    "more": {
+      "pos": "adverb"
+    },
+    "mostly": {
+      "pos": "adverb"
+    },
+    "much": {
+      "pos": "adverb"
+    },
+    "never": {
+      "pos": "adverb"
+    },
+    "now": {
+      "pos": "adverb"
+    },
+    "often": {
+      "pos": "adverb"
+    },
+    "only": {
+      "pos": "adverb"
+    },
+    "otherwise": {
+      "pos": "adverb"
+    },
+    "partially": {
+      "pos": "adverb"
+    },
+    "please": {
+      "pos": "adverb"
+    },
+    "rarely": {
+      "pos": "adverb"
+    },
+    "recently": {
+      "pos": "adverb"
+    },
+    "right": {
+      "pos": "adverb"
+    },
+    "sideways": {
+      "pos": "adverb"
+    },
+    "sometimes": {
+      "pos": "adverb"
+    },
+    "soon": {
+      "pos": "adverb"
+    },
+    "straight": {
+      "pos": "adverb"
+    },
+    "such": {
+      "pos": "adverb"
+    },
+    "then": {
+      "pos": "adverb"
+    },
+    "there": {
+      "pos": "adverb"
+    },
+    "today": {
+      "pos": "adverb"
+    },
+    "tomorrow": {
+      "pos": "adverb"
+    },
+    "tonight": {
+      "pos": "adverb"
+    },
+    "too": {
+      "pos": "adverb"
+    },
+    "totally": {
+      "pos": "adverb"
+    },
+    "up": {
+      "pos": "adverb"
+    },
+    "usually": {
+      "pos": "adverb"
+    },
+    "very": {
+      "pos": "adverb"
+    },
+    "yesterday": {
+      "pos": "adverb"
+    },
+    "yet": {
+      "pos": "adverb"
+    },
+    "alive": {
+      "pos": "adjective"
+    },
+    "angry": {
+      "pos": "adjective"
+    },
+    "bad": {
+      "pos": "adjective"
+    },
+    "beautiful": {
+      "pos": "adjective"
+    },
+    "beige": {
+      "pos": "adjective"
+    },
+    "big": {
+      "pos": "adjective"
+    },
+    "bitter": {
+      "pos": "adjective"
+    },
+    "black": {
+      "pos": "adjective"
+    },
+    "blind": {
+      "pos": "adjective"
+    },
+    "blue": {
+      "pos": "adjective"
+    },
+    "brave": {
+      "pos": "adjective"
+    },
+    "bright": {
+      "pos": "adjective"
+    },
+    "brown": {
+      "pos": "adjective"
+    },
+    "cheap": {
+      "pos": "adjective"
+    },
+    "clean_a": {
+      "pos": "adjective"
+    },
+    "closed": {
+      "pos": "adjective"
+    },
+    "cold": {
+      "pos": "adjective"
+    },
+    "colorful": {
+      "pos": "adjective"
+    },
+    "coral": {
+      "pos": "adjective"
+    },
+    "correct": {
+      "pos": "adjective"
+    },
+    "crimson": {
+      "pos": "adjective"
+    },
+    "dark": {
+      "pos": "adjective"
+    },
+    "dead": {
+      "pos": "adjective"
+    },
+    "deaf": {
+      "pos": "adjective"
+    },
+    "deep": {
+      "pos": "adjective"
+    },
+    "delicious": {
+      "pos": "adjective"
+    },
+    "different": {
+      "pos": "adjective"
+    },
+    "difficult": {
+      "pos": "adjective"
+    },
+    "dirty": {
+      "pos": "adjective"
+    },
+    "dry": {
+      "pos": "adjective"
+    },
+    "easy": {
+      "pos": "adjective"
+    },
+    "empty": {
+      "pos": "adjective"
+    },
+    "erotic": {
+      "pos": "adjective"
+    },
+    "expensive": {
+      "pos": "adjective"
+    },
+    "fast": {
+      "pos": "adjective"
+    },
+    "full": {
+      "pos": "adjective"
+    },
+    "furious": {
+      "pos": "adjective"
+    },
+    "gold": {
+      "pos": "adjective"
+    },
+    "good": {
+      "pos": "adjective"
+    },
+    "green": {
+      "pos": "adjective"
+    },
+    "grey": {
+      "pos": "adjective"
+    },
+    "guilty": {
+      "pos": "adjective"
+    },
+    "happy": {
+      "pos": "adjective"
+    },
+    "hard": {
+      "pos": "adjective"
+    },
+    "healthy": {
+      "pos": "adjective"
+    },
+    "heavy": {
+      "pos": "adjective"
+    },
+    "honest": {
+      "pos": "adjective"
+    },
+    "hot": {
+      "pos": "adjective"
+    },
+    "hungry": {
+      "pos": "adjective"
+    },
+    "important": {
+      "pos": "adjective"
+    },
+    "innocent": {
+      "pos": "adjective"
+    },
+    "ivory": {
+      "pos": "adjective"
+    },
+    "light": {
+      "pos": "adjective"
+    },
+    "long": {
+      "pos": "adjective"
+    },
+    "loud": {
+      "pos": "adjective"
+    },
+    "maroon": {
+      "pos": "adjective"
+    },
+    "matte": {
+      "pos": "adjective"
+    },
+    "multicolor": {
+      "pos": "adjective"
+    },
+    "naked": {
+      "pos": "adjective"
+    },
+    "navy": {
+      "pos": "adjective"
+    },
+    "necessary": {
+      "pos": "adjective"
+    },
+    "new": {
+      "pos": "adjective"
+    },
+    "old": {
+      "pos": "adjective"
+    },
+    "orange": {
+      "pos": "adjective"
+    },
+    "pale": {
+      "pos": "adjective"
+    },
+    "pink": {
+      "pos": "adjective"
+    },
+    "poor": {
+      "pos": "adjective"
+    },
+    "possible": {
+      "pos": "adjective"
+    },
+    "pregnant": {
+      "pos": "adjective"
+    },
+    "purple": {
+      "pos": "adjective"
+    },
+    "quiet": {
+      "pos": "adjective"
+    },
+    "red": {
+      "pos": "adjective"
+    },
+    "rich": {
+      "pos": "adjective"
+    },
+    "round": {
+      "pos": "adjective"
+    },
+    "sad": {
+      "pos": "adjective"
+    },
+    "salty": {
+      "pos": "adjective"
+    },
+    "same": {
+      "pos": "adjective"
+    },
+    "sensual": {
+      "pos": "adjective"
+    },
+    "shiny": {
+      "pos": "adjective"
+    },
+    "short": {
+      "pos": "adjective"
+    },
+    "sick": {
+      "pos": "adjective"
+    },
+    "silver": {
+      "pos": "adjective"
+    },
+    "single": {
+      "pos": "adjective"
+    },
+    "slow": {
+      "pos": "adjective"
+    },
+    "small": {
+      "pos": "adjective"
+    },
+    "smart": {
+      "pos": "adjective"
+    },
+    "soft": {
+      "pos": "adjective"
+    },
+    "sour": {
+      "pos": "adjective"
+    },
+    "spicy": {
+      "pos": "adjective"
+    },
+    "strong": {
+      "pos": "adjective"
+    },
+    "sweet": {
+      "pos": "adjective"
+    },
+    "tall": {
+      "pos": "adjective"
+    },
+    "teal": {
+      "pos": "adjective"
+    },
+    "thirsty": {
+      "pos": "adjective"
+    },
+    "tired": {
+      "pos": "adjective"
+    },
+    "transparent": {
+      "pos": "adjective"
+    },
+    "turquoise": {
+      "pos": "adjective"
+    },
+    "ugly": {
+      "pos": "adjective"
+    },
+    "vibrant": {
+      "pos": "adjective"
+    },
+    "warm": {
+      "pos": "adjective"
+    },
+    "weak": {
+      "pos": "adjective"
+    },
+    "wet": {
+      "pos": "adjective"
+    },
+    "white": {
+      "pos": "adjective"
+    },
+    "wide": {
+      "pos": "adjective"
+    },
+    "wrong": {
+      "pos": "adjective"
+    },
+    "yellow": {
+      "pos": "adjective"
+    },
+    "young": {
+      "pos": "adjective"
     },
     "accident_car": {
       "pos": "noun"
@@ -12,23 +1326,11 @@
     "account": {
       "pos": "noun"
     },
-    "across": {
-      "pos": "other"
-    },
     "actor": {
       "pos": "noun"
     },
-    "add": {
-      "pos": "verb"
-    },
     "affair": {
       "pos": "noun"
-    },
-    "after": {
-      "pos": "other"
-    },
-    "agree": {
-      "pos": "verb"
     },
     "airport": {
       "pos": "noun"
@@ -36,41 +1338,14 @@
     "algorithm": {
       "pos": "noun"
     },
-    "alive": {
-      "pos": "adjective"
-    },
     "allergy": {
       "pos": "noun"
-    },
-    "almost": {
-      "pos": "other"
-    },
-    "already": {
-      "pos": "other"
-    },
-    "also": {
-      "pos": "other"
-    },
-    "although": {
-      "pos": "other"
-    },
-    "always": {
-      "pos": "other"
-    },
-    "and": {
-      "pos": "other"
-    },
-    "angry": {
-      "pos": "adjective"
     },
     "animal": {
       "pos": "noun"
     },
     "anniversary": {
       "pos": "noun"
-    },
-    "answer": {
-      "pos": "verb"
     },
     "answer_n": {
       "pos": "noun"
@@ -86,9 +1361,6 @@
     },
     "app": {
       "pos": "noun"
-    },
-    "appear": {
-      "pos": "verb"
     },
     "apple": {
       "pos": "noun"
@@ -108,22 +1380,16 @@
     "arrest": {
       "pos": "noun"
     },
-    "arrive": {
-      "pos": "verb"
-    },
     "artery": {
       "pos": "noun"
     },
     "artist": {
       "pos": "noun"
     },
-    "ask": {
-      "pos": "verb"
-    },
-    "at_least": {
-      "pos": "other"
-    },
     "athlete": {
+      "pos": "noun"
+    },
+    "atm": {
       "pos": "noun"
     },
     "atom": {
@@ -150,17 +1416,8 @@
     "back_body": {
       "pos": "noun"
     },
-    "backward": {
-      "pos": "other"
-    },
-    "bad": {
-      "pos": "adjective"
-    },
     "bag": {
       "pos": "noun"
-    },
-    "bake": {
-      "pos": "verb"
     },
     "ball": {
       "pos": "noun"
@@ -180,26 +1437,8 @@
     "battery": {
       "pos": "noun"
     },
-    "be": {
-      "pos": "verb"
-    },
-    "be_allowed_to": {
-      "pos": "verb"
-    },
-    "be_happy": {
-      "pos": "verb"
-    },
     "bear": {
       "pos": "noun"
-    },
-    "beautiful": {
-      "pos": "adjective"
-    },
-    "because": {
-      "pos": "other"
-    },
-    "become": {
-      "pos": "verb"
     },
     "bed": {
       "pos": "noun"
@@ -213,32 +1452,8 @@
     "beer": {
       "pos": "noun"
     },
-    "before": {
-      "pos": "other"
-    },
-    "begin": {
-      "pos": "verb"
-    },
-    "behind": {
-      "pos": "other"
-    },
-    "beige": {
-      "pos": "adjective"
-    },
-    "believe": {
-      "pos": "verb"
-    },
-    "beside": {
-      "pos": "other"
-    },
-    "between": {
-      "pos": "other"
-    },
     "bicycle": {
       "pos": "noun"
-    },
-    "big": {
-      "pos": "adjective"
     },
     "bird": {
       "pos": "noun"
@@ -246,26 +1461,14 @@
     "birth": {
       "pos": "noun"
     },
-    "bitter": {
-      "pos": "adjective"
-    },
-    "black": {
-      "pos": "adjective"
-    },
     "blanket": {
       "pos": "noun"
-    },
-    "blind": {
-      "pos": "adjective"
     },
     "blood": {
       "pos": "noun"
     },
     "blood_pressure": {
       "pos": "noun"
-    },
-    "blue": {
-      "pos": "adjective"
     },
     "boat": {
       "pos": "noun"
@@ -306,17 +1509,8 @@
     "brake": {
       "pos": "noun"
     },
-    "brave": {
-      "pos": "adjective"
-    },
     "bread": {
       "pos": "noun"
-    },
-    "break": {
-      "pos": "verb"
-    },
-    "break_down": {
-      "pos": "verb"
     },
     "breakup": {
       "pos": "noun"
@@ -324,23 +1518,11 @@
     "bridge": {
       "pos": "noun"
     },
-    "bright": {
-      "pos": "adjective"
-    },
-    "bring": {
-      "pos": "verb"
-    },
-    "bring_up": {
-      "pos": "verb"
-    },
     "broom": {
       "pos": "noun"
     },
     "brother": {
       "pos": "noun"
-    },
-    "brown": {
-      "pos": "adjective"
     },
     "browser": {
       "pos": "noun"
@@ -354,38 +1536,17 @@
     "bug": {
       "pos": "noun"
     },
-    "build": {
-      "pos": "verb"
-    },
-    "burn": {
-      "pos": "verb"
-    },
     "bus": {
       "pos": "noun"
-    },
-    "but": {
-      "pos": "other"
     },
     "butter": {
       "pos": "noun"
     },
-    "buy": {
-      "pos": "verb"
-    },
     "cabinet": {
       "pos": "noun"
     },
-    "call": {
-      "pos": "verb"
-    },
-    "call_back": {
-      "pos": "verb"
-    },
     "camera": {
       "pos": "noun"
-    },
-    "can": {
-      "pos": "verb"
     },
     "canvas": {
       "pos": "noun"
@@ -396,20 +1557,11 @@
     "car": {
       "pos": "noun"
     },
-    "care": {
-      "pos": "verb"
-    },
-    "carry": {
-      "pos": "verb"
-    },
     "cash": {
       "pos": "noun"
     },
     "cat": {
       "pos": "noun"
-    },
-    "catch": {
-      "pos": "verb"
     },
     "cave": {
       "pos": "noun"
@@ -435,20 +1587,8 @@
     "chance": {
       "pos": "noun"
     },
-    "change": {
-      "pos": "verb"
-    },
     "channel": {
       "pos": "noun"
-    },
-    "cheap": {
-      "pos": "adjective"
-    },
-    "check": {
-      "pos": "verb"
-    },
-    "check_out": {
-      "pos": "verb"
     },
     "cheese": {
       "pos": "noun"
@@ -471,9 +1611,6 @@
     "chocolate": {
       "pos": "noun"
     },
-    "choose": {
-      "pos": "verb"
-    },
     "church": {
       "pos": "noun"
     },
@@ -489,12 +1626,6 @@
     "clay": {
       "pos": "noun"
     },
-    "clean": {
-      "pos": "verb"
-    },
-    "clean_a": {
-      "pos": "adjective"
-    },
     "client": {
       "pos": "noun"
     },
@@ -503,12 +1634,6 @@
     },
     "clock": {
       "pos": "noun"
-    },
-    "close": {
-      "pos": "verb"
-    },
-    "closed": {
-      "pos": "adjective"
     },
     "cloth": {
       "pos": "noun"
@@ -537,23 +1662,11 @@
     "coffee": {
       "pos": "noun"
     },
-    "cold": {
-      "pos": "adjective"
-    },
-    "colorful": {
-      "pos": "adjective"
-    },
     "comb": {
       "pos": "noun"
     },
-    "come": {
-      "pos": "verb"
-    },
     "company": {
       "pos": "noun"
-    },
-    "completely": {
-      "pos": "other"
     },
     "compromise": {
       "pos": "noun"
@@ -573,35 +1686,17 @@
     "consent": {
       "pos": "noun"
     },
-    "consider": {
-      "pos": "verb"
-    },
     "constitution": {
       "pos": "noun"
     },
     "continent": {
       "pos": "noun"
     },
-    "continue": {
-      "pos": "verb"
-    },
     "contract": {
       "pos": "noun"
     },
-    "cook": {
-      "pos": "verb"
-    },
-    "coral": {
-      "pos": "adjective"
-    },
-    "correct": {
-      "pos": "adjective"
-    },
     "cotton": {
       "pos": "noun"
-    },
-    "count": {
-      "pos": "verb"
     },
     "country": {
       "pos": "noun"
@@ -621,23 +1716,14 @@
     "cream": {
       "pos": "noun"
     },
-    "create": {
-      "pos": "verb"
-    },
     "credit_card": {
       "pos": "noun"
     },
     "crime": {
       "pos": "noun"
     },
-    "crimson": {
-      "pos": "adjective"
-    },
     "crocodile": {
       "pos": "noun"
-    },
-    "cry": {
-      "pos": "verb"
     },
     "cup": {
       "pos": "noun"
@@ -651,17 +1737,8 @@
     "customs": {
       "pos": "noun"
     },
-    "cut": {
-      "pos": "verb"
-    },
-    "dance": {
-      "pos": "verb"
-    },
     "danger": {
       "pos": "noun"
-    },
-    "dark": {
-      "pos": "adjective"
     },
     "data": {
       "pos": "noun"
@@ -675,26 +1752,14 @@
     "day": {
       "pos": "noun"
     },
-    "dead": {
-      "pos": "adjective"
-    },
     "deadline": {
       "pos": "noun"
-    },
-    "deaf": {
-      "pos": "adjective"
     },
     "death": {
       "pos": "noun"
     },
     "december": {
       "pos": "noun"
-    },
-    "decide": {
-      "pos": "verb"
-    },
-    "deep": {
-      "pos": "adjective"
     },
     "deer": {
       "pos": "noun"
@@ -704,9 +1769,6 @@
     },
     "degree_education": {
       "pos": "noun"
-    },
-    "delicious": {
-      "pos": "adjective"
     },
     "deodorant": {
       "pos": "noun"
@@ -726,35 +1788,17 @@
     "destiny": {
       "pos": "noun"
     },
-    "develop": {
-      "pos": "verb"
-    },
     "diagnosis": {
       "pos": "noun"
     },
-    "die": {
-      "pos": "verb"
-    },
-    "different": {
-      "pos": "adjective"
-    },
-    "difficult": {
-      "pos": "adjective"
-    },
     "diploma": {
       "pos": "noun"
-    },
-    "dirty": {
-      "pos": "adjective"
     },
     "dishwasher": {
       "pos": "noun"
     },
     "divorce": {
       "pos": "noun"
-    },
-    "do": {
-      "pos": "verb"
     },
     "doctor": {
       "pos": "noun"
@@ -771,20 +1815,8 @@
     "dough": {
       "pos": "noun"
     },
-    "down": {
-      "pos": "other"
-    },
-    "download": {
-      "pos": "verb"
-    },
-    "draw": {
-      "pos": "verb"
-    },
     "drawer": {
       "pos": "noun"
-    },
-    "dream": {
-      "pos": "verb"
     },
     "dream_n": {
       "pos": "noun"
@@ -798,17 +1830,8 @@
     "drill": {
       "pos": "noun"
     },
-    "drink": {
-      "pos": "verb"
-    },
-    "drive": {
-      "pos": "verb"
-    },
     "driver": {
       "pos": "noun"
-    },
-    "dry": {
-      "pos": "adjective"
     },
     "eagle": {
       "pos": "noun"
@@ -816,35 +1839,11 @@
     "ear": {
       "pos": "noun"
     },
-    "earlier": {
-      "pos": "other"
-    },
     "earth": {
       "pos": "noun"
     },
-    "easy": {
-      "pos": "adjective"
-    },
-    "eat": {
-      "pos": "verb"
-    },
-    "eat_breakfast": {
-      "pos": "verb"
-    },
-    "eat_dinner": {
-      "pos": "verb"
-    },
-    "eat_lunch": {
-      "pos": "verb"
-    },
     "egg": {
       "pos": "noun"
-    },
-    "eight": {
-      "pos": "other"
-    },
-    "either": {
-      "pos": "other"
     },
     "elephant": {
       "pos": "noun"
@@ -854,9 +1853,6 @@
     },
     "employee": {
       "pos": "noun"
-    },
-    "empty": {
-      "pos": "adjective"
     },
     "encryption": {
       "pos": "noun"
@@ -876,12 +1872,6 @@
     "enlightenment": {
       "pos": "noun"
     },
-    "enough": {
-      "pos": "other"
-    },
-    "erotic": {
-      "pos": "adjective"
-    },
     "essay": {
       "pos": "noun"
     },
@@ -894,17 +1884,11 @@
     "evening": {
       "pos": "noun"
     },
-    "everywhere": {
-      "pos": "other"
-    },
     "evidence": {
       "pos": "noun"
     },
     "evolution": {
       "pos": "noun"
-    },
-    "exactly": {
-      "pos": "other"
     },
     "exam": {
       "pos": "noun"
@@ -918,20 +1902,11 @@
     "existence": {
       "pos": "noun"
     },
-    "expect": {
-      "pos": "verb"
-    },
-    "expensive": {
-      "pos": "adjective"
-    },
     "experience": {
       "pos": "noun"
     },
     "experiment": {
       "pos": "noun"
-    },
-    "explain": {
-      "pos": "verb"
     },
     "eye": {
       "pos": "noun"
@@ -942,9 +1917,6 @@
     "failure": {
       "pos": "noun"
     },
-    "fall": {
-      "pos": "verb"
-    },
     "family": {
       "pos": "noun"
     },
@@ -954,17 +1926,11 @@
     "farmer": {
       "pos": "noun"
     },
-    "fast": {
-      "pos": "adjective"
-    },
     "fate": {
       "pos": "noun"
     },
     "father": {
       "pos": "noun"
-    },
-    "fear": {
-      "pos": "verb"
     },
     "fear_n": {
       "pos": "noun"
@@ -972,29 +1938,14 @@
     "february": {
       "pos": "noun"
     },
-    "feed": {
-      "pos": "verb"
-    },
-    "feel": {
-      "pos": "verb"
-    },
     "fever": {
       "pos": "noun"
     },
     "field": {
       "pos": "noun"
     },
-    "fight": {
-      "pos": "verb"
-    },
     "film": {
       "pos": "noun"
-    },
-    "find": {
-      "pos": "verb"
-    },
-    "find_out": {
-      "pos": "verb"
     },
     "fine_n": {
       "pos": "noun"
@@ -1002,23 +1953,14 @@
     "finger": {
       "pos": "noun"
     },
-    "finish": {
-      "pos": "verb"
-    },
     "fire": {
       "pos": "noun"
-    },
-    "first": {
-      "pos": "other"
     },
     "fish": {
       "pos": "noun"
     },
     "fish_animal": {
       "pos": "noun"
-    },
-    "five": {
-      "pos": "other"
     },
     "flirt": {
       "pos": "noun"
@@ -1032,12 +1974,6 @@
     "flower": {
       "pos": "noun"
     },
-    "fly": {
-      "pos": "verb"
-    },
-    "follow": {
-      "pos": "verb"
-    },
     "food": {
       "pos": "noun"
     },
@@ -1050,17 +1986,8 @@
     "forest": {
       "pos": "noun"
     },
-    "forget": {
-      "pos": "verb"
-    },
     "fork": {
       "pos": "noun"
-    },
-    "forward": {
-      "pos": "other"
-    },
-    "four": {
-      "pos": "other"
     },
     "fracture": {
       "pos": "noun"
@@ -1083,12 +2010,6 @@
     "fuel": {
       "pos": "noun"
     },
-    "full": {
-      "pos": "adjective"
-    },
-    "furious": {
-      "pos": "adjective"
-    },
     "game_n": {
       "pos": "noun"
     },
@@ -1104,12 +2025,6 @@
     "gene": {
       "pos": "noun"
     },
-    "get": {
-      "pos": "verb"
-    },
-    "get_up": {
-      "pos": "verb"
-    },
     "gift": {
       "pos": "noun"
     },
@@ -1121,12 +2036,6 @@
     },
     "girlfriend": {
       "pos": "noun"
-    },
-    "give": {
-      "pos": "verb"
-    },
-    "give_up": {
-      "pos": "verb"
     },
     "glass_cup": {
       "pos": "noun"
@@ -1143,23 +2052,11 @@
     "glue": {
       "pos": "noun"
     },
-    "go": {
-      "pos": "verb"
-    },
     "goal": {
       "pos": "noun"
     },
     "god": {
       "pos": "noun"
-    },
-    "gold": {
-      "pos": "adjective"
-    },
-    "good": {
-      "pos": "adjective"
-    },
-    "goodbye": {
-      "pos": "other"
     },
     "grade": {
       "pos": "noun"
@@ -1170,26 +2067,8 @@
     "gravity": {
       "pos": "noun"
     },
-    "green": {
-      "pos": "adjective"
-    },
-    "grey": {
-      "pos": "adjective"
-    },
-    "grill": {
-      "pos": "verb"
-    },
-    "grow": {
-      "pos": "verb"
-    },
-    "grow_up": {
-      "pos": "verb"
-    },
     "guide": {
       "pos": "noun"
-    },
-    "guilty": {
-      "pos": "adjective"
     },
     "gym": {
       "pos": "noun"
@@ -1197,26 +2076,11 @@
     "hair": {
       "pos": "noun"
     },
-    "half": {
-      "pos": "other"
-    },
     "hammer": {
       "pos": "noun"
     },
     "hand": {
       "pos": "noun"
-    },
-    "happen": {
-      "pos": "verb"
-    },
-    "happy": {
-      "pos": "adjective"
-    },
-    "hard": {
-      "pos": "adjective"
-    },
-    "hardly": {
-      "pos": "other"
     },
     "hardware": {
       "pos": "noun"
@@ -1224,44 +2088,11 @@
     "hat": {
       "pos": "noun"
     },
-    "hate": {
-      "pos": "verb"
-    },
-    "have": {
-      "pos": "verb"
-    },
-    "have_to": {
-      "pos": "verb"
-    },
-    "he": {
-      "pos": "other"
-    },
     "head": {
       "pos": "noun"
     },
-    "healthy": {
-      "pos": "adjective"
-    },
-    "hear": {
-      "pos": "verb"
-    },
     "heart_organ": {
       "pos": "noun"
-    },
-    "heavy": {
-      "pos": "adjective"
-    },
-    "hello": {
-      "pos": "other"
-    },
-    "help": {
-      "pos": "verb"
-    },
-    "her": {
-      "pos": "other"
-    },
-    "here": {
-      "pos": "adverb"
     },
     "highway": {
       "pos": "noun"
@@ -1269,23 +2100,11 @@
     "hill": {
       "pos": "noun"
     },
-    "hire": {
-      "pos": "verb"
-    },
-    "his": {
-      "pos": "other"
-    },
-    "hold": {
-      "pos": "verb"
-    },
     "home": {
       "pos": "noun"
     },
     "homework": {
       "pos": "noun"
-    },
-    "honest": {
-      "pos": "adjective"
     },
     "honey": {
       "pos": "noun"
@@ -1295,9 +2114,6 @@
     },
     "hookup": {
       "pos": "noun"
-    },
-    "hope": {
-      "pos": "verb"
     },
     "hope_n": {
       "pos": "noun"
@@ -1317,32 +2133,14 @@
     "hostel": {
       "pos": "noun"
     },
-    "hot": {
-      "pos": "adjective"
-    },
     "hotel": {
       "pos": "noun"
     },
     "hour": {
       "pos": "noun"
     },
-    "how": {
-      "pos": "other"
-    },
-    "how_much": {
-      "pos": "adverb"
-    },
-    "however": {
-      "pos": "other"
-    },
     "hug": {
       "pos": "noun"
-    },
-    "hundred": {
-      "pos": "other"
-    },
-    "hungry": {
-      "pos": "adjective"
     },
     "husband": {
       "pos": "noun"
@@ -1350,38 +2148,17 @@
     "hypothesis": {
       "pos": "noun"
     },
-    "i": {
-      "pos": "other"
-    },
     "ice": {
       "pos": "noun"
     },
     "idea": {
       "pos": "noun"
     },
-    "if": {
-      "pos": "other"
-    },
     "ignorance": {
       "pos": "noun"
     },
     "illusion": {
       "pos": "noun"
-    },
-    "immediately": {
-      "pos": "other"
-    },
-    "important": {
-      "pos": "adjective"
-    },
-    "in": {
-      "pos": "other"
-    },
-    "in_front_of": {
-      "pos": "other"
-    },
-    "include": {
-      "pos": "verb"
     },
     "infection": {
       "pos": "noun"
@@ -1392,17 +2169,8 @@
     "inflammation": {
       "pos": "noun"
     },
-    "innocent": {
-      "pos": "adjective"
-    },
     "insect": {
       "pos": "noun"
-    },
-    "inside": {
-      "pos": "other"
-    },
-    "instead": {
-      "pos": "other"
     },
     "insurance": {
       "pos": "noun"
@@ -1416,9 +2184,6 @@
     "invitation": {
       "pos": "noun"
     },
-    "invite": {
-      "pos": "verb"
-    },
     "invoice": {
       "pos": "noun"
     },
@@ -1427,12 +2192,6 @@
     },
     "island": {
       "pos": "noun"
-    },
-    "it": {
-      "pos": "other"
-    },
-    "ivory": {
-      "pos": "adjective"
     },
     "jacket": {
       "pos": "noun"
@@ -1446,9 +2205,6 @@
     "job": {
       "pos": "noun"
     },
-    "join": {
-      "pos": "verb"
-    },
     "judge": {
       "pos": "noun"
     },
@@ -1457,9 +2213,6 @@
     },
     "july": {
       "pos": "noun"
-    },
-    "jump": {
-      "pos": "verb"
     },
     "june": {
       "pos": "noun"
@@ -1470,20 +2223,11 @@
     "justice": {
       "pos": "noun"
     },
-    "keep": {
-      "pos": "verb"
-    },
     "key": {
       "pos": "noun"
     },
     "kidney": {
       "pos": "noun"
-    },
-    "kill": {
-      "pos": "verb"
-    },
-    "kiss": {
-      "pos": "verb"
     },
     "kitchen": {
       "pos": "noun"
@@ -1493,9 +2237,6 @@
     },
     "knife_utensil": {
       "pos": "noun"
-    },
-    "know": {
-      "pos": "verb"
     },
     "laboratory": {
       "pos": "noun"
@@ -1518,15 +2259,6 @@
     "language": {
       "pos": "noun"
     },
-    "last": {
-      "pos": "other"
-    },
-    "later": {
-      "pos": "other"
-    },
-    "laugh": {
-      "pos": "verb"
-    },
     "law": {
       "pos": "noun"
     },
@@ -1536,35 +2268,17 @@
     "lawyer": {
       "pos": "noun"
     },
-    "lead": {
-      "pos": "verb"
-    },
     "league": {
       "pos": "noun"
-    },
-    "learn": {
-      "pos": "verb"
     },
     "leather": {
       "pos": "noun"
     },
-    "leave": {
-      "pos": "verb"
-    },
     "lecture": {
       "pos": "noun"
     },
-    "left": {
-      "pos": "other"
-    },
     "leg": {
       "pos": "noun"
-    },
-    "less": {
-      "pos": "other"
-    },
-    "let": {
-      "pos": "verb"
     },
     "letter": {
       "pos": "noun"
@@ -1578,35 +2292,14 @@
     "license": {
       "pos": "noun"
     },
-    "lie": {
-      "pos": "verb"
-    },
-    "lie_down": {
-      "pos": "verb"
-    },
     "lie_n": {
       "pos": "noun"
     },
     "life": {
       "pos": "noun"
     },
-    "light": {
-      "pos": "adjective"
-    },
-    "like": {
-      "pos": "verb"
-    },
     "lion": {
       "pos": "noun"
-    },
-    "listen": {
-      "pos": "verb"
-    },
-    "little": {
-      "pos": "other"
-    },
-    "live": {
-      "pos": "verb"
     },
     "liver": {
       "pos": "noun"
@@ -1620,29 +2313,11 @@
     "logic": {
       "pos": "noun"
     },
-    "long": {
-      "pos": "adjective"
-    },
-    "look_at": {
-      "pos": "verb"
-    },
-    "look_for": {
-      "pos": "verb"
-    },
-    "lose": {
-      "pos": "verb"
-    },
     "loss_n": {
       "pos": "noun"
     },
     "lotion": {
       "pos": "noun"
-    },
-    "loud": {
-      "pos": "adjective"
-    },
-    "love": {
-      "pos": "verb"
     },
     "love_n": {
       "pos": "noun"
@@ -1659,9 +2334,6 @@
     "lung": {
       "pos": "noun"
     },
-    "make": {
-      "pos": "verb"
-    },
     "makeup": {
       "pos": "noun"
     },
@@ -1674,29 +2346,14 @@
     "march": {
       "pos": "noun"
     },
-    "marinate": {
-      "pos": "verb"
-    },
     "market": {
       "pos": "noun"
-    },
-    "maroon": {
-      "pos": "adjective"
-    },
-    "marry": {
-      "pos": "verb"
     },
     "match": {
       "pos": "noun"
     },
-    "matte": {
-      "pos": "adjective"
-    },
     "may": {
       "pos": "noun"
-    },
-    "mean": {
-      "pos": "verb"
     },
     "meaning": {
       "pos": "noun"
@@ -1706,12 +2363,6 @@
     },
     "medicine": {
       "pos": "noun"
-    },
-    "meet": {
-      "pos": "verb"
-    },
-    "meet_up": {
-      "pos": "verb"
     },
     "meeting": {
       "pos": "noun"
@@ -1758,14 +2409,8 @@
     "morality": {
       "pos": "noun"
     },
-    "more": {
-      "pos": "other"
-    },
     "morning": {
       "pos": "noun"
-    },
-    "mostly": {
-      "pos": "other"
     },
     "mother": {
       "pos": "noun"
@@ -1779,23 +2424,8 @@
     "mouth": {
       "pos": "noun"
     },
-    "move": {
-      "pos": "verb"
-    },
-    "move_in": {
-      "pos": "verb"
-    },
-    "move_out": {
-      "pos": "verb"
-    },
     "movie": {
       "pos": "noun"
-    },
-    "much": {
-      "pos": "other"
-    },
-    "multicolor": {
-      "pos": "adjective"
     },
     "muscle": {
       "pos": "noun"
@@ -1806,53 +2436,23 @@
     "music": {
       "pos": "noun"
     },
-    "my": {
-      "pos": "other"
-    },
     "nail_clipper": {
       "pos": "noun"
     },
     "nail_tool": {
       "pos": "noun"
     },
-    "naked": {
-      "pos": "adjective"
-    },
     "name": {
       "pos": "noun"
-    },
-    "navy": {
-      "pos": "adjective"
-    },
-    "near": {
-      "pos": "other"
-    },
-    "necessary": {
-      "pos": "adjective"
     },
     "neck": {
       "pos": "noun"
     },
-    "need": {
-      "pos": "verb"
-    },
-    "negotiate": {
-      "pos": "verb"
-    },
     "neighbor": {
       "pos": "noun"
     },
-    "neither": {
-      "pos": "other"
-    },
     "network": {
       "pos": "noun"
-    },
-    "never": {
-      "pos": "other"
-    },
-    "new": {
-      "pos": "adjective"
     },
     "news": {
       "pos": "noun"
@@ -1863,12 +2463,6 @@
     "nightstand": {
       "pos": "noun"
     },
-    "nine": {
-      "pos": "other"
-    },
-    "no": {
-      "pos": "other"
-    },
     "noodle": {
       "pos": "noun"
     },
@@ -1877,9 +2471,6 @@
     },
     "november": {
       "pos": "noun"
-    },
-    "now": {
-      "pos": "other"
     },
     "number": {
       "pos": "noun"
@@ -1899,26 +2490,11 @@
     "odometer": {
       "pos": "noun"
     },
-    "offer": {
-      "pos": "verb"
-    },
     "office": {
       "pos": "noun"
     },
-    "often": {
-      "pos": "other"
-    },
     "oil": {
       "pos": "noun"
-    },
-    "old": {
-      "pos": "adjective"
-    },
-    "on": {
-      "pos": "other"
-    },
-    "one": {
-      "pos": "other"
     },
     "one_night_stand": {
       "pos": "noun"
@@ -1926,41 +2502,17 @@
     "onion": {
       "pos": "noun"
     },
-    "only": {
-      "pos": "other"
-    },
-    "open": {
-      "pos": "verb"
-    },
-    "or": {
-      "pos": "other"
-    },
-    "orange": {
-      "pos": "adjective"
-    },
     "orgasm": {
       "pos": "noun"
     },
-    "otherwise": {
-      "pos": "other"
-    },
-    "our": {
-      "pos": "other"
-    },
     "oven": {
       "pos": "noun"
-    },
-    "over": {
-      "pos": "other"
     },
     "owl": {
       "pos": "noun"
     },
     "pain": {
       "pos": "noun"
-    },
-    "pale": {
-      "pos": "adjective"
     },
     "pan": {
       "pos": "noun"
@@ -1992,14 +2544,8 @@
     "part": {
       "pos": "noun"
     },
-    "partially": {
-      "pos": "other"
-    },
     "partner": {
       "pos": "noun"
-    },
-    "pass": {
-      "pos": "verb"
     },
     "passion": {
       "pos": "noun"
@@ -2012,12 +2558,6 @@
     },
     "pattern": {
       "pos": "noun"
-    },
-    "pay": {
-      "pos": "verb"
-    },
-    "pay_for": {
-      "pos": "verb"
     },
     "payment": {
       "pos": "noun"
@@ -2061,9 +2601,6 @@
     "pillow": {
       "pos": "noun"
     },
-    "pink": {
-      "pos": "adjective"
-    },
     "pipe": {
       "pos": "noun"
     },
@@ -2082,17 +2619,8 @@
     "plateau": {
       "pos": "noun"
     },
-    "play": {
-      "pos": "verb"
-    },
-    "play_instrument": {
-      "pos": "verb"
-    },
     "player": {
       "pos": "noun"
-    },
-    "please": {
-      "pos": "other"
     },
     "pleasure": {
       "pos": "noun"
@@ -2103,12 +2631,6 @@
     "police": {
       "pos": "noun"
     },
-    "poor": {
-      "pos": "adjective"
-    },
-    "possible": {
-      "pos": "adjective"
-    },
     "pot": {
       "pos": "noun"
     },
@@ -2117,12 +2639,6 @@
     },
     "power": {
       "pos": "noun"
-    },
-    "pray": {
-      "pos": "verb"
-    },
-    "pregnant": {
-      "pos": "adjective"
     },
     "prescription": {
       "pos": "noun"
@@ -2148,38 +2664,11 @@
     "project": {
       "pos": "noun"
     },
-    "promise": {
-      "pos": "verb"
-    },
-    "promote": {
-      "pos": "verb"
-    },
     "proposal_n": {
       "pos": "noun"
     },
-    "protect": {
-      "pos": "verb"
-    },
-    "pull": {
-      "pos": "verb"
-    },
-    "purple": {
-      "pos": "adjective"
-    },
-    "push": {
-      "pos": "verb"
-    },
-    "put": {
-      "pos": "verb"
-    },
-    "put_on": {
-      "pos": "verb"
-    },
     "question": {
       "pos": "noun"
-    },
-    "quiet": {
-      "pos": "adjective"
     },
     "rabbit": {
       "pos": "noun"
@@ -2196,23 +2685,11 @@
     "rain": {
       "pos": "noun"
     },
-    "raise": {
-      "pos": "verb"
-    },
-    "rarely": {
-      "pos": "other"
-    },
     "razor": {
       "pos": "noun"
     },
-    "reach": {
-      "pos": "verb"
-    },
     "reaction": {
       "pos": "noun"
-    },
-    "read": {
-      "pos": "verb"
     },
     "reality": {
       "pos": "noun"
@@ -2223,29 +2700,11 @@
     "receipt": {
       "pos": "noun"
     },
-    "receive": {
-      "pos": "verb"
-    },
-    "recently": {
-      "pos": "other"
-    },
-    "red": {
-      "pos": "adjective"
-    },
     "referee": {
       "pos": "noun"
     },
     "relationship": {
       "pos": "noun"
-    },
-    "remember": {
-      "pos": "verb"
-    },
-    "report": {
-      "pos": "verb"
-    },
-    "require": {
-      "pos": "verb"
     },
     "research": {
       "pos": "noun"
@@ -2253,23 +2712,11 @@
     "reservation": {
       "pos": "noun"
     },
-    "resign": {
-      "pos": "verb"
-    },
-    "respect": {
-      "pos": "verb"
-    },
     "restaurant": {
       "pos": "noun"
     },
     "rice": {
       "pos": "noun"
-    },
-    "rich": {
-      "pos": "adjective"
-    },
-    "right": {
-      "pos": "other"
     },
     "rights": {
       "pos": "noun"
@@ -2280,9 +2727,6 @@
     "road": {
       "pos": "noun"
     },
-    "roast": {
-      "pos": "verb"
-    },
     "roof": {
       "pos": "noun"
     },
@@ -2292,17 +2736,8 @@
     "rope": {
       "pos": "noun"
     },
-    "round": {
-      "pos": "adjective"
-    },
     "rubber": {
       "pos": "noun"
-    },
-    "run": {
-      "pos": "verb"
-    },
-    "sad": {
-      "pos": "adjective"
     },
     "salad": {
       "pos": "noun"
@@ -2313,12 +2748,6 @@
     "salt": {
       "pos": "noun"
     },
-    "salty": {
-      "pos": "adjective"
-    },
-    "same": {
-      "pos": "adjective"
-    },
     "saturday": {
       "pos": "noun"
     },
@@ -2328,14 +2757,8 @@
     "sausage": {
       "pos": "noun"
     },
-    "save": {
-      "pos": "verb"
-    },
     "saw": {
       "pos": "noun"
-    },
-    "say": {
-      "pos": "verb"
     },
     "scarf": {
       "pos": "noun"
@@ -2382,23 +2805,8 @@
     "seduction": {
       "pos": "noun"
     },
-    "see": {
-      "pos": "verb"
-    },
-    "seem": {
-      "pos": "verb"
-    },
-    "sell": {
-      "pos": "verb"
-    },
     "semester": {
       "pos": "noun"
-    },
-    "send": {
-      "pos": "verb"
-    },
-    "sensual": {
-      "pos": "adjective"
     },
     "sentence_legal": {
       "pos": "noun"
@@ -2409,20 +2817,8 @@
     "series": {
       "pos": "noun"
     },
-    "serve": {
-      "pos": "verb"
-    },
     "server": {
       "pos": "noun"
-    },
-    "set": {
-      "pos": "verb"
-    },
-    "set_up": {
-      "pos": "verb"
-    },
-    "seven": {
-      "pos": "other"
     },
     "sex": {
       "pos": "noun"
@@ -2430,17 +2826,11 @@
     "shade": {
       "pos": "noun"
     },
-    "shake": {
-      "pos": "verb"
-    },
     "shampoo": {
       "pos": "noun"
     },
     "shark": {
       "pos": "noun"
-    },
-    "she": {
-      "pos": "other"
     },
     "sheep": {
       "pos": "noun"
@@ -2448,29 +2838,14 @@
     "shelf": {
       "pos": "noun"
     },
-    "shiny": {
-      "pos": "adjective"
-    },
     "shirt": {
       "pos": "noun"
     },
     "shoe": {
       "pos": "noun"
     },
-    "shoot": {
-      "pos": "verb"
-    },
-    "short": {
-      "pos": "adjective"
-    },
     "shoulder": {
       "pos": "noun"
-    },
-    "shout": {
-      "pos": "verb"
-    },
-    "show": {
-      "pos": "verb"
     },
     "show_n": {
       "pos": "noun"
@@ -2478,41 +2853,14 @@
     "shrimp": {
       "pos": "noun"
     },
-    "sick": {
-      "pos": "adjective"
-    },
-    "sideways": {
-      "pos": "other"
-    },
-    "silver": {
-      "pos": "adjective"
-    },
     "sin": {
       "pos": "noun"
-    },
-    "sing": {
-      "pos": "verb"
-    },
-    "single": {
-      "pos": "adjective"
     },
     "sink": {
       "pos": "noun"
     },
     "sister": {
       "pos": "noun"
-    },
-    "sit": {
-      "pos": "verb"
-    },
-    "sit_down": {
-      "pos": "verb"
-    },
-    "six": {
-      "pos": "other"
-    },
-    "sketch": {
-      "pos": "verb"
     },
     "skin": {
       "pos": "noun"
@@ -2522,24 +2870,6 @@
     },
     "sky": {
       "pos": "noun"
-    },
-    "sleep": {
-      "pos": "verb"
-    },
-    "slow": {
-      "pos": "adjective"
-    },
-    "small": {
-      "pos": "adjective"
-    },
-    "smart": {
-      "pos": "adjective"
-    },
-    "smell": {
-      "pos": "verb"
-    },
-    "smile": {
-      "pos": "verb"
     },
     "snake": {
       "pos": "noun"
@@ -2553,38 +2883,20 @@
     "sock": {
       "pos": "noun"
     },
-    "soft": {
-      "pos": "adjective"
-    },
     "software": {
       "pos": "noun"
     },
     "soldier": {
       "pos": "noun"
     },
-    "sometimes": {
-      "pos": "other"
-    },
     "song": {
       "pos": "noun"
-    },
-    "soon": {
-      "pos": "other"
-    },
-    "sorry": {
-      "pos": "other"
     },
     "soul": {
       "pos": "noun"
     },
     "soup": {
       "pos": "noun"
-    },
-    "sour": {
-      "pos": "adjective"
-    },
-    "speak": {
-      "pos": "verb"
     },
     "species": {
       "pos": "noun"
@@ -2594,12 +2906,6 @@
     },
     "speed": {
       "pos": "noun"
-    },
-    "spend": {
-      "pos": "verb"
-    },
-    "spicy": {
-      "pos": "adjective"
     },
     "spider": {
       "pos": "noun"
@@ -2616,20 +2922,11 @@
     "stairs": {
       "pos": "noun"
     },
-    "stand": {
-      "pos": "verb"
-    },
     "star": {
       "pos": "noun"
     },
     "station": {
       "pos": "noun"
-    },
-    "stay": {
-      "pos": "verb"
-    },
-    "steam": {
-      "pos": "verb"
     },
     "steering": {
       "pos": "noun"
@@ -2640,9 +2937,6 @@
     "stone": {
       "pos": "noun"
     },
-    "stop": {
-      "pos": "verb"
-    },
     "store": {
       "pos": "noun"
     },
@@ -2651,9 +2945,6 @@
     },
     "story": {
       "pos": "noun"
-    },
-    "straight": {
-      "pos": "other"
     },
     "strategy": {
       "pos": "noun"
@@ -2664,32 +2955,14 @@
     "stripe": {
       "pos": "noun"
     },
-    "strong": {
-      "pos": "adjective"
-    },
     "student": {
       "pos": "noun"
-    },
-    "study": {
-      "pos": "verb"
-    },
-    "succeed": {
-      "pos": "verb"
     },
     "success": {
       "pos": "noun"
     },
-    "such": {
-      "pos": "other"
-    },
-    "sue": {
-      "pos": "verb"
-    },
     "sugar": {
       "pos": "noun"
-    },
-    "suggest": {
-      "pos": "verb"
     },
     "summer": {
       "pos": "noun"
@@ -2703,17 +2976,8 @@
     "sunscreen": {
       "pos": "noun"
     },
-    "support": {
-      "pos": "verb"
-    },
     "surgery": {
       "pos": "noun"
-    },
-    "sweet": {
-      "pos": "adjective"
-    },
-    "swim": {
-      "pos": "verb"
     },
     "swimming_pool": {
       "pos": "noun"
@@ -2727,23 +2991,8 @@
     "table": {
       "pos": "noun"
     },
-    "take": {
-      "pos": "verb"
-    },
-    "take_off": {
-      "pos": "verb"
-    },
-    "talk": {
-      "pos": "verb"
-    },
-    "tall": {
-      "pos": "adjective"
-    },
     "tape": {
       "pos": "noun"
-    },
-    "taste": {
-      "pos": "verb"
     },
     "tax": {
       "pos": "noun"
@@ -2754,14 +3003,8 @@
     "tea": {
       "pos": "noun"
     },
-    "teach": {
-      "pos": "verb"
-    },
     "teacher": {
       "pos": "noun"
-    },
-    "teal": {
-      "pos": "adjective"
     },
     "team": {
       "pos": "noun"
@@ -2769,68 +3012,20 @@
     "temperature": {
       "pos": "noun"
     },
-    "ten": {
-      "pos": "other"
-    },
     "textbook": {
       "pos": "noun"
     },
     "texture": {
       "pos": "noun"
     },
-    "thank": {
-      "pos": "verb"
-    },
-    "thank_you": {
-      "pos": "other"
-    },
-    "that": {
-      "pos": "other"
-    },
-    "that_o": {
-      "pos": "other"
-    },
     "theater": {
       "pos": "noun"
-    },
-    "their": {
-      "pos": "other"
-    },
-    "then": {
-      "pos": "other"
     },
     "theory": {
       "pos": "noun"
     },
-    "there": {
-      "pos": "adverb"
-    },
-    "therefore": {
-      "pos": "other"
-    },
-    "they": {
-      "pos": "other"
-    },
     "thing": {
       "pos": "noun"
-    },
-    "think": {
-      "pos": "verb"
-    },
-    "thirsty": {
-      "pos": "adjective"
-    },
-    "this": {
-      "pos": "other"
-    },
-    "thousand": {
-      "pos": "other"
-    },
-    "three": {
-      "pos": "other"
-    },
-    "throw": {
-      "pos": "verb"
     },
     "thursday": {
       "pos": "noun"
@@ -2844,14 +3039,8 @@
     "tire": {
       "pos": "noun"
     },
-    "tired": {
-      "pos": "adjective"
-    },
     "tissue": {
       "pos": "noun"
-    },
-    "today": {
-      "pos": "other"
     },
     "toe": {
       "pos": "noun"
@@ -2859,17 +3048,8 @@
     "tomato": {
       "pos": "noun"
     },
-    "tomorrow": {
-      "pos": "other"
-    },
     "tongue": {
       "pos": "noun"
-    },
-    "tonight": {
-      "pos": "other"
-    },
-    "too": {
-      "pos": "other"
     },
     "toolbox": {
       "pos": "noun"
@@ -2883,12 +3063,6 @@
     "toothpaste": {
       "pos": "noun"
     },
-    "totally": {
-      "pos": "other"
-    },
-    "touch": {
-      "pos": "verb"
-    },
     "tournament": {
       "pos": "noun"
     },
@@ -2898,9 +3072,6 @@
     "traffic": {
       "pos": "noun"
     },
-    "train": {
-      "pos": "verb"
-    },
     "train_vehicle": {
       "pos": "noun"
     },
@@ -2909,12 +3080,6 @@
     },
     "transfer": {
       "pos": "noun"
-    },
-    "transparent": {
-      "pos": "adjective"
-    },
-    "travel": {
-      "pos": "verb"
     },
     "tray": {
       "pos": "noun"
@@ -2934,59 +3099,11 @@
     "truth": {
       "pos": "noun"
     },
-    "try": {
-      "pos": "verb"
-    },
-    "try_on": {
-      "pos": "verb"
-    },
     "tuesday": {
       "pos": "noun"
     },
-    "turn": {
-      "pos": "verb"
-    },
-    "turn_off": {
-      "pos": "verb"
-    },
-    "turn_on": {
-      "pos": "verb"
-    },
-    "turquoise": {
-      "pos": "adjective"
-    },
     "turtle": {
       "pos": "noun"
-    },
-    "two": {
-      "pos": "other"
-    },
-    "ugly": {
-      "pos": "adjective"
-    },
-    "under": {
-      "pos": "other"
-    },
-    "understand": {
-      "pos": "verb"
-    },
-    "unless": {
-      "pos": "other"
-    },
-    "up": {
-      "pos": "other"
-    },
-    "update": {
-      "pos": "verb"
-    },
-    "upload": {
-      "pos": "verb"
-    },
-    "use": {
-      "pos": "verb"
-    },
-    "usually": {
-      "pos": "other"
     },
     "utensil": {
       "pos": "noun"
@@ -3011,12 +3128,6 @@
     },
     "verdict": {
       "pos": "noun"
-    },
-    "very": {
-      "pos": "other"
-    },
-    "vibrant": {
-      "pos": "adjective"
     },
     "victim": {
       "pos": "noun"
@@ -3045,26 +3156,11 @@
     "volcano": {
       "pos": "noun"
     },
-    "wait": {
-      "pos": "verb"
-    },
-    "wait_for": {
-      "pos": "verb"
-    },
     "waiter": {
       "pos": "noun"
     },
-    "wake_up": {
-      "pos": "verb"
-    },
-    "walk": {
-      "pos": "verb"
-    },
     "wall": {
       "pos": "noun"
-    },
-    "want": {
-      "pos": "verb"
     },
     "war": {
       "pos": "noun"
@@ -3072,23 +3168,8 @@
     "wardrobe": {
       "pos": "noun"
     },
-    "warm": {
-      "pos": "adjective"
-    },
-    "warn": {
-      "pos": "verb"
-    },
-    "wash": {
-      "pos": "verb"
-    },
     "washing_machine": {
       "pos": "noun"
-    },
-    "watch": {
-      "pos": "verb"
-    },
-    "watch_out": {
-      "pos": "verb"
     },
     "water": {
       "pos": "noun"
@@ -3096,20 +3177,8 @@
     "waterfall": {
       "pos": "noun"
     },
-    "wave": {
-      "pos": "verb"
-    },
     "way": {
       "pos": "noun"
-    },
-    "we": {
-      "pos": "other"
-    },
-    "weak": {
-      "pos": "adjective"
-    },
-    "wear": {
-      "pos": "verb"
     },
     "weather": {
       "pos": "noun"
@@ -3126,47 +3195,14 @@
     "week": {
       "pos": "noun"
     },
-    "wet": {
-      "pos": "adjective"
-    },
     "whale": {
       "pos": "noun"
-    },
-    "what": {
-      "pos": "other"
     },
     "wheel": {
       "pos": "noun"
     },
-    "when": {
-      "pos": "adverb"
-    },
-    "where": {
-      "pos": "adverb"
-    },
-    "whether": {
-      "pos": "other"
-    },
-    "while": {
-      "pos": "other"
-    },
-    "white": {
-      "pos": "adjective"
-    },
-    "who": {
-      "pos": "other"
-    },
-    "why": {
-      "pos": "adverb"
-    },
-    "wide": {
-      "pos": "adjective"
-    },
     "wife": {
       "pos": "noun"
-    },
-    "win": {
-      "pos": "verb"
     },
     "wind": {
       "pos": "noun"
@@ -3186,9 +3222,6 @@
     "wisdom": {
       "pos": "noun"
     },
-    "wish": {
-      "pos": "verb"
-    },
     "witness": {
       "pos": "noun"
     },
@@ -3203,9 +3236,6 @@
     },
     "word": {
       "pos": "noun"
-    },
-    "work": {
-      "pos": "verb"
     },
     "work_n": {
       "pos": "noun"
@@ -3222,40 +3252,7 @@
     "wrench": {
       "pos": "noun"
     },
-    "write": {
-      "pos": "verb"
-    },
-    "wrong": {
-      "pos": "adjective"
-    },
     "year": {
-      "pos": "noun"
-    },
-    "yellow": {
-      "pos": "adjective"
-    },
-    "yes": {
-      "pos": "other"
-    },
-    "yesterday": {
-      "pos": "other"
-    },
-    "yet": {
-      "pos": "other"
-    },
-    "you": {
-      "pos": "other"
-    },
-    "young": {
-      "pos": "adjective"
-    },
-    "your": {
-      "pos": "other"
-    },
-    "zero": {
-      "pos": "other"
-    },
-    "atm": {
       "pos": "noun"
     }
   }

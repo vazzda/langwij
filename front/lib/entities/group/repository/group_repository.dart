@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import '../model/group_model.dart';
 
 class GroupRepository {
-  static const String _assetPath = 'assets/data/verbs.json';
+  static const String _assetPath = 'assets/data/drills_sr.json';
 
   Future<List<GroupModel>> loadGroups() async {
     final json = await rootBundle.loadString(_assetPath);

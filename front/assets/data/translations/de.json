@@ -2,7 +2,7 @@
   "a_lot": {
     "text": "viel"
   },
-  "accept": {
+  "to_accept": {
     "text": "akzeptieren"
   },
   "accident_car": {
@@ -23,7 +23,7 @@
     "gender": "m",
     "article": "der"
   },
-  "add": {
+  "to_add": {
     "text": "hinzufügen"
   },
   "affair": {
@@ -34,7 +34,7 @@
   "after": {
     "text": "nach"
   },
-  "agree": {
+  "to_agree": {
     "text": "zustimmen"
   },
   "airport": {
@@ -86,7 +86,7 @@
     "gender": "m",
     "article": "der"
   },
-  "answer": {
+  "to_answer": {
     "text": "antworten"
   },
   "answer_n": {
@@ -114,7 +114,7 @@
     "gender": "f",
     "article": "die"
   },
-  "appear": {
+  "to_appear": {
     "text": "erscheinen"
   },
   "apple": {
@@ -147,7 +147,7 @@
     "gender": "f",
     "article": "die"
   },
-  "arrive": {
+  "to_arrive": {
     "text": "ankommen"
   },
   "artery": {
@@ -160,7 +160,7 @@
     "gender": "m",
     "article": "der"
   },
-  "ask": {
+  "to_ask": {
     "text": "fragen"
   },
   "at_least": {
@@ -227,7 +227,7 @@
     "gender": "f",
     "article": "die"
   },
-  "bake": {
+  "to_bake": {
     "text": "backen"
   },
   "ball": {
@@ -260,13 +260,13 @@
     "gender": "f",
     "article": "die"
   },
-  "be": {
+  "to_be": {
     "text": "sein"
   },
-  "be_allowed_to": {
+  "to_be_allowed_to": {
     "text": "dürfen"
   },
-  "be_happy": {
+  "to_be_happy": {
     "text": "sich freuen"
   },
   "bear": {
@@ -280,7 +280,7 @@
   "because": {
     "text": "weil"
   },
-  "become": {
+  "to_become": {
     "text": "werden"
   },
   "bed": {
@@ -306,7 +306,7 @@
   "before": {
     "text": "vor"
   },
-  "begin": {
+  "to_begin": {
     "text": "beginnen"
   },
   "behind": {
@@ -315,7 +315,7 @@
   "beige": {
     "text": "beige"
   },
-  "believe": {
+  "to_believe": {
     "text": "glauben"
   },
   "beside": {
@@ -442,10 +442,10 @@
     "gender": "n",
     "article": "das"
   },
-  "break": {
+  "to_break": {
     "text": "brechen"
   },
-  "break_down": {
+  "to_break_down": {
     "text": "kaputtgehen"
   },
   "breakup": {
@@ -461,10 +461,10 @@
   "bright": {
     "text": "hell"
   },
-  "bring": {
+  "to_bring": {
     "text": "bringen"
   },
-  "bring_up": {
+  "to_bring_up": {
     "text": "aufziehen"
   },
   "broom": {
@@ -500,10 +500,10 @@
     "gender": "m",
     "article": "der"
   },
-  "build": {
+  "to_build": {
     "text": "bauen"
   },
-  "burn": {
+  "to_burn": {
     "text": "brennen"
   },
   "bus": {
@@ -519,7 +519,7 @@
     "gender": "f",
     "article": "die"
   },
-  "buy": {
+  "to_buy": {
     "text": "kaufen"
   },
   "cabinet": {
@@ -527,10 +527,10 @@
     "gender": "m",
     "article": "der"
   },
-  "call": {
+  "to_call": {
     "text": "anrufen"
   },
-  "call_back": {
+  "to_call_back": {
     "text": "zurückrufen"
   },
   "camera": {
@@ -538,7 +538,7 @@
     "gender": "f",
     "article": "die"
   },
-  "can": {
+  "to_can": {
     "text": "können"
   },
   "canvas": {
@@ -556,10 +556,10 @@
     "gender": "n",
     "article": "das"
   },
-  "care": {
+  "to_care": {
     "text": "sich kümmern"
   },
-  "carry": {
+  "to_carry": {
     "text": "tragen"
   },
   "cash": {
@@ -572,7 +572,7 @@
     "gender": "f",
     "article": "die"
   },
-  "catch": {
+  "to_catch": {
     "text": "fangen"
   },
   "cave": {
@@ -615,7 +615,7 @@
     "gender": "f",
     "article": "die"
   },
-  "change": {
+  "to_change": {
     "text": "ändern"
   },
   "channel": {
@@ -626,10 +626,10 @@
   "cheap": {
     "text": "billig"
   },
-  "check": {
+  "to_check": {
     "text": "überprüfen"
   },
-  "check_out": {
+  "to_check_out": {
     "text": "auschecken"
   },
   "cheese": {
@@ -667,7 +667,7 @@
     "gender": "f",
     "article": "die"
   },
-  "choose": {
+  "to_choose": {
     "text": "wählen"
   },
   "church": {
@@ -695,7 +695,7 @@
     "gender": "m",
     "article": "der"
   },
-  "clean": {
+  "to_clean": {
     "text": "reinigen"
   },
   "clean_a": {
@@ -716,7 +716,7 @@
     "gender": "f",
     "article": "die"
   },
-  "close": {
+  "to_close": {
     "text": "schließen"
   },
   "closed": {
@@ -778,7 +778,7 @@
     "gender": "m",
     "article": "der"
   },
-  "come": {
+  "to_come": {
     "text": "kommen"
   },
   "company": {
@@ -819,7 +819,7 @@
     "gender": "f",
     "article": "die"
   },
-  "consider": {
+  "to_consider": {
     "text": "berücksichtigen"
   },
   "constitution": {
@@ -832,7 +832,7 @@
     "gender": "m",
     "article": "der"
   },
-  "continue": {
+  "to_continue": {
     "text": "fortsetzen"
   },
   "contract": {
@@ -840,7 +840,7 @@
     "gender": "m",
     "article": "der"
   },
-  "cook": {
+  "to_cook": {
     "text": "kochen"
   },
   "coral": {
@@ -854,7 +854,7 @@
     "gender": "f",
     "article": "die"
   },
-  "count": {
+  "to_count": {
     "text": "zählen"
   },
   "country": {
@@ -887,7 +887,7 @@
     "gender": "f",
     "article": "die"
   },
-  "create": {
+  "to_create": {
     "text": "erstellen"
   },
   "credit_card": {
@@ -908,7 +908,7 @@
     "gender": "n",
     "article": "das"
   },
-  "cry": {
+  "to_cry": {
     "text": "weinen"
   },
   "cup": {
@@ -931,10 +931,10 @@
     "gender": "m",
     "article": "der"
   },
-  "cut": {
+  "to_cut": {
     "text": "schneiden"
   },
-  "dance": {
+  "to_dance": {
     "text": "tanzen"
   },
   "danger": {
@@ -986,7 +986,7 @@
     "gender": "m",
     "article": "der"
   },
-  "decide": {
+  "to_decide": {
     "text": "entscheiden"
   },
   "deep": {
@@ -1040,7 +1040,7 @@
     "gender": "n",
     "article": "das"
   },
-  "develop": {
+  "to_develop": {
     "text": "entwickeln"
   },
   "diagnosis": {
@@ -1048,7 +1048,7 @@
     "gender": "f",
     "article": "die"
   },
-  "die": {
+  "to_die": {
     "text": "sterben"
   },
   "different": {
@@ -1075,7 +1075,7 @@
     "gender": "f",
     "article": "die"
   },
-  "do": {
+  "to_do": {
     "text": "tun"
   },
   "doctor": {
@@ -1106,10 +1106,10 @@
   "down": {
     "text": "unten"
   },
-  "download": {
+  "to_download": {
     "text": "herunterladen"
   },
-  "draw": {
+  "to_draw": {
     "text": "zeichnen"
   },
   "drawer": {
@@ -1117,7 +1117,7 @@
     "gender": "f",
     "article": "die"
   },
-  "dream": {
+  "to_dream": {
     "text": "träumen"
   },
   "dream_n": {
@@ -1140,10 +1140,10 @@
     "gender": "m",
     "article": "der"
   },
-  "drink": {
+  "to_drink": {
     "text": "trinken"
   },
-  "drive": {
+  "to_drive": {
     "text": "fahren"
   },
   "driver": {
@@ -1175,16 +1175,16 @@
   "easy": {
     "text": "leicht"
   },
-  "eat": {
+  "to_eat": {
     "text": "essen"
   },
-  "eat_breakfast": {
+  "to_eat_breakfast": {
     "text": "frühstücken"
   },
-  "eat_dinner": {
+  "to_eat_dinner": {
     "text": "zu Abend essen"
   },
-  "eat_lunch": {
+  "to_eat_lunch": {
     "text": "zu Mittag essen"
   },
   "egg": {
@@ -1308,7 +1308,7 @@
     "gender": "f",
     "article": "die"
   },
-  "expect": {
+  "to_expect": {
     "text": "erwarten"
   },
   "expensive": {
@@ -1324,7 +1324,7 @@
     "gender": "n",
     "article": "das"
   },
-  "explain": {
+  "to_explain": {
     "text": "erklären"
   },
   "eye": {
@@ -1342,7 +1342,7 @@
     "gender": "n",
     "article": "das"
   },
-  "fall": {
+  "to_fall": {
     "text": "fallen"
   },
   "family": {
@@ -1373,7 +1373,7 @@
     "gender": "m",
     "article": "der"
   },
-  "fear": {
+  "to_fear": {
     "text": "fürchten"
   },
   "fear_n": {
@@ -1386,10 +1386,10 @@
     "gender": "m",
     "article": "der"
   },
-  "feed": {
+  "to_feed": {
     "text": "füttern"
   },
-  "feel": {
+  "to_feel": {
     "text": "fühlen"
   },
   "fever": {
@@ -1402,7 +1402,7 @@
     "gender": "n",
     "article": "das"
   },
-  "fight": {
+  "to_fight": {
     "text": "kämpfen"
   },
   "film": {
@@ -1410,10 +1410,10 @@
     "gender": "m",
     "article": "der"
   },
-  "find": {
+  "to_find": {
     "text": "finden"
   },
-  "find_out": {
+  "to_find_out": {
     "text": "herausfinden"
   },
   "fine_n": {
@@ -1426,7 +1426,7 @@
     "gender": "m",
     "article": "der"
   },
-  "finish": {
+  "to_finish": {
     "text": "beenden"
   },
   "fire": {
@@ -1470,10 +1470,10 @@
     "gender": "f",
     "article": "die"
   },
-  "fly": {
+  "to_fly": {
     "text": "fliegen"
   },
-  "follow": {
+  "to_follow": {
     "text": "folgen"
   },
   "food": {
@@ -1496,7 +1496,7 @@
     "gender": "m",
     "article": "der"
   },
-  "forget": {
+  "to_forget": {
     "text": "vergessen"
   },
   "fork": {
@@ -1576,10 +1576,10 @@
     "gender": "n",
     "article": "das"
   },
-  "get": {
+  "to_get": {
     "text": "bekommen"
   },
-  "get_up": {
+  "to_get_up": {
     "text": "aufstehen"
   },
   "gift": {
@@ -1602,10 +1602,10 @@
     "gender": "f",
     "article": "die"
   },
-  "give": {
+  "to_give": {
     "text": "geben"
   },
-  "give_up": {
+  "to_give_up": {
     "text": "aufgeben"
   },
   "glass_cup": {
@@ -1633,7 +1633,7 @@
     "gender": "m",
     "article": "der"
   },
-  "go": {
+  "to_go": {
     "text": "gehen"
   },
   "goal": {
@@ -1676,13 +1676,13 @@
   "grey": {
     "text": "grau"
   },
-  "grill": {
+  "to_grill": {
     "text": "grillen"
   },
-  "grow": {
+  "to_grow": {
     "text": "wachsen"
   },
-  "grow_up": {
+  "to_grow_up": {
     "text": "aufwachsen"
   },
   "guide": {
@@ -1716,7 +1716,7 @@
     "gender": "f",
     "article": "die"
   },
-  "happen": {
+  "to_happen": {
     "text": "geschehen"
   },
   "happy": {
@@ -1738,13 +1738,13 @@
     "gender": "m",
     "article": "der"
   },
-  "hate": {
+  "to_hate": {
     "text": "hassen"
   },
-  "have": {
+  "to_have": {
     "text": "haben"
   },
-  "have_to": {
+  "to_have_to": {
     "text": "müssen"
   },
   "he": {
@@ -1758,7 +1758,7 @@
   "healthy": {
     "text": "gesund"
   },
-  "hear": {
+  "to_hear": {
     "text": "hören"
   },
   "heart_organ": {
@@ -1772,7 +1772,7 @@
   "hello": {
     "text": "hallo"
   },
-  "help": {
+  "to_help": {
     "text": "helfen"
   },
   "her": {
@@ -1791,13 +1791,13 @@
     "gender": "m",
     "article": "der"
   },
-  "hire": {
+  "to_hire": {
     "text": "einstellen"
   },
   "his": {
     "text": "sein"
   },
-  "hold": {
+  "to_hold": {
     "text": "halten"
   },
   "home": {
@@ -1828,7 +1828,7 @@
     "gender": "f",
     "article": "die"
   },
-  "hope": {
+  "to_hope": {
     "text": "hoffen"
   },
   "hope_n": {
@@ -1942,7 +1942,7 @@
   "in_front_of": {
     "text": "vor"
   },
-  "include": {
+  "to_include": {
     "text": "einschließen"
   },
   "infection": {
@@ -1994,7 +1994,7 @@
     "gender": "f",
     "article": "die"
   },
-  "invite": {
+  "to_invite": {
     "text": "einladen"
   },
   "invoice": {
@@ -2038,7 +2038,7 @@
     "gender": "f",
     "article": "die"
   },
-  "join": {
+  "to_join": {
     "text": "beitreten"
   },
   "judge": {
@@ -2056,7 +2056,7 @@
     "gender": "m",
     "article": "der"
   },
-  "jump": {
+  "to_jump": {
     "text": "springen"
   },
   "june": {
@@ -2074,7 +2074,7 @@
     "gender": "f",
     "article": "die"
   },
-  "keep": {
+  "to_keep": {
     "text": "behalten"
   },
   "key": {
@@ -2087,10 +2087,10 @@
     "gender": "f",
     "article": "die"
   },
-  "kill": {
+  "to_kill": {
     "text": "töten"
   },
-  "kiss": {
+  "to_kiss": {
     "text": "küssen"
   },
   "kitchen": {
@@ -2108,7 +2108,7 @@
     "gender": "n",
     "article": "das"
   },
-  "know": {
+  "to_know": {
     "text": "wissen"
   },
   "laboratory": {
@@ -2152,7 +2152,7 @@
   "later": {
     "text": "später"
   },
-  "laugh": {
+  "to_laugh": {
     "text": "lachen"
   },
   "law": {
@@ -2170,7 +2170,7 @@
     "gender": "m",
     "article": "der"
   },
-  "lead": {
+  "to_lead": {
     "text": "führen"
   },
   "league": {
@@ -2178,7 +2178,7 @@
     "gender": "f",
     "article": "die"
   },
-  "learn": {
+  "to_learn": {
     "text": "lernen"
   },
   "leather": {
@@ -2186,7 +2186,7 @@
     "gender": "n",
     "article": "das"
   },
-  "leave": {
+  "to_leave": {
     "text": "verlassen"
   },
   "lecture": {
@@ -2205,7 +2205,7 @@
   "less": {
     "text": "weniger"
   },
-  "let": {
+  "to_let": {
     "text": "lassen"
   },
   "letter": {
@@ -2228,10 +2228,10 @@
     "gender": "f",
     "article": "die"
   },
-  "lie": {
+  "to_lie": {
     "text": "liegen"
   },
-  "lie_down": {
+  "to_lie_down": {
     "text": "sich hinlegen"
   },
   "lie_n": {
@@ -2247,7 +2247,7 @@
   "light": {
     "text": "leicht"
   },
-  "like": {
+  "to_like": {
     "text": "mögen"
   },
   "lion": {
@@ -2255,13 +2255,13 @@
     "gender": "m",
     "article": "der"
   },
-  "listen": {
+  "to_listen": {
     "text": "anhören"
   },
   "little": {
     "text": "wenig"
   },
-  "live": {
+  "to_live": {
     "text": "leben"
   },
   "liver": {
@@ -2287,13 +2287,13 @@
   "long": {
     "text": "lang"
   },
-  "look_at": {
+  "to_look_at": {
     "text": "anschauen"
   },
-  "look_for": {
+  "to_look_for": {
     "text": "suchen"
   },
-  "lose": {
+  "to_lose": {
     "text": "verlieren"
   },
   "loss_n": {
@@ -2309,7 +2309,7 @@
   "loud": {
     "text": "laut"
   },
-  "love": {
+  "to_love": {
     "text": "lieben"
   },
   "love_n": {
@@ -2337,7 +2337,7 @@
     "gender": "f",
     "article": "die"
   },
-  "make": {
+  "to_make": {
     "text": "machen"
   },
   "makeup": {
@@ -2360,7 +2360,7 @@
     "gender": "m",
     "article": "der"
   },
-  "marinate": {
+  "to_marinate": {
     "text": "marinieren"
   },
   "market": {
@@ -2371,7 +2371,7 @@
   "maroon": {
     "text": "kastanienbraun"
   },
-  "marry": {
+  "to_marry": {
     "text": "heiraten"
   },
   "match": {
@@ -2387,7 +2387,7 @@
     "gender": "m",
     "article": "der"
   },
-  "mean": {
+  "to_mean": {
     "text": "bedeuten"
   },
   "meaning": {
@@ -2405,10 +2405,10 @@
     "gender": "f",
     "article": "die"
   },
-  "meet": {
+  "to_meet": {
     "text": "treffen"
   },
-  "meet_up": {
+  "to_meet_up": {
     "text": "sich treffen"
   },
   "meeting": {
@@ -2517,13 +2517,13 @@
     "gender": "m",
     "article": "der"
   },
-  "move": {
+  "to_move": {
     "text": "umziehen"
   },
-  "move_in": {
+  "to_move_in": {
     "text": "einziehen"
   },
-  "move_out": {
+  "to_move_out": {
     "text": "ausziehen"
   },
   "movie": {
@@ -2587,10 +2587,10 @@
     "gender": "m",
     "article": "der"
   },
-  "need": {
+  "to_need": {
     "text": "brauchen"
   },
-  "negotiate": {
+  "to_negotiate": {
     "text": "verhandeln"
   },
   "neighbor": {
@@ -2681,7 +2681,7 @@
     "gender": "n",
     "article": "das"
   },
-  "offer": {
+  "to_offer": {
     "text": "anbieten"
   },
   "office": {
@@ -2719,7 +2719,7 @@
   "only": {
     "text": "nur"
   },
-  "open": {
+  "to_open": {
     "text": "öffnen"
   },
   "or": {
@@ -2818,7 +2818,7 @@
     "gender": "m",
     "article": "der"
   },
-  "pass": {
+  "to_pass": {
     "text": "bestehen"
   },
   "passion": {
@@ -2841,10 +2841,10 @@
     "gender": "n",
     "article": "das"
   },
-  "pay": {
+  "to_pay": {
     "text": "bezahlen"
   },
-  "pay_for": {
+  "to_pay_for": {
     "text": "bezahlen"
   },
   "payment": {
@@ -2950,10 +2950,10 @@
     "gender": "f",
     "article": "die"
   },
-  "play": {
+  "to_play": {
     "text": "spielen"
   },
-  "play_instrument": {
+  "to_play_instrument": {
     "text": "spielen"
   },
   "player": {
@@ -3000,7 +3000,7 @@
     "gender": "f",
     "article": "die"
   },
-  "pray": {
+  "to_pray": {
     "text": "beten"
   },
   "pregnant": {
@@ -3046,10 +3046,10 @@
     "gender": "n",
     "article": "das"
   },
-  "promise": {
+  "to_promise": {
     "text": "versprechen"
   },
-  "promote": {
+  "to_promote": {
     "text": "befördern"
   },
   "proposal_n": {
@@ -3057,22 +3057,22 @@
     "gender": "m",
     "article": "der"
   },
-  "protect": {
+  "to_protect": {
     "text": "schützen"
   },
-  "pull": {
+  "to_pull": {
     "text": "ziehen"
   },
   "purple": {
     "text": "violett"
   },
-  "push": {
+  "to_push": {
     "text": "drücken"
   },
-  "put": {
+  "to_put": {
     "text": "legen"
   },
-  "put_on": {
+  "to_put_on": {
     "text": "anziehen"
   },
   "question": {
@@ -3108,7 +3108,7 @@
     "gender": "m",
     "article": "der"
   },
-  "raise": {
+  "to_raise": {
     "text": "heben"
   },
   "rarely": {
@@ -3119,7 +3119,7 @@
     "gender": "m",
     "article": "der"
   },
-  "reach": {
+  "to_reach": {
     "text": "erreichen"
   },
   "reaction": {
@@ -3127,7 +3127,7 @@
     "gender": "f",
     "article": "die"
   },
-  "read": {
+  "to_read": {
     "text": "lesen"
   },
   "reality": {
@@ -3145,7 +3145,7 @@
     "gender": "f",
     "article": "die"
   },
-  "receive": {
+  "to_receive": {
     "text": "erhalten"
   },
   "recently": {
@@ -3164,13 +3164,13 @@
     "gender": "f",
     "article": "die"
   },
-  "remember": {
+  "to_remember": {
     "text": "erinnern"
   },
-  "report": {
+  "to_report": {
     "text": "berichten"
   },
-  "require": {
+  "to_require": {
     "text": "erfordern"
   },
   "research": {
@@ -3183,10 +3183,10 @@
     "gender": "f",
     "article": "die"
   },
-  "resign": {
+  "to_resign": {
     "text": "kündigen"
   },
-  "respect": {
+  "to_respect": {
     "text": "respektieren"
   },
   "restaurant": {
@@ -3220,7 +3220,7 @@
     "gender": "f",
     "article": "die"
   },
-  "roast": {
+  "to_roast": {
     "text": "braten"
   },
   "roof": {
@@ -3246,7 +3246,7 @@
     "gender": "n",
     "article": "das"
   },
-  "run": {
+  "to_run": {
     "text": "laufen"
   },
   "sad": {
@@ -3288,7 +3288,7 @@
     "gender": "f",
     "article": "die"
   },
-  "save": {
+  "to_save": {
     "text": "sparen"
   },
   "saw": {
@@ -3296,7 +3296,7 @@
     "gender": "f",
     "article": "die"
   },
-  "say": {
+  "to_say": {
     "text": "sagen"
   },
   "scarf": {
@@ -3374,13 +3374,13 @@
     "gender": "f",
     "article": "die"
   },
-  "see": {
+  "to_see": {
     "text": "sehen"
   },
-  "seem": {
+  "to_seem": {
     "text": "scheinen"
   },
-  "sell": {
+  "to_sell": {
     "text": "verkaufen"
   },
   "semester": {
@@ -3388,7 +3388,7 @@
     "gender": "n",
     "article": "das"
   },
-  "send": {
+  "to_send": {
     "text": "senden"
   },
   "sensual": {
@@ -3409,7 +3409,7 @@
     "gender": "f",
     "article": "die"
   },
-  "serve": {
+  "to_serve": {
     "text": "servieren"
   },
   "server": {
@@ -3417,10 +3417,10 @@
     "gender": "m",
     "article": "der"
   },
-  "set": {
+  "to_set": {
     "text": "setzen"
   },
-  "set_up": {
+  "to_set_up": {
     "text": "einrichten"
   },
   "seven": {
@@ -3436,7 +3436,7 @@
     "gender": "m",
     "article": "der"
   },
-  "shake": {
+  "to_shake": {
     "text": "schütteln"
   },
   "shampoo": {
@@ -3475,7 +3475,7 @@
     "gender": "m",
     "article": "der"
   },
-  "shoot": {
+  "to_shoot": {
     "text": "schießen"
   },
   "short": {
@@ -3486,10 +3486,10 @@
     "gender": "f",
     "article": "die"
   },
-  "shout": {
+  "to_shout": {
     "text": "schreien"
   },
-  "show": {
+  "to_show": {
     "text": "zeigen"
   },
   "show_n": {
@@ -3516,7 +3516,7 @@
     "gender": "f",
     "article": "die"
   },
-  "sing": {
+  "to_sing": {
     "text": "singen"
   },
   "single": {
@@ -3532,16 +3532,16 @@
     "gender": "f",
     "article": "die"
   },
-  "sit": {
+  "to_sit": {
     "text": "sitzen"
   },
-  "sit_down": {
+  "to_sit_down": {
     "text": "sich hinsetzen"
   },
   "six": {
     "text": "sechs"
   },
-  "sketch": {
+  "to_sketch": {
     "text": "skizzieren"
   },
   "skin": {
@@ -3559,7 +3559,7 @@
     "gender": "m",
     "article": "der"
   },
-  "sleep": {
+  "to_sleep": {
     "text": "schlafen"
   },
   "slow": {
@@ -3571,10 +3571,10 @@
   "smart": {
     "text": "klug"
   },
-  "smell": {
+  "to_smell": {
     "text": "riechen"
   },
-  "smile": {
+  "to_smile": {
     "text": "lächeln"
   },
   "snake": {
@@ -3637,7 +3637,7 @@
   "sour": {
     "text": "sauer"
   },
-  "speak": {
+  "to_speak": {
     "text": "sprechen"
   },
   "species": {
@@ -3655,7 +3655,7 @@
     "gender": "f",
     "article": "die"
   },
-  "spend": {
+  "to_spend": {
     "text": "verbringen"
   },
   "spicy": {
@@ -3686,7 +3686,7 @@
     "gender": "f",
     "article": "die"
   },
-  "stand": {
+  "to_stand": {
     "text": "stehen"
   },
   "star": {
@@ -3699,10 +3699,10 @@
     "gender": "m",
     "article": "der"
   },
-  "stay": {
+  "to_stay": {
     "text": "bleiben"
   },
-  "steam": {
+  "to_steam": {
     "text": "dämpfen"
   },
   "steering": {
@@ -3720,7 +3720,7 @@
     "gender": "m",
     "article": "der"
   },
-  "stop": {
+  "to_stop": {
     "text": "stoppen"
   },
   "store": {
@@ -3764,10 +3764,10 @@
     "gender": "m",
     "article": "der"
   },
-  "study": {
+  "to_study": {
     "text": "studieren"
   },
-  "succeed": {
+  "to_succeed": {
     "text": "gelingen"
   },
   "success": {
@@ -3778,7 +3778,7 @@
   "such": {
     "text": "solch"
   },
-  "sue": {
+  "to_sue": {
     "text": "verklagen"
   },
   "sugar": {
@@ -3786,7 +3786,7 @@
     "gender": "m",
     "article": "der"
   },
-  "suggest": {
+  "to_suggest": {
     "text": "vorschlagen"
   },
   "summer": {
@@ -3809,7 +3809,7 @@
     "gender": "f",
     "article": "die"
   },
-  "support": {
+  "to_support": {
     "text": "unterstützen"
   },
   "surgery": {
@@ -3820,7 +3820,7 @@
   "sweet": {
     "text": "süß"
   },
-  "swim": {
+  "to_swim": {
     "text": "schwimmen"
   },
   "swimming_pool": {
@@ -3843,13 +3843,13 @@
     "gender": "m",
     "article": "der"
   },
-  "take": {
+  "to_take": {
     "text": "nehmen"
   },
-  "take_off": {
+  "to_take_off": {
     "text": "ausziehen"
   },
-  "talk": {
+  "to_talk": {
     "text": "sprechen"
   },
   "tall": {
@@ -3860,7 +3860,7 @@
     "gender": "n",
     "article": "das"
   },
-  "taste": {
+  "to_taste": {
     "text": "schmecken"
   },
   "tax": {
@@ -3878,7 +3878,7 @@
     "gender": "m",
     "article": "der"
   },
-  "teach": {
+  "to_teach": {
     "text": "unterrichten"
   },
   "teacher": {
@@ -3912,7 +3912,7 @@
     "gender": "f",
     "article": "die"
   },
-  "thank": {
+  "to_thank": {
     "text": "danken"
   },
   "thank_you": {
@@ -3954,7 +3954,7 @@
     "gender": "n",
     "article": "das"
   },
-  "think": {
+  "to_think": {
     "text": "denken"
   },
   "thirsty": {
@@ -3969,7 +3969,7 @@
   "three": {
     "text": "drei"
   },
-  "throw": {
+  "to_throw": {
     "text": "werfen"
   },
   "thursday": {
@@ -4050,7 +4050,7 @@
   "totally": {
     "text": "völlig"
   },
-  "touch": {
+  "to_touch": {
     "text": "berühren"
   },
   "tournament": {
@@ -4068,7 +4068,7 @@
     "gender": "m",
     "article": "der"
   },
-  "train": {
+  "to_train": {
     "text": "trainieren"
   },
   "train_vehicle": {
@@ -4089,7 +4089,7 @@
   "transparent": {
     "text": "durchsichtig"
   },
-  "travel": {
+  "to_travel": {
     "text": "reisen"
   },
   "tray": {
@@ -4122,10 +4122,10 @@
     "gender": "f",
     "article": "die"
   },
-  "try": {
+  "to_try": {
     "text": "versuchen"
   },
-  "try_on": {
+  "to_try_on": {
     "text": "anprobieren"
   },
   "tuesday": {
@@ -4133,13 +4133,13 @@
     "gender": "m",
     "article": "der"
   },
-  "turn": {
+  "to_turn": {
     "text": "drehen"
   },
-  "turn_off": {
+  "to_turn_off": {
     "text": "ausschalten"
   },
-  "turn_on": {
+  "to_turn_on": {
     "text": "einschalten"
   },
   "turquoise": {
@@ -4159,7 +4159,7 @@
   "under": {
     "text": "unter"
   },
-  "understand": {
+  "to_understand": {
     "text": "verstehen"
   },
   "unless": {
@@ -4168,13 +4168,13 @@
   "up": {
     "text": "oben"
   },
-  "update": {
+  "to_update": {
     "text": "aktualisieren"
   },
-  "upload": {
+  "to_upload": {
     "text": "hochladen"
   },
-  "use": {
+  "to_use": {
     "text": "verwenden"
   },
   "usually": {
@@ -4271,10 +4271,10 @@
     "gender": "m",
     "article": "der"
   },
-  "wait": {
+  "to_wait": {
     "text": "warten"
   },
-  "wait_for": {
+  "to_wait_for": {
     "text": "warten"
   },
   "waiter": {
@@ -4282,10 +4282,10 @@
     "gender": "m",
     "article": "der"
   },
-  "wake_up": {
+  "to_wake_up": {
     "text": "aufwachen"
   },
-  "walk": {
+  "to_walk": {
     "text": "gehen"
   },
   "wall": {
@@ -4293,7 +4293,7 @@
     "gender": "f",
     "article": "die"
   },
-  "want": {
+  "to_want": {
     "text": "wollen"
   },
   "war": {
@@ -4309,10 +4309,10 @@
   "warm": {
     "text": "warm"
   },
-  "warn": {
+  "to_warn": {
     "text": "warnen"
   },
-  "wash": {
+  "to_wash": {
     "text": "waschen"
   },
   "washing_machine": {
@@ -4320,10 +4320,10 @@
     "gender": "f",
     "article": "die"
   },
-  "watch": {
+  "to_watch": {
     "text": "beobachten"
   },
-  "watch_out": {
+  "to_watch_out": {
     "text": "aufpassen"
   },
   "water": {
@@ -4336,7 +4336,7 @@
     "gender": "m",
     "article": "der"
   },
-  "wave": {
+  "to_wave": {
     "text": "winken"
   },
   "way": {
@@ -4350,7 +4350,7 @@
   "weak": {
     "text": "schwach"
   },
-  "wear": {
+  "to_wear": {
     "text": "tragen"
   },
   "weather": {
@@ -4423,7 +4423,7 @@
     "gender": "f",
     "article": "die"
   },
-  "win": {
+  "to_win": {
     "text": "gewinnen"
   },
   "wind": {
@@ -4456,7 +4456,7 @@
     "gender": "f",
     "article": "die"
   },
-  "wish": {
+  "to_wish": {
     "text": "wünschen"
   },
   "witness": {
@@ -4484,7 +4484,7 @@
     "gender": "n",
     "article": "das"
   },
-  "work": {
+  "to_work": {
     "text": "arbeiten"
   },
   "work_n": {
@@ -4512,7 +4512,7 @@
     "gender": "m",
     "article": "der"
   },
-  "write": {
+  "to_write": {
     "text": "schreiben"
   },
   "wrong": {

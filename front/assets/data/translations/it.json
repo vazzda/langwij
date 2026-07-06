@@ -2,7 +2,7 @@
   "a_lot": {
     "text": "molto"
   },
-  "accept": {
+  "to_accept": {
     "text": "accettare"
   },
   "accident_car": {
@@ -20,7 +20,7 @@
     "text": "attore",
     "gender": "m"
   },
-  "add": {
+  "to_add": {
     "text": "aggiungere"
   },
   "affair": {
@@ -30,7 +30,7 @@
   "after": {
     "text": "dopo"
   },
-  "agree": {
+  "to_agree": {
     "text": "concordare"
   },
   "airport": {
@@ -79,7 +79,7 @@
     "text": "anniversario",
     "gender": "m"
   },
-  "answer": {
+  "to_answer": {
     "text": "rispondere"
   },
   "answer_n": {
@@ -102,7 +102,7 @@
     "text": "app",
     "gender": "f"
   },
-  "appear": {
+  "to_appear": {
     "text": "apparire"
   },
   "apple": {
@@ -129,7 +129,7 @@
     "text": "arresto",
     "gender": "m"
   },
-  "arrive": {
+  "to_arrive": {
     "text": "arrivare"
   },
   "artery": {
@@ -140,7 +140,7 @@
     "text": "artista",
     "gender": "m"
   },
-  "ask": {
+  "to_ask": {
     "text": "chiedere"
   },
   "at_least": {
@@ -193,7 +193,7 @@
     "text": "borsa",
     "gender": "f"
   },
-  "bake": {
+  "to_bake": {
     "text": "cuocere al forno"
   },
   "ball": {
@@ -220,13 +220,13 @@
     "text": "batteria",
     "gender": "f"
   },
-  "be": {
+  "to_be": {
     "text": "essere"
   },
-  "be_allowed_to": {
+  "to_be_allowed_to": {
     "text": "potere"
   },
-  "be_happy": {
+  "to_be_happy": {
     "text": "essere felice"
   },
   "bear": {
@@ -240,7 +240,7 @@
   "because": {
     "text": "perché"
   },
-  "become": {
+  "to_become": {
     "text": "diventare"
   },
   "bed": {
@@ -262,7 +262,7 @@
   "before": {
     "text": "prima"
   },
-  "begin": {
+  "to_begin": {
     "text": "cominciare"
   },
   "behind": {
@@ -272,7 +272,7 @@
     "m": "beige",
     "f": "beige"
   },
-  "believe": {
+  "to_believe": {
     "text": "credere"
   },
   "beside": {
@@ -385,10 +385,10 @@
     "text": "pane",
     "gender": "m"
   },
-  "break": {
+  "to_break": {
     "text": "rompere"
   },
-  "break_down": {
+  "to_break_down": {
     "text": "guastarsi"
   },
   "breakup": {
@@ -403,10 +403,10 @@
     "m": "luminoso",
     "f": "luminosa"
   },
-  "bring": {
+  "to_bring": {
     "text": "portare"
   },
-  "bring_up": {
+  "to_bring_up": {
     "text": "educare"
   },
   "broom": {
@@ -437,10 +437,10 @@
     "text": "insetto",
     "gender": "m"
   },
-  "build": {
+  "to_build": {
     "text": "costruire"
   },
-  "burn": {
+  "to_burn": {
     "text": "bruciare"
   },
   "bus": {
@@ -454,24 +454,24 @@
     "text": "burro",
     "gender": "m"
   },
-  "buy": {
+  "to_buy": {
     "text": "comprare"
   },
   "cabinet": {
     "text": "credenza",
     "gender": "f"
   },
-  "call": {
+  "to_call": {
     "text": "chiamare"
   },
-  "call_back": {
+  "to_call_back": {
     "text": "richiamare"
   },
   "camera": {
     "text": "macchina fotografica",
     "gender": "f"
   },
-  "can": {
+  "to_can": {
     "text": "potere"
   },
   "canvas": {
@@ -486,10 +486,10 @@
     "text": "macchina",
     "gender": "f"
   },
-  "care": {
+  "to_care": {
     "text": "prendersi cura"
   },
-  "carry": {
+  "to_carry": {
     "text": "portare"
   },
   "cash": {
@@ -500,7 +500,7 @@
     "text": "gatto",
     "gender": "m"
   },
-  "catch": {
+  "to_catch": {
     "text": "catturare"
   },
   "cave": {
@@ -535,7 +535,7 @@
     "text": "opportunità",
     "gender": "f"
   },
-  "change": {
+  "to_change": {
     "text": "cambiare"
   },
   "channel": {
@@ -546,10 +546,10 @@
     "m": "economico",
     "f": "economica"
   },
-  "check": {
+  "to_check": {
     "text": "controllare"
   },
-  "check_out": {
+  "to_check_out": {
     "text": "fare il check-out"
   },
   "cheese": {
@@ -580,7 +580,7 @@
     "text": "cioccolato",
     "gender": "m"
   },
-  "choose": {
+  "to_choose": {
     "text": "scegliere"
   },
   "church": {
@@ -603,7 +603,7 @@
     "text": "argilla",
     "gender": "f"
   },
-  "clean": {
+  "to_clean": {
     "text": "pulire"
   },
   "clean_a": {
@@ -622,7 +622,7 @@
     "text": "orologio",
     "gender": "m"
   },
-  "close": {
+  "to_close": {
     "text": "chiudere"
   },
   "closed": {
@@ -677,7 +677,7 @@
     "text": "pettine",
     "gender": "m"
   },
-  "come": {
+  "to_come": {
     "text": "venire"
   },
   "company": {
@@ -711,7 +711,7 @@
     "text": "consenso",
     "gender": "m"
   },
-  "consider": {
+  "to_consider": {
     "text": "considerare"
   },
   "constitution": {
@@ -722,14 +722,14 @@
     "text": "continente",
     "gender": "m"
   },
-  "continue": {
+  "to_continue": {
     "text": "continuare"
   },
   "contract": {
     "text": "contratto",
     "gender": "m"
   },
-  "cook": {
+  "to_cook": {
     "text": "cucinare"
   },
   "coral": {
@@ -744,7 +744,7 @@
     "text": "cotone",
     "gender": "m"
   },
-  "count": {
+  "to_count": {
     "text": "contare"
   },
   "country": {
@@ -771,7 +771,7 @@
     "text": "panna",
     "gender": "f"
   },
-  "create": {
+  "to_create": {
     "text": "creare"
   },
   "credit_card": {
@@ -790,7 +790,7 @@
     "text": "coccodrillo",
     "gender": "m"
   },
-  "cry": {
+  "to_cry": {
     "text": "piangere"
   },
   "cup": {
@@ -809,10 +809,10 @@
     "text": "dogana",
     "gender": "f"
   },
-  "cut": {
+  "to_cut": {
     "text": "tagliare"
   },
-  "dance": {
+  "to_dance": {
     "text": "ballare"
   },
   "danger": {
@@ -859,7 +859,7 @@
     "text": "dicembre",
     "gender": "m"
   },
-  "decide": {
+  "to_decide": {
     "text": "decidere"
   },
   "deep": {
@@ -906,14 +906,14 @@
     "text": "destino",
     "gender": "m"
   },
-  "develop": {
+  "to_develop": {
     "text": "sviluppare"
   },
   "diagnosis": {
     "text": "diagnosi",
     "gender": "f"
   },
-  "die": {
+  "to_die": {
     "text": "morire"
   },
   "different": {
@@ -940,7 +940,7 @@
     "text": "divorzio",
     "gender": "m"
   },
-  "do": {
+  "to_do": {
     "text": "fare"
   },
   "doctor": {
@@ -966,17 +966,17 @@
   "down": {
     "text": "giù"
   },
-  "download": {
+  "to_download": {
     "text": "scaricare"
   },
-  "draw": {
+  "to_draw": {
     "text": "disegnare"
   },
   "drawer": {
     "text": "cassetto",
     "gender": "m"
   },
-  "dream": {
+  "to_dream": {
     "text": "sognare"
   },
   "dream_n": {
@@ -995,10 +995,10 @@
     "text": "trapano",
     "gender": "m"
   },
-  "drink": {
+  "to_drink": {
     "text": "bere"
   },
-  "drive": {
+  "to_drive": {
     "text": "guidare"
   },
   "driver": {
@@ -1028,16 +1028,16 @@
     "m": "facile",
     "f": "facile"
   },
-  "eat": {
+  "to_eat": {
     "text": "mangiare"
   },
-  "eat_breakfast": {
+  "to_eat_breakfast": {
     "text": "fare colazione"
   },
-  "eat_dinner": {
+  "to_eat_dinner": {
     "text": "cenare"
   },
-  "eat_lunch": {
+  "to_eat_lunch": {
     "text": "pranzare"
   },
   "egg": {
@@ -1143,7 +1143,7 @@
     "text": "esistenza",
     "gender": "f"
   },
-  "expect": {
+  "to_expect": {
     "text": "aspettare"
   },
   "expensive": {
@@ -1158,7 +1158,7 @@
     "text": "esperimento",
     "gender": "m"
   },
-  "explain": {
+  "to_explain": {
     "text": "spiegare"
   },
   "eye": {
@@ -1173,7 +1173,7 @@
     "text": "fallimento",
     "gender": "m"
   },
-  "fall": {
+  "to_fall": {
     "text": "cadere"
   },
   "family": {
@@ -1200,7 +1200,7 @@
     "text": "padre",
     "gender": "m"
   },
-  "fear": {
+  "to_fear": {
     "text": "temere"
   },
   "fear_n": {
@@ -1211,10 +1211,10 @@
     "text": "febbraio",
     "gender": "m"
   },
-  "feed": {
+  "to_feed": {
     "text": "nutrire"
   },
-  "feel": {
+  "to_feel": {
     "text": "sentire"
   },
   "fever": {
@@ -1225,17 +1225,17 @@
     "text": "campo",
     "gender": "m"
   },
-  "fight": {
+  "to_fight": {
     "text": "combattere"
   },
   "film": {
     "text": "film",
     "gender": "m"
   },
-  "find": {
+  "to_find": {
     "text": "trovare"
   },
-  "find_out": {
+  "to_find_out": {
     "text": "scoprire"
   },
   "fine_n": {
@@ -1246,7 +1246,7 @@
     "text": "dito",
     "gender": "m"
   },
-  "finish": {
+  "to_finish": {
     "text": "finire"
   },
   "fire": {
@@ -1283,10 +1283,10 @@
     "text": "fiore",
     "gender": "m"
   },
-  "fly": {
+  "to_fly": {
     "text": "volare"
   },
-  "follow": {
+  "to_follow": {
     "text": "seguire"
   },
   "food": {
@@ -1305,7 +1305,7 @@
     "text": "foresta",
     "gender": "f"
   },
-  "forget": {
+  "to_forget": {
     "text": "dimenticare"
   },
   "fork": {
@@ -1374,10 +1374,10 @@
     "text": "gene",
     "gender": "m"
   },
-  "get": {
+  "to_get": {
     "text": "ottenere"
   },
-  "get_up": {
+  "to_get_up": {
     "text": "alzarsi"
   },
   "gift": {
@@ -1396,10 +1396,10 @@
     "text": "ragazza",
     "gender": "f"
   },
-  "give": {
+  "to_give": {
     "text": "dare"
   },
-  "give_up": {
+  "to_give_up": {
     "text": "arrendersi"
   },
   "glass_cup": {
@@ -1422,7 +1422,7 @@
     "text": "colla",
     "gender": "f"
   },
-  "go": {
+  "to_go": {
     "text": "andare"
   },
   "goal": {
@@ -1464,13 +1464,13 @@
     "m": "grigio",
     "f": "grigia"
   },
-  "grill": {
+  "to_grill": {
     "text": "grigliare"
   },
-  "grow": {
+  "to_grow": {
     "text": "crescere"
   },
-  "grow_up": {
+  "to_grow_up": {
     "text": "crescere"
   },
   "guide": {
@@ -1500,7 +1500,7 @@
     "text": "mano",
     "gender": "f"
   },
-  "happen": {
+  "to_happen": {
     "text": "accadere"
   },
   "happy": {
@@ -1522,13 +1522,13 @@
     "text": "cappello",
     "gender": "m"
   },
-  "hate": {
+  "to_hate": {
     "text": "odiare"
   },
-  "have": {
+  "to_have": {
     "text": "avere"
   },
-  "have_to": {
+  "to_have_to": {
     "text": "dovere"
   },
   "he": {
@@ -1542,7 +1542,7 @@
     "m": "sano",
     "f": "sana"
   },
-  "hear": {
+  "to_hear": {
     "text": "sentire"
   },
   "heart_organ": {
@@ -1556,7 +1556,7 @@
   "hello": {
     "text": "ciao"
   },
-  "help": {
+  "to_help": {
     "text": "aiutare"
   },
   "her": {
@@ -1573,13 +1573,13 @@
     "text": "collina",
     "gender": "f"
   },
-  "hire": {
+  "to_hire": {
     "text": "assumere"
   },
   "his": {
     "text": "suo"
   },
-  "hold": {
+  "to_hold": {
     "text": "tenere"
   },
   "home": {
@@ -1606,7 +1606,7 @@
     "text": "avventura",
     "gender": "f"
   },
-  "hope": {
+  "to_hope": {
     "text": "sperare"
   },
   "hope_n": {
@@ -1708,7 +1708,7 @@
   "in_front_of": {
     "text": "davanti"
   },
-  "include": {
+  "to_include": {
     "text": "includere"
   },
   "infection": {
@@ -1753,7 +1753,7 @@
     "text": "invito",
     "gender": "m"
   },
-  "invite": {
+  "to_invite": {
     "text": "invitare"
   },
   "invoice": {
@@ -1791,7 +1791,7 @@
     "text": "lavoro",
     "gender": "m"
   },
-  "join": {
+  "to_join": {
     "text": "aderire"
   },
   "judge": {
@@ -1806,7 +1806,7 @@
     "text": "luglio",
     "gender": "m"
   },
-  "jump": {
+  "to_jump": {
     "text": "saltare"
   },
   "june": {
@@ -1821,7 +1821,7 @@
     "text": "giustizia",
     "gender": "f"
   },
-  "keep": {
+  "to_keep": {
     "text": "mantenere"
   },
   "key": {
@@ -1832,10 +1832,10 @@
     "text": "rene",
     "gender": "m"
   },
-  "kill": {
+  "to_kill": {
     "text": "uccidere"
   },
-  "kiss": {
+  "to_kiss": {
     "text": "baciare"
   },
   "kitchen": {
@@ -1850,7 +1850,7 @@
     "text": "coltello",
     "gender": "m"
   },
-  "know": {
+  "to_know": {
     "text": "sapere"
   },
   "laboratory": {
@@ -1887,7 +1887,7 @@
   "later": {
     "text": "più tardi"
   },
-  "laugh": {
+  "to_laugh": {
     "text": "ridere"
   },
   "law": {
@@ -1902,21 +1902,21 @@
     "text": "avvocato",
     "gender": "m"
   },
-  "lead": {
+  "to_lead": {
     "text": "condurre"
   },
   "league": {
     "text": "lega",
     "gender": "f"
   },
-  "learn": {
+  "to_learn": {
     "text": "imparare"
   },
   "leather": {
     "text": "pelle",
     "gender": "f"
   },
-  "leave": {
+  "to_leave": {
     "text": "partire"
   },
   "lecture": {
@@ -1933,7 +1933,7 @@
   "less": {
     "text": "meno"
   },
-  "let": {
+  "to_let": {
     "text": "lasciare"
   },
   "letter": {
@@ -1952,10 +1952,10 @@
     "text": "patente",
     "gender": "f"
   },
-  "lie": {
+  "to_lie": {
     "text": "mentire"
   },
-  "lie_down": {
+  "to_lie_down": {
     "text": "sdraiarsi"
   },
   "lie_n": {
@@ -1970,20 +1970,20 @@
     "m": "leggero",
     "f": "leggera"
   },
-  "like": {
+  "to_like": {
     "text": "piacere"
   },
   "lion": {
     "text": "leone",
     "gender": "m"
   },
-  "listen": {
+  "to_listen": {
     "text": "ascoltare"
   },
   "little": {
     "text": "poco"
   },
-  "live": {
+  "to_live": {
     "text": "vivere"
   },
   "liver": {
@@ -2006,13 +2006,13 @@
     "m": "lungo",
     "f": "lunga"
   },
-  "look_at": {
+  "to_look_at": {
     "text": "guardare"
   },
-  "look_for": {
+  "to_look_for": {
     "text": "cercare"
   },
-  "lose": {
+  "to_lose": {
     "text": "perdere"
   },
   "loss_n": {
@@ -2027,7 +2027,7 @@
     "m": "rumoroso",
     "f": "rumorosa"
   },
-  "love": {
+  "to_love": {
     "text": "amare"
   },
   "love_n": {
@@ -2050,7 +2050,7 @@
     "text": "polmone",
     "gender": "m"
   },
-  "make": {
+  "to_make": {
     "text": "fare"
   },
   "makeup": {
@@ -2069,7 +2069,7 @@
     "text": "marzo",
     "gender": "m"
   },
-  "marinate": {
+  "to_marinate": {
     "text": "marinare"
   },
   "market": {
@@ -2080,7 +2080,7 @@
     "m": "bordeaux",
     "f": "bordeaux"
   },
-  "marry": {
+  "to_marry": {
     "text": "sposare"
   },
   "match": {
@@ -2095,7 +2095,7 @@
     "text": "maggio",
     "gender": "m"
   },
-  "mean": {
+  "to_mean": {
     "text": "significare"
   },
   "meaning": {
@@ -2110,10 +2110,10 @@
     "text": "medicina",
     "gender": "f"
   },
-  "meet": {
+  "to_meet": {
     "text": "incontrare"
   },
-  "meet_up": {
+  "to_meet_up": {
     "text": "incontrarsi"
   },
   "meeting": {
@@ -2202,13 +2202,13 @@
     "text": "bocca",
     "gender": "f"
   },
-  "move": {
+  "to_move": {
     "text": "muoversi"
   },
-  "move_in": {
+  "to_move_in": {
     "text": "trasferirsi"
   },
-  "move_out": {
+  "to_move_out": {
     "text": "traslocare"
   },
   "movie": {
@@ -2268,10 +2268,10 @@
     "text": "collo",
     "gender": "m"
   },
-  "need": {
+  "to_need": {
     "text": "avere bisogno"
   },
-  "negotiate": {
+  "to_negotiate": {
     "text": "negoziare"
   },
   "neighbor": {
@@ -2349,7 +2349,7 @@
     "text": "contachilometri",
     "gender": "m"
   },
-  "offer": {
+  "to_offer": {
     "text": "offrire"
   },
   "office": {
@@ -2384,7 +2384,7 @@
   "only": {
     "text": "solo"
   },
-  "open": {
+  "to_open": {
     "text": "aprire"
   },
   "or": {
@@ -2470,7 +2470,7 @@
     "text": "partner",
     "gender": "m"
   },
-  "pass": {
+  "to_pass": {
     "text": "passare"
   },
   "passion": {
@@ -2489,10 +2489,10 @@
     "text": "modello",
     "gender": "m"
   },
-  "pay": {
+  "to_pay": {
     "text": "pagare"
   },
-  "pay_for": {
+  "to_pay_for": {
     "text": "pagare"
   },
   "payment": {
@@ -2579,10 +2579,10 @@
     "text": "altopiano",
     "gender": "m"
   },
-  "play": {
+  "to_play": {
     "text": "giocare"
   },
-  "play_instrument": {
+  "to_play_instrument": {
     "text": "suonare"
   },
   "player": {
@@ -2624,7 +2624,7 @@
     "text": "potenza",
     "gender": "f"
   },
-  "pray": {
+  "to_pray": {
     "text": "pregare"
   },
   "pregnant": {
@@ -2663,33 +2663,33 @@
     "text": "progetto",
     "gender": "m"
   },
-  "promise": {
+  "to_promise": {
     "text": "promettere"
   },
-  "promote": {
+  "to_promote": {
     "text": "promuovere"
   },
   "proposal_n": {
     "text": "proposta",
     "gender": "f"
   },
-  "protect": {
+  "to_protect": {
     "text": "proteggere"
   },
-  "pull": {
+  "to_pull": {
     "text": "tirare"
   },
   "purple": {
     "m": "viola",
     "f": "viola"
   },
-  "push": {
+  "to_push": {
     "text": "spingere"
   },
-  "put": {
+  "to_put": {
     "text": "mettere"
   },
-  "put_on": {
+  "to_put_on": {
     "text": "mettersi"
   },
   "question": {
@@ -2720,7 +2720,7 @@
     "text": "pioggia",
     "gender": "f"
   },
-  "raise": {
+  "to_raise": {
     "text": "sollevare"
   },
   "rarely": {
@@ -2730,14 +2730,14 @@
     "text": "rasoio",
     "gender": "m"
   },
-  "reach": {
+  "to_reach": {
     "text": "raggiungere"
   },
   "reaction": {
     "text": "reazione",
     "gender": "f"
   },
-  "read": {
+  "to_read": {
     "text": "leggere"
   },
   "reality": {
@@ -2752,7 +2752,7 @@
     "text": "ricevuta",
     "gender": "f"
   },
-  "receive": {
+  "to_receive": {
     "text": "ricevere"
   },
   "recently": {
@@ -2770,13 +2770,13 @@
     "text": "relazione",
     "gender": "f"
   },
-  "remember": {
+  "to_remember": {
     "text": "ricordare"
   },
-  "report": {
+  "to_report": {
     "text": "segnalare"
   },
-  "require": {
+  "to_require": {
     "text": "richiedere"
   },
   "research": {
@@ -2787,10 +2787,10 @@
     "text": "prenotazione",
     "gender": "f"
   },
-  "resign": {
+  "to_resign": {
     "text": "dimettersi"
   },
-  "respect": {
+  "to_respect": {
     "text": "rispettare"
   },
   "restaurant": {
@@ -2820,7 +2820,7 @@
     "text": "strada",
     "gender": "f"
   },
-  "roast": {
+  "to_roast": {
     "text": "arrostire"
   },
   "roof": {
@@ -2843,7 +2843,7 @@
     "text": "gomma",
     "gender": "f"
   },
-  "run": {
+  "to_run": {
     "text": "correre"
   },
   "sad": {
@@ -2882,14 +2882,14 @@
     "text": "salsiccia",
     "gender": "f"
   },
-  "save": {
+  "to_save": {
     "text": "salvare"
   },
   "saw": {
     "text": "sega",
     "gender": "f"
   },
-  "say": {
+  "to_say": {
     "text": "dire"
   },
   "scarf": {
@@ -2952,20 +2952,20 @@
     "text": "seduzione",
     "gender": "f"
   },
-  "see": {
+  "to_see": {
     "text": "vedere"
   },
-  "seem": {
+  "to_seem": {
     "text": "sembrare"
   },
-  "sell": {
+  "to_sell": {
     "text": "vendere"
   },
   "semester": {
     "text": "semestre",
     "gender": "m"
   },
-  "send": {
+  "to_send": {
     "text": "inviare"
   },
   "sensual": {
@@ -2984,17 +2984,17 @@
     "text": "serie",
     "gender": "f"
   },
-  "serve": {
+  "to_serve": {
     "text": "servire"
   },
   "server": {
     "text": "server",
     "gender": "m"
   },
-  "set": {
+  "to_set": {
     "text": "impostare"
   },
-  "set_up": {
+  "to_set_up": {
     "text": "configurare"
   },
   "seven": {
@@ -3008,7 +3008,7 @@
     "text": "ombra",
     "gender": "f"
   },
-  "shake": {
+  "to_shake": {
     "text": "scuotere"
   },
   "shampoo": {
@@ -3042,7 +3042,7 @@
     "text": "scarpa",
     "gender": "f"
   },
-  "shoot": {
+  "to_shoot": {
     "text": "sparare"
   },
   "short": {
@@ -3053,10 +3053,10 @@
     "text": "spalla",
     "gender": "f"
   },
-  "shout": {
+  "to_shout": {
     "text": "gridare"
   },
-  "show": {
+  "to_show": {
     "text": "mostrare"
   },
   "show_n": {
@@ -3082,7 +3082,7 @@
     "text": "peccato",
     "gender": "m"
   },
-  "sing": {
+  "to_sing": {
     "text": "cantare"
   },
   "single": {
@@ -3097,16 +3097,16 @@
     "text": "sorella",
     "gender": "f"
   },
-  "sit": {
+  "to_sit": {
     "text": "sedere"
   },
-  "sit_down": {
+  "to_sit_down": {
     "text": "sedersi"
   },
   "six": {
     "text": "sei"
   },
-  "sketch": {
+  "to_sketch": {
     "text": "abbozzare"
   },
   "skin": {
@@ -3121,7 +3121,7 @@
     "text": "cielo",
     "gender": "m"
   },
-  "sleep": {
+  "to_sleep": {
     "text": "dormire"
   },
   "slow": {
@@ -3136,10 +3136,10 @@
     "m": "intelligente",
     "f": "intelligente"
   },
-  "smell": {
+  "to_smell": {
     "text": "odorare"
   },
-  "smile": {
+  "to_smile": {
     "text": "sorridere"
   },
   "snake": {
@@ -3195,7 +3195,7 @@
     "m": "acido",
     "f": "acida"
   },
-  "speak": {
+  "to_speak": {
     "text": "parlare"
   },
   "species": {
@@ -3210,7 +3210,7 @@
     "text": "velocità",
     "gender": "f"
   },
-  "spend": {
+  "to_spend": {
     "text": "spendere"
   },
   "spicy": {
@@ -3237,7 +3237,7 @@
     "text": "scale",
     "gender": "f"
   },
-  "stand": {
+  "to_stand": {
     "text": "stare"
   },
   "star": {
@@ -3248,10 +3248,10 @@
     "text": "stazione",
     "gender": "f"
   },
-  "stay": {
+  "to_stay": {
     "text": "restare"
   },
-  "steam": {
+  "to_steam": {
     "text": "cuocere a vapore"
   },
   "steering": {
@@ -3266,7 +3266,7 @@
     "text": "pietra",
     "gender": "f"
   },
-  "stop": {
+  "to_stop": {
     "text": "fermare"
   },
   "store": {
@@ -3304,10 +3304,10 @@
     "text": "studente",
     "gender": "m"
   },
-  "study": {
+  "to_study": {
     "text": "studiare"
   },
-  "succeed": {
+  "to_succeed": {
     "text": "riuscire"
   },
   "success": {
@@ -3317,14 +3317,14 @@
   "such": {
     "text": "tale"
   },
-  "sue": {
+  "to_sue": {
     "text": "fare causa"
   },
   "sugar": {
     "text": "zucchero",
     "gender": "m"
   },
-  "suggest": {
+  "to_suggest": {
     "text": "suggerire"
   },
   "summer": {
@@ -3343,7 +3343,7 @@
     "text": "protezione solare",
     "gender": "f"
   },
-  "support": {
+  "to_support": {
     "text": "sostenere"
   },
   "surgery": {
@@ -3354,7 +3354,7 @@
     "m": "dolce",
     "f": "dolce"
   },
-  "swim": {
+  "to_swim": {
     "text": "nuotare"
   },
   "swimming_pool": {
@@ -3373,13 +3373,13 @@
     "text": "tavolo",
     "gender": "m"
   },
-  "take": {
+  "to_take": {
     "text": "prendere"
   },
-  "take_off": {
+  "to_take_off": {
     "text": "togliersi"
   },
-  "talk": {
+  "to_talk": {
     "text": "parlare"
   },
   "tall": {
@@ -3390,7 +3390,7 @@
     "text": "nastro",
     "gender": "m"
   },
-  "taste": {
+  "to_taste": {
     "text": "assaggiare"
   },
   "tax": {
@@ -3405,7 +3405,7 @@
     "text": "tè",
     "gender": "m"
   },
-  "teach": {
+  "to_teach": {
     "text": "insegnare"
   },
   "teacher": {
@@ -3435,7 +3435,7 @@
     "text": "texture",
     "gender": "f"
   },
-  "thank": {
+  "to_thank": {
     "text": "ringraziare"
   },
   "thank_you": {
@@ -3474,7 +3474,7 @@
     "text": "cosa",
     "gender": "f"
   },
-  "think": {
+  "to_think": {
     "text": "pensare"
   },
   "thirsty": {
@@ -3490,7 +3490,7 @@
   "three": {
     "text": "tre"
   },
-  "throw": {
+  "to_throw": {
     "text": "gettare"
   },
   "thursday": {
@@ -3560,7 +3560,7 @@
   "totally": {
     "text": "totalmente"
   },
-  "touch": {
+  "to_touch": {
     "text": "toccare"
   },
   "tournament": {
@@ -3575,7 +3575,7 @@
     "text": "traffico",
     "gender": "m"
   },
-  "train": {
+  "to_train": {
     "text": "allenarsi"
   },
   "train_vehicle": {
@@ -3594,7 +3594,7 @@
     "m": "trasparente",
     "f": "trasparente"
   },
-  "travel": {
+  "to_travel": {
     "text": "viaggiare"
   },
   "tray": {
@@ -3621,23 +3621,23 @@
     "text": "verità",
     "gender": "f"
   },
-  "try": {
+  "to_try": {
     "text": "provare"
   },
-  "try_on": {
+  "to_try_on": {
     "text": "provarsi"
   },
   "tuesday": {
     "text": "martedì",
     "gender": "m"
   },
-  "turn": {
+  "to_turn": {
     "text": "girare"
   },
-  "turn_off": {
+  "to_turn_off": {
     "text": "spegnere"
   },
-  "turn_on": {
+  "to_turn_on": {
     "text": "accendere"
   },
   "turquoise": {
@@ -3658,7 +3658,7 @@
   "under": {
     "text": "sotto"
   },
-  "understand": {
+  "to_understand": {
     "text": "capire"
   },
   "unless": {
@@ -3667,13 +3667,13 @@
   "up": {
     "text": "su"
   },
-  "update": {
+  "to_update": {
     "text": "aggiornare"
   },
-  "upload": {
+  "to_upload": {
     "text": "caricare"
   },
-  "use": {
+  "to_use": {
     "text": "usare"
   },
   "usually": {
@@ -3754,27 +3754,27 @@
     "text": "vulcano",
     "gender": "m"
   },
-  "wait": {
+  "to_wait": {
     "text": "aspettare"
   },
-  "wait_for": {
+  "to_wait_for": {
     "text": "aspettare"
   },
   "waiter": {
     "text": "cameriere",
     "gender": "m"
   },
-  "wake_up": {
+  "to_wake_up": {
     "text": "svegliarsi"
   },
-  "walk": {
+  "to_walk": {
     "text": "camminare"
   },
   "wall": {
     "text": "muro",
     "gender": "m"
   },
-  "want": {
+  "to_want": {
     "text": "volere"
   },
   "war": {
@@ -3789,20 +3789,20 @@
     "m": "caldo",
     "f": "calda"
   },
-  "warn": {
+  "to_warn": {
     "text": "avvertire"
   },
-  "wash": {
+  "to_wash": {
     "text": "lavare"
   },
   "washing_machine": {
     "text": "lavatrice",
     "gender": "f"
   },
-  "watch": {
+  "to_watch": {
     "text": "guardare"
   },
-  "watch_out": {
+  "to_watch_out": {
     "text": "fare attenzione"
   },
   "water": {
@@ -3813,7 +3813,7 @@
     "text": "cascata",
     "gender": "f"
   },
-  "wave": {
+  "to_wave": {
     "text": "agitare"
   },
   "way": {
@@ -3827,7 +3827,7 @@
     "m": "debole",
     "f": "debole"
   },
-  "wear": {
+  "to_wear": {
     "text": "indossare"
   },
   "weather": {
@@ -3895,7 +3895,7 @@
     "text": "moglie",
     "gender": "f"
   },
-  "win": {
+  "to_win": {
     "text": "vincere"
   },
   "wind": {
@@ -3922,7 +3922,7 @@
     "text": "saggezza",
     "gender": "f"
   },
-  "wish": {
+  "to_wish": {
     "text": "desiderare"
   },
   "witness": {
@@ -3945,7 +3945,7 @@
     "text": "parola",
     "gender": "f"
   },
-  "work": {
+  "to_work": {
     "text": "lavorare"
   },
   "work_n": {
@@ -3968,7 +3968,7 @@
     "text": "chiave inglese",
     "gender": "f"
   },
-  "write": {
+  "to_write": {
     "text": "scrivere"
   },
   "wrong": {
@@ -4011,90 +4011,254 @@
   },
   "meta": {
     "levels": {
-      "survival": { "name": "Sopravvivenza" },
-      "foundation": { "name": "Fondamenta" },
-      "elementary": { "name": "Elementare" },
-      "intermediate": { "name": "Intermedio" },
-      "advanced": { "name": "Avanzato" },
-      "specialized": { "name": "Specializzato" }
+      "survival": {
+        "name": "Sopravvivenza"
+      },
+      "foundation": {
+        "name": "Fondamenta"
+      },
+      "elementary": {
+        "name": "Elementare"
+      },
+      "intermediate": {
+        "name": "Intermedio"
+      },
+      "advanced": {
+        "name": "Avanzato"
+      },
+      "specialized": {
+        "name": "Specializzato"
+      }
     },
     "decks": {
-      "first_contact": { "name": "Primo contatto" },
-      "getting_around": { "name": "Orientamento" },
-      "staying_alive": { "name": "Sopravvivenza" },
-      "making_sense": { "name": "Comprensione" },
-      "core_verbs": { "name": "Verbi essenziali" },
-      "daily_actions": { "name": "Azioni quotidiane" },
-      "head_to_toe": { "name": "Dalla testa ai piedi" },
-      "my_people": { "name": "La mia gente" },
-      "bread_and_water": { "name": "Pane e acqua" },
-      "four_walls": { "name": "Quattro mura" },
-      "zero_to_ten": { "name": "Da zero a dieci" },
-      "on_the_road": { "name": "In viaggio" },
-      "good_and_bad": { "name": "Buono e cattivo" },
-      "glue_words": { "name": "Parole collante" },
-      "doing_things": { "name": "Fare le cose" },
-      "hands_on": { "name": "Mani in pasta" },
-      "laugh_and_cry": { "name": "Ridere e piangere" },
-      "shoulder_to_knee": { "name": "Dalla spalla al ginocchio" },
-      "brothers_and_sisters": { "name": "Fratelli e sorelle" },
-      "market_basket": { "name": "Cesto del mercato" },
-      "around_the_house": { "name": "Per casa" },
-      "rainbow": { "name": "Arcobaleno" },
-      "days_and_months": { "name": "Giorni e mesi" },
-      "when_and_how_often": { "name": "Quando e quanto spesso" },
-      "creatures_and_sky": { "name": "Creature e cielo" },
-      "city_life": { "name": "Vita di città" },
-      "how_things_are": { "name": "Come sono le cose" },
-      "world_words": { "name": "Parole del mondo" },
-      "bags_packed": { "name": "Valigie pronte" },
-      "heart_and_mind": { "name": "Cuore e mente" },
-      "coming_and_going": { "name": "Andare e venire" },
-      "build_and_break": { "name": "Costruire e rompere" },
-      "two_word_wonders": { "name": "Verbi frasali" },
-      "skin_deep": { "name": "A fior di pelle" },
-      "home_sweet_home": { "name": "Casa dolce casa" },
-      "at_the_table": { "name": "A tavola" },
-      "wild_side": { "name": "Lato selvaggio" },
-      "taste_and_touch": { "name": "Gusto e tatto" },
-      "people_and_places": { "name": "Persone e luoghi" },
-      "life_and_work": { "name": "Vita e lavoro" },
-      "when_and_where": { "name": "Quando e dove" },
-      "going_places": { "name": "In cammino" },
-      "dating_scene": { "name": "Appuntamenti" },
-      "sick_and_stuff": { "name": "Malattie e cose" },
-      "higher_ground": { "name": "Livello superiore" },
-      "making_it_happen": { "name": "Far succedere le cose" },
-      "tying_loose_ends": { "name": "Legare i fili" },
-      "three_word_moves": { "name": "Espressioni composte" },
-      "bones_and_blood": { "name": "Ossa e sangue" },
-      "what_matters": { "name": "Ciò che conta" },
-      "shades_of_grey": { "name": "Sfumature di grigio" },
-      "words_and_stories": { "name": "Parole e storie" },
-      "peace_and_war": { "name": "Guerra e pace" },
-      "however_therefore": { "name": "Tuttavia e quindi" },
-      "stuff_and_coins": { "name": "Cose e monete" },
-      "after_dark": { "name": "Dopo il tramonto" },
-      "last_of_the_wild": { "name": "Gli ultimi selvaggi" },
-      "medical_anatomy": { "name": "Medicina e anatomia" },
-      "extended_animals": { "name": "Animali e vita marina" },
-      "extended_food": { "name": "Cibo e cucina" },
-      "extended_colors_art": { "name": "Colori e arte" },
-      "business": { "name": "Affari" },
-      "legal": { "name": "Giurisprudenza" },
-      "tech_it": { "name": "Tecnologia e IT" },
-      "science": { "name": "Scienza" },
-      "furniture_utensils": { "name": "Mobili e utensili" },
-      "philosophy": { "name": "Filosofia" },
-      "sports_fitness": { "name": "Sport e fitness" },
-      "hygiene": { "name": "Igiene" },
-      "entertainment": { "name": "Intrattenimento" },
-      "education": { "name": "Istruzione" },
-      "geography": { "name": "Geografia" },
-      "automotive": { "name": "Automotive" },
-      "tools_repair": { "name": "Attrezzi e riparazione" },
-      "relationships": { "name": "Relazioni" },
-      "romance_intimacy": { "name": "Romanticismo e intimità" }
+      "first_contact": {
+        "name": "Primo contatto"
+      },
+      "getting_around": {
+        "name": "Orientamento"
+      },
+      "staying_alive": {
+        "name": "Sopravvivenza"
+      },
+      "making_sense": {
+        "name": "Comprensione"
+      },
+      "core_verbs": {
+        "name": "Verbi essenziali"
+      },
+      "daily_actions": {
+        "name": "Azioni quotidiane"
+      },
+      "head_to_toe": {
+        "name": "Dalla testa ai piedi"
+      },
+      "my_people": {
+        "name": "La mia gente"
+      },
+      "bread_and_water": {
+        "name": "Pane e acqua"
+      },
+      "four_walls": {
+        "name": "Quattro mura"
+      },
+      "zero_to_ten": {
+        "name": "Da zero a dieci"
+      },
+      "on_the_road": {
+        "name": "In viaggio"
+      },
+      "good_and_bad": {
+        "name": "Buono e cattivo"
+      },
+      "glue_words": {
+        "name": "Parole collante"
+      },
+      "doing_things": {
+        "name": "Fare le cose"
+      },
+      "hands_on": {
+        "name": "Mani in pasta"
+      },
+      "laugh_and_cry": {
+        "name": "Ridere e piangere"
+      },
+      "shoulder_to_knee": {
+        "name": "Dalla spalla al ginocchio"
+      },
+      "brothers_and_sisters": {
+        "name": "Fratelli e sorelle"
+      },
+      "market_basket": {
+        "name": "Cesto del mercato"
+      },
+      "around_the_house": {
+        "name": "Per casa"
+      },
+      "rainbow": {
+        "name": "Arcobaleno"
+      },
+      "days_and_months": {
+        "name": "Giorni e mesi"
+      },
+      "when_and_how_often": {
+        "name": "Quando e quanto spesso"
+      },
+      "creatures_and_sky": {
+        "name": "Creature e cielo"
+      },
+      "city_life": {
+        "name": "Vita di città"
+      },
+      "how_things_are": {
+        "name": "Come sono le cose"
+      },
+      "world_words": {
+        "name": "Parole del mondo"
+      },
+      "bags_packed": {
+        "name": "Valigie pronte"
+      },
+      "heart_and_mind": {
+        "name": "Cuore e mente"
+      },
+      "coming_and_going": {
+        "name": "Andare e venire"
+      },
+      "build_and_break": {
+        "name": "Costruire e rompere"
+      },
+      "two_word_wonders": {
+        "name": "Verbi frasali"
+      },
+      "skin_deep": {
+        "name": "A fior di pelle"
+      },
+      "home_sweet_home": {
+        "name": "Casa dolce casa"
+      },
+      "at_the_table": {
+        "name": "A tavola"
+      },
+      "wild_side": {
+        "name": "Lato selvaggio"
+      },
+      "taste_and_touch": {
+        "name": "Gusto e tatto"
+      },
+      "people_and_places": {
+        "name": "Persone e luoghi"
+      },
+      "life_and_work": {
+        "name": "Vita e lavoro"
+      },
+      "when_and_where": {
+        "name": "Quando e dove"
+      },
+      "going_places": {
+        "name": "In cammino"
+      },
+      "dating_scene": {
+        "name": "Appuntamenti"
+      },
+      "sick_and_stuff": {
+        "name": "Malattie e cose"
+      },
+      "higher_ground": {
+        "name": "Livello superiore"
+      },
+      "making_it_happen": {
+        "name": "Far succedere le cose"
+      },
+      "tying_loose_ends": {
+        "name": "Legare i fili"
+      },
+      "three_word_moves": {
+        "name": "Espressioni composte"
+      },
+      "bones_and_blood": {
+        "name": "Ossa e sangue"
+      },
+      "what_matters": {
+        "name": "Ciò che conta"
+      },
+      "shades_of_grey": {
+        "name": "Sfumature di grigio"
+      },
+      "words_and_stories": {
+        "name": "Parole e storie"
+      },
+      "peace_and_war": {
+        "name": "Guerra e pace"
+      },
+      "however_therefore": {
+        "name": "Tuttavia e quindi"
+      },
+      "stuff_and_coins": {
+        "name": "Cose e monete"
+      },
+      "after_dark": {
+        "name": "Dopo il tramonto"
+      },
+      "last_of_the_wild": {
+        "name": "Gli ultimi selvaggi"
+      },
+      "medical_anatomy": {
+        "name": "Medicina e anatomia"
+      },
+      "extended_animals": {
+        "name": "Animali e vita marina"
+      },
+      "extended_food": {
+        "name": "Cibo e cucina"
+      },
+      "extended_colors_art": {
+        "name": "Colori e arte"
+      },
+      "business": {
+        "name": "Affari"
+      },
+      "legal": {
+        "name": "Giurisprudenza"
+      },
+      "tech_it": {
+        "name": "Tecnologia e IT"
+      },
+      "science": {
+        "name": "Scienza"
+      },
+      "furniture_utensils": {
+        "name": "Mobili e utensili"
+      },
+      "philosophy": {
+        "name": "Filosofia"
+      },
+      "sports_fitness": {
+        "name": "Sport e fitness"
+      },
+      "hygiene": {
+        "name": "Igiene"
+      },
+      "entertainment": {
+        "name": "Intrattenimento"
+      },
+      "education": {
+        "name": "Istruzione"
+      },
+      "geography": {
+        "name": "Geografia"
+      },
+      "automotive": {
+        "name": "Automotive"
+      },
+      "tools_repair": {
+        "name": "Attrezzi e riparazione"
+      },
+      "relationships": {
+        "name": "Relazioni"
+      },
+      "romance_intimacy": {
+        "name": "Romanticismo e intimità"
+      }
     }
   }
 }

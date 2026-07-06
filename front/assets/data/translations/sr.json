@@ -83,670 +83,670 @@
   "no": {
     "text": "ne"
   },
-  "lie_down": {
+  "to_lie_down": {
     "imperfective": "ležati",
     "perfective": "leći"
   },
-  "arrive": {
+  "to_arrive": {
     "imperfective": "dolaziti",
     "perfective": "stići"
   },
-  "buy": {
+  "to_buy": {
     "imperfective": "kupovati",
     "perfective": "kupiti"
   },
-  "give": {
+  "to_give": {
     "imperfective": "davati",
     "perfective": "dati"
   },
-  "sell": {
+  "to_sell": {
     "imperfective": "prodavati",
     "perfective": "prodati"
   },
-  "smile": {
+  "to_smile": {
     "imperfective": "smešiti se",
     "perfective": "nasmejati se"
   },
-  "count": {
+  "to_count": {
     "text": "brojati"
   },
-  "hold": {
+  "to_hold": {
     "text": "držati"
   },
-  "stand": {
+  "to_stand": {
     "text": "stajati"
   },
-  "run": {
+  "to_run": {
     "text": "trčati"
   },
-  "sit": {
+  "to_sit": {
     "text": "sedeti"
   },
-  "see": {
+  "to_see": {
     "text": "videti"
   },
-  "watch": {
+  "to_watch": {
     "text": "gledati"
   },
-  "love": {
+  "to_love": {
     "text": "voleti"
   },
-  "wish": {
+  "to_wish": {
     "text": "želeti"
   },
-  "live": {
+  "to_live": {
     "text": "živeti"
   },
-  "talk": {
+  "to_talk": {
     "text": "pričati"
   },
-  "speak": {
+  "to_speak": {
     "text": "govoriti"
   },
-  "use": {
+  "to_use": {
     "text": "koristiti"
   },
-  "think": {
+  "to_think": {
     "text": "misliti"
   },
-  "pay": {
+  "to_pay": {
     "text": "platiti",
     "aspect": "perfective"
   },
-  "listen": {
+  "to_listen": {
     "text": "slušati"
   },
-  "work": {
+  "to_work": {
     "text": "raditi"
   },
-  "learn": {
+  "to_learn": {
     "text": "učiti"
   },
-  "make": {
+  "to_make": {
     "text": "praviti"
   },
-  "drive": {
+  "to_drive": {
     "text": "voziti"
   },
-  "forget": {
+  "to_forget": {
     "text": "zaboraviti",
     "aspect": "perfective"
   },
-  "hate": {
+  "to_hate": {
     "text": "mrzeti"
   },
-  "wait": {
+  "to_wait": {
     "text": "čekati"
   },
-  "read": {
+  "to_read": {
     "text": "čitati"
   },
-  "play": {
+  "to_play": {
     "text": "igrati"
   },
-  "have": {
+  "to_have": {
     "text": "imati"
   },
-  "cook": {
+  "to_cook": {
     "text": "kuvati"
   },
-  "have_to": {
+  "to_have_to": {
     "text": "morati"
   },
-  "sing": {
+  "to_sing": {
     "text": "pevati"
   },
-  "swim": {
+  "to_swim": {
     "text": "plivati"
   },
-  "dream": {
+  "to_dream": {
     "text": "sanjati"
   },
-  "sleep": {
+  "to_sleep": {
     "text": "spavati"
   },
-  "can": {
+  "to_can": {
     "text": "moći"
   },
-  "wear": {
+  "to_wear": {
     "text": "nositi"
   },
-  "study": {
+  "to_study": {
     "text": "studirati"
   },
-  "like": {
+  "to_like": {
     "text": "sviđati se"
   },
-  "train": {
+  "to_train": {
     "text": "trenirati"
   },
-  "eat_lunch": {
+  "to_eat_lunch": {
     "text": "ručati"
   },
-  "eat_dinner": {
+  "to_eat_dinner": {
     "text": "večerati"
   },
-  "eat_breakfast": {
+  "to_eat_breakfast": {
     "text": "doručkovati"
   },
-  "know": {
+  "to_know": {
     "text": "znati"
   },
-  "lie": {
+  "to_lie": {
     "text": "lagati"
   },
-  "help": {
+  "to_help": {
     "text": "pomagati"
   },
-  "show": {
+  "to_show": {
     "text": "pokazati",
     "aspect": "perfective"
   },
-  "wave": {
+  "to_wave": {
     "text": "mahati"
   },
-  "write": {
+  "to_write": {
     "text": "pisati"
   },
-  "dance": {
+  "to_dance": {
     "text": "plesati"
   },
-  "cry": {
+  "to_cry": {
     "text": "plakati"
   },
-  "jump": {
+  "to_jump": {
     "text": "skakati"
   },
-  "shout": {
+  "to_shout": {
     "text": "vikati"
   },
-  "teach": {
+  "to_teach": {
     "text": "predavati"
   },
-  "expect": {
+  "to_expect": {
     "text": "očekivati"
   },
-  "respect": {
+  "to_respect": {
     "text": "poštovati"
   },
-  "clean": {
+  "to_clean": {
     "text": "čistiti"
   },
-  "travel": {
+  "to_travel": {
     "text": "putovati"
   },
-  "be_happy": {
+  "to_be_happy": {
     "text": "radovati se"
   },
-  "come": {
+  "to_come": {
     "text": "doći",
     "aspect": "perfective"
   },
-  "go": {
+  "to_go": {
     "text": "ići"
   },
-  "bake": {
+  "to_bake": {
     "text": "peći"
   },
-  "understand": {
+  "to_understand": {
     "text": "razumeti"
   },
-  "be_allowed_to": {
+  "to_be_allowed_to": {
     "text": "smeti"
   },
-  "succeed": {
+  "to_succeed": {
     "text": "uspeti",
     "aspect": "perfective"
   },
-  "be": {
+  "to_be": {
     "text": "biti"
   },
-  "want": {
+  "to_want": {
     "text": "hteti"
   },
-  "finish": {
+  "to_finish": {
     "text": "završiti",
     "aspect": "perfective"
   },
-  "answer": {
+  "to_answer": {
     "text": "odgovoriti",
     "aspect": "perfective"
   },
-  "accept": {
+  "to_accept": {
     "text": "prihvatiti",
     "aspect": "perfective"
   },
-  "raise": {
+  "to_raise": {
     "text": "podići",
     "aspect": "perfective"
   },
-  "suggest": {
+  "to_suggest": {
     "text": "predložiti",
     "aspect": "perfective"
   },
-  "walk": {
+  "to_walk": {
     "text": "hodati"
   },
-  "fly": {
+  "to_fly": {
     "text": "leteti"
   },
-  "stop": {
+  "to_stop": {
     "text": "stati",
     "aspect": "perfective"
   },
-  "follow": {
+  "to_follow": {
     "text": "pratiti"
   },
-  "say": {
+  "to_say": {
     "text": "reći",
     "aspect": "perfective"
   },
-  "eat": {
+  "to_eat": {
     "text": "jesti"
   },
-  "drink": {
+  "to_drink": {
     "text": "piti"
   },
-  "kill": {
+  "to_kill": {
     "text": "ubiti",
     "aspect": "perfective"
   },
-  "die": {
+  "to_die": {
     "text": "umreti",
     "aspect": "perfective"
   },
-  "laugh": {
+  "to_laugh": {
     "text": "smejati se"
   },
-  "hear": {
+  "to_hear": {
     "text": "čuti"
   },
-  "taste": {
+  "to_taste": {
     "text": "okusiti",
     "aspect": "perfective"
   },
-  "touch": {
+  "to_touch": {
     "text": "dodirnuti",
     "aspect": "perfective"
   },
-  "kiss": {
+  "to_kiss": {
     "text": "poljubiti",
     "aspect": "perfective"
   },
-  "burn": {
+  "to_burn": {
     "text": "goreti"
   },
-  "pass": {
+  "to_pass": {
     "text": "proći",
     "aspect": "perfective"
   },
-  "cut": {
+  "to_cut": {
     "text": "seći"
   },
-  "fight": {
+  "to_fight": {
     "text": "boriti se"
   },
-  "wake_up": {
+  "to_wake_up": {
     "text": "buditi se"
   },
-  "marry": {
+  "to_marry": {
     "text": "venčati se"
   },
-  "pray": {
+  "to_pray": {
     "text": "moliti se"
   },
-  "win": {
+  "to_win": {
     "text": "dobiti",
     "aspect": "perfective"
   },
-  "lose": {
+  "to_lose": {
     "text": "izgubiti",
     "aspect": "perfective"
   },
-  "wash": {
+  "to_wash": {
     "text": "prati"
   },
-  "open": {
+  "to_open": {
     "text": "otvoriti",
     "aspect": "perfective"
   },
-  "close": {
+  "to_close": {
     "text": "zatvoriti",
     "aspect": "perfective"
   },
-  "call": {
+  "to_call": {
     "text": "zvati"
   },
-  "turn": {
+  "to_turn": {
     "text": "okrenuti",
     "aspect": "perfective"
   },
-  "build": {
+  "to_build": {
     "text": "graditi"
   },
-  "grow": {
+  "to_grow": {
     "text": "rasti"
   },
-  "draw": {
+  "to_draw": {
     "text": "crtati"
   },
-  "feed": {
+  "to_feed": {
     "text": "hraniti"
   },
-  "catch": {
+  "to_catch": {
     "text": "uhvatiti",
     "aspect": "perfective"
   },
-  "throw": {
+  "to_throw": {
     "text": "baciti",
     "aspect": "perfective"
   },
-  "find": {
+  "to_find": {
     "text": "naći",
     "aspect": "perfective"
   },
-  "fall": {
+  "to_fall": {
     "text": "pasti",
     "aspect": "perfective"
   },
-  "push": {
+  "to_push": {
     "text": "gurati"
   },
-  "pull": {
+  "to_pull": {
     "text": "vući"
   },
-  "carry": {
+  "to_carry": {
     "text": "nositi"
   },
-  "break": {
+  "to_break": {
     "text": "slomiti",
     "aspect": "perfective"
   },
-  "shake": {
+  "to_shake": {
     "text": "tresti"
   },
-  "play_instrument": {
+  "to_play_instrument": {
     "text": "svirati"
   },
-  "smell": {
+  "to_smell": {
     "text": "mirisati"
   },
-  "shoot": {
+  "to_shoot": {
     "text": "pucati"
   },
-  "choose": {
+  "to_choose": {
     "text": "izabrati",
     "aspect": "perfective"
   },
-  "check": {
+  "to_check": {
     "text": "proveriti",
     "aspect": "perfective"
   },
-  "check_out": {
+  "to_check_out": {
     "text": "ispitati",
     "aspect": "perfective"
   },
-  "support": {
+  "to_support": {
     "text": "podržati",
     "aspect": "perfective"
   },
-  "care": {
+  "to_care": {
     "text": "brinuti se"
   },
-  "do": {
+  "to_do": {
     "text": "uraditi",
     "aspect": "perfective"
   },
-  "get": {
+  "to_get": {
     "text": "dobijati"
   },
-  "look_for": {
+  "to_look_for": {
     "text": "tražiti"
   },
-  "look_at": {
+  "to_look_at": {
     "text": "pogledati",
     "aspect": "perfective"
   },
-  "get_up": {
+  "to_get_up": {
     "text": "ustati",
     "aspect": "perfective"
   },
-  "take": {
+  "to_take": {
     "text": "uzeti",
     "aspect": "perfective"
   },
-  "find_out": {
+  "to_find_out": {
     "text": "saznati",
     "aspect": "perfective"
   },
-  "give_up": {
+  "to_give_up": {
     "text": "odustati",
     "aspect": "perfective"
   },
-  "call_back": {
+  "to_call_back": {
     "text": "nazvati",
     "aspect": "perfective"
   },
-  "try": {
+  "to_try": {
     "text": "pokušati",
     "aspect": "perfective"
   },
-  "try_on": {
+  "to_try_on": {
     "text": "probati",
     "aspect": "perfective"
   },
-  "ask": {
+  "to_ask": {
     "text": "pitati"
   },
-  "need": {
+  "to_need": {
     "text": "trebati"
   },
-  "feel": {
+  "to_feel": {
     "text": "osećati"
   },
-  "become": {
+  "to_become": {
     "text": "postati",
     "aspect": "perfective"
   },
-  "leave": {
+  "to_leave": {
     "text": "otići",
     "aspect": "perfective"
   },
-  "put": {
+  "to_put": {
     "text": "staviti",
     "aspect": "perfective"
   },
-  "put_on": {
+  "to_put_on": {
     "text": "obući",
     "aspect": "perfective"
   },
-  "take_off": {
+  "to_take_off": {
     "text": "skinuti",
     "aspect": "perfective"
   },
-  "mean": {
+  "to_mean": {
     "text": "značiti"
   },
-  "keep": {
+  "to_keep": {
     "text": "zadržati",
     "aspect": "perfective"
   },
-  "let": {
+  "to_let": {
     "text": "dopustiti",
     "aspect": "perfective"
   },
-  "begin": {
+  "to_begin": {
     "text": "početi",
     "aspect": "perfective"
   },
-  "seem": {
+  "to_seem": {
     "text": "činiti se"
   },
-  "turn_on": {
+  "to_turn_on": {
     "text": "uključiti",
     "aspect": "perfective"
   },
-  "turn_off": {
+  "to_turn_off": {
     "text": "isključiti",
     "aspect": "perfective"
   },
-  "move": {
+  "to_move": {
     "text": "kretati se"
   },
-  "move_in": {
+  "to_move_in": {
     "text": "useliti se",
     "aspect": "perfective"
   },
-  "move_out": {
+  "to_move_out": {
     "text": "iseliti se",
     "aspect": "perfective"
   },
-  "believe": {
+  "to_believe": {
     "text": "verovati"
   },
-  "bring": {
+  "to_bring": {
     "text": "doneti",
     "aspect": "perfective"
   },
-  "bring_up": {
+  "to_bring_up": {
     "text": "pomenuti",
     "aspect": "perfective"
   },
-  "happen": {
+  "to_happen": {
     "text": "desiti se",
     "aspect": "perfective"
   },
-  "sit_down": {
+  "to_sit_down": {
     "text": "sesti",
     "aspect": "perfective"
   },
-  "pay_for": {
+  "to_pay_for": {
     "text": "platiti za",
     "aspect": "perfective"
   },
-  "meet": {
+  "to_meet": {
     "text": "sresti",
     "aspect": "perfective"
   },
-  "meet_up": {
+  "to_meet_up": {
     "text": "sastati se",
     "aspect": "perfective"
   },
-  "include": {
+  "to_include": {
     "text": "uključiti",
     "aspect": "perfective"
   },
-  "continue": {
+  "to_continue": {
     "text": "nastaviti",
     "aspect": "perfective"
   },
-  "set": {
+  "to_set": {
     "text": "postaviti",
     "aspect": "perfective"
   },
-  "set_up": {
+  "to_set_up": {
     "text": "organizovati"
   },
-  "change": {
+  "to_change": {
     "text": "promeniti",
     "aspect": "perfective"
   },
-  "lead": {
+  "to_lead": {
     "text": "voditi"
   },
-  "watch_out": {
+  "to_watch_out": {
     "text": "paziti"
   },
-  "create": {
+  "to_create": {
     "text": "kreirati",
     "aspect": "perfective"
   },
-  "add": {
+  "to_add": {
     "text": "dodati",
     "aspect": "perfective"
   },
-  "spend": {
+  "to_spend": {
     "text": "trošiti"
   },
-  "grow_up": {
+  "to_grow_up": {
     "text": "odrastati"
   },
-  "offer": {
+  "to_offer": {
     "text": "ponuditi",
     "aspect": "perfective"
   },
-  "remember": {
+  "to_remember": {
     "text": "setiti se",
     "aspect": "perfective"
   },
-  "consider": {
+  "to_consider": {
     "text": "razmotriti",
     "aspect": "perfective"
   },
-  "appear": {
+  "to_appear": {
     "text": "pojaviti se",
     "aspect": "perfective"
   },
-  "wait_for": {
+  "to_wait_for": {
     "text": "čekati na"
   },
-  "serve": {
+  "to_serve": {
     "text": "služiti"
   },
-  "send": {
+  "to_send": {
     "text": "poslati",
     "aspect": "perfective"
   },
-  "stay": {
+  "to_stay": {
     "text": "ostati",
     "aspect": "perfective"
   },
-  "reach": {
+  "to_reach": {
     "text": "doseći",
     "aspect": "perfective"
   },
-  "require": {
+  "to_require": {
     "text": "zahtevati"
   },
-  "report": {
+  "to_report": {
     "text": "prijaviti",
     "aspect": "perfective"
   },
-  "decide": {
+  "to_decide": {
     "text": "odlučiti",
     "aspect": "perfective"
   },
-  "break_down": {
+  "to_break_down": {
     "text": "slomiti se",
     "aspect": "perfective"
   },
-  "agree": {
+  "to_agree": {
     "text": "složiti se",
     "aspect": "perfective"
   },
-  "explain": {
+  "to_explain": {
     "text": "objasniti",
     "aspect": "perfective"
   },
-  "hope": {
+  "to_hope": {
     "text": "nadati se"
   },
-  "develop": {
+  "to_develop": {
     "text": "razviti",
     "aspect": "perfective"
   },
-  "fear": {
+  "to_fear": {
     "text": "plašiti se"
   },
-  "thank": {
+  "to_thank": {
     "text": "zahvaliti",
     "aspect": "perfective"
   },
-  "receive": {
+  "to_receive": {
     "text": "primiti",
     "aspect": "perfective"
   },
-  "join": {
+  "to_join": {
     "text": "pridružiti se",
     "aspect": "perfective"
   },
@@ -1598,69 +1598,69 @@
     "f": "višebojna",
     "n": "višebojno"
   },
-  "protect": {
+  "to_protect": {
     "imperfective": "štititi",
     "perfective": "zaštititi"
   },
-  "save": {
+  "to_save": {
     "imperfective": "čuvati",
     "perfective": "sačuvati"
   },
-  "promise": {
+  "to_promise": {
     "imperfective": "obećavati",
     "perfective": "obećati"
   },
-  "warn": {
+  "to_warn": {
     "imperfective": "upozoravati",
     "perfective": "upozoriti"
   },
-  "invite": {
+  "to_invite": {
     "imperfective": "pozivati",
     "perfective": "pozvati"
   },
-  "negotiate": {
+  "to_negotiate": {
     "text": "pregovarati"
   },
-  "hire": {
+  "to_hire": {
     "imperfective": "zapošljavati",
     "perfective": "zaposliti"
   },
-  "resign": {
+  "to_resign": {
     "text": "dati otkaz",
     "aspect": "perfective"
   },
-  "promote": {
+  "to_promote": {
     "imperfective": "unapređivati",
     "perfective": "unaprediti"
   },
-  "sue": {
+  "to_sue": {
     "text": "tužiti"
   },
-  "download": {
+  "to_download": {
     "text": "preuzeti",
     "aspect": "perfective"
   },
-  "upload": {
+  "to_upload": {
     "text": "otpremiti",
     "aspect": "perfective"
   },
-  "update": {
+  "to_update": {
     "imperfective": "ažurirati",
     "perfective": "ažurirati"
   },
-  "grill": {
+  "to_grill": {
     "text": "peći na roštilju"
   },
-  "roast": {
+  "to_roast": {
     "text": "peći"
   },
-  "steam": {
+  "to_steam": {
     "text": "kuvati na pari"
   },
-  "marinate": {
+  "to_marinate": {
     "text": "marinirati"
   },
-  "sketch": {
+  "to_sketch": {
     "text": "skicirati"
   },
   "head": {

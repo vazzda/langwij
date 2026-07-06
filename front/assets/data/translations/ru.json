@@ -2,7 +2,7 @@
   "a_lot": {
     "text": "много"
   },
-  "accept": {
+  "to_accept": {
     "imperfective": "принимать",
     "perfective": "принять"
   },
@@ -21,7 +21,7 @@
     "text": "актёр",
     "gender": "m"
   },
-  "add": {
+  "to_add": {
     "imperfective": "добавлять",
     "perfective": "добавить"
   },
@@ -32,7 +32,7 @@
   "after": {
     "text": "после"
   },
-  "agree": {
+  "to_agree": {
     "imperfective": "соглашаться",
     "perfective": "согласиться"
   },
@@ -84,7 +84,7 @@
     "text": "годовщина",
     "gender": "f"
   },
-  "answer": {
+  "to_answer": {
     "imperfective": "отвечать",
     "perfective": "ответить"
   },
@@ -108,7 +108,7 @@
     "text": "приложение",
     "gender": "n"
   },
-  "appear": {
+  "to_appear": {
     "imperfective": "появляться",
     "perfective": "появиться"
   },
@@ -136,7 +136,7 @@
     "text": "арест",
     "gender": "m"
   },
-  "arrive": {
+  "to_arrive": {
     "imperfective": "прибывать",
     "perfective": "прибыть"
   },
@@ -148,7 +148,7 @@
     "text": "художник",
     "gender": "m"
   },
-  "ask": {
+  "to_ask": {
     "imperfective": "спрашивать",
     "perfective": "спросить"
   },
@@ -207,7 +207,7 @@
     "text": "сумка",
     "gender": "f"
   },
-  "bake": {
+  "to_bake": {
     "imperfective": "печь",
     "perfective": "испечь"
   },
@@ -235,15 +235,15 @@
     "text": "батарейка",
     "gender": "f"
   },
-  "be": {
+  "to_be": {
     "text": "быть",
     "aspect": "imperfective"
   },
-  "be_allowed_to": {
+  "to_be_allowed_to": {
     "text": "можно",
     "aspect": "imperfective"
   },
-  "be_happy": {
+  "to_be_happy": {
     "imperfective": "радоваться",
     "perfective": "обрадоваться"
   },
@@ -259,7 +259,7 @@
   "because": {
     "text": "потому что"
   },
-  "become": {
+  "to_become": {
     "imperfective": "становиться",
     "perfective": "стать"
   },
@@ -282,7 +282,7 @@
   "before": {
     "text": "до"
   },
-  "begin": {
+  "to_begin": {
     "imperfective": "начинать",
     "perfective": "начать"
   },
@@ -294,7 +294,7 @@
     "f": "бежевая",
     "n": "бежевое"
   },
-  "believe": {
+  "to_believe": {
     "text": "верить",
     "aspect": "imperfective"
   },
@@ -414,11 +414,11 @@
     "text": "хлеб",
     "gender": "m"
   },
-  "break": {
+  "to_break": {
     "imperfective": "ломать",
     "perfective": "сломать"
   },
-  "break_down": {
+  "to_break_down": {
     "imperfective": "ломаться",
     "perfective": "сломаться"
   },
@@ -435,11 +435,11 @@
     "f": "яркая",
     "n": "яркое"
   },
-  "bring": {
+  "to_bring": {
     "imperfective": "приносить",
     "perfective": "принести"
   },
-  "bring_up": {
+  "to_bring_up": {
     "imperfective": "воспитывать",
     "perfective": "воспитать"
   },
@@ -472,11 +472,11 @@
     "text": "жук",
     "gender": "m"
   },
-  "build": {
+  "to_build": {
     "imperfective": "строить",
     "perfective": "построить"
   },
-  "burn": {
+  "to_burn": {
     "imperfective": "жечь",
     "perfective": "сжечь"
   },
@@ -491,7 +491,7 @@
     "text": "масло",
     "gender": "n"
   },
-  "buy": {
+  "to_buy": {
     "imperfective": "покупать",
     "perfective": "купить"
   },
@@ -499,11 +499,11 @@
     "text": "шкаф",
     "gender": "m"
   },
-  "call": {
+  "to_call": {
     "imperfective": "звонить",
     "perfective": "позвонить"
   },
-  "call_back": {
+  "to_call_back": {
     "imperfective": "перезванивать",
     "perfective": "перезвонить"
   },
@@ -511,7 +511,7 @@
     "text": "камера",
     "gender": "f"
   },
-  "can": {
+  "to_can": {
     "text": "мочь",
     "aspect": "imperfective"
   },
@@ -527,11 +527,11 @@
     "text": "машина",
     "gender": "f"
   },
-  "care": {
+  "to_care": {
     "imperfective": "заботиться",
     "perfective": "позаботиться"
   },
-  "carry": {
+  "to_carry": {
     "imperfective": "нести",
     "perfective": "понести"
   },
@@ -543,7 +543,7 @@
     "text": "кошка",
     "gender": "f"
   },
-  "catch": {
+  "to_catch": {
     "imperfective": "ловить",
     "perfective": "поймать"
   },
@@ -579,7 +579,7 @@
     "text": "шанс",
     "gender": "m"
   },
-  "change": {
+  "to_change": {
     "imperfective": "менять",
     "perfective": "изменить"
   },
@@ -592,11 +592,11 @@
     "f": "дешёвая",
     "n": "дешёвое"
   },
-  "check": {
+  "to_check": {
     "imperfective": "проверять",
     "perfective": "проверить"
   },
-  "check_out": {
+  "to_check_out": {
     "imperfective": "выписываться",
     "perfective": "выписаться"
   },
@@ -628,7 +628,7 @@
     "text": "шоколад",
     "gender": "m"
   },
-  "choose": {
+  "to_choose": {
     "imperfective": "выбирать",
     "perfective": "выбрать"
   },
@@ -652,7 +652,7 @@
     "text": "глина",
     "gender": "f"
   },
-  "clean": {
+  "to_clean": {
     "imperfective": "чистить",
     "perfective": "почистить"
   },
@@ -673,7 +673,7 @@
     "text": "часы",
     "gender": "m"
   },
-  "close": {
+  "to_close": {
     "imperfective": "закрывать",
     "perfective": "закрыть"
   },
@@ -732,7 +732,7 @@
     "text": "расчёска",
     "gender": "f"
   },
-  "come": {
+  "to_come": {
     "imperfective": "приходить",
     "perfective": "прийти"
   },
@@ -767,7 +767,7 @@
     "text": "согласие",
     "gender": "n"
   },
-  "consider": {
+  "to_consider": {
     "imperfective": "рассматривать",
     "perfective": "рассмотреть"
   },
@@ -779,7 +779,7 @@
     "text": "континент",
     "gender": "m"
   },
-  "continue": {
+  "to_continue": {
     "imperfective": "продолжать",
     "perfective": "продолжить"
   },
@@ -787,7 +787,7 @@
     "text": "контракт",
     "gender": "m"
   },
-  "cook": {
+  "to_cook": {
     "imperfective": "готовить",
     "perfective": "приготовить"
   },
@@ -805,7 +805,7 @@
     "text": "хлопок",
     "gender": "m"
   },
-  "count": {
+  "to_count": {
     "imperfective": "считать",
     "perfective": "посчитать"
   },
@@ -833,7 +833,7 @@
     "text": "сливки",
     "gender": "n"
   },
-  "create": {
+  "to_create": {
     "imperfective": "создавать",
     "perfective": "создать"
   },
@@ -854,7 +854,7 @@
     "text": "крокодил",
     "gender": "m"
   },
-  "cry": {
+  "to_cry": {
     "imperfective": "плакать",
     "perfective": "заплакать"
   },
@@ -874,11 +874,11 @@
     "text": "таможня",
     "gender": "f"
   },
-  "cut": {
+  "to_cut": {
     "imperfective": "резать",
     "perfective": "разрезать"
   },
-  "dance": {
+  "to_dance": {
     "imperfective": "танцевать",
     "perfective": "станцевать"
   },
@@ -929,7 +929,7 @@
     "text": "декабрь",
     "gender": "m"
   },
-  "decide": {
+  "to_decide": {
     "imperfective": "решать",
     "perfective": "решить"
   },
@@ -979,7 +979,7 @@
     "text": "судьба",
     "gender": "f"
   },
-  "develop": {
+  "to_develop": {
     "imperfective": "развивать",
     "perfective": "развить"
   },
@@ -987,7 +987,7 @@
     "text": "диагноз",
     "gender": "m"
   },
-  "die": {
+  "to_die": {
     "imperfective": "умирать",
     "perfective": "умереть"
   },
@@ -1018,7 +1018,7 @@
     "text": "развод",
     "gender": "m"
   },
-  "do": {
+  "to_do": {
     "imperfective": "делать",
     "perfective": "сделать"
   },
@@ -1045,11 +1045,11 @@
   "down": {
     "text": "вниз"
   },
-  "download": {
+  "to_download": {
     "imperfective": "скачивать",
     "perfective": "скачать"
   },
-  "draw": {
+  "to_draw": {
     "imperfective": "рисовать",
     "perfective": "нарисовать"
   },
@@ -1057,7 +1057,7 @@
     "text": "ящик",
     "gender": "m"
   },
-  "dream": {
+  "to_dream": {
     "text": "мечтать",
     "aspect": "imperfective"
   },
@@ -1077,11 +1077,11 @@
     "text": "дрель",
     "gender": "f"
   },
-  "drink": {
+  "to_drink": {
     "imperfective": "пить",
     "perfective": "выпить"
   },
-  "drive": {
+  "to_drive": {
     "imperfective": "водить",
     "perfective": "повести"
   },
@@ -1114,19 +1114,19 @@
     "f": "лёгкая",
     "n": "лёгкое"
   },
-  "eat": {
+  "to_eat": {
     "imperfective": "есть",
     "perfective": "съесть"
   },
-  "eat_breakfast": {
+  "to_eat_breakfast": {
     "imperfective": "завтракать",
     "perfective": "позавтракать"
   },
-  "eat_dinner": {
+  "to_eat_dinner": {
     "imperfective": "ужинать",
     "perfective": "поужинать"
   },
-  "eat_lunch": {
+  "to_eat_lunch": {
     "imperfective": "обедать",
     "perfective": "пообедать"
   },
@@ -1235,7 +1235,7 @@
     "text": "существование",
     "gender": "n"
   },
-  "expect": {
+  "to_expect": {
     "imperfective": "ожидать",
     "perfective": "ожидать"
   },
@@ -1252,7 +1252,7 @@
     "text": "эксперимент",
     "gender": "m"
   },
-  "explain": {
+  "to_explain": {
     "imperfective": "объяснять",
     "perfective": "объяснить"
   },
@@ -1268,7 +1268,7 @@
     "text": "неудача",
     "gender": "f"
   },
-  "fall": {
+  "to_fall": {
     "imperfective": "падать",
     "perfective": "упасть"
   },
@@ -1297,7 +1297,7 @@
     "text": "отец",
     "gender": "m"
   },
-  "fear": {
+  "to_fear": {
     "imperfective": "бояться",
     "perfective": "испугаться"
   },
@@ -1309,11 +1309,11 @@
     "text": "февраль",
     "gender": "m"
   },
-  "feed": {
+  "to_feed": {
     "imperfective": "кормить",
     "perfective": "накормить"
   },
-  "feel": {
+  "to_feel": {
     "imperfective": "чувствовать",
     "perfective": "почувствовать"
   },
@@ -1325,7 +1325,7 @@
     "text": "поле",
     "gender": "n"
   },
-  "fight": {
+  "to_fight": {
     "imperfective": "бороться",
     "perfective": "побороться"
   },
@@ -1333,11 +1333,11 @@
     "text": "фильм",
     "gender": "m"
   },
-  "find": {
+  "to_find": {
     "imperfective": "находить",
     "perfective": "найти"
   },
-  "find_out": {
+  "to_find_out": {
     "imperfective": "узнавать",
     "perfective": "узнать"
   },
@@ -1349,7 +1349,7 @@
     "text": "палец",
     "gender": "m"
   },
-  "finish": {
+  "to_finish": {
     "imperfective": "заканчивать",
     "perfective": "закончить"
   },
@@ -1387,11 +1387,11 @@
     "text": "цветок",
     "gender": "m"
   },
-  "fly": {
+  "to_fly": {
     "imperfective": "летать",
     "perfective": "полететь"
   },
-  "follow": {
+  "to_follow": {
     "imperfective": "следовать",
     "perfective": "последовать"
   },
@@ -1411,7 +1411,7 @@
     "text": "лес",
     "gender": "m"
   },
-  "forget": {
+  "to_forget": {
     "imperfective": "забывать",
     "perfective": "забыть"
   },
@@ -1483,11 +1483,11 @@
     "text": "ген",
     "gender": "m"
   },
-  "get": {
+  "to_get": {
     "imperfective": "получать",
     "perfective": "получить"
   },
-  "get_up": {
+  "to_get_up": {
     "imperfective": "вставать",
     "perfective": "встать"
   },
@@ -1507,11 +1507,11 @@
     "text": "девушка",
     "gender": "f"
   },
-  "give": {
+  "to_give": {
     "imperfective": "давать",
     "perfective": "дать"
   },
-  "give_up": {
+  "to_give_up": {
     "imperfective": "сдаваться",
     "perfective": "сдаться"
   },
@@ -1535,7 +1535,7 @@
     "text": "клей",
     "gender": "m"
   },
-  "go": {
+  "to_go": {
     "imperfective": "идти",
     "perfective": "пойти"
   },
@@ -1582,15 +1582,15 @@
     "f": "серая",
     "n": "серое"
   },
-  "grill": {
+  "to_grill": {
     "imperfective": "жарить",
     "perfective": "пожарить"
   },
-  "grow": {
+  "to_grow": {
     "imperfective": "расти",
     "perfective": "вырасти"
   },
-  "grow_up": {
+  "to_grow_up": {
     "imperfective": "вырастать",
     "perfective": "вырасти"
   },
@@ -1622,7 +1622,7 @@
     "text": "рука",
     "gender": "f"
   },
-  "happen": {
+  "to_happen": {
     "imperfective": "происходить",
     "perfective": "произойти"
   },
@@ -1647,15 +1647,15 @@
     "text": "шляпа",
     "gender": "f"
   },
-  "hate": {
+  "to_hate": {
     "text": "ненавидеть",
     "aspect": "imperfective"
   },
-  "have": {
+  "to_have": {
     "text": "иметь",
     "aspect": "imperfective"
   },
-  "have_to": {
+  "to_have_to": {
     "text": "должен",
     "aspect": "imperfective"
   },
@@ -1671,7 +1671,7 @@
     "f": "здоровая",
     "n": "здоровое"
   },
-  "hear": {
+  "to_hear": {
     "imperfective": "слышать",
     "perfective": "услышать"
   },
@@ -1687,7 +1687,7 @@
   "hello": {
     "text": "привет"
   },
-  "help": {
+  "to_help": {
     "imperfective": "помогать",
     "perfective": "помочь"
   },
@@ -1705,14 +1705,14 @@
     "text": "холм",
     "gender": "m"
   },
-  "hire": {
+  "to_hire": {
     "imperfective": "нанимать",
     "perfective": "нанять"
   },
   "his": {
     "text": "его"
   },
-  "hold": {
+  "to_hold": {
     "imperfective": "держать",
     "perfective": "подержать"
   },
@@ -1741,7 +1741,7 @@
     "text": "связь",
     "gender": "f"
   },
-  "hope": {
+  "to_hope": {
     "imperfective": "надеяться",
     "perfective": "понадеяться"
   },
@@ -1847,7 +1847,7 @@
   "in_front_of": {
     "text": "перед"
   },
-  "include": {
+  "to_include": {
     "imperfective": "включать",
     "perfective": "включить"
   },
@@ -1894,7 +1894,7 @@
     "text": "приглашение",
     "gender": "n"
   },
-  "invite": {
+  "to_invite": {
     "imperfective": "приглашать",
     "perfective": "пригласить"
   },
@@ -1934,7 +1934,7 @@
     "text": "работа",
     "gender": "f"
   },
-  "join": {
+  "to_join": {
     "imperfective": "присоединяться",
     "perfective": "присоединиться"
   },
@@ -1950,7 +1950,7 @@
     "text": "июль",
     "gender": "m"
   },
-  "jump": {
+  "to_jump": {
     "imperfective": "прыгать",
     "perfective": "прыгнуть"
   },
@@ -1966,7 +1966,7 @@
     "text": "справедливость",
     "gender": "f"
   },
-  "keep": {
+  "to_keep": {
     "imperfective": "хранить",
     "perfective": "сохранить"
   },
@@ -1978,11 +1978,11 @@
     "text": "почка",
     "gender": "f"
   },
-  "kill": {
+  "to_kill": {
     "imperfective": "убивать",
     "perfective": "убить"
   },
-  "kiss": {
+  "to_kiss": {
     "imperfective": "целовать",
     "perfective": "поцеловать"
   },
@@ -1998,7 +1998,7 @@
     "text": "нож",
     "gender": "m"
   },
-  "know": {
+  "to_know": {
     "imperfective": "знать",
     "perfective": "узнать"
   },
@@ -2036,7 +2036,7 @@
   "later": {
     "text": "позже"
   },
-  "laugh": {
+  "to_laugh": {
     "imperfective": "смеяться",
     "perfective": "засмеяться"
   },
@@ -2052,7 +2052,7 @@
     "text": "юрист",
     "gender": "m"
   },
-  "lead": {
+  "to_lead": {
     "imperfective": "вести",
     "perfective": "привести"
   },
@@ -2060,7 +2060,7 @@
     "text": "лига",
     "gender": "f"
   },
-  "learn": {
+  "to_learn": {
     "imperfective": "учить",
     "perfective": "выучить"
   },
@@ -2068,7 +2068,7 @@
     "text": "кожа",
     "gender": "f"
   },
-  "leave": {
+  "to_leave": {
     "imperfective": "уходить",
     "perfective": "уйти"
   },
@@ -2086,7 +2086,7 @@
   "less": {
     "text": "менее"
   },
-  "let": {
+  "to_let": {
     "imperfective": "позволять",
     "perfective": "позволить"
   },
@@ -2106,11 +2106,11 @@
     "text": "лицензия",
     "gender": "f"
   },
-  "lie": {
+  "to_lie": {
     "imperfective": "врать",
     "perfective": "соврать"
   },
-  "lie_down": {
+  "to_lie_down": {
     "imperfective": "ложиться",
     "perfective": "лечь"
   },
@@ -2127,7 +2127,7 @@
     "f": "лёгкая",
     "n": "лёгкое"
   },
-  "like": {
+  "to_like": {
     "text": "нравиться",
     "aspect": "imperfective"
   },
@@ -2135,14 +2135,14 @@
     "text": "лев",
     "gender": "m"
   },
-  "listen": {
+  "to_listen": {
     "imperfective": "слушать",
     "perfective": "послушать"
   },
   "little": {
     "text": "мало"
   },
-  "live": {
+  "to_live": {
     "imperfective": "жить",
     "perfective": "прожить"
   },
@@ -2167,15 +2167,15 @@
     "f": "длинная",
     "n": "длинное"
   },
-  "look_at": {
+  "to_look_at": {
     "imperfective": "смотреть",
     "perfective": "посмотреть"
   },
-  "look_for": {
+  "to_look_for": {
     "imperfective": "искать",
     "perfective": "найти"
   },
-  "lose": {
+  "to_lose": {
     "imperfective": "терять",
     "perfective": "потерять"
   },
@@ -2192,7 +2192,7 @@
     "f": "громкая",
     "n": "громкое"
   },
-  "love": {
+  "to_love": {
     "text": "любить",
     "aspect": "imperfective"
   },
@@ -2216,7 +2216,7 @@
     "text": "лёгкое",
     "gender": "n"
   },
-  "make": {
+  "to_make": {
     "imperfective": "делать",
     "perfective": "сделать"
   },
@@ -2236,7 +2236,7 @@
     "text": "март",
     "gender": "m"
   },
-  "marinate": {
+  "to_marinate": {
     "imperfective": "мариновать",
     "perfective": "замариновать"
   },
@@ -2249,7 +2249,7 @@
     "f": "бордовая",
     "n": "бордовое"
   },
-  "marry": {
+  "to_marry": {
     "imperfective": "жениться",
     "perfective": "пожениться"
   },
@@ -2266,7 +2266,7 @@
     "text": "май",
     "gender": "m"
   },
-  "mean": {
+  "to_mean": {
     "text": "значить",
     "aspect": "imperfective"
   },
@@ -2282,11 +2282,11 @@
     "text": "лекарство",
     "gender": "n"
   },
-  "meet": {
+  "to_meet": {
     "imperfective": "встречать",
     "perfective": "встретить"
   },
-  "meet_up": {
+  "to_meet_up": {
     "imperfective": "встречаться",
     "perfective": "встретиться"
   },
@@ -2376,15 +2376,15 @@
     "text": "рот",
     "gender": "m"
   },
-  "move": {
+  "to_move": {
     "imperfective": "двигаться",
     "perfective": "двинуться"
   },
-  "move_in": {
+  "to_move_in": {
     "imperfective": "въезжать",
     "perfective": "въехать"
   },
-  "move_out": {
+  "to_move_out": {
     "imperfective": "выезжать",
     "perfective": "выехать"
   },
@@ -2449,11 +2449,11 @@
     "text": "шея",
     "gender": "f"
   },
-  "need": {
+  "to_need": {
     "text": "нуждаться",
     "aspect": "imperfective"
   },
-  "negotiate": {
+  "to_negotiate": {
     "imperfective": "договариваться",
     "perfective": "договориться"
   },
@@ -2533,7 +2533,7 @@
     "text": "одометр",
     "gender": "m"
   },
-  "offer": {
+  "to_offer": {
     "imperfective": "предлагать",
     "perfective": "предложить"
   },
@@ -2570,7 +2570,7 @@
   "only": {
     "text": "только"
   },
-  "open": {
+  "to_open": {
     "imperfective": "открывать",
     "perfective": "открыть"
   },
@@ -2659,7 +2659,7 @@
     "text": "партнёр",
     "gender": "m"
   },
-  "pass": {
+  "to_pass": {
     "imperfective": "проходить",
     "perfective": "пройти"
   },
@@ -2679,11 +2679,11 @@
     "text": "шаблон",
     "gender": "m"
   },
-  "pay": {
+  "to_pay": {
     "imperfective": "платить",
     "perfective": "заплатить"
   },
-  "pay_for": {
+  "to_pay_for": {
     "imperfective": "оплачивать",
     "perfective": "оплатить"
   },
@@ -2772,11 +2772,11 @@
     "text": "плато",
     "gender": "n"
   },
-  "play": {
+  "to_play": {
     "imperfective": "играть",
     "perfective": "сыграть"
   },
-  "play_instrument": {
+  "to_play_instrument": {
     "imperfective": "играть",
     "perfective": "сыграть"
   },
@@ -2821,7 +2821,7 @@
     "text": "сила",
     "gender": "f"
   },
-  "pray": {
+  "to_pray": {
     "imperfective": "молиться",
     "perfective": "помолиться"
   },
@@ -2862,11 +2862,11 @@
     "text": "проект",
     "gender": "m"
   },
-  "promise": {
+  "to_promise": {
     "imperfective": "обещать",
     "perfective": "пообещать"
   },
-  "promote": {
+  "to_promote": {
     "imperfective": "повышать",
     "perfective": "повысить"
   },
@@ -2874,11 +2874,11 @@
     "text": "предложение",
     "gender": "n"
   },
-  "protect": {
+  "to_protect": {
     "imperfective": "защищать",
     "perfective": "защитить"
   },
-  "pull": {
+  "to_pull": {
     "imperfective": "тянуть",
     "perfective": "потянуть"
   },
@@ -2887,15 +2887,15 @@
     "f": "фиолетовая",
     "n": "фиолетовое"
   },
-  "push": {
+  "to_push": {
     "imperfective": "толкать",
     "perfective": "толкнуть"
   },
-  "put": {
+  "to_put": {
     "imperfective": "класть",
     "perfective": "положить"
   },
-  "put_on": {
+  "to_put_on": {
     "imperfective": "надевать",
     "perfective": "надеть"
   },
@@ -2928,7 +2928,7 @@
     "text": "дождь",
     "gender": "m"
   },
-  "raise": {
+  "to_raise": {
     "imperfective": "поднимать",
     "perfective": "поднять"
   },
@@ -2939,7 +2939,7 @@
     "text": "бритва",
     "gender": "f"
   },
-  "reach": {
+  "to_reach": {
     "imperfective": "достигать",
     "perfective": "достичь"
   },
@@ -2947,7 +2947,7 @@
     "text": "реакция",
     "gender": "f"
   },
-  "read": {
+  "to_read": {
     "imperfective": "читать",
     "perfective": "прочитать"
   },
@@ -2963,7 +2963,7 @@
     "text": "чек",
     "gender": "m"
   },
-  "receive": {
+  "to_receive": {
     "imperfective": "получать",
     "perfective": "получить"
   },
@@ -2983,15 +2983,15 @@
     "text": "отношения",
     "gender": "n"
   },
-  "remember": {
+  "to_remember": {
     "imperfective": "помнить",
     "perfective": "запомнить"
   },
-  "report": {
+  "to_report": {
     "imperfective": "сообщать",
     "perfective": "сообщить"
   },
-  "require": {
+  "to_require": {
     "imperfective": "требовать",
     "perfective": "потребовать"
   },
@@ -3003,11 +3003,11 @@
     "text": "бронь",
     "gender": "f"
   },
-  "resign": {
+  "to_resign": {
     "imperfective": "увольняться",
     "perfective": "уволиться"
   },
-  "respect": {
+  "to_respect": {
     "text": "уважать",
     "aspect": "imperfective"
   },
@@ -3039,7 +3039,7 @@
     "text": "дорога",
     "gender": "f"
   },
-  "roast": {
+  "to_roast": {
     "imperfective": "запекать",
     "perfective": "запечь"
   },
@@ -3064,7 +3064,7 @@
     "text": "резина",
     "gender": "f"
   },
-  "run": {
+  "to_run": {
     "imperfective": "бегать",
     "perfective": "побежать"
   },
@@ -3107,7 +3107,7 @@
     "text": "сосиска",
     "gender": "f"
   },
-  "save": {
+  "to_save": {
     "imperfective": "сохранять",
     "perfective": "сохранить"
   },
@@ -3115,7 +3115,7 @@
     "text": "пила",
     "gender": "f"
   },
-  "say": {
+  "to_say": {
     "imperfective": "говорить",
     "perfective": "сказать"
   },
@@ -3179,15 +3179,15 @@
     "text": "обольщение",
     "gender": "n"
   },
-  "see": {
+  "to_see": {
     "imperfective": "видеть",
     "perfective": "увидеть"
   },
-  "seem": {
+  "to_seem": {
     "imperfective": "казаться",
     "perfective": "показаться"
   },
-  "sell": {
+  "to_sell": {
     "imperfective": "продавать",
     "perfective": "продать"
   },
@@ -3195,7 +3195,7 @@
     "text": "семестр",
     "gender": "m"
   },
-  "send": {
+  "to_send": {
     "imperfective": "отправлять",
     "perfective": "отправить"
   },
@@ -3216,7 +3216,7 @@
     "text": "сериал",
     "gender": "m"
   },
-  "serve": {
+  "to_serve": {
     "imperfective": "подавать",
     "perfective": "подать"
   },
@@ -3224,11 +3224,11 @@
     "text": "сервер",
     "gender": "m"
   },
-  "set": {
+  "to_set": {
     "imperfective": "устанавливать",
     "perfective": "установить"
   },
-  "set_up": {
+  "to_set_up": {
     "imperfective": "настраивать",
     "perfective": "настроить"
   },
@@ -3243,7 +3243,7 @@
     "text": "тень",
     "gender": "f"
   },
-  "shake": {
+  "to_shake": {
     "imperfective": "трясти",
     "perfective": "потрясти"
   },
@@ -3279,7 +3279,7 @@
     "text": "туфля",
     "gender": "f"
   },
-  "shoot": {
+  "to_shoot": {
     "imperfective": "стрелять",
     "perfective": "выстрелить"
   },
@@ -3292,11 +3292,11 @@
     "text": "плечо",
     "gender": "n"
   },
-  "shout": {
+  "to_shout": {
     "imperfective": "кричать",
     "perfective": "крикнуть"
   },
-  "show": {
+  "to_show": {
     "imperfective": "показывать",
     "perfective": "показать"
   },
@@ -3325,7 +3325,7 @@
     "text": "грех",
     "gender": "m"
   },
-  "sing": {
+  "to_sing": {
     "imperfective": "петь",
     "perfective": "спеть"
   },
@@ -3342,18 +3342,18 @@
     "text": "сестра",
     "gender": "f"
   },
-  "sit": {
+  "to_sit": {
     "imperfective": "сидеть",
     "perfective": "посидеть"
   },
-  "sit_down": {
+  "to_sit_down": {
     "imperfective": "садиться",
     "perfective": "сесть"
   },
   "six": {
     "text": "шесть"
   },
-  "sketch": {
+  "to_sketch": {
     "imperfective": "набрасывать",
     "perfective": "набросать"
   },
@@ -3369,7 +3369,7 @@
     "text": "небо",
     "gender": "n"
   },
-  "sleep": {
+  "to_sleep": {
     "imperfective": "спать",
     "perfective": "поспать"
   },
@@ -3388,11 +3388,11 @@
     "f": "умная",
     "n": "умное"
   },
-  "smell": {
+  "to_smell": {
     "imperfective": "нюхать",
     "perfective": "понюхать"
   },
-  "smile": {
+  "to_smile": {
     "imperfective": "улыбаться",
     "perfective": "улыбнуться"
   },
@@ -3451,7 +3451,7 @@
     "f": "кислая",
     "n": "кислое"
   },
-  "speak": {
+  "to_speak": {
     "imperfective": "говорить",
     "perfective": "сказать"
   },
@@ -3467,7 +3467,7 @@
     "text": "скорость",
     "gender": "f"
   },
-  "spend": {
+  "to_spend": {
     "imperfective": "тратить",
     "perfective": "потратить"
   },
@@ -3496,7 +3496,7 @@
     "text": "лестница",
     "gender": "f"
   },
-  "stand": {
+  "to_stand": {
     "imperfective": "стоять",
     "perfective": "постоять"
   },
@@ -3508,11 +3508,11 @@
     "text": "станция",
     "gender": "f"
   },
-  "stay": {
+  "to_stay": {
     "imperfective": "оставаться",
     "perfective": "остаться"
   },
-  "steam": {
+  "to_steam": {
     "imperfective": "готовить на пару",
     "perfective": "приготовить на пару"
   },
@@ -3528,7 +3528,7 @@
     "text": "камень",
     "gender": "m"
   },
-  "stop": {
+  "to_stop": {
     "imperfective": "останавливать",
     "perfective": "остановить"
   },
@@ -3568,11 +3568,11 @@
     "text": "студент",
     "gender": "m"
   },
-  "study": {
+  "to_study": {
     "imperfective": "изучать",
     "perfective": "изучить"
   },
-  "succeed": {
+  "to_succeed": {
     "imperfective": "преуспевать",
     "perfective": "преуспеть"
   },
@@ -3583,7 +3583,7 @@
   "such": {
     "text": "такой"
   },
-  "sue": {
+  "to_sue": {
     "imperfective": "судиться",
     "perfective": "подать в суд"
   },
@@ -3591,7 +3591,7 @@
     "text": "сахар",
     "gender": "m"
   },
-  "suggest": {
+  "to_suggest": {
     "imperfective": "предлагать",
     "perfective": "предложить"
   },
@@ -3611,7 +3611,7 @@
     "text": "солнцезащитный крем",
     "gender": "m"
   },
-  "support": {
+  "to_support": {
     "imperfective": "поддерживать",
     "perfective": "поддержать"
   },
@@ -3624,7 +3624,7 @@
     "f": "сладкая",
     "n": "сладкое"
   },
-  "swim": {
+  "to_swim": {
     "imperfective": "плавать",
     "perfective": "поплавать"
   },
@@ -3644,15 +3644,15 @@
     "text": "стол",
     "gender": "m"
   },
-  "take": {
+  "to_take": {
     "imperfective": "брать",
     "perfective": "взять"
   },
-  "take_off": {
+  "to_take_off": {
     "imperfective": "снимать",
     "perfective": "снять"
   },
-  "talk": {
+  "to_talk": {
     "imperfective": "разговаривать",
     "perfective": "поговорить"
   },
@@ -3665,7 +3665,7 @@
     "text": "скотч",
     "gender": "m"
   },
-  "taste": {
+  "to_taste": {
     "imperfective": "пробовать",
     "perfective": "попробовать"
   },
@@ -3681,7 +3681,7 @@
     "text": "чай",
     "gender": "m"
   },
-  "teach": {
+  "to_teach": {
     "imperfective": "учить",
     "perfective": "научить"
   },
@@ -3713,7 +3713,7 @@
     "text": "текстура",
     "gender": "f"
   },
-  "thank": {
+  "to_thank": {
     "imperfective": "благодарить",
     "perfective": "поблагодарить"
   },
@@ -3753,7 +3753,7 @@
     "text": "вещь",
     "gender": "f"
   },
-  "think": {
+  "to_think": {
     "imperfective": "думать",
     "perfective": "подумать"
   },
@@ -3771,7 +3771,7 @@
   "three": {
     "text": "три"
   },
-  "throw": {
+  "to_throw": {
     "imperfective": "бросать",
     "perfective": "бросить"
   },
@@ -3843,7 +3843,7 @@
   "totally": {
     "text": "полностью"
   },
-  "touch": {
+  "to_touch": {
     "imperfective": "трогать",
     "perfective": "тронуть"
   },
@@ -3859,7 +3859,7 @@
     "text": "движение",
     "gender": "n"
   },
-  "train": {
+  "to_train": {
     "imperfective": "тренировать",
     "perfective": "натренировать"
   },
@@ -3880,7 +3880,7 @@
     "f": "прозрачная",
     "n": "прозрачное"
   },
-  "travel": {
+  "to_travel": {
     "imperfective": "путешествовать",
     "perfective": "попутешествовать"
   },
@@ -3908,11 +3908,11 @@
     "text": "правда",
     "gender": "f"
   },
-  "try": {
+  "to_try": {
     "imperfective": "пытаться",
     "perfective": "попытаться"
   },
-  "try_on": {
+  "to_try_on": {
     "imperfective": "примерять",
     "perfective": "примерить"
   },
@@ -3920,15 +3920,15 @@
     "text": "вторник",
     "gender": "m"
   },
-  "turn": {
+  "to_turn": {
     "imperfective": "поворачивать",
     "perfective": "повернуть"
   },
-  "turn_off": {
+  "to_turn_off": {
     "imperfective": "выключать",
     "perfective": "выключить"
   },
-  "turn_on": {
+  "to_turn_on": {
     "imperfective": "включать",
     "perfective": "включить"
   },
@@ -3952,7 +3952,7 @@
   "under": {
     "text": "под"
   },
-  "understand": {
+  "to_understand": {
     "imperfective": "понимать",
     "perfective": "понять"
   },
@@ -3962,15 +3962,15 @@
   "up": {
     "text": "вверх"
   },
-  "update": {
+  "to_update": {
     "imperfective": "обновлять",
     "perfective": "обновить"
   },
-  "upload": {
+  "to_upload": {
     "imperfective": "загружать",
     "perfective": "загрузить"
   },
-  "use": {
+  "to_use": {
     "text": "использовать",
     "aspect": "imperfective"
   },
@@ -4053,11 +4053,11 @@
     "text": "вулкан",
     "gender": "m"
   },
-  "wait": {
+  "to_wait": {
     "imperfective": "ждать",
     "perfective": "подождать"
   },
-  "wait_for": {
+  "to_wait_for": {
     "imperfective": "ожидать",
     "perfective": "дождаться"
   },
@@ -4065,11 +4065,11 @@
     "text": "официант",
     "gender": "m"
   },
-  "wake_up": {
+  "to_wake_up": {
     "imperfective": "просыпаться",
     "perfective": "проснуться"
   },
-  "walk": {
+  "to_walk": {
     "imperfective": "ходить",
     "perfective": "пойти"
   },
@@ -4077,7 +4077,7 @@
     "text": "стена",
     "gender": "f"
   },
-  "want": {
+  "to_want": {
     "imperfective": "хотеть",
     "perfective": "захотеть"
   },
@@ -4094,11 +4094,11 @@
     "f": "тёплая",
     "n": "тёплое"
   },
-  "warn": {
+  "to_warn": {
     "imperfective": "предупреждать",
     "perfective": "предупредить"
   },
-  "wash": {
+  "to_wash": {
     "imperfective": "мыть",
     "perfective": "помыть"
   },
@@ -4106,11 +4106,11 @@
     "text": "стиральная машина",
     "gender": "f"
   },
-  "watch": {
+  "to_watch": {
     "imperfective": "смотреть",
     "perfective": "посмотреть"
   },
-  "watch_out": {
+  "to_watch_out": {
     "text": "остерегаться",
     "aspect": "imperfective"
   },
@@ -4122,7 +4122,7 @@
     "text": "водопад",
     "gender": "m"
   },
-  "wave": {
+  "to_wave": {
     "imperfective": "махать",
     "perfective": "махнуть"
   },
@@ -4138,7 +4138,7 @@
     "f": "слабая",
     "n": "слабое"
   },
-  "wear": {
+  "to_wear": {
     "text": "носить",
     "aspect": "imperfective"
   },
@@ -4210,7 +4210,7 @@
     "text": "жена",
     "gender": "f"
   },
-  "win": {
+  "to_win": {
     "imperfective": "побеждать",
     "perfective": "победить"
   },
@@ -4238,7 +4238,7 @@
     "text": "мудрость",
     "gender": "f"
   },
-  "wish": {
+  "to_wish": {
     "imperfective": "желать",
     "perfective": "пожелать"
   },
@@ -4262,7 +4262,7 @@
     "text": "слово",
     "gender": "n"
   },
-  "work": {
+  "to_work": {
     "imperfective": "работать",
     "perfective": "поработать"
   },
@@ -4286,7 +4286,7 @@
     "text": "гаечный ключ",
     "gender": "m"
   },
-  "write": {
+  "to_write": {
     "imperfective": "писать",
     "perfective": "написать"
   },

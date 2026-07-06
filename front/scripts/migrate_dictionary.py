@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Migration script: verbs.json → new multi-language dictionary structure.
+Migration script: drills_sr.json → new multi-language dictionary structure.
 
 Generates:
   assets/data/dictionary.json
@@ -17,7 +17,7 @@ from collections import OrderedDict
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-INPUT_FILE = os.path.join(PROJECT_ROOT, "assets", "data", "verbs.json")
+INPUT_FILE = os.path.join(PROJECT_ROOT, "assets", "data", "drills_sr.json")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "assets", "data")
 
 # Manual dedup: same Serbian word appearing with different English phrasings.
@@ -107,7 +107,7 @@ def generate_term_id(english_clean, category, existing_ids):
 
 
 def map_category_to_pos(category):
-    """Map verbs.json category to universal POS."""
+    """Map drills_sr.json category to universal POS."""
     mapping = {
         "verb": "verb",
         "noun": "noun",

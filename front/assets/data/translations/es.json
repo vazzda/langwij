@@ -2,7 +2,7 @@
   "a_lot": {
     "text": "mucho"
   },
-  "accept": {
+  "to_accept": {
     "text": "aceptar"
   },
   "accident_car": {
@@ -20,7 +20,7 @@
     "text": "actor",
     "gender": "m"
   },
-  "add": {
+  "to_add": {
     "text": "añadir"
   },
   "affair": {
@@ -30,7 +30,7 @@
   "after": {
     "text": "después"
   },
-  "agree": {
+  "to_agree": {
     "text": "estar de acuerdo"
   },
   "airport": {
@@ -79,7 +79,7 @@
     "text": "aniversario",
     "gender": "m"
   },
-  "answer": {
+  "to_answer": {
     "text": "responder"
   },
   "answer_n": {
@@ -102,7 +102,7 @@
     "text": "aplicación",
     "gender": "f"
   },
-  "appear": {
+  "to_appear": {
     "text": "aparecer"
   },
   "apple": {
@@ -129,7 +129,7 @@
     "text": "arresto",
     "gender": "m"
   },
-  "arrive": {
+  "to_arrive": {
     "text": "llegar"
   },
   "artery": {
@@ -140,7 +140,7 @@
     "text": "artista",
     "gender": "m"
   },
-  "ask": {
+  "to_ask": {
     "text": "preguntar"
   },
   "at_least": {
@@ -197,7 +197,7 @@
     "text": "bolsa",
     "gender": "f"
   },
-  "bake": {
+  "to_bake": {
     "text": "hornear"
   },
   "ball": {
@@ -224,13 +224,13 @@
     "text": "batería",
     "gender": "f"
   },
-  "be": {
+  "to_be": {
     "text": "ser"
   },
-  "be_allowed_to": {
+  "to_be_allowed_to": {
     "text": "poder"
   },
-  "be_happy": {
+  "to_be_happy": {
     "text": "alegrarse"
   },
   "bear": {
@@ -244,7 +244,7 @@
   "because": {
     "text": "porque"
   },
-  "become": {
+  "to_become": {
     "text": "convertirse"
   },
   "bed": {
@@ -266,7 +266,7 @@
   "before": {
     "text": "antes"
   },
-  "begin": {
+  "to_begin": {
     "text": "comenzar"
   },
   "behind": {
@@ -276,7 +276,7 @@
     "m": "beige",
     "f": "beige"
   },
-  "believe": {
+  "to_believe": {
     "text": "creer"
   },
   "beside": {
@@ -389,10 +389,10 @@
     "text": "pan",
     "gender": "m"
   },
-  "break": {
+  "to_break": {
     "text": "romper"
   },
-  "break_down": {
+  "to_break_down": {
     "text": "averiarse"
   },
   "breakup": {
@@ -407,10 +407,10 @@
     "m": "brillante",
     "f": "brillante"
   },
-  "bring": {
+  "to_bring": {
     "text": "traer"
   },
-  "bring_up": {
+  "to_bring_up": {
     "text": "criar"
   },
   "broom": {
@@ -441,10 +441,10 @@
     "text": "insecto",
     "gender": "m"
   },
-  "build": {
+  "to_build": {
     "text": "construir"
   },
-  "burn": {
+  "to_burn": {
     "text": "quemar"
   },
   "bus": {
@@ -458,24 +458,24 @@
     "text": "mantequilla",
     "gender": "f"
   },
-  "buy": {
+  "to_buy": {
     "text": "comprar"
   },
   "cabinet": {
     "text": "gabinete",
     "gender": "m"
   },
-  "call": {
+  "to_call": {
     "text": "llamar"
   },
-  "call_back": {
+  "to_call_back": {
     "text": "devolver la llamada"
   },
   "camera": {
     "text": "cámara",
     "gender": "f"
   },
-  "can": {
+  "to_can": {
     "text": "poder"
   },
   "canvas": {
@@ -490,10 +490,10 @@
     "text": "coche",
     "gender": "m"
   },
-  "care": {
+  "to_care": {
     "text": "cuidar"
   },
-  "carry": {
+  "to_carry": {
     "text": "llevar"
   },
   "cash": {
@@ -504,7 +504,7 @@
     "text": "gato",
     "gender": "m"
   },
-  "catch": {
+  "to_catch": {
     "text": "atrapar"
   },
   "cave": {
@@ -539,7 +539,7 @@
     "text": "oportunidad",
     "gender": "f"
   },
-  "change": {
+  "to_change": {
     "text": "cambiar"
   },
   "channel": {
@@ -550,10 +550,10 @@
     "m": "barato",
     "f": "barata"
   },
-  "check": {
+  "to_check": {
     "text": "verificar"
   },
-  "check_out": {
+  "to_check_out": {
     "text": "registrar la salida"
   },
   "cheese": {
@@ -584,7 +584,7 @@
     "text": "chocolate",
     "gender": "m"
   },
-  "choose": {
+  "to_choose": {
     "text": "elegir"
   },
   "church": {
@@ -607,7 +607,7 @@
     "text": "arcilla",
     "gender": "f"
   },
-  "clean": {
+  "to_clean": {
     "text": "limpiar"
   },
   "clean_a": {
@@ -626,7 +626,7 @@
     "text": "reloj",
     "gender": "m"
   },
-  "close": {
+  "to_close": {
     "text": "cerrar"
   },
   "closed": {
@@ -681,7 +681,7 @@
     "text": "peine",
     "gender": "m"
   },
-  "come": {
+  "to_come": {
     "text": "venir"
   },
   "company": {
@@ -715,7 +715,7 @@
     "text": "consentimiento",
     "gender": "m"
   },
-  "consider": {
+  "to_consider": {
     "text": "considerar"
   },
   "constitution": {
@@ -726,14 +726,14 @@
     "text": "continente",
     "gender": "m"
   },
-  "continue": {
+  "to_continue": {
     "text": "continuar"
   },
   "contract": {
     "text": "contrato",
     "gender": "m"
   },
-  "cook": {
+  "to_cook": {
     "text": "cocinar"
   },
   "coral": {
@@ -748,7 +748,7 @@
     "text": "algodón",
     "gender": "m"
   },
-  "count": {
+  "to_count": {
     "text": "contar"
   },
   "country": {
@@ -775,7 +775,7 @@
     "text": "crema",
     "gender": "f"
   },
-  "create": {
+  "to_create": {
     "text": "crear"
   },
   "credit_card": {
@@ -794,7 +794,7 @@
     "text": "cocodrilo",
     "gender": "m"
   },
-  "cry": {
+  "to_cry": {
     "text": "llorar"
   },
   "cup": {
@@ -813,10 +813,10 @@
     "text": "aduanas",
     "gender": "f"
   },
-  "cut": {
+  "to_cut": {
     "text": "cortar"
   },
-  "dance": {
+  "to_dance": {
     "text": "bailar"
   },
   "danger": {
@@ -863,7 +863,7 @@
     "text": "diciembre",
     "gender": "m"
   },
-  "decide": {
+  "to_decide": {
     "text": "decidir"
   },
   "deep": {
@@ -910,14 +910,14 @@
     "text": "destino",
     "gender": "m"
   },
-  "develop": {
+  "to_develop": {
     "text": "desarrollar"
   },
   "diagnosis": {
     "text": "diagnóstico",
     "gender": "m"
   },
-  "die": {
+  "to_die": {
     "text": "morir"
   },
   "different": {
@@ -944,7 +944,7 @@
     "text": "divorcio",
     "gender": "m"
   },
-  "do": {
+  "to_do": {
     "text": "hacer"
   },
   "doctor": {
@@ -970,17 +970,17 @@
   "down": {
     "text": "abajo"
   },
-  "download": {
+  "to_download": {
     "text": "descargar"
   },
-  "draw": {
+  "to_draw": {
     "text": "dibujar"
   },
   "drawer": {
     "text": "cajón",
     "gender": "m"
   },
-  "dream": {
+  "to_dream": {
     "text": "soñar"
   },
   "dream_n": {
@@ -999,10 +999,10 @@
     "text": "taladro",
     "gender": "m"
   },
-  "drink": {
+  "to_drink": {
     "text": "beber"
   },
-  "drive": {
+  "to_drive": {
     "text": "conducir"
   },
   "driver": {
@@ -1032,16 +1032,16 @@
     "m": "fácil",
     "f": "fácil"
   },
-  "eat": {
+  "to_eat": {
     "text": "comer"
   },
-  "eat_breakfast": {
+  "to_eat_breakfast": {
     "text": "desayunar"
   },
-  "eat_dinner": {
+  "to_eat_dinner": {
     "text": "cenar"
   },
-  "eat_lunch": {
+  "to_eat_lunch": {
     "text": "almorzar"
   },
   "egg": {
@@ -1147,7 +1147,7 @@
     "text": "existencia",
     "gender": "f"
   },
-  "expect": {
+  "to_expect": {
     "text": "esperar"
   },
   "expensive": {
@@ -1162,7 +1162,7 @@
     "text": "experimento",
     "gender": "m"
   },
-  "explain": {
+  "to_explain": {
     "text": "explicar"
   },
   "eye": {
@@ -1177,7 +1177,7 @@
     "text": "fracaso",
     "gender": "m"
   },
-  "fall": {
+  "to_fall": {
     "text": "caer"
   },
   "family": {
@@ -1204,7 +1204,7 @@
     "text": "padre",
     "gender": "m"
   },
-  "fear": {
+  "to_fear": {
     "text": "temer"
   },
   "fear_n": {
@@ -1215,10 +1215,10 @@
     "text": "febrero",
     "gender": "m"
   },
-  "feed": {
+  "to_feed": {
     "text": "alimentar"
   },
-  "feel": {
+  "to_feel": {
     "text": "sentir"
   },
   "fever": {
@@ -1229,17 +1229,17 @@
     "text": "campo",
     "gender": "m"
   },
-  "fight": {
+  "to_fight": {
     "text": "luchar"
   },
   "film": {
     "text": "película",
     "gender": "f"
   },
-  "find": {
+  "to_find": {
     "text": "encontrar"
   },
-  "find_out": {
+  "to_find_out": {
     "text": "descubrir"
   },
   "fine_n": {
@@ -1250,7 +1250,7 @@
     "text": "dedo",
     "gender": "m"
   },
-  "finish": {
+  "to_finish": {
     "text": "terminar"
   },
   "fire": {
@@ -1287,10 +1287,10 @@
     "text": "flor",
     "gender": "f"
   },
-  "fly": {
+  "to_fly": {
     "text": "volar"
   },
-  "follow": {
+  "to_follow": {
     "text": "seguir"
   },
   "food": {
@@ -1309,7 +1309,7 @@
     "text": "bosque",
     "gender": "m"
   },
-  "forget": {
+  "to_forget": {
     "text": "olvidar"
   },
   "fork": {
@@ -1378,10 +1378,10 @@
     "text": "gen",
     "gender": "m"
   },
-  "get": {
+  "to_get": {
     "text": "obtener"
   },
-  "get_up": {
+  "to_get_up": {
     "text": "levantarse"
   },
   "gift": {
@@ -1400,10 +1400,10 @@
     "text": "novia",
     "gender": "f"
   },
-  "give": {
+  "to_give": {
     "text": "dar"
   },
-  "give_up": {
+  "to_give_up": {
     "text": "rendirse"
   },
   "glass_cup": {
@@ -1426,7 +1426,7 @@
     "text": "pegamento",
     "gender": "m"
   },
-  "go": {
+  "to_go": {
     "text": "ir"
   },
   "goal": {
@@ -1468,13 +1468,13 @@
     "m": "gris",
     "f": "gris"
   },
-  "grill": {
+  "to_grill": {
     "text": "asar a la parrilla"
   },
-  "grow": {
+  "to_grow": {
     "text": "crecer"
   },
-  "grow_up": {
+  "to_grow_up": {
     "text": "crecer"
   },
   "guide": {
@@ -1504,7 +1504,7 @@
     "text": "mano",
     "gender": "f"
   },
-  "happen": {
+  "to_happen": {
     "text": "ocurrir"
   },
   "happy": {
@@ -1526,13 +1526,13 @@
     "text": "sombrero",
     "gender": "m"
   },
-  "hate": {
+  "to_hate": {
     "text": "odiar"
   },
-  "have": {
+  "to_have": {
     "text": "tener"
   },
-  "have_to": {
+  "to_have_to": {
     "text": "tener que"
   },
   "he": {
@@ -1546,7 +1546,7 @@
     "m": "saludable",
     "f": "saludable"
   },
-  "hear": {
+  "to_hear": {
     "text": "oír"
   },
   "heart_organ": {
@@ -1560,7 +1560,7 @@
   "hello": {
     "text": "hola"
   },
-  "help": {
+  "to_help": {
     "text": "ayudar"
   },
   "her": {
@@ -1577,13 +1577,13 @@
     "text": "colina",
     "gender": "f"
   },
-  "hire": {
+  "to_hire": {
     "text": "contratar"
   },
   "his": {
     "text": "su"
   },
-  "hold": {
+  "to_hold": {
     "text": "sostener"
   },
   "home": {
@@ -1610,7 +1610,7 @@
     "text": "aventura",
     "gender": "f"
   },
-  "hope": {
+  "to_hope": {
     "text": "esperar"
   },
   "hope_n": {
@@ -1712,7 +1712,7 @@
   "in_front_of": {
     "text": "delante"
   },
-  "include": {
+  "to_include": {
     "text": "incluir"
   },
   "infection": {
@@ -1757,7 +1757,7 @@
     "text": "invitación",
     "gender": "f"
   },
-  "invite": {
+  "to_invite": {
     "text": "invitar"
   },
   "invoice": {
@@ -1795,7 +1795,7 @@
     "text": "trabajo",
     "gender": "m"
   },
-  "join": {
+  "to_join": {
     "text": "unirse"
   },
   "judge": {
@@ -1810,7 +1810,7 @@
     "text": "julio",
     "gender": "m"
   },
-  "jump": {
+  "to_jump": {
     "text": "saltar"
   },
   "june": {
@@ -1825,7 +1825,7 @@
     "text": "justicia",
     "gender": "f"
   },
-  "keep": {
+  "to_keep": {
     "text": "guardar"
   },
   "key": {
@@ -1836,10 +1836,10 @@
     "text": "riñón",
     "gender": "m"
   },
-  "kill": {
+  "to_kill": {
     "text": "matar"
   },
-  "kiss": {
+  "to_kiss": {
     "text": "besar"
   },
   "kitchen": {
@@ -1854,7 +1854,7 @@
     "text": "cuchillo",
     "gender": "m"
   },
-  "know": {
+  "to_know": {
     "text": "saber"
   },
   "laboratory": {
@@ -1891,7 +1891,7 @@
   "later": {
     "text": "más tarde"
   },
-  "laugh": {
+  "to_laugh": {
     "text": "reír"
   },
   "law": {
@@ -1906,21 +1906,21 @@
     "text": "abogado",
     "gender": "m"
   },
-  "lead": {
+  "to_lead": {
     "text": "liderar"
   },
   "league": {
     "text": "liga",
     "gender": "f"
   },
-  "learn": {
+  "to_learn": {
     "text": "aprender"
   },
   "leather": {
     "text": "cuero",
     "gender": "m"
   },
-  "leave": {
+  "to_leave": {
     "text": "partir"
   },
   "lecture": {
@@ -1937,7 +1937,7 @@
   "less": {
     "text": "menos"
   },
-  "let": {
+  "to_let": {
     "text": "dejar"
   },
   "letter": {
@@ -1956,10 +1956,10 @@
     "text": "licencia",
     "gender": "f"
   },
-  "lie": {
+  "to_lie": {
     "text": "mentir"
   },
-  "lie_down": {
+  "to_lie_down": {
     "text": "acostarse"
   },
   "lie_n": {
@@ -1974,20 +1974,20 @@
     "m": "ligero",
     "f": "ligera"
   },
-  "like": {
+  "to_like": {
     "text": "gustar"
   },
   "lion": {
     "text": "león",
     "gender": "m"
   },
-  "listen": {
+  "to_listen": {
     "text": "escuchar"
   },
   "little": {
     "text": "poco"
   },
-  "live": {
+  "to_live": {
     "text": "vivir"
   },
   "liver": {
@@ -2010,13 +2010,13 @@
     "m": "largo",
     "f": "larga"
   },
-  "look_at": {
+  "to_look_at": {
     "text": "mirar"
   },
-  "look_for": {
+  "to_look_for": {
     "text": "buscar"
   },
-  "lose": {
+  "to_lose": {
     "text": "perder"
   },
   "loss_n": {
@@ -2031,7 +2031,7 @@
     "m": "ruidoso",
     "f": "ruidosa"
   },
-  "love": {
+  "to_love": {
     "text": "amar"
   },
   "love_n": {
@@ -2054,7 +2054,7 @@
     "text": "pulmón",
     "gender": "m"
   },
-  "make": {
+  "to_make": {
     "text": "hacer"
   },
   "makeup": {
@@ -2073,7 +2073,7 @@
     "text": "marzo",
     "gender": "m"
   },
-  "marinate": {
+  "to_marinate": {
     "text": "marinar"
   },
   "market": {
@@ -2084,7 +2084,7 @@
     "m": "granate",
     "f": "granate"
   },
-  "marry": {
+  "to_marry": {
     "text": "casarse"
   },
   "match": {
@@ -2099,7 +2099,7 @@
     "text": "mayo",
     "gender": "m"
   },
-  "mean": {
+  "to_mean": {
     "text": "significar"
   },
   "meaning": {
@@ -2114,10 +2114,10 @@
     "text": "medicina",
     "gender": "f"
   },
-  "meet": {
+  "to_meet": {
     "text": "conocer"
   },
-  "meet_up": {
+  "to_meet_up": {
     "text": "encontrarse"
   },
   "meeting": {
@@ -2206,13 +2206,13 @@
     "text": "boca",
     "gender": "f"
   },
-  "move": {
+  "to_move": {
     "text": "mover"
   },
-  "move_in": {
+  "to_move_in": {
     "text": "mudarse"
   },
-  "move_out": {
+  "to_move_out": {
     "text": "mudarse"
   },
   "movie": {
@@ -2272,10 +2272,10 @@
     "text": "cuello",
     "gender": "m"
   },
-  "need": {
+  "to_need": {
     "text": "necesitar"
   },
-  "negotiate": {
+  "to_negotiate": {
     "text": "negociar"
   },
   "neighbor": {
@@ -2353,7 +2353,7 @@
     "text": "odómetro",
     "gender": "m"
   },
-  "offer": {
+  "to_offer": {
     "text": "ofrecer"
   },
   "office": {
@@ -2388,7 +2388,7 @@
   "only": {
     "text": "solo"
   },
-  "open": {
+  "to_open": {
     "text": "abrir"
   },
   "or": {
@@ -2474,7 +2474,7 @@
     "text": "pareja",
     "gender": "f"
   },
-  "pass": {
+  "to_pass": {
     "text": "pasar"
   },
   "passion": {
@@ -2493,10 +2493,10 @@
     "text": "patrón",
     "gender": "m"
   },
-  "pay": {
+  "to_pay": {
     "text": "pagar"
   },
-  "pay_for": {
+  "to_pay_for": {
     "text": "pagar"
   },
   "payment": {
@@ -2583,10 +2583,10 @@
     "text": "meseta",
     "gender": "f"
   },
-  "play": {
+  "to_play": {
     "text": "jugar"
   },
-  "play_instrument": {
+  "to_play_instrument": {
     "text": "tocar"
   },
   "player": {
@@ -2628,7 +2628,7 @@
     "text": "poder",
     "gender": "m"
   },
-  "pray": {
+  "to_pray": {
     "text": "rezar"
   },
   "pregnant": {
@@ -2667,33 +2667,33 @@
     "text": "proyecto",
     "gender": "m"
   },
-  "promise": {
+  "to_promise": {
     "text": "prometer"
   },
-  "promote": {
+  "to_promote": {
     "text": "promocionar"
   },
   "proposal_n": {
     "text": "propuesta",
     "gender": "f"
   },
-  "protect": {
+  "to_protect": {
     "text": "proteger"
   },
-  "pull": {
+  "to_pull": {
     "text": "tirar"
   },
   "purple": {
     "m": "púrpura",
     "f": "púrpura"
   },
-  "push": {
+  "to_push": {
     "text": "empujar"
   },
-  "put": {
+  "to_put": {
     "text": "poner"
   },
-  "put_on": {
+  "to_put_on": {
     "text": "ponerse"
   },
   "question": {
@@ -2724,7 +2724,7 @@
     "text": "lluvia",
     "gender": "f"
   },
-  "raise": {
+  "to_raise": {
     "text": "criar"
   },
   "rarely": {
@@ -2734,14 +2734,14 @@
     "text": "navaja",
     "gender": "f"
   },
-  "reach": {
+  "to_reach": {
     "text": "alcanzar"
   },
   "reaction": {
     "text": "reacción",
     "gender": "f"
   },
-  "read": {
+  "to_read": {
     "text": "leer"
   },
   "reality": {
@@ -2756,7 +2756,7 @@
     "text": "recibo",
     "gender": "m"
   },
-  "receive": {
+  "to_receive": {
     "text": "recibir"
   },
   "recently": {
@@ -2774,13 +2774,13 @@
     "text": "relación",
     "gender": "f"
   },
-  "remember": {
+  "to_remember": {
     "text": "recordar"
   },
-  "report": {
+  "to_report": {
     "text": "reportar"
   },
-  "require": {
+  "to_require": {
     "text": "requerir"
   },
   "research": {
@@ -2791,10 +2791,10 @@
     "text": "reserva",
     "gender": "f"
   },
-  "resign": {
+  "to_resign": {
     "text": "renunciar"
   },
-  "respect": {
+  "to_respect": {
     "text": "respetar"
   },
   "restaurant": {
@@ -2824,7 +2824,7 @@
     "text": "camino",
     "gender": "m"
   },
-  "roast": {
+  "to_roast": {
     "text": "asar"
   },
   "roof": {
@@ -2847,7 +2847,7 @@
     "text": "goma",
     "gender": "f"
   },
-  "run": {
+  "to_run": {
     "text": "correr"
   },
   "sad": {
@@ -2886,14 +2886,14 @@
     "text": "salchicha",
     "gender": "f"
   },
-  "save": {
+  "to_save": {
     "text": "guardar"
   },
   "saw": {
     "text": "sierra",
     "gender": "f"
   },
-  "say": {
+  "to_say": {
     "text": "decir"
   },
   "scarf": {
@@ -2956,20 +2956,20 @@
     "text": "seducción",
     "gender": "f"
   },
-  "see": {
+  "to_see": {
     "text": "ver"
   },
-  "seem": {
+  "to_seem": {
     "text": "parecer"
   },
-  "sell": {
+  "to_sell": {
     "text": "vender"
   },
   "semester": {
     "text": "semestre",
     "gender": "m"
   },
-  "send": {
+  "to_send": {
     "text": "enviar"
   },
   "sensual": {
@@ -2988,17 +2988,17 @@
     "text": "serie",
     "gender": "f"
   },
-  "serve": {
+  "to_serve": {
     "text": "servir"
   },
   "server": {
     "text": "servidor",
     "gender": "m"
   },
-  "set": {
+  "to_set": {
     "text": "establecer"
   },
-  "set_up": {
+  "to_set_up": {
     "text": "configurar"
   },
   "seven": {
@@ -3012,7 +3012,7 @@
     "text": "sombra",
     "gender": "f"
   },
-  "shake": {
+  "to_shake": {
     "text": "agitar"
   },
   "shampoo": {
@@ -3046,7 +3046,7 @@
     "text": "zapato",
     "gender": "m"
   },
-  "shoot": {
+  "to_shoot": {
     "text": "disparar"
   },
   "short": {
@@ -3057,10 +3057,10 @@
     "text": "hombro",
     "gender": "m"
   },
-  "shout": {
+  "to_shout": {
     "text": "gritar"
   },
-  "show": {
+  "to_show": {
     "text": "mostrar"
   },
   "show_n": {
@@ -3086,7 +3086,7 @@
     "text": "pecado",
     "gender": "m"
   },
-  "sing": {
+  "to_sing": {
     "text": "cantar"
   },
   "single": {
@@ -3101,16 +3101,16 @@
     "text": "hermana",
     "gender": "f"
   },
-  "sit": {
+  "to_sit": {
     "text": "sentarse"
   },
-  "sit_down": {
+  "to_sit_down": {
     "text": "sentarse"
   },
   "six": {
     "text": "seis"
   },
-  "sketch": {
+  "to_sketch": {
     "text": "esbozar"
   },
   "skin": {
@@ -3125,7 +3125,7 @@
     "text": "cielo",
     "gender": "m"
   },
-  "sleep": {
+  "to_sleep": {
     "text": "dormir"
   },
   "slow": {
@@ -3140,10 +3140,10 @@
     "m": "inteligente",
     "f": "inteligente"
   },
-  "smell": {
+  "to_smell": {
     "text": "oler"
   },
-  "smile": {
+  "to_smile": {
     "text": "sonreír"
   },
   "snake": {
@@ -3199,7 +3199,7 @@
     "m": "agrio",
     "f": "agria"
   },
-  "speak": {
+  "to_speak": {
     "text": "hablar"
   },
   "species": {
@@ -3214,7 +3214,7 @@
     "text": "velocidad",
     "gender": "f"
   },
-  "spend": {
+  "to_spend": {
     "text": "gastar"
   },
   "spicy": {
@@ -3241,7 +3241,7 @@
     "text": "escaleras",
     "gender": "f"
   },
-  "stand": {
+  "to_stand": {
     "text": "estar de pie"
   },
   "star": {
@@ -3252,10 +3252,10 @@
     "text": "estación",
     "gender": "f"
   },
-  "stay": {
+  "to_stay": {
     "text": "quedarse"
   },
-  "steam": {
+  "to_steam": {
     "text": "cocer al vapor"
   },
   "steering": {
@@ -3270,7 +3270,7 @@
     "text": "piedra",
     "gender": "f"
   },
-  "stop": {
+  "to_stop": {
     "text": "detener"
   },
   "store": {
@@ -3308,10 +3308,10 @@
     "text": "estudiante",
     "gender": "m"
   },
-  "study": {
+  "to_study": {
     "text": "estudiar"
   },
-  "succeed": {
+  "to_succeed": {
     "text": "triunfar"
   },
   "success": {
@@ -3321,14 +3321,14 @@
   "such": {
     "text": "tal"
   },
-  "sue": {
+  "to_sue": {
     "text": "demandar"
   },
   "sugar": {
     "text": "azúcar",
     "gender": "m"
   },
-  "suggest": {
+  "to_suggest": {
     "text": "sugerir"
   },
   "summer": {
@@ -3347,7 +3347,7 @@
     "text": "protector solar",
     "gender": "m"
   },
-  "support": {
+  "to_support": {
     "text": "apoyar"
   },
   "surgery": {
@@ -3358,7 +3358,7 @@
     "m": "dulce",
     "f": "dulce"
   },
-  "swim": {
+  "to_swim": {
     "text": "nadar"
   },
   "swimming_pool": {
@@ -3377,13 +3377,13 @@
     "text": "mesa",
     "gender": "f"
   },
-  "take": {
+  "to_take": {
     "text": "tomar"
   },
-  "take_off": {
+  "to_take_off": {
     "text": "quitarse"
   },
-  "talk": {
+  "to_talk": {
     "text": "hablar"
   },
   "tall": {
@@ -3394,7 +3394,7 @@
     "text": "cinta",
     "gender": "f"
   },
-  "taste": {
+  "to_taste": {
     "text": "probar"
   },
   "tax": {
@@ -3409,7 +3409,7 @@
     "text": "té",
     "gender": "m"
   },
-  "teach": {
+  "to_teach": {
     "text": "enseñar"
   },
   "teacher": {
@@ -3439,7 +3439,7 @@
     "text": "textura",
     "gender": "f"
   },
-  "thank": {
+  "to_thank": {
     "text": "agradecer"
   },
   "thank_you": {
@@ -3478,7 +3478,7 @@
     "text": "cosa",
     "gender": "f"
   },
-  "think": {
+  "to_think": {
     "text": "pensar"
   },
   "thirsty": {
@@ -3494,7 +3494,7 @@
   "three": {
     "text": "tres"
   },
-  "throw": {
+  "to_throw": {
     "text": "lanzar"
   },
   "thursday": {
@@ -3564,7 +3564,7 @@
   "totally": {
     "text": "totalmente"
   },
-  "touch": {
+  "to_touch": {
     "text": "tocar"
   },
   "tournament": {
@@ -3579,7 +3579,7 @@
     "text": "tráfico",
     "gender": "m"
   },
-  "train": {
+  "to_train": {
     "text": "entrenar"
   },
   "train_vehicle": {
@@ -3598,7 +3598,7 @@
     "m": "transparente",
     "f": "transparente"
   },
-  "travel": {
+  "to_travel": {
     "text": "viajar"
   },
   "tray": {
@@ -3625,23 +3625,23 @@
     "text": "verdad",
     "gender": "f"
   },
-  "try": {
+  "to_try": {
     "text": "intentar"
   },
-  "try_on": {
+  "to_try_on": {
     "text": "probarse"
   },
   "tuesday": {
     "text": "martes",
     "gender": "m"
   },
-  "turn": {
+  "to_turn": {
     "text": "girar"
   },
-  "turn_off": {
+  "to_turn_off": {
     "text": "apagar"
   },
-  "turn_on": {
+  "to_turn_on": {
     "text": "encender"
   },
   "turquoise": {
@@ -3662,7 +3662,7 @@
   "under": {
     "text": "debajo"
   },
-  "understand": {
+  "to_understand": {
     "text": "entender"
   },
   "unless": {
@@ -3671,13 +3671,13 @@
   "up": {
     "text": "arriba"
   },
-  "update": {
+  "to_update": {
     "text": "actualizar"
   },
-  "upload": {
+  "to_upload": {
     "text": "cargar"
   },
-  "use": {
+  "to_use": {
     "text": "usar"
   },
   "usually": {
@@ -3758,27 +3758,27 @@
     "text": "volcán",
     "gender": "m"
   },
-  "wait": {
+  "to_wait": {
     "text": "esperar"
   },
-  "wait_for": {
+  "to_wait_for": {
     "text": "esperar"
   },
   "waiter": {
     "text": "camarero",
     "gender": "m"
   },
-  "wake_up": {
+  "to_wake_up": {
     "text": "despertarse"
   },
-  "walk": {
+  "to_walk": {
     "text": "caminar"
   },
   "wall": {
     "text": "pared",
     "gender": "f"
   },
-  "want": {
+  "to_want": {
     "text": "querer"
   },
   "war": {
@@ -3793,20 +3793,20 @@
     "m": "cálido",
     "f": "cálida"
   },
-  "warn": {
+  "to_warn": {
     "text": "advertir"
   },
-  "wash": {
+  "to_wash": {
     "text": "lavar"
   },
   "washing_machine": {
     "text": "lavadora",
     "gender": "f"
   },
-  "watch": {
+  "to_watch": {
     "text": "mirar"
   },
-  "watch_out": {
+  "to_watch_out": {
     "text": "tener cuidado"
   },
   "water": {
@@ -3817,7 +3817,7 @@
     "text": "cascada",
     "gender": "f"
   },
-  "wave": {
+  "to_wave": {
     "text": "saludar"
   },
   "way": {
@@ -3831,7 +3831,7 @@
     "m": "débil",
     "f": "débil"
   },
-  "wear": {
+  "to_wear": {
     "text": "llevar"
   },
   "weather": {
@@ -3899,7 +3899,7 @@
     "text": "esposa",
     "gender": "f"
   },
-  "win": {
+  "to_win": {
     "text": "ganar"
   },
   "wind": {
@@ -3926,7 +3926,7 @@
     "text": "sabiduría",
     "gender": "f"
   },
-  "wish": {
+  "to_wish": {
     "text": "desear"
   },
   "witness": {
@@ -3949,7 +3949,7 @@
     "text": "palabra",
     "gender": "f"
   },
-  "work": {
+  "to_work": {
     "text": "trabajar"
   },
   "work_n": {
@@ -3972,7 +3972,7 @@
     "text": "llave inglesa",
     "gender": "f"
   },
-  "write": {
+  "to_write": {
     "text": "escribir"
   },
   "wrong": {
