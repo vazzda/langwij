@@ -4,7 +4,7 @@ import '../model/config_validation_error.dart';
 import '../model/core_validation_ids.dart';
 
 class ConfigValidationService {
-  static const _allowedPos = {'verb', 'noun', 'adjective', 'adverb', 'other'};
+  static const _allowedPos = {'verb', 'noun', 'adjective', 'adverb', 'pronoun', 'conjunction', 'preposition', 'numeral', 'phrase', 'interrogative'};
 
   static CoreValidationIds validateCore({
     required Map<String, dynamic> planData,

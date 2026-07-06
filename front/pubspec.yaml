@@ -108,7 +108,10 @@ flutter_launcher_icons:
   min_sdk_android: 21
 
 flutter_native_splash:
-  color: "#FFFFFF"
-  image: "assets/icon/logo.png"
+  background_image: "assets/icon/splash.png"
+
+  android_12:
+    image: "assets/icon/splash-android.png"
+    color: "#a54873"
   android: true
   ios: true
