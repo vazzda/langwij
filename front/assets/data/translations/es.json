@@ -4260,5 +4260,9 @@
         "name": "Romance e intimidad"
       }
     }
+  },
+  "open": {
+    "m": "abierto",
+    "f": "abierta"
   }
 }

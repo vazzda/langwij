@@ -4260,5 +4260,9 @@
         "name": "Romance et intimité"
       }
     }
+  },
+  "open": {
+    "m": "ouvert",
+    "f": "ouverte"
   }
 }

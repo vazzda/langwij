@@ -4440,5 +4440,8 @@
   "atm": {
     "text": "bankomat",
     "gender": "m"
+  },
+  "open": {
+    "text": "otvoreno"
   }
 }
