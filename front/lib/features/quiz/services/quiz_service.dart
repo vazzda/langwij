@@ -104,7 +104,6 @@ class QuizService {
       mode: roundState.mode,
       cardResults: cardResults,
       totalDeckTerms: roundState.totalDeckTerms,
-      roundScore: roundScore,
     );
 
     _ref.read(lastRoundContributed.notifier).state = true;
@@ -159,7 +158,6 @@ class QuizService {
         mode: roundState.mode,
         cardResults: cardResults,
         totalDeckTerms: deckTermCounts[deckId] ?? 0,
-        roundScore: roundScore,
       );
     }
 

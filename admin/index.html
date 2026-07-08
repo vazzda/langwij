@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Langwij Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="app-header">
+    <div class="header-left">
+      <h1>Langwij</h1>
+      <nav>
+        <button class="tab active" data-tab="structure" disabled>Structure</button>
+        <button class="tab" data-tab="translations" disabled>Translations</button>
+      </nav>
+    </div>
+    <div class="header-controls" id="structure-controls" hidden>
+      <input type="text" class="filter-input" id="structure-filter" placeholder="Filter terms...">
+      <button class="control-btn" id="filter-clear-btn">Clear</button>
+      <button class="control-btn" id="fold-all-btn">Fold</button>
+      <button class="control-btn" id="unfold-all-btn">Unfold</button>
+    </div>
+    <div class="header-right">
+      <code class="path-hint">C:\_pet\langwij\front\assets\data</code>
+      <button id="pick-folder-btn">Browse...</button>
+      <span id="status"></span>
+      <button id="save-btn" disabled>Save</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="page-structure" class="page" hidden></div>
+    <div id="page-translations" class="page" hidden></div>
+  </main>
+
+  <script src="data-store.js"></script>
+  <script src="structure-page.js"></script>
+  <script src="translations-page.js"></script>
+  <script src="application.js"></script>
+</body>
+</html>

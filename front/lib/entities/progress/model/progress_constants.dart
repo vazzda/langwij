@@ -7,18 +7,10 @@ class ProgressConstants {
   static const int coverageWriteFloor = 50;
   static const int coverageMax = 100;
 
-  static const int practicePerAnswer = 1;
   static const int practiceMax = 100;
-
-  static const int masteryDecayCap = 3;
-
-  // Indexed by min(mastery, masteryDecayCap): [staleDay1, staleDay2, staleDay3+]
-  static const List<List<int>> decaySchedule = [
-    [5, 10, 20],
-    [5, 10, 10],
-    [1, 5, 5],
-    [1, 1, 1],
-  ];
+  static const double practiceGainPerRound = 20.0;
+  static const double practiceDecayPerDay = 5.0;
+  static const double practiceDecayFloor = 5.0;
 
   static const double capNativeShown = 20.0;
   static const double capTargetShown = 40.0;

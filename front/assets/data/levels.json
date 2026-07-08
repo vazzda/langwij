@@ -199,16 +199,18 @@
       "terms": [
         "to_be",
         "to_have",
+        "to_give",
+        "to_take",
+        "to_get",
         "to_do",
+        "to_make",
+        "to_put",
         "to_go",
         "to_come",
         "to_want",
         "to_need",
         "to_can",
-        "to_say",
         "to_know",
-        "to_see",
-        "to_hear",
         "to_like"
       ]
     },
@@ -218,17 +220,16 @@
       "terms": [
         "to_eat",
         "to_drink",
-        "to_sleep",
-        "to_give",
-        "to_take",
-        "to_make",
-        "to_get",
-        "to_put",
-        "to_help",
-        "to_speak",
-        "to_work",
         "to_live",
+        "to_sleep",
+        "to_help",
         "to_understand",
+        "to_say",
+        "to_speak",
+        "to_talk",
+        "to_hear",
+        "to_see",
+        "to_work",
         "to_have_to"
       ]
     },
@@ -238,15 +239,19 @@
       "terms": [
         "head",
         "hand",
+        "finger",
         "eye",
+        "ear",
         "mouth",
         "leg",
+        "clothing",
         "shirt",
+        "jacket",
+        "dress",
         "pants",
         "shoe",
-        "coat",
         "hat",
-        "clothing"
+        "coat"
       ]
     },
     {
@@ -296,13 +301,13 @@
         "door",
         "window",
         "bed",
-        "bathroom",
         "table",
         "chair",
         "phone",
         "key",
         "bag",
-        "thing"
+        "thing",
+        "bathroom"
       ]
     },
     {
@@ -320,6 +325,10 @@
         "eight",
         "nine",
         "ten",
+        "hundred",
+        "thousand",
+        "first",
+        "last",
         "now",
         "today",
         "yesterday",
@@ -379,13 +388,16 @@
         "who",
         "how",
         "why",
+        "inside",
+        "beside",
+        "between",
+        "behind",
+        "over",
+        "under",
+        "on",
+        "in",
         "and",
         "or",
-        "in",
-        "on",
-        "here",
-        "there",
-        "near",
         "very",
         "more",
         "less",
@@ -450,7 +462,6 @@
         "to_wave",
         "to_shout",
         "to_watch",
-        "to_talk",
         "to_taste",
         "to_touch",
         "to_smell",
@@ -463,15 +474,11 @@
       "icon": "human-handsup",
       "terms": [
         "arm",
-        "ear",
         "nose",
-        "finger",
         "foot",
         "stomach",
         "shoulder",
         "knee",
-        "dress",
-        "jacket",
         "sock",
         "boot"
       ]
@@ -525,11 +532,7 @@
         "clock",
         "mirror",
         "computer",
-        "book",
-        "bathroom",
-        "door",
-        "window",
-        "room"
+        "book"
       ]
     },
     {
@@ -543,11 +546,7 @@
         "black",
         "white",
         "brown",
-        "orange",
-        "hundred",
-        "thousand",
-        "first",
-        "last"
+        "orange"
       ]
     },
     {
@@ -640,7 +639,6 @@
         "driver",
         "worker",
         "bank",
-        "money",
         "price",
         "cash"
       ]
@@ -675,12 +673,6 @@
         "because",
         "if",
         "also",
-        "under",
-        "over",
-        "behind",
-        "between",
-        "beside",
-        "inside",
         "much",
         "a_lot",
         "little",

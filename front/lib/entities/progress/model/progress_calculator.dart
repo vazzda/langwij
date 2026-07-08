@@ -5,7 +5,6 @@ class ProgressCalculator {
 
   static double applyPracticeDecay({
     required double practice,
-    required int mastery,
     required DateTime? lastPracticeDate,
   }) {
     if (lastPracticeDate == null || practice <= 0) return practice;
@@ -21,18 +20,18 @@ class ProgressCalculator {
 
     if (staleDays <= 0) return practice;
 
-    final decay = totalDecayForStaleDays(staleDays, mastery);
-    return (practice - decay).clamp(0.0, ProgressConstants.practiceMax.toDouble());
+    final decay = staleDays * ProgressConstants.practiceDecayPerDay;
+    return (practice - decay).clamp(
+      ProgressConstants.practiceDecayFloor,
+      ProgressConstants.practiceMax.toDouble(),
+    );
   }
 
-  static int totalDecayForStaleDays(int staleDays, int mastery) {
-    if (staleDays <= 0) return 0;
-
-    final tierIndex = mastery.clamp(0, ProgressConstants.masteryDecayCap);
-    final tier = ProgressConstants.decaySchedule[tierIndex];
-
-    if (staleDays == 1) return tier[0];
-    if (staleDays == 2) return tier[0] + tier[1];
-    return tier[0] + tier[1] + (staleDays - 2) * tier[2];
+  static double calculateRoundPracticeGain(
+    int correctCount,
+    int totalCount,
+  ) {
+    if (totalCount <= 0) return 0.0;
+    return ProgressConstants.practiceGainPerRound * correctCount / totalCount;
   }
 }

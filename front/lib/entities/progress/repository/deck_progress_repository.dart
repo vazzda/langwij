@@ -53,7 +53,6 @@ class DeckProgressRepository {
 
     final decayedPractice = ProgressCalculator.applyPracticeDecay(
       practice: practice,
-      mastery: mastery,
       lastPracticeDate: lastPracticeDate,
     );
 
@@ -75,7 +74,6 @@ class DeckProgressRepository {
     required QuizMode mode,
     required List<CardResult> cardResults,
     required int totalDeckTerms,
-    required double roundScore,
   }) async {
     final now = DateTime.now();
 
@@ -128,22 +126,24 @@ class DeckProgressRepository {
 
         newPractice = ProgressCalculator.applyPracticeDecay(
           practice: storedPractice,
-          mastery: newMastery,
           lastPracticeDate: lastPracticeDate,
         );
       }
 
       if (deckCoverage >= ProgressConstants.coverageMax) {
-        final practiceGain =
-            cardResults.length * ProgressConstants.practicePerAnswer;
-        final oldPractice = newPractice;
+        final correctCount =
+            cardResults.where((r) => !r.hadWrongAttempt).length;
+        final practiceGain = ProgressCalculator.calculateRoundPracticeGain(
+          correctCount,
+          cardResults.length,
+        );
         newPractice = math.min(
           newPractice + practiceGain,
           ProgressConstants.practiceMax.toDouble(),
         );
-        if (newPractice >= ProgressConstants.practiceMax &&
-            oldPractice < ProgressConstants.practiceMax) {
+        if (newPractice >= ProgressConstants.practiceMax) {
           newMastery += 1;
+          newPractice = 0;
         }
         lastPracticeDateStr = now.toIso8601String();
       }

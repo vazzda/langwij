@@ -67,7 +67,6 @@ class ProgressService {
     required QuizMode mode,
     required List<CardResult> cardResults,
     required int totalDeckTerms,
-    required double roundScore,
   }) async {
     final langSettings = await _ref.read(ConfigService.languageSettings.future);
     final repo = await _ref.read(ProgressInternalService.deckProgressRepository.future);
@@ -77,7 +76,6 @@ class ProgressService {
       mode: mode,
       cardResults: cardResults,
       totalDeckTerms: totalDeckTerms,
-      roundScore: roundScore,
     );
     _ref.read(ProgressInternalService.revision.notifier).state++;
   }
