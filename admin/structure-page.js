@@ -6,13 +6,15 @@ class DraggableTermChip {
   #multiDeckCount;
   #numberElement;
   #badgeElement;
+  #coca;
   #onRemoveCallback;
 
-  constructor(termId, partOfSpeech, deckId, multiDeckCount, onRemoveCallback) {
+  constructor(termId, partOfSpeech, deckId, multiDeckCount, coca, onRemoveCallback) {
     this.#termId = termId;
     this.#partOfSpeech = partOfSpeech;
     this.#currentDeckId = deckId;
     this.#multiDeckCount = multiDeckCount;
+    this.#coca = coca;
     this.#onRemoveCallback = onRemoveCallback;
     this.#element = this.#buildElement();
   }
@@ -79,6 +81,12 @@ class DraggableTermChip {
     chip.appendChild(this.#numberElement);
     chip.appendChild(this.#badgeElement);
     chip.appendChild(idSpan);
+
+    const cocaSpan = document.createElement('span');
+    cocaSpan.className = 'term-coca';
+    if (this.#coca != null) cocaSpan.textContent = this.#coca;
+    chip.appendChild(cocaSpan);
+
     chip.appendChild(posSpan);
 
     if (this.#onRemoveCallback) {
@@ -123,6 +131,8 @@ class DeckAccordionPanel {
   #isExpanded = false;
   #onTermDroppedCallback;
   #dropZoneDragCounter = 0;
+  #autoExpandTimeout = null;
+  #sectionDragCounter = 0;
 
   constructor(deckId, displayName, onTermDroppedCallback) {
     this.#deckId = deckId;
@@ -230,6 +240,25 @@ class DeckAccordionPanel {
     this.#bodyElement.addEventListener('dragleave', () => this.#handleDragLeave());
     this.#bodyElement.addEventListener('dragover', (e) => this.#handleDragOver(e));
     this.#bodyElement.addEventListener('drop', (e) => this.#handleDrop(e));
+
+    this.#sectionElement.addEventListener('dragenter', (e) => {
+      e.preventDefault();
+      this.#sectionDragCounter++;
+      if (!this.#isExpanded && !this.#autoExpandTimeout) {
+        this.#autoExpandTimeout = setTimeout(() => {
+          this.setExpanded(true);
+          this.#autoExpandTimeout = null;
+        }, 800);
+      }
+    });
+
+    this.#sectionElement.addEventListener('dragleave', () => {
+      this.#sectionDragCounter--;
+      if (this.#sectionDragCounter === 0) {
+        clearTimeout(this.#autoExpandTimeout);
+        this.#autoExpandTimeout = null;
+      }
+    });
   }
 
   #handleDragEnter(event) {
@@ -257,6 +286,9 @@ class DeckAccordionPanel {
   #handleDrop(event) {
     event.preventDefault();
     this.#dropZoneDragCounter = 0;
+    this.#sectionDragCounter = 0;
+    clearTimeout(this.#autoExpandTimeout);
+    this.#autoExpandTimeout = null;
     this.#bodyElement.classList.remove('drop-target');
     this.#clearInsertionIndicator();
     const insertionIndex = this.#computeInsertionIndexFromDropPosition(event);
@@ -398,21 +430,35 @@ class StructureEditorPage {
     this.#containerElement.innerHTML = '';
     this.#wireHeaderControls();
 
-    const columnsContainer = document.createElement('div');
-    columnsContainer.className = 'level-columns-container';
-
     const names = this.#dataStore.displayNames;
+
+    const mainRow = document.createElement('div');
+    mainRow.className = 'level-columns-container';
+
+    const secondaryRow = document.createElement('div');
+    secondaryRow.className = 'level-columns-container';
 
     for (const levelDef of this.#dataStore.levelDefinitions) {
       const levelPanel = this.#buildLevelPanel(levelDef, names);
       levelPanel.setExpanded(true);
       this.#levelPanels.push(levelPanel);
-      columnsContainer.appendChild(levelPanel.element);
+
+      if (levelDef.id === 'specialized') {
+        levelPanel.element.classList.add('columned');
+        secondaryRow.appendChild(levelPanel.element);
+      } else {
+        mainRow.appendChild(levelPanel.element);
+      }
     }
 
     this.#buildUnassignedSection();
-    columnsContainer.appendChild(this.#unassignedSectionElement);
-    this.#containerElement.appendChild(columnsContainer);
+    secondaryRow.insertBefore(this.#unassignedSectionElement, secondaryRow.firstChild);
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'level-rows-wrapper';
+    wrapper.appendChild(mainRow);
+    wrapper.appendChild(secondaryRow);
+    this.#containerElement.appendChild(wrapper);
   }
 
   #wireHeaderControls() {
@@ -559,10 +605,11 @@ class StructureEditorPage {
     const terms = this.#dataStore.dictionaryTerms;
     const partOfSpeech = terms[termId] ? terms[termId].pos : '?';
     const multiDeckCount = this.#dataStore.getDeckIdsForTerm(termId).size;
+    const coca = terms[termId] ? terms[termId].coca : null;
     const removeCallback = deckId
       ? (chip) => this.#handleTermDropped(null, chip.termId, chip.currentDeckId)
       : null;
-    const chip = new DraggableTermChip(termId, partOfSpeech, deckId, multiDeckCount, removeCallback);
+    const chip = new DraggableTermChip(termId, partOfSpeech, deckId, multiDeckCount, coca, removeCallback);
 
     if (!this.#termChipsByTermId.has(termId)) {
       this.#termChipsByTermId.set(termId, []);

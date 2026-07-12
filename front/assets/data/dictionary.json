@@ -1,1174 +1,1552 @@
 {
   "terms": {
     "goodbye": {
-      "pos": "phrase"
+      "pos": "phrase",
+      "coca": 3977
     },
     "hello": {
-      "pos": "phrase"
+      "pos": "phrase",
+      "coca": 1122
     },
     "no": {
-      "pos": "phrase"
+      "pos": "phrase",
+      "coca": 133
     },
     "sorry": {
-      "pos": "phrase"
+      "pos": "phrase",
+      "coca": 408
     },
     "thank_you": {
-      "pos": "phrase"
+      "pos": "phrase",
+      "coca": 300
     },
     "yes": {
-      "pos": "phrase"
+      "pos": "phrase",
+      "coca": 175
     },
     "how": {
-      "pos": "interrogative"
+      "pos": "interrogative",
+      "coca": 69
     },
     "how_much": {
-      "pos": "interrogative"
+      "pos": "interrogative",
+      "coca": 148
     },
     "what": {
-      "pos": "interrogative"
+      "pos": "interrogative",
+      "coca": 28
     },
     "when": {
-      "pos": "interrogative"
+      "pos": "interrogative",
+      "coca": 70
     },
     "where": {
-      "pos": "interrogative"
+      "pos": "interrogative",
+      "coca": 157
     },
     "who": {
-      "pos": "interrogative"
+      "pos": "interrogative",
+      "coca": 44
     },
     "why": {
-      "pos": "interrogative"
+      "pos": "interrogative",
+      "coca": 117
     },
     "he": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 16
     },
     "her": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 106
     },
     "his": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 2066
     },
     "i": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 8
     },
     "it": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 10
     },
     "my": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 36
     },
     "our": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 76
     },
     "she": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 35
     },
     "that": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 22
     },
     "that_o": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 22
     },
     "their": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 46
     },
     "they": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 25
     },
     "this": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 19
     },
     "we": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 21
     },
     "you": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 9
     },
     "your": {
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "coca": 42
     },
     "across": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 432
     },
     "after": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 131
     },
     "before": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 239
     },
     "behind": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 471
     },
     "beside": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 2420
     },
     "between": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 169
     },
     "in": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 7
     },
     "in_front_of": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 1162
     },
     "inside": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 1091
     },
     "near": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 862
     },
     "on": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 18
     },
     "over": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 142
     },
     "under": {
-      "pos": "preposition"
+      "pos": "preposition",
+      "coca": 253
     },
     "although": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 451
     },
     "and": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 3
     },
     "because": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 88
     },
     "but": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 24
     },
     "either": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 537
     },
     "however": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 305
     },
     "if": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 40
     },
     "neither": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 1897
     },
     "or": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 32
     },
     "therefore": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 1085
     },
     "unless": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 1103
     },
     "whether": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 351
     },
     "while": {
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "coca": 161
     },
     "eight": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 924
     },
     "first": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 94
     },
     "five": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 365
     },
     "four": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 311
     },
     "half": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 632
     },
     "hundred": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 1456
     },
     "last": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 139
     },
     "nine": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 1373
     },
     "one": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 60
     },
     "seven": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 867
     },
     "six": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 508
     },
     "ten": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 929
     },
     "thousand": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 1519
     },
     "three": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 163
     },
     "two": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 90
     },
     "zero": {
-      "pos": "numeral"
+      "pos": "numeral",
+      "coca": 3339
     },
     "to_accept": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 816
     },
     "to_add": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 362
     },
     "to_agree": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 461
     },
     "to_answer": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 835
     },
     "to_appear": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 437
     },
     "to_arrive": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 968
     },
     "to_ask": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 143
     },
     "to_bake": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 3195
     },
     "to_be": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2
     },
     "to_be_allowed_to": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 6
     },
     "to_be_happy": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 564
     },
     "to_become": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 167
     },
     "to_begin": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 232
     },
     "to_believe": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 189
     },
     "to_break": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 450
     },
     "to_break_down": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 450
     },
     "to_bring": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 213
     },
     "to_bring_up": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 213
     },
     "to_build": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 425
     },
     "to_burn": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1434
     },
     "to_buy": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 375
     },
     "to_call": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 125
     },
     "to_call_back": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1808
     },
     "to_can": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 37
     },
     "to_care": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 637
     },
     "to_carry": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 572
     },
     "to_catch": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 603
     },
     "to_change": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 304
     },
     "to_check": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 623
     },
     "to_check_out": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 623
     },
     "to_choose": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 561
     },
     "to_clean": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1828
     },
     "to_close": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 712
     },
     "to_come": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 61
     },
     "to_consider": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 395
     },
     "to_continue": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 350
     },
     "to_cook": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1636
     },
     "to_count": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1296
     },
     "to_create": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 319
     },
     "to_cry": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1398
     },
     "to_cut": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 467
     },
     "to_dance": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1958
     },
     "to_decide": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 468
     },
     "to_develop": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 569
     },
     "to_die": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 371
     },
     "to_do": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 15
     },
     "to_download": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 4020
     },
     "to_draw": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 721
     },
     "to_dream": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2476
     },
     "to_drink": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1142
     },
     "to_drive": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 496
     },
     "to_eat": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 476
     },
     "to_eat_breakfast": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2459
     },
     "to_eat_dinner": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1079
     },
     "to_eat_lunch": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1698
     },
     "to_expect": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 426
     },
     "to_explain": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 500
     },
     "to_fall": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 427
     },
     "to_fear": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1840
     },
     "to_feed": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1234
     },
     "to_feel": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 136
     },
     "to_fight": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 625
     },
     "to_find": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 97
     },
     "to_find_out": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 97
     },
     "to_finish": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 874
     },
     "to_fly": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1083
     },
     "to_follow": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 332
     },
     "to_forget": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 665
     },
     "to_get": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 34
     },
     "to_get_up": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 52
     },
     "to_give": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 98
     },
     "to_give_up": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 98
     },
     "to_go": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 31
     },
     "to_grill": {
       "pos": "verb"
     },
     "to_grow": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 390
     },
     "to_grow_up": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 390
     },
     "to_happen": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 170
     },
     "to_hate": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 955
     },
     "to_have": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 11
     },
     "to_have_to": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 11
     },
     "to_hear": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 184
     },
     "to_help": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 155
     },
     "to_hire": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1521
     },
     "to_hold": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 235
     },
     "to_hope": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 413
     },
     "to_include": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 328
     },
     "to_invite": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1653
     },
     "to_join": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 566
     },
     "to_jump": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1365
     },
     "to_keep": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 151
     },
     "to_kill": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 325
     },
     "to_kiss": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2116
     },
     "to_know": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 39
     },
     "to_laugh": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 869
     },
     "to_lead": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 349
     },
     "to_learn": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 322
     },
     "to_leave": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 152
     },
     "to_let": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 122
     },
     "to_lie": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 717
     },
     "to_lie_down": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 717
     },
     "to_like": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 154
     },
     "to_listen": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 460
     },
     "to_live": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 209
     },
     "to_look_at": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 81
     },
     "to_look_for": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 81
     },
     "to_lose": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 273
     },
     "to_love": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 233
     },
     "to_make": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 50
     },
     "to_marinate": {
       "pos": "verb"
     },
     "to_marry": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1261
     },
     "to_mean": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 130
     },
     "to_meet": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 294
     },
     "to_meet_up": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 294
     },
     "to_move": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 227
     },
     "to_move_in": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 227
     },
     "to_move_out": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 227
     },
     "to_need": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 107
     },
     "to_negotiate": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2993
     },
     "to_offer": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 418
     },
     "to_open": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 392
     },
     "to_pass": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 472
     },
     "to_pay": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 258
     },
     "to_pay_for": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 258
     },
     "to_play": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 196
     },
     "to_play_instrument": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2112
     },
     "to_pray": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2070
     },
     "to_promise": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1262
     },
     "to_promote": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1371
     },
     "to_protect": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 769
     },
     "to_pull": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 503
     },
     "to_push": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 724
     },
     "to_put": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 153
     },
     "to_put_on": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 153
     },
     "to_raise": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 512
     },
     "to_reach": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 498
     },
     "to_read": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 244
     },
     "to_receive": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 489
     },
     "to_remember": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 334
     },
     "to_report": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 477
     },
     "to_require": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 457
     },
     "to_resign": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 3687
     },
     "to_respect": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2528
     },
     "to_roast": {
       "pos": "verb"
     },
     "to_run": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 202
     },
     "to_save": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 600
     },
     "to_say": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 26
     },
     "to_see": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 56
     },
     "to_seem": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 181
     },
     "to_sell": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 484
     },
     "to_send": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 382
     },
     "to_serve": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 449
     },
     "to_set": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 339
     },
     "to_set_up": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 339
     },
     "to_shake": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1131
     },
     "to_shoot": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 657
     },
     "to_shout": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2473
     },
     "to_show": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 177
     },
     "to_sing": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1066
     },
     "to_sit": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 318
     },
     "to_sit_down": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 318
     },
     "to_sketch": {
       "pos": "verb"
     },
     "to_sleep": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1009
     },
     "to_smell": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2149
     },
     "to_smile": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1308
     },
     "to_speak": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 337
     },
     "to_spend": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 353
     },
     "to_stand": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 329
     },
     "to_stay": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 361
     },
     "to_steam": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 4444
     },
     "to_stop": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 257
     },
     "to_study": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1055
     },
     "to_succeed": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2229
     },
     "to_sue": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 3260
     },
     "to_suggest": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 481
     },
     "to_support": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 486
     },
     "to_swim": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 3163
     },
     "to_take": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 63
     },
     "to_take_off": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 195
     },
     "to_talk": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 149
     },
     "to_taste": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2921
     },
     "to_teach": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 567
     },
     "to_thank": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 300
     },
     "to_think": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 53
     },
     "to_throw": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 635
     },
     "to_touch": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1157
     },
     "to_train": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1715
     },
     "to_travel": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1136
     },
     "to_try": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 121
     },
     "to_try_on": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 121
     },
     "to_turn": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 197
     },
     "to_turn_off": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 197
     },
     "to_turn_on": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 197
     },
     "to_understand": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 277
     },
     "to_update": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2928
     },
     "to_upload": {
       "pos": "verb"
     },
     "to_use": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 91
     },
     "to_wait": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 289
     },
     "to_wait_for": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 289
     },
     "to_wake_up": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1436
     },
     "to_walk": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 384
     },
     "to_want": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 68
     },
     "to_warn": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 1967
     },
     "to_wash": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 2316
     },
     "to_watch": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 315
     },
     "to_watch_out": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 315
     },
     "to_wave": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 3138
     },
     "to_wear": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 542
     },
     "to_win": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 347
     },
     "to_wish": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 826
     },
     "to_work": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 115
     },
     "to_write": {
-      "pos": "verb"
+      "pos": "verb",
+      "coca": 212
     },
     "a_lot": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 974
     },
     "almost": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 357
     },
     "already": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 324
     },
     "also": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 89
     },
     "always": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 191
     },
     "at_least": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 323
     },
     "backward": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 108
     },
     "completely": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 926
     },
     "down": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 119
     },
     "earlier": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 434
     },
     "enough": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 352
     },
     "everywhere": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 1980
     },
     "exactly": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 593
     },
     "forward": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 802
     },
     "hardly": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 2040
     },
     "here": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 78
     },
     "immediately": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 1210
     },
     "instead": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 981
     },
     "later": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 363
     },
     "left": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 848
     },
     "less": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 513
     },
     "little": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 398
     },
     "more": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 83
     },
     "mostly": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 1324
     },
     "much": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 301
     },
     "never": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 132
     },
     "now": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 72
     },
     "often": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 335
     },
     "only": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 112
     },
     "otherwise": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 1377
     },
     "partially": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 4819
     },
     "please": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 412
     },
     "rarely": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 2553
     },
     "recently": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 774
     },
     "right": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 118
     },
     "sideways": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 286
     },
     "sometimes": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 474
     },
     "soon": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 614
     },
     "straight": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 1642
     },
     "such": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 200
     },
     "then": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 79
     },
     "there": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 109
     },
     "today": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 225
     },
     "tomorrow": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 1050
     },
     "tonight": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 729
     },
     "too": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 124
     },
     "totally": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 1430
     },
     "up": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 52
     },
     "usually": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 786
     },
     "very": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 105
     },
     "yesterday": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 1466
     },
     "yet": {
-      "pos": "adverb"
+      "pos": "adverb",
+      "coca": 292
     },
     "alive": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1374
     },
     "angry": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1733
     },
     "bad": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 229
     },
     "beautiful": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 806
     },
     "beige": {
       "pos": "adjective"
     },
     "big": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 156
     },
     "bitter": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 4014
     },
     "black": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 340
     },
     "blind": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2708
     },
     "blue": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 940
     },
     "brave": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 3863
     },
     "bright": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1588
     },
     "brown": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2076
     },
     "cheap": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1772
     },
     "clean_a": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1574
     },
     "closed": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 3993
     },
     "open": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 590
     },
     "cold": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1021
     },
     "colorful": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 607
     },
     "coral": {
       "pos": "adjective"
     },
     "correct": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1668
     },
     "crimson": {
       "pos": "adjective"
     },
     "dark": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 933
     },
     "dead": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 576
     },
     "deaf": {
       "pos": "adjective"
     },
     "deep": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1035
     },
     "delicious": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 4250
     },
     "different": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 236
     },
     "difficult": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 711
     },
     "dirty": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2620
     },
     "dry": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1926
     },
     "easy": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 423
     },
     "empty": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1832
     },
     "erotic": {
       "pos": "adjective"
     },
     "expensive": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1794
     },
     "fast": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2164
     },
     "full": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 470
     },
     "furious": {
       "pos": "adjective"
     },
     "gold": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1364
     },
     "good": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 93
     },
     "green": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1005
     },
     "grey": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2288
     },
     "guilty": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1966
     },
     "happy": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 564
     },
     "hard": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 430
     },
     "healthy": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1379
     },
     "heavy": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1231
     },
     "honest": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1907
     },
     "hot": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 755
     },
     "hungry": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2770
     },
     "important": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 297
     },
     "innocent": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2585
     },
     "ivory": {
       "pos": "adjective"
     },
     "light": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1522
     },
     "long": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 285
     },
     "loud": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 3336
     },
     "maroon": {
       "pos": "adjective"
@@ -1180,91 +1558,119 @@
       "pos": "adjective"
     },
     "naked": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 3182
     },
     "navy": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2695
     },
     "necessary": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1010
     },
     "new": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 100
     },
     "old": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 174
     },
     "orange": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 3258
     },
     "pale": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 3562
     },
     "pink": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2634
     },
     "poor": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 740
     },
     "possible": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 448
     },
     "pregnant": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2324
     },
     "purple": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 4292
     },
     "quiet": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1586
     },
     "red": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 672
     },
     "rich": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1086
     },
     "round": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 3218
     },
     "sad": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1709
     },
     "salty": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1918
     },
     "same": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 158
     },
     "sensual": {
       "pos": "adjective"
     },
     "shiny": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 3411
     },
     "short": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 669
     },
     "sick": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1412
     },
     "silver": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2811
     },
     "single": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 649
     },
     "slow": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1761
     },
     "small": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 248
     },
     "smart": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1428
     },
     "soft": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1762
     },
     "sour": {
       "pos": "adjective"
@@ -1273,13 +1679,16 @@
       "pos": "adjective"
     },
     "strong": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 497
     },
     "sweet": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1402
     },
     "tall": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1848
     },
     "teal": {
       "pos": "adjective"
@@ -1288,7 +1697,8 @@
       "pos": "adjective"
     },
     "tired": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1818
     },
     "transparent": {
       "pos": "adjective"
@@ -1297,49 +1707,63 @@
       "pos": "adjective"
     },
     "ugly": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 3019
     },
     "vibrant": {
       "pos": "adjective"
     },
     "warm": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1573
     },
     "weak": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1969
     },
     "wet": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2856
     },
     "white": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 386
     },
     "wide": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 1168
     },
     "wrong": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 465
     },
     "yellow": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 2121
     },
     "young": {
-      "pos": "adjective"
+      "pos": "adjective",
+      "coca": 288
     },
     "accident_car": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1739
     },
     "account": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 947
     },
     "actor": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1600
     },
     "affair": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1607
     },
     "airport": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2052
     },
     "algorithm": {
       "pos": "noun"
@@ -1348,52 +1772,65 @@
       "pos": "noun"
     },
     "animal": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 780
     },
     "anniversary": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3441
     },
     "answer_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 742
     },
     "ant": {
       "pos": "noun"
     },
     "apartment": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1460
     },
     "apology": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4104
     },
     "app": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2126
     },
     "apple": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1327
     },
     "april": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1269
     },
     "argument": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 973
     },
     "arm": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 601
     },
     "arousal": {
       "pos": "noun"
     },
     "arrest": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2786
     },
     "artery": {
       "pos": "noun"
     },
     "artist": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 944
     },
     "athlete": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2169
     },
     "atm": {
       "pos": "noun"
@@ -1402,400 +1839,522 @@
       "pos": "noun"
     },
     "attorney": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1102
     },
     "attraction": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4304
     },
     "audience": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1159
     },
     "august": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1520
     },
     "autumn": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 427
     },
     "baby": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 464
     },
     "back_body": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 331
     },
     "bag": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1084
     },
     "ball": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 877
     },
     "bandage": {
       "pos": "noun"
     },
     "bank": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 695
     },
     "basket": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3917
     },
     "bathroom": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2228
     },
     "battery": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2744
     },
     "bear": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1982
     },
     "bed": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 767
     },
     "bedroom": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2252
     },
     "bee": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4198
     },
     "beer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1815
     },
     "bicycle": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4936
     },
     "bird": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1368
     },
     "birth": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1558
     },
     "blanket": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3661
     },
     "blood": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 705
     },
     "blood_pressure": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 937
     },
     "boat": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1491
     },
     "bone": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1684
     },
     "book": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 218
     },
     "boot": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2627
     },
     "border": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1468
     },
     "boss": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1891
     },
     "bottle": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1920
     },
     "bowl": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1566
     },
     "box": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 864
     },
     "boy": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 358
     },
     "boyfriend": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2549
     },
     "brain": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 961
     },
     "brake": {
       "pos": "noun"
     },
     "bread": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2386
     },
     "breakup": {
       "pos": "noun"
     },
     "bridge": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1847
     },
     "broom": {
       "pos": "noun"
     },
     "brother": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 574
     },
     "browser": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 5021
     },
     "brush_hygiene": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4387
     },
     "budget": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1107
     },
     "bug": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3665
     },
     "bus": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1605
     },
     "butter": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2704
     },
     "cabinet": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3362
     },
     "camera": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 965
     },
     "canvas": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4862
     },
     "canyon": {
       "pos": "noun"
     },
     "car": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 321
     },
     "cash": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1665
     },
     "cat": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1603
     },
     "cave": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3807
     },
     "celebration": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3430
     },
     "cell": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 763
     },
     "ceremony": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3103
     },
     "certificate": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4611
     },
     "chair": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1205
     },
     "champion": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2865
     },
     "chance": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 557
     },
     "channel": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2057
     },
     "cheese": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2250
     },
     "chemical": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3160
     },
     "chest": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1989
     },
     "chicken_animal": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1713
     },
     "chicken_meat": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1713
     },
     "child": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 140
     },
     "chocolate": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2819
     },
     "church": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 504
     },
     "cinnamon": {
       "pos": "noun"
     },
     "city": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 222
     },
     "classroom": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1693
     },
     "clay": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4237
     },
     "client": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1197
     },
     "cliff": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3854
     },
     "clock": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2725
     },
     "cloth": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4453
     },
     "clothing": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3084
     },
     "cloud": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1905
     },
     "cloud_computing": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1905
     },
     "coach": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1099
     },
     "coast": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1728
     },
     "coat": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2580
     },
     "code": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1336
     },
     "coffee": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1356
     },
     "comb": {
       "pos": "noun"
     },
     "company": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 223
     },
     "compromise": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4144
     },
     "computer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 691
     },
     "concert": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2729
     },
     "condom": {
       "pos": "noun"
     },
     "consciousness": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3454
     },
     "consent": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4084
     },
     "constitution": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1939
     },
     "continent": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4493
     },
     "contract": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1317
     },
     "cotton": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4052
     },
     "country": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 190
     },
     "couple": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 515
     },
     "course": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 736
     },
     "court": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 388
     },
     "cow": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3308
     },
     "cream": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2241
     },
     "credit_card": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1004
     },
     "crime": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 856
     },
     "crocodile": {
       "pos": "noun"
     },
     "cup": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 886
     },
     "currency": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3511
     },
     "currency_exchange": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3511
     },
     "customs": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3113
     },
     "danger": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1779
     },
     "data": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 417
     },
     "database": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3174
     },
     "date_romantic": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3292
     },
     "day": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 96
     },
     "deadline": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4120
     },
     "death": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 419
     },
     "december": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1711
     },
     "deer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3623
     },
     "defeat": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4401
     },
     "degree_education": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 855
     },
     "deodorant": {
       "pos": "noun"
     },
     "department": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 536
     },
     "desert": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2705
     },
     "desire": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1701
     },
     "destination": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3929
     },
     "destiny": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4939
     },
     "diagnosis": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3566
     },
     "diploma": {
       "pos": "noun"
@@ -1804,316 +2363,410 @@
       "pos": "noun"
     },
     "divorce": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3272
     },
     "doctor": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 591
     },
     "dog": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 671
     },
     "dolphin": {
       "pos": "noun"
     },
     "door": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 385
     },
     "dough": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4978
     },
     "drawer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4892
     },
     "dream_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 919
     },
     "dress": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1877
     },
     "dresser": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1641
     },
     "drill": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4645
     },
     "driver": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1292
     },
     "eagle": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3445
     },
     "ear": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1569
     },
     "earth": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 725
     },
     "egg": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1615
     },
     "elephant": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4490
     },
     "embassy": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4287
     },
     "employee": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 945
     },
     "encryption": {
       "pos": "noun"
     },
     "energy": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 586
     },
     "engagement": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3263
     },
     "engine": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1796
     },
     "engineer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2268
     },
     "enlightenment": {
       "pos": "noun"
     },
     "essay": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2676
     },
     "eternity": {
       "pos": "noun"
     },
     "ethics": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3443
     },
     "evening": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1160
     },
     "evidence": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 597
     },
     "evolution": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2667
     },
     "exam": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4171
     },
     "exchange_rate": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1649
     },
     "exercise": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1817
     },
     "existence": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2206
     },
     "experience": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 421
     },
     "experiment": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2011
     },
     "eye": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 283
     },
     "fact": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 242
     },
     "failure": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1403
     },
     "family": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 171
     },
     "fantasy": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2777
     },
     "farmer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2014
     },
     "fate": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3061
     },
     "father": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 317
     },
     "fear_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1100
     },
     "february": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1938
     },
     "fever": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4583
     },
     "field": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 511
     },
     "film": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 549
     },
     "fine_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 509
     },
     "finger": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1181
     },
     "fire": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 670
     },
     "fish": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1238
     },
     "fish_animal": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1238
     },
     "flirt": {
       "pos": "noun"
     },
     "floor": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 794
     },
     "flour": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4256
     },
     "flower": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1850
     },
     "food": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 372
     },
     "foot": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 458
     },
     "foreplay": {
       "pos": "noun"
     },
     "forest": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1531
     },
     "fork": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4590
     },
     "fracture": {
       "pos": "noun"
     },
     "freedom": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1110
     },
     "friday": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1101
     },
     "friend": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 230
     },
     "frog": {
       "pos": "noun"
     },
     "fruit": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1947
     },
     "fuel": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1714
     },
     "game_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 210
     },
     "garage": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3389
     },
     "garlic": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3769
     },
     "gas_station": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1034
     },
     "gene": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2036
     },
     "gift": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1338
     },
     "ginger": {
       "pos": "noun"
     },
     "girl": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 313
     },
     "girlfriend": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2432
     },
     "glass_cup": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1022
     },
     "glass_material": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1022
     },
     "glasses": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1022
     },
     "glove": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3527
     },
     "glue": {
       "pos": "noun"
     },
     "goal": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 694
     },
     "god": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1329
     },
     "grade": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1556
     },
     "grass": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2490
     },
     "gravity": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4048
     },
     "guide": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2064
     },
     "gym": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3820
     },
     "hair": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 673
     },
     "hammer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 5045
     },
     "hand": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 194
     },
     "hardware": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3699
     },
     "hat": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2028
     },
     "head": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 278
     },
     "heart_organ": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 445
     },
     "highway": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2390
     },
     "hill": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1278
     },
     "home": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 255
     },
     "homework": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4483
     },
     "honey": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1683
     },
     "honeymoon": {
       "pos": "noun"
@@ -2122,52 +2775,67 @@
       "pos": "noun"
     },
     "hope_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1179
     },
     "hormone": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4745
     },
     "horn": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4154
     },
     "horse": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1381
     },
     "hospital": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 766
     },
     "hostel": {
       "pos": "noun"
     },
     "hotel": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1186
     },
     "hour": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 308
     },
     "hug": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4262
     },
     "husband": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 683
     },
     "hypothesis": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3496
     },
     "ice": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1232
     },
     "idea": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 263
     },
     "ignorance": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4684
     },
     "illusion": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4597
     },
     "infection": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2497
     },
     "infinity": {
       "pos": "noun"
@@ -2176,295 +2844,381 @@
       "pos": "noun"
     },
     "insect": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4125
     },
     "insurance": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1108
     },
     "interface": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4911
     },
     "intimacy": {
       "pos": "noun"
     },
     "invitation": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4416
     },
     "invoice": {
       "pos": "noun"
     },
     "iron_appliance": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2517
     },
     "island": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 979
     },
     "jacket": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2599
     },
     "january": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1497
     },
     "jellyfish": {
       "pos": "noun"
     },
     "job": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 226
     },
     "judge": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1187
     },
     "juice": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2645
     },
     "july": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1147
     },
     "june": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1094
     },
     "jungle": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4962
     },
     "justice": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 959
     },
     "key": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1422
     },
     "kidney": {
       "pos": "noun"
     },
     "kitchen": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1279
     },
     "knee": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1781
     },
     "knife_utensil": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2364
     },
     "laboratory": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2970
     },
     "ladder": {
       "pos": "noun"
     },
     "lake": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1347
     },
     "lamb": {
       "pos": "noun"
     },
     "lamp": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4541
     },
     "land": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 689
     },
     "language": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 713
     },
     "law": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 268
     },
     "lawsuit": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2758
     },
     "lawyer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1036
     },
     "league": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1265
     },
     "leather": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3535
     },
     "lecture": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3933
     },
     "leg": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1016
     },
     "letter": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 732
     },
     "libido": {
       "pos": "noun"
     },
     "library": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1331
     },
     "license": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2582
     },
     "lie_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2144
     },
     "life": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 116
     },
     "lion": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3184
     },
     "liver": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4677
     },
     "loan": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1672
     },
     "lock_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3908
     },
     "logic": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3129
     },
     "loss_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 846
     },
     "lotion": {
       "pos": "noun"
     },
     "love_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 466
     },
     "lover": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2963
     },
     "loyalty": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4356
     },
     "luggage": {
       "pos": "noun"
     },
     "lung": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3351
     },
     "makeup": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3459
     },
     "man": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 95
     },
     "map": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1614
     },
     "march": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1115
     },
     "market": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 453
     },
     "match": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2455
     },
     "may": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1096
     },
     "meaning": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1678
     },
     "meat": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1934
     },
     "medicine": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1645
     },
     "meeting": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 850
     },
     "memory": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 962
     },
     "message": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 748
     },
     "metal": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1942
     },
     "microwave": {
       "pos": "noun"
     },
     "milk": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2211
     },
     "minute": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 326
     },
     "mirror": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2207
     },
     "molecule": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4636
     },
     "monday": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1391
     },
     "money": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 215
     },
     "monkey": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3949
     },
     "month": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 249
     },
     "moon": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1708
     },
     "morality": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4904
     },
     "morning": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 377
     },
     "mother": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 279
     },
     "mountain": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1097
     },
     "mouse": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2801
     },
     "mouth": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1126
     },
     "movie": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 510
     },
     "muscle": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2104
     },
     "mushroom": {
       "pos": "noun"
     },
     "music": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 436
     },
     "nail_clipper": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3678
     },
     "nail_tool": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3678
     },
     "name": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 262
     },
     "neck": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1753
     },
     "neighbor": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1577
     },
     "network": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 882
     },
     "news": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 345
     },
     "night": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 208
     },
     "nightstand": {
       "pos": "noun"
@@ -2473,22 +3227,28 @@
       "pos": "noun"
     },
     "nose": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1972
     },
     "november": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1117
     },
     "number": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 211
     },
     "nurse": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2033
     },
     "ocean": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1885
     },
     "october": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1207
     },
     "octopus": {
       "pos": "noun"
@@ -2497,64 +3257,79 @@
       "pos": "noun"
     },
     "office": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 380
     },
     "oil": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 645
     },
     "one_night_stand": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2209
     },
     "onion": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3164
     },
     "orgasm": {
       "pos": "noun"
     },
     "oven": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3395
     },
     "owl": {
       "pos": "noun"
     },
     "pain": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 943
     },
     "pan": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3168
     },
     "pancreas": {
       "pos": "noun"
     },
     "pants": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2612
     },
     "paper": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 585
     },
     "paradox": {
       "pos": "noun"
     },
     "parent": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 379
     },
     "park": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 719
     },
     "parking": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2439
     },
     "parrot": {
       "pos": "noun"
     },
     "part": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 183
     },
     "partner": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1080
     },
     "passion": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2388
     },
     "passport": {
       "pos": "noun"
@@ -2563,16 +3338,20 @@
       "pos": "noun"
     },
     "pattern": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1188
     },
     "payment": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1981
     },
     "peace": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1078
     },
     "pen": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3683
     },
     "penguin": {
       "pos": "noun"
@@ -2581,127 +3360,164 @@
       "pos": "noun"
     },
     "pepper": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2414
     },
     "perception": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2130
     },
     "perfume": {
       "pos": "noun"
     },
     "person": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 298
     },
     "phone": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 493
     },
     "photo": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 541
     },
     "physics": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3388
     },
     "pig": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3274
     },
     "pillow": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4547
     },
     "pipe": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3428
     },
     "place": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 186
     },
     "plane": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1351
     },
     "plastic": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1930
     },
     "plate": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1789
     },
     "plateau": {
       "pos": "noun"
     },
     "player": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 514
     },
     "pleasure": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1995
     },
     "plug": {
       "pos": "noun"
     },
     "police": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 440
     },
     "pot": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2548
     },
     "potato": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2688
     },
     "power": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 274
     },
     "prescription": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3643
     },
     "presentation": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2887
     },
     "pressure": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 937
     },
     "price": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 529
     },
     "problem": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 187
     },
     "professor": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 936
     },
     "profit": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1880
     },
     "project": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 544
     },
     "proposal_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1963
     },
     "question": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 206
     },
     "rabbit": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4521
     },
     "race": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 730
     },
     "radiation": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3536
     },
     "radio": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1151
     },
     "rain": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1812
     },
     "razor": {
       "pos": "noun"
     },
     "reaction": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1552
     },
     "reality": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 956
     },
     "reason": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 336
     },
     "receipt": {
       "pos": "noun"
@@ -2710,55 +3526,71 @@
       "pos": "noun"
     },
     "relationship": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 507
     },
     "research": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 383
     },
     "reservation": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3742
     },
     "restaurant": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1264
     },
     "rice": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2442
     },
     "rights": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 118
     },
     "river": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 960
     },
     "road": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 555
     },
     "roof": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2421
     },
     "room": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 264
     },
     "rope": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3649
     },
     "rubber": {
       "pos": "noun"
     },
     "salad": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3268
     },
     "salary": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2660
     },
     "salt": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1918
     },
     "saturday": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1248
     },
     "sauce": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2772
     },
     "sausage": {
       "pos": "noun"
@@ -2770,40 +3602,49 @@
       "pos": "noun"
     },
     "scholarship": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3446
     },
     "school": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 146
     },
     "scissors": {
       "pos": "noun"
     },
     "score": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1165
     },
     "screen": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1281
     },
     "screw": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3020
     },
     "screwdriver": {
       "pos": "noun"
     },
     "sea": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1124
     },
     "seal": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4335
     },
     "seasoning": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 443
     },
     "seatbelt": {
       "pos": "noun"
     },
     "secret": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1795
     },
     "seduce": {
       "pos": "noun"
@@ -2815,103 +3656,134 @@
       "pos": "noun"
     },
     "sentence_legal": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1912
     },
     "september": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 900
     },
     "series": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 685
     },
     "server": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3534
     },
     "sex": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 799
     },
     "shade": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3424
     },
     "shampoo": {
       "pos": "noun"
     },
     "shark": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4298
     },
     "sheep": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4450
     },
     "shelf": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3385
     },
     "shirt": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1928
     },
     "shoe": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1524
     },
     "shoulder": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1239
     },
     "show_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 433
     },
     "shrimp": {
       "pos": "noun"
     },
     "sin": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2440
     },
     "sink": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4568
     },
     "sister": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 810
     },
     "skin": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1166
     },
     "skirt": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4220
     },
     "sky": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1376
     },
     "snake": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3708
     },
     "snow": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2092
     },
     "soap": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4709
     },
     "sock": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4505
     },
     "software": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1580
     },
     "soldier": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1235
     },
     "song": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 749
     },
     "soul": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1463
     },
     "soup": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3437
     },
     "species": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1319
     },
     "speech": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1044
     },
     "speed": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1505
     },
     "spider": {
       "pos": "noun"
@@ -2923,145 +3795,186 @@
       "pos": "noun"
     },
     "spring": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1169
     },
     "stairs": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3269
     },
     "star": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 578
     },
     "station": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 978
     },
     "steering": {
       "pos": "noun"
     },
     "stomach": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2728
     },
     "stone": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1420
     },
     "store": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 759
     },
     "storm": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1564
     },
     "story": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 224
     },
     "strategy": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 904
     },
     "street": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 402
     },
     "stripe": {
       "pos": "noun"
     },
     "student": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 179
     },
     "success": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 884
     },
     "sugar": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1842
     },
     "summer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 771
     },
     "sun": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 942
     },
     "sunday": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1074
     },
     "sunscreen": {
       "pos": "noun"
     },
     "surgery": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1985
     },
     "swimming_pool": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1830
     },
     "switch_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4226
     },
     "symptom": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2335
     },
     "table": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 407
     },
     "tape": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1884
     },
     "tax": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 444
     },
     "taxi": {
       "pos": "noun"
     },
     "tea": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1894
     },
     "teacher": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 416
     },
     "team": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 282
     },
     "temperature": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1585
     },
     "textbook": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 5040
     },
     "texture": {
       "pos": "noun"
     },
     "theater": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1504
     },
     "theory": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 896
     },
     "thing": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 86
     },
     "thursday": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1648
     },
     "ticket": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1555
     },
     "time": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 54
     },
     "tire": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3457
     },
     "tissue": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2948
     },
     "toe": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3632
     },
     "tomato": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3001
     },
     "tongue": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3022
     },
     "toolbox": {
       "pos": "noun"
     },
     "tooth": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1933
     },
     "toothbrush": {
       "pos": "noun"
@@ -3070,46 +3983,59 @@
       "pos": "noun"
     },
     "tournament": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3115
     },
     "towel": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3976
     },
     "traffic": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1784
     },
     "train_vehicle": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1788
     },
     "training_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 920
     },
     "transfer": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2940
     },
     "tray": {
       "pos": "noun"
     },
     "tree": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 718
     },
     "trial": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1046
     },
     "trip": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1056
     },
     "trust_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2247
     },
     "truth": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 681
     },
     "tuesday": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1514
     },
     "turtle": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4702
     },
     "utensil": {
       "pos": "noun"
@@ -3118,31 +4044,38 @@
       "pos": "noun"
     },
     "valley": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1951
     },
     "vase": {
       "pos": "noun"
     },
     "vegetable": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2422
     },
     "vehicle": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1352
     },
     "vein": {
       "pos": "noun"
     },
     "verdict": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4840
     },
     "victim": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1042
     },
     "victory": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1611
     },
     "video": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 633
     },
     "vinegar": {
       "pos": "noun"
@@ -3151,115 +4084,147 @@
       "pos": "noun"
     },
     "virtue": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3614
     },
     "visa": {
       "pos": "noun"
     },
     "voice": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 534
     },
     "volcano": {
       "pos": "noun"
     },
     "waiter": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 289
     },
     "wall": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 676
     },
     "war": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 276
     },
     "wardrobe": {
       "pos": "noun"
     },
     "washing_machine": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1116
     },
     "water": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 287
     },
     "waterfall": {
       "pos": "noun"
     },
     "way": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 82
     },
     "weather": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1643
     },
     "website": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1478
     },
     "wedding": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1864
     },
     "wednesday": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1718
     },
     "week": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 192
     },
     "whale": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 4351
     },
     "wheel": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2257
     },
     "wife": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 487
     },
     "wind": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1226
     },
     "window": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 714
     },
     "wine": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1630
     },
     "winter": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1540
     },
     "wire": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2799
     },
     "wisdom": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2995
     },
     "witness": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1987
     },
     "wolf": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 2735
     },
     "woman": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 126
     },
     "wood": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 1572
     },
     "word": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 241
     },
     "work_n": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 207
     },
     "worker": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 720
     },
     "world": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 134
     },
     "wound": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 3327
     },
     "wrench": {
       "pos": "noun"
     },
     "year": {
-      "pos": "noun"
+      "pos": "noun",
+      "coca": 64
     }
   }
 }

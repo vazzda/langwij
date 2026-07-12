@@ -4011,20 +4011,32 @@
   },
   "meta": {
     "levels": {
-      "survival": {
-        "name": "Supervivencia"
+      "basics": {
+        "name": "Basics"
       },
-      "foundation": {
-        "name": "Fundamentos"
+      "iron": {
+        "name": "Iron"
       },
-      "elementary": {
-        "name": "Elemental"
+      "bronze": {
+        "name": "Bronze"
       },
-      "intermediate": {
-        "name": "Intermedio"
+      "silver": {
+        "name": "Silver"
       },
-      "advanced": {
-        "name": "Avanzado"
+      "gold": {
+        "name": "Gold"
+      },
+      "platinum": {
+        "name": "Platinum"
+      },
+      "diamond": {
+        "name": "Diamond"
+      },
+      "mithril": {
+        "name": "Mithril"
+      },
+      "adamantite": {
+        "name": "Adamantite"
       },
       "specialized": {
         "name": "Especializado"
@@ -4073,26 +4085,14 @@
       "glue_words": {
         "name": "Palabras de enlace"
       },
-      "doing_things": {
-        "name": "Hacer cosas"
-      },
       "hands_on": {
         "name": "Manos a la obra"
       },
       "laugh_and_cry": {
         "name": "Reír y llorar"
       },
-      "shoulder_to_knee": {
-        "name": "Del hombro a la rodilla"
-      },
-      "brothers_and_sisters": {
-        "name": "Hermanos y hermanas"
-      },
       "market_basket": {
         "name": "Cesta del mercado"
-      },
-      "around_the_house": {
-        "name": "Por la casa"
       },
       "rainbow": {
         "name": "Arcoíris"
@@ -4111,9 +4111,6 @@
       },
       "how_things_are": {
         "name": "Cómo son las cosas"
-      },
-      "world_words": {
-        "name": "Palabras del mundo"
       },
       "bags_packed": {
         "name": "Maletas listas"
@@ -4136,9 +4133,6 @@
       "home_sweet_home": {
         "name": "Hogar dulce hogar"
       },
-      "at_the_table": {
-        "name": "En la mesa"
-      },
       "wild_side": {
         "name": "Lado salvaje"
       },
@@ -4154,12 +4148,6 @@
       "when_and_where": {
         "name": "Cuándo y dónde"
       },
-      "going_places": {
-        "name": "De viaje"
-      },
-      "dating_scene": {
-        "name": "Citas"
-      },
       "sick_and_stuff": {
         "name": "Enfermedades y cosas"
       },
@@ -4172,17 +4160,8 @@
       "tying_loose_ends": {
         "name": "Atar cabos"
       },
-      "three_word_moves": {
-        "name": "Expresiones compuestas"
-      },
-      "bones_and_blood": {
-        "name": "Huesos y sangre"
-      },
       "what_matters": {
         "name": "Lo que importa"
-      },
-      "shades_of_grey": {
-        "name": "Tonos de gris"
       },
       "words_and_stories": {
         "name": "Palabras e historias"
@@ -4193,14 +4172,8 @@
       "however_therefore": {
         "name": "Sin embargo y por lo tanto"
       },
-      "stuff_and_coins": {
-        "name": "Cosas y monedas"
-      },
       "after_dark": {
         "name": "Después del anochecer"
-      },
-      "last_of_the_wild": {
-        "name": "Los últimos salvajes"
       },
       "medical_anatomy": {
         "name": "Medicina y anatomía"

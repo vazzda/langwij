@@ -19,22 +19,22 @@
   "courses": {
     "sr→en": {
       "free": [
-        "survival"
+        "basics"
       ]
     },
     "sr→ru": {
       "free": [
-        "survival"
+        "basics"
       ]
     },
     "en→sr": {
       "free": [
-        "survival"
+        "basics"
       ]
     },
     "ru→sr": {
       "free": [
-        "survival"
+        "basics"
       ]
     }
   }

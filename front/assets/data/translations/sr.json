@@ -4187,20 +4187,32 @@
   },
   "meta": {
     "levels": {
-      "survival": {
-        "name": "Preživljavanje"
+      "basics": {
+        "name": "Basics"
       },
-      "foundation": {
-        "name": "Osnove"
+      "iron": {
+        "name": "Iron"
       },
-      "elementary": {
-        "name": "Početni"
+      "bronze": {
+        "name": "Bronze"
       },
-      "intermediate": {
-        "name": "Srednji"
+      "silver": {
+        "name": "Silver"
       },
-      "advanced": {
-        "name": "Napredni"
+      "gold": {
+        "name": "Gold"
+      },
+      "platinum": {
+        "name": "Platinum"
+      },
+      "diamond": {
+        "name": "Diamond"
+      },
+      "mithril": {
+        "name": "Mithril"
+      },
+      "adamantite": {
+        "name": "Adamantite"
       },
       "specialized": {
         "name": "Specijalizovani"
@@ -4249,26 +4261,14 @@
       "glue_words": {
         "name": "Vezni reči"
       },
-      "doing_things": {
-        "name": "Radi stvari"
-      },
       "hands_on": {
         "name": "Praktično"
       },
       "laugh_and_cry": {
         "name": "Smeh i plač"
       },
-      "shoulder_to_knee": {
-        "name": "Od ramena do kolena"
-      },
-      "brothers_and_sisters": {
-        "name": "Braća i sestre"
-      },
       "market_basket": {
         "name": "Tržna korpa"
-      },
-      "around_the_house": {
-        "name": "Po kući"
       },
       "rainbow": {
         "name": "Duga"
@@ -4287,9 +4287,6 @@
       },
       "how_things_are": {
         "name": "Kako stvari jesu"
-      },
-      "world_words": {
-        "name": "Svetske reči"
       },
       "bags_packed": {
         "name": "Putni prtljag"
@@ -4312,9 +4309,6 @@
       "home_sweet_home": {
         "name": "Slatko kućno"
       },
-      "at_the_table": {
-        "name": "Za stolom"
-      },
       "wild_side": {
         "name": "Divlja strana"
       },
@@ -4330,12 +4324,6 @@
       "when_and_where": {
         "name": "Kada i gde"
       },
-      "going_places": {
-        "name": "Putovanja"
-      },
-      "dating_scene": {
-        "name": "Scena upoznavanja"
-      },
       "sick_and_stuff": {
         "name": "Bolestan i ostalo"
       },
@@ -4348,17 +4336,8 @@
       "tying_loose_ends": {
         "name": "Vezivanje rastavljenih krajeva"
       },
-      "three_word_moves": {
-        "name": "Tri reči poteza"
-      },
-      "bones_and_blood": {
-        "name": "Kosti i krv"
-      },
       "what_matters": {
         "name": "Šta je važno"
-      },
-      "shades_of_grey": {
-        "name": "Nijanse sive"
       },
       "words_and_stories": {
         "name": "Reči i priče"
@@ -4369,14 +4348,8 @@
       "however_therefore": {
         "name": "Međutim, zato"
       },
-      "stuff_and_coins": {
-        "name": "Stvari i novčići"
-      },
       "after_dark": {
         "name": "Posle mračnjenja"
-      },
-      "last_of_the_wild": {
-        "name": "Poslednji od divljakih"
       },
       "medical_anatomy": {
         "name": "Medicinska anatomija"

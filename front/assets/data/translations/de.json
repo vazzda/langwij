@@ -4549,20 +4549,32 @@
   },
   "meta": {
     "levels": {
-      "survival": {
-        "name": "Überleben"
+      "basics": {
+        "name": "Basics"
       },
-      "foundation": {
-        "name": "Grundlagen"
+      "iron": {
+        "name": "Iron"
       },
-      "elementary": {
-        "name": "Anfänger"
+      "bronze": {
+        "name": "Bronze"
       },
-      "intermediate": {
-        "name": "Mittelstufe"
+      "silver": {
+        "name": "Silver"
       },
-      "advanced": {
-        "name": "Fortgeschritten"
+      "gold": {
+        "name": "Gold"
+      },
+      "platinum": {
+        "name": "Platinum"
+      },
+      "diamond": {
+        "name": "Diamond"
+      },
+      "mithril": {
+        "name": "Mithril"
+      },
+      "adamantite": {
+        "name": "Adamantite"
       },
       "specialized": {
         "name": "Spezialisiert"
@@ -4611,26 +4623,14 @@
       "glue_words": {
         "name": "Bindewörter"
       },
-      "doing_things": {
-        "name": "Dinge tun"
-      },
       "hands_on": {
         "name": "Zupacken"
       },
       "laugh_and_cry": {
         "name": "Lachen und Weinen"
       },
-      "shoulder_to_knee": {
-        "name": "Von Schulter bis Knie"
-      },
-      "brothers_and_sisters": {
-        "name": "Brüder und Schwestern"
-      },
       "market_basket": {
         "name": "Marktkorb"
-      },
-      "around_the_house": {
-        "name": "Rund ums Haus"
       },
       "rainbow": {
         "name": "Regenbogen"
@@ -4649,9 +4649,6 @@
       },
       "how_things_are": {
         "name": "Wie Dinge sind"
-      },
-      "world_words": {
-        "name": "Weltwörter"
       },
       "bags_packed": {
         "name": "Koffer gepackt"
@@ -4674,9 +4671,6 @@
       "home_sweet_home": {
         "name": "Trautes Heim"
       },
-      "at_the_table": {
-        "name": "Am Tisch"
-      },
       "wild_side": {
         "name": "Wilde Seite"
       },
@@ -4692,12 +4686,6 @@
       "when_and_where": {
         "name": "Wann und Wo"
       },
-      "going_places": {
-        "name": "Auf Reisen"
-      },
-      "dating_scene": {
-        "name": "Verabredungen"
-      },
       "sick_and_stuff": {
         "name": "Krankheit und Co."
       },
@@ -4710,17 +4698,8 @@
       "tying_loose_ends": {
         "name": "Lose Enden"
       },
-      "three_word_moves": {
-        "name": "Redewendungen"
-      },
-      "bones_and_blood": {
-        "name": "Knochen und Blut"
-      },
       "what_matters": {
         "name": "Was zählt"
-      },
-      "shades_of_grey": {
-        "name": "Grautöne"
       },
       "words_and_stories": {
         "name": "Wörter und Geschichten"
@@ -4731,14 +4710,8 @@
       "however_therefore": {
         "name": "Jedoch und Deshalb"
       },
-      "stuff_and_coins": {
-        "name": "Sachen und Münzen"
-      },
       "after_dark": {
         "name": "Nach Einbruch der Dunkelheit"
-      },
-      "last_of_the_wild": {
-        "name": "Die letzten Wilden"
       },
       "medical_anatomy": {
         "name": "Medizin und Anatomie"

@@ -1,7 +1,7 @@
 {
   "levels": [
     {
-      "id": "survival",
+      "id": "basics",
       "decks": [
         "first_contact",
         "getting_around",
@@ -10,76 +10,83 @@
       ]
     },
     {
-      "id": "foundation",
+      "id": "iron",
       "decks": [
         "core_verbs",
-        "daily_actions",
-        "head_to_toe",
+        "four_walls",
         "my_people",
         "bread_and_water",
-        "four_walls",
-        "zero_to_ten",
-        "on_the_road",
+        "zero_to_ten"
+      ]
+    },
+    {
+      "id": "bronze",
+      "decks": [
+        "daily_actions",
+        "head_to_toe",
         "good_and_bad",
+        "rainbow",
         "glue_words"
       ]
     },
     {
-      "id": "elementary",
+      "id": "silver",
       "decks": [
-        "doing_things",
-        "hands_on",
-        "laugh_and_cry",
-        "shoulder_to_knee",
-        "brothers_and_sisters",
+        "on_the_road",
         "market_basket",
-        "around_the_house",
-        "rainbow",
         "days_and_months",
         "when_and_how_often",
+        "hands_on"
+      ]
+    },
+    {
+      "id": "gold",
+      "decks": [
         "creatures_and_sky",
         "city_life",
+        "laugh_and_cry",
         "how_things_are",
-        "world_words",
-        "bags_packed"
+        "wild_side"
       ]
     },
     {
-      "id": "intermediate",
+      "id": "platinum",
       "decks": [
         "heart_and_mind",
-        "coming_and_going",
-        "build_and_break",
-        "two_word_wonders",
-        "skin_deep",
         "home_sweet_home",
-        "at_the_table",
-        "wild_side",
-        "taste_and_touch",
         "people_and_places",
-        "life_and_work",
-        "when_and_where",
-        "going_places",
-        "dating_scene",
-        "sick_and_stuff"
+        "skin_deep",
+        "taste_and_touch"
       ]
     },
     {
-      "id": "advanced",
+      "id": "diamond",
+      "decks": [
+        "coming_and_going",
+        "build_and_break",
+        "life_and_work",
+        "bags_packed",
+        "when_and_where"
+      ]
+    },
+    {
+      "id": "mithril",
       "decks": [
         "higher_ground",
         "making_it_happen",
-        "tying_loose_ends",
-        "three_word_moves",
-        "bones_and_blood",
         "what_matters",
-        "shades_of_grey",
+        "sick_and_stuff",
+        "two_word_wonders"
+      ]
+    },
+    {
+      "id": "adamantite",
+      "decks": [
+        "tying_loose_ends",
         "words_and_stories",
         "peace_and_war",
         "however_therefore",
-        "stuff_and_coins",
-        "after_dark",
-        "last_of_the_wild"
+        "after_dark"
       ]
     },
     {
@@ -121,7 +128,11 @@
         "no",
         "i",
         "you",
-        "this",
+        "he",
+        "she",
+        "we",
+        "they",
+        "it",
         "what",
         "where",
         "how_much",
@@ -139,8 +150,12 @@
         "to_help",
         "to_speak",
         "to_understand",
-        "here",
+        "this",
+        "that",
         "there",
+        "here",
+        "down",
+        "up",
         "left",
         "right",
         "straight",
@@ -169,6 +184,7 @@
         "police",
         "danger",
         "money",
+        "cash",
         "medicine"
       ]
     },
@@ -186,9 +202,11 @@
         "later",
         "today",
         "tomorrow",
+        "yesterday",
         "one",
         "two",
         "three",
+        "ten",
         "ticket",
         "restaurant"
       ]
@@ -197,6 +215,11 @@
       "id": "core_verbs",
       "icon": "alphabetical-variant",
       "terms": [
+        "to_help",
+        "to_understand",
+        "to_buy",
+        "money",
+        "cash",
         "to_be",
         "to_have",
         "to_give",
@@ -218,19 +241,36 @@
       "id": "daily_actions",
       "icon": "silverware-fork-knife",
       "terms": [
-        "to_eat",
-        "to_drink",
         "to_live",
         "to_sleep",
-        "to_help",
-        "to_understand",
         "to_say",
         "to_speak",
+        "window",
         "to_talk",
         "to_hear",
+        "to_listen",
         "to_see",
+        "to_watch",
+        "to_look_at",
         "to_work",
-        "to_have_to"
+        "to_have_to",
+        "to_walk",
+        "to_run",
+        "to_sit",
+        "to_stand",
+        "wall",
+        "to_open",
+        "mirror",
+        "to_close",
+        "to_read",
+        "to_write",
+        "to_pay",
+        "to_learn",
+        "to_teach",
+        "to_call",
+        "to_wait",
+        "our",
+        "their"
       ]
     },
     {
@@ -251,7 +291,15 @@
         "pants",
         "shoe",
         "hat",
-        "coat"
+        "coat",
+        "arm",
+        "nose",
+        "foot",
+        "stomach",
+        "shoulder",
+        "knee",
+        "sock",
+        "boot"
       ]
     },
     {
@@ -260,36 +308,51 @@
       "terms": [
         "man",
         "woman",
+        "boy",
+        "girl",
         "child",
         "mother",
         "father",
+        "brother",
+        "sister",
         "friend",
+        "baby",
+        "family",
         "i",
         "you",
         "he",
         "she",
         "we",
         "they",
-        "it"
+        "it",
+        "my",
+        "your",
+        "his",
+        "her"
       ]
     },
     {
       "id": "bread_and_water",
       "icon": "bread-slice",
       "terms": [
+        "to_drink",
+        "to_eat",
+        "restaurant",
         "bread",
         "water",
         "food",
         "milk",
         "meat",
         "egg",
-        "rice",
         "fruit",
+        "vegetable",
         "coffee",
         "cup",
         "plate",
         "spoon",
-        "bottle"
+        "fork",
+        "bottle",
+        "salad"
       ]
     },
     {
@@ -298,16 +361,24 @@
       "terms": [
         "home",
         "room",
+        "bathroom",
+        "kitchen",
         "door",
-        "window",
         "bed",
         "table",
         "chair",
+        "street",
+        "bank",
+        "station",
         "phone",
         "key",
         "bag",
         "thing",
-        "bathroom"
+        "floor",
+        "lamp",
+        "clock",
+        "computer",
+        "book"
       ]
     },
     {
@@ -348,10 +419,8 @@
         "ticket",
         "road",
         "passport",
-        "money",
         "hotel",
         "hospital",
-        "restaurant",
         "airport",
         "left",
         "right",
@@ -376,7 +445,17 @@
         "fast",
         "slow",
         "clean_a",
-        "dirty"
+        "dirty",
+        "grey",
+        "pink",
+        "purple",
+        "gold",
+        "silver",
+        "light",
+        "dark",
+        "colorful",
+        "rich",
+        "poor"
       ]
     },
     {
@@ -405,27 +484,6 @@
       ]
     },
     {
-      "id": "doing_things",
-      "icon": "run",
-      "terms": [
-        "to_walk",
-        "to_run",
-        "to_sit",
-        "to_stand",
-        "to_open",
-        "to_close",
-        "to_read",
-        "to_write",
-        "to_buy",
-        "to_pay",
-        "to_learn",
-        "to_teach",
-        "to_call",
-        "to_wait",
-        "to_listen"
-      ]
-    },
-    {
       "id": "hands_on",
       "icon": "hand-back-right",
       "terms": [
@@ -438,7 +496,6 @@
         "to_ask",
         "to_answer",
         "to_show",
-        "to_look_at",
         "to_count",
         "to_hold",
         "to_use",
@@ -461,44 +518,11 @@
         "to_jump",
         "to_wave",
         "to_shout",
-        "to_watch",
         "to_taste",
         "to_touch",
         "to_smell",
         "to_eat_lunch",
         "to_play_instrument"
-      ]
-    },
-    {
-      "id": "shoulder_to_knee",
-      "icon": "human-handsup",
-      "terms": [
-        "arm",
-        "nose",
-        "foot",
-        "stomach",
-        "shoulder",
-        "knee",
-        "sock",
-        "boot"
-      ]
-    },
-    {
-      "id": "brothers_and_sisters",
-      "icon": "human-male-female-child",
-      "terms": [
-        "boy",
-        "girl",
-        "brother",
-        "sister",
-        "baby",
-        "family",
-        "my",
-        "your",
-        "his",
-        "her",
-        "our",
-        "their"
       ]
     },
     {
@@ -508,31 +532,25 @@
         "cheese",
         "fish",
         "chicken_meat",
-        "vegetable",
         "apple",
         "potato",
         "tea",
         "juice",
         "sugar",
+        "rice",
         "salt",
-        "fork",
+        "butter",
+        "onion",
+        "oil",
+        "wine",
+        "beer",
+        "pepper",
+        "tomato",
+        "soup",
+        "chocolate",
         "knife_utensil",
         "bowl",
         "glass_cup"
-      ]
-    },
-    {
-      "id": "around_the_house",
-      "icon": "floor-plan",
-      "terms": [
-        "kitchen",
-        "floor",
-        "wall",
-        "lamp",
-        "clock",
-        "mirror",
-        "computer",
-        "book"
       ]
     },
     {
@@ -546,7 +564,16 @@
         "black",
         "white",
         "brown",
-        "orange"
+        "orange",
+        "but",
+        "because",
+        "if",
+        "also",
+        "much",
+        "a_lot",
+        "little",
+        "too",
+        "almost"
       ]
     },
     {
@@ -625,11 +652,9 @@
       "icon": "city",
       "terms": [
         "city",
-        "street",
         "school",
         "store",
         "park",
-        "station",
         "office",
         "doctor",
         "police",
@@ -638,9 +663,7 @@
         "nurse",
         "driver",
         "worker",
-        "bank",
-        "price",
-        "cash"
+        "price"
       ]
     },
     {
@@ -666,21 +689,6 @@
       ]
     },
     {
-      "id": "world_words",
-      "icon": "earth",
-      "terms": [
-        "but",
-        "because",
-        "if",
-        "also",
-        "much",
-        "a_lot",
-        "little",
-        "too",
-        "almost"
-      ]
-    },
-    {
       "id": "bags_packed",
       "icon": "bag-suitcase",
       "terms": [
@@ -696,7 +704,20 @@
         "payment",
         "to_kiss",
         "hug",
-        "couple"
+        "couple",
+        "boat",
+        "bridge",
+        "trip",
+        "customs",
+        "embassy",
+        "hostel",
+        "guide",
+        "destination",
+        "account",
+        "transfer",
+        "receipt",
+        "tax",
+        "atm"
       ]
     },
     {
@@ -783,7 +804,21 @@
         "to_eat_dinner",
         "to_be_happy",
         "to_be_allowed_to",
-        "to_lie"
+        "to_lie",
+        "to_grow_up",
+        "to_give_up",
+        "to_call_back",
+        "to_try_on",
+        "to_move_in",
+        "to_move_out",
+        "to_bring_up",
+        "to_meet_up",
+        "to_set_up",
+        "to_watch_out",
+        "to_break_down",
+        "to_check_out",
+        "to_wait_for",
+        "to_pray"
       ]
     },
     {
@@ -800,7 +835,18 @@
         "glove",
         "scarf",
         "glasses",
-        "skirt"
+        "skirt",
+        "date_romantic",
+        "partner",
+        "boyfriend",
+        "girlfriend",
+        "relationship",
+        "breakup",
+        "flirt",
+        "attraction",
+        "voice",
+        "secret",
+        "couple"
       ]
     },
     {
@@ -823,22 +869,6 @@
       ]
     },
     {
-      "id": "at_the_table",
-      "icon": "food-variant",
-      "terms": [
-        "butter",
-        "onion",
-        "tomato",
-        "pepper",
-        "soup",
-        "salad",
-        "oil",
-        "chocolate",
-        "beer",
-        "wine"
-      ]
-    },
-    {
       "id": "wild_side",
       "icon": "pine-tree",
       "terms": [
@@ -854,7 +884,19 @@
         "fire",
         "ice",
         "forest",
-        "earth"
+        "earth",
+        "elephant",
+        "rabbit",
+        "insect",
+        "sheep",
+        "storm",
+        "weather",
+        "grass",
+        "ocean",
+        "moon",
+        "animal",
+        "church",
+        "land"
       ]
     },
     {
@@ -936,49 +978,10 @@
         "across",
         "forward",
         "backward",
-        "up",
         "sideways",
         "everywhere",
-        "that",
         "that_o",
         "such"
-      ]
-    },
-    {
-      "id": "going_places",
-      "icon": "airplane",
-      "terms": [
-        "boat",
-        "bridge",
-        "trip",
-        "customs",
-        "embassy",
-        "hostel",
-        "guide",
-        "destination",
-        "account",
-        "transfer",
-        "receipt",
-        "tax",
-        "down",
-        "atm"
-      ]
-    },
-    {
-      "id": "dating_scene",
-      "icon": "heart-outline",
-      "terms": [
-        "date_romantic",
-        "partner",
-        "boyfriend",
-        "girlfriend",
-        "relationship",
-        "breakup",
-        "flirt",
-        "attraction",
-        "voice",
-        "secret",
-        "couple"
       ]
     },
     {
@@ -995,7 +998,19 @@
         "metal",
         "paper",
         "glass_material",
-        "stone"
+        "stone",
+        "bone",
+        "blood",
+        "heart_organ",
+        "toe",
+        "brain",
+        "dead",
+        "fever",
+        "wound",
+        "blind",
+        "deaf",
+        "pregnant",
+        "furious"
       ]
     },
     {
@@ -1062,44 +1077,6 @@
       ]
     },
     {
-      "id": "three_word_moves",
-      "icon": "format-list-group",
-      "terms": [
-        "to_grow_up",
-        "to_give_up",
-        "to_call_back",
-        "to_try_on",
-        "to_move_in",
-        "to_move_out",
-        "to_bring_up",
-        "to_meet_up",
-        "to_set_up",
-        "to_watch_out",
-        "to_break_down",
-        "to_check_out",
-        "to_wait_for",
-        "to_pray"
-      ]
-    },
-    {
-      "id": "bones_and_blood",
-      "icon": "bone",
-      "terms": [
-        "bone",
-        "blood",
-        "heart_organ",
-        "toe",
-        "brain",
-        "dead",
-        "fever",
-        "wound",
-        "blind",
-        "deaf",
-        "pregnant",
-        "furious"
-      ]
-    },
-    {
       "id": "what_matters",
       "icon": "star-outline",
       "terms": [
@@ -1121,22 +1098,6 @@
         "round",
         "brave",
         "honest"
-      ]
-    },
-    {
-      "id": "shades_of_grey",
-      "icon": "palette-swatch",
-      "terms": [
-        "grey",
-        "pink",
-        "purple",
-        "gold",
-        "silver",
-        "light",
-        "dark",
-        "colorful",
-        "rich",
-        "poor"
       ]
     },
     {
@@ -1206,24 +1167,6 @@
       ]
     },
     {
-      "id": "stuff_and_coins",
-      "icon": "cash-multiple",
-      "terms": [
-        "insurance",
-        "loan",
-        "credit_card",
-        "currency",
-        "exchange_rate",
-        "law",
-        "plastic",
-        "cloth",
-        "leather",
-        "rubber",
-        "clay",
-        "market"
-      ]
-    },
-    {
       "id": "after_dark",
       "icon": "moon-waning-crescent",
       "terms": [
@@ -1238,25 +1181,19 @@
         "boyfriend",
         "girlfriend",
         "relationship",
-        "attraction"
-      ]
-    },
-    {
-      "id": "last_of_the_wild",
-      "icon": "elephant",
-      "terms": [
-        "elephant",
-        "rabbit",
-        "insect",
-        "sheep",
-        "storm",
-        "weather",
-        "grass",
-        "ocean",
-        "moon",
-        "animal",
-        "church",
-        "land"
+        "attraction",
+        "insurance",
+        "loan",
+        "credit_card",
+        "currency",
+        "exchange_rate",
+        "law",
+        "plastic",
+        "cloth",
+        "leather",
+        "rubber",
+        "clay",
+        "market"
       ]
     },
     {

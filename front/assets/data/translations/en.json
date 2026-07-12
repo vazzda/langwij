@@ -3495,20 +3495,32 @@
   },
   "meta": {
     "levels": {
-      "survival": {
-        "name": "Survival"
+      "basics": {
+        "name": "Basics"
       },
-      "foundation": {
-        "name": "Foundation"
+      "iron": {
+        "name": "Iron"
       },
-      "elementary": {
-        "name": "Elementary"
+      "bronze": {
+        "name": "Bronze"
       },
-      "intermediate": {
-        "name": "Intermediate"
+      "silver": {
+        "name": "Silver"
       },
-      "advanced": {
-        "name": "Advanced"
+      "gold": {
+        "name": "Gold"
+      },
+      "platinum": {
+        "name": "Platinum"
+      },
+      "diamond": {
+        "name": "Diamond"
+      },
+      "mithril": {
+        "name": "Mithril"
+      },
+      "adamantite": {
+        "name": "Adamantite"
       },
       "specialized": {
         "name": "Specialized"
@@ -3557,26 +3569,14 @@
       "glue_words": {
         "name": "Putting It Together"
       },
-      "doing_things": {
-        "name": "Doing Things"
-      },
       "hands_on": {
         "name": "Hands On"
       },
       "laugh_and_cry": {
         "name": "Laugh & Cry"
       },
-      "shoulder_to_knee": {
-        "name": "Shoulder to Knee"
-      },
-      "brothers_and_sisters": {
-        "name": "Brothers & Sisters"
-      },
       "market_basket": {
         "name": "Market Basket"
-      },
-      "around_the_house": {
-        "name": "Around the House"
       },
       "rainbow": {
         "name": "Rainbow"
@@ -3595,9 +3595,6 @@
       },
       "how_things_are": {
         "name": "How Things Are"
-      },
-      "world_words": {
-        "name": "World Words"
       },
       "bags_packed": {
         "name": "Bags Packed"
@@ -3620,9 +3617,6 @@
       "home_sweet_home": {
         "name": "Home Sweet Home"
       },
-      "at_the_table": {
-        "name": "At the Table"
-      },
       "wild_side": {
         "name": "Wild Side"
       },
@@ -3638,12 +3632,6 @@
       "when_and_where": {
         "name": "When & Where"
       },
-      "going_places": {
-        "name": "Going Places"
-      },
-      "dating_scene": {
-        "name": "The Dating Scene"
-      },
       "sick_and_stuff": {
         "name": "Sick & Stuff"
       },
@@ -3656,17 +3644,8 @@
       "tying_loose_ends": {
         "name": "Tying Loose Ends"
       },
-      "three_word_moves": {
-        "name": "Three-Word Moves"
-      },
-      "bones_and_blood": {
-        "name": "Bones & Blood"
-      },
       "what_matters": {
         "name": "What Matters"
-      },
-      "shades_of_grey": {
-        "name": "Shades of Grey"
       },
       "words_and_stories": {
         "name": "Words & Stories"
@@ -3677,14 +3656,8 @@
       "however_therefore": {
         "name": "However & Therefore"
       },
-      "stuff_and_coins": {
-        "name": "Stuff & Coins"
-      },
       "after_dark": {
         "name": "After Dark"
-      },
-      "last_of_the_wild": {
-        "name": "Last of the Wild"
       },
       "medical_anatomy": {
         "name": "Medical & Anatomy"

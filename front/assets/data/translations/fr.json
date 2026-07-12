@@ -4011,20 +4011,32 @@
   },
   "meta": {
     "levels": {
-      "survival": {
-        "name": "Survie"
+      "basics": {
+        "name": "Basics"
       },
-      "foundation": {
-        "name": "Fondation"
+      "iron": {
+        "name": "Iron"
       },
-      "elementary": {
-        "name": "Élémentaire"
+      "bronze": {
+        "name": "Bronze"
       },
-      "intermediate": {
-        "name": "Intermédiaire"
+      "silver": {
+        "name": "Silver"
       },
-      "advanced": {
-        "name": "Avancé"
+      "gold": {
+        "name": "Gold"
+      },
+      "platinum": {
+        "name": "Platinum"
+      },
+      "diamond": {
+        "name": "Diamond"
+      },
+      "mithril": {
+        "name": "Mithril"
+      },
+      "adamantite": {
+        "name": "Adamantite"
       },
       "specialized": {
         "name": "Spécialisé"
@@ -4073,26 +4085,14 @@
       "glue_words": {
         "name": "Mots de liaison"
       },
-      "doing_things": {
-        "name": "Faire des choses"
-      },
       "hands_on": {
         "name": "Mettre la main à la pâte"
       },
       "laugh_and_cry": {
         "name": "Rire et pleurer"
       },
-      "shoulder_to_knee": {
-        "name": "De l'épaule au genou"
-      },
-      "brothers_and_sisters": {
-        "name": "Frères et sœurs"
-      },
       "market_basket": {
         "name": "Panier du marché"
-      },
-      "around_the_house": {
-        "name": "Autour de la maison"
       },
       "rainbow": {
         "name": "Arc-en-ciel"
@@ -4111,9 +4111,6 @@
       },
       "how_things_are": {
         "name": "Comment sont les choses"
-      },
-      "world_words": {
-        "name": "Mots du monde"
       },
       "bags_packed": {
         "name": "Valises prêtes"
@@ -4136,9 +4133,6 @@
       "home_sweet_home": {
         "name": "Chez soi"
       },
-      "at_the_table": {
-        "name": "À table"
-      },
       "wild_side": {
         "name": "Côté sauvage"
       },
@@ -4154,12 +4148,6 @@
       "when_and_where": {
         "name": "Quand et où"
       },
-      "going_places": {
-        "name": "En route"
-      },
-      "dating_scene": {
-        "name": "La scène amoureuse"
-      },
       "sick_and_stuff": {
         "name": "Maladies et compagnie"
       },
@@ -4172,17 +4160,8 @@
       "tying_loose_ends": {
         "name": "Nouer les fils"
       },
-      "three_word_moves": {
-        "name": "Expressions à trois mots"
-      },
-      "bones_and_blood": {
-        "name": "Os et sang"
-      },
       "what_matters": {
         "name": "Ce qui compte"
-      },
-      "shades_of_grey": {
-        "name": "Nuances de gris"
       },
       "words_and_stories": {
         "name": "Mots et histoires"
@@ -4193,14 +4172,8 @@
       "however_therefore": {
         "name": "Cependant et donc"
       },
-      "stuff_and_coins": {
-        "name": "Affaires et monnaie"
-      },
       "after_dark": {
         "name": "Après la tombée de la nuit"
-      },
-      "last_of_the_wild": {
-        "name": "Les derniers sauvages"
       },
       "medical_anatomy": {
         "name": "Médecine et anatomie"

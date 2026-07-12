@@ -4329,20 +4329,32 @@
   },
   "meta": {
     "levels": {
-      "survival": {
-        "name": "Выживание"
+      "basics": {
+        "name": "Basics"
       },
-      "foundation": {
-        "name": "Основы"
+      "iron": {
+        "name": "Iron"
       },
-      "elementary": {
-        "name": "Начальный"
+      "bronze": {
+        "name": "Bronze"
       },
-      "intermediate": {
-        "name": "Средний"
+      "silver": {
+        "name": "Silver"
       },
-      "advanced": {
-        "name": "Продвинутый"
+      "gold": {
+        "name": "Gold"
+      },
+      "platinum": {
+        "name": "Platinum"
+      },
+      "diamond": {
+        "name": "Diamond"
+      },
+      "mithril": {
+        "name": "Mithril"
+      },
+      "adamantite": {
+        "name": "Adamantite"
       },
       "specialized": {
         "name": "Специализированный"
@@ -4391,26 +4403,14 @@
       "glue_words": {
         "name": "Слова-связки"
       },
-      "doing_things": {
-        "name": "Делаем дела"
-      },
       "hands_on": {
         "name": "Своими руками"
       },
       "laugh_and_cry": {
         "name": "Смех и слёзы"
       },
-      "shoulder_to_knee": {
-        "name": "От плеча до колена"
-      },
-      "brothers_and_sisters": {
-        "name": "Братья и сёстры"
-      },
       "market_basket": {
         "name": "Корзина с рынка"
-      },
-      "around_the_house": {
-        "name": "По дому"
       },
       "rainbow": {
         "name": "Радуга"
@@ -4429,9 +4429,6 @@
       },
       "how_things_are": {
         "name": "Какие вещи бывают"
-      },
-      "world_words": {
-        "name": "Слова о мире"
       },
       "bags_packed": {
         "name": "Чемоданы собраны"
@@ -4454,9 +4451,6 @@
       "home_sweet_home": {
         "name": "Дом, милый дом"
       },
-      "at_the_table": {
-        "name": "За столом"
-      },
       "wild_side": {
         "name": "Дикая сторона"
       },
@@ -4472,12 +4466,6 @@
       "when_and_where": {
         "name": "Когда и где"
       },
-      "going_places": {
-        "name": "В путь"
-      },
-      "dating_scene": {
-        "name": "Свидания"
-      },
       "sick_and_stuff": {
         "name": "Болезни и всякое"
       },
@@ -4490,17 +4478,8 @@
       "tying_loose_ends": {
         "name": "Связываем концы"
       },
-      "three_word_moves": {
-        "name": "Фразовые обороты"
-      },
-      "bones_and_blood": {
-        "name": "Кости и кровь"
-      },
       "what_matters": {
         "name": "Что важно"
-      },
-      "shades_of_grey": {
-        "name": "Оттенки серого"
       },
       "words_and_stories": {
         "name": "Слова и истории"
@@ -4511,14 +4490,8 @@
       "however_therefore": {
         "name": "Однако и поэтому"
       },
-      "stuff_and_coins": {
-        "name": "Вещи и монеты"
-      },
       "after_dark": {
         "name": "После заката"
-      },
-      "last_of_the_wild": {
-        "name": "Последние из диких"
       },
       "medical_anatomy": {
         "name": "Медицина и анатомия"

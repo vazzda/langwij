@@ -14,8 +14,10 @@ body {
 /* ── Header ── */
 
 #app-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -24,6 +26,10 @@ body {
   background: #fff;
   border-bottom: 1px solid #ddd;
   gap: 16px;
+}
+
+main {
+  padding-top: 44px;
 }
 
 .header-left {
@@ -192,6 +198,12 @@ body {
 
 /* ── Level columns ── */
 
+.level-rows-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .level-columns-container {
   display: flex;
   gap: 8px;
@@ -255,6 +267,19 @@ body {
 .level-body.expanded {
   display: block;
   border-top: 1px solid #eee;
+}
+
+.level-section.columned {
+  width: auto;
+  min-width: auto;
+}
+
+.level-section.columned .level-body.expanded {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  grid-auto-columns: 256px;
+  column-gap: 26px;
 }
 
 /* ── Decks ── */
@@ -374,10 +399,15 @@ body {
   color: #333;
 }
 
+.term-coca {
+  font-size: 10px;
+  color: #333;
+  margin-left: auto;
+}
+
 .term-pos {
   font-size: 10px;
   color: #aaa;
-  margin-left: auto;
 }
 
 .term-badge {
