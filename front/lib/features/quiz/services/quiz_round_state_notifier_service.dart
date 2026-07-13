@@ -224,7 +224,7 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
     final rest = state!.queue.skip(1).toList();
     final entry = MissedEntry(card: card, userTypedAnswer: userTypedAnswer);
     state = state!.copyWith(
-      queue: [...rest, card],
+      queue: state!.isTest ? rest : [...rest, card],
       wrongCount: state!.wrongCount + 1,
       attemptedCardIds: {...state!.attemptedCardIds, cardId},
       missedEntries: [...state!.missedEntries, entry],

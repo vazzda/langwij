@@ -29,17 +29,21 @@ class _RoundPageState extends ConsumerState<RoundPage> {
   final _random = Random();
   bool _hasFinalized = false;
 
-  String? _wrongFeedback;
-  String? _wrongFeedbackDisplay;
-  String? _wrongUserTypedAnswer;
-  String? _wrongUserAnswerDisplay;
+  ({
+    bool isCorrect,
+    String correctAnswer,
+    String? correctAnswerDisplay,
+    String? userTypedAnswer,
+    String? userAnswerDisplay,
+    ({String typed, String correct, bool ok})? pairImperfective,
+    ({String typed, String correct, bool ok})? pairPerfective,
+  })? _answerFeedback;
 
-  ({String typed, String correct, bool ok})? _pairImperfective;
-  ({String typed, String correct, bool ok})? _pairPerfective;
-
-  final _correctLabelNotifier = ValueNotifier<({int seq, int col})>((
+  final _answerFeedbackPopupNotifier =
+      ValueNotifier<({int seq, int col, bool isCorrect})>((
     seq: 0,
     col: -1,
+    isCorrect: true,
   ));
 
   @override
@@ -47,7 +51,7 @@ class _RoundPageState extends ConsumerState<RoundPage> {
     _writeController.dispose();
     _writeController2.dispose();
     _writeFocusNode.dispose();
-    _correctLabelNotifier.dispose();
+    _answerFeedbackPopupNotifier.dispose();
     super.dispose();
   }
 
@@ -108,9 +112,6 @@ class _RoundPageState extends ConsumerState<RoundPage> {
         round.allCards ??
         (round.roundType == RoundType.agreement ? round.queue : group!.cards);
     final promptText = _buildPromptText(card, round.mode, l10n);
-    final correctAnswer = round.mode == QuizMode.targetShown
-        ? card.nativeText
-        : card.targetAnswer;
 
     return FlesselScaffold(
       title: title,
@@ -176,12 +177,11 @@ class _RoundPageState extends ConsumerState<RoundPage> {
             Stack(
               clipBehavior: Clip.none,
               children: [
-                _CorrectLabel(notifier: _correctLabelNotifier),
+                _AnswerFeedbackPopup(notifier: _answerFeedbackPopupNotifier),
                 _buildInteractiveSection(
                   context,
                   round,
                   card,
-                  correctAnswer,
                   allCardsForOptions,
                   ref,
                   l10n,
@@ -199,73 +199,82 @@ class _RoundPageState extends ConsumerState<RoundPage> {
     BuildContext context,
     RoundState round,
     CardModel card,
-    String correctAnswer,
     List<CardModel> allCardsForOptions,
     WidgetRef ref,
     AppLocalizations l10n,
     FlesselThemeData t,
   ) {
-    if (_wrongFeedback != null) {
+    if (_answerFeedback != null) {
+      final feedback = _answerFeedback!;
+      final feedbackColor =
+          feedback.isCorrect ? t.accentColor : t.dangerColor;
+      final feedbackTitle =
+          feedback.isCorrect ? l10n.correct : l10n.wrong;
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (_pairImperfective != null && _pairPerfective != null) ...[
+          if (feedback.pairImperfective != null &&
+              feedback.pairPerfective != null) ...[
             Text(
-              _pairImperfective!.ok ? l10n.correct : l10n.wrong,
+              feedback.pairImperfective!.ok ? l10n.correct : l10n.wrong,
               style: FlesselFonts.contentXxxlAccent.copyWith(
-                color: _pairImperfective!.ok ? t.accentColor : t.dangerColor,
+                color: feedback.pairImperfective!.ok
+                    ? t.accentColor
+                    : t.dangerColor,
               ),
             ),
             const FlesselGap.s(),
             Text(
-              '${l10n.quiz_aspectImperfective} ${_pairImperfective!.typed.isEmpty ? l10n.emptyAnswer : _pairImperfective!.typed}',
+              '${l10n.quiz_aspectImperfective} ${feedback.pairImperfective!.typed.isEmpty ? l10n.emptyAnswer : feedback.pairImperfective!.typed}',
               style: FlesselFonts.contentL.copyWith(
-                color: _pairImperfective!.ok ? t.fg : t.dangerColor,
+                color: feedback.pairImperfective!.ok ? t.fg : t.dangerColor,
               ),
             ),
-            if (!_pairImperfective!.ok) ...[
+            if (!feedback.pairImperfective!.ok) ...[
               const FlesselGap.xs(),
               Text(
-                '${l10n.correctAnswerLabel} ${_pairImperfective!.correct}',
+                '${l10n.correctAnswerLabel} ${feedback.pairImperfective!.correct}',
                 style: FlesselFonts.contentL.copyWith(color: t.fg),
               ),
             ],
             const FlesselGap.l(),
             Text(
-              _pairPerfective!.ok ? l10n.correct : l10n.wrong,
+              feedback.pairPerfective!.ok ? l10n.correct : l10n.wrong,
               style: FlesselFonts.contentXxxlAccent.copyWith(
-                color: _pairPerfective!.ok ? t.accentColor : t.dangerColor,
+                color: feedback.pairPerfective!.ok
+                    ? t.accentColor
+                    : t.dangerColor,
               ),
             ),
             const FlesselGap.s(),
             Text(
-              '${l10n.quiz_aspectPerfective} ${_pairPerfective!.typed.isEmpty ? l10n.emptyAnswer : _pairPerfective!.typed}',
+              '${l10n.quiz_aspectPerfective} ${feedback.pairPerfective!.typed.isEmpty ? l10n.emptyAnswer : feedback.pairPerfective!.typed}',
               style: FlesselFonts.contentL.copyWith(
-                color: _pairPerfective!.ok ? t.fg : t.dangerColor,
+                color: feedback.pairPerfective!.ok ? t.fg : t.dangerColor,
               ),
             ),
-            if (!_pairPerfective!.ok) ...[
+            if (!feedback.pairPerfective!.ok) ...[
               const FlesselGap.xs(),
               Text(
-                '${l10n.correctAnswerLabel} ${_pairPerfective!.correct}',
+                '${l10n.correctAnswerLabel} ${feedback.pairPerfective!.correct}',
                 style: FlesselFonts.contentL.copyWith(color: t.fg),
               ),
             ],
           ] else ...[
             Text(
-              l10n.wrong,
+              feedbackTitle,
               style: FlesselFonts.contentXxxlAccent.copyWith(
-                color: t.dangerColor,
+                color: feedbackColor,
               ),
             ),
             const FlesselGap.s(),
             Text(
-              '${round.mode == QuizMode.write ? l10n.youWrote : l10n.youPicked} ${(_wrongUserAnswerDisplay ?? '').isEmpty ? l10n.emptyAnswer : _wrongUserAnswerDisplay}',
+              '${round.mode == QuizMode.write ? l10n.youWrote : l10n.youPicked} ${(feedback.userAnswerDisplay ?? '').isEmpty ? l10n.emptyAnswer : feedback.userAnswerDisplay}',
               style: FlesselFonts.contentL.copyWith(color: t.fg),
             ),
             const FlesselGap.s(),
             Text(
-              '${l10n.correctAnswerLabel} ${_wrongFeedbackDisplay ?? _wrongFeedback}',
+              '${l10n.correctAnswerLabel} ${feedback.correctAnswerDisplay ?? feedback.correctAnswer}',
               style: FlesselFonts.contentL.copyWith(color: t.fg),
             ),
           ],
@@ -273,7 +282,7 @@ class _RoundPageState extends ConsumerState<RoundPage> {
           FlesselButton(
             variant: FlesselVariant.accent,
             label: l10n.next,
-            onPressed: () => _onNextAfterWrong(ref),
+            onPressed: () => _onNextAfterFeedback(ref),
           ),
         ],
       );
@@ -305,7 +314,7 @@ class _RoundPageState extends ConsumerState<RoundPage> {
             const FlesselGap.s(),
             FlesselTextInput(
               controller: _writeController2,
-              onSubmitted: (_) => _submitWritePair(context, ref),
+              onSubmitted: (_) => _submitWritePair(ref),
               textInputAction: TextInputAction.done,
               autocorrect: false,
               enableSuggestions: false,
@@ -314,7 +323,7 @@ class _RoundPageState extends ConsumerState<RoundPage> {
             FlesselButton(
               variant: FlesselVariant.accent,
               label: l10n.submit,
-              onPressed: () => _submitWritePair(context, ref),
+              onPressed: () => _submitWritePair(ref),
             ),
           ],
         );
@@ -347,20 +356,18 @@ class _RoundPageState extends ConsumerState<RoundPage> {
     }
 
     return _buildOptionsTileGrid(
-      context,
       round.mode,
       card,
-      correctAnswer,
       allCardsForOptions,
-      ref,
       l10n,
     );
   }
 
-  void _fireCorrectLabel({int col = -1}) {
-    _correctLabelNotifier.value = (
-      seq: _correctLabelNotifier.value.seq + 1,
+  void _fireAnswerFeedbackPopup({required bool isCorrect, int col = -1}) {
+    _answerFeedbackPopupNotifier.value = (
+      seq: _answerFeedbackPopupNotifier.value.seq + 1,
       col: col,
+      isCorrect: isCorrect,
     );
   }
 
@@ -413,17 +420,57 @@ class _RoundPageState extends ConsumerState<RoundPage> {
     );
   }
 
-  void _onNextAfterWrong(WidgetRef ref) {
-    ref
-        .read(QuizService.round.notifier)
-        .answerWrong(userTypedAnswer: _wrongUserTypedAnswer);
+  void _handleTestModeAnswer(
+    WidgetRef ref, {
+    required bool isCorrect,
+    String? userTypedAnswer,
+  }) {
+    _fireAnswerFeedbackPopup(isCorrect: isCorrect);
+    if (isCorrect) {
+      ref.read(QuizService.round.notifier).answerCorrect();
+    } else {
+      ref
+          .read(QuizService.round.notifier)
+          .answerWrong(userTypedAnswer: userTypedAnswer);
+    }
+    _writeController.clear();
+    _writeController2.clear();
+    _requestWriteFocus();
+  }
+
+  void _showAnswerFeedbackDetail({
+    required bool isCorrect,
+    required String correctAnswer,
+    String? correctAnswerDisplay,
+    String? userTypedAnswer,
+    String? userAnswerDisplay,
+    ({String typed, String correct, bool ok})? pairImperfective,
+    ({String typed, String correct, bool ok})? pairPerfective,
+  }) {
     setState(() {
-      _wrongFeedback = null;
-      _wrongFeedbackDisplay = null;
-      _wrongUserTypedAnswer = null;
-      _wrongUserAnswerDisplay = null;
-      _pairImperfective = null;
-      _pairPerfective = null;
+      _answerFeedback = (
+        isCorrect: isCorrect,
+        correctAnswer: correctAnswer,
+        correctAnswerDisplay: correctAnswerDisplay,
+        userTypedAnswer: userTypedAnswer,
+        userAnswerDisplay: userAnswerDisplay,
+        pairImperfective: pairImperfective,
+        pairPerfective: pairPerfective,
+      );
+    });
+  }
+
+  void _onNextAfterFeedback(WidgetRef ref) {
+    final feedback = _answerFeedback!;
+    if (feedback.isCorrect) {
+      ref.read(QuizService.round.notifier).answerCorrect();
+    } else {
+      ref
+          .read(QuizService.round.notifier)
+          .answerWrong(userTypedAnswer: feedback.userTypedAnswer);
+    }
+    setState(() {
+      _answerFeedback = null;
     });
     _writeController.clear();
     _writeController2.clear();
@@ -449,7 +496,7 @@ class _RoundPageState extends ConsumerState<RoundPage> {
     return mode == QuizMode.targetShown ? card.targetText : card.nativeText;
   }
 
-  void _submitWritePair(BuildContext context, WidgetRef ref) {
+  void _submitWritePair(WidgetRef ref) {
     final round = ref.read(QuizService.round);
     if (round == null || round.currentCard == null) return;
     final card = round.currentCard! as PairVocabCard;
@@ -462,36 +509,37 @@ class _RoundPageState extends ConsumerState<RoundPage> {
     final ok2 =
         normalizeForComparison(raw2) ==
         normalizeForComparison(card.perfectiveText);
+    final isCorrect = ok1 && ok2;
 
-    if (ok1 && ok2) {
-      _fireCorrectLabel();
-      ref.read(QuizService.round.notifier).answerCorrect();
-      _requestWriteFocus();
-    } else {
-      setState(() {
-        _wrongFeedback = card.targetAnswer;
-        _wrongFeedbackDisplay = null;
-        _wrongUserTypedAnswer = '$raw1 / $raw2';
-        _wrongUserAnswerDisplay = null;
-        _pairImperfective = (
-          typed: raw1,
-          correct: card.imperfectiveText,
-          ok: ok1,
-        );
-        _pairPerfective = (typed: raw2, correct: card.perfectiveText, ok: ok2);
-      });
+    if (round.isTest) {
+      _handleTestModeAnswer(
+        ref,
+        isCorrect: isCorrect,
+        userTypedAnswer: isCorrect ? null : '$raw1 / $raw2',
+      );
+      return;
     }
+
+    _showAnswerFeedbackDetail(
+      isCorrect: isCorrect,
+      correctAnswer: card.targetAnswer,
+      userTypedAnswer: '$raw1 / $raw2',
+      userAnswerDisplay: '$raw1 / $raw2',
+      pairImperfective: isCorrect
+          ? null
+          : (typed: raw1, correct: card.imperfectiveText, ok: ok1),
+      pairPerfective: isCorrect
+          ? null
+          : (typed: raw2, correct: card.perfectiveText, ok: ok2),
+    );
     _writeController.clear();
     _writeController2.clear();
   }
 
   Widget _buildOptionsTileGrid(
-    BuildContext context,
     QuizMode mode,
     CardModel correctCard,
-    String correctAnswer,
     List<CardModel> allCards,
-    WidgetRef ref,
     AppLocalizations l10n,
   ) {
     final List<Widget> tiles;
@@ -506,13 +554,10 @@ class _RoundPageState extends ConsumerState<RoundPage> {
             (e) => LangwijAnswerTile(
               label: displayNativeForCard(e.$2, l10n),
               onTap: () => _onOptionSelectedSerbianShown(
-                context,
-                ref,
                 correctCard,
                 e.$2,
                 allCards,
                 l10n,
-                col: e.$1 % 2,
               ),
             ),
           )
@@ -520,7 +565,7 @@ class _RoundPageState extends ConsumerState<RoundPage> {
     } else {
       final options = buildMultipleChoiceOptions(
         mode: mode,
-        correctAnswer: correctAnswer,
+        correctAnswer: correctCard.targetAnswer,
         allCards: allCards,
         random: _random,
       );
@@ -529,13 +574,10 @@ class _RoundPageState extends ConsumerState<RoundPage> {
             (e) => LangwijAnswerTile(
               label: e.$2,
               onTap: () => _onOptionSelectedEnglishShown(
-                context,
-                ref,
                 correctCard,
                 e.$2,
                 allCards,
                 l10n,
-                col: e.$1 % 2,
               ),
             ),
           )
@@ -554,57 +596,43 @@ class _RoundPageState extends ConsumerState<RoundPage> {
   }
 
   void _onOptionSelectedSerbianShown(
-    BuildContext context,
-    WidgetRef ref,
     CardModel correctCard,
     CardModel chosenCard,
     List<CardModel> allCards,
-    AppLocalizations l10n, {
-    required int col,
-  }) {
+    AppLocalizations l10n,
+  ) {
     final validAnswers = validAnswersForPrompt(
       currentCard: correctCard,
       mode: QuizMode.targetShown,
       allCards: allCards,
     );
-    if (validAnswers.contains(chosenCard.nativeText)) {
-      _fireCorrectLabel(col: col);
-      ref.read(QuizService.round.notifier).answerCorrect();
-    } else {
-      setState(() {
-        _wrongFeedback = correctCard.nativeText;
-        _wrongFeedbackDisplay = displayNativeForCard(correctCard, l10n);
-        _wrongUserTypedAnswer = null;
-        _wrongUserAnswerDisplay = displayNativeForCard(chosenCard, l10n);
-      });
-    }
+    final isCorrect = validAnswers.contains(chosenCard.nativeText);
+    _showAnswerFeedbackDetail(
+      isCorrect: isCorrect,
+      correctAnswer: correctCard.nativeText,
+      correctAnswerDisplay: displayNativeForCard(correctCard, l10n),
+      userAnswerDisplay: displayNativeForCard(chosenCard, l10n),
+    );
   }
 
   void _onOptionSelectedEnglishShown(
-    BuildContext context,
-    WidgetRef ref,
     CardModel correctCard,
     String chosen,
     List<CardModel> allCards,
-    AppLocalizations l10n, {
-    required int col,
-  }) {
+    AppLocalizations l10n,
+  ) {
     final validAnswers = validAnswersForPrompt(
       currentCard: correctCard,
       mode: QuizMode.nativeShown,
       allCards: allCards,
     );
-    if (validAnswers.contains(chosen)) {
-      _fireCorrectLabel(col: col);
-      ref.read(QuizService.round.notifier).answerCorrect();
-    } else {
-      setState(() {
-        _wrongFeedback = correctCard.targetAnswer;
-        _wrongFeedbackDisplay = correctCard.targetAnswer;
-        _wrongUserTypedAnswer = null;
-        _wrongUserAnswerDisplay = chosen;
-      });
-    }
+    final isCorrect = validAnswers.contains(chosen);
+    _showAnswerFeedbackDetail(
+      isCorrect: isCorrect,
+      correctAnswer: correctCard.targetAnswer,
+      correctAnswerDisplay: correctCard.targetAnswer,
+      userAnswerDisplay: chosen,
+    );
   }
 
   void _submitWrite(BuildContext context, WidgetRef ref) {
@@ -624,60 +652,69 @@ class _RoundPageState extends ConsumerState<RoundPage> {
     );
     final isCorrect = validAnswers
         .any((a) => normalizeForComparison(a) == normalized);
-    if (isCorrect) {
-      _fireCorrectLabel();
-      ref.read(QuizService.round.notifier).answerCorrect();
-      _requestWriteFocus();
-    } else {
-      final l10n = AppLocalizations.of(context)!;
-      final display = round.mode == QuizMode.targetShown
-          ? displayNativeForCard(card, l10n)
-          : correctAnswer;
-      setState(() {
-        _wrongFeedback = correctAnswer;
-        _wrongFeedbackDisplay = display;
-        _wrongUserTypedAnswer = raw;
-        _wrongUserAnswerDisplay = raw;
-      });
+
+    if (round.isTest) {
+      _handleTestModeAnswer(
+        ref,
+        isCorrect: isCorrect,
+        userTypedAnswer: isCorrect ? null : raw,
+      );
+      return;
     }
+
+    final l10n = AppLocalizations.of(context)!;
+    final display = round.mode == QuizMode.targetShown
+        ? displayNativeForCard(card, l10n)
+        : correctAnswer;
+    _showAnswerFeedbackDetail(
+      isCorrect: isCorrect,
+      correctAnswer: correctAnswer,
+      correctAnswerDisplay: display,
+      userTypedAnswer: raw,
+      userAnswerDisplay: raw,
+    );
     _writeController.clear();
   }
 }
 
-const _correctLabelEnterMs = 100;
-const _correctLabelHoldMs = 250;
-const _correctLabelExitMs = 100;
-const _correctLabelDuration = Duration(
+const _answerFeedbackPopupEnterMs = 100;
+const _answerFeedbackPopupHoldMs = 250;
+const _answerFeedbackPopupExitMs = 100;
+const _answerFeedbackPopupDuration = Duration(
   milliseconds:
-      _correctLabelEnterMs + _correctLabelHoldMs + _correctLabelExitMs,
+      _answerFeedbackPopupEnterMs +
+      _answerFeedbackPopupHoldMs +
+      _answerFeedbackPopupExitMs,
 );
 
-class _CorrectLabel extends StatefulWidget {
-  const _CorrectLabel({required this.notifier});
+class _AnswerFeedbackPopup extends StatefulWidget {
+  const _AnswerFeedbackPopup({required this.notifier});
 
-  final ValueNotifier<({int seq, int col})> notifier;
+  final ValueNotifier<({int seq, int col, bool isCorrect})> notifier;
 
   @override
-  State<_CorrectLabel> createState() => _CorrectLabelState();
+  State<_AnswerFeedbackPopup> createState() => _AnswerFeedbackPopupState();
 }
 
-class _CorrectLabelState extends State<_CorrectLabel>
+class _AnswerFeedbackPopupState extends State<_AnswerFeedbackPopup>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
   int _col = -1;
+  bool _isCorrect = true;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: _correctLabelDuration,
+      duration: _answerFeedbackPopupDuration,
     );
     widget.notifier.addListener(_onEvent);
   }
 
   void _onEvent() {
     _col = widget.notifier.value.col;
+    _isCorrect = widget.notifier.value.isCorrect;
     _controller.forward(from: 0.0);
   }
 
@@ -706,12 +743,13 @@ class _CorrectLabelState extends State<_CorrectLabel>
             }
 
             const totalMs =
-                _correctLabelEnterMs +
-                _correctLabelHoldMs +
-                _correctLabelExitMs;
-            const enterEnd = _correctLabelEnterMs / totalMs;
+                _answerFeedbackPopupEnterMs +
+                _answerFeedbackPopupHoldMs +
+                _answerFeedbackPopupExitMs;
+            const enterEnd = _answerFeedbackPopupEnterMs / totalMs;
             const holdEnd =
-                (_correctLabelEnterMs + _correctLabelHoldMs) / totalMs;
+                (_answerFeedbackPopupEnterMs + _answerFeedbackPopupHoldMs) /
+                totalMs;
 
             final v = _controller.value;
             final double opacity;
@@ -730,10 +768,12 @@ class _CorrectLabelState extends State<_CorrectLabel>
               offsetY = -10.0 - (40.0 * p);
             }
 
+            final labelText = _isCorrect ? l10n.correct : l10n.wrong;
+            final labelColor = _isCorrect ? t.accentColor : t.dangerColor;
             final label = Text(
-              l10n.correct.toUpperCase(),
+              labelText.toUpperCase(),
               style: FlesselFonts.contentXxxlAccent.copyWith(
-                color: t.accentColor,
+                color: labelColor,
               ),
             );
 
