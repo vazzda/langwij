@@ -306,5 +306,20 @@
   "settings_contentDeleted": "Content deleted",
 
   "language_aiDictionaryWarning": "AI-generated dictionary. May contain errors. Human review in progress — use at your own risk.",
-  "language_pairUnavailable": "This language pair is not available yet."
+  "language_pairUnavailable": "This language pair is not available yet.",
+
+  "termCard_gender": "Gender: {gender}",
+  "@termCard_gender": {
+    "placeholders": {
+      "gender": { "type": "String" }
+    }
+  },
+  "termCard_phoneticPlaceholder": "/…/",
+  "termCard_example": "Example:",
+  "termCard_cocaRank": "COCA rank: {rank}",
+  "@termCard_cocaRank": {
+    "placeholders": {
+      "rank": { "type": "int" }
+    }
+  }
 }

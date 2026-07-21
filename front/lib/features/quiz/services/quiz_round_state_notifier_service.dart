@@ -44,6 +44,7 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
     required QuizMode mode,
     required int questionCount,
     required String originRoute,
+    required Map<String, Term> terms,
     double originScrollOffset = 0.0,
     bool isTest = false,
   }) {
@@ -52,6 +53,7 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
       deck: deck,
       targetPack: targetPack,
       nativePack: nativePack,
+      terms: terms,
     );
     if (allCards.isEmpty) return;
 
@@ -88,6 +90,7 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
     required String levelId,
     required String levelName,
     required String originRoute,
+    required Map<String, Term> terms,
     double originScrollOffset = 0.0,
   }) {
     if (deckPool.isEmpty) return;
@@ -100,6 +103,7 @@ class QuizRoundStateNotifierService extends Notifier<RoundState?> {
         deck: entry.deck,
         targetPack: targetPack,
         nativePack: nativePack,
+        terms: terms,
       );
       deckCards[entry.deck.id] = cards;
       deckTermCounts[entry.deck.id] = entry.deck.termIds.length;

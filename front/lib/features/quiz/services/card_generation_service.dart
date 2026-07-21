@@ -6,6 +6,7 @@ class CardGenerationService {
     required VocabDeckModel deck,
     required LanguagePack targetPack,
     required LanguagePack nativePack,
+    required Map<String, Term> terms,
   }) {
     final cards = <VocabCard>[];
 
@@ -16,6 +17,9 @@ class CardGenerationService {
 
       final nativeText = _nativeText(nativeEntry);
       final nativeNote = nativeEntry.note;
+      final term = terms[termId];
+      final pos = term?.pos ?? '';
+      final coca = term?.coca;
 
       switch (targetEntry) {
         case AspectPairEntry(
@@ -26,28 +30,37 @@ class CardGenerationService {
           cards.add(PairVocabCard(
             termId: termId,
             nativeText: nativeText,
+            pos: pos,
+            coca: coca,
             imperfectiveText: imperfective,
             perfectiveText: perfective,
             nativeNote: nativeNote,
             targetNote: note,
           ));
 
-        case SimpleEntry(:final text, :final note):
+        case SimpleEntry(:final text, :final note, :final gender):
           cards.add(SimpleVocabCard(
             termId: termId,
             nativeText: nativeText,
+            pos: pos,
+            coca: coca,
             targetText: text,
             nativeNote: nativeNote,
             targetNote: note,
+            gender: gender,
           ));
 
-        case AdjectiveEntry(:final m, :final note):
+        case AdjectiveEntry(:final m, :final note, :final f, :final n):
           cards.add(SimpleVocabCard(
             termId: termId,
             nativeText: nativeText,
+            pos: pos,
+            coca: coca,
             targetText: m,
             nativeNote: nativeNote,
             targetNote: note,
+            feminineForm: f,
+            neuterForm: n,
           ));
       }
     }

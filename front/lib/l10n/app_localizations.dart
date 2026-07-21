@@ -993,6 +993,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This language pair is not available yet.'**
   String get language_pairUnavailable;
+
+  /// No description provided for @termCard_gender.
+  ///
+  /// In en, this message translates to:
+  /// **'Gender: {gender}'**
+  String termCard_gender(String gender);
+
+  /// No description provided for @termCard_phoneticPlaceholder.
+  ///
+  /// In en, this message translates to:
+  /// **'/…/'**
+  String get termCard_phoneticPlaceholder;
+
+  /// No description provided for @termCard_example.
+  ///
+  /// In en, this message translates to:
+  /// **'Example:'**
+  String get termCard_example;
+
+  /// No description provided for @termCard_cocaRank.
+  ///
+  /// In en, this message translates to:
+  /// **'COCA rank: {rank}'**
+  String termCard_cocaRank(int rank);
 }
 
 class _AppLocalizationsDelegate

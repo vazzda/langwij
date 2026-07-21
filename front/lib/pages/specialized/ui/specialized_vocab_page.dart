@@ -309,6 +309,7 @@ class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
           originRoute: AppRoutes.specialized,
           originScrollOffset: scrollOffset,
           isTest: selection.isTest,
+          terms: dictionary.terms,
         );
     if (context.mounted) context.go(AppRoutes.round);
   }

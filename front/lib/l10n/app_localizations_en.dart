@@ -511,4 +511,20 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get language_pairUnavailable =>
       'This language pair is not available yet.';
+
+  @override
+  String termCard_gender(String gender) {
+    return 'Gender: $gender';
+  }
+
+  @override
+  String get termCard_phoneticPlaceholder => '/…/';
+
+  @override
+  String get termCard_example => 'Example:';
+
+  @override
+  String termCard_cocaRank(int rank) {
+    return 'COCA rank: $rank';
+  }
 }

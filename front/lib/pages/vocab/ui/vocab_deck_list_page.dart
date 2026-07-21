@@ -355,6 +355,7 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       levelName: levelName,
       originRoute: originRoute,
       originScrollOffset: scrollOffset,
+      terms: dictionary.terms,
     );
     if (context.mounted) context.go(AppRoutes.round);
   }
@@ -412,6 +413,7 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
           originRoute: AppRoutes.home,
           originScrollOffset: scrollOffset,
           isTest: selection.isTest,
+          terms: dictionary.terms,
         );
     if (context.mounted) context.go(AppRoutes.round);
   }
