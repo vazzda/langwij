@@ -314,12 +314,13 @@
       "gender": { "type": "String" }
     }
   },
-  "termCard_phoneticPlaceholder": "/…/",
   "termCard_example": "Example:",
   "termCard_cocaRank": "COCA rank: {rank}",
   "@termCard_cocaRank": {
     "placeholders": {
       "rank": { "type": "int" }
     }
-  }
+  },
+  "termCard_soundSemantics": "Pronounce",
+  "termCard_soundFailed": "Pronunciation unavailable"
 }

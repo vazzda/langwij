@@ -1000,12 +1000,6 @@ abstract class AppLocalizations {
   /// **'Gender: {gender}'**
   String termCard_gender(String gender);
 
-  /// No description provided for @termCard_phoneticPlaceholder.
-  ///
-  /// In en, this message translates to:
-  /// **'/…/'**
-  String get termCard_phoneticPlaceholder;
-
   /// No description provided for @termCard_example.
   ///
   /// In en, this message translates to:
@@ -1017,6 +1011,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'COCA rank: {rank}'**
   String termCard_cocaRank(int rank);
+
+  /// No description provided for @termCard_soundSemantics.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronounce'**
+  String get termCard_soundSemantics;
+
+  /// No description provided for @termCard_soundFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation unavailable'**
+  String get termCard_soundFailed;
 }
 
 class _AppLocalizationsDelegate

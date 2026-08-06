@@ -21,6 +21,8 @@ sealed class VocabCard implements CardModel {
   final String? targetNote;
 
   String get wordId => termId;
+
+  String get speechText => targetText;
 }
 
 class SimpleVocabCard extends VocabCard {
@@ -67,4 +69,7 @@ class PairVocabCard extends VocabCard {
 
   @override
   String get targetAnswer => '$imperfectiveText / $perfectiveText';
+
+  @override
+  String get speechText => '$imperfectiveText, $perfectiveText';
 }

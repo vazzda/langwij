@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flessel/flessel.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:langwij/l10n/app_localizations.dart';
+import 'package:langwij/features/pronunciation/pronunciation.dart';
 import 'package:langwij/features/quiz/model/vocab_card.dart';
 
-class TermDetailCard extends StatelessWidget {
+class TermDetailCard extends ConsumerWidget {
   const TermDetailCard({super.key, required this.card});
 
   final VocabCard card;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final t = FlesselThemes.of(context);
     final l10n = AppLocalizations.of(context)!;
 
@@ -27,11 +29,13 @@ class TermDetailCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                l10n.termCard_phoneticPlaceholder,
-                style: FlesselFonts.contentBodyAccent.copyWith(
-                  color: t.fgSecondary,
-                  fontStyle: FontStyle.italic,
+              Semantics(
+                label: l10n.termCard_soundSemantics,
+                button: true,
+                child: FlesselButton(
+                  icon: PhosphorIcons.speakerHigh(),
+                  size: FlesselSize.s,
+                  onPressed: () => _pronounce(context, ref, l10n),
                 ),
               ),
               if (card.coca != null)
@@ -130,6 +134,19 @@ class TermDetailCard extends StatelessWidget {
         style: FlesselFonts.contentBodyAccent.copyWith(color: t.fgSecondary),
       ),
     ];
+  }
+
+  Future<void> _pronounce(
+    BuildContext context,
+    WidgetRef ref,
+    AppLocalizations l10n,
+  ) async {
+    final ok = await ref
+        .read(PronunciationService.instance)
+        .pronounce(card.speechText);
+    if (!ok && context.mounted) {
+      FlesselSnackBar.show(context, l10n.termCard_soundFailed);
+    }
   }
 
   String _capitalize(String text) {

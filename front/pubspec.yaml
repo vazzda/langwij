@@ -41,6 +41,8 @@ dependencies:
   shared_preferences: ^2.3.4
   country_flags: ^4.1.2
   phosphor_flutter: ^2.1.0
+  flutter_tts: ^4.2.0
+  url_launcher: ^6.3.1
   flessel:
     path: ../.vessel/packages/flessel
 

@@ -123,20 +123,21 @@ class _RoundPageState extends ConsumerState<RoundPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  l10n.correctCount(round.correctCount),
-                  style: FlesselFonts.displayM.copyWith(color: t.accentColor),
-                ),
-                Text(
-                  l10n.questionsLeft(round.queue.length),
-                  style: FlesselFonts.displayM.copyWith(color: t.fg),
-                ),
-              ],
+            FlesselCard(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    l10n.correctCount(round.correctCount),
+                    style: FlesselFonts.displayM.copyWith(color: t.accentColor),
+                  ),
+                  Text(
+                    l10n.questionsLeft(round.queue.length),
+                    style: FlesselFonts.displayM.copyWith(color: t.fg),
+                  ),
+                ],
+              ),
             ),
-            const FlesselGap.l(),
             _answerFeedback != null &&
                     _answerFeedback!.isCorrect &&
                     !round.isTest &&

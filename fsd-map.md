@@ -88,6 +88,14 @@ lib/
 │   │       ├── seed_loader_service.dart              SeedLoaderService (JSON → DB seed loading)
 │   │       └── dev_data_service.dart                 DevDataService (wipe + seed + revision orchestration)
 │   │
+│   ├── pronunciation/                             term audio + web lookup cascade
+│   │   ├── model/
+│   │   │   ├── pronunciation_config.dart            per-language speech locales + define queries
+│   │   │   └── pronunciation_route.dart             PronunciationRoute enum (voice → define → translate)
+│   │   ├── services/
+│   │   │   └── pronunciation_service.dart           PronunciationService (3-tier cascade owner)
+│   │   └── pronunciation.dart                       barrel
+│   │
 │   └── quiz/                                      quiz round lifecycle
 │       ├── model/
 │       │   ├── missed_entry.dart                    MissedEntry (card + user typed answer)

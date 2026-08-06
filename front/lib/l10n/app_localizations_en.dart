@@ -518,13 +518,16 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get termCard_phoneticPlaceholder => '/…/';
-
-  @override
   String get termCard_example => 'Example:';
 
   @override
   String termCard_cocaRank(int rank) {
     return 'COCA rank: $rank';
   }
+
+  @override
+  String get termCard_soundSemantics => 'Pronounce';
+
+  @override
+  String get termCard_soundFailed => 'Pronunciation unavailable';
 }
