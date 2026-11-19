@@ -1,21 +1,24 @@
 class AdminApplication {
+  static #browseFolderButtonLabel = 'Browse...';
+  static #reconnectFolderButtonLabel = 'Reconnect';
+  static #errorStatusMessagePrefix = 'Error: ';
+
   #dataStore;
   #structurePage;
   #translationsPage;
-  #activeTabName = 'structure';
   #browseButtonElement;
+  #deleteSavedFolderButtonElement;
   #saveButtonElement;
   #statusMessageElement;
-  #pathHintElement;
   #tabButtonElements;
 
   constructor() {
     this.#dataStore = new LanguageDataStore();
 
     this.#browseButtonElement = document.getElementById('pick-folder-btn');
+    this.#deleteSavedFolderButtonElement = document.getElementById('delete-saved-folder-btn');
     this.#saveButtonElement = document.getElementById('save-btn');
     this.#statusMessageElement = document.getElementById('status');
-    this.#pathHintElement = document.querySelector('.path-hint');
     this.#tabButtonElements = document.querySelectorAll('.tab');
 
     this.#structurePage = new StructureEditorPage(
@@ -28,37 +31,98 @@ class AdminApplication {
     );
 
     this.#browseButtonElement.addEventListener('click', () => this.#handleBrowseFolder());
+    this.#deleteSavedFolderButtonElement.addEventListener('click', () => this.#handleDeleteSavedFolder());
     this.#saveButtonElement.addEventListener('click', () => this.#handleSaveChanges());
     window.addEventListener('dirty-change', () => this.#updateSaveButtonState());
     window.addEventListener('beforeunload', (e) => {
       if (this.#dataStore.hasUnsavedChanges) e.preventDefault();
     });
 
-    this.#attemptHandleRestore();
+    this.#showBrowseButtonForNoSavedDirectory();
+    this.#refreshFolderButtonsFromSavedDirectoryState();
   }
 
-  async #attemptHandleRestore() {
-    try {
-      const hasSaved = await this.#dataStore.hasSavedDirectory();
-      if (hasSaved) this.#browseButtonElement.textContent = 'Reconnect';
-    } catch (_) {
-      // IndexedDB unavailable — keep default button text
+  async #refreshFolderButtonsFromSavedDirectoryState() {
+    const hasSavedDirectory = await this.#checkWhetherDirectoryIsSaved();
+    if (hasSavedDirectory) {
+      this.#showReconnectAndDeleteButtonsForSavedDirectory();
+    } else {
+      this.#showBrowseButtonForNoSavedDirectory();
     }
+  }
+
+  async #checkWhetherDirectoryIsSaved() {
+    try {
+      return await this.#dataStore.hasSavedDirectory();
+    } catch (_) {
+      // IndexedDB unavailable — no directory can be saved
+      return false;
+    }
+  }
+
+  #showBrowseButtonForNoSavedDirectory() {
+    this.#browseButtonElement.textContent = AdminApplication.#browseFolderButtonLabel;
+    this.#deleteSavedFolderButtonElement.hidden = true;
+  }
+
+  #showReconnectAndDeleteButtonsForSavedDirectory() {
+    this.#browseButtonElement.textContent = AdminApplication.#reconnectFolderButtonLabel;
+    this.#deleteSavedFolderButtonElement.hidden = false;
+  }
+
+  #hideFolderButtons() {
+    this.#browseButtonElement.hidden = true;
+    this.#deleteSavedFolderButtonElement.hidden = true;
   }
 
   async #handleBrowseFolder() {
     try {
-      const restored = await this.#dataStore.restoreDirectory();
-      if (!restored) await this.#dataStore.selectDirectory();
-      await this.#dataStore.loadAllDataFiles();
-      this.#browseButtonElement.hidden = true;
-      this.#enableTabButtons();
-      this.#switchToTab('structure');
+      await this.#connectDataFolderAndLoadFiles();
     } catch (err) {
-      if (err.name !== 'AbortError') {
-        this.#statusMessageElement.textContent = 'Error: ' + err.message;
-      }
+      await this.#reportFolderConnectFailure(err);
+      return;
     }
+    try {
+      this.#showEditorForLoadedDataFolder();
+    } catch (err) {
+      this.#showErrorStatusMessage(err);
+    }
+  }
+
+  async #connectDataFolderAndLoadFiles() {
+    const restored = await this.#dataStore.restoreDirectory();
+    if (!restored) await this.#dataStore.selectDirectory();
+    await this.#dataStore.loadAllDataFiles();
+  }
+
+  async #reportFolderConnectFailure(error) {
+    if (error.name !== 'AbortError') this.#showErrorStatusMessage(error);
+    await this.#refreshFolderButtonsFromSavedDirectoryState();
+  }
+
+  #showEditorForLoadedDataFolder() {
+    this.#clearStatusMessage();
+    this.#hideFolderButtons();
+    this.#enableTabButtons();
+    this.#switchToTab('structure');
+  }
+
+  async #handleDeleteSavedFolder() {
+    try {
+      await this.#dataStore.deleteSavedDirectory();
+      this.#clearStatusMessage();
+    } catch (err) {
+      this.#showErrorStatusMessage(err);
+    }
+    await this.#refreshFolderButtonsFromSavedDirectoryState();
+  }
+
+  #showErrorStatusMessage(error) {
+    this.#statusMessageElement.textContent = AdminApplication.#errorStatusMessagePrefix + error.message;
+  }
+
+  #clearStatusMessage() {
+    this.#statusMessageElement.textContent = '';
   }
 
   async #handleSaveChanges() {
@@ -82,8 +146,6 @@ class AdminApplication {
   }
 
   #switchToTab(tabName) {
-    this.#activeTabName = tabName;
-
     this.#tabButtonElements.forEach((btn) => {
       btn.classList.toggle('active', btn.dataset.tab === tabName);
     });

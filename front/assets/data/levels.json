@@ -1,7 +1,7 @@
 {
   "levels": [
     {
-      "id": "basics",
+      "id": "top100",
       "decks": [
         "first_contact",
         "getting_around",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "id": "iron",
+      "id": "top200",
       "decks": [
         "core_verbs",
         "four_walls",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "id": "bronze",
+      "id": "top300",
       "decks": [
         "daily_actions",
         "head_to_toe",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "silver",
+      "id": "top400",
       "decks": [
         "on_the_road",
         "market_basket",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "id": "gold",
+      "id": "top500",
       "decks": [
         "creatures_and_sky",
         "city_life",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "id": "platinum",
+      "id": "top600",
       "decks": [
         "heart_and_mind",
         "home_sweet_home",
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "id": "diamond",
+      "id": "top700",
       "decks": [
         "coming_and_going",
         "build_and_break",
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "id": "mithril",
+      "id": "top800",
       "decks": [
         "higher_ground",
         "making_it_happen",
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "id": "adamantite",
+      "id": "top900",
       "decks": [
         "tying_loose_ends",
         "words_and_stories",

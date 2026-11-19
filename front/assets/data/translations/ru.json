@@ -4329,32 +4329,32 @@
   },
   "meta": {
     "levels": {
-      "basics": {
-        "name": "Basics"
+      "top100": {
+        "name": "Top 100"
       },
-      "iron": {
-        "name": "Iron"
+      "top200": {
+        "name": "Top 200"
       },
-      "bronze": {
-        "name": "Bronze"
+      "top300": {
+        "name": "Top 300"
       },
-      "silver": {
-        "name": "Silver"
+      "top400": {
+        "name": "Top 400"
       },
-      "gold": {
-        "name": "Gold"
+      "top500": {
+        "name": "Top 500"
       },
-      "platinum": {
-        "name": "Platinum"
+      "top600": {
+        "name": "Top 600"
       },
-      "diamond": {
-        "name": "Diamond"
+      "top700": {
+        "name": "Top 700"
       },
-      "mithril": {
-        "name": "Mithril"
+      "top800": {
+        "name": "Top 800"
       },
-      "adamantite": {
-        "name": "Adamantite"
+      "top900": {
+        "name": "Top 900"
       },
       "specialized": {
         "name": "Специализированный"

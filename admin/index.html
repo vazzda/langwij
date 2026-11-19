@@ -22,8 +22,9 @@
       <button class="control-btn" id="unfold-all-btn">Unfold</button>
     </div>
     <div class="header-right">
-      <code class="path-hint">C:\_pet\langwij\front\assets\data</code>
-      <button id="pick-folder-btn">Browse...</button>
+      <code class="path-hint">C:\__pet\_app\langwij\front\assets\data</code>
+      <button id="pick-folder-btn" class="folder-btn"></button>
+      <button id="delete-saved-folder-btn" class="folder-btn" hidden>Delete</button>
       <span id="status"></span>
       <button id="save-btn" disabled>Save</button>
     </div>
@@ -34,6 +35,7 @@
     <div id="page-translations" class="page" hidden></div>
   </main>
 
+  <script src="directory-handle-storage.js"></script>
   <script src="data-store.js"></script>
   <script src="structure-page.js"></script>
   <script src="translations-page.js"></script>

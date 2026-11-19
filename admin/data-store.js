@@ -1,4 +1,5 @@
 class LanguageDataStore {
+  #savedDirectoryHandleStorage = new SavedDirectoryHandleStorage();
   #directoryHandle = null;
   #dictionaryData = null;
   #levelsData = null;
@@ -10,11 +11,11 @@ class LanguageDataStore {
 
   async selectDirectory() {
     this.#directoryHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
-    await this.#saveHandleToDatabase(this.#directoryHandle);
+    await this.#savedDirectoryHandleStorage.saveDirectoryHandle(this.#directoryHandle);
   }
 
   async restoreDirectory() {
-    const handle = await this.#loadHandleFromDatabase();
+    const handle = await this.#savedDirectoryHandleStorage.loadDirectoryHandle();
     if (!handle) return false;
     const permission = await handle.requestPermission({ mode: 'readwrite' });
     if (permission !== 'granted') return false;
@@ -23,8 +24,12 @@ class LanguageDataStore {
   }
 
   async hasSavedDirectory() {
-    const handle = await this.#loadHandleFromDatabase();
+    const handle = await this.#savedDirectoryHandleStorage.loadDirectoryHandle();
     return handle !== null;
+  }
+
+  async deleteSavedDirectory() {
+    await this.#savedDirectoryHandleStorage.deleteDirectoryHandle();
   }
 
   async loadAllDataFiles() {
@@ -192,37 +197,6 @@ class LanguageDataStore {
         this.#termDeckMembershipIndex.get(termId).add(deck.id);
       }
     }
-  }
-
-  #openIndexedDatabase() {
-    return new Promise((resolve, reject) => {
-      const request = indexedDB.open('langwij-admin', 1);
-      request.onupgradeneeded = () => {
-        request.result.createObjectStore('handles');
-      };
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
-    });
-  }
-
-  async #saveHandleToDatabase(handle) {
-    const db = await this.#openIndexedDatabase();
-    return new Promise((resolve, reject) => {
-      const tx = db.transaction('handles', 'readwrite');
-      tx.objectStore('handles').put(handle, 'data-folder');
-      tx.oncomplete = () => resolve();
-      tx.onerror = () => reject(tx.error);
-    });
-  }
-
-  async #loadHandleFromDatabase() {
-    const db = await this.#openIndexedDatabase();
-    return new Promise((resolve, reject) => {
-      const tx = db.transaction('handles', 'readonly');
-      const request = tx.objectStore('handles').get('data-folder');
-      request.onsuccess = () => resolve(request.result || null);
-      request.onerror = () => reject(request.error);
-    });
   }
 
   async #readJsonFromHandle(parentHandle, fileName) {

@@ -8,7 +8,6 @@
       "Bash(rmdir shared/ui/divider shared/ui/gap shared/ui/note shared/ui/progress_bar shared/ui/snackbar shared/ui/tile)",
       "Bash(ls *.md)",
       "Bash(find .vessel/packages/flessel/lib/src/controls/scaffold -type f)",
-      "Bash(find .vessel/packages/flessel/lib/src/controls/screen* -type f)",
       "Bash(sed -i -e '6d' -e '27d' -e '119,126d' front/lib/app/router/app_router.dart)",
       "Bash(sed -i '263,278d' front/lib/pages/settings_screen.dart)",
       "Bash(sed -n '1,30p;115,130p' front/lib/app/router/app_router.dart)",

@@ -19,22 +19,22 @@
   "courses": {
     "sr→en": {
       "free": [
-        "basics"
+        "top100"
       ]
     },
     "sr→ru": {
       "free": [
-        "basics"
+        "top100"
       ]
     },
     "en→sr": {
       "free": [
-        "basics"
+        "top100"
       ]
     },
     "ru→sr": {
       "free": [
-        "basics"
+        "top100"
       ]
     }
   }
