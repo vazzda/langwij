@@ -1,8 +1,12 @@
+import 'dart:ui' show Locale;
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
 
+import 'package:langwij/l10n/app_localizations.dart';
 import '../model/app_settings.dart';
+import '../model/lang_codes.dart';
 import '../model/language_settings.dart';
 import '../repository/language_settings_repository.dart';
 import 'config_internal_service.dart';
@@ -36,6 +40,33 @@ class ConfigService {
     return repo.load();
   });
 
+  /// Language settings read before the first frame. Overridden at startup
+  /// with the stored values, so the first frame already uses them.
+  static final languageSettingsLoadedAtStartup = Provider<LanguageSettings>(
+    (_) => LanguageSettings.defaultSettings,
+  );
+
+  /// Locale of the interface, derived from the native ("I speak") language.
+  static final interfaceLocale = Provider<Locale>((ref) {
+    final languageSettingsAtStartup = ref.watch(languageSettingsLoadedAtStartup);
+    final currentLanguageSettings =
+        ref.watch(languageSettings).valueOrNull ?? languageSettingsAtStartup;
+    return interfaceLocaleForLanguageCode(currentLanguageSettings.nativeLang);
+  });
+
+  /// Every locale the interface is translated into.
+  static List<Locale> get supportedInterfaceLocales => [
+    for (final translatedLocale in AppLocalizations.supportedLocales)
+      interfaceLocaleForLanguageCode(translatedLocale.languageCode),
+  ];
+
+  static Locale interfaceLocaleForLanguageCode(String languageCode) {
+    return Locale.fromSubtags(
+      languageCode: languageCode,
+      scriptCode: LangCodes.interfaceScriptCodeForLanguageCode(languageCode),
+    );
+  }
+
   static final appSettings = FutureProvider<AppSettings>((ref) async {
     ref.watch(ConfigInternalService.revision);
     final repo = await ref.read(ConfigInternalService.appSettingsRepository.future);
@@ -57,12 +88,6 @@ class ConfigService {
     await repo.setTargetLang(targetLang);
     await repo.setNativeLang(nativeLang);
     await markLanguagesConfigured();
-    _ref.read(ConfigInternalService.revision.notifier).state++;
-  }
-
-  Future<void> setUiLang(String code) async {
-    final repo = await _ref.read(ConfigInternalService.langSettingsRepository.future);
-    await repo.setUiLang(code);
     _ref.read(ConfigInternalService.revision.notifier).state++;
   }
 

@@ -225,7 +225,6 @@ class ConfigValidationService {
   ) {
     final declaredCodes = _validatePlanLanguageEntries(data);
     _validatePlanPublicLanguages(data, declaredCodes);
-    _validatePlanUiLanguages(data, declaredCodes);
     _validatePlanCourses(data, levelIds);
   }
 
@@ -244,7 +243,6 @@ class ConfigValidationService {
       }
     }
     _validatePlanPublicLanguages(data, declaredCodes);
-    _validatePlanUiLanguages(data, declaredCodes);
     _validatePlanCourses(data, levelIds);
   }
 
@@ -336,30 +334,6 @@ class ConfigValidationService {
       if (!declaredCodes.contains(code)) {
         throw ConfigValidationError(
           'plan.json: public_languages[$i] = "$code" is not declared in "languages"',
-        );
-      }
-    }
-  }
-
-  static void _validatePlanUiLanguages(
-    Map<String, dynamic> data,
-    Set<String> declaredCodes,
-  ) {
-    final uiLangs = data['ui_languages'];
-    if (uiLangs == null) {
-      throw const ConfigValidationError('plan.json: missing required key "ui_languages"');
-    }
-    if (uiLangs is! List<dynamic>) {
-      throw const ConfigValidationError('plan.json: "ui_languages" must be an array');
-    }
-    for (int i = 0; i < uiLangs.length; i++) {
-      final code = uiLangs[i];
-      if (code is! String) {
-        throw ConfigValidationError('plan.json: ui_languages[$i] must be a string');
-      }
-      if (!declaredCodes.contains(code)) {
-        throw ConfigValidationError(
-          'plan.json: ui_languages[$i] = "$code" is not declared in "languages"',
         );
       }
     }

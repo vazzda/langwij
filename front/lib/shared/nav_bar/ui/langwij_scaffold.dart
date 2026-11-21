@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
+import 'package:langwij/shared/dev_section/ui/developer_gate_config_builder.dart';
 import 'package:langwij/shared/nav_bar/ui/main_nav_bar.dart';
 
 class LangwijScaffold extends StatefulWidget {
@@ -37,7 +38,7 @@ class _LangwijScaffoldState extends State<LangwijScaffold> {
       _settingsDevTapCount = 0;
       FlesselDevGate.show(
         context,
-        LangwijMainNavBar.settingsDevGateConfig(context),
+        DeveloperGateConfigBuilder.buildForContext(context),
       );
     }
   }

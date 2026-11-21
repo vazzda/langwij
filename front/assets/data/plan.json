@@ -15,7 +15,6 @@
     { "code": "de", "labelKey": "lang_german", "humanVerified": 0 }
   ],
   "public_languages": ["en", "sr", "ru"],
-  "ui_languages": ["en"],
   "courses": {
     "sr→en": {
       "free": [

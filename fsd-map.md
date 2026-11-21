@@ -192,7 +192,7 @@ lib/
 │   │   │   ├── model/
 │   │   │   │   ├── app_settings.dart                    AppSettings data class
 │   │   │   │   ├── decay_formula.dart                   DecayFormula enum
-│   │   │   │   ├── lang_codes.dart                      LangCodes (language code constants)
+│   │   │   │   ├── lang_codes.dart                      LangCodes (language code constants, flag + interface script lookups)
 │   │   │   │   ├── lang_grammar_profile.dart            LangGrammarProfile (per-language grammar rules)
 │   │   │   │   └── language_settings.dart               LanguageSettings data class
 │   │   │   ├── repository/
@@ -257,17 +257,22 @@ lib/
 │   │   ├── services/
 │   │   │   ├── dev_section_gate_notifier_service.dart DevSectionGateNotifierService
 │   │   │   └── dev_section_service.dart             DevSectionService (FlesselDevGate init)
+│   │   ├── ui/
+│   │   │   └── developer_gate_config_builder.dart   DeveloperGateConfigBuilder (password-gate config for the developer section)
 │   │   └── dev_section.dart                         barrel
 │   │
 │   └── nav_bar/                                   bottom navigation bar
+│       ├── model/
+│       │   └── main_nav_destination.dart            MainNavDestination enum (bottom-bar destinations + route paths)
 │       └── ui/
 │           ├── langwij_scaffold.dart                 LangwijScaffold (app scaffold with shared navbar + app bar actions)
 │           └── main_nav_bar.dart                    LangwijMainNavBar (navbar items + index resolver)
 │
 └── l10n/                                        — localization (outside FSD — Flutter convention)
-    ├── app_en.arb                                 English strings (source of truth)
+    ├── app_en.arb                                 English strings (template, source of truth for keys)
+    ├── app_<code>.arb                             translations: ru, sr, de, fr, es, it, pt
     ├── app_localizations.dart                     generated l10n
-    ├── app_localizations_en.dart                  generated English
+    ├── app_localizations_<code>.dart              generated per language: en, ru, sr, de, fr, es, it, pt
     └── app_localizations_ext.dart                 hand-written extension methods
 ```
 

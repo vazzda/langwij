@@ -12,7 +12,6 @@ class PlanRepository {
   Map<String, String>? _cachedCourseNotes;
   List<String>? _cachedPublicLanguages;
   List<LanguageEntry>? _cachedLanguages;
-  Set<String>? _cachedUiLanguages;
 
   Future<void> _load() async {
     if (_cachedCourses != null) return;
@@ -33,9 +32,6 @@ class PlanRepository {
 
     _cachedPublicLanguages =
         (data['public_languages'] as List<dynamic>).cast<String>();
-
-    _cachedUiLanguages =
-        (data['ui_languages'] as List<dynamic>).cast<String>().toSet();
 
     _cachedCourses = {};
     _cachedCourseNotes = {};
@@ -66,11 +62,6 @@ class PlanRepository {
   Future<List<LanguageEntry>> getLanguages() async {
     await _load();
     return _cachedLanguages!;
-  }
-
-  Future<Set<String>> getUiLanguages() async {
-    await _load();
-    return _cachedUiLanguages!;
   }
 
   Future<String?> getCourseNote(String courseId) async {

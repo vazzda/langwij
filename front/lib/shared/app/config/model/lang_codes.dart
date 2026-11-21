@@ -18,4 +18,13 @@ abstract final class LangCodes {
     portuguese: 'PT',
     german:     'DE',
   }[langCode];
+
+  static const String _latinScriptCode = 'Latn';
+
+  /// Script the interface is shown in, for languages whose platform default
+  /// script differs from the one the dictionary is written in. Null means
+  /// the platform default script.
+  static String? interfaceScriptCodeForLanguageCode(String languageCode) => const {
+    serbian: _latinScriptCode,
+  }[languageCode];
 }

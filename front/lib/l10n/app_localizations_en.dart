@@ -12,33 +12,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'Langwij';
 
   @override
-  String get appBarTitle => 'Langwij';
-
-  @override
-  String get parentVocabulary => 'Vocabulary';
-
-  @override
-  String get parentConjugations => 'Conjugations';
-
-  @override
   String get parentAgreement => 'Gender agreements';
 
   @override
-  String agreementRoundGender(String gender) {
-    return 'Gender: $gender';
-  }
-
-  @override
   String get groupWords => 'Basic verbs';
-
-  @override
-  String get vocabSectionSettingWords => 'Setting words';
-
-  @override
-  String get vocabSectionBasicNouns => 'Basic nouns';
-
-  @override
-  String get vocabSectionBasicAdjectives => 'Basic adjectives';
 
   @override
   String wordsCount(int count) {
@@ -54,11 +31,6 @@ class AppLocalizationsEn extends AppLocalizations {
       one: '1 term',
     );
     return '$_temp0';
-  }
-
-  @override
-  String wordsCountWithPreview(int count, String preview) {
-    return '$count words: $preview';
   }
 
   @override
@@ -113,9 +85,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get questions20 => '20';
 
   @override
-  String get start => 'Start';
-
-  @override
   String get cancel => 'Cancel';
 
   @override
@@ -151,12 +120,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reviewWrongSubtitle => 'Cards you got wrong';
-
-  @override
-  String get done => 'Done';
-
-  @override
-  String get backToGroups => 'Back to groups';
 
   @override
   String get again => 'Again';
@@ -273,10 +236,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navSettings => 'Settings';
 
   @override
-  String get underDevelopmentTitle => 'Coming soon';
+  String get navLabelVocabulary => 'Top1000';
 
   @override
-  String get underDevelopmentBody => 'This feature is under development.';
+  String get navLabelSpecialized => 'Special';
+
+  @override
+  String get navLabelTools => 'Tools';
+
+  @override
+  String get navLabelLanguage => 'Language';
 
   @override
   String get settingsTheme => 'Theme';
@@ -306,29 +275,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get lang_german => 'German';
 
   @override
-  String get aspect_perfective => 'perfective';
-
-  @override
-  String get aspect_imperfective => 'imperfective';
-
-  @override
   String get language_iSpeak => 'I speak';
 
   @override
   String get language_iLearn => 'I learn';
-
-  @override
-  String get language_learning => 'Learning';
-
-  @override
-  String get language_native => 'Native language';
-
-  @override
-  String get language_appLanguage => 'App language';
-
-  @override
-  String get language_sameAsLearning =>
-      'Not gonna work! Same as learning language selected';
 
   @override
   String language_qualityAi(int aiPct) {
@@ -341,39 +291,15 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get language_myProgress => 'My progress';
-
-  @override
   String get language_progression => 'Progression';
 
   @override
   String get language_incompleteDictionaries => 'Incomplete dictionaries';
 
   @override
-  String language_decksProgress(int done, int total) {
-    return '$done/$total decks';
-  }
-
-  @override
-  String language_wordsTouched(int count) {
-    return '$count words';
-  }
-
-  @override
-  String language_termsMissing(int count) {
-    return '$count missing';
-  }
-
-  @override
   String language_termsCount(int done, int total) {
     return '$done/$total terms';
   }
-
-  @override
-  String get modeTargetShown => 'Target shown (pick native)';
-
-  @override
-  String get modeNativeShown => 'Native shown (pick target)';
 
   @override
   String get tools_conjugations => 'Conjugations';
@@ -389,9 +315,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsDeveloper => 'Developer';
-
-  @override
-  String get settingsControlsList => 'Controls List';
 
   @override
   String get dev_enterPassword => 'Hello';
@@ -492,9 +415,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settings_deleteContent => 'Delete content';
-
-  @override
-  String get settings_seedLoaded => 'Seed loaded';
 
   @override
   String settings_seedError(String message) {

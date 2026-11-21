@@ -12,6 +12,7 @@ class AppInitialization {
   const AppInitialization._();
 
   static late final String savedThemeId;
+  static late final LanguageSettings savedLanguageSettings;
   static late final bool isLanguageConfigured;
 
   static Future<void> run() async {
@@ -19,11 +20,11 @@ class AppInitialization {
 
     final db = await DatabaseService.openEagerly();
 
-    final langSettings = await ConfigService.loadEagerly(db);
+    savedLanguageSettings = await ConfigService.loadEagerly(db);
 
     await StartupValidationService.validate(
-      targetLang: langSettings.targetLang,
-      nativeLang: langSettings.nativeLang,
+      targetLang: savedLanguageSettings.targetLang,
+      nativeLang: savedLanguageSettings.nativeLang,
     );
 
     FlutterNativeSplash.preserve(widgetsBinding: WidgetsBinding.instance);

@@ -92,10 +92,6 @@ class DatabaseService {
       DbSchema.colKey: DbSchema.colNativeLang,
       DbSchema.colValue: LangCodes.english,
     });
-    await db.insert(DbSchema.tableAppSettings, {
-      DbSchema.colKey: DbSchema.colUiLang,
-      DbSchema.colValue: LangCodes.english,
-    });
   }
 
   static Future<void> _onUpgrade(

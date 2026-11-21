@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:flessel/flessel.dart';
 
 import 'package:langwij/l10n/app_localizations.dart';
+import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/theme/theme.dart';
 import 'package:langwij/boot/initialization.dart';
 import 'package:langwij/boot/router.dart';
@@ -21,6 +22,9 @@ Future<void> main() async {
       overrides: [
         ThemeService.themeId.overrideWith(
           (ref) => AppInitialization.savedThemeId,
+        ),
+        ConfigService.languageSettingsLoadedAtStartup.overrideWithValue(
+          AppInitialization.savedLanguageSettings,
         ),
       ],
       child: LangwijApp(router: router),
@@ -41,17 +45,18 @@ class LangwijApp extends ConsumerWidget {
     final flesselData = FlesselThemeCatalog.byId(theme).data;
     final themeData = FlesselThemes.buildFlutterTheme(flesselData);
     return MaterialApp.router(
-      title: 'Langwij',
+      onGenerateTitle: (context) => AppLocalizations.of(context)!.appTitle,
       theme: themeData,
       routerConfig: router,
       debugShowCheckedModeBanner: false,
+      locale: ref.watch(ConfigService.interfaceLocale),
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-      supportedLocales: AppLocalizations.supportedLocales,
+      supportedLocales: ConfigService.supportedInterfaceLocales,
     );
   }
 }

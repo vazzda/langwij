@@ -5,7 +5,14 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_it.dart';
+import 'app_localizations_pt.dart';
+import 'app_localizations_ru.dart';
+import 'app_localizations_sr.dart';
 
 // ignore_for_file: type=lint
 
@@ -92,7 +99,16 @@ abstract class AppLocalizations {
       ];
 
   /// A list of this localizations delegate's supported locales.
-  static const List<Locale> supportedLocales = <Locale>[Locale('en')];
+  static const List<Locale> supportedLocales = <Locale>[
+    Locale('de'),
+    Locale('en'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('it'),
+    Locale('pt'),
+    Locale('ru'),
+    Locale('sr'),
+  ];
 
   /// No description provided for @appTitle.
   ///
@@ -100,59 +116,17 @@ abstract class AppLocalizations {
   /// **'Langwij'**
   String get appTitle;
 
-  /// No description provided for @appBarTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Langwij'**
-  String get appBarTitle;
-
-  /// No description provided for @parentVocabulary.
-  ///
-  /// In en, this message translates to:
-  /// **'Vocabulary'**
-  String get parentVocabulary;
-
-  /// No description provided for @parentConjugations.
-  ///
-  /// In en, this message translates to:
-  /// **'Conjugations'**
-  String get parentConjugations;
-
   /// No description provided for @parentAgreement.
   ///
   /// In en, this message translates to:
   /// **'Gender agreements'**
   String get parentAgreement;
 
-  /// No description provided for @agreementRoundGender.
-  ///
-  /// In en, this message translates to:
-  /// **'Gender: {gender}'**
-  String agreementRoundGender(String gender);
-
   /// No description provided for @groupWords.
   ///
   /// In en, this message translates to:
   /// **'Basic verbs'**
   String get groupWords;
-
-  /// No description provided for @vocabSectionSettingWords.
-  ///
-  /// In en, this message translates to:
-  /// **'Setting words'**
-  String get vocabSectionSettingWords;
-
-  /// No description provided for @vocabSectionBasicNouns.
-  ///
-  /// In en, this message translates to:
-  /// **'Basic nouns'**
-  String get vocabSectionBasicNouns;
-
-  /// No description provided for @vocabSectionBasicAdjectives.
-  ///
-  /// In en, this message translates to:
-  /// **'Basic adjectives'**
-  String get vocabSectionBasicAdjectives;
 
   /// No description provided for @wordsCount.
   ///
@@ -165,12 +139,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{1 term} other{{count} terms}}'**
   String vocab_termsCount(int count);
-
-  /// No description provided for @wordsCountWithPreview.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} words: {preview}'**
-  String wordsCountWithPreview(int count, String preview);
 
   /// No description provided for @groupEndingsImEAti.
   ///
@@ -274,12 +242,6 @@ abstract class AppLocalizations {
   /// **'20'**
   String get questions20;
 
-  /// No description provided for @start.
-  ///
-  /// In en, this message translates to:
-  /// **'Start'**
-  String get start;
-
   /// No description provided for @cancel.
   ///
   /// In en, this message translates to:
@@ -345,18 +307,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Cards you got wrong'**
   String get reviewWrongSubtitle;
-
-  /// No description provided for @done.
-  ///
-  /// In en, this message translates to:
-  /// **'Done'**
-  String get done;
-
-  /// No description provided for @backToGroups.
-  ///
-  /// In en, this message translates to:
-  /// **'Back to groups'**
-  String get backToGroups;
 
   /// No description provided for @again.
   ///
@@ -562,17 +512,29 @@ abstract class AppLocalizations {
   /// **'Settings'**
   String get navSettings;
 
-  /// No description provided for @underDevelopmentTitle.
+  /// No description provided for @navLabelVocabulary.
   ///
   /// In en, this message translates to:
-  /// **'Coming soon'**
-  String get underDevelopmentTitle;
+  /// **'Top1000'**
+  String get navLabelVocabulary;
 
-  /// No description provided for @underDevelopmentBody.
+  /// No description provided for @navLabelSpecialized.
   ///
   /// In en, this message translates to:
-  /// **'This feature is under development.'**
-  String get underDevelopmentBody;
+  /// **'Special'**
+  String get navLabelSpecialized;
+
+  /// No description provided for @navLabelTools.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools'**
+  String get navLabelTools;
+
+  /// No description provided for @navLabelLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get navLabelLanguage;
 
   /// No description provided for @settingsTheme.
   ///
@@ -628,18 +590,6 @@ abstract class AppLocalizations {
   /// **'German'**
   String get lang_german;
 
-  /// No description provided for @aspect_perfective.
-  ///
-  /// In en, this message translates to:
-  /// **'perfective'**
-  String get aspect_perfective;
-
-  /// No description provided for @aspect_imperfective.
-  ///
-  /// In en, this message translates to:
-  /// **'imperfective'**
-  String get aspect_imperfective;
-
   /// No description provided for @language_iSpeak.
   ///
   /// In en, this message translates to:
@@ -651,30 +601,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'I learn'**
   String get language_iLearn;
-
-  /// No description provided for @language_learning.
-  ///
-  /// In en, this message translates to:
-  /// **'Learning'**
-  String get language_learning;
-
-  /// No description provided for @language_native.
-  ///
-  /// In en, this message translates to:
-  /// **'Native language'**
-  String get language_native;
-
-  /// No description provided for @language_appLanguage.
-  ///
-  /// In en, this message translates to:
-  /// **'App language'**
-  String get language_appLanguage;
-
-  /// No description provided for @language_sameAsLearning.
-  ///
-  /// In en, this message translates to:
-  /// **'Not gonna work! Same as learning language selected'**
-  String get language_sameAsLearning;
 
   /// No description provided for @language_qualityAi.
   ///
@@ -688,12 +614,6 @@ abstract class AppLocalizations {
   /// **'{humanPct}% human made'**
   String language_qualityHuman(int humanPct);
 
-  /// No description provided for @language_myProgress.
-  ///
-  /// In en, this message translates to:
-  /// **'My progress'**
-  String get language_myProgress;
-
   /// No description provided for @language_progression.
   ///
   /// In en, this message translates to:
@@ -706,41 +626,11 @@ abstract class AppLocalizations {
   /// **'Incomplete dictionaries'**
   String get language_incompleteDictionaries;
 
-  /// No description provided for @language_decksProgress.
-  ///
-  /// In en, this message translates to:
-  /// **'{done}/{total} decks'**
-  String language_decksProgress(int done, int total);
-
-  /// No description provided for @language_wordsTouched.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} words'**
-  String language_wordsTouched(int count);
-
-  /// No description provided for @language_termsMissing.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} missing'**
-  String language_termsMissing(int count);
-
   /// No description provided for @language_termsCount.
   ///
   /// In en, this message translates to:
   /// **'{done}/{total} terms'**
   String language_termsCount(int done, int total);
-
-  /// No description provided for @modeTargetShown.
-  ///
-  /// In en, this message translates to:
-  /// **'Target shown (pick native)'**
-  String get modeTargetShown;
-
-  /// No description provided for @modeNativeShown.
-  ///
-  /// In en, this message translates to:
-  /// **'Native shown (pick target)'**
-  String get modeNativeShown;
 
   /// No description provided for @tools_conjugations.
   ///
@@ -771,12 +661,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Developer'**
   String get settingsDeveloper;
-
-  /// No description provided for @settingsControlsList.
-  ///
-  /// In en, this message translates to:
-  /// **'Controls List'**
-  String get settingsControlsList;
 
   /// No description provided for @dev_enterPassword.
   ///
@@ -964,12 +848,6 @@ abstract class AppLocalizations {
   /// **'Delete content'**
   String get settings_deleteContent;
 
-  /// No description provided for @settings_seedLoaded.
-  ///
-  /// In en, this message translates to:
-  /// **'Seed loaded'**
-  String get settings_seedLoaded;
-
   /// No description provided for @settings_seedError.
   ///
   /// In en, this message translates to:
@@ -1035,8 +913,16 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'pt',
+    'ru',
+    'sr',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -1045,8 +931,22 @@ class _AppLocalizationsDelegate
 AppLocalizations lookupAppLocalizations(Locale locale) {
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'de':
+      return AppLocalizationsDe();
     case 'en':
       return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'it':
+      return AppLocalizationsIt();
+    case 'pt':
+      return AppLocalizationsPt();
+    case 'ru':
+      return AppLocalizationsRu();
+    case 'sr':
+      return AppLocalizationsSr();
   }
 
   throw FlutterError(

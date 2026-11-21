@@ -1,22 +1,8 @@
 {
   "@@locale": "en",
   "appTitle": "Langwij",
-  "appBarTitle": "Langwij",
-  "parentVocabulary": "Vocabulary",
-  "parentConjugations": "Conjugations",
   "parentAgreement": "Gender agreements",
-  "agreementRoundGender": "Gender: {gender}",
-  "@agreementRoundGender": {
-    "placeholders": {
-      "gender": {
-        "type": "String"
-      }
-    }
-  },
   "groupWords": "Basic verbs",
-  "vocabSectionSettingWords": "Setting words",
-  "vocabSectionBasicNouns": "Basic nouns",
-  "vocabSectionBasicAdjectives": "Basic adjectives",
   "wordsCount": "{count} words",
   "@wordsCount": {
     "placeholders": {
@@ -30,17 +16,6 @@
     "placeholders": {
       "count": {
         "type": "int"
-      }
-    }
-  },
-  "wordsCountWithPreview": "{count} words: {preview}",
-  "@wordsCountWithPreview": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "preview": {
-        "type": "String"
       }
     }
   },
@@ -61,7 +36,6 @@
   "questions5": "5",
   "questions10": "10",
   "questions20": "20",
-  "start": "Start",
   "cancel": "Cancel",
   "next": "Next",
   "submit": "Submit",
@@ -87,8 +61,6 @@
   },
   "reviewWrongTitle": "Missed cards",
   "reviewWrongSubtitle": "Cards you got wrong",
-  "done": "Done",
-  "backToGroups": "Back to groups",
   "again": "Again",
   "back": "Back",
   "pageNotFound": "Page not found",
@@ -165,8 +137,10 @@
   "navSpecialized": "Specialized",
   "navTools": "Tools",
   "navSettings": "Settings",
-  "underDevelopmentTitle": "Coming soon",
-  "underDevelopmentBody": "This feature is under development.",
+  "navLabelVocabulary": "Top1000",
+  "navLabelSpecialized": "Special",
+  "navLabelTools": "Tools",
+  "navLabelLanguage": "Language",
   "settingsTheme": "Theme",
 
   "lang_english": "English",
@@ -178,15 +152,8 @@
   "lang_portuguese": "Portuguese",
   "lang_german": "German",
 
-  "aspect_perfective": "perfective",
-  "aspect_imperfective": "imperfective",
-
   "language_iSpeak": "I speak",
   "language_iLearn": "I learn",
-  "language_learning": "Learning",
-  "language_native": "Native language",
-  "language_appLanguage": "App language",
-  "language_sameAsLearning": "Not gonna work! Same as learning language selected",
   "language_qualityAi": "{aiPct}% AI made",
   "@language_qualityAi": {
     "placeholders": {
@@ -199,28 +166,8 @@
       "humanPct": { "type": "int" }
     }
   },
-  "language_myProgress": "My progress",
   "language_progression": "Progression",
   "language_incompleteDictionaries": "Incomplete dictionaries",
-  "language_decksProgress": "{done}/{total} decks",
-  "@language_decksProgress": {
-    "placeholders": {
-      "done": { "type": "int" },
-      "total": { "type": "int" }
-    }
-  },
-  "language_wordsTouched": "{count} words",
-  "@language_wordsTouched": {
-    "placeholders": {
-      "count": { "type": "int" }
-    }
-  },
-  "language_termsMissing": "{count} missing",
-  "@language_termsMissing": {
-    "placeholders": {
-      "count": { "type": "int" }
-    }
-  },
   "language_termsCount": "{done}/{total} terms",
   "@language_termsCount": {
     "placeholders": {
@@ -229,16 +176,12 @@
     }
   },
 
-  "modeTargetShown": "Target shown (pick native)",
-  "modeNativeShown": "Native shown (pick target)",
-
   "tools_conjugations": "Conjugations",
   "tools_agreement": "Gender agreement",
   "tools_emptyState": "No tools available for this language",
 
   "settingsHide": "Hide",
   "settingsDeveloper": "Developer",
-  "settingsControlsList": "Controls List",
 
   "dev_enterPassword": "Hello",
   "dev_unlock": "Unlock",
@@ -296,7 +239,6 @@
   "settings_seeds": "Seeds",
   "settings_seedFull": "Full",
   "settings_deleteContent": "Delete content",
-  "settings_seedLoaded": "Seed loaded",
   "settings_seedError": "Seed failed: {message}",
   "@settings_seedError": {
     "placeholders": {

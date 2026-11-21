@@ -13,40 +13,39 @@ class DictionaryService {
     return repo.loadDictionary();
   });
 
-  static final uiLanguages = FutureProvider<Set<String>>((ref) async {
-    final repo = ref.watch(DictionaryInternalService.planRepository);
-    return repo.getUiLanguages();
-  });
+  static const String _targetLanguageRoleName = 'Target';
+  static const String _nativeLanguageRoleName = 'Native';
 
   static final targetPack = FutureProvider<LanguagePack>((ref) async {
-    final repo = ref.watch(DictionaryInternalService.dictionaryRepository);
     final langSettings = await ref.watch(ConfigService.languageSettings.future);
-    final publicCodes = await ref.watch(DictionaryInternalService.publicLanguageCodes.future);
-    final languages = await ref.watch(DictionaryInternalService.planLanguages.future);
-    final entry = languages.firstWhere(
-      (l) => l.code == langSettings.targetLang,
-      orElse: () => throw StateError(
-        'Target language "${langSettings.targetLang}" not found in plan.json',
-      ),
-    );
-    return repo.loadLanguagePack(
-      entry.code,
-      labelKey: entry.labelKey,
-      isPublic: publicCodes.contains(entry.code),
-      nativeNote: entry.nativeNote,
-      humanVerified: entry.humanVerified,
+    return _loadLanguagePackForLanguageCode(
+      ref,
+      langSettings.targetLang,
+      languageRoleName: _targetLanguageRoleName,
     );
   });
 
   static final nativePack = FutureProvider<LanguagePack>((ref) async {
-    final repo = ref.watch(DictionaryInternalService.dictionaryRepository);
     final langSettings = await ref.watch(ConfigService.languageSettings.future);
+    return _loadLanguagePackForLanguageCode(
+      ref,
+      langSettings.nativeLang,
+      languageRoleName: _nativeLanguageRoleName,
+    );
+  });
+
+  static Future<LanguagePack> _loadLanguagePackForLanguageCode(
+    Ref ref,
+    String languageCode, {
+    required String languageRoleName,
+  }) async {
+    final repo = ref.watch(DictionaryInternalService.dictionaryRepository);
     final publicCodes = await ref.watch(DictionaryInternalService.publicLanguageCodes.future);
     final languages = await ref.watch(DictionaryInternalService.planLanguages.future);
     final entry = languages.firstWhere(
-      (l) => l.code == langSettings.nativeLang,
+      (l) => l.code == languageCode,
       orElse: () => throw StateError(
-        'Native language "${langSettings.nativeLang}" not found in plan.json',
+        '$languageRoleName language "$languageCode" not found in plan.json',
       ),
     );
     return repo.loadLanguagePack(
@@ -56,7 +55,7 @@ class DictionaryService {
       nativeNote: entry.nativeNote,
       humanVerified: entry.humanVerified,
     );
-  });
+  }
 
   static final allPacks = FutureProvider<List<LanguagePack>>((ref) async {
     final repo = ref.watch(DictionaryInternalService.dictionaryRepository);

@@ -12,12 +12,11 @@ class LanguageSettingsRepository {
     final rows = await _db.query(
       DbSchema.tableAppSettings,
       where: "${DbSchema.colKey} IN "
-          "('${DbSchema.colTargetLang}', '${DbSchema.colNativeLang}', '${DbSchema.colUiLang}')",
+          "('${DbSchema.colTargetLang}', '${DbSchema.colNativeLang}')",
     );
 
     String targetLang = LanguageSettings.defaultSettings.targetLang;
     String nativeLang = LanguageSettings.defaultSettings.nativeLang;
-    String uiLang = LanguageSettings.defaultSettings.uiLang;
 
     for (final row in rows) {
       final key = row[DbSchema.colKey] as String;
@@ -27,15 +26,12 @@ class LanguageSettingsRepository {
           targetLang = value;
         case DbSchema.colNativeLang:
           nativeLang = value;
-        case DbSchema.colUiLang:
-          uiLang = value;
       }
     }
 
     return LanguageSettings(
       targetLang: targetLang,
       nativeLang: nativeLang,
-      uiLang: uiLang,
     );
   }
 
@@ -49,5 +45,4 @@ class LanguageSettingsRepository {
 
   Future<void> setTargetLang(String code) => _set(DbSchema.colTargetLang, code);
   Future<void> setNativeLang(String code) => _set(DbSchema.colNativeLang, code);
-  Future<void> setUiLang(String code) => _set(DbSchema.colUiLang, code);
 }

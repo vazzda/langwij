@@ -24,15 +24,17 @@ Prototype stage — no user data to preserve. Schema changes are destructive: mo
 - No project-wide Result type -- errors use a mix of return values and try/catch
 
 ## Localization
-Source: `lib/l10n/app_en.arb` — the only file to edit.
-Generated: `app_localizations.dart`, `app_localizations_en.dart` — same directory, never hand-edit.
+Source: `lib/l10n/app_en.arb` is the template; one `app_<code>.arb` per further interface language (`ru`, `sr`, `de`, `fr`, `es`, `it`, `pt`) holds its translation. These are the only files to edit.
+Rule: a new key goes into every `.arb` file in the same change. `test/l10n/arb_translation_key_parity_test.dart` fails when any file lacks or adds a key, or when a `plan.json` language has no `.arb` file.
+Generated: `app_localizations.dart`, `app_localizations_<code>.dart` — same directory, never hand-edit.
 Regeneration: automatic on build, hot reload, hot restart (`generate: true` in pubspec).
 Access: `final l10n = AppLocalizations.of(context)!;`
-Workflow: edit `app_en.arb` → hot reload picks it up. No manual `flutter gen-l10n`. Never touch generated files.
+Workflow: edit the `.arb` files → hot reload picks them up. No manual `flutter gen-l10n`. Never touch generated files.
+Interface language: derived from the native ("I speak") language through `ConfigService.interfaceLocale`; there is no separate interface-language setting. Serbian is shown in Latin script (`sr_Latn`, see `LangCodes.interfaceScriptCodeForLanguageCode`). A native language without an `.arb` file falls back to English.
 
 ## Language system
 
-Three-layer language config: target (being learned), native (for definitions), UI (interface). Persisted in SQLite via `LanguageSettingsRepository`, exposed reactively through `ConfigService.languageSettings`.
+Two-layer language config: target (being learned) and native (for definitions and for the interface language). Persisted in SQLite via `LanguageSettingsRepository`, exposed reactively through `ConfigService.languageSettings`.
 
 Language packs loaded from `assets/data/translations/{code}.json`. Each pack contains translations as `LangEntry` — a sealed hierarchy: `SimpleEntry` (text + optional gender), `AspectPairEntry` (imperfective/perfective, Serbian only), `AdjectiveEntry` (gender variants). Structure enforced per language by `LangGrammarProfile` (e.g. Serbian: hasNeuter + hasAspectPairs; German: hasNeuter only).
 
