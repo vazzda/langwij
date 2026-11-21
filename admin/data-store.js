@@ -1,3 +1,6 @@
+// The key under which a change of levels.json is remembered until it is saved.
+const LEVELS_FILE_KEY = 'levels';
+
 class LanguageDataStore {
   #savedDirectoryHandleStorage = new SavedDirectoryHandleStorage();
   #directoryHandle = null;
@@ -54,9 +57,9 @@ class LanguageDataStore {
   }
 
   async saveModifiedFiles() {
-    if (this.#modifiedFileKeys.has('levels')) {
+    if (this.#modifiedFileKeys.has(LEVELS_FILE_KEY)) {
       await this.#writeJsonToHandle(this.#directoryHandle, 'levels.json', this.#levelsData);
-      this.#modifiedFileKeys.delete('levels');
+      this.#modifiedFileKeys.delete(LEVELS_FILE_KEY);
     }
 
     const translationsDir = await this.#directoryHandle.getDirectoryHandle('translations');
@@ -144,7 +147,7 @@ class LanguageDataStore {
       this.#termDeckMembershipIndex.get(termId).add(targetDeckId);
     }
 
-    this.#modifiedFileKeys.add('levels');
+    this.#modifiedFileKeys.add(LEVELS_FILE_KEY);
   }
 
   reorderTermWithinDeck(deckId, termId, newIndex) {
@@ -154,7 +157,19 @@ class LanguageDataStore {
     if (currentIndex === -1) return;
     deck.terms.splice(currentIndex, 1);
     deck.terms.splice(newIndex, 0, termId);
-    this.#modifiedFileKeys.add('levels');
+    this.#modifiedFileKeys.add(LEVELS_FILE_KEY);
+  }
+
+  // Moves a deck to a new place among the decks of its level; the index counts
+  // the level's decks without the moved one.
+  reorderDeckWithinLevel(levelId, deckId, newIndex) {
+    const levelDefinition = this.#levelsData.levels.find(level => level.id === levelId);
+    if (!levelDefinition) return;
+    const currentIndex = levelDefinition.decks.indexOf(deckId);
+    if (currentIndex === -1) return;
+    levelDefinition.decks.splice(currentIndex, 1);
+    levelDefinition.decks.splice(newIndex, 0, deckId);
+    this.#modifiedFileKeys.add(LEVELS_FILE_KEY);
   }
 
   updateTranslationText(languageCode, termId, value) {

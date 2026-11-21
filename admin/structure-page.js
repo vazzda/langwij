@@ -1,3 +1,29 @@
+// The two kinds of things dragged on the structure page. Each travels under
+// its own type, so a drop zone can tell them apart and ignore the other kind.
+const DragPayloadType = Object.freeze({
+  term: 'application/x-langwij-term',
+  deck: 'application/x-langwij-deck',
+});
+const InsertionMarkerClass = Object.freeze({ before: 'insert-before', after: 'insert-after' });
+const DRAGGED_ITEM_CLASS = 'dragging';
+const DECK_AUTO_EXPAND_DELAY_MS = 800;
+
+function isDragOfPayloadType(event, payloadType) {
+  return Array.from(event.dataTransfer.types).includes(payloadType);
+}
+
+function readDragPayload(event, payloadType) {
+  return JSON.parse(event.dataTransfer.getData(payloadType));
+}
+
+// The place a moved item takes in its list once it is taken out of it and put
+// before or after the target item. Both indexes count the list as it stands
+// before the move.
+function computeIndexAfterRemoval(movedIndex, targetIndex, isPlacedAfterTarget) {
+  const insertionIndex = isPlacedAfterTarget ? targetIndex + 1 : targetIndex;
+  return movedIndex < insertionIndex ? insertionIndex - 1 : insertionIndex;
+}
+
 class DraggableTermChip {
   #termId;
   #partOfSpeech;
@@ -106,16 +132,16 @@ class DraggableTermChip {
   }
 
   #handleDragStart(event) {
-    event.dataTransfer.setData('text/plain', JSON.stringify({
+    event.dataTransfer.setData(DragPayloadType.term, JSON.stringify({
       termId: this.#termId,
       sourceDeckId: this.#currentDeckId || ''
     }));
     event.dataTransfer.effectAllowed = 'move';
-    this.#element.classList.add('dragging');
+    this.#element.classList.add(DRAGGED_ITEM_CLASS);
   }
 
   #handleDragEnd() {
-    this.#element.classList.remove('dragging');
+    this.#element.classList.remove(DRAGGED_ITEM_CLASS);
   }
 }
 
@@ -129,6 +155,7 @@ class DeckAccordionPanel {
   #termCountElement;
   #termChips = [];
   #isExpanded = false;
+  #isBeingDragged = false;
   #onTermDroppedCallback;
   #dropZoneDragCounter = 0;
   #autoExpandTimeout = null;
@@ -145,6 +172,16 @@ class DeckAccordionPanel {
   get element() { return this.#sectionElement; }
   get deckId() { return this.#deckId; }
   get termCount() { return this.#termChips.length; }
+  get isBeingDragged() { return this.#isBeingDragged; }
+
+  setInsertionMarker(markerClass) {
+    this.clearInsertionMarker();
+    this.#sectionElement.classList.add(markerClass);
+  }
+
+  clearInsertionMarker() {
+    this.#sectionElement.classList.remove(InsertionMarkerClass.before, InsertionMarkerClass.after);
+  }
 
   appendTermChip(chip) {
     this.#termChips.push(chip);
@@ -226,6 +263,9 @@ class DeckAccordionPanel {
     header.appendChild(this.#termCountElement);
     header.appendChild(nameSpan);
     header.addEventListener('click', () => this.toggleExpanded());
+    header.draggable = true;
+    header.addEventListener('dragstart', (e) => this.#handleDeckDragStart(e));
+    header.addEventListener('dragend', () => this.#handleDeckDragEnd());
 
     this.#bodyElement = document.createElement('div');
     this.#bodyElement.className = 'deck-body';
@@ -235,24 +275,40 @@ class DeckAccordionPanel {
     return section;
   }
 
+  // The deck itself is dragged by its header, to a new place inside its level.
+  #handleDeckDragStart(event) {
+    event.dataTransfer.setData(DragPayloadType.deck, JSON.stringify({ deckId: this.#deckId }));
+    event.dataTransfer.effectAllowed = 'move';
+    this.#isBeingDragged = true;
+    this.#sectionElement.classList.add(DRAGGED_ITEM_CLASS);
+  }
+
+  #handleDeckDragEnd() {
+    this.#isBeingDragged = false;
+    this.#sectionElement.classList.remove(DRAGGED_ITEM_CLASS);
+  }
+
+  // The deck is a drop zone for terms only; a dragged deck passes through to its level.
   #setupDropZoneListeners() {
     this.#bodyElement.addEventListener('dragenter', (e) => this.#handleDragEnter(e));
-    this.#bodyElement.addEventListener('dragleave', () => this.#handleDragLeave());
+    this.#bodyElement.addEventListener('dragleave', (e) => this.#handleDragLeave(e));
     this.#bodyElement.addEventListener('dragover', (e) => this.#handleDragOver(e));
     this.#bodyElement.addEventListener('drop', (e) => this.#handleDrop(e));
 
     this.#sectionElement.addEventListener('dragenter', (e) => {
+      if (!isDragOfPayloadType(e, DragPayloadType.term)) return;
       e.preventDefault();
       this.#sectionDragCounter++;
       if (!this.#isExpanded && !this.#autoExpandTimeout) {
         this.#autoExpandTimeout = setTimeout(() => {
           this.setExpanded(true);
           this.#autoExpandTimeout = null;
-        }, 800);
+        }, DECK_AUTO_EXPAND_DELAY_MS);
       }
     });
 
-    this.#sectionElement.addEventListener('dragleave', () => {
+    this.#sectionElement.addEventListener('dragleave', (e) => {
+      if (!isDragOfPayloadType(e, DragPayloadType.term)) return;
       this.#sectionDragCounter--;
       if (this.#sectionDragCounter === 0) {
         clearTimeout(this.#autoExpandTimeout);
@@ -262,12 +318,14 @@ class DeckAccordionPanel {
   }
 
   #handleDragEnter(event) {
+    if (!isDragOfPayloadType(event, DragPayloadType.term)) return;
     event.preventDefault();
     this.#dropZoneDragCounter++;
     this.#bodyElement.classList.add('drop-target');
   }
 
-  #handleDragLeave() {
+  #handleDragLeave(event) {
+    if (!isDragOfPayloadType(event, DragPayloadType.term)) return;
     this.#dropZoneDragCounter--;
     if (this.#dropZoneDragCounter === 0) {
       this.#bodyElement.classList.remove('drop-target');
@@ -276,6 +334,7 @@ class DeckAccordionPanel {
   }
 
   #handleDragOver(event) {
+    if (!isDragOfPayloadType(event, DragPayloadType.term)) return;
     event.preventDefault();
     event.dataTransfer.dropEffect = 'move';
     this.#showInsertionIndicator(
@@ -284,6 +343,7 @@ class DeckAccordionPanel {
   }
 
   #handleDrop(event) {
+    if (!isDragOfPayloadType(event, DragPayloadType.term)) return;
     event.preventDefault();
     this.#dropZoneDragCounter = 0;
     this.#sectionDragCounter = 0;
@@ -292,7 +352,7 @@ class DeckAccordionPanel {
     this.#bodyElement.classList.remove('drop-target');
     this.#clearInsertionIndicator();
     const insertionIndex = this.#computeInsertionIndexFromDropPosition(event);
-    const payload = JSON.parse(event.dataTransfer.getData('text/plain'));
+    const payload = readDragPayload(event, DragPayloadType.term);
     this.#onTermDroppedCallback(payload.termId, payload.sourceDeckId || null, insertionIndex, event.shiftKey);
   }
 
@@ -308,13 +368,13 @@ class DeckAccordionPanel {
   #showInsertionIndicator(index) {
     this.#clearInsertionIndicator();
     if (index < this.#termChips.length) {
-      this.#termChips[index].element.classList.add('insert-before');
+      this.#termChips[index].element.classList.add(InsertionMarkerClass.before);
     }
   }
 
   #clearInsertionIndicator() {
     for (const chip of this.#termChips) {
-      chip.element.classList.remove('insert-before');
+      chip.element.classList.remove(InsertionMarkerClass.before);
     }
   }
 }
@@ -329,16 +389,88 @@ class LevelAccordionPanel {
   #termCountElement;
   #deckPanels = [];
   #isExpanded = false;
+  #onDeckReorderedCallback;
 
-  constructor(levelId, displayName) {
+  constructor(levelId, displayName, onDeckReorderedCallback) {
     this.#levelId = levelId;
     this.#displayName = displayName;
+    this.#onDeckReorderedCallback = onDeckReorderedCallback;
     this.#sectionElement = this.#buildSectionElement();
+    this.#setupDeckDropZoneListeners();
   }
 
   get element() { return this.#sectionElement; }
   get levelId() { return this.#levelId; }
   get deckPanels() { return this.#deckPanels; }
+
+  // The level is a drop zone for its own decks only: a deck dragged here from
+  // another level is not accepted.
+  #setupDeckDropZoneListeners() {
+    this.#bodyElement.addEventListener('dragover', (e) => this.#handleDeckDragOver(e));
+    this.#bodyElement.addEventListener('dragleave', (e) => this.#handleDeckDragLeave(e));
+    this.#bodyElement.addEventListener('drop', (e) => this.#handleDeckDrop(e));
+    this.#bodyElement.addEventListener('dragend', () => this.#clearDeckInsertionMarkers());
+  }
+
+  #findDeckPanelBeingDragged(event) {
+    if (!isDragOfPayloadType(event, DragPayloadType.deck)) return undefined;
+    return this.#deckPanels.find(deckPanel => deckPanel.isBeingDragged);
+  }
+
+  // The deck under the pointer and the half of it the pointer is in. Over an
+  // empty spot of the level the place is after the last deck.
+  #findDeckPlacementFromPointer(event) {
+    const targetIndex = this.#deckPanels.findIndex(deckPanel => deckPanel.element.contains(event.target));
+    if (targetIndex === -1) {
+      return { targetIndex: this.#deckPanels.length - 1, isPlacedAfterTarget: true };
+    }
+    const targetRect = this.#deckPanels[targetIndex].element.getBoundingClientRect();
+    const isPlacedAfterTarget = event.clientY >= targetRect.top + targetRect.height / 2;
+    return { targetIndex, isPlacedAfterTarget };
+  }
+
+  #handleDeckDragOver(event) {
+    const movedDeckPanel = this.#findDeckPanelBeingDragged(event);
+    if (!movedDeckPanel) return;
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'move';
+    const placement = this.#findDeckPlacementFromPointer(event);
+    const targetDeckPanel = this.#deckPanels[placement.targetIndex];
+    this.#clearDeckInsertionMarkers();
+    if (targetDeckPanel !== movedDeckPanel) {
+      targetDeckPanel.setInsertionMarker(
+        placement.isPlacedAfterTarget ? InsertionMarkerClass.after : InsertionMarkerClass.before
+      );
+    }
+  }
+
+  #handleDeckDragLeave(event) {
+    if (!this.#bodyElement.contains(event.relatedTarget)) this.#clearDeckInsertionMarkers();
+  }
+
+  #handleDeckDrop(event) {
+    const movedDeckPanel = this.#findDeckPanelBeingDragged(event);
+    if (!movedDeckPanel) return;
+    event.preventDefault();
+    this.#clearDeckInsertionMarkers();
+    const placement = this.#findDeckPlacementFromPointer(event);
+    const movedIndex = this.#deckPanels.indexOf(movedDeckPanel);
+    const newIndex = computeIndexAfterRemoval(movedIndex, placement.targetIndex, placement.isPlacedAfterTarget);
+    if (newIndex === movedIndex) return;
+    this.#moveDeckPanelToIndex(movedDeckPanel, newIndex);
+    this.#onDeckReorderedCallback(this.#levelId, movedDeckPanel.deckId, newIndex);
+  }
+
+  #moveDeckPanelToIndex(deckPanel, newIndex) {
+    this.#deckPanels.splice(this.#deckPanels.indexOf(deckPanel), 1);
+    this.#deckPanels.splice(newIndex, 0, deckPanel);
+    const followingDeckPanel = this.#deckPanels[newIndex + 1];
+    this.#bodyElement.insertBefore(deckPanel.element, followingDeckPanel ? followingDeckPanel.element : null);
+  }
+
+  #clearDeckInsertionMarkers() {
+    for (const deckPanel of this.#deckPanels) deckPanel.clearInsertionMarker();
+  }
 
   appendDeckPanel(deckPanel) {
     this.#deckPanels.push(deckPanel);
@@ -492,7 +624,11 @@ class StructureEditorPage {
   #buildLevelPanel(levelDef, names) {
     const levelDisplayName =
       (names.levels[levelDef.id] && names.levels[levelDef.id].name) || levelDef.id;
-    const levelPanel = new LevelAccordionPanel(levelDef.id, levelDisplayName);
+    const levelPanel = new LevelAccordionPanel(
+      levelDef.id,
+      levelDisplayName,
+      (levelId, deckId, newIndex) => this.#handleDeckReordered(levelId, deckId, newIndex)
+    );
 
     for (const deckId of levelDef.decks) {
       const deckDef = this.#dataStore.getDeckDefinition(deckId);
@@ -575,12 +711,14 @@ class StructureEditorPage {
     let dragCounter = 0;
 
     this.#unassignedBodyElement.addEventListener('dragenter', (e) => {
+      if (!isDragOfPayloadType(e, DragPayloadType.term)) return;
       e.preventDefault();
       dragCounter++;
       this.#unassignedBodyElement.classList.add('drop-target');
     });
 
-    this.#unassignedBodyElement.addEventListener('dragleave', () => {
+    this.#unassignedBodyElement.addEventListener('dragleave', (e) => {
+      if (!isDragOfPayloadType(e, DragPayloadType.term)) return;
       dragCounter--;
       if (dragCounter === 0) {
         this.#unassignedBodyElement.classList.remove('drop-target');
@@ -588,15 +726,17 @@ class StructureEditorPage {
     });
 
     this.#unassignedBodyElement.addEventListener('dragover', (e) => {
+      if (!isDragOfPayloadType(e, DragPayloadType.term)) return;
       e.preventDefault();
       e.dataTransfer.dropEffect = 'move';
     });
 
     this.#unassignedBodyElement.addEventListener('drop', (e) => {
+      if (!isDragOfPayloadType(e, DragPayloadType.term)) return;
       e.preventDefault();
       dragCounter = 0;
       this.#unassignedBodyElement.classList.remove('drop-target');
-      const payload = JSON.parse(e.dataTransfer.getData('text/plain'));
+      const payload = readDragPayload(e, DragPayloadType.term);
       this.#handleTermDropped(null, payload.termId, payload.sourceDeckId || null);
     });
   }
@@ -665,7 +805,7 @@ class StructureEditorPage {
     }
 
     this.#updateCountsAfterMove(sourceDeckId, targetDeckId);
-    window.dispatchEvent(new CustomEvent('dirty-change'));
+    this.#announceUnsavedChange();
   }
 
   #handleCopyToDeck(targetDeckId, termId, insertionIndex) {
@@ -684,7 +824,7 @@ class StructureEditorPage {
     }
 
     this.#updateCountsAfterMove(null, targetDeckId);
-    window.dispatchEvent(new CustomEvent('dirty-change'));
+    this.#announceUnsavedChange();
   }
 
   #handleSameDeckReorder(deckId, termId, insertionIndex) {
@@ -698,6 +838,16 @@ class StructureEditorPage {
     deckPanel.insertTermChipAtIndex(chip, adjustedIndex);
 
     this.#dataStore.reorderTermWithinDeck(deckId, termId, adjustedIndex);
+    this.#announceUnsavedChange();
+  }
+
+  #handleDeckReordered(levelId, deckId, newIndex) {
+    this.#dataStore.reorderDeckWithinLevel(levelId, deckId, newIndex);
+    this.#announceUnsavedChange();
+  }
+
+  // Tells the application that something waits to be saved.
+  #announceUnsavedChange() {
     window.dispatchEvent(new CustomEvent('dirty-change'));
   }
 

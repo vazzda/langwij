@@ -3493,6 +3493,4487 @@
   "zero": {
     "text": "zero"
   },
+  "atm": {
+    "text": "ATM",
+    "note": "cash machine"
+  },
+  "open": {
+    "text": "open",
+    "note": "The store is open."
+  },
+  "all": {
+    "text": "all"
+  },
+  "that_conj": {
+    "text": "that (conjunction)"
+  },
+  "as": {
+    "text": "as"
+  },
+  "of": {
+    "text": "of"
+  },
+  "to": {
+    "text": "to"
+  },
+  "for": {
+    "text": "for"
+  },
+  "with": {
+    "text": "with"
+  },
+  "at": {
+    "text": "at"
+  },
+  "from": {
+    "text": "from"
+  },
+  "by": {
+    "text": "by"
+  },
+  "not": {
+    "text": "not"
+  },
+  "people": {
+    "text": "people"
+  },
+  "kid": {
+    "text": "kid"
+  },
+  "mom": {
+    "text": "mom"
+  },
+  "dad": {
+    "text": "dad"
+  },
+  "son": {
+    "text": "son"
+  },
+  "daughter": {
+    "text": "daughter"
+  },
+  "grandmother": {
+    "text": "grandmother"
+  },
+  "grandfather": {
+    "text": "grandfather"
+  },
+  "uncle": {
+    "text": "uncle"
+  },
+  "aunt": {
+    "text": "aunt"
+  },
+  "cousin": {
+    "text": "cousin"
+  },
+  "to_tell": {
+    "text": "to tell"
+  },
+  "noon": {
+    "text": "noon"
+  },
+  "afternoon": {
+    "text": "afternoon"
+  },
+  "midnight": {
+    "text": "midnight"
+  },
+  "weekend": {
+    "text": "weekend"
+  },
+  "color": {
+    "text": "color"
+  },
+  "eleven": {
+    "text": "eleven"
+  },
+  "twelve": {
+    "text": "twelve"
+  },
+  "thirteen": {
+    "text": "thirteen"
+  },
+  "fourteen": {
+    "text": "fourteen"
+  },
+  "fifteen": {
+    "text": "fifteen"
+  },
+  "sixteen": {
+    "text": "sixteen"
+  },
+  "seventeen": {
+    "text": "seventeen"
+  },
+  "eighteen": {
+    "text": "eighteen"
+  },
+  "nineteen": {
+    "text": "nineteen"
+  },
+  "twenty": {
+    "text": "twenty"
+  },
+  "thirty": {
+    "text": "thirty"
+  },
+  "forty": {
+    "text": "forty"
+  },
+  "fifty": {
+    "text": "fifty"
+  },
+  "sixty": {
+    "text": "sixty"
+  },
+  "seventy": {
+    "text": "seventy"
+  },
+  "eighty": {
+    "text": "eighty"
+  },
+  "ninety": {
+    "text": "ninety"
+  },
+  "billion": {
+    "text": "billion"
+  },
+  "to_start": {
+    "text": "to start"
+  },
+  "house": {
+    "text": "house"
+  },
+  "toilet": {
+    "text": "toilet"
+  },
+  "meal": {
+    "text": "meal"
+  },
+  "breakfast": {
+    "text": "breakfast"
+  },
+  "lunch": {
+    "text": "lunch"
+  },
+  "dinner": {
+    "text": "dinner"
+  },
+  "drink": {
+    "text": "drink",
+    "note": "something to drink"
+  },
+  "menu": {
+    "text": "menu"
+  },
+  "bill": {
+    "text": "bill"
+  },
+  "tip": {
+    "text": "tip"
+  },
+  "better": {
+    "text": "better"
+  },
+  "best": {
+    "text": "best"
+  },
+  "date": {
+    "text": "date",
+    "note": "day of the month"
+  },
+  "birthday": {
+    "text": "birthday"
+  },
+  "holiday": {
+    "text": "holiday"
+  },
+  "which": {
+    "text": "which"
+  },
+  "whose": {
+    "text": "whose"
+  },
+  "its": {
+    "text": "its"
+  },
+  "every": {
+    "text": "every"
+  },
+  "some": {
+    "text": "some"
+  },
+  "any": {
+    "text": "any"
+  },
+  "each": {
+    "text": "each"
+  },
+  "both": {
+    "text": "both"
+  },
+  "few": {
+    "text": "few"
+  },
+  "several": {
+    "text": "several"
+  },
+  "most": {
+    "text": "most"
+  },
+  "another": {
+    "text": "another"
+  },
+  "other": {
+    "text": "other"
+  },
+  "none": {
+    "text": "none"
+  },
+  "plenty": {
+    "text": "plenty"
+  },
+  "certain": {
+    "text": "certain"
+  },
+  "own": {
+    "text": "own"
+  },
+  "about": {
+    "text": "about"
+  },
+  "into": {
+    "text": "into"
+  },
+  "through": {
+    "text": "through"
+  },
+  "without": {
+    "text": "without"
+  },
+  "against": {
+    "text": "against"
+  },
+  "around": {
+    "text": "around"
+  },
+  "among": {
+    "text": "among"
+  },
+  "within": {
+    "text": "within"
+  },
+  "toward": {
+    "text": "toward"
+  },
+  "along": {
+    "text": "along"
+  },
+  "out": {
+    "text": "out"
+  },
+  "off": {
+    "text": "off"
+  },
+  "away": {
+    "text": "away"
+  },
+  "back": {
+    "text": "back",
+    "note": "in return, to an earlier place"
+  },
+  "town": {
+    "text": "town"
+  },
+  "corner": {
+    "text": "corner"
+  },
+  "square": {
+    "text": "square"
+  },
+  "building": {
+    "text": "building"
+  },
+  "shop": {
+    "text": "shop"
+  },
+  "supermarket": {
+    "text": "supermarket"
+  },
+  "bakery": {
+    "text": "bakery"
+  },
+  "pharmacy": {
+    "text": "pharmacy"
+  },
+  "cafe": {
+    "text": "cafe"
+  },
+  "subway": {
+    "text": "subway"
+  },
+  "flight": {
+    "text": "flight"
+  },
+  "platform": {
+    "text": "platform"
+  },
+  "seat": {
+    "text": "seat"
+  },
+  "coin": {
+    "text": "coin"
+  },
+  "wallet": {
+    "text": "wallet"
+  },
+  "customer": {
+    "text": "customer"
+  },
+  "discount": {
+    "text": "discount"
+  },
+  "exchange": {
+    "text": "exchange",
+    "note": "changing one thing for another"
+  },
+  "fee": {
+    "text": "fee"
+  },
+  "body": {
+    "text": "body"
+  },
+  "face": {
+    "text": "face"
+  },
+  "t_shirt": {
+    "text": "t-shirt"
+  },
+  "jeans": {
+    "text": "jeans"
+  },
+  "sweater": {
+    "text": "sweater"
+  },
+  "ever": {
+    "text": "ever"
+  },
+  "once": {
+    "text": "once"
+  },
+  "twice": {
+    "text": "twice"
+  },
+  "again": {
+    "text": "again"
+  },
+  "during": {
+    "text": "during"
+  },
+  "since": {
+    "text": "since"
+  },
+  "until": {
+    "text": "until"
+  },
+  "okay": {
+    "text": "okay"
+  },
+  "sure": {
+    "text": "sure"
+  },
+  "of_course": {
+    "text": "of course"
+  },
+  "maybe": {
+    "text": "maybe"
+  },
+  "perhaps": {
+    "text": "perhaps"
+  },
+  "probably": {
+    "text": "probably"
+  },
+  "actually": {
+    "text": "actually"
+  },
+  "well": {
+    "text": "well"
+  },
+  "so": {
+    "text": "so"
+  },
+  "hey": {
+    "text": "hey"
+  },
+  "hi": {
+    "text": "hi"
+  },
+  "anyway": {
+    "text": "anyway"
+  },
+  "indeed": {
+    "text": "indeed"
+  },
+  "certainly": {
+    "text": "certainly"
+  },
+  "definitely": {
+    "text": "definitely"
+  },
+  "should": {
+    "text": "should"
+  },
+  "second": {
+    "text": "second",
+    "note": "after the first"
+  },
+  "third": {
+    "text": "third"
+  },
+  "fourth": {
+    "text": "fourth"
+  },
+  "next": {
+    "text": "next"
+  },
+  "finally": {
+    "text": "finally"
+  },
+  "just": {
+    "text": "just"
+  },
+  "something": {
+    "text": "something"
+  },
+  "anything": {
+    "text": "anything"
+  },
+  "nothing": {
+    "text": "nothing"
+  },
+  "everything": {
+    "text": "everything"
+  },
+  "someone": {
+    "text": "someone"
+  },
+  "anyone": {
+    "text": "anyone"
+  },
+  "everyone": {
+    "text": "everyone"
+  },
+  "nobody": {
+    "text": "nobody"
+  },
+  "whatever": {
+    "text": "whatever"
+  },
+  "else": {
+    "text": "else"
+  },
+  "mine": {
+    "text": "mine"
+  },
+  "yours": {
+    "text": "yours"
+  },
+  "oneself": {
+    "text": "oneself"
+  },
+  "manager": {
+    "text": "manager"
+  },
+  "colleague": {
+    "text": "colleague"
+  },
+  "interview": {
+    "text": "interview"
+  },
+  "lesson": {
+    "text": "lesson"
+  },
+  "example": {
+    "text": "example"
+  },
+  "mistake": {
+    "text": "mistake"
+  },
+  "laptop": {
+    "text": "laptop"
+  },
+  "internet": {
+    "text": "internet"
+  },
+  "wifi": {
+    "text": "Wi-Fi"
+  },
+  "online": {
+    "text": "online"
+  },
+  "email": {
+    "text": "email"
+  },
+  "cable": {
+    "text": "cable"
+  },
+  "charger": {
+    "text": "charger"
+  },
+  "to_charge": {
+    "text": "to charge"
+  },
+  "to_search": {
+    "text": "to search"
+  },
+  "beef": {
+    "text": "beef"
+  },
+  "pork": {
+    "text": "pork"
+  },
+  "pasta": {
+    "text": "pasta"
+  },
+  "pizza": {
+    "text": "pizza"
+  },
+  "sandwich": {
+    "text": "sandwich"
+  },
+  "carrot": {
+    "text": "carrot"
+  },
+  "lemon": {
+    "text": "lemon"
+  },
+  "banana": {
+    "text": "banana"
+  },
+  "to_provide": {
+    "text": "to provide"
+  },
+  "to_allow": {
+    "text": "to allow"
+  },
+  "to_share": {
+    "text": "to share"
+  },
+  "to_return": {
+    "text": "to return"
+  },
+  "to_pick": {
+    "text": "to pick"
+  },
+  "to_hit": {
+    "text": "to hit"
+  },
+  "to_miss": {
+    "text": "to miss"
+  },
+  "to_cover": {
+    "text": "to cover"
+  },
+  "to_end": {
+    "text": "to end"
+  },
+  "to_cause": {
+    "text": "to cause"
+  },
+  "to_drop": {
+    "text": "to drop"
+  },
+  "to_place": {
+    "text": "to place"
+  },
+  "to_hang": {
+    "text": "to hang"
+  },
+  "to_lay": {
+    "text": "to lay"
+  },
+  "to_remove": {
+    "text": "to remove"
+  },
+  "to_avoid": {
+    "text": "to avoid"
+  },
+  "to_prepare": {
+    "text": "to prepare"
+  },
+  "outside": {
+    "text": "outside"
+  },
+  "beyond": {
+    "text": "beyond"
+  },
+  "ahead": {
+    "text": "ahead"
+  },
+  "together": {
+    "text": "together"
+  },
+  "far": {
+    "text": "far"
+  },
+  "somewhere": {
+    "text": "somewhere"
+  },
+  "anywhere": {
+    "text": "anywhere"
+  },
+  "to_ride": {
+    "text": "to ride"
+  },
+  "to_park": {
+    "text": "to park"
+  },
+  "to_cross": {
+    "text": "to cross"
+  },
+  "to_pack": {
+    "text": "to pack"
+  },
+  "to_reserve": {
+    "text": "to reserve"
+  },
+  "to_cancel": {
+    "text": "to cancel"
+  },
+  "to_confirm": {
+    "text": "to confirm"
+  },
+  "to_visit": {
+    "text": "to visit"
+  },
+  "to_enter": {
+    "text": "to enter"
+  },
+  "to_hurry": {
+    "text": "to hurry"
+  },
+  "document": {
+    "text": "document"
+  },
+  "signature": {
+    "text": "signature"
+  },
+  "address": {
+    "text": "address"
+  },
+  "deposit": {
+    "text": "deposit"
+  },
+  "mail": {
+    "text": "mail"
+  },
+  "envelope": {
+    "text": "envelope"
+  },
+  "postcard": {
+    "text": "postcard"
+  },
+  "landlord": {
+    "text": "landlord"
+  },
+  "to_rent": {
+    "text": "to rent"
+  },
+  "elevator": {
+    "text": "elevator"
+  },
+  "entrance": {
+    "text": "entrance"
+  },
+  "exit": {
+    "text": "exit"
+  },
+  "balcony": {
+    "text": "balcony"
+  },
+  "garden": {
+    "text": "garden"
+  },
+  "furniture": {
+    "text": "furniture"
+  },
+  "couch": {
+    "text": "couch"
+  },
+  "electricity": {
+    "text": "electricity"
+  },
+  "garbage": {
+    "text": "garbage"
+  },
+  "health": {
+    "text": "health"
+  },
+  "cough": {
+    "text": "cough"
+  },
+  "flu": {
+    "text": "flu"
+  },
+  "headache": {
+    "text": "headache"
+  },
+  "pill": {
+    "text": "pill"
+  },
+  "appointment": {
+    "text": "appointment"
+  },
+  "dentist": {
+    "text": "dentist"
+  },
+  "emergency": {
+    "text": "emergency"
+  },
+  "ambulance": {
+    "text": "ambulance"
+  },
+  "injury": {
+    "text": "injury"
+  },
+  "fresh": {
+    "text": "fresh"
+  },
+  "cake": {
+    "text": "cake"
+  },
+  "dessert": {
+    "text": "dessert"
+  },
+  "snack": {
+    "text": "snack"
+  },
+  "comfortable": {
+    "text": "comfortable"
+  },
+  "glad": {
+    "text": "glad"
+  },
+  "afraid": {
+    "text": "afraid"
+  },
+  "busy": {
+    "text": "busy"
+  },
+  "alone": {
+    "text": "alone"
+  },
+  "married": {
+    "text": "married"
+  },
+  "lost": {
+    "text": "lost"
+  },
+  "funny": {
+    "text": "funny"
+  },
+  "friendly": {
+    "text": "friendly"
+  },
+  "umbrella": {
+    "text": "umbrella"
+  },
+  "climate": {
+    "text": "climate"
+  },
+  "heat": {
+    "text": "heat"
+  },
+  "point": {
+    "text": "point"
+  },
+  "group": {
+    "text": "group"
+  },
+  "line": {
+    "text": "line"
+  },
+  "level": {
+    "text": "level"
+  },
+  "kind": {
+    "text": "kind"
+  },
+  "to_earn": {
+    "text": "to earn"
+  },
+  "to_borrow": {
+    "text": "to borrow"
+  },
+  "to_lend": {
+    "text": "to lend"
+  },
+  "to_sign": {
+    "text": "to sign"
+  },
+  "to_order": {
+    "text": "to order"
+  },
+  "to_deliver": {
+    "text": "to deliver"
+  },
+  "to_weigh": {
+    "text": "to weigh"
+  },
+  "to_fill": {
+    "text": "to fill"
+  },
+  "to_repeat": {
+    "text": "to repeat"
+  },
+  "to_translate": {
+    "text": "to translate"
+  },
+  "to_spell": {
+    "text": "to spell"
+  },
+  "to_complain": {
+    "text": "to complain"
+  },
+  "to_introduce": {
+    "text": "to introduce"
+  },
+  "to_welcome": {
+    "text": "to welcome"
+  },
+  "great": {
+    "text": "great"
+  },
+  "high": {
+    "text": "high"
+  },
+  "low": {
+    "text": "low"
+  },
+  "huge": {
+    "text": "huge"
+  },
+  "tiny": {
+    "text": "tiny"
+  },
+  "real": {
+    "text": "real"
+  },
+  "true": {
+    "text": "true"
+  },
+  "whole": {
+    "text": "whole"
+  },
+  "free": {
+    "text": "free"
+  },
+  "able": {
+    "text": "able"
+  },
+  "ready": {
+    "text": "ready"
+  },
+  "simple": {
+    "text": "simple"
+  },
+  "common": {
+    "text": "common"
+  },
+  "special": {
+    "text": "special"
+  },
+  "main": {
+    "text": "main"
+  },
+  "perfect": {
+    "text": "perfect"
+  },
+  "fine": {
+    "text": "fine",
+    "note": "good enough, okay"
+  },
+  "to_prefer": {
+    "text": "to prefer"
+  },
+  "to_enjoy": {
+    "text": "to enjoy"
+  },
+  "to_realize": {
+    "text": "to realize"
+  },
+  "to_guess": {
+    "text": "to guess"
+  },
+  "to_wonder": {
+    "text": "to wonder"
+  },
+  "to_imagine": {
+    "text": "to imagine"
+  },
+  "to_notice": {
+    "text": "to notice"
+  },
+  "to_recognize": {
+    "text": "to recognize"
+  },
+  "to_worry": {
+    "text": "to worry"
+  },
+  "to_assume": {
+    "text": "to assume"
+  },
+  "to_suppose": {
+    "text": "to suppose"
+  },
+  "to_intend": {
+    "text": "to intend"
+  },
+  "to_remind": {
+    "text": "to remind"
+  },
+  "to_recall": {
+    "text": "to recall"
+  },
+  "to_trust": {
+    "text": "to trust"
+  },
+  "to_mind": {
+    "text": "to mind",
+    "note": "be bothered by"
+  },
+  "to_appreciate": {
+    "text": "to appreciate"
+  },
+  "to_deserve": {
+    "text": "to deserve"
+  },
+  "to_bother": {
+    "text": "to bother"
+  },
+  "moment": {
+    "text": "moment"
+  },
+  "period": {
+    "text": "period"
+  },
+  "age": {
+    "text": "age"
+  },
+  "season": {
+    "text": "season"
+  },
+  "history": {
+    "text": "history"
+  },
+  "century": {
+    "text": "century"
+  },
+  "decade": {
+    "text": "decade"
+  },
+  "era": {
+    "text": "era"
+  },
+  "future": {
+    "text": "future"
+  },
+  "past": {
+    "text": "past"
+  },
+  "beginning": {
+    "text": "beginning"
+  },
+  "end": {
+    "text": "end"
+  },
+  "start": {
+    "text": "start"
+  },
+  "break": {
+    "text": "break"
+  },
+  "turn": {
+    "text": "turn"
+  },
+  "step": {
+    "text": "step"
+  },
+  "session": {
+    "text": "session"
+  },
+  "term": {
+    "text": "term"
+  },
+  "second_n": {
+    "text": "second",
+    "note": "unit of time"
+  },
+  "wage": {
+    "text": "wage"
+  },
+  "refund": {
+    "text": "refund"
+  },
+  "charge": {
+    "text": "charge"
+  },
+  "to_withdraw": {
+    "text": "to withdraw"
+  },
+  "to_owe": {
+    "text": "to owe"
+  },
+  "clear": {
+    "text": "clear"
+  },
+  "likely": {
+    "text": "likely"
+  },
+  "similar": {
+    "text": "similar"
+  },
+  "various": {
+    "text": "various"
+  },
+  "specific": {
+    "text": "specific"
+  },
+  "particular": {
+    "text": "particular"
+  },
+  "total": {
+    "text": "total"
+  },
+  "entire": {
+    "text": "entire"
+  },
+  "complete": {
+    "text": "complete",
+    "note": "whole, finished"
+  },
+  "actual": {
+    "text": "actual"
+  },
+  "basic": {
+    "text": "basic"
+  },
+  "extra": {
+    "text": "extra"
+  },
+  "additional": {
+    "text": "additional"
+  },
+  "multiple": {
+    "text": "multiple"
+  },
+  "available": {
+    "text": "available"
+  },
+  "nearly": {
+    "text": "nearly"
+  },
+  "rather": {
+    "text": "rather"
+  },
+  "pretty": {
+    "text": "pretty"
+  },
+  "especially": {
+    "text": "especially"
+  },
+  "particularly": {
+    "text": "particularly"
+  },
+  "absolutely": {
+    "text": "absolutely"
+  },
+  "extremely": {
+    "text": "extremely"
+  },
+  "slightly": {
+    "text": "slightly"
+  },
+  "relatively": {
+    "text": "relatively"
+  },
+  "entirely": {
+    "text": "entirely"
+  },
+  "currently": {
+    "text": "currently"
+  },
+  "forever": {
+    "text": "forever"
+  },
+  "anymore": {
+    "text": "anymore"
+  },
+  "quickly": {
+    "text": "quickly"
+  },
+  "slowly": {
+    "text": "slowly"
+  },
+  "easily": {
+    "text": "easily"
+  },
+  "directly": {
+    "text": "directly"
+  },
+  "simply": {
+    "text": "simply"
+  },
+  "generally": {
+    "text": "generally"
+  },
+  "basically": {
+    "text": "basically"
+  },
+  "eventually": {
+    "text": "eventually"
+  },
+  "suddenly": {
+    "text": "suddenly"
+  },
+  "ago": {
+    "text": "ago"
+  },
+  "safe": {
+    "text": "safe"
+  },
+  "dangerous": {
+    "text": "dangerous"
+  },
+  "interesting": {
+    "text": "interesting"
+  },
+  "boring": {
+    "text": "boring"
+  },
+  "popular": {
+    "text": "popular"
+  },
+  "favorite": {
+    "text": "favorite"
+  },
+  "foreign": {
+    "text": "foreign"
+  },
+  "early": {
+    "text": "early"
+  },
+  "late": {
+    "text": "late"
+  },
+  "recent": {
+    "text": "recent"
+  },
+  "current": {
+    "text": "current"
+  },
+  "former": {
+    "text": "former"
+  },
+  "previous": {
+    "text": "previous"
+  },
+  "final": {
+    "text": "final"
+  },
+  "initial": {
+    "text": "initial"
+  },
+  "annual": {
+    "text": "annual"
+  },
+  "daily": {
+    "text": "daily"
+  },
+  "regular": {
+    "text": "regular"
+  },
+  "long_term": {
+    "text": "long-term"
+  },
+  "ancient": {
+    "text": "ancient"
+  },
+  "modern": {
+    "text": "modern"
+  },
+  "historical": {
+    "text": "historical"
+  },
+  "quick": {
+    "text": "quick"
+  },
+  "present": {
+    "text": "present",
+    "note": "happening now"
+  },
+  "museum": {
+    "text": "museum"
+  },
+  "cinema": {
+    "text": "cinema"
+  },
+  "pool": {
+    "text": "pool"
+  },
+  "mall": {
+    "text": "mall"
+  },
+  "neighborhood": {
+    "text": "neighborhood"
+  },
+  "village": {
+    "text": "village"
+  },
+  "picture": {
+    "text": "picture"
+  },
+  "to_rest": {
+    "text": "to rest"
+  },
+  "to_relax": {
+    "text": "to relax"
+  },
+  "motorcycle": {
+    "text": "motorcycle"
+  },
+  "truck": {
+    "text": "truck"
+  },
+  "ship": {
+    "text": "ship"
+  },
+  "tourist": {
+    "text": "tourist"
+  },
+  "schedule": {
+    "text": "schedule"
+  },
+  "delay": {
+    "text": "delay"
+  },
+  "vacation": {
+    "text": "vacation"
+  },
+  "passenger": {
+    "text": "passenger"
+  },
+  "departure": {
+    "text": "departure"
+  },
+  "arrival": {
+    "text": "arrival"
+  },
+  "journey": {
+    "text": "journey"
+  },
+  "route": {
+    "text": "route"
+  },
+  "airline": {
+    "text": "airline"
+  },
+  "suitcase": {
+    "text": "suitcase"
+  },
+  "ferry": {
+    "text": "ferry"
+  },
+  "tram": {
+    "text": "tram"
+  },
+  "souvenir": {
+    "text": "souvenir"
+  },
+  "tent": {
+    "text": "tent"
+  },
+  "adult": {
+    "text": "adult"
+  },
+  "guest": {
+    "text": "guest"
+  },
+  "stranger": {
+    "text": "stranger"
+  },
+  "shower": {
+    "text": "shower"
+  },
+  "fridge": {
+    "text": "fridge"
+  },
+  "stove": {
+    "text": "stove"
+  },
+  "north": {
+    "text": "north"
+  },
+  "south": {
+    "text": "south"
+  },
+  "east": {
+    "text": "east"
+  },
+  "west": {
+    "text": "west"
+  },
+  "northern": {
+    "text": "northern"
+  },
+  "southern": {
+    "text": "southern"
+  },
+  "eastern": {
+    "text": "eastern"
+  },
+  "western": {
+    "text": "western"
+  },
+  "central": {
+    "text": "central"
+  },
+  "local": {
+    "text": "local"
+  },
+  "international": {
+    "text": "international"
+  },
+  "global": {
+    "text": "global"
+  },
+  "urban": {
+    "text": "urban"
+  },
+  "domestic": {
+    "text": "domestic"
+  },
+  "region": {
+    "text": "region"
+  },
+  "area": {
+    "text": "area"
+  },
+  "though": {
+    "text": "though"
+  },
+  "nor": {
+    "text": "nor"
+  },
+  "than": {
+    "text": "than"
+  },
+  "like": {
+    "text": "like",
+    "note": "similar to"
+  },
+  "even": {
+    "text": "even"
+  },
+  "except": {
+    "text": "except"
+  },
+  "to_describe": {
+    "text": "to describe"
+  },
+  "to_mention": {
+    "text": "to mention"
+  },
+  "to_discuss": {
+    "text": "to discuss"
+  },
+  "to_argue": {
+    "text": "to argue"
+  },
+  "to_claim": {
+    "text": "to claim"
+  },
+  "to_state": {
+    "text": "to state"
+  },
+  "to_note": {
+    "text": "to note"
+  },
+  "to_respond": {
+    "text": "to respond"
+  },
+  "to_announce": {
+    "text": "to announce"
+  },
+  "to_admit": {
+    "text": "to admit"
+  },
+  "to_deny": {
+    "text": "to deny"
+  },
+  "to_refuse": {
+    "text": "to refuse"
+  },
+  "to_plan": {
+    "text": "to plan"
+  },
+  "to_manage": {
+    "text": "to manage"
+  },
+  "to_control": {
+    "text": "to control"
+  },
+  "to_design": {
+    "text": "to design"
+  },
+  "to_apply": {
+    "text": "to apply"
+  },
+  "to_present": {
+    "text": "to present"
+  },
+  "to_represent": {
+    "text": "to represent"
+  },
+  "to_focus": {
+    "text": "to focus"
+  },
+  "to_deal": {
+    "text": "to deal"
+  },
+  "to_act": {
+    "text": "to act"
+  },
+  "to_handle": {
+    "text": "to handle"
+  },
+  "to_conduct": {
+    "text": "to conduct"
+  },
+  "to_climb": {
+    "text": "to climb"
+  },
+  "to_breathe": {
+    "text": "to breathe"
+  },
+  "to_smoke": {
+    "text": "to smoke"
+  },
+  "to_yell": {
+    "text": "to yell"
+  },
+  "to_whisper": {
+    "text": "to whisper"
+  },
+  "to_scream": {
+    "text": "to scream"
+  },
+  "to_greet": {
+    "text": "to greet"
+  },
+  "to_apologize": {
+    "text": "to apologize"
+  },
+  "to_forgive": {
+    "text": "to forgive"
+  },
+  "beach": {
+    "text": "beach"
+  },
+  "lip": {
+    "text": "lip"
+  },
+  "throat": {
+    "text": "throat"
+  },
+  "to_fix": {
+    "text": "to fix"
+  },
+  "to_repair": {
+    "text": "to repair"
+  },
+  "to_lock": {
+    "text": "to lock"
+  },
+  "closet": {
+    "text": "closet"
+  },
+  "curtain": {
+    "text": "curtain"
+  },
+  "carpet": {
+    "text": "carpet"
+  },
+  "mattress": {
+    "text": "mattress"
+  },
+  "sofa": {
+    "text": "sofa"
+  },
+  "pocket": {
+    "text": "pocket"
+  },
+  "watch": {
+    "text": "watch",
+    "note": "small clock on the wrist"
+  },
+  "belt": {
+    "text": "belt"
+  },
+  "shorts": {
+    "text": "shorts"
+  },
+  "underwear": {
+    "text": "underwear"
+  },
+  "backpack": {
+    "text": "backpack"
+  },
+  "tie": {
+    "text": "tie",
+    "note": "worn around the neck"
+  },
+  "uniform": {
+    "text": "uniform"
+  },
+  "button": {
+    "text": "button"
+  },
+  "cap": {
+    "text": "cap"
+  },
+  "sneaker": {
+    "text": "sneaker"
+  },
+  "sandal": {
+    "text": "sandal"
+  },
+  "swimsuit": {
+    "text": "swimsuit"
+  },
+  "sunglasses": {
+    "text": "sunglasses"
+  },
+  "clothes": {
+    "text": "clothes"
+  },
+  "suit": {
+    "text": "suit"
+  },
+  "laundry": {
+    "text": "laundry"
+  },
+  "bucket": {
+    "text": "bucket"
+  },
+  "trash": {
+    "text": "trash"
+  },
+  "heater": {
+    "text": "heater"
+  },
+  "bathtub": {
+    "text": "bathtub"
+  },
+  "ceiling": {
+    "text": "ceiling"
+  },
+  "fence": {
+    "text": "fence"
+  },
+  "gate": {
+    "text": "gate"
+  },
+  "to_sweep": {
+    "text": "to sweep"
+  },
+  "to_fold": {
+    "text": "to fold"
+  },
+  "to_wrap": {
+    "text": "to wrap"
+  },
+  "recipe": {
+    "text": "recipe"
+  },
+  "ingredient": {
+    "text": "ingredient"
+  },
+  "to_fry": {
+    "text": "to fry"
+  },
+  "to_chop": {
+    "text": "to chop"
+  },
+  "to_pour": {
+    "text": "to pour"
+  },
+  "to_stir": {
+    "text": "to stir"
+  },
+  "to_boil": {
+    "text": "to boil"
+  },
+  "bean": {
+    "text": "bean"
+  },
+  "corn": {
+    "text": "corn"
+  },
+  "nut": {
+    "text": "nut"
+  },
+  "grape": {
+    "text": "grape"
+  },
+  "strawberry": {
+    "text": "strawberry"
+  },
+  "cucumber": {
+    "text": "cucumber"
+  },
+  "cabbage": {
+    "text": "cabbage"
+  },
+  "yogurt": {
+    "text": "yogurt"
+  },
+  "steak": {
+    "text": "steak"
+  },
+  "burger": {
+    "text": "burger"
+  },
+  "pie": {
+    "text": "pie"
+  },
+  "cookie": {
+    "text": "cookie"
+  },
+  "candy": {
+    "text": "candy"
+  },
+  "keyboard": {
+    "text": "keyboard"
+  },
+  "signal": {
+    "text": "signal"
+  },
+  "to_click": {
+    "text": "to click"
+  },
+  "to_print": {
+    "text": "to print"
+  },
+  "to_delete": {
+    "text": "to delete"
+  },
+  "to_install": {
+    "text": "to install"
+  },
+  "printer": {
+    "text": "printer"
+  },
+  "headphones": {
+    "text": "headphones"
+  },
+  "employer": {
+    "text": "employer"
+  },
+  "profession": {
+    "text": "profession"
+  },
+  "to_quit": {
+    "text": "to quit"
+  },
+  "conference": {
+    "text": "conference"
+  },
+  "task": {
+    "text": "task"
+  },
+  "responsibility": {
+    "text": "responsibility"
+  },
+  "to_shave": {
+    "text": "to shave"
+  },
+  "cancer": {
+    "text": "cancer"
+  },
+  "disease": {
+    "text": "disease"
+  },
+  "treatment": {
+    "text": "treatment"
+  },
+  "patient": {
+    "text": "patient"
+  },
+  "drug": {
+    "text": "drug"
+  },
+  "care": {
+    "text": "care"
+  },
+  "vaccine": {
+    "text": "vaccine"
+  },
+  "vitamin": {
+    "text": "vitamin"
+  },
+  "mask": {
+    "text": "mask"
+  },
+  "diet": {
+    "text": "diet"
+  },
+  "to_bleed": {
+    "text": "to bleed"
+  },
+  "to_sneeze": {
+    "text": "to sneeze"
+  },
+  "abortion": {
+    "text": "abortion"
+  },
+  "elbow": {
+    "text": "elbow"
+  },
+  "wrist": {
+    "text": "wrist"
+  },
+  "ankle": {
+    "text": "ankle"
+  },
+  "thumb": {
+    "text": "thumb"
+  },
+  "cheek": {
+    "text": "cheek"
+  },
+  "chin": {
+    "text": "chin"
+  },
+  "forehead": {
+    "text": "forehead"
+  },
+  "breast": {
+    "text": "breast"
+  },
+  "breath": {
+    "text": "breath"
+  },
+  "sleep": {
+    "text": "sleep"
+  },
+  "gas": {
+    "text": "gas"
+  },
+  "vocabulary": {
+    "text": "vocabulary"
+  },
+  "pencil": {
+    "text": "pencil"
+  },
+  "notebook": {
+    "text": "notebook"
+  },
+  "dictionary": {
+    "text": "dictionary"
+  },
+  "grammar": {
+    "text": "grammar"
+  },
+  "to_practice": {
+    "text": "to practice"
+  },
+  "to_graduate": {
+    "text": "to graduate"
+  },
+  "guy": {
+    "text": "guy"
+  },
+  "lady": {
+    "text": "lady"
+  },
+  "sir": {
+    "text": "sir"
+  },
+  "member": {
+    "text": "member"
+  },
+  "fan": {
+    "text": "fan"
+  },
+  "user": {
+    "text": "user"
+  },
+  "owner": {
+    "text": "owner"
+  },
+  "reader": {
+    "text": "reader"
+  },
+  "consumer": {
+    "text": "consumer"
+  },
+  "citizen": {
+    "text": "citizen"
+  },
+  "resident": {
+    "text": "resident"
+  },
+  "voter": {
+    "text": "voter"
+  },
+  "participant": {
+    "text": "participant"
+  },
+  "winner": {
+    "text": "winner"
+  },
+  "speaker": {
+    "text": "speaker"
+  },
+  "investor": {
+    "text": "investor"
+  },
+  "miss": {
+    "text": "miss",
+    "note": "title for a woman"
+  },
+  "host": {
+    "text": "host"
+  },
+  "university": {
+    "text": "university"
+  },
+  "college": {
+    "text": "college"
+  },
+  "education": {
+    "text": "education"
+  },
+  "class": {
+    "text": "class"
+  },
+  "study": {
+    "text": "study"
+  },
+  "learning": {
+    "text": "learning"
+  },
+  "teaching": {
+    "text": "teaching"
+  },
+  "reading": {
+    "text": "reading"
+  },
+  "writing": {
+    "text": "writing"
+  },
+  "educational": {
+    "text": "educational"
+  },
+  "academic": {
+    "text": "academic"
+  },
+  "subject": {
+    "text": "subject"
+  },
+  "career": {
+    "text": "career"
+  },
+  "position": {
+    "text": "position"
+  },
+  "opportunity": {
+    "text": "opportunity"
+  },
+  "skill": {
+    "text": "skill"
+  },
+  "professional": {
+    "text": "professional"
+  },
+  "plan": {
+    "text": "plan"
+  },
+  "purpose": {
+    "text": "purpose"
+  },
+  "effort": {
+    "text": "effort"
+  },
+  "practice": {
+    "text": "practice"
+  },
+  "target": {
+    "text": "target"
+  },
+  "living": {
+    "text": "living"
+  },
+  "business": {
+    "text": "business"
+  },
+  "firm": {
+    "text": "firm"
+  },
+  "corporation": {
+    "text": "corporation"
+  },
+  "industry": {
+    "text": "industry"
+  },
+  "organization": {
+    "text": "organization"
+  },
+  "management": {
+    "text": "management"
+  },
+  "sector": {
+    "text": "sector"
+  },
+  "program": {
+    "text": "program"
+  },
+  "system": {
+    "text": "system"
+  },
+  "service": {
+    "text": "service"
+  },
+  "product": {
+    "text": "product"
+  },
+  "production": {
+    "text": "production"
+  },
+  "construction": {
+    "text": "construction"
+  },
+  "percent": {
+    "text": "percent"
+  },
+  "percentage": {
+    "text": "percentage"
+  },
+  "amount": {
+    "text": "amount"
+  },
+  "average": {
+    "text": "average"
+  },
+  "million": {
+    "text": "million"
+  },
+  "rate": {
+    "text": "rate"
+  },
+  "value": {
+    "text": "value"
+  },
+  "cost": {
+    "text": "cost"
+  },
+  "dollar": {
+    "text": "dollar"
+  },
+  "pound": {
+    "text": "pound"
+  },
+  "increase": {
+    "text": "increase"
+  },
+  "growth": {
+    "text": "growth"
+  },
+  "risk": {
+    "text": "risk"
+  },
+  "benefit": {
+    "text": "benefit"
+  },
+  "deal": {
+    "text": "deal"
+  },
+  "mile": {
+    "text": "mile"
+  },
+  "inch": {
+    "text": "inch"
+  },
+  "mean": {
+    "text": "mean",
+    "note": "average"
+  },
+  "result": {
+    "text": "result"
+  },
+  "development": {
+    "text": "development"
+  },
+  "improvement": {
+    "text": "improvement"
+  },
+  "progress": {
+    "text": "progress"
+  },
+  "performance": {
+    "text": "performance"
+  },
+  "advantage": {
+    "text": "advantage"
+  },
+  "demand": {
+    "text": "demand"
+  },
+  "supply": {
+    "text": "supply"
+  },
+  "resource": {
+    "text": "resource"
+  },
+  "standard": {
+    "text": "standard"
+  },
+  "quality": {
+    "text": "quality"
+  },
+  "status": {
+    "text": "status"
+  },
+  "potential": {
+    "text": "potential"
+  },
+  "requirement": {
+    "text": "requirement"
+  },
+  "commitment": {
+    "text": "commitment"
+  },
+  "contribution": {
+    "text": "contribution"
+  },
+  "to_operate": {
+    "text": "to operate"
+  },
+  "to_organize": {
+    "text": "to organize"
+  },
+  "to_perform": {
+    "text": "to perform"
+  },
+  "to_complete": {
+    "text": "to complete"
+  },
+  "to_achieve": {
+    "text": "to achieve"
+  },
+  "to_attend": {
+    "text": "to attend"
+  },
+  "to_fire": {
+    "text": "to fire",
+    "note": "dismiss from a job"
+  },
+  "to_establish": {
+    "text": "to establish"
+  },
+  "to_maintain": {
+    "text": "to maintain"
+  },
+  "to_launch": {
+    "text": "to launch"
+  },
+  "economy": {
+    "text": "economy"
+  },
+  "economic": {
+    "text": "economic"
+  },
+  "financial": {
+    "text": "financial"
+  },
+  "trade": {
+    "text": "trade"
+  },
+  "stock": {
+    "text": "stock"
+  },
+  "credit": {
+    "text": "credit"
+  },
+  "income": {
+    "text": "income"
+  },
+  "investment": {
+    "text": "investment"
+  },
+  "debt": {
+    "text": "debt"
+  },
+  "sales": {
+    "text": "sales"
+  },
+  "revenue": {
+    "text": "revenue"
+  },
+  "fund": {
+    "text": "fund"
+  },
+  "capital": {
+    "text": "capital"
+  },
+  "share": {
+    "text": "share"
+  },
+  "property": {
+    "text": "property"
+  },
+  "estate": {
+    "text": "estate"
+  },
+  "application": {
+    "text": "application"
+  },
+  "request": {
+    "text": "request"
+  },
+  "offer": {
+    "text": "offer"
+  },
+  "package": {
+    "text": "package"
+  },
+  "item": {
+    "text": "item"
+  },
+  "sample": {
+    "text": "sample"
+  },
+  "labor": {
+    "text": "labor"
+  },
+  "successful": {
+    "text": "successful"
+  },
+  "effective": {
+    "text": "effective"
+  },
+  "corporate": {
+    "text": "corporate"
+  },
+  "commercial": {
+    "text": "commercial"
+  },
+  "relative": {
+    "text": "relative"
+  },
+  "twin": {
+    "text": "twin"
+  },
+  "nephew": {
+    "text": "nephew"
+  },
+  "niece": {
+    "text": "niece"
+  },
+  "teenager": {
+    "text": "teenager"
+  },
+  "immigrant": {
+    "text": "immigrant"
+  },
+  "youth": {
+    "text": "youth"
+  },
+  "individual": {
+    "text": "individual"
+  },
+  "human": {
+    "text": "human"
+  },
+  "self": {
+    "text": "self"
+  },
+  "being": {
+    "text": "being"
+  },
+  "daddy": {
+    "text": "daddy"
+  },
+  "writer": {
+    "text": "writer"
+  },
+  "author": {
+    "text": "author"
+  },
+  "editor": {
+    "text": "editor"
+  },
+  "reporter": {
+    "text": "reporter"
+  },
+  "scientist": {
+    "text": "scientist"
+  },
+  "researcher": {
+    "text": "researcher"
+  },
+  "expert": {
+    "text": "expert"
+  },
+  "agent": {
+    "text": "agent"
+  },
+  "cop": {
+    "text": "cop"
+  },
+  "guard": {
+    "text": "guard"
+  },
+  "critic": {
+    "text": "critic"
+  },
+  "master": {
+    "text": "master"
+  },
+  "president": {
+    "text": "president"
+  },
+  "leader": {
+    "text": "leader"
+  },
+  "director": {
+    "text": "director"
+  },
+  "official": {
+    "text": "official"
+  },
+  "officer": {
+    "text": "officer"
+  },
+  "chief": {
+    "text": "chief"
+  },
+  "captain": {
+    "text": "captain"
+  },
+  "minister": {
+    "text": "minister"
+  },
+  "mayor": {
+    "text": "mayor"
+  },
+  "chairman": {
+    "text": "chairman"
+  },
+  "executive": {
+    "text": "executive"
+  },
+  "secretary": {
+    "text": "secretary"
+  },
+  "candidate": {
+    "text": "candidate"
+  },
+  "politician": {
+    "text": "politician"
+  },
+  "king": {
+    "text": "king"
+  },
+  "lord": {
+    "text": "lord"
+  },
+  "general_n": {
+    "text": "general",
+    "note": "army officer"
+  },
+  "to_insist": {
+    "text": "to insist"
+  },
+  "to_express": {
+    "text": "to express"
+  },
+  "to_declare": {
+    "text": "to declare"
+  },
+  "to_propose": {
+    "text": "to propose"
+  },
+  "to_recommend": {
+    "text": "to recommend"
+  },
+  "to_excuse": {
+    "text": "to excuse"
+  },
+  "to_blame": {
+    "text": "to blame"
+  },
+  "to_accuse": {
+    "text": "to accuse"
+  },
+  "to_convince": {
+    "text": "to convince"
+  },
+  "to_comment": {
+    "text": "to comment"
+  },
+  "to_question": {
+    "text": "to question"
+  },
+  "to_cite": {
+    "text": "to cite"
+  },
+  "generation": {
+    "text": "generation"
+  },
+  "crowd": {
+    "text": "crowd"
+  },
+  "troop": {
+    "text": "troop"
+  },
+  "crew": {
+    "text": "crew"
+  },
+  "staff": {
+    "text": "staff"
+  },
+  "minority": {
+    "text": "minority"
+  },
+  "majority": {
+    "text": "majority"
+  },
+  "population": {
+    "text": "population"
+  },
+  "community": {
+    "text": "community"
+  },
+  "society": {
+    "text": "society"
+  },
+  "public_n": {
+    "text": "public",
+    "note": "people in general"
+  },
+  "folk": {
+    "text": "folk"
+  },
+  "enemy": {
+    "text": "enemy"
+  },
+  "hero": {
+    "text": "hero"
+  },
+  "association": {
+    "text": "association"
+  },
+  "panel": {
+    "text": "panel"
+  },
+  "call": {
+    "text": "call"
+  },
+  "talk": {
+    "text": "talk"
+  },
+  "conversation": {
+    "text": "conversation"
+  },
+  "discussion": {
+    "text": "discussion"
+  },
+  "debate": {
+    "text": "debate"
+  },
+  "statement": {
+    "text": "statement"
+  },
+  "expression": {
+    "text": "expression"
+  },
+  "explanation": {
+    "text": "explanation"
+  },
+  "instruction": {
+    "text": "instruction"
+  },
+  "advice": {
+    "text": "advice"
+  },
+  "promise": {
+    "text": "promise"
+  },
+  "claim": {
+    "text": "claim"
+  },
+  "agreement": {
+    "text": "agreement"
+  },
+  "joke": {
+    "text": "joke"
+  },
+  "note": {
+    "text": "note"
+  },
+  "contact": {
+    "text": "contact"
+  },
+  "connection": {
+    "text": "connection"
+  },
+  "communication": {
+    "text": "communication"
+  },
+  "relation": {
+    "text": "relation"
+  },
+  "interaction": {
+    "text": "interaction"
+  },
+  "access": {
+    "text": "access"
+  },
+  "support": {
+    "text": "support"
+  },
+  "help": {
+    "text": "help"
+  },
+  "report": {
+    "text": "report"
+  },
+  "record": {
+    "text": "record"
+  },
+  "list": {
+    "text": "list"
+  },
+  "sign": {
+    "text": "sign"
+  },
+  "sound": {
+    "text": "sound"
+  },
+  "reference": {
+    "text": "reference"
+  },
+  "coverage": {
+    "text": "coverage"
+  },
+  "aid": {
+    "text": "aid"
+  },
+  "photograph": {
+    "text": "photograph"
+  },
+  "tv": {
+    "text": "TV"
+  },
+  "episode": {
+    "text": "episode"
+  },
+  "scene": {
+    "text": "scene"
+  },
+  "stage": {
+    "text": "stage"
+  },
+  "play": {
+    "text": "play"
+  },
+  "studio": {
+    "text": "studio"
+  },
+  "media": {
+    "text": "media"
+  },
+  "press": {
+    "text": "press"
+  },
+  "newspaper": {
+    "text": "newspaper"
+  },
+  "magazine": {
+    "text": "magazine"
+  },
+  "journal": {
+    "text": "journal"
+  },
+  "article": {
+    "text": "article"
+  },
+  "page": {
+    "text": "page"
+  },
+  "text": {
+    "text": "text"
+  },
+  "title": {
+    "text": "title"
+  },
+  "chapter": {
+    "text": "chapter"
+  },
+  "novel": {
+    "text": "novel"
+  },
+  "literature": {
+    "text": "literature"
+  },
+  "blog": {
+    "text": "blog"
+  },
+  "post": {
+    "text": "post"
+  },
+  "comment": {
+    "text": "comment"
+  },
+  "image": {
+    "text": "image"
+  },
+  "album": {
+    "text": "album"
+  },
+  "review": {
+    "text": "review"
+  },
+  "content": {
+    "text": "content"
+  },
+  "ad": {
+    "text": "ad"
+  },
+  "center": {
+    "text": "center"
+  },
+  "site": {
+    "text": "site"
+  },
+  "space": {
+    "text": "space"
+  },
+  "ground": {
+    "text": "ground"
+  },
+  "location": {
+    "text": "location"
+  },
+  "camp": {
+    "text": "camp"
+  },
+  "farm": {
+    "text": "farm"
+  },
+  "yard": {
+    "text": "yard"
+  },
+  "spot": {
+    "text": "spot"
+  },
+  "setting": {
+    "text": "setting"
+  },
+  "zone": {
+    "text": "zone"
+  },
+  "band": {
+    "text": "band"
+  },
+  "dance": {
+    "text": "dance"
+  },
+  "art": {
+    "text": "art"
+  },
+  "painting": {
+    "text": "painting"
+  },
+  "design": {
+    "text": "design"
+  },
+  "style": {
+    "text": "style"
+  },
+  "fashion": {
+    "text": "fashion"
+  },
+  "technology": {
+    "text": "technology"
+  },
+  "web": {
+    "text": "web"
+  },
+  "digital": {
+    "text": "digital"
+  },
+  "link": {
+    "text": "link"
+  },
+  "file": {
+    "text": "file"
+  },
+  "device": {
+    "text": "device"
+  },
+  "machine": {
+    "text": "machine"
+  },
+  "tool": {
+    "text": "tool"
+  },
+  "information": {
+    "text": "information"
+  },
+  "source": {
+    "text": "source"
+  },
+  "to_publish": {
+    "text": "to publish"
+  },
+  "to_post": {
+    "text": "to post"
+  },
+  "to_release": {
+    "text": "to release"
+  },
+  "to_record": {
+    "text": "to record"
+  },
+  "to_capture": {
+    "text": "to capture"
+  },
+  "to_file": {
+    "text": "to file"
+  },
+  "to_link": {
+    "text": "to link"
+  },
+  "to_connect": {
+    "text": "to connect"
+  },
+  "to_direct": {
+    "text": "to direct"
+  },
+  "to_issue": {
+    "text": "to issue"
+  },
+  "to_feature": {
+    "text": "to feature"
+  },
+  "to_mark": {
+    "text": "to mark"
+  },
+  "to_list": {
+    "text": "to list"
+  },
+  "to_paint": {
+    "text": "to paint"
+  },
+  "sport": {
+    "text": "sport"
+  },
+  "club": {
+    "text": "club"
+  },
+  "football": {
+    "text": "football"
+  },
+  "baseball": {
+    "text": "baseball"
+  },
+  "award": {
+    "text": "award"
+  },
+  "competition": {
+    "text": "competition"
+  },
+  "event": {
+    "text": "event"
+  },
+  "activity": {
+    "text": "activity"
+  },
+  "party": {
+    "text": "party"
+  },
+  "tour": {
+    "text": "tour"
+  },
+  "visit": {
+    "text": "visit"
+  },
+  "travel": {
+    "text": "travel"
+  },
+  "ride": {
+    "text": "ride"
+  },
+  "drive": {
+    "text": "drive"
+  },
+  "sight": {
+    "text": "sight"
+  },
+  "stuff": {
+    "text": "stuff"
+  },
+  "card": {
+    "text": "card"
+  },
+  "ring": {
+    "text": "ring"
+  },
+  "chain": {
+    "text": "chain"
+  },
+  "sheet": {
+    "text": "sheet"
+  },
+  "copy": {
+    "text": "copy"
+  },
+  "check": {
+    "text": "check"
+  },
+  "cover": {
+    "text": "cover"
+  },
+  "desk": {
+    "text": "desk"
+  },
+  "equipment": {
+    "text": "equipment"
+  },
+  "bunch": {
+    "text": "bunch"
+  },
+  "pair": {
+    "text": "pair"
+  },
+  "collection": {
+    "text": "collection"
+  },
+  "bay": {
+    "text": "bay"
+  },
+  "nature": {
+    "text": "nature"
+  },
+  "natural": {
+    "text": "natural"
+  },
+  "environment": {
+    "text": "environment"
+  },
+  "environmental": {
+    "text": "environmental"
+  },
+  "clinic": {
+    "text": "clinic"
+  },
+  "stadium": {
+    "text": "stadium"
+  },
+  "tower": {
+    "text": "tower"
+  },
+  "castle": {
+    "text": "castle"
+  },
+  "temple": {
+    "text": "temple"
+  },
+  "sidewalk": {
+    "text": "sidewalk"
+  },
+  "tunnel": {
+    "text": "tunnel"
+  },
+  "zoo": {
+    "text": "zoo"
+  },
+  "hairdresser": {
+    "text": "hairdresser"
+  },
+  "bar": {
+    "text": "bar"
+  },
+  "top": {
+    "text": "top",
+    "note": "highest part"
+  },
+  "bottom": {
+    "text": "bottom"
+  },
+  "side": {
+    "text": "side"
+  },
+  "middle": {
+    "text": "middle"
+  },
+  "front": {
+    "text": "front"
+  },
+  "direction": {
+    "text": "direction"
+  },
+  "path": {
+    "text": "path"
+  },
+  "track": {
+    "text": "track"
+  },
+  "trail": {
+    "text": "trail"
+  },
+  "section": {
+    "text": "section"
+  },
+  "division": {
+    "text": "division"
+  },
+  "quarter": {
+    "text": "quarter"
+  },
+  "base": {
+    "text": "base"
+  },
+  "hall": {
+    "text": "hall"
+  },
+  "facility": {
+    "text": "facility"
+  },
+  "institute": {
+    "text": "institute"
+  },
+  "sand": {
+    "text": "sand"
+  },
+  "dust": {
+    "text": "dust"
+  },
+  "smoke": {
+    "text": "smoke"
+  },
+  "seed": {
+    "text": "seed"
+  },
+  "branch": {
+    "text": "branch"
+  },
+  "rose": {
+    "text": "rose"
+  },
+  "flood": {
+    "text": "flood"
+  },
+  "fog": {
+    "text": "fog"
+  },
+  "rock": {
+    "text": "rock"
+  },
+  "plant": {
+    "text": "plant"
+  },
+  "leaf": {
+    "text": "leaf"
+  },
+  "root": {
+    "text": "root"
+  },
+  "wing": {
+    "text": "wing"
+  },
+  "wave": {
+    "text": "wave"
+  },
+  "shadow": {
+    "text": "shadow"
+  },
+  "air": {
+    "text": "air"
+  },
+  "light_n": {
+    "text": "light",
+    "note": "what makes things visible"
+  },
+  "duck": {
+    "text": "duck"
+  },
+  "tiger": {
+    "text": "tiger"
+  },
+  "pet": {
+    "text": "pet"
+  },
+  "tail": {
+    "text": "tail"
+  },
+  "strange": {
+    "text": "strange"
+  },
+  "weird": {
+    "text": "weird"
+  },
+  "wonderful": {
+    "text": "wonderful"
+  },
+  "amazing": {
+    "text": "amazing"
+  },
+  "terrible": {
+    "text": "terrible"
+  },
+  "excellent": {
+    "text": "excellent"
+  },
+  "super": {
+    "text": "super"
+  },
+  "famous": {
+    "text": "famous"
+  },
+  "unique": {
+    "text": "unique"
+  },
+  "rare": {
+    "text": "rare"
+  },
+  "familiar": {
+    "text": "familiar"
+  },
+  "obvious": {
+    "text": "obvious"
+  },
+  "impossible": {
+    "text": "impossible"
+  },
+  "fair": {
+    "text": "fair"
+  },
+  "appropriate": {
+    "text": "appropriate"
+  },
+  "useful": {
+    "text": "useful"
+  },
+  "cool": {
+    "text": "cool"
+  },
+  "crazy": {
+    "text": "crazy"
+  },
+  "stupid": {
+    "text": "stupid"
+  },
+  "tough": {
+    "text": "tough"
+  },
+  "lazy": {
+    "text": "lazy"
+  },
+  "rude": {
+    "text": "rude"
+  },
+  "shy": {
+    "text": "shy"
+  },
+  "nervous": {
+    "text": "nervous"
+  },
+  "lonely": {
+    "text": "lonely"
+  },
+  "proud": {
+    "text": "proud"
+  },
+  "lucky": {
+    "text": "lucky"
+  },
+  "careful": {
+    "text": "careful"
+  },
+  "to_beat": {
+    "text": "to beat"
+  },
+  "to_kick": {
+    "text": "to kick"
+  },
+  "to_strike": {
+    "text": "to strike"
+  },
+  "to_blow": {
+    "text": "to blow"
+  },
+  "to_roll": {
+    "text": "to roll"
+  },
+  "to_lift": {
+    "text": "to lift"
+  },
+  "to_press": {
+    "text": "to press"
+  },
+  "to_knock": {
+    "text": "to knock"
+  },
+  "to_grab": {
+    "text": "to grab"
+  },
+  "to_stick": {
+    "text": "to stick"
+  },
+  "to_ring": {
+    "text": "to ring"
+  },
+  "to_bite": {
+    "text": "to bite"
+  },
+  "to_swallow": {
+    "text": "to swallow"
+  },
+  "willing": {
+    "text": "willing"
+  },
+  "concerned": {
+    "text": "concerned"
+  },
+  "aware": {
+    "text": "aware"
+  },
+  "interested": {
+    "text": "interested"
+  },
+  "surprised": {
+    "text": "surprised"
+  },
+  "excited": {
+    "text": "excited"
+  },
+  "worried": {
+    "text": "worried"
+  },
+  "creative": {
+    "text": "creative"
+  },
+  "emotional": {
+    "text": "emotional"
+  },
+  "mental": {
+    "text": "mental"
+  },
+  "moral": {
+    "text": "moral"
+  },
+  "gay": {
+    "text": "gay"
+  },
+  "cute": {
+    "text": "cute"
+  },
+  "handsome": {
+    "text": "handsome"
+  },
+  "silent": {
+    "text": "silent"
+  },
+  "thick": {
+    "text": "thick"
+  },
+  "thin": {
+    "text": "thin"
+  },
+  "fat": {
+    "text": "fat"
+  },
+  "narrow": {
+    "text": "narrow"
+  },
+  "flat": {
+    "text": "flat"
+  },
+  "sharp": {
+    "text": "sharp"
+  },
+  "smooth": {
+    "text": "smooth"
+  },
+  "rough": {
+    "text": "rough"
+  },
+  "tight": {
+    "text": "tight"
+  },
+  "loose": {
+    "text": "loose"
+  },
+  "raw": {
+    "text": "raw"
+  },
+  "frozen": {
+    "text": "frozen"
+  },
+  "awake": {
+    "text": "awake"
+  },
+  "asleep": {
+    "text": "asleep"
+  },
+  "drunk": {
+    "text": "drunk"
+  },
+  "private": {
+    "text": "private"
+  },
+  "personal": {
+    "text": "personal"
+  },
+  "medical": {
+    "text": "medical"
+  },
+  "physical": {
+    "text": "physical"
+  },
+  "sexual": {
+    "text": "sexual"
+  },
+  "female": {
+    "text": "female"
+  },
+  "male": {
+    "text": "male"
+  },
+  "normal": {
+    "text": "normal"
+  },
+  "wild": {
+    "text": "wild"
+  },
+  "active": {
+    "text": "active"
+  },
+  "direct": {
+    "text": "direct",
+    "note": "without a detour"
+  },
+  "broad": {
+    "text": "broad"
+  },
+  "complex": {
+    "text": "complex"
+  },
+  "equal": {
+    "text": "equal"
+  },
+  "gender": {
+    "text": "gender"
+  },
+  "major": {
+    "text": "major"
+  },
+  "serious": {
+    "text": "serious"
+  },
+  "significant": {
+    "text": "significant"
+  },
+  "critical": {
+    "text": "critical"
+  },
+  "powerful": {
+    "text": "powerful"
+  },
+  "key_a": {
+    "text": "key",
+    "note": "most important"
+  },
+  "primary": {
+    "text": "primary"
+  },
+  "prime": {
+    "text": "prime"
+  },
+  "senior": {
+    "text": "senior"
+  },
+  "top_a": {
+    "text": "top",
+    "note": "best, highest"
+  },
+  "positive": {
+    "text": "positive"
+  },
+  "negative": {
+    "text": "negative"
+  },
+  "independent": {
+    "text": "independent"
+  },
+  "responsible": {
+    "text": "responsible"
+  },
+  "original": {
+    "text": "original"
+  },
+  "general": {
+    "text": "general"
+  },
+  "french": {
+    "text": "French"
+  },
+  "british": {
+    "text": "British"
+  },
+  "chinese": {
+    "text": "Chinese"
+  },
+  "european": {
+    "text": "European"
+  },
+  "african": {
+    "text": "African"
+  },
+  "russian": {
+    "text": "Russian"
+  },
+  "indian": {
+    "text": "Indian"
+  },
+  "english": {
+    "text": "English"
+  },
+  "soviet": {
+    "text": "Soviet"
+  },
+  "native": {
+    "text": "native"
+  },
+  "feeling": {
+    "text": "feeling"
+  },
+  "surprise": {
+    "text": "surprise"
+  },
+  "smile": {
+    "text": "smile"
+  },
+  "tear": {
+    "text": "tear"
+  },
+  "confidence": {
+    "text": "confidence"
+  },
+  "doubt": {
+    "text": "doubt"
+  },
+  "respect": {
+    "text": "respect"
+  },
+  "honor": {
+    "text": "honor"
+  },
+  "luck": {
+    "text": "luck"
+  },
+  "attention": {
+    "text": "attention"
+  },
+  "interest": {
+    "text": "interest"
+  },
+  "concern": {
+    "text": "concern"
+  },
+  "beauty": {
+    "text": "beauty"
+  },
+  "expectation": {
+    "text": "expectation"
+  },
+  "ability": {
+    "text": "ability"
+  },
+  "intelligence": {
+    "text": "intelligence"
+  },
+  "identity": {
+    "text": "identity"
+  },
+  "character": {
+    "text": "character"
+  },
+  "behavior": {
+    "text": "behavior"
+  },
+  "manner": {
+    "text": "manner"
+  },
+  "appearance": {
+    "text": "appearance"
+  },
+  "leadership": {
+    "text": "leadership"
+  },
+  "presence": {
+    "text": "presence"
+  },
+  "talent": {
+    "text": "talent"
+  },
+  "strength": {
+    "text": "strength"
+  },
+  "role": {
+    "text": "role"
+  },
+  "will": {
+    "text": "will",
+    "note": "wish, determination"
+  },
+  "background": {
+    "text": "background"
+  },
+  "supposed": {
+    "text": "supposed"
+  },
+  "fun": {
+    "text": "fun"
+  },
+  "live": {
+    "text": "live",
+    "note": "happening now"
+  },
+  "used": {
+    "text": "used",
+    "note": "not new"
+  },
+  "massive": {
+    "text": "massive"
+  },
+  "internal": {
+    "text": "internal"
+  },
+  "overall": {
+    "text": "overall"
+  },
+  "grand": {
+    "text": "grand"
+  },
+  "social": {
+    "text": "social"
+  },
+  "public": {
+    "text": "public"
+  },
+  "to_tie": {
+    "text": "to tie"
+  },
+  "to_shut": {
+    "text": "to shut"
+  },
+  "to_hide": {
+    "text": "to hide"
+  },
+  "to_seek": {
+    "text": "to seek"
+  },
+  "to_step": {
+    "text": "to step"
+  },
+  "to_lean": {
+    "text": "to lean"
+  },
+  "to_stare": {
+    "text": "to stare"
+  },
+  "to_nod": {
+    "text": "to nod"
+  },
+  "to_point": {
+    "text": "to point"
+  },
+  "to_head": {
+    "text": "to head",
+    "note": "go in a direction, lead"
+  },
+  "to_escape": {
+    "text": "to escape"
+  },
+  "to_disappear": {
+    "text": "to disappear"
+  },
+  "to_emerge": {
+    "text": "to emerge"
+  },
+  "to_own": {
+    "text": "to own"
+  },
+  "to_belong": {
+    "text": "to belong"
+  },
+  "to_obtain": {
+    "text": "to obtain"
+  },
+  "to_afford": {
+    "text": "to afford"
+  },
+  "to_purchase": {
+    "text": "to purchase"
+  },
+  "to_invest": {
+    "text": "to invest"
+  },
+  "to_collect": {
+    "text": "to collect"
+  },
+  "to_gather": {
+    "text": "to gather"
+  },
+  "to_select": {
+    "text": "to select"
+  },
+  "to_adopt": {
+    "text": "to adopt"
+  },
+  "to_grant": {
+    "text": "to grant"
+  },
+  "to_contribute": {
+    "text": "to contribute"
+  },
+  "to_participate": {
+    "text": "to participate"
+  },
+  "to_engage": {
+    "text": "to engage"
+  },
+  "to_exist": {
+    "text": "to exist"
+  },
+  "to_occur": {
+    "text": "to occur"
+  },
+  "to_affect": {
+    "text": "to affect"
+  },
+  "to_influence": {
+    "text": "to influence"
+  },
+  "to_involve": {
+    "text": "to involve"
+  },
+  "to_matter": {
+    "text": "to matter",
+    "note": "be important"
+  },
+  "to_tend": {
+    "text": "to tend"
+  },
+  "to_last": {
+    "text": "to last",
+    "note": "continue for a time"
+  },
+  "to_be_born": {
+    "text": "to be born",
+    "note": "come into life"
+  },
+  "to_experience": {
+    "text": "to experience"
+  },
+  "to_face": {
+    "text": "to face"
+  },
+  "to_surround": {
+    "text": "to surround"
+  },
+  "to_identify": {
+    "text": "to identify"
+  },
+  "to_determine": {
+    "text": "to determine"
+  },
+  "to_prove": {
+    "text": "to prove"
+  },
+  "to_indicate": {
+    "text": "to indicate"
+  },
+  "to_figure": {
+    "text": "to figure"
+  },
+  "to_discover": {
+    "text": "to discover"
+  },
+  "to_reveal": {
+    "text": "to reveal"
+  },
+  "to_examine": {
+    "text": "to examine"
+  },
+  "to_test": {
+    "text": "to test"
+  },
+  "to_observe": {
+    "text": "to observe"
+  },
+  "to_investigate": {
+    "text": "to investigate"
+  },
+  "to_explore": {
+    "text": "to explore"
+  },
+  "size": {
+    "text": "size"
+  },
+  "length": {
+    "text": "length"
+  },
+  "weight": {
+    "text": "weight"
+  },
+  "volume": {
+    "text": "volume"
+  },
+  "distance": {
+    "text": "distance"
+  },
+  "range": {
+    "text": "range"
+  },
+  "scale": {
+    "text": "scale"
+  },
+  "unit": {
+    "text": "unit"
+  },
+  "shape": {
+    "text": "shape"
+  },
+  "circle": {
+    "text": "circle"
+  },
+  "edge": {
+    "text": "edge"
+  },
+  "surface": {
+    "text": "surface"
+  },
+  "hole": {
+    "text": "hole"
+  },
+  "block": {
+    "text": "block"
+  },
+  "object": {
+    "text": "object"
+  },
+  "piece": {
+    "text": "piece"
+  },
+  "material": {
+    "text": "material"
+  },
+  "capacity": {
+    "text": "capacity"
+  },
+  "to_increase": {
+    "text": "to increase"
+  },
+  "to_reduce": {
+    "text": "to reduce"
+  },
+  "to_rise": {
+    "text": "to rise"
+  },
+  "to_improve": {
+    "text": "to improve"
+  },
+  "to_expand": {
+    "text": "to expand"
+  },
+  "to_extend": {
+    "text": "to extend"
+  },
+  "to_spread": {
+    "text": "to spread"
+  },
+  "to_gain": {
+    "text": "to gain"
+  },
+  "to_limit": {
+    "text": "to limit"
+  },
+  "to_shift": {
+    "text": "to shift"
+  },
+  "to_measure": {
+    "text": "to measure"
+  },
+  "to_compare": {
+    "text": "to compare"
+  },
+  "to_estimate": {
+    "text": "to estimate"
+  },
+  "to_cost": {
+    "text": "to cost"
+  },
+  "to_contain": {
+    "text": "to contain"
+  },
+  "to_combine": {
+    "text": "to combine"
+  },
+  "to_replace": {
+    "text": "to replace"
+  },
+  "to_generate": {
+    "text": "to generate"
+  },
+  "to_result": {
+    "text": "to result"
+  },
+  "to_depend": {
+    "text": "to depend"
+  },
+  "to_predict": {
+    "text": "to predict"
+  },
+  "to_define": {
+    "text": "to define"
+  },
+  "to_review": {
+    "text": "to review"
+  },
+  "to_demonstrate": {
+    "text": "to demonstrate"
+  },
+  "to_solve": {
+    "text": "to solve"
+  },
+  "to_locate": {
+    "text": "to locate"
+  },
+  "to_refer": {
+    "text": "to refer"
+  },
+  "to_relate": {
+    "text": "to relate"
+  },
+  "to_associate": {
+    "text": "to associate"
+  },
+  "to_conclude": {
+    "text": "to conclude"
+  },
+  "to_reflect": {
+    "text": "to reflect"
+  },
+  "to_view": {
+    "text": "to view"
+  },
+  "to_demand": {
+    "text": "to demand"
+  },
+  "to_attempt": {
+    "text": "to attempt"
+  },
+  "to_pursue": {
+    "text": "to pursue"
+  },
+  "to_expose": {
+    "text": "to expose"
+  },
+  "to_acknowledge": {
+    "text": "to acknowledge"
+  },
+  "to_rely": {
+    "text": "to rely"
+  },
+  "to_ensure": {
+    "text": "to ensure"
+  },
+  "to_encourage": {
+    "text": "to encourage"
+  },
+  "to_ignore": {
+    "text": "to ignore"
+  },
+  "to_approach": {
+    "text": "to approach"
+  },
+  "to_address": {
+    "text": "to address"
+  },
+  "to_form": {
+    "text": "to form"
+  },
+  "to_base": {
+    "text": "to base"
+  },
+  "to_produce": {
+    "text": "to produce"
+  },
+  "to_treat": {
+    "text": "to treat"
+  },
+  "to_name": {
+    "text": "to name"
+  },
+  "to_sound": {
+    "text": "to sound"
+  },
+  "to_fit": {
+    "text": "to fit"
+  },
+  "to_dress": {
+    "text": "to dress"
+  },
+  "to_match": {
+    "text": "to match"
+  },
+  "to_bet": {
+    "text": "to bet"
+  },
+  "to_fuck": {
+    "text": "to fuck"
+  },
+  "to_bear": {
+    "text": "to bear",
+    "note": "carry, endure"
+  },
+  "to_clear": {
+    "text": "to clear"
+  },
+  "to_score": {
+    "text": "to score"
+  },
+  "to_celebrate": {
+    "text": "to celebrate"
+  },
+  "to_settle": {
+    "text": "to settle"
+  },
+  "hell": {
+    "text": "hell"
+  },
+  "shit": {
+    "text": "shit"
+  },
+  "ass": {
+    "text": "ass"
+  },
+  "case": {
+    "text": "case"
+  },
+  "matter": {
+    "text": "matter"
+  },
+  "issue": {
+    "text": "issue"
+  },
+  "situation": {
+    "text": "situation"
+  },
+  "condition": {
+    "text": "condition"
+  },
+  "circumstance": {
+    "text": "circumstance"
+  },
+  "context": {
+    "text": "context"
+  },
+  "possibility": {
+    "text": "possibility"
+  },
+  "option": {
+    "text": "option"
+  },
+  "choice": {
+    "text": "choice"
+  },
+  "trouble": {
+    "text": "trouble"
+  },
+  "difficulty": {
+    "text": "difficulty"
+  },
+  "challenge": {
+    "text": "challenge"
+  },
+  "error": {
+    "text": "error"
+  },
+  "lack": {
+    "text": "lack"
+  },
+  "damage": {
+    "text": "damage"
+  },
+  "stress": {
+    "text": "stress"
+  },
+  "type": {
+    "text": "type"
+  },
+  "sort": {
+    "text": "sort"
+  },
+  "form": {
+    "text": "form"
+  },
+  "model": {
+    "text": "model"
+  },
+  "version": {
+    "text": "version"
+  },
+  "variety": {
+    "text": "variety"
+  },
+  "category": {
+    "text": "category"
+  },
+  "aspect": {
+    "text": "aspect"
+  },
+  "component": {
+    "text": "component"
+  },
+  "core": {
+    "text": "core"
+  },
+  "basis": {
+    "text": "basis"
+  },
+  "foundation": {
+    "text": "foundation"
+  },
+  "structure": {
+    "text": "structure"
+  },
+  "function": {
+    "text": "function"
+  },
+  "feature": {
+    "text": "feature"
+  },
+  "cause": {
+    "text": "cause"
+  },
+  "effect": {
+    "text": "effect"
+  },
+  "impact": {
+    "text": "impact"
+  },
+  "influence": {
+    "text": "influence"
+  },
+  "consequence": {
+    "text": "consequence"
+  },
+  "outcome": {
+    "text": "outcome"
+  },
+  "response": {
+    "text": "response"
+  },
+  "process": {
+    "text": "process"
+  },
+  "procedure": {
+    "text": "procedure"
+  },
+  "technique": {
+    "text": "technique"
+  },
+  "approach": {
+    "text": "approach"
+  },
+  "solution": {
+    "text": "solution"
+  },
+  "change": {
+    "text": "change"
+  },
+  "difference": {
+    "text": "difference"
+  },
+  "factor": {
+    "text": "factor"
+  },
+  "variable": {
+    "text": "variable"
+  },
+  "concept": {
+    "text": "concept"
+  },
+  "principle": {
+    "text": "principle"
+  },
+  "definition": {
+    "text": "definition"
+  },
+  "knowledge": {
+    "text": "knowledge"
+  },
+  "notion": {
+    "text": "notion"
+  },
+  "perspective": {
+    "text": "perspective"
+  },
+  "vision": {
+    "text": "vision"
+  },
+  "view": {
+    "text": "view"
+  },
+  "sense": {
+    "text": "sense"
+  },
+  "mind": {
+    "text": "mind"
+  },
+  "thought": {
+    "text": "thought"
+  },
+  "understanding": {
+    "text": "understanding"
+  },
+  "opinion": {
+    "text": "opinion"
+  },
+  "attitude": {
+    "text": "attitude"
+  },
+  "extent": {
+    "text": "extent"
+  },
+  "importance": {
+    "text": "importance"
+  },
+  "conclusion": {
+    "text": "conclusion"
+  },
+  "thinking": {
+    "text": "thinking"
+  },
+  "rule": {
+    "text": "rule"
+  },
+  "order": {
+    "text": "order"
+  },
+  "control": {
+    "text": "control"
+  },
+  "action": {
+    "text": "action"
+  },
+  "decision": {
+    "text": "decision"
+  },
+  "act": {
+    "text": "act"
+  },
+  "test": {
+    "text": "test"
+  },
+  "limit": {
+    "text": "limit"
+  },
+  "balance": {
+    "text": "balance"
+  },
+  "focus": {
+    "text": "focus"
+  },
+  "use": {
+    "text": "use"
+  },
+  "need": {
+    "text": "need"
+  },
+  "trend": {
+    "text": "trend"
+  },
+  "theme": {
+    "text": "theme"
+  },
+  "topic": {
+    "text": "topic"
+  },
+  "detail": {
+    "text": "detail"
+  },
+  "measure": {
+    "text": "measure"
+  },
+  "move": {
+    "text": "move"
+  },
+  "run": {
+    "text": "run"
+  },
+  "cut": {
+    "text": "cut"
+  },
+  "lead": {
+    "text": "lead"
+  },
+  "return": {
+    "text": "return"
+  },
+  "search": {
+    "text": "search"
+  },
+  "fight": {
+    "text": "fight"
+  },
+  "release": {
+    "text": "release"
+  },
+  "look": {
+    "text": "look"
+  },
+  "rest": {
+    "text": "rest"
+  },
+  "set": {
+    "text": "set"
+  },
+  "figure": {
+    "text": "figure"
+  },
+  "fall": {
+    "text": "fall",
+    "note": "the act of falling"
+  },
+  "attempt": {
+    "text": "attempt"
+  },
+  "thus": {
+    "text": "thus"
+  },
+  "despite": {
+    "text": "despite"
+  },
+  "upon": {
+    "text": "upon"
+  },
+  "per": {
+    "text": "per"
+  },
+  "via": {
+    "text": "via"
+  },
+  "plus": {
+    "text": "plus"
+  },
+  "regarding": {
+    "text": "regarding"
+  },
+  "according_to": {
+    "text": "according to"
+  },
+  "including": {
+    "text": "including"
+  },
+  "worth": {
+    "text": "worth"
+  },
+  "forth": {
+    "text": "forth"
+  },
+  "specifically": {
+    "text": "specifically"
+  },
+  "significantly": {
+    "text": "significantly"
+  },
+  "largely": {
+    "text": "largely"
+  },
+  "onto": {
+    "text": "onto"
+  },
+  "throughout": {
+    "text": "throughout"
+  },
+  "science": {
+    "text": "science"
+  },
+  "scientific": {
+    "text": "scientific"
+  },
+  "method": {
+    "text": "method"
+  },
+  "analysis": {
+    "text": "analysis"
+  },
+  "finding": {
+    "text": "finding"
+  },
+  "survey": {
+    "text": "survey"
+  },
+  "assessment": {
+    "text": "assessment"
+  },
+  "element": {
+    "text": "element"
+  },
+  "planet": {
+    "text": "planet"
+  },
+  "universe": {
+    "text": "universe"
+  },
+  "culture": {
+    "text": "culture"
+  },
+  "cultural": {
+    "text": "cultural"
+  },
+  "tradition": {
+    "text": "tradition"
+  },
+  "traditional": {
+    "text": "traditional"
+  },
+  "religion": {
+    "text": "religion"
+  },
+  "religious": {
+    "text": "religious"
+  },
+  "faith": {
+    "text": "faith"
+  },
+  "belief": {
+    "text": "belief"
+  },
+  "spirit": {
+    "text": "spirit"
+  },
+  "holy": {
+    "text": "holy"
+  },
+  "christian": {
+    "text": "Christian"
+  },
+  "catholic": {
+    "text": "Catholic"
+  },
+  "jewish": {
+    "text": "Jewish"
+  },
+  "christmas": {
+    "text": "Christmas"
+  },
+  "clearly": {
+    "text": "clearly"
+  },
+  "obviously": {
+    "text": "obviously"
+  },
+  "apparently": {
+    "text": "apparently"
+  },
+  "seriously": {
+    "text": "seriously"
+  },
+  "possibly": {
+    "text": "possibly"
+  },
+  "somehow": {
+    "text": "somehow"
+  },
+  "truly": {
+    "text": "truly"
+  },
+  "highly": {
+    "text": "highly"
+  },
+  "ultimately": {
+    "text": "ultimately"
+  },
+  "unfortunately": {
+    "text": "unfortunately"
+  },
+  "personally": {
+    "text": "personally"
+  },
+  "carefully": {
+    "text": "carefully"
+  },
+  "necessarily": {
+    "text": "necessarily"
+  },
+  "increasingly": {
+    "text": "increasingly"
+  },
+  "marriage": {
+    "text": "marriage"
+  },
+  "bond": {
+    "text": "bond"
+  },
+  "to_hurt": {
+    "text": "to hurt"
+  },
+  "to_force": {
+    "text": "to force"
+  },
+  "to_attack": {
+    "text": "to attack"
+  },
+  "to_defend": {
+    "text": "to defend"
+  },
+  "to_destroy": {
+    "text": "to destroy"
+  },
+  "to_threaten": {
+    "text": "to threaten"
+  },
+  "to_steal": {
+    "text": "to steal"
+  },
+  "to_arrest": {
+    "text": "to arrest"
+  },
+  "to_commit": {
+    "text": "to commit"
+  },
+  "to_suffer": {
+    "text": "to suffer"
+  },
+  "to_survive": {
+    "text": "to survive"
+  },
+  "to_struggle": {
+    "text": "to struggle"
+  },
+  "to_prevent": {
+    "text": "to prevent"
+  },
+  "to_fail": {
+    "text": "to fail"
+  },
+  "to_challenge": {
+    "text": "to challenge"
+  },
+  "to_judge": {
+    "text": "to judge"
+  },
+  "to_vote": {
+    "text": "to vote"
+  },
+  "state": {
+    "text": "state"
+  },
+  "government": {
+    "text": "government"
+  },
+  "nation": {
+    "text": "nation"
+  },
+  "national": {
+    "text": "national"
+  },
+  "political": {
+    "text": "political"
+  },
+  "politics": {
+    "text": "politics"
+  },
+  "policy": {
+    "text": "policy"
+  },
+  "election": {
+    "text": "election"
+  },
+  "campaign": {
+    "text": "campaign"
+  },
+  "vote": {
+    "text": "vote"
+  },
+  "poll": {
+    "text": "poll"
+  },
+  "democracy": {
+    "text": "democracy"
+  },
+  "liberal": {
+    "text": "liberal"
+  },
+  "conservative": {
+    "text": "conservative"
+  },
+  "reform": {
+    "text": "reform"
+  },
+  "movement": {
+    "text": "movement"
+  },
+  "administration": {
+    "text": "administration"
+  },
+  "agency": {
+    "text": "agency"
+  },
+  "committee": {
+    "text": "committee"
+  },
+  "commission": {
+    "text": "commission"
+  },
+  "council": {
+    "text": "council"
+  },
+  "institution": {
+    "text": "institution"
+  },
+  "union": {
+    "text": "union"
+  },
+  "authority": {
+    "text": "authority"
+  },
+  "district": {
+    "text": "district"
+  },
+  "civil": {
+    "text": "civil"
+  },
+  "regulation": {
+    "text": "regulation"
+  },
+  "convention": {
+    "text": "convention"
+  },
+  "investigation": {
+    "text": "investigation"
+  },
+  "intervention": {
+    "text": "intervention"
+  },
+  "abuse": {
+    "text": "abuse"
+  },
+  "incident": {
+    "text": "incident"
+  },
+  "protection": {
+    "text": "protection"
+  },
+  "safety": {
+    "text": "safety"
+  },
+  "duty": {
+    "text": "duty"
+  },
+  "board": {
+    "text": "board"
+  },
+  "jury": {
+    "text": "jury"
+  },
+  "hearing": {
+    "text": "hearing"
+  },
+  "criminal": {
+    "text": "criminal"
+  },
+  "illegal": {
+    "text": "illegal"
+  },
+  "legal": {
+    "text": "legal"
+  },
+  "right_n": {
+    "text": "right",
+    "note": "what a person is allowed to have"
+  },
+  "prison": {
+    "text": "prison"
+  },
+  "murder": {
+    "text": "murder"
+  },
+  "military": {
+    "text": "military"
+  },
+  "army": {
+    "text": "army"
+  },
+  "weapon": {
+    "text": "weapon"
+  },
+  "gun": {
+    "text": "gun"
+  },
+  "shot": {
+    "text": "shot"
+  },
+  "defense": {
+    "text": "defense"
+  },
+  "attack": {
+    "text": "attack"
+  },
+  "battle": {
+    "text": "battle"
+  },
+  "conflict": {
+    "text": "conflict"
+  },
+  "crisis": {
+    "text": "crisis"
+  },
+  "threat": {
+    "text": "threat"
+  },
+  "violence": {
+    "text": "violence"
+  },
+  "security": {
+    "text": "security"
+  },
+  "force": {
+    "text": "force"
+  },
+  "nuclear": {
+    "text": "nuclear"
+  },
+  "mission": {
+    "text": "mission"
+  },
+  "operation": {
+    "text": "operation"
+  },
+  "broken": {
+    "text": "broken"
+  },
   "meta": {
     "levels": {
       "top100": {
@@ -3522,6 +8003,54 @@
       "top900": {
         "name": "Top 900"
       },
+      "top1000": {
+        "name": "Top 1000"
+      },
+      "top1100": {
+        "name": "Top 1100"
+      },
+      "top1200": {
+        "name": "Top 1200"
+      },
+      "top1300": {
+        "name": "Top 1300"
+      },
+      "top1400": {
+        "name": "Top 1400"
+      },
+      "top1500": {
+        "name": "Top 1500"
+      },
+      "top1600": {
+        "name": "Top 1600"
+      },
+      "top1700": {
+        "name": "Top 1700"
+      },
+      "top1800": {
+        "name": "Top 1800"
+      },
+      "top1900": {
+        "name": "Top 1900"
+      },
+      "top2000": {
+        "name": "Top 2000"
+      },
+      "top2100": {
+        "name": "Top 2100"
+      },
+      "top2200": {
+        "name": "Top 2200"
+      },
+      "top2300": {
+        "name": "Top 2300"
+      },
+      "top2400": {
+        "name": "Top 2400"
+      },
+      "top2500": {
+        "name": "Top 2500"
+      },
       "specialized": {
         "name": "Specialized"
       }
@@ -3539,125 +8068,488 @@
       "making_sense": {
         "name": "Making Sense"
       },
-      "core_verbs": {
-        "name": "Being & Having"
+      "nuts_and_bolts": {
+        "name": "Nuts and Bolts"
       },
-      "daily_actions": {
-        "name": "Eat, Sleep, Repeat"
+      "one_to_ten": {
+        "name": "One to Ten"
       },
-      "head_to_toe": {
-        "name": "Head to Toe"
+      "folks_and_friends": {
+        "name": "Folks and Friends"
       },
-      "my_people": {
-        "name": "My People"
+      "family_ties": {
+        "name": "Family Ties"
       },
-      "bread_and_water": {
-        "name": "Bread & Water"
+      "say_and_see": {
+        "name": "Say and See"
       },
-      "four_walls": {
-        "name": "Four Walls"
+      "make_and_do": {
+        "name": "Make and Do"
       },
-      "zero_to_ten": {
-        "name": "Zero to Ten"
+      "day_and_night": {
+        "name": "Day and Night"
       },
-      "on_the_road": {
-        "name": "On the Road"
+      "bite_to_eat": {
+        "name": "A Bite to Eat"
       },
-      "good_and_bad": {
-        "name": "Good & Bad"
+      "true_colours": {
+        "name": "True Colours"
       },
-      "glue_words": {
-        "name": "Putting It Together"
+      "teens_and_tens": {
+        "name": "Teens and Tens"
       },
-      "hands_on": {
-        "name": "Hands On"
+      "come_and_go": {
+        "name": "Come and Go"
       },
-      "laugh_and_cry": {
-        "name": "Laugh & Cry"
+      "open_and_learn": {
+        "name": "Open and Learn"
       },
-      "market_basket": {
-        "name": "Market Basket"
+      "room_by_room": {
+        "name": "Room by Room"
       },
-      "rainbow": {
-        "name": "Rainbow"
+      "table_for_two": {
+        "name": "Table for Two"
       },
-      "days_and_months": {
-        "name": "Days & Months"
+      "big_and_small": {
+        "name": "Big and Small"
       },
-      "when_and_how_often": {
-        "name": "When & How Often"
+      "week_by_week": {
+        "name": "Week by Week"
       },
-      "creatures_and_sky": {
-        "name": "Creatures & Sky"
+      "who_and_whose": {
+        "name": "Who and Whose"
       },
-      "city_life": {
-        "name": "City Life"
+      "much_and_little": {
+        "name": "Much and Little"
       },
-      "how_things_are": {
-        "name": "How Things Are"
+      "some_and_any": {
+        "name": "Some and Any"
       },
-      "bags_packed": {
-        "name": "Bags Packed"
+      "in_and_out": {
+        "name": "In and Out"
       },
-      "heart_and_mind": {
-        "name": "Heart & Mind"
+      "around_town": {
+        "name": "Around Town"
       },
-      "coming_and_going": {
-        "name": "Coming & Going"
+      "getting_there": {
+        "name": "Getting There"
       },
-      "build_and_break": {
-        "name": "Build & Break"
+      "money_matters": {
+        "name": "Money Matters"
       },
-      "two_word_wonders": {
-        "name": "Two-Word Wonders"
+      "top_to_toe": {
+        "name": "Top to Toe"
       },
-      "skin_deep": {
-        "name": "Skin Deep"
+      "dressed_up": {
+        "name": "Dressed Up"
       },
-      "home_sweet_home": {
-        "name": "Home Sweet Home"
+      "now_and_then": {
+        "name": "Now and Then"
       },
-      "wild_side": {
-        "name": "Wild Side"
+      "yes_no_maybe": {
+        "name": "Yes, No, Maybe"
       },
-      "taste_and_touch": {
-        "name": "Taste & Touch"
+      "can_and_must": {
+        "name": "Can and Must"
       },
-      "people_and_places": {
-        "name": "People & Places"
+      "first_and_last": {
+        "name": "First and Last"
       },
-      "life_and_work": {
-        "name": "Life & Work"
+      "something_nothing": {
+        "name": "Something and Nothing"
       },
-      "when_and_where": {
-        "name": "When & Where"
+      "nine_to_five": {
+        "name": "Nine to Five"
       },
-      "sick_and_stuff": {
-        "name": "Sick & Stuff"
+      "plugged_in": {
+        "name": "Plugged In"
       },
-      "higher_ground": {
-        "name": "Higher Ground"
+      "month_by_month": {
+        "name": "Month by Month"
       },
-      "making_it_happen": {
-        "name": "Making It Happen"
+      "on_the_plate": {
+        "name": "On the Plate"
       },
-      "tying_loose_ends": {
-        "name": "Tying Loose Ends"
+      "give_and_share": {
+        "name": "Give and Share"
       },
-      "what_matters": {
-        "name": "What Matters"
+      "here_and_there": {
+        "name": "Here and There"
       },
-      "words_and_stories": {
-        "name": "Words & Stories"
+      "on_the_move": {
+        "name": "On the Move"
       },
-      "peace_and_war": {
-        "name": "Peace & War"
+      "papers_please": {
+        "name": "Papers, Please"
       },
-      "however_therefore": {
-        "name": "However & Therefore"
+      "under_one_roof": {
+        "name": "Under One Roof"
       },
-      "after_dark": {
-        "name": "After Dark"
+      "doctors_orders": {
+        "name": "Doctor's Orders"
+      },
+      "sweet_and_sour": {
+        "name": "Sweet and Sour"
+      },
+      "clean_and_dirty": {
+        "name": "Clean and Dirty"
+      },
+      "glad_and_sad": {
+        "name": "Glad and Sad"
+      },
+      "sun_and_rain": {
+        "name": "Sun and Rain"
+      },
+      "rise_and_shine": {
+        "name": "Rise and Shine"
+      },
+      "words_and_secrets": {
+        "name": "Words and Secrets"
+      },
+      "ways_and_means": {
+        "name": "Ways and Means"
+      },
+      "earn_and_spend": {
+        "name": "Earn and Spend"
+      },
+      "talk_it_over": {
+        "name": "Talk It Over"
+      },
+      "high_and_low": {
+        "name": "High and Low"
+      },
+      "feel_and_believe": {
+        "name": "Feel and Believe"
+      },
+      "think_it_through": {
+        "name": "Think It Through"
+      },
+      "time_after_time": {
+        "name": "Time After Time"
+      },
+      "bank_on_it": {
+        "name": "Bank on It"
+      },
+      "for_real": {
+        "name": "For Real"
+      },
+      "more_or_less": {
+        "name": "More or Less"
+      },
+      "slowly_but_surely": {
+        "name": "Slowly but Surely"
+      },
+      "safe_and_sound": {
+        "name": "Safe and Sound"
+      },
+      "early_and_late": {
+        "name": "Early and Late"
+      },
+      "time_off": {
+        "name": "Time Off"
+      },
+      "wheels_and_waves": {
+        "name": "Wheels and Waves"
+      },
+      "bon_voyage": {
+        "name": "Bon Voyage"
+      },
+      "whos_who": {
+        "name": "Who's Who"
+      },
+      "bed_and_bath": {
+        "name": "Bed and Bath"
+      },
+      "four_corners": {
+        "name": "Four Corners"
+      },
+      "if_and_unless": {
+        "name": "If and Unless"
+      },
+      "say_it_out": {
+        "name": "Say It Out"
+      },
+      "plan_and_manage": {
+        "name": "Plan and Manage"
+      },
+      "sing_and_dance": {
+        "name": "Sing and Dance"
+      },
+      "shout_and_whisper": {
+        "name": "Shout and Whisper"
+      },
+      "farm_and_wild": {
+        "name": "Farm and Wild"
+      },
+      "land_and_sea": {
+        "name": "Land and Sea"
+      },
+      "skin_and_bones": {
+        "name": "Skin and Bones"
+      },
+      "fix_and_break": {
+        "name": "Fix and Break"
+      },
+      "two_word_verbs": {
+        "name": "Two-Word Verbs"
+      },
+      "kitchen_sink": {
+        "name": "Kitchen Sink"
+      },
+      "belt_and_boots": {
+        "name": "Belt and Boots"
+      },
+      "spring_cleaning": {
+        "name": "Spring Cleaning"
+      },
+      "spice_rack": {
+        "name": "Spice Rack"
+      },
+      "market_stall": {
+        "name": "Market Stall"
+      },
+      "click_and_print": {
+        "name": "Click and Print"
+      },
+      "office_hours": {
+        "name": "Office Hours"
+      },
+      "squeaky_clean": {
+        "name": "Squeaky Clean"
+      },
+      "care_and_cure": {
+        "name": "Care and Cure"
+      },
+      "joints_and_bones": {
+        "name": "Joints and Bones"
+      },
+      "under_the_hood": {
+        "name": "Under the Hood"
+      },
+      "exam_time": {
+        "name": "Exam Time"
+      },
+      "just_folks": {
+        "name": "Just Folks"
+      },
+      "tool_box": {
+        "name": "Tool Box"
+      },
+      "back_to_school": {
+        "name": "Back to School"
+      },
+      "career_ladder": {
+        "name": "Career Ladder"
+      },
+      "company_business": {
+        "name": "Company Business"
+      },
+      "by_the_numbers": {
+        "name": "By the Numbers"
+      },
+      "results_count": {
+        "name": "Results Count"
+      },
+      "get_it_done": {
+        "name": "Get It Done"
+      },
+      "money_talks": {
+        "name": "Money Talks"
+      },
+      "fine_print": {
+        "name": "Fine Print"
+      },
+      "kith_and_kin": {
+        "name": "Kith and Kin"
+      },
+      "at_your_service": {
+        "name": "At Your Service"
+      },
+      "whos_in_charge": {
+        "name": "Who's in Charge"
+      },
+      "say_it_again": {
+        "name": "Say It Again"
+      },
+      "us_and_them": {
+        "name": "Us and Them"
+      },
+      "talk_of_the_town": {
+        "name": "Talk of the Town"
+      },
+      "keep_in_touch": {
+        "name": "Keep in Touch"
+      },
+      "lights_camera": {
+        "name": "Lights, Camera"
+      },
+      "read_all_about_it": {
+        "name": "Read All About It"
+      },
+      "on_the_map": {
+        "name": "On the Map"
+      },
+      "song_and_dance": {
+        "name": "Song and Dance"
+      },
+      "web_and_wires": {
+        "name": "Web and Wires"
+      },
+      "publish_and_post": {
+        "name": "Publish and Post"
+      },
+      "game_on": {
+        "name": "Game On"
+      },
+      "out_and_about": {
+        "name": "Out and About"
+      },
+      "bits_and_bobs": {
+        "name": "Bits and Bobs"
+      },
+      "wild_places": {
+        "name": "Wild Places"
+      },
+      "sights_to_see": {
+        "name": "Sights to See"
+      },
+      "top_and_bottom": {
+        "name": "Top and Bottom"
+      },
+      "leaf_and_root": {
+        "name": "Leaf and Root"
+      },
+      "creature_feature": {
+        "name": "Creature Feature"
+      },
+      "strange_but_true": {
+        "name": "Strange but True"
+      },
+      "cool_and_crazy": {
+        "name": "Cool and Crazy"
+      },
+      "kick_and_roll": {
+        "name": "Kick and Roll"
+      },
+      "aware_and_willing": {
+        "name": "Aware and Willing"
+      },
+      "thick_and_thin": {
+        "name": "Thick and Thin"
+      },
+      "private_matters": {
+        "name": "Private Matters"
+      },
+      "major_and_minor": {
+        "name": "Major and Minor"
+      },
+      "around_the_world": {
+        "name": "Around the World"
+      },
+      "mixed_feelings": {
+        "name": "Mixed Feelings"
+      },
+      "who_you_are": {
+        "name": "Who You Are"
+      },
+      "odd_ones_out": {
+        "name": "Odd Ones Out"
+      },
+      "gold_and_silver": {
+        "name": "Gold and Silver"
+      },
+      "hide_and_seek": {
+        "name": "Hide and Seek"
+      },
+      "have_and_hold": {
+        "name": "Have and Hold"
+      },
+      "it_happens": {
+        "name": "It Happens"
+      },
+      "find_out": {
+        "name": "Find Out"
+      },
+      "shape_and_size": {
+        "name": "Shape and Size"
+      },
+      "rise_and_fall": {
+        "name": "Rise and Fall"
+      },
+      "weigh_it_up": {
+        "name": "Weigh It Up"
+      },
+      "work_it_out": {
+        "name": "Work It Out"
+      },
+      "try_harder": {
+        "name": "Try Harder"
+      },
+      "odds_and_bets": {
+        "name": "Odds and Bets"
+      },
+      "case_by_case": {
+        "name": "Case by Case"
+      },
+      "flirts_and_affairs": {
+        "name": "Flirts and Affairs"
+      },
+      "kind_of": {
+        "name": "Kind Of"
+      },
+      "cause_and_effect": {
+        "name": "Cause and Effect"
+      },
+      "big_ideas": {
+        "name": "Big Ideas"
+      },
+      "rules_of_the_game": {
+        "name": "Rules of the Game"
+      },
+      "moves_and_turns": {
+        "name": "Moves and Turns"
+      },
+      "by_the_way": {
+        "name": "By the Way"
+      },
+      "science_lab": {
+        "name": "Science Lab"
+      },
+      "faith_and_tradition": {
+        "name": "Faith and Tradition"
+      },
+      "clearly_and_truly": {
+        "name": "Clearly and Truly"
+      },
+      "tie_the_knot": {
+        "name": "Tie the Knot"
+      },
+      "win_and_lose": {
+        "name": "Win and Lose"
+      },
+      "fight_back": {
+        "name": "Fight Back"
+      },
+      "state_and_nation": {
+        "name": "State and Nation"
+      },
+      "aim_higher": {
+        "name": "Aim Higher"
+      },
+      "public_affairs": {
+        "name": "Public Affairs"
+      },
+      "order_in_court": {
+        "name": "Order in Court"
+      },
+      "war_room": {
+        "name": "War Room"
+      },
+      "war_and_peace": {
+        "name": "War and Peace"
+      },
+      "life_and_death": {
+        "name": "Life and Death"
       },
       "medical_anatomy": {
         "name": "Medical & Anatomy"
@@ -3716,14 +8608,20 @@
       "romance_intimacy": {
         "name": "Romance & Intimacy"
       }
+    },
+    "segments": {
+      "braindead": {
+        "name": "Braindead"
+      },
+      "baby": {
+        "name": "Baby"
+      },
+      "kid": {
+        "name": "Kid"
+      },
+      "adult": {
+        "name": "Adult"
+      }
     }
-  },
-  "atm": {
-    "text": "ATM",
-    "note": "cash machine"
-  },
-  "open": {
-    "text": "open",
-    "note": "The store is open."
   }
 }

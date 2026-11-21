@@ -4225,6 +4225,5858 @@
     "year": {
       "pos": "noun",
       "coca": 64
+    },
+    "all": {
+      "pos": "pronoun",
+      "coca": 43
+    },
+    "that_conj": {
+      "pos": "conjunction",
+      "coca": 13
+    },
+    "as": {
+      "pos": "conjunction",
+      "coca": 38
+    },
+    "of": {
+      "pos": "preposition",
+      "coca": 5
+    },
+    "to": {
+      "pos": "preposition",
+      "coca": 12
+    },
+    "for": {
+      "pos": "preposition",
+      "coca": 14
+    },
+    "with": {
+      "pos": "preposition",
+      "coca": 17
+    },
+    "at": {
+      "pos": "preposition",
+      "coca": 27
+    },
+    "from": {
+      "pos": "preposition",
+      "coca": 30
+    },
+    "by": {
+      "pos": "preposition",
+      "coca": 33
+    },
+    "not": {
+      "pos": "adverb",
+      "coca": 23
+    },
+    "people": {
+      "pos": "noun",
+      "coca": 62
+    },
+    "kid": {
+      "pos": "noun",
+      "coca": 275
+    },
+    "mom": {
+      "pos": "noun",
+      "coca": 613
+    },
+    "dad": {
+      "pos": "noun",
+      "coca": 654
+    },
+    "son": {
+      "pos": "noun",
+      "coca": 446
+    },
+    "daughter": {
+      "pos": "noun",
+      "coca": 677
+    },
+    "grandmother": {
+      "pos": "noun",
+      "coca": 2822
+    },
+    "grandfather": {
+      "pos": "noun",
+      "coca": 3323
+    },
+    "uncle": {
+      "pos": "noun",
+      "coca": 1941
+    },
+    "aunt": {
+      "pos": "noun",
+      "coca": 2636
+    },
+    "cousin": {
+      "pos": "noun",
+      "coca": 2663
+    },
+    "to_tell": {
+      "pos": "verb",
+      "coca": 92
+    },
+    "noon": {
+      "pos": "noun",
+      "coca": 4238
+    },
+    "afternoon": {
+      "pos": "noun",
+      "coca": 1424
+    },
+    "midnight": {
+      "pos": "noun",
+      "coca": 3622
+    },
+    "weekend": {
+      "pos": "noun",
+      "coca": 1173
+    },
+    "color": {
+      "pos": "noun",
+      "coca": 607
+    },
+    "eleven": {
+      "pos": "numeral",
+      "coca": 4815
+    },
+    "twelve": {
+      "pos": "numeral",
+      "coca": 3488
+    },
+    "thirteen": {
+      "pos": "numeral"
+    },
+    "fourteen": {
+      "pos": "numeral"
+    },
+    "fifteen": {
+      "pos": "numeral",
+      "coca": 3497
+    },
+    "sixteen": {
+      "pos": "numeral"
+    },
+    "seventeen": {
+      "pos": "numeral"
+    },
+    "eighteen": {
+      "pos": "numeral"
+    },
+    "nineteen": {
+      "pos": "numeral"
+    },
+    "twenty": {
+      "pos": "numeral",
+      "coca": 2343
+    },
+    "thirty": {
+      "pos": "numeral",
+      "coca": 3134
+    },
+    "forty": {
+      "pos": "numeral",
+      "coca": 4275
+    },
+    "fifty": {
+      "pos": "numeral",
+      "coca": 3393
+    },
+    "sixty": {
+      "pos": "numeral"
+    },
+    "seventy": {
+      "pos": "numeral"
+    },
+    "eighty": {
+      "pos": "numeral"
+    },
+    "ninety": {
+      "pos": "numeral"
+    },
+    "billion": {
+      "pos": "numeral",
+      "coca": 1360
+    },
+    "to_start": {
+      "pos": "verb",
+      "coca": 162
+    },
+    "house": {
+      "pos": "noun",
+      "coca": 176
+    },
+    "toilet": {
+      "pos": "noun",
+      "coca": 3730
+    },
+    "meal": {
+      "pos": "noun",
+      "coca": 1871
+    },
+    "breakfast": {
+      "pos": "noun",
+      "coca": 2459
+    },
+    "lunch": {
+      "pos": "noun",
+      "coca": 1698
+    },
+    "dinner": {
+      "pos": "noun",
+      "coca": 1079
+    },
+    "drink": {
+      "pos": "noun",
+      "coca": 1766
+    },
+    "menu": {
+      "pos": "noun",
+      "coca": 2902
+    },
+    "bill": {
+      "pos": "noun",
+      "coca": 761
+    },
+    "tip": {
+      "pos": "noun",
+      "coca": 1929
+    },
+    "better": {
+      "pos": "adjective",
+      "coca": 391
+    },
+    "best": {
+      "pos": "adjective",
+      "coca": 281
+    },
+    "date": {
+      "pos": "noun",
+      "coca": 994
+    },
+    "birthday": {
+      "pos": "noun",
+      "coca": 2068
+    },
+    "holiday": {
+      "pos": "noun",
+      "coca": 1997
+    },
+    "which": {
+      "pos": "pronoun",
+      "coca": 71
+    },
+    "whose": {
+      "pos": "pronoun",
+      "coca": 655
+    },
+    "its": {
+      "pos": "pronoun",
+      "coca": 185
+    },
+    "every": {
+      "pos": "pronoun",
+      "coca": 165
+    },
+    "some": {
+      "pos": "pronoun",
+      "coca": 67
+    },
+    "any": {
+      "pos": "pronoun",
+      "coca": 103
+    },
+    "each": {
+      "pos": "pronoun",
+      "coca": 234
+    },
+    "both": {
+      "pos": "pronoun",
+      "coca": 291
+    },
+    "few": {
+      "pos": "pronoun",
+      "coca": 198
+    },
+    "several": {
+      "pos": "pronoun",
+      "coca": 387
+    },
+    "most": {
+      "pos": "adverb",
+      "coca": 168
+    },
+    "another": {
+      "pos": "pronoun",
+      "coca": 166
+    },
+    "other": {
+      "pos": "adjective",
+      "coca": 74
+    },
+    "none": {
+      "pos": "pronoun",
+      "coca": 1047
+    },
+    "plenty": {
+      "pos": "pronoun",
+      "coca": 1838
+    },
+    "certain": {
+      "pos": "adjective",
+      "coca": 630
+    },
+    "own": {
+      "pos": "pronoun",
+      "coca": 160
+    },
+    "about": {
+      "pos": "preposition",
+      "coca": 45
+    },
+    "into": {
+      "pos": "preposition",
+      "coca": 77
+    },
+    "through": {
+      "pos": "preposition",
+      "coca": 129
+    },
+    "without": {
+      "pos": "preposition",
+      "coca": 214
+    },
+    "against": {
+      "pos": "preposition",
+      "coca": 201
+    },
+    "around": {
+      "pos": "adverb",
+      "coca": 307
+    },
+    "among": {
+      "pos": "preposition",
+      "coca": 368
+    },
+    "within": {
+      "pos": "preposition",
+      "coca": 399
+    },
+    "toward": {
+      "pos": "preposition",
+      "coca": 538
+    },
+    "along": {
+      "pos": "preposition",
+      "coca": 533
+    },
+    "out": {
+      "pos": "adverb",
+      "coca": 59
+    },
+    "off": {
+      "pos": "adverb",
+      "coca": 195
+    },
+    "away": {
+      "pos": "adverb",
+      "coca": 267
+    },
+    "back": {
+      "pos": "adverb",
+      "coca": 108
+    },
+    "town": {
+      "pos": "noun",
+      "coca": 553
+    },
+    "corner": {
+      "pos": "noun",
+      "coca": 1290
+    },
+    "square": {
+      "pos": "noun",
+      "coca": 2417
+    },
+    "building": {
+      "pos": "noun",
+      "coca": 588
+    },
+    "shop": {
+      "pos": "noun",
+      "coca": 1547
+    },
+    "supermarket": {
+      "pos": "noun"
+    },
+    "bakery": {
+      "pos": "noun"
+    },
+    "pharmacy": {
+      "pos": "noun"
+    },
+    "cafe": {
+      "pos": "noun",
+      "coca": 4751
+    },
+    "subway": {
+      "pos": "noun"
+    },
+    "flight": {
+      "pos": "noun",
+      "coca": 1489
+    },
+    "platform": {
+      "pos": "noun",
+      "coca": 2180
+    },
+    "seat": {
+      "pos": "noun",
+      "coca": 1000
+    },
+    "coin": {
+      "pos": "noun",
+      "coca": 4191
+    },
+    "wallet": {
+      "pos": "noun"
+    },
+    "customer": {
+      "pos": "noun",
+      "coca": 1061
+    },
+    "discount": {
+      "pos": "noun",
+      "coca": 4665
+    },
+    "exchange": {
+      "pos": "noun",
+      "coca": 1649
+    },
+    "fee": {
+      "pos": "noun",
+      "coca": 1923
+    },
+    "body": {
+      "pos": "noun",
+      "coca": 348
+    },
+    "face": {
+      "pos": "noun",
+      "coca": 369
+    },
+    "t_shirt": {
+      "pos": "noun",
+      "coca": 3914
+    },
+    "jeans": {
+      "pos": "noun",
+      "coca": 3955
+    },
+    "sweater": {
+      "pos": "noun"
+    },
+    "ever": {
+      "pos": "adverb",
+      "coca": 240
+    },
+    "once": {
+      "pos": "adverb",
+      "coca": 343
+    },
+    "twice": {
+      "pos": "adverb",
+      "coca": 1536
+    },
+    "again": {
+      "pos": "adverb",
+      "coca": 178
+    },
+    "during": {
+      "pos": "preposition",
+      "coca": 231
+    },
+    "since": {
+      "pos": "conjunction",
+      "coca": 260
+    },
+    "until": {
+      "pos": "conjunction",
+      "coca": 316
+    },
+    "okay": {
+      "pos": "adverb",
+      "coca": 290
+    },
+    "sure": {
+      "pos": "adjective",
+      "coca": 247
+    },
+    "of_course": {
+      "pos": "adverb",
+      "coca": 381
+    },
+    "maybe": {
+      "pos": "adverb",
+      "coca": 251
+    },
+    "perhaps": {
+      "pos": "adverb",
+      "coca": 506
+    },
+    "probably": {
+      "pos": "adverb",
+      "coca": 366
+    },
+    "actually": {
+      "pos": "adverb",
+      "coca": 269
+    },
+    "well": {
+      "pos": "adverb",
+      "coca": 87
+    },
+    "so": {
+      "pos": "adverb",
+      "coca": 48
+    },
+    "hey": {
+      "pos": "phrase",
+      "coca": 299
+    },
+    "hi": {
+      "pos": "phrase",
+      "coca": 891
+    },
+    "anyway": {
+      "pos": "adverb",
+      "coca": 987
+    },
+    "indeed": {
+      "pos": "adverb",
+      "coca": 1008
+    },
+    "certainly": {
+      "pos": "adverb",
+      "coca": 699
+    },
+    "definitely": {
+      "pos": "adverb",
+      "coca": 1345
+    },
+    "should": {
+      "pos": "verb",
+      "coca": 110
+    },
+    "second": {
+      "pos": "numeral",
+      "coca": 400
+    },
+    "third": {
+      "pos": "numeral",
+      "coca": 636
+    },
+    "fourth": {
+      "pos": "numeral",
+      "coca": 1731
+    },
+    "next": {
+      "pos": "numeral",
+      "coca": 221
+    },
+    "finally": {
+      "pos": "adverb",
+      "coca": 535
+    },
+    "just": {
+      "pos": "adverb",
+      "coca": 51
+    },
+    "something": {
+      "pos": "pronoun",
+      "coca": 123
+    },
+    "anything": {
+      "pos": "pronoun",
+      "coca": 245
+    },
+    "nothing": {
+      "pos": "pronoun",
+      "coca": 246
+    },
+    "everything": {
+      "pos": "pronoun",
+      "coca": 309
+    },
+    "someone": {
+      "pos": "pronoun",
+      "coca": 302
+    },
+    "anyone": {
+      "pos": "pronoun",
+      "coca": 463
+    },
+    "everyone": {
+      "pos": "pronoun",
+      "coca": 405
+    },
+    "nobody": {
+      "pos": "pronoun",
+      "coca": 975
+    },
+    "whatever": {
+      "pos": "pronoun",
+      "coca": 631
+    },
+    "else": {
+      "pos": "adverb",
+      "coca": 373
+    },
+    "mine": {
+      "pos": "pronoun",
+      "coca": 1624
+    },
+    "yours": {
+      "pos": "pronoun",
+      "coca": 1925
+    },
+    "oneself": {
+      "pos": "pronoun",
+      "coca": 428
+    },
+    "manager": {
+      "pos": "noun",
+      "coca": 1062
+    },
+    "colleague": {
+      "pos": "noun",
+      "coca": 1813
+    },
+    "interview": {
+      "pos": "noun",
+      "coca": 930
+    },
+    "lesson": {
+      "pos": "noun",
+      "coca": 1450
+    },
+    "example": {
+      "pos": "noun",
+      "coca": 775
+    },
+    "mistake": {
+      "pos": "noun",
+      "coca": 1283
+    },
+    "laptop": {
+      "pos": "noun",
+      "coca": 4192
+    },
+    "internet": {
+      "pos": "noun",
+      "coca": 1206
+    },
+    "wifi": {
+      "pos": "noun"
+    },
+    "online": {
+      "pos": "adjective",
+      "coca": 1503
+    },
+    "email": {
+      "pos": "noun",
+      "coca": 1738
+    },
+    "cable": {
+      "pos": "noun",
+      "coca": 2416
+    },
+    "charger": {
+      "pos": "noun"
+    },
+    "to_charge": {
+      "pos": "verb",
+      "coca": 1510
+    },
+    "to_search": {
+      "pos": "verb",
+      "coca": 1694
+    },
+    "beef": {
+      "pos": "noun",
+      "coca": 3802
+    },
+    "pork": {
+      "pos": "noun",
+      "coca": 4766
+    },
+    "pasta": {
+      "pos": "noun"
+    },
+    "pizza": {
+      "pos": "noun",
+      "coca": 3442
+    },
+    "sandwich": {
+      "pos": "noun",
+      "coca": 3485
+    },
+    "carrot": {
+      "pos": "noun"
+    },
+    "lemon": {
+      "pos": "noun",
+      "coca": 3685
+    },
+    "banana": {
+      "pos": "noun",
+      "coca": 5012
+    },
+    "to_provide": {
+      "pos": "verb",
+      "coca": 272
+    },
+    "to_allow": {
+      "pos": "verb",
+      "coca": 346
+    },
+    "to_share": {
+      "pos": "verb",
+      "coca": 570
+    },
+    "to_return": {
+      "pos": "verb",
+      "coca": 545
+    },
+    "to_pick": {
+      "pos": "verb",
+      "coca": 492
+    },
+    "to_hit": {
+      "pos": "verb",
+      "coca": 502
+    },
+    "to_miss": {
+      "pos": "verb",
+      "coca": 596
+    },
+    "to_cover": {
+      "pos": "verb",
+      "coca": 608
+    },
+    "to_end": {
+      "pos": "verb",
+      "coca": 452
+    },
+    "to_cause": {
+      "pos": "verb",
+      "coca": 563
+    },
+    "to_drop": {
+      "pos": "verb",
+      "coca": 723
+    },
+    "to_place": {
+      "pos": "verb",
+      "coca": 779
+    },
+    "to_hang": {
+      "pos": "verb",
+      "coca": 843
+    },
+    "to_lay": {
+      "pos": "verb",
+      "coca": 907
+    },
+    "to_remove": {
+      "pos": "verb",
+      "coca": 932
+    },
+    "to_avoid": {
+      "pos": "verb",
+      "coca": 946
+    },
+    "to_prepare": {
+      "pos": "verb",
+      "coca": 881
+    },
+    "outside": {
+      "pos": "preposition",
+      "coca": 902
+    },
+    "beyond": {
+      "pos": "preposition",
+      "coca": 872
+    },
+    "ahead": {
+      "pos": "adverb",
+      "coca": 1067
+    },
+    "together": {
+      "pos": "adverb",
+      "coca": 330
+    },
+    "far": {
+      "pos": "adverb",
+      "coca": 266
+    },
+    "somewhere": {
+      "pos": "adverb",
+      "coca": 1467
+    },
+    "anywhere": {
+      "pos": "adverb",
+      "coca": 1712
+    },
+    "to_ride": {
+      "pos": "verb",
+      "coca": 1438
+    },
+    "to_park": {
+      "pos": "verb",
+      "coca": 3634
+    },
+    "to_cross": {
+      "pos": "verb",
+      "coca": 1537
+    },
+    "to_pack": {
+      "pos": "verb",
+      "coca": 2368
+    },
+    "to_reserve": {
+      "pos": "verb",
+      "coca": 4179
+    },
+    "to_cancel": {
+      "pos": "verb",
+      "coca": 3318
+    },
+    "to_confirm": {
+      "pos": "verb",
+      "coca": 1725
+    },
+    "to_visit": {
+      "pos": "verb",
+      "coca": 957
+    },
+    "to_enter": {
+      "pos": "verb",
+      "coca": 817
+    },
+    "to_hurry": {
+      "pos": "verb",
+      "coca": 2937
+    },
+    "document": {
+      "pos": "noun",
+      "coca": 1447
+    },
+    "signature": {
+      "pos": "noun",
+      "coca": 3434
+    },
+    "address": {
+      "pos": "noun",
+      "coca": 1710
+    },
+    "deposit": {
+      "pos": "noun",
+      "coca": 4839
+    },
+    "mail": {
+      "pos": "noun",
+      "coca": 2587
+    },
+    "envelope": {
+      "pos": "noun",
+      "coca": 4653
+    },
+    "postcard": {
+      "pos": "noun"
+    },
+    "landlord": {
+      "pos": "noun"
+    },
+    "to_rent": {
+      "pos": "verb",
+      "coca": 3603
+    },
+    "elevator": {
+      "pos": "noun",
+      "coca": 3883
+    },
+    "entrance": {
+      "pos": "noun",
+      "coca": 3359
+    },
+    "exit": {
+      "pos": "noun",
+      "coca": 3983
+    },
+    "balcony": {
+      "pos": "noun"
+    },
+    "garden": {
+      "pos": "noun",
+      "coca": 1341
+    },
+    "furniture": {
+      "pos": "noun",
+      "coca": 3379
+    },
+    "couch": {
+      "pos": "noun",
+      "coca": 3377
+    },
+    "electricity": {
+      "pos": "noun",
+      "coca": 2987
+    },
+    "garbage": {
+      "pos": "noun",
+      "coca": 3904
+    },
+    "health": {
+      "pos": "noun",
+      "coca": 333
+    },
+    "cough": {
+      "pos": "noun"
+    },
+    "flu": {
+      "pos": "noun"
+    },
+    "headache": {
+      "pos": "noun",
+      "coca": 4834
+    },
+    "pill": {
+      "pos": "noun",
+      "coca": 3290
+    },
+    "appointment": {
+      "pos": "noun",
+      "coca": 3069
+    },
+    "dentist": {
+      "pos": "noun"
+    },
+    "emergency": {
+      "pos": "noun",
+      "coca": 1703
+    },
+    "ambulance": {
+      "pos": "noun"
+    },
+    "injury": {
+      "pos": "noun",
+      "coca": 1553
+    },
+    "fresh": {
+      "pos": "adjective",
+      "coca": 1250
+    },
+    "cake": {
+      "pos": "noun",
+      "coca": 2448
+    },
+    "dessert": {
+      "pos": "noun",
+      "coca": 4758
+    },
+    "snack": {
+      "pos": "noun"
+    },
+    "comfortable": {
+      "pos": "adjective",
+      "coca": 1833
+    },
+    "glad": {
+      "pos": "adjective",
+      "coca": 1581
+    },
+    "afraid": {
+      "pos": "adjective",
+      "coca": 1221
+    },
+    "busy": {
+      "pos": "adjective",
+      "coca": 1806
+    },
+    "alone": {
+      "pos": "adjective",
+      "coca": 1393
+    },
+    "married": {
+      "pos": "adjective",
+      "coca": 1669
+    },
+    "lost": {
+      "pos": "adjective",
+      "coca": 2637
+    },
+    "funny": {
+      "pos": "adjective",
+      "coca": 1209
+    },
+    "friendly": {
+      "pos": "adjective",
+      "coca": 2767
+    },
+    "umbrella": {
+      "pos": "noun"
+    },
+    "climate": {
+      "pos": "noun",
+      "coca": 1487
+    },
+    "heat": {
+      "pos": "noun",
+      "coca": 1177
+    },
+    "point": {
+      "pos": "noun",
+      "coca": 193
+    },
+    "group": {
+      "pos": "noun",
+      "coca": 199
+    },
+    "line": {
+      "pos": "noun",
+      "coca": 312
+    },
+    "level": {
+      "pos": "noun",
+      "coca": 354
+    },
+    "kind": {
+      "pos": "noun",
+      "coca": 256
+    },
+    "to_earn": {
+      "pos": "verb",
+      "coca": 1350
+    },
+    "to_borrow": {
+      "pos": "verb",
+      "coca": 3109
+    },
+    "to_lend": {
+      "pos": "verb",
+      "coca": 3874
+    },
+    "to_sign": {
+      "pos": "verb",
+      "coca": 894
+    },
+    "to_order": {
+      "pos": "verb",
+      "coca": 1441
+    },
+    "to_deliver": {
+      "pos": "verb",
+      "coca": 1247
+    },
+    "to_weigh": {
+      "pos": "verb",
+      "coca": 2722
+    },
+    "to_fill": {
+      "pos": "verb",
+      "coca": 777
+    },
+    "to_repeat": {
+      "pos": "verb",
+      "coca": 1750
+    },
+    "to_translate": {
+      "pos": "verb",
+      "coca": 2893
+    },
+    "to_spell": {
+      "pos": "verb",
+      "coca": 4173
+    },
+    "to_complain": {
+      "pos": "verb",
+      "coca": 1993
+    },
+    "to_introduce": {
+      "pos": "verb",
+      "coca": 1342
+    },
+    "to_welcome": {
+      "pos": "verb",
+      "coca": 1363
+    },
+    "great": {
+      "pos": "adjective",
+      "coca": 138
+    },
+    "high": {
+      "pos": "adjective",
+      "coca": 164
+    },
+    "low": {
+      "pos": "adjective",
+      "coca": 410
+    },
+    "huge": {
+      "pos": "adjective",
+      "coca": 883
+    },
+    "tiny": {
+      "pos": "adjective",
+      "coca": 1578
+    },
+    "real": {
+      "pos": "adjective",
+      "coca": 280
+    },
+    "true": {
+      "pos": "adjective",
+      "coca": 414
+    },
+    "whole": {
+      "pos": "adjective",
+      "coca": 420
+    },
+    "free": {
+      "pos": "adjective",
+      "coca": 403
+    },
+    "able": {
+      "pos": "adjective",
+      "coca": 355
+    },
+    "ready": {
+      "pos": "adjective",
+      "coca": 642
+    },
+    "simple": {
+      "pos": "adjective",
+      "coca": 735
+    },
+    "common": {
+      "pos": "adjective",
+      "coca": 745
+    },
+    "special": {
+      "pos": "adjective",
+      "coca": 547
+    },
+    "main": {
+      "pos": "adjective",
+      "coca": 928
+    },
+    "perfect": {
+      "pos": "adjective",
+      "coca": 910
+    },
+    "fine": {
+      "pos": "adjective",
+      "coca": 509
+    },
+    "to_prefer": {
+      "pos": "verb",
+      "coca": 1770
+    },
+    "to_enjoy": {
+      "pos": "verb",
+      "coca": 750
+    },
+    "to_realize": {
+      "pos": "verb",
+      "coca": 599
+    },
+    "to_guess": {
+      "pos": "verb",
+      "coca": 610
+    },
+    "to_wonder": {
+      "pos": "verb",
+      "coca": 737
+    },
+    "to_imagine": {
+      "pos": "verb",
+      "coca": 860
+    },
+    "to_notice": {
+      "pos": "verb",
+      "coca": 969
+    },
+    "to_recognize": {
+      "pos": "verb",
+      "coca": 879
+    },
+    "to_worry": {
+      "pos": "verb",
+      "coca": 815
+    },
+    "to_assume": {
+      "pos": "verb",
+      "coca": 1001
+    },
+    "to_suppose": {
+      "pos": "verb",
+      "coca": 1945
+    },
+    "to_intend": {
+      "pos": "verb",
+      "coca": 1626
+    },
+    "to_remind": {
+      "pos": "verb",
+      "coca": 1378
+    },
+    "to_recall": {
+      "pos": "verb",
+      "coca": 1481
+    },
+    "to_trust": {
+      "pos": "verb",
+      "coca": 1243
+    },
+    "to_mind": {
+      "pos": "verb",
+      "coca": 1517
+    },
+    "to_appreciate": {
+      "pos": "verb",
+      "coca": 1452
+    },
+    "to_deserve": {
+      "pos": "verb",
+      "coca": 1720
+    },
+    "to_bother": {
+      "pos": "verb",
+      "coca": 1962
+    },
+    "moment": {
+      "pos": "noun",
+      "coca": 393
+    },
+    "period": {
+      "pos": "noun",
+      "coca": 684
+    },
+    "age": {
+      "pos": "noun",
+      "coca": 429
+    },
+    "season": {
+      "pos": "noun",
+      "coca": 443
+    },
+    "history": {
+      "pos": "noun",
+      "coca": 374
+    },
+    "century": {
+      "pos": "noun",
+      "coca": 770
+    },
+    "decade": {
+      "pos": "noun",
+      "coca": 807
+    },
+    "era": {
+      "pos": "noun",
+      "coca": 2044
+    },
+    "future": {
+      "pos": "noun",
+      "coca": 653
+    },
+    "past": {
+      "pos": "adjective",
+      "coca": 754
+    },
+    "beginning": {
+      "pos": "noun",
+      "coca": 1293
+    },
+    "end": {
+      "pos": "noun",
+      "coca": 303
+    },
+    "start": {
+      "pos": "noun",
+      "coca": 1475
+    },
+    "break": {
+      "pos": "noun",
+      "coca": 1189
+    },
+    "turn": {
+      "pos": "noun",
+      "coca": 1348
+    },
+    "step": {
+      "pos": "noun",
+      "coca": 641
+    },
+    "session": {
+      "pos": "noun",
+      "coca": 1620
+    },
+    "term": {
+      "pos": "noun",
+      "coca": 606
+    },
+    "second_n": {
+      "pos": "noun",
+      "coca": 659
+    },
+    "wage": {
+      "pos": "noun",
+      "coca": 2458
+    },
+    "refund": {
+      "pos": "noun"
+    },
+    "charge": {
+      "pos": "noun",
+      "coca": 999
+    },
+    "to_withdraw": {
+      "pos": "verb",
+      "coca": 3361
+    },
+    "to_owe": {
+      "pos": "verb",
+      "coca": 2488
+    },
+    "clear": {
+      "pos": "adjective",
+      "coca": 573
+    },
+    "likely": {
+      "pos": "adjective",
+      "coca": 651
+    },
+    "similar": {
+      "pos": "adjective",
+      "coca": 751
+    },
+    "various": {
+      "pos": "adjective",
+      "coca": 967
+    },
+    "specific": {
+      "pos": "adjective",
+      "coca": 952
+    },
+    "particular": {
+      "pos": "adjective",
+      "coca": 1045
+    },
+    "total": {
+      "pos": "adjective",
+      "coca": 1069
+    },
+    "entire": {
+      "pos": "adjective",
+      "coca": 792
+    },
+    "complete": {
+      "pos": "adjective",
+      "coca": 1453
+    },
+    "actual": {
+      "pos": "adjective",
+      "coca": 1480
+    },
+    "basic": {
+      "pos": "adjective",
+      "coca": 1288
+    },
+    "extra": {
+      "pos": "adjective",
+      "coca": 1509
+    },
+    "additional": {
+      "pos": "adjective",
+      "coca": 1320
+    },
+    "multiple": {
+      "pos": "adjective",
+      "coca": 1532
+    },
+    "available": {
+      "pos": "adjective",
+      "coca": 640
+    },
+    "nearly": {
+      "pos": "adverb",
+      "coca": 700
+    },
+    "rather": {
+      "pos": "adverb",
+      "coca": 842
+    },
+    "pretty": {
+      "pos": "adverb",
+      "coca": 526
+    },
+    "especially": {
+      "pos": "adverb",
+      "coca": 519
+    },
+    "particularly": {
+      "pos": "adverb",
+      "coca": 925
+    },
+    "absolutely": {
+      "pos": "adverb",
+      "coca": 980
+    },
+    "extremely": {
+      "pos": "adverb",
+      "coca": 1764
+    },
+    "slightly": {
+      "pos": "adverb",
+      "coca": 1671
+    },
+    "relatively": {
+      "pos": "adverb",
+      "coca": 1757
+    },
+    "entirely": {
+      "pos": "adverb",
+      "coca": 1839
+    },
+    "currently": {
+      "pos": "adverb",
+      "coca": 1455
+    },
+    "forever": {
+      "pos": "adverb",
+      "coca": 1767
+    },
+    "anymore": {
+      "pos": "adverb",
+      "coca": 1268
+    },
+    "quickly": {
+      "pos": "adverb",
+      "coca": 812
+    },
+    "slowly": {
+      "pos": "adverb",
+      "coca": 1550
+    },
+    "easily": {
+      "pos": "adverb",
+      "coca": 1263
+    },
+    "directly": {
+      "pos": "adverb",
+      "coca": 1220
+    },
+    "simply": {
+      "pos": "adverb",
+      "coca": 580
+    },
+    "generally": {
+      "pos": "adverb",
+      "coca": 1282
+    },
+    "basically": {
+      "pos": "adverb",
+      "coca": 1530
+    },
+    "eventually": {
+      "pos": "adverb",
+      "coca": 1184
+    },
+    "suddenly": {
+      "pos": "adverb",
+      "coca": 1244
+    },
+    "ago": {
+      "pos": "adverb",
+      "coca": 338
+    },
+    "safe": {
+      "pos": "adjective",
+      "coca": 916
+    },
+    "dangerous": {
+      "pos": "adjective",
+      "coca": 1490
+    },
+    "interesting": {
+      "pos": "adjective",
+      "coca": 828
+    },
+    "boring": {
+      "pos": "adjective",
+      "coca": 3989
+    },
+    "popular": {
+      "pos": "adjective",
+      "coca": 1065
+    },
+    "favorite": {
+      "pos": "adjective",
+      "coca": 1495
+    },
+    "foreign": {
+      "pos": "adjective",
+      "coca": 868
+    },
+    "early": {
+      "pos": "adjective",
+      "coca": 434
+    },
+    "late": {
+      "pos": "adjective",
+      "coca": 401
+    },
+    "recent": {
+      "pos": "adjective",
+      "coca": 639
+    },
+    "current": {
+      "pos": "adjective",
+      "coca": 650
+    },
+    "former": {
+      "pos": "pronoun",
+      "coca": 524
+    },
+    "previous": {
+      "pos": "adjective",
+      "coca": 1214
+    },
+    "final": {
+      "pos": "adjective",
+      "coca": 908
+    },
+    "initial": {
+      "pos": "adjective",
+      "coca": 2061
+    },
+    "annual": {
+      "pos": "adjective",
+      "coca": 1592
+    },
+    "daily": {
+      "pos": "adjective",
+      "coca": 1546
+    },
+    "regular": {
+      "pos": "adjective",
+      "coca": 1486
+    },
+    "long_term": {
+      "pos": "adjective",
+      "coca": 2035
+    },
+    "ancient": {
+      "pos": "adjective",
+      "coca": 2072
+    },
+    "modern": {
+      "pos": "adjective",
+      "coca": 1154
+    },
+    "historical": {
+      "pos": "adjective",
+      "coca": 1677
+    },
+    "quick": {
+      "pos": "adjective",
+      "coca": 1272
+    },
+    "present": {
+      "pos": "adjective",
+      "coca": 1472
+    },
+    "museum": {
+      "pos": "noun",
+      "coca": 1297
+    },
+    "cinema": {
+      "pos": "noun"
+    },
+    "pool": {
+      "pos": "noun",
+      "coca": 1830
+    },
+    "mall": {
+      "pos": "noun",
+      "coca": 3469
+    },
+    "neighborhood": {
+      "pos": "noun",
+      "coca": 1316
+    },
+    "village": {
+      "pos": "noun",
+      "coca": 1673
+    },
+    "picture": {
+      "pos": "noun",
+      "coca": 583
+    },
+    "to_rest": {
+      "pos": "verb",
+      "coca": 2136
+    },
+    "to_relax": {
+      "pos": "verb",
+      "coca": 2487
+    },
+    "motorcycle": {
+      "pos": "noun"
+    },
+    "truck": {
+      "pos": "noun",
+      "coca": 1423
+    },
+    "ship": {
+      "pos": "noun",
+      "coca": 1212
+    },
+    "tourist": {
+      "pos": "noun",
+      "coca": 3111
+    },
+    "schedule": {
+      "pos": "noun",
+      "coca": 2251
+    },
+    "delay": {
+      "pos": "noun",
+      "coca": 3499
+    },
+    "vacation": {
+      "pos": "noun",
+      "coca": 2721
+    },
+    "passenger": {
+      "pos": "noun",
+      "coca": 2405
+    },
+    "departure": {
+      "pos": "noun",
+      "coca": 4459
+    },
+    "arrival": {
+      "pos": "noun",
+      "coca": 3672
+    },
+    "journey": {
+      "pos": "noun",
+      "coca": 2246
+    },
+    "route": {
+      "pos": "noun",
+      "coca": 2143
+    },
+    "airline": {
+      "pos": "noun",
+      "coca": 2802
+    },
+    "suitcase": {
+      "pos": "noun"
+    },
+    "ferry": {
+      "pos": "noun"
+    },
+    "tram": {
+      "pos": "noun"
+    },
+    "souvenir": {
+      "pos": "noun"
+    },
+    "tent": {
+      "pos": "noun",
+      "coca": 3563
+    },
+    "adult": {
+      "pos": "noun",
+      "coca": 1024
+    },
+    "guest": {
+      "pos": "noun",
+      "coca": 1462
+    },
+    "stranger": {
+      "pos": "noun",
+      "coca": 2682
+    },
+    "shower": {
+      "pos": "noun",
+      "coca": 3093
+    },
+    "fridge": {
+      "pos": "noun"
+    },
+    "stove": {
+      "pos": "noun"
+    },
+    "north": {
+      "pos": "noun",
+      "coca": 703
+    },
+    "south": {
+      "pos": "noun",
+      "coca": 801
+    },
+    "east": {
+      "pos": "noun",
+      "coca": 878
+    },
+    "west": {
+      "pos": "noun",
+      "coca": 829
+    },
+    "northern": {
+      "pos": "adjective",
+      "coca": 2021
+    },
+    "southern": {
+      "pos": "adjective",
+      "coca": 1429
+    },
+    "eastern": {
+      "pos": "adjective",
+      "coca": 1950
+    },
+    "western": {
+      "pos": "adjective",
+      "coca": 1431
+    },
+    "central": {
+      "pos": "adjective",
+      "coca": 922
+    },
+    "local": {
+      "pos": "adjective",
+      "coca": 480
+    },
+    "international": {
+      "pos": "adjective",
+      "coca": 616
+    },
+    "global": {
+      "pos": "adjective",
+      "coca": 966
+    },
+    "urban": {
+      "pos": "adjective",
+      "coca": 1960
+    },
+    "domestic": {
+      "pos": "adjective",
+      "coca": 1893
+    },
+    "region": {
+      "pos": "noun",
+      "coca": 912
+    },
+    "area": {
+      "pos": "noun",
+      "coca": 296
+    },
+    "though": {
+      "pos": "conjunction",
+      "coca": 271
+    },
+    "nor": {
+      "pos": "conjunction",
+      "coca": 1104
+    },
+    "than": {
+      "pos": "conjunction",
+      "coca": 80
+    },
+    "like": {
+      "pos": "preposition",
+      "coca": 73
+    },
+    "even": {
+      "pos": "adverb",
+      "coca": 111
+    },
+    "except": {
+      "pos": "conjunction",
+      "coca": 1771
+    },
+    "to_describe": {
+      "pos": "verb",
+      "coca": 609
+    },
+    "to_mention": {
+      "pos": "verb",
+      "coca": 818
+    },
+    "to_discuss": {
+      "pos": "verb",
+      "coca": 873
+    },
+    "to_argue": {
+      "pos": "verb",
+      "coca": 847
+    },
+    "to_claim": {
+      "pos": "verb",
+      "coca": 834
+    },
+    "to_state": {
+      "pos": "verb",
+      "coca": 778
+    },
+    "to_note": {
+      "pos": "verb",
+      "coca": 690
+    },
+    "to_respond": {
+      "pos": "verb",
+      "coca": 988
+    },
+    "to_announce": {
+      "pos": "verb",
+      "coca": 1229
+    },
+    "to_admit": {
+      "pos": "verb",
+      "coca": 1121
+    },
+    "to_deny": {
+      "pos": "verb",
+      "coca": 1477
+    },
+    "to_refuse": {
+      "pos": "verb",
+      "coca": 1339
+    },
+    "to_plan": {
+      "pos": "verb",
+      "coca": 722
+    },
+    "to_manage": {
+      "pos": "verb",
+      "coca": 992
+    },
+    "to_control": {
+      "pos": "verb",
+      "coca": 989
+    },
+    "to_design": {
+      "pos": "verb",
+      "coca": 985
+    },
+    "to_apply": {
+      "pos": "verb",
+      "coca": 880
+    },
+    "to_present": {
+      "pos": "verb",
+      "coca": 865
+    },
+    "to_represent": {
+      "pos": "verb",
+      "coca": 776
+    },
+    "to_focus": {
+      "pos": "verb",
+      "coca": 668
+    },
+    "to_deal": {
+      "pos": "verb",
+      "coca": 698
+    },
+    "to_act": {
+      "pos": "verb",
+      "coca": 813
+    },
+    "to_handle": {
+      "pos": "verb",
+      "coca": 1223
+    },
+    "to_conduct": {
+      "pos": "verb",
+      "coca": 1328
+    },
+    "to_climb": {
+      "pos": "verb",
+      "coca": 1978
+    },
+    "to_breathe": {
+      "pos": "verb",
+      "coca": 2205
+    },
+    "to_smoke": {
+      "pos": "verb",
+      "coca": 2501
+    },
+    "to_yell": {
+      "pos": "verb",
+      "coca": 2542
+    },
+    "to_whisper": {
+      "pos": "verb",
+      "coca": 2800
+    },
+    "to_scream": {
+      "pos": "verb",
+      "coca": 1984
+    },
+    "to_greet": {
+      "pos": "verb",
+      "coca": 4145
+    },
+    "to_apologize": {
+      "pos": "verb",
+      "coca": 2792
+    },
+    "to_forgive": {
+      "pos": "verb",
+      "coca": 2751
+    },
+    "beach": {
+      "pos": "noun",
+      "coca": 1394
+    },
+    "lip": {
+      "pos": "noun",
+      "coca": 1861
+    },
+    "throat": {
+      "pos": "noun",
+      "coca": 2650
+    },
+    "to_fix": {
+      "pos": "verb",
+      "coca": 1482
+    },
+    "to_repair": {
+      "pos": "verb",
+      "coca": 4383
+    },
+    "to_lock": {
+      "pos": "verb",
+      "coca": 2055
+    },
+    "closet": {
+      "pos": "noun",
+      "coca": 3591
+    },
+    "curtain": {
+      "pos": "noun",
+      "coca": 4222
+    },
+    "carpet": {
+      "pos": "noun",
+      "coca": 4452
+    },
+    "mattress": {
+      "pos": "noun"
+    },
+    "sofa": {
+      "pos": "noun"
+    },
+    "pocket": {
+      "pos": "noun",
+      "coca": 1836
+    },
+    "watch": {
+      "pos": "noun",
+      "coca": 2375
+    },
+    "belt": {
+      "pos": "noun",
+      "coca": 2683
+    },
+    "shorts": {
+      "pos": "noun"
+    },
+    "underwear": {
+      "pos": "noun"
+    },
+    "backpack": {
+      "pos": "noun"
+    },
+    "tie": {
+      "pos": "noun",
+      "coca": 2379
+    },
+    "uniform": {
+      "pos": "noun",
+      "coca": 3334
+    },
+    "button": {
+      "pos": "noun",
+      "coca": 2317
+    },
+    "cap": {
+      "pos": "noun",
+      "coca": 2536
+    },
+    "sneaker": {
+      "pos": "noun"
+    },
+    "sandal": {
+      "pos": "noun"
+    },
+    "swimsuit": {
+      "pos": "noun"
+    },
+    "sunglasses": {
+      "pos": "noun"
+    },
+    "clothes": {
+      "pos": "noun",
+      "coca": 1606
+    },
+    "suit": {
+      "pos": "noun",
+      "coca": 1675
+    },
+    "laundry": {
+      "pos": "noun",
+      "coca": 4788
+    },
+    "bucket": {
+      "pos": "noun",
+      "coca": 4786
+    },
+    "trash": {
+      "pos": "noun",
+      "coca": 4146
+    },
+    "heater": {
+      "pos": "noun"
+    },
+    "bathtub": {
+      "pos": "noun"
+    },
+    "ceiling": {
+      "pos": "noun",
+      "coca": 3088
+    },
+    "fence": {
+      "pos": "noun",
+      "coca": 3148
+    },
+    "gate": {
+      "pos": "noun",
+      "coca": 2283
+    },
+    "to_sweep": {
+      "pos": "verb",
+      "coca": 3181
+    },
+    "to_fold": {
+      "pos": "verb",
+      "coca": 4131
+    },
+    "to_wrap": {
+      "pos": "verb",
+      "coca": 2278
+    },
+    "recipe": {
+      "pos": "noun",
+      "coca": 2418
+    },
+    "ingredient": {
+      "pos": "noun",
+      "coca": 3004
+    },
+    "to_fry": {
+      "pos": "verb"
+    },
+    "to_chop": {
+      "pos": "verb",
+      "coca": 4836
+    },
+    "to_pour": {
+      "pos": "verb",
+      "coca": 2319
+    },
+    "to_stir": {
+      "pos": "verb",
+      "coca": 2411
+    },
+    "to_boil": {
+      "pos": "verb",
+      "coca": 4771
+    },
+    "bean": {
+      "pos": "noun",
+      "coca": 2771
+    },
+    "corn": {
+      "pos": "noun",
+      "coca": 2934
+    },
+    "nut": {
+      "pos": "noun",
+      "coca": 2984
+    },
+    "grape": {
+      "pos": "noun"
+    },
+    "strawberry": {
+      "pos": "noun"
+    },
+    "cucumber": {
+      "pos": "noun"
+    },
+    "cabbage": {
+      "pos": "noun"
+    },
+    "yogurt": {
+      "pos": "noun"
+    },
+    "steak": {
+      "pos": "noun",
+      "coca": 4983
+    },
+    "burger": {
+      "pos": "noun",
+      "coca": 5037
+    },
+    "pie": {
+      "pos": "noun",
+      "coca": 3310
+    },
+    "cookie": {
+      "pos": "noun",
+      "coca": 2923
+    },
+    "candy": {
+      "pos": "noun",
+      "coca": 3370
+    },
+    "keyboard": {
+      "pos": "noun",
+      "coca": 5046
+    },
+    "signal": {
+      "pos": "noun",
+      "coca": 2125
+    },
+    "to_click": {
+      "pos": "verb",
+      "coca": 2177
+    },
+    "to_print": {
+      "pos": "verb",
+      "coca": 2773
+    },
+    "to_delete": {
+      "pos": "verb",
+      "coca": 4619
+    },
+    "to_install": {
+      "pos": "verb",
+      "coca": 2400
+    },
+    "printer": {
+      "pos": "noun"
+    },
+    "headphones": {
+      "pos": "noun"
+    },
+    "employer": {
+      "pos": "noun",
+      "coca": 2222
+    },
+    "profession": {
+      "pos": "noun",
+      "coca": 3256
+    },
+    "to_quit": {
+      "pos": "verb",
+      "coca": 2216
+    },
+    "conference": {
+      "pos": "noun",
+      "coca": 1068
+    },
+    "task": {
+      "pos": "noun",
+      "coca": 1164
+    },
+    "responsibility": {
+      "pos": "noun",
+      "coca": 1204
+    },
+    "to_shave": {
+      "pos": "verb"
+    },
+    "cancer": {
+      "pos": "noun",
+      "coca": 1043
+    },
+    "disease": {
+      "pos": "noun",
+      "coca": 870
+    },
+    "treatment": {
+      "pos": "noun",
+      "coca": 825
+    },
+    "patient": {
+      "pos": "noun",
+      "coca": 628
+    },
+    "drug": {
+      "pos": "noun",
+      "coca": 558
+    },
+    "care": {
+      "pos": "noun",
+      "coca": 409
+    },
+    "vaccine": {
+      "pos": "noun",
+      "coca": 3483
+    },
+    "vitamin": {
+      "pos": "noun",
+      "coca": 4176
+    },
+    "mask": {
+      "pos": "noun",
+      "coca": 3341
+    },
+    "diet": {
+      "pos": "noun",
+      "coca": 2233
+    },
+    "to_bleed": {
+      "pos": "verb",
+      "coca": 4369
+    },
+    "to_sneeze": {
+      "pos": "verb"
+    },
+    "abortion": {
+      "pos": "noun",
+      "coca": 1953
+    },
+    "elbow": {
+      "pos": "noun",
+      "coca": 4241
+    },
+    "wrist": {
+      "pos": "noun",
+      "coca": 4107
+    },
+    "ankle": {
+      "pos": "noun",
+      "coca": 4303
+    },
+    "thumb": {
+      "pos": "noun",
+      "coca": 4032
+    },
+    "cheek": {
+      "pos": "noun",
+      "coca": 3114
+    },
+    "chin": {
+      "pos": "noun",
+      "coca": 4428
+    },
+    "forehead": {
+      "pos": "noun",
+      "coca": 4447
+    },
+    "breast": {
+      "pos": "noun",
+      "coca": 2023
+    },
+    "breath": {
+      "pos": "noun",
+      "coca": 1751
+    },
+    "sleep": {
+      "pos": "noun",
+      "coca": 1875
+    },
+    "gas": {
+      "pos": "noun",
+      "coca": 1034
+    },
+    "vocabulary": {
+      "pos": "noun",
+      "coca": 5031
+    },
+    "pencil": {
+      "pos": "noun"
+    },
+    "notebook": {
+      "pos": "noun"
+    },
+    "dictionary": {
+      "pos": "noun"
+    },
+    "grammar": {
+      "pos": "noun"
+    },
+    "to_practice": {
+      "pos": "verb",
+      "coca": 3187
+    },
+    "to_graduate": {
+      "pos": "verb",
+      "coca": 2665
+    },
+    "guy": {
+      "pos": "noun",
+      "coca": 203
+    },
+    "lady": {
+      "pos": "noun",
+      "coca": 871
+    },
+    "sir": {
+      "pos": "noun",
+      "coca": 784
+    },
+    "member": {
+      "pos": "noun",
+      "coca": 341
+    },
+    "fan": {
+      "pos": "noun",
+      "coca": 895
+    },
+    "user": {
+      "pos": "noun",
+      "coca": 1081
+    },
+    "owner": {
+      "pos": "noun",
+      "coca": 1089
+    },
+    "reader": {
+      "pos": "noun",
+      "coca": 1112
+    },
+    "consumer": {
+      "pos": "noun",
+      "coca": 1216
+    },
+    "citizen": {
+      "pos": "noun",
+      "coca": 1054
+    },
+    "resident": {
+      "pos": "noun",
+      "coca": 1400
+    },
+    "voter": {
+      "pos": "noun",
+      "coca": 1092
+    },
+    "participant": {
+      "pos": "noun",
+      "coca": 1185
+    },
+    "winner": {
+      "pos": "noun",
+      "coca": 1906
+    },
+    "speaker": {
+      "pos": "noun",
+      "coca": 2022
+    },
+    "investor": {
+      "pos": "noun",
+      "coca": 1946
+    },
+    "miss": {
+      "pos": "noun",
+      "coca": 1760
+    },
+    "host": {
+      "pos": "noun",
+      "coca": 1887
+    },
+    "university": {
+      "pos": "noun",
+      "coca": 359
+    },
+    "college": {
+      "pos": "noun",
+      "coca": 435
+    },
+    "education": {
+      "pos": "noun",
+      "coca": 424
+    },
+    "class": {
+      "pos": "noun",
+      "coca": 439
+    },
+    "study": {
+      "pos": "noun",
+      "coca": 259
+    },
+    "learning": {
+      "pos": "noun",
+      "coca": 1435
+    },
+    "teaching": {
+      "pos": "noun",
+      "coca": 1843
+    },
+    "reading": {
+      "pos": "noun",
+      "coca": 1469
+    },
+    "writing": {
+      "pos": "noun",
+      "coca": 1396
+    },
+    "educational": {
+      "pos": "adjective",
+      "coca": 1831
+    },
+    "academic": {
+      "pos": "adjective",
+      "coca": 1629
+    },
+    "subject": {
+      "pos": "noun",
+      "coca": 803
+    },
+    "career": {
+      "pos": "noun",
+      "coca": 796
+    },
+    "position": {
+      "pos": "noun",
+      "coca": 546
+    },
+    "opportunity": {
+      "pos": "noun",
+      "coca": 643
+    },
+    "skill": {
+      "pos": "noun",
+      "coca": 851
+    },
+    "professional": {
+      "pos": "adjective",
+      "coca": 1192
+    },
+    "plan": {
+      "pos": "noun",
+      "coca": 422
+    },
+    "purpose": {
+      "pos": "noun",
+      "coca": 938
+    },
+    "effort": {
+      "pos": "noun",
+      "coca": 530
+    },
+    "practice": {
+      "pos": "noun",
+      "coca": 562
+    },
+    "target": {
+      "pos": "noun",
+      "coca": 1291
+    },
+    "living": {
+      "pos": "noun",
+      "coca": 1527
+    },
+    "business": {
+      "pos": "noun",
+      "coca": 254
+    },
+    "firm": {
+      "pos": "noun",
+      "coca": 1202
+    },
+    "corporation": {
+      "pos": "noun",
+      "coca": 2008
+    },
+    "industry": {
+      "pos": "noun",
+      "coca": 658
+    },
+    "organization": {
+      "pos": "noun",
+      "coca": 647
+    },
+    "management": {
+      "pos": "noun",
+      "coca": 1040
+    },
+    "sector": {
+      "pos": "noun",
+      "coca": 2009
+    },
+    "program": {
+      "pos": "noun",
+      "coca": 250
+    },
+    "system": {
+      "pos": "noun",
+      "coca": 219
+    },
+    "service": {
+      "pos": "noun",
+      "coca": 295
+    },
+    "product": {
+      "pos": "noun",
+      "coca": 598
+    },
+    "production": {
+      "pos": "noun",
+      "coca": 1037
+    },
+    "construction": {
+      "pos": "noun",
+      "coca": 1717
+    },
+    "percent": {
+      "pos": "noun",
+      "coca": 265
+    },
+    "percentage": {
+      "pos": "noun",
+      "coca": 1903
+    },
+    "amount": {
+      "pos": "noun",
+      "coca": 757
+    },
+    "average": {
+      "pos": "adjective",
+      "coca": 1413
+    },
+    "million": {
+      "pos": "numeral",
+      "coca": 516
+    },
+    "rate": {
+      "pos": "noun",
+      "coca": 479
+    },
+    "value": {
+      "pos": "noun",
+      "coca": 490
+    },
+    "cost": {
+      "pos": "noun",
+      "coca": 579
+    },
+    "dollar": {
+      "pos": "noun",
+      "coca": 797
+    },
+    "pound": {
+      "pos": "noun",
+      "coca": 1667
+    },
+    "increase": {
+      "pos": "noun",
+      "coca": 1340
+    },
+    "growth": {
+      "pos": "noun",
+      "coca": 889
+    },
+    "risk": {
+      "pos": "noun",
+      "coca": 666
+    },
+    "benefit": {
+      "pos": "noun",
+      "coca": 827
+    },
+    "deal": {
+      "pos": "noun",
+      "coca": 679
+    },
+    "mile": {
+      "pos": "noun",
+      "coca": 790
+    },
+    "inch": {
+      "pos": "noun",
+      "coca": 1752
+    },
+    "mean": {
+      "pos": "noun",
+      "coca": 1392
+    },
+    "result": {
+      "pos": "noun",
+      "coca": 376
+    },
+    "development": {
+      "pos": "noun",
+      "coca": 522
+    },
+    "improvement": {
+      "pos": "noun",
+      "coca": 2071
+    },
+    "progress": {
+      "pos": "noun",
+      "coca": 1660
+    },
+    "performance": {
+      "pos": "noun",
+      "coca": 765
+    },
+    "advantage": {
+      "pos": "noun",
+      "coca": 1382
+    },
+    "demand": {
+      "pos": "noun",
+      "coca": 1508
+    },
+    "supply": {
+      "pos": "noun",
+      "coca": 1680
+    },
+    "resource": {
+      "pos": "noun",
+      "coca": 833
+    },
+    "standard": {
+      "pos": "noun",
+      "coca": 892
+    },
+    "quality": {
+      "pos": "noun",
+      "coca": 811
+    },
+    "status": {
+      "pos": "noun",
+      "coca": 1274
+    },
+    "potential": {
+      "pos": "adjective",
+      "coca": 1270
+    },
+    "requirement": {
+      "pos": "noun",
+      "coca": 1810
+    },
+    "commitment": {
+      "pos": "noun",
+      "coca": 1955
+    },
+    "contribution": {
+      "pos": "noun",
+      "coca": 2024
+    },
+    "to_operate": {
+      "pos": "verb",
+      "coca": 1543
+    },
+    "to_organize": {
+      "pos": "verb",
+      "coca": 1895
+    },
+    "to_perform": {
+      "pos": "verb",
+      "coca": 1003
+    },
+    "to_complete": {
+      "pos": "verb",
+      "coca": 1335
+    },
+    "to_achieve": {
+      "pos": "verb",
+      "coca": 1280
+    },
+    "to_attend": {
+      "pos": "verb",
+      "coca": 1275
+    },
+    "to_fire": {
+      "pos": "verb",
+      "coca": 1313
+    },
+    "to_establish": {
+      "pos": "verb",
+      "coca": 1057
+    },
+    "to_maintain": {
+      "pos": "verb",
+      "coca": 1075
+    },
+    "to_launch": {
+      "pos": "verb",
+      "coca": 1747
+    },
+    "economy": {
+      "pos": "noun",
+      "coca": 693
+    },
+    "economic": {
+      "pos": "adjective",
+      "coca": 559
+    },
+    "financial": {
+      "pos": "adjective",
+      "coca": 804
+    },
+    "trade": {
+      "pos": "noun",
+      "coca": 1025
+    },
+    "stock": {
+      "pos": "noun",
+      "coca": 1033
+    },
+    "credit": {
+      "pos": "noun",
+      "coca": 1004
+    },
+    "income": {
+      "pos": "noun",
+      "coca": 1119
+    },
+    "investment": {
+      "pos": "noun",
+      "coca": 1211
+    },
+    "debt": {
+      "pos": "noun",
+      "coca": 1312
+    },
+    "sales": {
+      "pos": "noun",
+      "coca": 1337
+    },
+    "revenue": {
+      "pos": "noun",
+      "coca": 1744
+    },
+    "fund": {
+      "pos": "noun",
+      "coca": 949
+    },
+    "capital": {
+      "pos": "noun",
+      "coca": 1267
+    },
+    "share": {
+      "pos": "noun",
+      "coca": 1442
+    },
+    "property": {
+      "pos": "noun",
+      "coca": 906
+    },
+    "estate": {
+      "pos": "noun",
+      "coca": 2060
+    },
+    "application": {
+      "pos": "noun",
+      "coca": 1354
+    },
+    "request": {
+      "pos": "noun",
+      "coca": 1913
+    },
+    "offer": {
+      "pos": "noun",
+      "coca": 2062
+    },
+    "package": {
+      "pos": "noun",
+      "coca": 2037
+    },
+    "item": {
+      "pos": "noun",
+      "coca": 1048
+    },
+    "sample": {
+      "pos": "noun",
+      "coca": 1321
+    },
+    "labor": {
+      "pos": "noun",
+      "coca": 1314
+    },
+    "successful": {
+      "pos": "adjective",
+      "coca": 1241
+    },
+    "effective": {
+      "pos": "adjective",
+      "coca": 1213
+    },
+    "corporate": {
+      "pos": "adjective",
+      "coca": 1768
+    },
+    "commercial": {
+      "pos": "adjective",
+      "coca": 1383
+    },
+    "relative": {
+      "pos": "noun",
+      "coca": 2976
+    },
+    "twin": {
+      "pos": "noun",
+      "coca": 2611
+    },
+    "nephew": {
+      "pos": "noun"
+    },
+    "niece": {
+      "pos": "noun"
+    },
+    "teenager": {
+      "pos": "noun",
+      "coca": 2814
+    },
+    "immigrant": {
+      "pos": "noun",
+      "coca": 2320
+    },
+    "youth": {
+      "pos": "noun",
+      "coca": 1640
+    },
+    "individual": {
+      "pos": "noun",
+      "coca": 773
+    },
+    "human": {
+      "pos": "adjective",
+      "coca": 411
+    },
+    "self": {
+      "pos": "noun",
+      "coca": 1944
+    },
+    "being": {
+      "pos": "noun",
+      "coca": 1563
+    },
+    "daddy": {
+      "pos": "noun",
+      "coca": 2041
+    },
+    "writer": {
+      "pos": "noun",
+      "coca": 1002
+    },
+    "author": {
+      "pos": "noun",
+      "coca": 680
+    },
+    "editor": {
+      "pos": "noun",
+      "coca": 1249
+    },
+    "reporter": {
+      "pos": "noun",
+      "coca": 1404
+    },
+    "scientist": {
+      "pos": "noun",
+      "coca": 1137
+    },
+    "researcher": {
+      "pos": "noun",
+      "coca": 1257
+    },
+    "expert": {
+      "pos": "noun",
+      "coca": 1105
+    },
+    "agent": {
+      "pos": "noun",
+      "coca": 1012
+    },
+    "cop": {
+      "pos": "noun",
+      "coca": 1732
+    },
+    "guard": {
+      "pos": "noun",
+      "coca": 1511
+    },
+    "critic": {
+      "pos": "noun",
+      "coca": 1804
+    },
+    "master": {
+      "pos": "noun",
+      "coca": 1397
+    },
+    "president": {
+      "pos": "noun",
+      "coca": 173
+    },
+    "leader": {
+      "pos": "noun",
+      "coca": 539
+    },
+    "director": {
+      "pos": "noun",
+      "coca": 615
+    },
+    "official": {
+      "pos": "noun",
+      "coca": 644
+    },
+    "officer": {
+      "pos": "noun",
+      "coca": 687
+    },
+    "chief": {
+      "pos": "noun",
+      "coca": 1473
+    },
+    "captain": {
+      "pos": "noun",
+      "coca": 1568
+    },
+    "minister": {
+      "pos": "noun",
+      "coca": 1576
+    },
+    "mayor": {
+      "pos": "noun",
+      "coca": 1775
+    },
+    "chairman": {
+      "pos": "noun",
+      "coca": 1845
+    },
+    "executive": {
+      "pos": "noun",
+      "coca": 1058
+    },
+    "secretary": {
+      "pos": "noun",
+      "coca": 1426
+    },
+    "candidate": {
+      "pos": "noun",
+      "coca": 830
+    },
+    "politician": {
+      "pos": "noun",
+      "coca": 1811
+    },
+    "king": {
+      "pos": "noun",
+      "coca": 863
+    },
+    "lord": {
+      "pos": "noun",
+      "coca": 1583
+    },
+    "general_n": {
+      "pos": "noun",
+      "coca": 1617
+    },
+    "to_insist": {
+      "pos": "verb",
+      "coca": 1727
+    },
+    "to_express": {
+      "pos": "verb",
+      "coca": 1303
+    },
+    "to_declare": {
+      "pos": "verb",
+      "coca": 1892
+    },
+    "to_propose": {
+      "pos": "verb",
+      "coca": 1909
+    },
+    "to_recommend": {
+      "pos": "verb",
+      "coca": 1644
+    },
+    "to_excuse": {
+      "pos": "verb",
+      "coca": 1691
+    },
+    "to_blame": {
+      "pos": "verb",
+      "coca": 1601
+    },
+    "to_accuse": {
+      "pos": "verb",
+      "coca": 2004
+    },
+    "to_convince": {
+      "pos": "verb",
+      "coca": 2056
+    },
+    "to_comment": {
+      "pos": "verb",
+      "coca": 2045
+    },
+    "to_question": {
+      "pos": "verb",
+      "coca": 2034
+    },
+    "to_cite": {
+      "pos": "verb",
+      "coca": 2020
+    },
+    "generation": {
+      "pos": "noun",
+      "coca": 1118
+    },
+    "crowd": {
+      "pos": "noun",
+      "coca": 1458
+    },
+    "troop": {
+      "pos": "noun",
+      "coca": 1570
+    },
+    "crew": {
+      "pos": "noun",
+      "coca": 1857
+    },
+    "staff": {
+      "pos": "noun",
+      "coca": 897
+    },
+    "minority": {
+      "pos": "noun",
+      "coca": 1873
+    },
+    "majority": {
+      "pos": "noun",
+      "coca": 1077
+    },
+    "population": {
+      "pos": "noun",
+      "coca": 716
+    },
+    "community": {
+      "pos": "noun",
+      "coca": 342
+    },
+    "society": {
+      "pos": "noun",
+      "coca": 582
+    },
+    "public_n": {
+      "pos": "noun",
+      "coca": 995
+    },
+    "folk": {
+      "pos": "noun",
+      "coca": 1194
+    },
+    "enemy": {
+      "pos": "noun",
+      "coca": 1561
+    },
+    "hero": {
+      "pos": "noun",
+      "coca": 1802
+    },
+    "association": {
+      "pos": "noun",
+      "coca": 1031
+    },
+    "panel": {
+      "pos": "noun",
+      "coca": 1801
+    },
+    "call": {
+      "pos": "noun",
+      "coca": 646
+    },
+    "talk": {
+      "pos": "noun",
+      "coca": 964
+    },
+    "conversation": {
+      "pos": "noun",
+      "coca": 991
+    },
+    "discussion": {
+      "pos": "noun",
+      "coca": 982
+    },
+    "debate": {
+      "pos": "noun",
+      "coca": 1015
+    },
+    "statement": {
+      "pos": "noun",
+      "coca": 791
+    },
+    "expression": {
+      "pos": "noun",
+      "coca": 1618
+    },
+    "explanation": {
+      "pos": "noun",
+      "coca": 2051
+    },
+    "instruction": {
+      "pos": "noun",
+      "coca": 1702
+    },
+    "advice": {
+      "pos": "noun",
+      "coca": 1551
+    },
+    "promise": {
+      "pos": "noun",
+      "coca": 2030
+    },
+    "claim": {
+      "pos": "noun",
+      "coca": 1253
+    },
+    "agreement": {
+      "pos": "noun",
+      "coca": 1255
+    },
+    "joke": {
+      "pos": "noun",
+      "coca": 1867
+    },
+    "note": {
+      "pos": "noun",
+      "coca": 849
+    },
+    "contact": {
+      "pos": "noun",
+      "coca": 1608
+    },
+    "connection": {
+      "pos": "noun",
+      "coca": 1418
+    },
+    "communication": {
+      "pos": "noun",
+      "coca": 1299
+    },
+    "relation": {
+      "pos": "noun",
+      "coca": 1488
+    },
+    "interaction": {
+      "pos": "noun",
+      "coca": 2027
+    },
+    "access": {
+      "pos": "noun",
+      "coca": 1013
+    },
+    "support": {
+      "pos": "noun",
+      "coca": 634
+    },
+    "help": {
+      "pos": "noun",
+      "coca": 788
+    },
+    "report": {
+      "pos": "noun",
+      "coca": 482
+    },
+    "record": {
+      "pos": "noun",
+      "coca": 518
+    },
+    "list": {
+      "pos": "noun",
+      "coca": 660
+    },
+    "sign": {
+      "pos": "noun",
+      "coca": 858
+    },
+    "sound": {
+      "pos": "noun",
+      "coca": 819
+    },
+    "reference": {
+      "pos": "noun",
+      "coca": 1695
+    },
+    "coverage": {
+      "pos": "noun",
+      "coca": 1856
+    },
+    "aid": {
+      "pos": "noun",
+      "coca": 2046
+    },
+    "photograph": {
+      "pos": "noun",
+      "coca": 1146
+    },
+    "tv": {
+      "pos": "noun",
+      "coca": 845
+    },
+    "episode": {
+      "pos": "noun",
+      "coca": 1807
+    },
+    "scene": {
+      "pos": "noun",
+      "coca": 823
+    },
+    "stage": {
+      "pos": "noun",
+      "coca": 939
+    },
+    "play": {
+      "pos": "noun",
+      "coca": 934
+    },
+    "studio": {
+      "pos": "noun",
+      "coca": 1793
+    },
+    "media": {
+      "pos": "noun",
+      "coca": 595
+    },
+    "press": {
+      "pos": "noun",
+      "coca": 814
+    },
+    "newspaper": {
+      "pos": "noun",
+      "coca": 1443
+    },
+    "magazine": {
+      "pos": "noun",
+      "coca": 1273
+    },
+    "journal": {
+      "pos": "noun",
+      "coca": 1230
+    },
+    "article": {
+      "pos": "noun",
+      "coca": 554
+    },
+    "page": {
+      "pos": "noun",
+      "coca": 624
+    },
+    "text": {
+      "pos": "noun",
+      "coca": 1109
+    },
+    "title": {
+      "pos": "noun",
+      "coca": 1176
+    },
+    "chapter": {
+      "pos": "noun",
+      "coca": 1954
+    },
+    "novel": {
+      "pos": "noun",
+      "coca": 1646
+    },
+    "literature": {
+      "pos": "noun",
+      "coca": 1773
+    },
+    "blog": {
+      "pos": "noun",
+      "coca": 1307
+    },
+    "post": {
+      "pos": "noun",
+      "coca": 581
+    },
+    "comment": {
+      "pos": "noun",
+      "coca": 604
+    },
+    "image": {
+      "pos": "noun",
+      "coca": 577
+    },
+    "album": {
+      "pos": "noun",
+      "coca": 1943
+    },
+    "review": {
+      "pos": "noun",
+      "coca": 1028
+    },
+    "content": {
+      "pos": "noun",
+      "coca": 1215
+    },
+    "ad": {
+      "pos": "noun",
+      "coca": 1700
+    },
+    "center": {
+      "pos": "noun",
+      "coca": 367
+    },
+    "site": {
+      "pos": "noun",
+      "coca": 501
+    },
+    "space": {
+      "pos": "noun",
+      "coca": 543
+    },
+    "ground": {
+      "pos": "noun",
+      "coca": 619
+    },
+    "location": {
+      "pos": "noun",
+      "coca": 1367
+    },
+    "camp": {
+      "pos": "noun",
+      "coca": 1419
+    },
+    "farm": {
+      "pos": "noun",
+      "coca": 1516
+    },
+    "yard": {
+      "pos": "noun",
+      "coca": 1180
+    },
+    "spot": {
+      "pos": "noun",
+      "coca": 1287
+    },
+    "setting": {
+      "pos": "noun",
+      "coca": 1821
+    },
+    "zone": {
+      "pos": "noun",
+      "coca": 1863
+    },
+    "band": {
+      "pos": "noun",
+      "coca": 1260
+    },
+    "dance": {
+      "pos": "noun",
+      "coca": 1927
+    },
+    "art": {
+      "pos": "noun",
+      "coca": 447
+    },
+    "painting": {
+      "pos": "noun",
+      "coca": 1559
+    },
+    "design": {
+      "pos": "noun",
+      "coca": 875
+    },
+    "style": {
+      "pos": "noun",
+      "coca": 1113
+    },
+    "fashion": {
+      "pos": "noun",
+      "coca": 2077
+    },
+    "technology": {
+      "pos": "noun",
+      "coca": 602
+    },
+    "web": {
+      "pos": "noun",
+      "coca": 1130
+    },
+    "digital": {
+      "pos": "adjective",
+      "coca": 1837
+    },
+    "link": {
+      "pos": "noun",
+      "coca": 1523
+    },
+    "file": {
+      "pos": "noun",
+      "coca": 1359
+    },
+    "device": {
+      "pos": "noun",
+      "coca": 1201
+    },
+    "machine": {
+      "pos": "noun",
+      "coca": 1116
+    },
+    "tool": {
+      "pos": "noun",
+      "coca": 1093
+    },
+    "information": {
+      "pos": "noun",
+      "coca": 320
+    },
+    "source": {
+      "pos": "noun",
+      "coca": 612
+    },
+    "to_publish": {
+      "pos": "verb",
+      "coca": 1064
+    },
+    "to_post": {
+      "pos": "verb",
+      "coca": 998
+    },
+    "to_release": {
+      "pos": "verb",
+      "coca": 948
+    },
+    "to_record": {
+      "pos": "verb",
+      "coca": 1778
+    },
+    "to_capture": {
+      "pos": "verb",
+      "coca": 1783
+    },
+    "to_file": {
+      "pos": "verb",
+      "coca": 1792
+    },
+    "to_link": {
+      "pos": "verb",
+      "coca": 1719
+    },
+    "to_connect": {
+      "pos": "verb",
+      "coca": 1484
+    },
+    "to_direct": {
+      "pos": "verb",
+      "coca": 1774
+    },
+    "to_issue": {
+      "pos": "verb",
+      "coca": 1826
+    },
+    "to_feature": {
+      "pos": "verb",
+      "coca": 1664
+    },
+    "to_mark": {
+      "pos": "verb",
+      "coca": 1932
+    },
+    "to_list": {
+      "pos": "verb",
+      "coca": 2043
+    },
+    "to_paint": {
+      "pos": "verb",
+      "coca": 1991
+    },
+    "sport": {
+      "pos": "noun",
+      "coca": 844
+    },
+    "club": {
+      "pos": "noun",
+      "coca": 958
+    },
+    "football": {
+      "pos": "noun",
+      "coca": 1401
+    },
+    "baseball": {
+      "pos": "noun",
+      "coca": 1736
+    },
+    "award": {
+      "pos": "noun",
+      "coca": 1689
+    },
+    "competition": {
+      "pos": "noun",
+      "coca": 1621
+    },
+    "event": {
+      "pos": "noun",
+      "coca": 495
+    },
+    "activity": {
+      "pos": "noun",
+      "coca": 592
+    },
+    "party": {
+      "pos": "noun",
+      "coca": 327
+    },
+    "tour": {
+      "pos": "noun",
+      "coca": 1705
+    },
+    "visit": {
+      "pos": "noun",
+      "coca": 1724
+    },
+    "travel": {
+      "pos": "noun",
+      "coca": 2069
+    },
+    "ride": {
+      "pos": "noun",
+      "coca": 2003
+    },
+    "drive": {
+      "pos": "noun",
+      "coca": 1584
+    },
+    "sight": {
+      "pos": "noun",
+      "coca": 1874
+    },
+    "stuff": {
+      "pos": "noun",
+      "coca": 662
+    },
+    "card": {
+      "pos": "noun",
+      "coca": 852
+    },
+    "ring": {
+      "pos": "noun",
+      "coca": 1749
+    },
+    "chain": {
+      "pos": "noun",
+      "coca": 2053
+    },
+    "sheet": {
+      "pos": "noun",
+      "coca": 2079
+    },
+    "copy": {
+      "pos": "noun",
+      "coca": 1865
+    },
+    "check": {
+      "pos": "noun",
+      "coca": 1809
+    },
+    "cover": {
+      "pos": "noun",
+      "coca": 1730
+    },
+    "desk": {
+      "pos": "noun",
+      "coca": 1949
+    },
+    "equipment": {
+      "pos": "noun",
+      "coca": 1790
+    },
+    "bunch": {
+      "pos": "noun",
+      "coca": 2018
+    },
+    "pair": {
+      "pos": "noun",
+      "coca": 1670
+    },
+    "collection": {
+      "pos": "noun",
+      "coca": 1233
+    },
+    "bay": {
+      "pos": "noun",
+      "coca": 1652
+    },
+    "nature": {
+      "pos": "noun",
+      "coca": 743
+    },
+    "natural": {
+      "pos": "adjective",
+      "coca": 783
+    },
+    "environment": {
+      "pos": "noun",
+      "coca": 950
+    },
+    "environmental": {
+      "pos": "adjective",
+      "coca": 1203
+    },
+    "clinic": {
+      "pos": "noun",
+      "coca": 2896
+    },
+    "stadium": {
+      "pos": "noun",
+      "coca": 2892
+    },
+    "tower": {
+      "pos": "noun",
+      "coca": 2581
+    },
+    "castle": {
+      "pos": "noun",
+      "coca": 4281
+    },
+    "temple": {
+      "pos": "noun",
+      "coca": 3670
+    },
+    "sidewalk": {
+      "pos": "noun",
+      "coca": 4300
+    },
+    "tunnel": {
+      "pos": "noun",
+      "coca": 3600
+    },
+    "zoo": {
+      "pos": "noun"
+    },
+    "hairdresser": {
+      "pos": "noun"
+    },
+    "bar": {
+      "pos": "noun",
+      "coca": 1014
+    },
+    "top": {
+      "pos": "noun",
+      "coca": 710
+    },
+    "bottom": {
+      "pos": "noun",
+      "coca": 1690
+    },
+    "side": {
+      "pos": "noun",
+      "coca": 286
+    },
+    "middle": {
+      "pos": "adjective",
+      "coca": 1039
+    },
+    "front": {
+      "pos": "adjective",
+      "coca": 1502
+    },
+    "direction": {
+      "pos": "noun",
+      "coca": 1073
+    },
+    "path": {
+      "pos": "noun",
+      "coca": 1325
+    },
+    "track": {
+      "pos": "noun",
+      "coca": 1224
+    },
+    "trail": {
+      "pos": "noun",
+      "coca": 2075
+    },
+    "section": {
+      "pos": "noun",
+      "coca": 824
+    },
+    "division": {
+      "pos": "noun",
+      "coca": 1549
+    },
+    "quarter": {
+      "pos": "noun",
+      "coca": 1529
+    },
+    "base": {
+      "pos": "noun",
+      "coca": 1072
+    },
+    "hall": {
+      "pos": "noun",
+      "coca": 1163
+    },
+    "facility": {
+      "pos": "noun",
+      "coca": 1515
+    },
+    "institute": {
+      "pos": "noun",
+      "coca": 1525
+    },
+    "sand": {
+      "pos": "noun",
+      "coca": 2522
+    },
+    "dust": {
+      "pos": "noun",
+      "coca": 2635
+    },
+    "smoke": {
+      "pos": "noun",
+      "coca": 2690
+    },
+    "seed": {
+      "pos": "noun",
+      "coca": 2218
+    },
+    "branch": {
+      "pos": "noun",
+      "coca": 2159
+    },
+    "rose": {
+      "pos": "noun",
+      "coca": 2795
+    },
+    "flood": {
+      "pos": "noun",
+      "coca": 3830
+    },
+    "fog": {
+      "pos": "noun"
+    },
+    "rock": {
+      "pos": "noun",
+      "coca": 963
+    },
+    "plant": {
+      "pos": "noun",
+      "coca": 821
+    },
+    "leaf": {
+      "pos": "noun",
+      "coca": 2025
+    },
+    "root": {
+      "pos": "noun",
+      "coca": 1976
+    },
+    "wing": {
+      "pos": "noun",
+      "coca": 2007
+    },
+    "wave": {
+      "pos": "noun",
+      "coca": 1595
+    },
+    "shadow": {
+      "pos": "noun",
+      "coca": 1986
+    },
+    "air": {
+      "pos": "noun",
+      "coca": 455
+    },
+    "light_n": {
+      "pos": "noun",
+      "coca": 521
+    },
+    "duck": {
+      "pos": "noun",
+      "coca": 3573
+    },
+    "tiger": {
+      "pos": "noun",
+      "coca": 2961
+    },
+    "pet": {
+      "pos": "noun",
+      "coca": 2968
+    },
+    "tail": {
+      "pos": "noun",
+      "coca": 3232
+    },
+    "strange": {
+      "pos": "adjective",
+      "coca": 1599
+    },
+    "weird": {
+      "pos": "adjective",
+      "coca": 2038
+    },
+    "wonderful": {
+      "pos": "adjective",
+      "coca": 1330
+    },
+    "amazing": {
+      "pos": "adjective",
+      "coca": 1369
+    },
+    "terrible": {
+      "pos": "adjective",
+      "coca": 1755
+    },
+    "excellent": {
+      "pos": "adjective",
+      "coca": 1916
+    },
+    "super": {
+      "pos": "adjective",
+      "coca": 1998
+    },
+    "famous": {
+      "pos": "adjective",
+      "coca": 1721
+    },
+    "unique": {
+      "pos": "adjective",
+      "coca": 1686
+    },
+    "rare": {
+      "pos": "adjective",
+      "coca": 2015
+    },
+    "familiar": {
+      "pos": "adjective",
+      "coca": 1692
+    },
+    "obvious": {
+      "pos": "adjective",
+      "coca": 1647
+    },
+    "impossible": {
+      "pos": "adjective",
+      "coca": 1627
+    },
+    "fair": {
+      "pos": "adjective",
+      "coca": 1242
+    },
+    "appropriate": {
+      "pos": "adjective",
+      "coca": 1639
+    },
+    "useful": {
+      "pos": "adjective",
+      "coca": 1835
+    },
+    "cool": {
+      "pos": "adjective",
+      "coca": 1019
+    },
+    "crazy": {
+      "pos": "adjective",
+      "coca": 1111
+    },
+    "stupid": {
+      "pos": "adjective",
+      "coca": 1415
+    },
+    "tough": {
+      "pos": "adjective",
+      "coca": 1088
+    },
+    "lazy": {
+      "pos": "adjective",
+      "coca": 4803
+    },
+    "rude": {
+      "pos": "adjective",
+      "coca": 5018
+    },
+    "shy": {
+      "pos": "adjective",
+      "coca": 4644
+    },
+    "nervous": {
+      "pos": "adjective",
+      "coca": 2437
+    },
+    "lonely": {
+      "pos": "adjective",
+      "coca": 3899
+    },
+    "proud": {
+      "pos": "adjective",
+      "coca": 1729
+    },
+    "lucky": {
+      "pos": "adjective",
+      "coca": 1726
+    },
+    "careful": {
+      "pos": "adjective",
+      "coca": 1882
+    },
+    "to_beat": {
+      "pos": "verb",
+      "coca": 1018
+    },
+    "to_kick": {
+      "pos": "verb",
+      "coca": 1591
+    },
+    "to_strike": {
+      "pos": "verb",
+      "coca": 1285
+    },
+    "to_blow": {
+      "pos": "verb",
+      "coca": 1301
+    },
+    "to_roll": {
+      "pos": "verb",
+      "coca": 1343
+    },
+    "to_lift": {
+      "pos": "verb",
+      "coca": 1681
+    },
+    "to_press": {
+      "pos": "verb",
+      "coca": 1759
+    },
+    "to_knock": {
+      "pos": "verb",
+      "coca": 2005
+    },
+    "to_grab": {
+      "pos": "verb",
+      "coca": 1493
+    },
+    "to_stick": {
+      "pos": "verb",
+      "coca": 1060
+    },
+    "to_ring": {
+      "pos": "verb",
+      "coca": 2621
+    },
+    "to_bite": {
+      "pos": "verb",
+      "coca": 2943
+    },
+    "to_swallow": {
+      "pos": "verb",
+      "coca": 3838
+    },
+    "willing": {
+      "pos": "adjective",
+      "coca": 1259
+    },
+    "concerned": {
+      "pos": "adjective",
+      "coca": 1326
+    },
+    "aware": {
+      "pos": "adjective",
+      "coca": 1506
+    },
+    "interested": {
+      "pos": "adjective",
+      "coca": 1246
+    },
+    "surprised": {
+      "pos": "adjective",
+      "coca": 1902
+    },
+    "excited": {
+      "pos": "adjective",
+      "coca": 2696
+    },
+    "worried": {
+      "pos": "adjective",
+      "coca": 3074
+    },
+    "creative": {
+      "pos": "adjective",
+      "coca": 2026
+    },
+    "emotional": {
+      "pos": "adjective",
+      "coca": 1780
+    },
+    "mental": {
+      "pos": "adjective",
+      "coca": 1579
+    },
+    "moral": {
+      "pos": "adjective",
+      "coca": 1628
+    },
+    "gay": {
+      "pos": "adjective",
+      "coca": 1638
+    },
+    "cute": {
+      "pos": "adjective",
+      "coca": 2760
+    },
+    "handsome": {
+      "pos": "adjective",
+      "coca": 4109
+    },
+    "silent": {
+      "pos": "adjective",
+      "coca": 2424
+    },
+    "thick": {
+      "pos": "adjective",
+      "coca": 2115
+    },
+    "thin": {
+      "pos": "adjective",
+      "coca": 2013
+    },
+    "fat": {
+      "pos": "noun",
+      "coca": 2010
+    },
+    "narrow": {
+      "pos": "adjective",
+      "coca": 2491
+    },
+    "flat": {
+      "pos": "adjective",
+      "coca": 3045
+    },
+    "sharp": {
+      "pos": "adjective",
+      "coca": 2408
+    },
+    "smooth": {
+      "pos": "adjective",
+      "coca": 2903
+    },
+    "rough": {
+      "pos": "adjective",
+      "coca": 2847
+    },
+    "tight": {
+      "pos": "adjective",
+      "coca": 3059
+    },
+    "loose": {
+      "pos": "adjective",
+      "coca": 3155
+    },
+    "raw": {
+      "pos": "adjective",
+      "coca": 2858
+    },
+    "frozen": {
+      "pos": "adjective",
+      "coca": 4403
+    },
+    "awake": {
+      "pos": "adjective",
+      "coca": 4602
+    },
+    "asleep": {
+      "pos": "adjective",
+      "coca": 3095
+    },
+    "drunk": {
+      "pos": "adjective",
+      "coca": 3162
+    },
+    "private": {
+      "pos": "adjective",
+      "coca": 728
+    },
+    "personal": {
+      "pos": "adjective",
+      "coca": 587
+    },
+    "medical": {
+      "pos": "adjective",
+      "coca": 707
+    },
+    "physical": {
+      "pos": "adjective",
+      "coca": 888
+    },
+    "sexual": {
+      "pos": "adjective",
+      "coca": 1150
+    },
+    "female": {
+      "pos": "adjective",
+      "coca": 1571
+    },
+    "male": {
+      "pos": "adjective",
+      "coca": 1776
+    },
+    "normal": {
+      "pos": "adjective",
+      "coca": 1178
+    },
+    "wild": {
+      "pos": "adjective",
+      "coca": 1534
+    },
+    "active": {
+      "pos": "adjective",
+      "coca": 1602
+    },
+    "direct": {
+      "pos": "adjective",
+      "coca": 1612
+    },
+    "broad": {
+      "pos": "adjective",
+      "coca": 1658
+    },
+    "complex": {
+      "pos": "adjective",
+      "coca": 1758
+    },
+    "equal": {
+      "pos": "adjective",
+      "coca": 1860
+    },
+    "gender": {
+      "pos": "noun",
+      "coca": 1883
+    },
+    "major": {
+      "pos": "adjective",
+      "coca": 551
+    },
+    "serious": {
+      "pos": "adjective",
+      "coca": 795
+    },
+    "significant": {
+      "pos": "adjective",
+      "coca": 787
+    },
+    "critical": {
+      "pos": "adjective",
+      "coca": 1254
+    },
+    "powerful": {
+      "pos": "adjective",
+      "coca": 1256
+    },
+    "key_a": {
+      "pos": "adjective",
+      "coca": 1149
+    },
+    "primary": {
+      "pos": "adjective",
+      "coca": 1598
+    },
+    "prime": {
+      "pos": "adjective",
+      "coca": 1959
+    },
+    "senior": {
+      "pos": "adjective",
+      "coca": 1266
+    },
+    "top_a": {
+      "pos": "adjective",
+      "coca": 997
+    },
+    "positive": {
+      "pos": "adjective",
+      "coca": 1052
+    },
+    "negative": {
+      "pos": "adjective",
+      "coca": 1483
+    },
+    "independent": {
+      "pos": "adjective",
+      "coca": 1498
+    },
+    "responsible": {
+      "pos": "adjective",
+      "coca": 1425
+    },
+    "original": {
+      "pos": "adjective",
+      "coca": 1041
+    },
+    "general": {
+      "pos": "adjective",
+      "coca": 661
+    },
+    "french": {
+      "pos": "adjective",
+      "coca": 1706
+    },
+    "british": {
+      "pos": "adjective",
+      "coca": 1439
+    },
+    "chinese": {
+      "pos": "adjective",
+      "coca": 1417
+    },
+    "european": {
+      "pos": "adjective",
+      "coca": 1528
+    },
+    "african": {
+      "pos": "adjective",
+      "coca": 1635
+    },
+    "russian": {
+      "pos": "adjective",
+      "coca": 1876
+    },
+    "indian": {
+      "pos": "adjective",
+      "coca": 1931
+    },
+    "english": {
+      "pos": "adjective",
+      "coca": 1896
+    },
+    "soviet": {
+      "pos": "adjective",
+      "coca": 1879
+    },
+    "native": {
+      "pos": "adjective",
+      "coca": 1734
+    },
+    "feeling": {
+      "pos": "noun",
+      "coca": 853
+    },
+    "surprise": {
+      "pos": "noun",
+      "coca": 1661
+    },
+    "smile": {
+      "pos": "noun",
+      "coca": 1663
+    },
+    "tear": {
+      "pos": "noun",
+      "coca": 2059
+    },
+    "confidence": {
+      "pos": "noun",
+      "coca": 2017
+    },
+    "doubt": {
+      "pos": "noun",
+      "coca": 2029
+    },
+    "respect": {
+      "pos": "noun",
+      "coca": 1594
+    },
+    "honor": {
+      "pos": "noun",
+      "coca": 1822
+    },
+    "luck": {
+      "pos": "noun",
+      "coca": 1798
+    },
+    "attention": {
+      "pos": "noun",
+      "coca": 664
+    },
+    "interest": {
+      "pos": "noun",
+      "coca": 473
+    },
+    "concern": {
+      "pos": "noun",
+      "coca": 876
+    },
+    "beauty": {
+      "pos": "noun",
+      "coca": 1919
+    },
+    "expectation": {
+      "pos": "noun",
+      "coca": 2002
+    },
+    "ability": {
+      "pos": "noun",
+      "coca": 789
+    },
+    "intelligence": {
+      "pos": "noun",
+      "coca": 1465
+    },
+    "identity": {
+      "pos": "noun",
+      "coca": 1507
+    },
+    "character": {
+      "pos": "noun",
+      "coca": 648
+    },
+    "behavior": {
+      "pos": "noun",
+      "coca": 696
+    },
+    "manner": {
+      "pos": "noun",
+      "coca": 1901
+    },
+    "appearance": {
+      "pos": "noun",
+      "coca": 1914
+    },
+    "leadership": {
+      "pos": "noun",
+      "coca": 1471
+    },
+    "presence": {
+      "pos": "noun",
+      "coca": 1448
+    },
+    "talent": {
+      "pos": "noun",
+      "coca": 1999
+    },
+    "strength": {
+      "pos": "noun",
+      "coca": 1389
+    },
+    "role": {
+      "pos": "noun",
+      "coca": 525
+    },
+    "will": {
+      "pos": "noun",
+      "coca": 1416
+    },
+    "background": {
+      "pos": "noun",
+      "coca": 1538
+    },
+    "supposed": {
+      "pos": "adjective",
+      "coca": 918
+    },
+    "fun": {
+      "pos": "adjective",
+      "coca": 1457
+    },
+    "live": {
+      "pos": "adjective",
+      "coca": 1853
+    },
+    "used": {
+      "pos": "adjective",
+      "coca": 1868
+    },
+    "massive": {
+      "pos": "adjective",
+      "coca": 1904
+    },
+    "internal": {
+      "pos": "adjective",
+      "coca": 1961
+    },
+    "overall": {
+      "pos": "adjective",
+      "coca": 2032
+    },
+    "grand": {
+      "pos": "adjective",
+      "coca": 1723
+    },
+    "social": {
+      "pos": "adjective",
+      "coca": 344
+    },
+    "public": {
+      "pos": "adjective",
+      "coca": 370
+    },
+    "to_tie": {
+      "pos": "verb",
+      "coca": 1654
+    },
+    "to_shut": {
+      "pos": "verb",
+      "coca": 1134
+    },
+    "to_hide": {
+      "pos": "verb",
+      "coca": 1138
+    },
+    "to_seek": {
+      "pos": "verb",
+      "coca": 756
+    },
+    "to_step": {
+      "pos": "verb",
+      "coca": 1051
+    },
+    "to_lean": {
+      "pos": "verb",
+      "coca": 1862
+    },
+    "to_stare": {
+      "pos": "verb",
+      "coca": 1449
+    },
+    "to_nod": {
+      "pos": "verb",
+      "coca": 1996
+    },
+    "to_point": {
+      "pos": "verb",
+      "coca": 674
+    },
+    "to_head": {
+      "pos": "verb",
+      "coca": 1027
+    },
+    "to_escape": {
+      "pos": "verb",
+      "coca": 2074
+    },
+    "to_disappear": {
+      "pos": "verb",
+      "coca": 1814
+    },
+    "to_emerge": {
+      "pos": "verb",
+      "coca": 1696
+    },
+    "to_own": {
+      "pos": "verb",
+      "coca": 1128
+    },
+    "to_belong": {
+      "pos": "verb",
+      "coca": 1656
+    },
+    "to_obtain": {
+      "pos": "verb",
+      "coca": 1657
+    },
+    "to_afford": {
+      "pos": "verb",
+      "coca": 1841
+    },
+    "to_purchase": {
+      "pos": "verb",
+      "coca": 2063
+    },
+    "to_invest": {
+      "pos": "verb",
+      "coca": 2048
+    },
+    "to_collect": {
+      "pos": "verb",
+      "coca": 1432
+    },
+    "to_gather": {
+      "pos": "verb",
+      "coca": 1633
+    },
+    "to_select": {
+      "pos": "verb",
+      "coca": 1791
+    },
+    "to_adopt": {
+      "pos": "verb",
+      "coca": 1797
+    },
+    "to_grant": {
+      "pos": "verb",
+      "coca": 1888
+    },
+    "to_contribute": {
+      "pos": "verb",
+      "coca": 1437
+    },
+    "to_participate": {
+      "pos": "verb",
+      "coca": 1637
+    },
+    "to_engage": {
+      "pos": "verb",
+      "coca": 1298
+    },
+    "to_exist": {
+      "pos": "verb",
+      "coca": 931
+    },
+    "to_occur": {
+      "pos": "verb",
+      "coca": 859
+    },
+    "to_affect": {
+      "pos": "verb",
+      "coca": 984
+    },
+    "to_influence": {
+      "pos": "verb",
+      "coca": 1968
+    },
+    "to_involve": {
+      "pos": "verb",
+      "coca": 738
+    },
+    "to_matter": {
+      "pos": "verb",
+      "coca": 1306
+    },
+    "to_tend": {
+      "pos": "verb",
+      "coca": 1182
+    },
+    "to_last": {
+      "pos": "verb",
+      "coca": 1765
+    },
+    "to_be_born": {
+      "pos": "verb",
+      "coca": 1120
+    },
+    "to_experience": {
+      "pos": "verb",
+      "coca": 1170
+    },
+    "to_face": {
+      "pos": "verb",
+      "coca": 621
+    },
+    "to_surround": {
+      "pos": "verb",
+      "coca": 1900
+    },
+    "to_identify": {
+      "pos": "verb",
+      "coca": 805
+    },
+    "to_determine": {
+      "pos": "verb",
+      "coca": 832
+    },
+    "to_prove": {
+      "pos": "verb",
+      "coca": 836
+    },
+    "to_indicate": {
+      "pos": "verb",
+      "coca": 915
+    },
+    "to_figure": {
+      "pos": "verb",
+      "coca": 866
+    },
+    "to_discover": {
+      "pos": "verb",
+      "coca": 1070
+    },
+    "to_reveal": {
+      "pos": "verb",
+      "coca": 1011
+    },
+    "to_examine": {
+      "pos": "verb",
+      "coca": 1353
+    },
+    "to_test": {
+      "pos": "verb",
+      "coca": 1129
+    },
+    "to_observe": {
+      "pos": "verb",
+      "coca": 1454
+    },
+    "to_investigate": {
+      "pos": "verb",
+      "coca": 1834
+    },
+    "to_explore": {
+      "pos": "verb",
+      "coca": 1650
+    },
+    "size": {
+      "pos": "noun",
+      "coca": 839
+    },
+    "length": {
+      "pos": "noun",
+      "coca": 2078
+    },
+    "weight": {
+      "pos": "noun",
+      "coca": 1049
+    },
+    "volume": {
+      "pos": "noun",
+      "coca": 1499
+    },
+    "distance": {
+      "pos": "noun",
+      "coca": 1485
+    },
+    "range": {
+      "pos": "noun",
+      "coca": 1098
+    },
+    "scale": {
+      "pos": "noun",
+      "coca": 1399
+    },
+    "unit": {
+      "pos": "noun",
+      "coca": 1145
+    },
+    "shape": {
+      "pos": "noun",
+      "coca": 1565
+    },
+    "circle": {
+      "pos": "noun",
+      "coca": 1803
+    },
+    "edge": {
+      "pos": "noun",
+      "coca": 1198
+    },
+    "surface": {
+      "pos": "noun",
+      "coca": 1195
+    },
+    "hole": {
+      "pos": "noun",
+      "coca": 1333
+    },
+    "block": {
+      "pos": "noun",
+      "coca": 1311
+    },
+    "object": {
+      "pos": "noun",
+      "coca": 1302
+    },
+    "piece": {
+      "pos": "noun",
+      "coca": 584
+    },
+    "material": {
+      "pos": "noun",
+      "coca": 772
+    },
+    "capacity": {
+      "pos": "noun",
+      "coca": 1965
+    },
+    "to_increase": {
+      "pos": "verb",
+      "coca": 701
+    },
+    "to_reduce": {
+      "pos": "verb",
+      "coca": 809
+    },
+    "to_rise": {
+      "pos": "verb",
+      "coca": 890
+    },
+    "to_improve": {
+      "pos": "verb",
+      "coca": 1023
+    },
+    "to_expand": {
+      "pos": "verb",
+      "coca": 1745
+    },
+    "to_extend": {
+      "pos": "verb",
+      "coca": 1651
+    },
+    "to_spread": {
+      "pos": "verb",
+      "coca": 1587
+    },
+    "to_gain": {
+      "pos": "verb",
+      "coca": 1357
+    },
+    "to_limit": {
+      "pos": "verb",
+      "coca": 1451
+    },
+    "to_shift": {
+      "pos": "verb",
+      "coca": 1964
+    },
+    "to_measure": {
+      "pos": "verb",
+      "coca": 1535
+    },
+    "to_compare": {
+      "pos": "verb",
+      "coca": 800
+    },
+    "to_estimate": {
+      "pos": "verb",
+      "coca": 2042
+    },
+    "to_cost": {
+      "pos": "verb",
+      "coca": 1228
+    },
+    "to_contain": {
+      "pos": "verb",
+      "coca": 1017
+    },
+    "to_combine": {
+      "pos": "verb",
+      "coca": 1707
+    },
+    "to_replace": {
+      "pos": "verb",
+      "coca": 1276
+    },
+    "to_generate": {
+      "pos": "verb",
+      "coca": 1763
+    },
+    "to_result": {
+      "pos": "verb",
+      "coca": 1358
+    },
+    "to_depend": {
+      "pos": "verb",
+      "coca": 1604
+    },
+    "to_predict": {
+      "pos": "verb",
+      "coca": 1816
+    },
+    "to_define": {
+      "pos": "verb",
+      "coca": 1222
+    },
+    "to_review": {
+      "pos": "verb",
+      "coca": 1872
+    },
+    "to_demonstrate": {
+      "pos": "verb",
+      "coca": 1512
+    },
+    "to_solve": {
+      "pos": "verb",
+      "coca": 1805
+    },
+    "to_locate": {
+      "pos": "verb",
+      "coca": 1858
+    },
+    "to_refer": {
+      "pos": "verb",
+      "coca": 1140
+    },
+    "to_relate": {
+      "pos": "verb",
+      "coca": 1038
+    },
+    "to_associate": {
+      "pos": "verb",
+      "coca": 1408
+    },
+    "to_conclude": {
+      "pos": "verb",
+      "coca": 1983
+    },
+    "to_reflect": {
+      "pos": "verb",
+      "coca": 1193
+    },
+    "to_view": {
+      "pos": "verb",
+      "coca": 1545
+    },
+    "to_demand": {
+      "pos": "verb",
+      "coca": 1676
+    },
+    "to_attempt": {
+      "pos": "verb",
+      "coca": 1679
+    },
+    "to_pursue": {
+      "pos": "verb",
+      "coca": 2031
+    },
+    "to_expose": {
+      "pos": "verb",
+      "coca": 2054
+    },
+    "to_acknowledge": {
+      "pos": "verb",
+      "coca": 1854
+    },
+    "to_rely": {
+      "pos": "verb",
+      "coca": 1910
+    },
+    "to_ensure": {
+      "pos": "verb",
+      "coca": 1616
+    },
+    "to_encourage": {
+      "pos": "verb",
+      "coca": 1305
+    },
+    "to_ignore": {
+      "pos": "verb",
+      "coca": 1362
+    },
+    "to_approach": {
+      "pos": "verb",
+      "coca": 1631
+    },
+    "to_address": {
+      "pos": "verb",
+      "coca": 1030
+    },
+    "to_form": {
+      "pos": "verb",
+      "coca": 1053
+    },
+    "to_base": {
+      "pos": "verb",
+      "coca": 491
+    },
+    "to_produce": {
+      "pos": "verb",
+      "coca": 629
+    },
+    "to_treat": {
+      "pos": "verb",
+      "coca": 951
+    },
+    "to_name": {
+      "pos": "verb",
+      "coca": 887
+    },
+    "to_sound": {
+      "pos": "verb",
+      "coca": 697
+    },
+    "to_fit": {
+      "pos": "verb",
+      "coca": 1380
+    },
+    "to_dress": {
+      "pos": "verb",
+      "coca": 1641
+    },
+    "to_match": {
+      "pos": "verb",
+      "coca": 2012
+    },
+    "to_bet": {
+      "pos": "verb",
+      "coca": 2019
+    },
+    "to_fuck": {
+      "pos": "verb",
+      "coca": 1544
+    },
+    "to_bear": {
+      "pos": "verb",
+      "coca": 1870
+    },
+    "to_clear": {
+      "pos": "verb",
+      "coca": 1869
+    },
+    "to_score": {
+      "pos": "verb",
+      "coca": 1866
+    },
+    "to_celebrate": {
+      "pos": "verb",
+      "coca": 1956
+    },
+    "to_settle": {
+      "pos": "verb",
+      "coca": 1539
+    },
+    "hell": {
+      "pos": "noun",
+      "coca": 739
+    },
+    "shit": {
+      "pos": "noun",
+      "coca": 921
+    },
+    "ass": {
+      "pos": "noun",
+      "coca": 1782
+    },
+    "case": {
+      "pos": "noun",
+      "coca": 205
+    },
+    "matter": {
+      "pos": "noun",
+      "coca": 575
+    },
+    "issue": {
+      "pos": "noun",
+      "coca": 261
+    },
+    "situation": {
+      "pos": "noun",
+      "coca": 560
+    },
+    "condition": {
+      "pos": "noun",
+      "coca": 675
+    },
+    "circumstance": {
+      "pos": "noun",
+      "coca": 1889
+    },
+    "context": {
+      "pos": "noun",
+      "coca": 1386
+    },
+    "possibility": {
+      "pos": "noun",
+      "coca": 1375
+    },
+    "option": {
+      "pos": "noun",
+      "coca": 923
+    },
+    "choice": {
+      "pos": "noun",
+      "coca": 611
+    },
+    "trouble": {
+      "pos": "noun",
+      "coca": 990
+    },
+    "difficulty": {
+      "pos": "noun",
+      "coca": 2039
+    },
+    "challenge": {
+      "pos": "noun",
+      "coca": 972
+    },
+    "error": {
+      "pos": "noun",
+      "coca": 1846
+    },
+    "lack": {
+      "pos": "noun",
+      "coca": 1227
+    },
+    "damage": {
+      "pos": "noun",
+      "coca": 1562
+    },
+    "stress": {
+      "pos": "noun",
+      "coca": 1935
+    },
+    "type": {
+      "pos": "noun",
+      "coca": 552
+    },
+    "sort": {
+      "pos": "noun",
+      "coca": 837
+    },
+    "form": {
+      "pos": "noun",
+      "coca": 556
+    },
+    "model": {
+      "pos": "noun",
+      "coca": 505
+    },
+    "version": {
+      "pos": "noun",
+      "coca": 953
+    },
+    "variety": {
+      "pos": "noun",
+      "coca": 1445
+    },
+    "category": {
+      "pos": "noun",
+      "coca": 1609
+    },
+    "aspect": {
+      "pos": "noun",
+      "coca": 1492
+    },
+    "component": {
+      "pos": "noun",
+      "coca": 1921
+    },
+    "core": {
+      "pos": "noun",
+      "coca": 1754
+    },
+    "basis": {
+      "pos": "noun",
+      "coca": 1385
+    },
+    "foundation": {
+      "pos": "noun",
+      "coca": 1444
+    },
+    "structure": {
+      "pos": "noun",
+      "coca": 1106
+    },
+    "function": {
+      "pos": "noun",
+      "coca": 1410
+    },
+    "feature": {
+      "pos": "noun",
+      "coca": 1158
+    },
+    "cause": {
+      "pos": "noun",
+      "coca": 726
+    },
+    "effect": {
+      "pos": "noun",
+      "coca": 442
+    },
+    "impact": {
+      "pos": "noun",
+      "coca": 914
+    },
+    "influence": {
+      "pos": "noun",
+      "coca": 1590
+    },
+    "consequence": {
+      "pos": "noun",
+      "coca": 1685
+    },
+    "outcome": {
+      "pos": "noun",
+      "coca": 1560
+    },
+    "response": {
+      "pos": "noun",
+      "coca": 715
+    },
+    "process": {
+      "pos": "noun",
+      "coca": 415
+    },
+    "procedure": {
+      "pos": "noun",
+      "coca": 1593
+    },
+    "technique": {
+      "pos": "noun",
+      "coca": 1623
+    },
+    "approach": {
+      "pos": "noun",
+      "coca": 831
+    },
+    "solution": {
+      "pos": "noun",
+      "coca": 1133
+    },
+    "change": {
+      "pos": "noun",
+      "coca": 364
+    },
+    "difference": {
+      "pos": "noun",
+      "coca": 520
+    },
+    "factor": {
+      "pos": "noun",
+      "coca": 782
+    },
+    "variable": {
+      "pos": "noun",
+      "coca": 1973
+    },
+    "concept": {
+      "pos": "noun",
+      "coca": 1258
+    },
+    "principle": {
+      "pos": "noun",
+      "coca": 1370
+    },
+    "definition": {
+      "pos": "noun",
+      "coca": 1940
+    },
+    "knowledge": {
+      "pos": "noun",
+      "coca": 841
+    },
+    "notion": {
+      "pos": "noun",
+      "coca": 2050
+    },
+    "perspective": {
+      "pos": "noun",
+      "coca": 1446
+    },
+    "vision": {
+      "pos": "noun",
+      "coca": 1409
+    },
+    "view": {
+      "pos": "noun",
+      "coca": 528
+    },
+    "sense": {
+      "pos": "noun",
+      "coca": 431
+    },
+    "mind": {
+      "pos": "noun",
+      "coca": 438
+    },
+    "thought": {
+      "pos": "noun",
+      "coca": 692
+    },
+    "understanding": {
+      "pos": "noun",
+      "coca": 1315
+    },
+    "opinion": {
+      "pos": "noun",
+      "coca": 927
+    },
+    "attitude": {
+      "pos": "noun",
+      "coca": 1474
+    },
+    "extent": {
+      "pos": "noun",
+      "coca": 1994
+    },
+    "importance": {
+      "pos": "noun",
+      "coca": 1777
+    },
+    "conclusion": {
+      "pos": "noun",
+      "coca": 1659
+    },
+    "thinking": {
+      "pos": "noun",
+      "coca": 1704
+    },
+    "rule": {
+      "pos": "noun",
+      "coca": 617
+    },
+    "order": {
+      "pos": "noun",
+      "coca": 686
+    },
+    "control": {
+      "pos": "noun",
+      "coca": 478
+    },
+    "action": {
+      "pos": "noun",
+      "coca": 485
+    },
+    "decision": {
+      "pos": "noun",
+      "coca": 488
+    },
+    "act": {
+      "pos": "noun",
+      "coca": 702
+    },
+    "test": {
+      "pos": "noun",
+      "coca": 627
+    },
+    "limit": {
+      "pos": "noun",
+      "coca": 1855
+    },
+    "balance": {
+      "pos": "noun",
+      "coca": 1859
+    },
+    "focus": {
+      "pos": "noun",
+      "coca": 1541
+    },
+    "use": {
+      "pos": "noun",
+      "coca": 441
+    },
+    "need": {
+      "pos": "noun",
+      "coca": 550
+    },
+    "trend": {
+      "pos": "noun",
+      "coca": 1748
+    },
+    "theme": {
+      "pos": "noun",
+      "coca": 1825
+    },
+    "topic": {
+      "pos": "noun",
+      "coca": 1610
+    },
+    "detail": {
+      "pos": "noun",
+      "coca": 971
+    },
+    "measure": {
+      "pos": "noun",
+      "coca": 1032
+    },
+    "move": {
+      "pos": "noun",
+      "coca": 1390
+    },
+    "run": {
+      "pos": "noun",
+      "coca": 1225
+    },
+    "cut": {
+      "pos": "noun",
+      "coca": 1589
+    },
+    "lead": {
+      "pos": "noun",
+      "coca": 1575
+    },
+    "return": {
+      "pos": "noun",
+      "coca": 1309
+    },
+    "search": {
+      "pos": "noun",
+      "coca": 1372
+    },
+    "fight": {
+      "pos": "noun",
+      "coca": 1406
+    },
+    "release": {
+      "pos": "noun",
+      "coca": 1878
+    },
+    "look": {
+      "pos": "noun",
+      "coca": 605
+    },
+    "rest": {
+      "pos": "noun",
+      "coca": 638
+    },
+    "set": {
+      "pos": "noun",
+      "coca": 901
+    },
+    "figure": {
+      "pos": "noun",
+      "coca": 663
+    },
+    "fall": {
+      "pos": "noun",
+      "coca": 1196
+    },
+    "attempt": {
+      "pos": "noun",
+      "coca": 1334
+    },
+    "thus": {
+      "pos": "adverb",
+      "coca": 820
+    },
+    "despite": {
+      "pos": "preposition",
+      "coca": 854
+    },
+    "upon": {
+      "pos": "preposition",
+      "coca": 682
+    },
+    "per": {
+      "pos": "preposition",
+      "coca": 727
+    },
+    "via": {
+      "pos": "preposition",
+      "coca": 1799
+    },
+    "plus": {
+      "pos": "preposition",
+      "coca": 1911
+    },
+    "regarding": {
+      "pos": "preposition",
+      "coca": 1915
+    },
+    "according_to": {
+      "pos": "preposition",
+      "coca": 462
+    },
+    "including": {
+      "pos": "preposition",
+      "coca": 394
+    },
+    "worth": {
+      "pos": "preposition",
+      "coca": 1175
+    },
+    "forth": {
+      "pos": "adverb",
+      "coca": 2065
+    },
+    "specifically": {
+      "pos": "adverb",
+      "coca": 1849
+    },
+    "significantly": {
+      "pos": "adverb",
+      "coca": 1937
+    },
+    "largely": {
+      "pos": "adverb",
+      "coca": 1952
+    },
+    "onto": {
+      "pos": "preposition",
+      "coca": 1123
+    },
+    "throughout": {
+      "pos": "preposition",
+      "coca": 1127
+    },
+    "science": {
+      "pos": "noun",
+      "coca": 565
+    },
+    "scientific": {
+      "pos": "adjective",
+      "coca": 1634
+    },
+    "method": {
+      "pos": "noun",
+      "coca": 911
+    },
+    "analysis": {
+      "pos": "noun",
+      "coca": 758
+    },
+    "finding": {
+      "pos": "noun",
+      "coca": 1582
+    },
+    "survey": {
+      "pos": "noun",
+      "coca": 1395
+    },
+    "assessment": {
+      "pos": "noun",
+      "coca": 1662
+    },
+    "element": {
+      "pos": "noun",
+      "coca": 1217
+    },
+    "planet": {
+      "pos": "noun",
+      "coca": 1366
+    },
+    "universe": {
+      "pos": "noun",
+      "coca": 1852
+    },
+    "culture": {
+      "pos": "noun",
+      "coca": 706
+    },
+    "cultural": {
+      "pos": "adjective",
+      "coca": 1240
+    },
+    "tradition": {
+      "pos": "noun",
+      "coca": 1596
+    },
+    "traditional": {
+      "pos": "adjective",
+      "coca": 1199
+    },
+    "religion": {
+      "pos": "noun",
+      "coca": 1294
+    },
+    "religious": {
+      "pos": "adjective",
+      "coca": 1026
+    },
+    "faith": {
+      "pos": "noun",
+      "coca": 1191
+    },
+    "belief": {
+      "pos": "noun",
+      "coca": 1310
+    },
+    "spirit": {
+      "pos": "noun",
+      "coca": 1219
+    },
+    "holy": {
+      "pos": "adjective",
+      "coca": 1948
+    },
+    "christian": {
+      "pos": "adjective",
+      "coca": 1344
+    },
+    "catholic": {
+      "pos": "adjective",
+      "coca": 1971
+    },
+    "jewish": {
+      "pos": "adjective",
+      "coca": 1924
+    },
+    "christmas": {
+      "pos": "noun",
+      "coca": 1388
+    },
+    "clearly": {
+      "pos": "adverb",
+      "coca": 905
+    },
+    "obviously": {
+      "pos": "adverb",
+      "coca": 1139
+    },
+    "apparently": {
+      "pos": "adverb",
+      "coca": 1427
+    },
+    "seriously": {
+      "pos": "adverb",
+      "coca": 1479
+    },
+    "possibly": {
+      "pos": "adverb",
+      "coca": 1622
+    },
+    "somehow": {
+      "pos": "adverb",
+      "coca": 1632
+    },
+    "truly": {
+      "pos": "adverb",
+      "coca": 1411
+    },
+    "highly": {
+      "pos": "adverb",
+      "coca": 1387
+    },
+    "ultimately": {
+      "pos": "adverb",
+      "coca": 1820
+    },
+    "unfortunately": {
+      "pos": "adverb",
+      "coca": 1824
+    },
+    "personally": {
+      "pos": "adverb",
+      "coca": 2049
+    },
+    "carefully": {
+      "pos": "adverb",
+      "coca": 2058
+    },
+    "necessarily": {
+      "pos": "adverb",
+      "coca": 2000
+    },
+    "increasingly": {
+      "pos": "adverb",
+      "coca": 1988
+    },
+    "marriage": {
+      "pos": "noun",
+      "coca": 1006
+    },
+    "bond": {
+      "pos": "noun",
+      "coca": 2067
+    },
+    "to_hurt": {
+      "pos": "verb",
+      "coca": 898
+    },
+    "to_force": {
+      "pos": "verb",
+      "coca": 893
+    },
+    "to_attack": {
+      "pos": "verb",
+      "coca": 1459
+    },
+    "to_defend": {
+      "pos": "verb",
+      "coca": 1666
+    },
+    "to_destroy": {
+      "pos": "verb",
+      "coca": 1252
+    },
+    "to_threaten": {
+      "pos": "verb",
+      "coca": 1597
+    },
+    "to_steal": {
+      "pos": "verb",
+      "coca": 1384
+    },
+    "to_arrest": {
+      "pos": "verb",
+      "coca": 1957
+    },
+    "to_commit": {
+      "pos": "verb",
+      "coca": 1405
+    },
+    "to_suffer": {
+      "pos": "verb",
+      "coca": 1167
+    },
+    "to_survive": {
+      "pos": "verb",
+      "coca": 1461
+    },
+    "to_struggle": {
+      "pos": "verb",
+      "coca": 1743
+    },
+    "to_prevent": {
+      "pos": "verb",
+      "coca": 1152
+    },
+    "to_fail": {
+      "pos": "verb",
+      "coca": 781
+    },
+    "to_challenge": {
+      "pos": "verb",
+      "coca": 1881
+    },
+    "to_judge": {
+      "pos": "verb",
+      "coca": 1699
+    },
+    "to_vote": {
+      "pos": "verb",
+      "coca": 798
+    },
+    "state": {
+      "pos": "noun",
+      "coca": 147
+    },
+    "government": {
+      "pos": "noun",
+      "coca": 220
+    },
+    "nation": {
+      "pos": "noun",
+      "coca": 483
+    },
+    "national": {
+      "pos": "adjective",
+      "coca": 310
+    },
+    "political": {
+      "pos": "adjective",
+      "coca": 356
+    },
+    "politics": {
+      "pos": "noun",
+      "coca": 1059
+    },
+    "policy": {
+      "pos": "noun",
+      "coca": 406
+    },
+    "election": {
+      "pos": "noun",
+      "coca": 620
+    },
+    "campaign": {
+      "pos": "noun",
+      "coca": 618
+    },
+    "vote": {
+      "pos": "noun",
+      "coca": 861
+    },
+    "poll": {
+      "pos": "noun",
+      "coca": 1533
+    },
+    "democracy": {
+      "pos": "noun",
+      "coca": 1819
+    },
+    "liberal": {
+      "pos": "adjective",
+      "coca": 2001
+    },
+    "conservative": {
+      "pos": "adjective",
+      "coca": 1844
+    },
+    "reform": {
+      "pos": "noun",
+      "coca": 1361
+    },
+    "movement": {
+      "pos": "noun",
+      "coca": 822
+    },
+    "administration": {
+      "pos": "noun",
+      "coca": 744
+    },
+    "agency": {
+      "pos": "noun",
+      "coca": 785
+    },
+    "committee": {
+      "pos": "noun",
+      "coca": 917
+    },
+    "commission": {
+      "pos": "noun",
+      "coca": 1567
+    },
+    "council": {
+      "pos": "noun",
+      "coca": 1200
+    },
+    "institution": {
+      "pos": "noun",
+      "coca": 1190
+    },
+    "union": {
+      "pos": "noun",
+      "coca": 935
+    },
+    "authority": {
+      "pos": "noun",
+      "coca": 909
+    },
+    "district": {
+      "pos": "noun",
+      "coca": 885
+    },
+    "civil": {
+      "pos": "adjective",
+      "coca": 1171
+    },
+    "regulation": {
+      "pos": "noun",
+      "coca": 1688
+    },
+    "convention": {
+      "pos": "noun",
+      "coca": 1974
+    },
+    "investigation": {
+      "pos": "noun",
+      "coca": 1143
+    },
+    "intervention": {
+      "pos": "noun",
+      "coca": 1722
+    },
+    "abuse": {
+      "pos": "noun",
+      "coca": 1716
+    },
+    "incident": {
+      "pos": "noun",
+      "coca": 1977
+    },
+    "protection": {
+      "pos": "noun",
+      "coca": 1464
+    },
+    "safety": {
+      "pos": "noun",
+      "coca": 1172
+    },
+    "duty": {
+      "pos": "noun",
+      "coca": 1741
+    },
+    "board": {
+      "pos": "noun",
+      "coca": 768
+    },
+    "jury": {
+      "pos": "noun",
+      "coca": 1975
+    },
+    "hearing": {
+      "pos": "noun",
+      "coca": 1979
+    },
+    "criminal": {
+      "pos": "adjective",
+      "coca": 1917
+    },
+    "illegal": {
+      "pos": "adjective",
+      "coca": 1936
+    },
+    "legal": {
+      "pos": "adjective",
+      "coca": 899
+    },
+    "right_n": {
+      "pos": "noun",
+      "coca": 243
+    },
+    "prison": {
+      "pos": "noun",
+      "coca": 1332
+    },
+    "murder": {
+      "pos": "noun",
+      "coca": 1300
+    },
+    "military": {
+      "pos": "adjective",
+      "coca": 589
+    },
+    "army": {
+      "pos": "noun",
+      "coca": 996
+    },
+    "weapon": {
+      "pos": "noun",
+      "coca": 976
+    },
+    "gun": {
+      "pos": "noun",
+      "coca": 734
+    },
+    "shot": {
+      "pos": "noun",
+      "coca": 954
+    },
+    "defense": {
+      "pos": "noun",
+      "coca": 760
+    },
+    "attack": {
+      "pos": "noun",
+      "coca": 753
+    },
+    "battle": {
+      "pos": "noun",
+      "coca": 1286
+    },
+    "conflict": {
+      "pos": "noun",
+      "coca": 1433
+    },
+    "crisis": {
+      "pos": "noun",
+      "coca": 1295
+    },
+    "threat": {
+      "pos": "noun",
+      "coca": 1132
+    },
+    "violence": {
+      "pos": "noun",
+      "coca": 1156
+    },
+    "security": {
+      "pos": "noun",
+      "coca": 475
+    },
+    "force": {
+      "pos": "noun",
+      "coca": 456
+    },
+    "nuclear": {
+      "pos": "adjective",
+      "coca": 1218
+    },
+    "mission": {
+      "pos": "noun",
+      "coca": 1183
+    },
+    "operation": {
+      "pos": "noun",
+      "coca": 1007
+    },
+    "broken": {
+      "pos": "adjective",
+      "coca": 2743
     }
   }
 }

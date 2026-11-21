@@ -4185,6 +4185,5991 @@
     "text": "ključ",
     "gender": "m"
   },
+  "atm": {
+    "text": "bankomat",
+    "gender": "m"
+  },
+  "open": {
+    "text": "otvoreno"
+  },
+  "all": {
+    "text": "sve"
+  },
+  "that_conj": {
+    "text": "da"
+  },
+  "as": {
+    "text": "kao"
+  },
+  "of": {
+    "text": "od"
+  },
+  "to": {
+    "text": "ka"
+  },
+  "for": {
+    "text": "za"
+  },
+  "with": {
+    "text": "sa"
+  },
+  "at": {
+    "text": "kod"
+  },
+  "from": {
+    "text": "iz"
+  },
+  "by": {
+    "text": "pored"
+  },
+  "not": {
+    "text": "ne"
+  },
+  "people": {
+    "text": "ljudi",
+    "gender": "m"
+  },
+  "kid": {
+    "text": "klinac",
+    "gender": "m"
+  },
+  "mom": {
+    "text": "mama",
+    "gender": "f"
+  },
+  "dad": {
+    "text": "tata",
+    "gender": "m"
+  },
+  "son": {
+    "text": "sin",
+    "gender": "m"
+  },
+  "daughter": {
+    "text": "ćerka",
+    "gender": "f"
+  },
+  "grandmother": {
+    "text": "baka",
+    "gender": "f"
+  },
+  "grandfather": {
+    "text": "deda",
+    "gender": "m"
+  },
+  "uncle": {
+    "text": "ujak",
+    "gender": "m"
+  },
+  "aunt": {
+    "text": "tetka",
+    "gender": "f"
+  },
+  "cousin": {
+    "text": "rođak",
+    "gender": "m"
+  },
+  "to_tell": {
+    "imperfective": "pričati",
+    "perfective": "ispričati"
+  },
+  "noon": {
+    "text": "podne",
+    "gender": "n"
+  },
+  "afternoon": {
+    "text": "popodne",
+    "gender": "n"
+  },
+  "midnight": {
+    "text": "ponoć",
+    "gender": "f"
+  },
+  "weekend": {
+    "text": "vikend",
+    "gender": "m"
+  },
+  "color": {
+    "text": "boja",
+    "gender": "f"
+  },
+  "eleven": {
+    "text": "jedanaest"
+  },
+  "twelve": {
+    "text": "dvanaest"
+  },
+  "thirteen": {
+    "text": "trinaest"
+  },
+  "fourteen": {
+    "text": "četrnaest"
+  },
+  "fifteen": {
+    "text": "petnaest"
+  },
+  "sixteen": {
+    "text": "šesnaest"
+  },
+  "seventeen": {
+    "text": "sedamnaest"
+  },
+  "eighteen": {
+    "text": "osamnaest"
+  },
+  "nineteen": {
+    "text": "devetnaest"
+  },
+  "twenty": {
+    "text": "dvadeset"
+  },
+  "thirty": {
+    "text": "trideset"
+  },
+  "forty": {
+    "text": "četrdeset"
+  },
+  "fifty": {
+    "text": "pedeset"
+  },
+  "sixty": {
+    "text": "šezdeset"
+  },
+  "seventy": {
+    "text": "sedamdeset"
+  },
+  "eighty": {
+    "text": "osamdeset"
+  },
+  "ninety": {
+    "text": "devedeset"
+  },
+  "billion": {
+    "text": "milijarda"
+  },
+  "to_start": {
+    "imperfective": "kretati",
+    "perfective": "krenuti"
+  },
+  "house": {
+    "text": "kuća",
+    "gender": "f"
+  },
+  "toilet": {
+    "text": "toalet",
+    "gender": "m"
+  },
+  "meal": {
+    "text": "obrok",
+    "gender": "m"
+  },
+  "breakfast": {
+    "text": "doručak",
+    "gender": "m"
+  },
+  "lunch": {
+    "text": "ručak",
+    "gender": "m"
+  },
+  "dinner": {
+    "text": "večera",
+    "gender": "f"
+  },
+  "drink": {
+    "text": "piće",
+    "gender": "n"
+  },
+  "menu": {
+    "text": "jelovnik",
+    "gender": "m"
+  },
+  "bill": {
+    "text": "račun",
+    "gender": "m"
+  },
+  "tip": {
+    "text": "napojnica",
+    "gender": "f"
+  },
+  "better": {
+    "m": "bolji",
+    "f": "bolja",
+    "n": "bolje"
+  },
+  "best": {
+    "m": "najbolji",
+    "f": "najbolja",
+    "n": "najbolje"
+  },
+  "date": {
+    "text": "datum",
+    "gender": "m"
+  },
+  "birthday": {
+    "text": "rođendan",
+    "gender": "m"
+  },
+  "holiday": {
+    "text": "praznik",
+    "gender": "m"
+  },
+  "which": {
+    "text": "koji"
+  },
+  "whose": {
+    "text": "čiji"
+  },
+  "its": {
+    "text": "njegovo"
+  },
+  "every": {
+    "text": "svaki"
+  },
+  "some": {
+    "text": "neki"
+  },
+  "any": {
+    "text": "bilo koji"
+  },
+  "each": {
+    "text": "svaki pojedini"
+  },
+  "both": {
+    "text": "oba"
+  },
+  "few": {
+    "text": "malo njih"
+  },
+  "several": {
+    "text": "nekoliko"
+  },
+  "most": {
+    "text": "najviše"
+  },
+  "another": {
+    "text": "još jedan"
+  },
+  "other": {
+    "m": "drugi",
+    "f": "druga",
+    "n": "drugo"
+  },
+  "none": {
+    "text": "nijedan"
+  },
+  "plenty": {
+    "text": "napretek"
+  },
+  "certain": {
+    "m": "izvestan",
+    "f": "izvesna",
+    "n": "izvesno"
+  },
+  "own": {
+    "text": "sopstveni"
+  },
+  "about": {
+    "text": "o"
+  },
+  "into": {
+    "text": "u"
+  },
+  "through": {
+    "text": "kroz"
+  },
+  "without": {
+    "text": "bez"
+  },
+  "against": {
+    "text": "protiv"
+  },
+  "around": {
+    "text": "okolo"
+  },
+  "among": {
+    "text": "među"
+  },
+  "within": {
+    "text": "unutar"
+  },
+  "toward": {
+    "text": "prema"
+  },
+  "along": {
+    "text": "duž"
+  },
+  "out": {
+    "text": "napolje"
+  },
+  "off": {
+    "text": "isključeno"
+  },
+  "away": {
+    "text": "dalje"
+  },
+  "back": {
+    "text": "nazad"
+  },
+  "town": {
+    "text": "varoš",
+    "gender": "f"
+  },
+  "corner": {
+    "text": "ugao",
+    "gender": "m"
+  },
+  "square": {
+    "text": "trg",
+    "gender": "m"
+  },
+  "building": {
+    "text": "zgrada",
+    "gender": "f"
+  },
+  "shop": {
+    "text": "radnja",
+    "gender": "f"
+  },
+  "supermarket": {
+    "text": "supermarket",
+    "gender": "m"
+  },
+  "bakery": {
+    "text": "pekara",
+    "gender": "f"
+  },
+  "pharmacy": {
+    "text": "apoteka",
+    "gender": "f"
+  },
+  "cafe": {
+    "text": "kafić",
+    "gender": "m"
+  },
+  "subway": {
+    "text": "metro",
+    "gender": "m"
+  },
+  "flight": {
+    "text": "let",
+    "gender": "m"
+  },
+  "platform": {
+    "text": "peron",
+    "gender": "m"
+  },
+  "seat": {
+    "text": "sedište",
+    "gender": "n"
+  },
+  "coin": {
+    "text": "novčić",
+    "gender": "m"
+  },
+  "wallet": {
+    "text": "novčanik",
+    "gender": "m"
+  },
+  "customer": {
+    "text": "kupac",
+    "gender": "m"
+  },
+  "discount": {
+    "text": "popust",
+    "gender": "m"
+  },
+  "exchange": {
+    "text": "razmena",
+    "gender": "f"
+  },
+  "fee": {
+    "text": "naknada",
+    "gender": "f"
+  },
+  "body": {
+    "text": "telo",
+    "gender": "n"
+  },
+  "face": {
+    "text": "lice",
+    "gender": "n"
+  },
+  "t_shirt": {
+    "text": "majica",
+    "gender": "f"
+  },
+  "jeans": {
+    "text": "farmerke",
+    "gender": "f"
+  },
+  "sweater": {
+    "text": "džemper",
+    "gender": "m"
+  },
+  "ever": {
+    "text": "ikada"
+  },
+  "once": {
+    "text": "jednom"
+  },
+  "twice": {
+    "text": "dvaput"
+  },
+  "again": {
+    "text": "opet"
+  },
+  "during": {
+    "text": "tokom"
+  },
+  "since": {
+    "text": "otkad"
+  },
+  "until": {
+    "text": "dok ne"
+  },
+  "okay": {
+    "text": "u redu"
+  },
+  "sure": {
+    "m": "siguran",
+    "f": "sigurna",
+    "n": "sigurno"
+  },
+  "of_course": {
+    "text": "naravno"
+  },
+  "maybe": {
+    "text": "možda"
+  },
+  "perhaps": {
+    "text": "moguće"
+  },
+  "probably": {
+    "text": "verovatno"
+  },
+  "actually": {
+    "text": "zapravo"
+  },
+  "well": {
+    "text": "dobro"
+  },
+  "so": {
+    "text": "tako"
+  },
+  "hey": {
+    "text": "hej"
+  },
+  "hi": {
+    "text": "ćao"
+  },
+  "anyway": {
+    "text": "u svakom slučaju"
+  },
+  "indeed": {
+    "text": "zaista"
+  },
+  "certainly": {
+    "text": "svakako"
+  },
+  "definitely": {
+    "text": "definitivno"
+  },
+  "should": {
+    "text": "trebalo bi"
+  },
+  "second": {
+    "text": "drugi"
+  },
+  "third": {
+    "text": "treći"
+  },
+  "fourth": {
+    "text": "četvrti"
+  },
+  "next": {
+    "text": "sledeći"
+  },
+  "finally": {
+    "text": "konačno"
+  },
+  "just": {
+    "text": "upravo"
+  },
+  "something": {
+    "text": "nešto"
+  },
+  "anything": {
+    "text": "bilo šta"
+  },
+  "nothing": {
+    "text": "ništa"
+  },
+  "everything": {
+    "text": "sve stvari"
+  },
+  "someone": {
+    "text": "neko"
+  },
+  "anyone": {
+    "text": "bilo ko"
+  },
+  "everyone": {
+    "text": "svako"
+  },
+  "nobody": {
+    "text": "niko"
+  },
+  "whatever": {
+    "text": "šta god"
+  },
+  "else": {
+    "text": "drugo"
+  },
+  "mine": {
+    "text": "moj"
+  },
+  "yours": {
+    "text": "tvoj"
+  },
+  "oneself": {
+    "text": "sebe"
+  },
+  "manager": {
+    "text": "menadžer",
+    "gender": "m"
+  },
+  "colleague": {
+    "text": "kolega",
+    "gender": "m"
+  },
+  "interview": {
+    "text": "intervju",
+    "gender": "m"
+  },
+  "lesson": {
+    "text": "lekcija",
+    "gender": "f"
+  },
+  "example": {
+    "text": "primer",
+    "gender": "m"
+  },
+  "mistake": {
+    "text": "greška",
+    "gender": "f"
+  },
+  "laptop": {
+    "text": "laptop",
+    "gender": "m"
+  },
+  "internet": {
+    "text": "internet",
+    "gender": "m"
+  },
+  "wifi": {
+    "text": "vaj-faj",
+    "gender": "m"
+  },
+  "online": {
+    "m": "onlajn",
+    "f": "onlajn",
+    "n": "onlajn"
+  },
+  "email": {
+    "text": "imejl",
+    "gender": "m"
+  },
+  "cable": {
+    "text": "kabl",
+    "gender": "m"
+  },
+  "charger": {
+    "text": "punjač",
+    "gender": "m"
+  },
+  "to_charge": {
+    "imperfective": "puniti",
+    "perfective": "napuniti"
+  },
+  "to_search": {
+    "imperfective": "pretraživati",
+    "perfective": "pretražiti"
+  },
+  "beef": {
+    "text": "govedina",
+    "gender": "f"
+  },
+  "pork": {
+    "text": "svinjetina",
+    "gender": "f"
+  },
+  "pasta": {
+    "text": "testenina",
+    "gender": "f"
+  },
+  "pizza": {
+    "text": "pica",
+    "gender": "f"
+  },
+  "sandwich": {
+    "text": "sendvič",
+    "gender": "m"
+  },
+  "carrot": {
+    "text": "šargarepa",
+    "gender": "f"
+  },
+  "lemon": {
+    "text": "limun",
+    "gender": "m"
+  },
+  "banana": {
+    "text": "banana",
+    "gender": "f"
+  },
+  "to_provide": {
+    "imperfective": "obezbeđivati",
+    "perfective": "obezbediti"
+  },
+  "to_allow": {
+    "imperfective": "dozvoljavati",
+    "perfective": "dozvoliti"
+  },
+  "to_share": {
+    "imperfective": "deliti",
+    "perfective": "podeliti"
+  },
+  "to_return": {
+    "imperfective": "vraćati se",
+    "perfective": "vratiti se"
+  },
+  "to_pick": {
+    "imperfective": "brati",
+    "perfective": "ubrati"
+  },
+  "to_hit": {
+    "imperfective": "udarati",
+    "perfective": "udariti"
+  },
+  "to_miss": {
+    "text": "nedostajati",
+    "aspect": "imperfective"
+  },
+  "to_cover": {
+    "imperfective": "pokrivati",
+    "perfective": "pokriti"
+  },
+  "to_end": {
+    "imperfective": "okončavati",
+    "perfective": "okončati"
+  },
+  "to_cause": {
+    "text": "uzrokovati",
+    "aspect": "imperfective"
+  },
+  "to_drop": {
+    "imperfective": "ispuštati",
+    "perfective": "ispustiti"
+  },
+  "to_place": {
+    "imperfective": "postavljati",
+    "perfective": "postaviti"
+  },
+  "to_hang": {
+    "imperfective": "kačiti",
+    "perfective": "okačiti"
+  },
+  "to_lay": {
+    "imperfective": "polagati",
+    "perfective": "položiti"
+  },
+  "to_remove": {
+    "imperfective": "uklanjati",
+    "perfective": "ukloniti"
+  },
+  "to_avoid": {
+    "imperfective": "izbegavati",
+    "perfective": "izbeći"
+  },
+  "to_prepare": {
+    "imperfective": "pripremati",
+    "perfective": "pripremiti"
+  },
+  "outside": {
+    "text": "izvan"
+  },
+  "beyond": {
+    "text": "preko"
+  },
+  "ahead": {
+    "text": "napred"
+  },
+  "together": {
+    "text": "zajedno"
+  },
+  "far": {
+    "text": "daleko"
+  },
+  "somewhere": {
+    "text": "negde"
+  },
+  "anywhere": {
+    "text": "bilo gde"
+  },
+  "to_ride": {
+    "text": "voziti se",
+    "aspect": "imperfective"
+  },
+  "to_park": {
+    "imperfective": "parkirati",
+    "perfective": "uparkirati"
+  },
+  "to_cross": {
+    "imperfective": "prelaziti",
+    "perfective": "preći"
+  },
+  "to_pack": {
+    "imperfective": "pakovati",
+    "perfective": "spakovati"
+  },
+  "to_reserve": {
+    "text": "rezervisati",
+    "aspect": "perfective"
+  },
+  "to_cancel": {
+    "imperfective": "otkazivati",
+    "perfective": "otkazati"
+  },
+  "to_confirm": {
+    "imperfective": "potvrđivati",
+    "perfective": "potvrditi"
+  },
+  "to_visit": {
+    "imperfective": "posećivati",
+    "perfective": "posetiti"
+  },
+  "to_enter": {
+    "imperfective": "ulaziti",
+    "perfective": "ući"
+  },
+  "to_hurry": {
+    "text": "žuriti",
+    "aspect": "imperfective"
+  },
+  "document": {
+    "text": "dokument",
+    "gender": "m"
+  },
+  "signature": {
+    "text": "potpis",
+    "gender": "m"
+  },
+  "address": {
+    "text": "adresa",
+    "gender": "f"
+  },
+  "deposit": {
+    "text": "depozit",
+    "gender": "m"
+  },
+  "mail": {
+    "text": "pošta",
+    "gender": "f"
+  },
+  "envelope": {
+    "text": "koverta",
+    "gender": "f"
+  },
+  "postcard": {
+    "text": "razglednica",
+    "gender": "f"
+  },
+  "landlord": {
+    "text": "stanodavac",
+    "gender": "m"
+  },
+  "to_rent": {
+    "imperfective": "iznajmljivati",
+    "perfective": "iznajmiti"
+  },
+  "elevator": {
+    "text": "lift",
+    "gender": "m"
+  },
+  "entrance": {
+    "text": "ulaz",
+    "gender": "m"
+  },
+  "exit": {
+    "text": "izlaz",
+    "gender": "m"
+  },
+  "balcony": {
+    "text": "balkon",
+    "gender": "m"
+  },
+  "garden": {
+    "text": "bašta",
+    "gender": "f"
+  },
+  "furniture": {
+    "text": "nameštaj",
+    "gender": "m"
+  },
+  "couch": {
+    "text": "kauč",
+    "gender": "m"
+  },
+  "electricity": {
+    "text": "struja",
+    "gender": "f"
+  },
+  "garbage": {
+    "text": "đubre",
+    "gender": "n"
+  },
+  "health": {
+    "text": "zdravlje",
+    "gender": "n"
+  },
+  "cough": {
+    "text": "kašalj",
+    "gender": "m"
+  },
+  "flu": {
+    "text": "grip",
+    "gender": "m"
+  },
+  "headache": {
+    "text": "glavobolja",
+    "gender": "f"
+  },
+  "pill": {
+    "text": "pilula",
+    "gender": "f"
+  },
+  "appointment": {
+    "text": "termin",
+    "gender": "m"
+  },
+  "dentist": {
+    "text": "zubar",
+    "gender": "m"
+  },
+  "emergency": {
+    "text": "hitan slučaj",
+    "gender": "m"
+  },
+  "ambulance": {
+    "text": "hitna pomoć",
+    "gender": "f"
+  },
+  "injury": {
+    "text": "povreda",
+    "gender": "f"
+  },
+  "fresh": {
+    "m": "svež",
+    "f": "sveža",
+    "n": "sveže"
+  },
+  "cake": {
+    "text": "torta",
+    "gender": "f"
+  },
+  "dessert": {
+    "text": "desert",
+    "gender": "m"
+  },
+  "snack": {
+    "text": "užina",
+    "gender": "f"
+  },
+  "comfortable": {
+    "m": "udoban",
+    "f": "udobna",
+    "n": "udobno"
+  },
+  "glad": {
+    "m": "radostan",
+    "f": "radosna",
+    "n": "radosno"
+  },
+  "afraid": {
+    "m": "uplašen",
+    "f": "uplašena",
+    "n": "uplašeno"
+  },
+  "busy": {
+    "m": "zauzet",
+    "f": "zauzeta",
+    "n": "zauzeto"
+  },
+  "alone": {
+    "m": "sam",
+    "f": "sama",
+    "n": "samo"
+  },
+  "married": {
+    "m": "venčan",
+    "f": "venčana",
+    "n": "venčano"
+  },
+  "lost": {
+    "m": "izgubljen",
+    "f": "izgubljena",
+    "n": "izgubljeno"
+  },
+  "funny": {
+    "m": "smešan",
+    "f": "smešna",
+    "n": "smešno"
+  },
+  "friendly": {
+    "m": "druželjubiv",
+    "f": "druželjubiva",
+    "n": "druželjubivo"
+  },
+  "umbrella": {
+    "text": "kišobran",
+    "gender": "m"
+  },
+  "climate": {
+    "text": "klima",
+    "gender": "f"
+  },
+  "heat": {
+    "text": "vrućina",
+    "gender": "f"
+  },
+  "point": {
+    "text": "tačka",
+    "gender": "f"
+  },
+  "group": {
+    "text": "grupa",
+    "gender": "f"
+  },
+  "line": {
+    "text": "linija",
+    "gender": "f"
+  },
+  "level": {
+    "text": "nivo",
+    "gender": "m"
+  },
+  "kind": {
+    "text": "vrsta",
+    "gender": "f"
+  },
+  "to_earn": {
+    "imperfective": "zarađivati",
+    "perfective": "zaraditi"
+  },
+  "to_borrow": {
+    "imperfective": "pozajmljivati",
+    "perfective": "pozajmiti"
+  },
+  "to_lend": {
+    "imperfective": "davati na zajam",
+    "perfective": "dati na zajam"
+  },
+  "to_sign": {
+    "imperfective": "potpisivati",
+    "perfective": "potpisati"
+  },
+  "to_order": {
+    "imperfective": "naručivati",
+    "perfective": "naručiti"
+  },
+  "to_deliver": {
+    "imperfective": "dostavljati",
+    "perfective": "dostaviti"
+  },
+  "to_weigh": {
+    "imperfective": "meriti",
+    "perfective": "izmeriti"
+  },
+  "to_fill": {
+    "imperfective": "popunjavati",
+    "perfective": "popuniti"
+  },
+  "to_repeat": {
+    "imperfective": "ponavljati",
+    "perfective": "ponoviti"
+  },
+  "to_translate": {
+    "imperfective": "prevoditi",
+    "perfective": "prevesti"
+  },
+  "to_spell": {
+    "text": "sricati",
+    "aspect": "imperfective"
+  },
+  "to_complain": {
+    "imperfective": "žaliti se",
+    "perfective": "požaliti se"
+  },
+  "to_introduce": {
+    "imperfective": "predstavljati",
+    "perfective": "predstaviti"
+  },
+  "to_welcome": {
+    "imperfective": "dočekivati",
+    "perfective": "dočekati"
+  },
+  "great": {
+    "m": "sjajan",
+    "f": "sjajna",
+    "n": "sjajno"
+  },
+  "high": {
+    "m": "visok",
+    "f": "visoka",
+    "n": "visoko"
+  },
+  "low": {
+    "m": "nizak",
+    "f": "niska",
+    "n": "nisko"
+  },
+  "huge": {
+    "m": "ogroman",
+    "f": "ogromna",
+    "n": "ogromno"
+  },
+  "tiny": {
+    "m": "sićušan",
+    "f": "sićušna",
+    "n": "sićušno"
+  },
+  "real": {
+    "m": "stvaran",
+    "f": "stvarna",
+    "n": "stvarno"
+  },
+  "true": {
+    "m": "istinit",
+    "f": "istinita",
+    "n": "istinito"
+  },
+  "whole": {
+    "m": "ceo",
+    "f": "cela",
+    "n": "celo"
+  },
+  "free": {
+    "m": "slobodan",
+    "f": "slobodna",
+    "n": "slobodno"
+  },
+  "able": {
+    "m": "sposoban",
+    "f": "sposobna",
+    "n": "sposobno"
+  },
+  "ready": {
+    "m": "spreman",
+    "f": "spremna",
+    "n": "spremno"
+  },
+  "simple": {
+    "m": "jednostavan",
+    "f": "jednostavna",
+    "n": "jednostavno"
+  },
+  "common": {
+    "m": "uobičajen",
+    "f": "uobičajena",
+    "n": "uobičajeno"
+  },
+  "special": {
+    "m": "poseban",
+    "f": "posebna",
+    "n": "posebno"
+  },
+  "main": {
+    "m": "glavni",
+    "f": "glavna",
+    "n": "glavno"
+  },
+  "perfect": {
+    "m": "savršen",
+    "f": "savršena",
+    "n": "savršeno"
+  },
+  "fine": {
+    "m": "fin",
+    "f": "fina",
+    "n": "fino"
+  },
+  "to_prefer": {
+    "text": "više voleti",
+    "aspect": "imperfective"
+  },
+  "to_enjoy": {
+    "text": "uživati",
+    "aspect": "imperfective"
+  },
+  "to_realize": {
+    "imperfective": "shvatati",
+    "perfective": "shvatiti"
+  },
+  "to_guess": {
+    "imperfective": "pogađati",
+    "perfective": "pogoditi"
+  },
+  "to_wonder": {
+    "text": "pitati se",
+    "aspect": "imperfective"
+  },
+  "to_imagine": {
+    "imperfective": "zamišljati",
+    "perfective": "zamisliti"
+  },
+  "to_notice": {
+    "imperfective": "primećivati",
+    "perfective": "primetiti"
+  },
+  "to_recognize": {
+    "imperfective": "prepoznavati",
+    "perfective": "prepoznati"
+  },
+  "to_worry": {
+    "text": "brinuti",
+    "aspect": "imperfective"
+  },
+  "to_assume": {
+    "imperfective": "pretpostavljati",
+    "perfective": "pretpostaviti"
+  },
+  "to_suppose": {
+    "text": "smatrati",
+    "aspect": "imperfective"
+  },
+  "to_intend": {
+    "text": "nameravati",
+    "aspect": "imperfective"
+  },
+  "to_remind": {
+    "imperfective": "podsećati",
+    "perfective": "podsetiti"
+  },
+  "to_recall": {
+    "imperfective": "prisećati se",
+    "perfective": "prisetiti se"
+  },
+  "to_trust": {
+    "text": "imati poverenja",
+    "aspect": "imperfective"
+  },
+  "to_mind": {
+    "text": "imati nešto protiv",
+    "aspect": "imperfective"
+  },
+  "to_appreciate": {
+    "text": "ceniti",
+    "aspect": "imperfective"
+  },
+  "to_deserve": {
+    "imperfective": "zasluživati",
+    "perfective": "zaslužiti"
+  },
+  "to_bother": {
+    "text": "smetati",
+    "aspect": "imperfective"
+  },
+  "moment": {
+    "text": "trenutak",
+    "gender": "m"
+  },
+  "period": {
+    "text": "period",
+    "gender": "m"
+  },
+  "age": {
+    "text": "starost",
+    "gender": "f"
+  },
+  "season": {
+    "text": "sezona",
+    "gender": "f"
+  },
+  "history": {
+    "text": "istorija",
+    "gender": "f"
+  },
+  "century": {
+    "text": "vek",
+    "gender": "m"
+  },
+  "decade": {
+    "text": "decenija",
+    "gender": "f"
+  },
+  "era": {
+    "text": "era",
+    "gender": "f"
+  },
+  "future": {
+    "text": "budućnost",
+    "gender": "f"
+  },
+  "past": {
+    "m": "prošli",
+    "f": "prošla",
+    "n": "prošlo"
+  },
+  "beginning": {
+    "text": "početak",
+    "gender": "m"
+  },
+  "end": {
+    "text": "kraj",
+    "gender": "m"
+  },
+  "start": {
+    "text": "start",
+    "gender": "m"
+  },
+  "break": {
+    "text": "pauza",
+    "gender": "f"
+  },
+  "turn": {
+    "text": "red",
+    "gender": "m"
+  },
+  "step": {
+    "text": "korak",
+    "gender": "m"
+  },
+  "session": {
+    "text": "sesija",
+    "gender": "f"
+  },
+  "term": {
+    "text": "rok",
+    "gender": "m"
+  },
+  "second_n": {
+    "text": "sekunda",
+    "gender": "f"
+  },
+  "wage": {
+    "text": "nadnica",
+    "gender": "f"
+  },
+  "refund": {
+    "text": "povraćaj novca",
+    "gender": "m"
+  },
+  "charge": {
+    "text": "naplata",
+    "gender": "f"
+  },
+  "to_withdraw": {
+    "imperfective": "podizati",
+    "perfective": "podići"
+  },
+  "to_owe": {
+    "text": "dugovati",
+    "aspect": "imperfective"
+  },
+  "clear": {
+    "m": "jasan",
+    "f": "jasna",
+    "n": "jasno"
+  },
+  "likely": {
+    "m": "verovatan",
+    "f": "verovatna",
+    "n": "verovatno"
+  },
+  "similar": {
+    "m": "sličan",
+    "f": "slična",
+    "n": "slično"
+  },
+  "various": {
+    "m": "razni",
+    "f": "razna",
+    "n": "razno"
+  },
+  "specific": {
+    "m": "specifičan",
+    "f": "specifična",
+    "n": "specifično"
+  },
+  "particular": {
+    "m": "naročit",
+    "f": "naročita",
+    "n": "naročito"
+  },
+  "total": {
+    "m": "ukupan",
+    "f": "ukupna",
+    "n": "ukupno"
+  },
+  "entire": {
+    "m": "čitav",
+    "f": "čitava",
+    "n": "čitavo"
+  },
+  "complete": {
+    "m": "potpun",
+    "f": "potpuna",
+    "n": "potpuno"
+  },
+  "actual": {
+    "m": "pravi",
+    "f": "prava",
+    "n": "pravo"
+  },
+  "basic": {
+    "m": "osnovni",
+    "f": "osnovna",
+    "n": "osnovno"
+  },
+  "extra": {
+    "m": "dodatni",
+    "f": "dodatna",
+    "n": "dodatno"
+  },
+  "additional": {
+    "m": "dopunski",
+    "f": "dopunska",
+    "n": "dopunsko"
+  },
+  "multiple": {
+    "m": "višestruk",
+    "f": "višestruka",
+    "n": "višestruko"
+  },
+  "available": {
+    "m": "dostupan",
+    "f": "dostupna",
+    "n": "dostupno"
+  },
+  "nearly": {
+    "text": "zamalo"
+  },
+  "rather": {
+    "text": "radije"
+  },
+  "pretty": {
+    "text": "prilično"
+  },
+  "especially": {
+    "text": "naročito"
+  },
+  "particularly": {
+    "text": "posebno"
+  },
+  "absolutely": {
+    "text": "apsolutno"
+  },
+  "extremely": {
+    "text": "izuzetno"
+  },
+  "slightly": {
+    "text": "blago"
+  },
+  "relatively": {
+    "text": "relativno"
+  },
+  "entirely": {
+    "text": "sasvim"
+  },
+  "currently": {
+    "text": "trenutno"
+  },
+  "forever": {
+    "text": "zauvek"
+  },
+  "anymore": {
+    "text": "više ne"
+  },
+  "quickly": {
+    "text": "brzo"
+  },
+  "slowly": {
+    "text": "polako"
+  },
+  "easily": {
+    "text": "lako"
+  },
+  "directly": {
+    "text": "direktno"
+  },
+  "simply": {
+    "text": "prosto"
+  },
+  "generally": {
+    "text": "uopšteno"
+  },
+  "basically": {
+    "text": "u suštini"
+  },
+  "eventually": {
+    "text": "na kraju"
+  },
+  "suddenly": {
+    "text": "iznenada"
+  },
+  "ago": {
+    "text": "pre"
+  },
+  "safe": {
+    "m": "bezbedan",
+    "f": "bezbedna",
+    "n": "bezbedno"
+  },
+  "dangerous": {
+    "m": "opasan",
+    "f": "opasna",
+    "n": "opasno"
+  },
+  "interesting": {
+    "m": "zanimljiv",
+    "f": "zanimljiva",
+    "n": "zanimljivo"
+  },
+  "boring": {
+    "m": "dosadan",
+    "f": "dosadna",
+    "n": "dosadno"
+  },
+  "popular": {
+    "m": "popularan",
+    "f": "popularna",
+    "n": "popularno"
+  },
+  "favorite": {
+    "m": "omiljen",
+    "f": "omiljena",
+    "n": "omiljeno"
+  },
+  "foreign": {
+    "m": "stran",
+    "f": "strana",
+    "n": "strano"
+  },
+  "early": {
+    "m": "ran",
+    "f": "rana",
+    "n": "rano"
+  },
+  "late": {
+    "m": "kasni",
+    "f": "kasna",
+    "n": "kasno"
+  },
+  "recent": {
+    "m": "nedavni",
+    "f": "nedavna",
+    "n": "nedavno"
+  },
+  "current": {
+    "m": "trenutni",
+    "f": "trenutna",
+    "n": "trenutno"
+  },
+  "former": {
+    "text": "bivši"
+  },
+  "previous": {
+    "m": "prethodni",
+    "f": "prethodna",
+    "n": "prethodno"
+  },
+  "final": {
+    "m": "završni",
+    "f": "završna",
+    "n": "završno"
+  },
+  "initial": {
+    "m": "početni",
+    "f": "početna",
+    "n": "početno"
+  },
+  "annual": {
+    "m": "godišnji",
+    "f": "godišnja",
+    "n": "godišnje"
+  },
+  "daily": {
+    "m": "dnevni",
+    "f": "dnevna",
+    "n": "dnevno"
+  },
+  "regular": {
+    "m": "redovan",
+    "f": "redovna",
+    "n": "redovno"
+  },
+  "long_term": {
+    "m": "dugoročan",
+    "f": "dugoročna",
+    "n": "dugoročno"
+  },
+  "ancient": {
+    "m": "drevni",
+    "f": "drevna",
+    "n": "drevno"
+  },
+  "modern": {
+    "m": "moderan",
+    "f": "moderna",
+    "n": "moderno"
+  },
+  "historical": {
+    "m": "istorijski",
+    "f": "istorijska",
+    "n": "istorijsko"
+  },
+  "quick": {
+    "m": "brz",
+    "f": "brza",
+    "n": "brzo"
+  },
+  "present": {
+    "m": "sadašnji",
+    "f": "sadašnja",
+    "n": "sadašnje"
+  },
+  "museum": {
+    "text": "muzej",
+    "gender": "m"
+  },
+  "cinema": {
+    "text": "bioskop",
+    "gender": "m"
+  },
+  "pool": {
+    "text": "bazen",
+    "gender": "m"
+  },
+  "mall": {
+    "text": "tržni centar",
+    "gender": "m"
+  },
+  "neighborhood": {
+    "text": "komšiluk",
+    "gender": "m"
+  },
+  "village": {
+    "text": "selo",
+    "gender": "n"
+  },
+  "picture": {
+    "text": "slika",
+    "gender": "f"
+  },
+  "to_rest": {
+    "imperfective": "odmarati se",
+    "perfective": "odmoriti se"
+  },
+  "to_relax": {
+    "imperfective": "opuštati se",
+    "perfective": "opustiti se"
+  },
+  "motorcycle": {
+    "text": "motocikl",
+    "gender": "m"
+  },
+  "truck": {
+    "text": "kamion",
+    "gender": "m"
+  },
+  "ship": {
+    "text": "brod",
+    "gender": "m"
+  },
+  "tourist": {
+    "text": "turista",
+    "gender": "m"
+  },
+  "schedule": {
+    "text": "raspored",
+    "gender": "m"
+  },
+  "delay": {
+    "text": "kašnjenje",
+    "gender": "n"
+  },
+  "vacation": {
+    "text": "odmor",
+    "gender": "m"
+  },
+  "passenger": {
+    "text": "putnik",
+    "gender": "m"
+  },
+  "departure": {
+    "text": "polazak",
+    "gender": "m"
+  },
+  "arrival": {
+    "text": "dolazak",
+    "gender": "m"
+  },
+  "journey": {
+    "text": "putovanje",
+    "gender": "n"
+  },
+  "route": {
+    "text": "ruta",
+    "gender": "f"
+  },
+  "airline": {
+    "text": "avio-kompanija",
+    "gender": "f"
+  },
+  "suitcase": {
+    "text": "kofer",
+    "gender": "m"
+  },
+  "ferry": {
+    "text": "trajekt",
+    "gender": "m"
+  },
+  "tram": {
+    "text": "tramvaj",
+    "gender": "m"
+  },
+  "souvenir": {
+    "text": "suvenir",
+    "gender": "m"
+  },
+  "tent": {
+    "text": "šator",
+    "gender": "m"
+  },
+  "adult": {
+    "text": "odrasla osoba",
+    "gender": "f"
+  },
+  "guest": {
+    "text": "gost",
+    "gender": "m"
+  },
+  "stranger": {
+    "text": "stranac",
+    "gender": "m"
+  },
+  "shower": {
+    "text": "tuš",
+    "gender": "m"
+  },
+  "fridge": {
+    "text": "frižider",
+    "gender": "m"
+  },
+  "stove": {
+    "text": "šporet",
+    "gender": "m"
+  },
+  "north": {
+    "text": "sever",
+    "gender": "m"
+  },
+  "south": {
+    "text": "jug",
+    "gender": "m"
+  },
+  "east": {
+    "text": "istok",
+    "gender": "m"
+  },
+  "west": {
+    "text": "zapad",
+    "gender": "m"
+  },
+  "northern": {
+    "m": "severni",
+    "f": "severna",
+    "n": "severno"
+  },
+  "southern": {
+    "m": "južni",
+    "f": "južna",
+    "n": "južno"
+  },
+  "eastern": {
+    "m": "istočni",
+    "f": "istočna",
+    "n": "istočno"
+  },
+  "western": {
+    "m": "zapadni",
+    "f": "zapadna",
+    "n": "zapadno"
+  },
+  "central": {
+    "m": "centralni",
+    "f": "centralna",
+    "n": "centralno"
+  },
+  "local": {
+    "m": "lokalni",
+    "f": "lokalna",
+    "n": "lokalno"
+  },
+  "international": {
+    "m": "međunarodni",
+    "f": "međunarodna",
+    "n": "međunarodno"
+  },
+  "global": {
+    "m": "globalni",
+    "f": "globalna",
+    "n": "globalno"
+  },
+  "urban": {
+    "m": "gradski",
+    "f": "gradska",
+    "n": "gradsko"
+  },
+  "domestic": {
+    "m": "domaći",
+    "f": "domaća",
+    "n": "domaće"
+  },
+  "region": {
+    "text": "regija",
+    "gender": "f"
+  },
+  "area": {
+    "text": "područje",
+    "gender": "n"
+  },
+  "though": {
+    "text": "mada"
+  },
+  "nor": {
+    "text": "niti"
+  },
+  "than": {
+    "text": "nego"
+  },
+  "like": {
+    "text": "poput"
+  },
+  "even": {
+    "text": "čak"
+  },
+  "except": {
+    "text": "osim"
+  },
+  "to_describe": {
+    "imperfective": "opisivati",
+    "perfective": "opisati"
+  },
+  "to_mention": {
+    "imperfective": "pominjati",
+    "perfective": "pomenuti"
+  },
+  "to_discuss": {
+    "text": "raspravljati",
+    "aspect": "imperfective"
+  },
+  "to_argue": {
+    "imperfective": "svađati se",
+    "perfective": "posvađati se"
+  },
+  "to_claim": {
+    "text": "tvrditi",
+    "aspect": "imperfective"
+  },
+  "to_state": {
+    "imperfective": "izjavljivati",
+    "perfective": "izjaviti"
+  },
+  "to_note": {
+    "imperfective": "beležiti",
+    "perfective": "zabeležiti"
+  },
+  "to_respond": {
+    "imperfective": "uzvraćati",
+    "perfective": "uzvratiti"
+  },
+  "to_announce": {
+    "imperfective": "najavljivati",
+    "perfective": "najaviti"
+  },
+  "to_admit": {
+    "imperfective": "priznavati",
+    "perfective": "priznati"
+  },
+  "to_deny": {
+    "imperfective": "poricati",
+    "perfective": "poreći"
+  },
+  "to_refuse": {
+    "imperfective": "odbijati",
+    "perfective": "odbiti"
+  },
+  "to_plan": {
+    "text": "planirati",
+    "aspect": "imperfective"
+  },
+  "to_manage": {
+    "text": "upravljati",
+    "aspect": "imperfective"
+  },
+  "to_control": {
+    "text": "kontrolisati",
+    "aspect": "imperfective"
+  },
+  "to_design": {
+    "text": "dizajnirati",
+    "aspect": "imperfective"
+  },
+  "to_apply": {
+    "imperfective": "prijavljivati se",
+    "perfective": "prijaviti se"
+  },
+  "to_present": {
+    "text": "prezentovati",
+    "aspect": "imperfective"
+  },
+  "to_represent": {
+    "text": "zastupati",
+    "aspect": "imperfective"
+  },
+  "to_focus": {
+    "imperfective": "usredsređivati se",
+    "perfective": "usredsrediti se"
+  },
+  "to_deal": {
+    "text": "baviti se",
+    "aspect": "imperfective"
+  },
+  "to_act": {
+    "text": "delovati",
+    "aspect": "imperfective"
+  },
+  "to_handle": {
+    "text": "rukovati",
+    "aspect": "imperfective"
+  },
+  "to_conduct": {
+    "imperfective": "sprovoditi",
+    "perfective": "sprovesti"
+  },
+  "to_climb": {
+    "imperfective": "penjati se",
+    "perfective": "popeti se"
+  },
+  "to_breathe": {
+    "text": "disati",
+    "aspect": "imperfective"
+  },
+  "to_smoke": {
+    "text": "pušiti",
+    "aspect": "imperfective"
+  },
+  "to_yell": {
+    "text": "drati se",
+    "aspect": "imperfective"
+  },
+  "to_whisper": {
+    "imperfective": "šaputati",
+    "perfective": "šapnuti"
+  },
+  "to_scream": {
+    "imperfective": "vrištati",
+    "perfective": "vrisnuti"
+  },
+  "to_greet": {
+    "imperfective": "pozdravljati",
+    "perfective": "pozdraviti"
+  },
+  "to_apologize": {
+    "imperfective": "izvinjavati se",
+    "perfective": "izviniti se"
+  },
+  "to_forgive": {
+    "imperfective": "opraštati",
+    "perfective": "oprostiti"
+  },
+  "beach": {
+    "text": "plaža",
+    "gender": "f"
+  },
+  "lip": {
+    "text": "usna",
+    "gender": "f"
+  },
+  "throat": {
+    "text": "grlo",
+    "gender": "n"
+  },
+  "to_fix": {
+    "imperfective": "popravljati",
+    "perfective": "popraviti"
+  },
+  "to_repair": {
+    "imperfective": "opravljati",
+    "perfective": "opraviti"
+  },
+  "to_lock": {
+    "imperfective": "zaključavati",
+    "perfective": "zaključati"
+  },
+  "closet": {
+    "text": "orman",
+    "gender": "m"
+  },
+  "curtain": {
+    "text": "zavesa",
+    "gender": "f"
+  },
+  "carpet": {
+    "text": "tepih",
+    "gender": "m"
+  },
+  "mattress": {
+    "text": "dušek",
+    "gender": "m"
+  },
+  "sofa": {
+    "text": "sofa",
+    "gender": "f"
+  },
+  "pocket": {
+    "text": "džep",
+    "gender": "m"
+  },
+  "watch": {
+    "text": "ručni sat",
+    "gender": "m"
+  },
+  "belt": {
+    "text": "kaiš",
+    "gender": "m"
+  },
+  "shorts": {
+    "text": "šorts",
+    "gender": "m"
+  },
+  "underwear": {
+    "text": "donji veš",
+    "gender": "m"
+  },
+  "backpack": {
+    "text": "ranac",
+    "gender": "m"
+  },
+  "tie": {
+    "text": "kravata",
+    "gender": "f"
+  },
+  "uniform": {
+    "text": "uniforma",
+    "gender": "f"
+  },
+  "button": {
+    "text": "dugme",
+    "gender": "n"
+  },
+  "cap": {
+    "text": "kačket",
+    "gender": "m"
+  },
+  "sneaker": {
+    "text": "patika",
+    "gender": "f"
+  },
+  "sandal": {
+    "text": "sandala",
+    "gender": "f"
+  },
+  "swimsuit": {
+    "text": "kupaći kostim",
+    "gender": "m"
+  },
+  "sunglasses": {
+    "text": "naočare za sunce",
+    "gender": "f"
+  },
+  "clothes": {
+    "text": "odeća",
+    "gender": "f"
+  },
+  "suit": {
+    "text": "odelo",
+    "gender": "n"
+  },
+  "laundry": {
+    "text": "veš",
+    "gender": "m"
+  },
+  "bucket": {
+    "text": "kofa",
+    "gender": "f"
+  },
+  "trash": {
+    "text": "smeće",
+    "gender": "n"
+  },
+  "heater": {
+    "text": "grejalica",
+    "gender": "f"
+  },
+  "bathtub": {
+    "text": "kada",
+    "gender": "f"
+  },
+  "ceiling": {
+    "text": "plafon",
+    "gender": "m"
+  },
+  "fence": {
+    "text": "ograda",
+    "gender": "f"
+  },
+  "gate": {
+    "text": "kapija",
+    "gender": "f"
+  },
+  "to_sweep": {
+    "imperfective": "mesti",
+    "perfective": "pomesti"
+  },
+  "to_fold": {
+    "imperfective": "savijati",
+    "perfective": "saviti"
+  },
+  "to_wrap": {
+    "imperfective": "umotavati",
+    "perfective": "umotati"
+  },
+  "recipe": {
+    "text": "recept",
+    "gender": "m"
+  },
+  "ingredient": {
+    "text": "sastojak",
+    "gender": "m"
+  },
+  "to_fry": {
+    "imperfective": "pržiti",
+    "perfective": "ispržiti"
+  },
+  "to_chop": {
+    "imperfective": "seckati",
+    "perfective": "iseckati"
+  },
+  "to_pour": {
+    "imperfective": "sipati",
+    "perfective": "nasuti"
+  },
+  "to_stir": {
+    "imperfective": "mešati",
+    "perfective": "promešati"
+  },
+  "to_boil": {
+    "imperfective": "kuvati",
+    "perfective": "skuvati"
+  },
+  "bean": {
+    "text": "pasulj",
+    "gender": "m"
+  },
+  "corn": {
+    "text": "kukuruz",
+    "gender": "m"
+  },
+  "nut": {
+    "text": "orah",
+    "gender": "m"
+  },
+  "grape": {
+    "text": "grožđe",
+    "gender": "n"
+  },
+  "strawberry": {
+    "text": "jagoda",
+    "gender": "f"
+  },
+  "cucumber": {
+    "text": "krastavac",
+    "gender": "m"
+  },
+  "cabbage": {
+    "text": "kupus",
+    "gender": "m"
+  },
+  "yogurt": {
+    "text": "jogurt",
+    "gender": "m"
+  },
+  "steak": {
+    "text": "biftek",
+    "gender": "m"
+  },
+  "burger": {
+    "text": "burger",
+    "gender": "m"
+  },
+  "pie": {
+    "text": "pita",
+    "gender": "f"
+  },
+  "cookie": {
+    "text": "kolačić",
+    "gender": "m"
+  },
+  "candy": {
+    "text": "bombona",
+    "gender": "f"
+  },
+  "keyboard": {
+    "text": "tastatura",
+    "gender": "f"
+  },
+  "signal": {
+    "text": "signal",
+    "gender": "m"
+  },
+  "to_click": {
+    "imperfective": "kliktati",
+    "perfective": "kliknuti"
+  },
+  "to_print": {
+    "imperfective": "štampati",
+    "perfective": "odštampati"
+  },
+  "to_delete": {
+    "imperfective": "brisati",
+    "perfective": "obrisati"
+  },
+  "to_install": {
+    "text": "instalirati",
+    "aspect": "perfective"
+  },
+  "printer": {
+    "text": "štampač",
+    "gender": "m"
+  },
+  "headphones": {
+    "text": "slušalice",
+    "gender": "f"
+  },
+  "employer": {
+    "text": "poslodavac",
+    "gender": "m"
+  },
+  "profession": {
+    "text": "profesija",
+    "gender": "f"
+  },
+  "to_quit": {
+    "imperfective": "davati otkaz",
+    "perfective": "dati otkaz"
+  },
+  "conference": {
+    "text": "konferencija",
+    "gender": "f"
+  },
+  "task": {
+    "text": "zadatak",
+    "gender": "m"
+  },
+  "responsibility": {
+    "text": "odgovornost",
+    "gender": "f"
+  },
+  "to_shave": {
+    "imperfective": "brijati se",
+    "perfective": "obrijati se"
+  },
+  "cancer": {
+    "text": "rak",
+    "gender": "m"
+  },
+  "disease": {
+    "text": "bolest",
+    "gender": "f"
+  },
+  "treatment": {
+    "text": "lečenje",
+    "gender": "n"
+  },
+  "patient": {
+    "text": "pacijent",
+    "gender": "m"
+  },
+  "drug": {
+    "text": "droga",
+    "gender": "f"
+  },
+  "care": {
+    "text": "nega",
+    "gender": "f"
+  },
+  "vaccine": {
+    "text": "vakcina",
+    "gender": "f"
+  },
+  "vitamin": {
+    "text": "vitamin",
+    "gender": "m"
+  },
+  "mask": {
+    "text": "maska",
+    "gender": "f"
+  },
+  "diet": {
+    "text": "dijeta",
+    "gender": "f"
+  },
+  "to_bleed": {
+    "text": "krvariti",
+    "aspect": "imperfective"
+  },
+  "to_sneeze": {
+    "imperfective": "kijati",
+    "perfective": "kinuti"
+  },
+  "abortion": {
+    "text": "abortus",
+    "gender": "m"
+  },
+  "elbow": {
+    "text": "lakat",
+    "gender": "m"
+  },
+  "wrist": {
+    "text": "ručni zglob",
+    "gender": "m"
+  },
+  "ankle": {
+    "text": "članak",
+    "gender": "m"
+  },
+  "thumb": {
+    "text": "palac",
+    "gender": "m"
+  },
+  "cheek": {
+    "text": "obraz",
+    "gender": "m"
+  },
+  "chin": {
+    "text": "brada",
+    "gender": "f"
+  },
+  "forehead": {
+    "text": "čelo",
+    "gender": "n"
+  },
+  "breast": {
+    "text": "grudi",
+    "gender": "f"
+  },
+  "breath": {
+    "text": "dah",
+    "gender": "m"
+  },
+  "sleep": {
+    "text": "san",
+    "gender": "m"
+  },
+  "gas": {
+    "text": "benzin",
+    "gender": "m"
+  },
+  "vocabulary": {
+    "text": "vokabular",
+    "gender": "m"
+  },
+  "pencil": {
+    "text": "olovka",
+    "gender": "f"
+  },
+  "notebook": {
+    "text": "sveska",
+    "gender": "f"
+  },
+  "dictionary": {
+    "text": "rečnik",
+    "gender": "m"
+  },
+  "grammar": {
+    "text": "gramatika",
+    "gender": "f"
+  },
+  "to_practice": {
+    "text": "vežbati",
+    "aspect": "imperfective"
+  },
+  "to_graduate": {
+    "text": "diplomirati",
+    "aspect": "perfective"
+  },
+  "guy": {
+    "text": "momak",
+    "gender": "m"
+  },
+  "lady": {
+    "text": "dama",
+    "gender": "f"
+  },
+  "sir": {
+    "text": "gospodin",
+    "gender": "m"
+  },
+  "member": {
+    "text": "član",
+    "gender": "m"
+  },
+  "fan": {
+    "text": "navijač",
+    "gender": "m"
+  },
+  "user": {
+    "text": "korisnik",
+    "gender": "m"
+  },
+  "owner": {
+    "text": "vlasnik",
+    "gender": "m"
+  },
+  "reader": {
+    "text": "čitalac",
+    "gender": "m"
+  },
+  "consumer": {
+    "text": "potrošač",
+    "gender": "m"
+  },
+  "citizen": {
+    "text": "građanin",
+    "gender": "m"
+  },
+  "resident": {
+    "text": "stanovnik",
+    "gender": "m"
+  },
+  "voter": {
+    "text": "birač",
+    "gender": "m"
+  },
+  "participant": {
+    "text": "učesnik",
+    "gender": "m"
+  },
+  "winner": {
+    "text": "pobednik",
+    "gender": "m"
+  },
+  "speaker": {
+    "text": "govornik",
+    "gender": "m"
+  },
+  "investor": {
+    "text": "investitor",
+    "gender": "m"
+  },
+  "miss": {
+    "text": "gospođica",
+    "gender": "f"
+  },
+  "host": {
+    "text": "domaćin",
+    "gender": "m"
+  },
+  "university": {
+    "text": "univerzitet",
+    "gender": "m"
+  },
+  "college": {
+    "text": "koledž",
+    "gender": "m"
+  },
+  "education": {
+    "text": "obrazovanje",
+    "gender": "n"
+  },
+  "class": {
+    "text": "čas",
+    "gender": "m"
+  },
+  "study": {
+    "text": "studija",
+    "gender": "f"
+  },
+  "learning": {
+    "text": "učenje",
+    "gender": "n"
+  },
+  "teaching": {
+    "text": "nastava",
+    "gender": "f"
+  },
+  "reading": {
+    "text": "čitanje",
+    "gender": "n"
+  },
+  "writing": {
+    "text": "pisanje",
+    "gender": "n"
+  },
+  "educational": {
+    "m": "obrazovni",
+    "f": "obrazovna",
+    "n": "obrazovno"
+  },
+  "academic": {
+    "m": "akademski",
+    "f": "akademska",
+    "n": "akademsko"
+  },
+  "subject": {
+    "text": "predmet",
+    "gender": "m"
+  },
+  "career": {
+    "text": "karijera",
+    "gender": "f"
+  },
+  "position": {
+    "text": "pozicija",
+    "gender": "f"
+  },
+  "opportunity": {
+    "text": "prilika",
+    "gender": "f"
+  },
+  "skill": {
+    "text": "veština",
+    "gender": "f"
+  },
+  "professional": {
+    "m": "profesionalan",
+    "f": "profesionalna",
+    "n": "profesionalno"
+  },
+  "plan": {
+    "text": "plan",
+    "gender": "m"
+  },
+  "purpose": {
+    "text": "svrha",
+    "gender": "f"
+  },
+  "effort": {
+    "text": "trud",
+    "gender": "m"
+  },
+  "practice": {
+    "text": "praksa",
+    "gender": "f"
+  },
+  "target": {
+    "text": "meta",
+    "gender": "f"
+  },
+  "living": {
+    "text": "izdržavanje",
+    "gender": "n"
+  },
+  "business": {
+    "text": "biznis",
+    "gender": "m"
+  },
+  "firm": {
+    "text": "firma",
+    "gender": "f"
+  },
+  "corporation": {
+    "text": "korporacija",
+    "gender": "f"
+  },
+  "industry": {
+    "text": "industrija",
+    "gender": "f"
+  },
+  "organization": {
+    "text": "organizacija",
+    "gender": "f"
+  },
+  "management": {
+    "text": "rukovodstvo",
+    "gender": "n"
+  },
+  "sector": {
+    "text": "sektor",
+    "gender": "m"
+  },
+  "program": {
+    "text": "program",
+    "gender": "m"
+  },
+  "system": {
+    "text": "sistem",
+    "gender": "m"
+  },
+  "service": {
+    "text": "usluga",
+    "gender": "f"
+  },
+  "product": {
+    "text": "proizvod",
+    "gender": "m"
+  },
+  "production": {
+    "text": "proizvodnja",
+    "gender": "f"
+  },
+  "construction": {
+    "text": "izgradnja",
+    "gender": "f"
+  },
+  "percent": {
+    "text": "procenat",
+    "gender": "m"
+  },
+  "percentage": {
+    "text": "postotak",
+    "gender": "m"
+  },
+  "amount": {
+    "text": "iznos",
+    "gender": "m"
+  },
+  "average": {
+    "m": "prosečan",
+    "f": "prosečna",
+    "n": "prosečno"
+  },
+  "million": {
+    "text": "milion"
+  },
+  "rate": {
+    "text": "stopa",
+    "gender": "f"
+  },
+  "value": {
+    "text": "vrednost",
+    "gender": "f"
+  },
+  "cost": {
+    "text": "trošak",
+    "gender": "m"
+  },
+  "dollar": {
+    "text": "dolar",
+    "gender": "m"
+  },
+  "pound": {
+    "text": "funta",
+    "gender": "f"
+  },
+  "increase": {
+    "text": "povećanje",
+    "gender": "n"
+  },
+  "growth": {
+    "text": "rast",
+    "gender": "m"
+  },
+  "risk": {
+    "text": "rizik",
+    "gender": "m"
+  },
+  "benefit": {
+    "text": "korist",
+    "gender": "f"
+  },
+  "deal": {
+    "text": "dogovor",
+    "gender": "m"
+  },
+  "mile": {
+    "text": "milja",
+    "gender": "f"
+  },
+  "inch": {
+    "text": "inč",
+    "gender": "m"
+  },
+  "mean": {
+    "text": "srednja vrednost",
+    "gender": "f"
+  },
+  "result": {
+    "text": "rezultat",
+    "gender": "m"
+  },
+  "development": {
+    "text": "razvoj",
+    "gender": "m"
+  },
+  "improvement": {
+    "text": "poboljšanje",
+    "gender": "n"
+  },
+  "progress": {
+    "text": "napredak",
+    "gender": "m"
+  },
+  "performance": {
+    "text": "učinak",
+    "gender": "m"
+  },
+  "advantage": {
+    "text": "prednost",
+    "gender": "f"
+  },
+  "demand": {
+    "text": "potražnja",
+    "gender": "f"
+  },
+  "supply": {
+    "text": "snabdevanje",
+    "gender": "n"
+  },
+  "resource": {
+    "text": "resurs",
+    "gender": "m"
+  },
+  "standard": {
+    "text": "standard",
+    "gender": "m"
+  },
+  "quality": {
+    "text": "kvalitet",
+    "gender": "m"
+  },
+  "status": {
+    "text": "status",
+    "gender": "m"
+  },
+  "potential": {
+    "m": "potencijalan",
+    "f": "potencijalna",
+    "n": "potencijalno"
+  },
+  "requirement": {
+    "text": "zahtev",
+    "gender": "m"
+  },
+  "commitment": {
+    "text": "posvećenost",
+    "gender": "f"
+  },
+  "contribution": {
+    "text": "doprinos",
+    "gender": "m"
+  },
+  "to_operate": {
+    "text": "poslovati",
+    "aspect": "imperfective"
+  },
+  "to_organize": {
+    "text": "organizovati",
+    "aspect": "perfective"
+  },
+  "to_perform": {
+    "imperfective": "izvoditi",
+    "perfective": "izvesti"
+  },
+  "to_complete": {
+    "imperfective": "dovršavati",
+    "perfective": "dovršiti"
+  },
+  "to_achieve": {
+    "imperfective": "postizati",
+    "perfective": "postići"
+  },
+  "to_attend": {
+    "text": "prisustvovati",
+    "aspect": "imperfective"
+  },
+  "to_fire": {
+    "imperfective": "otpuštati",
+    "perfective": "otpustiti"
+  },
+  "to_establish": {
+    "imperfective": "osnivati",
+    "perfective": "osnovati"
+  },
+  "to_maintain": {
+    "imperfective": "održavati",
+    "perfective": "održati"
+  },
+  "to_launch": {
+    "text": "lansirati",
+    "aspect": "perfective"
+  },
+  "economy": {
+    "text": "ekonomija",
+    "gender": "f"
+  },
+  "economic": {
+    "m": "ekonomski",
+    "f": "ekonomska",
+    "n": "ekonomsko"
+  },
+  "financial": {
+    "m": "finansijski",
+    "f": "finansijska",
+    "n": "finansijsko"
+  },
+  "trade": {
+    "text": "trgovina",
+    "gender": "f"
+  },
+  "stock": {
+    "text": "akcija",
+    "gender": "f"
+  },
+  "credit": {
+    "text": "kredit",
+    "gender": "m"
+  },
+  "income": {
+    "text": "prihod",
+    "gender": "m"
+  },
+  "investment": {
+    "text": "investicija",
+    "gender": "f"
+  },
+  "debt": {
+    "text": "dug",
+    "gender": "m"
+  },
+  "sales": {
+    "text": "prodaja",
+    "gender": "f"
+  },
+  "revenue": {
+    "text": "promet",
+    "gender": "m"
+  },
+  "fund": {
+    "text": "fond",
+    "gender": "m"
+  },
+  "capital": {
+    "text": "kapital",
+    "gender": "m"
+  },
+  "share": {
+    "text": "udeo",
+    "gender": "m"
+  },
+  "property": {
+    "text": "imovina",
+    "gender": "f"
+  },
+  "estate": {
+    "text": "imanje",
+    "gender": "n"
+  },
+  "application": {
+    "text": "prijava",
+    "gender": "f"
+  },
+  "request": {
+    "text": "molba",
+    "gender": "f"
+  },
+  "offer": {
+    "text": "ponuda",
+    "gender": "f"
+  },
+  "package": {
+    "text": "paket",
+    "gender": "m"
+  },
+  "item": {
+    "text": "stavka",
+    "gender": "f"
+  },
+  "sample": {
+    "text": "uzorak",
+    "gender": "m"
+  },
+  "labor": {
+    "text": "rad",
+    "gender": "m"
+  },
+  "successful": {
+    "m": "uspešan",
+    "f": "uspešna",
+    "n": "uspešno"
+  },
+  "effective": {
+    "m": "efikasan",
+    "f": "efikasna",
+    "n": "efikasno"
+  },
+  "corporate": {
+    "m": "korporativni",
+    "f": "korporativna",
+    "n": "korporativno"
+  },
+  "commercial": {
+    "m": "komercijalni",
+    "f": "komercijalna",
+    "n": "komercijalno"
+  },
+  "relative": {
+    "text": "srodnik",
+    "gender": "m"
+  },
+  "twin": {
+    "text": "blizanac",
+    "gender": "m"
+  },
+  "nephew": {
+    "text": "nećak",
+    "gender": "m"
+  },
+  "niece": {
+    "text": "nećaka",
+    "gender": "f"
+  },
+  "teenager": {
+    "text": "tinejdžer",
+    "gender": "m"
+  },
+  "immigrant": {
+    "text": "imigrant",
+    "gender": "m"
+  },
+  "youth": {
+    "text": "omladina",
+    "gender": "f"
+  },
+  "individual": {
+    "text": "pojedinac",
+    "gender": "m"
+  },
+  "human": {
+    "m": "ljudski",
+    "f": "ljudska",
+    "n": "ljudsko"
+  },
+  "self": {
+    "text": "sopstvo",
+    "gender": "n"
+  },
+  "being": {
+    "text": "biće",
+    "gender": "n"
+  },
+  "daddy": {
+    "text": "tatica",
+    "gender": "m"
+  },
+  "writer": {
+    "text": "pisac",
+    "gender": "m"
+  },
+  "author": {
+    "text": "autor",
+    "gender": "m"
+  },
+  "editor": {
+    "text": "urednik",
+    "gender": "m"
+  },
+  "reporter": {
+    "text": "reporter",
+    "gender": "m"
+  },
+  "scientist": {
+    "text": "naučnik",
+    "gender": "m"
+  },
+  "researcher": {
+    "text": "istraživač",
+    "gender": "m"
+  },
+  "expert": {
+    "text": "stručnjak",
+    "gender": "m"
+  },
+  "agent": {
+    "text": "agent",
+    "gender": "m"
+  },
+  "cop": {
+    "text": "pandur",
+    "gender": "m"
+  },
+  "guard": {
+    "text": "čuvar",
+    "gender": "m"
+  },
+  "critic": {
+    "text": "kritičar",
+    "gender": "m"
+  },
+  "master": {
+    "text": "majstor",
+    "gender": "m"
+  },
+  "president": {
+    "text": "predsednik",
+    "gender": "m"
+  },
+  "leader": {
+    "text": "vođa",
+    "gender": "m"
+  },
+  "director": {
+    "text": "direktor",
+    "gender": "m"
+  },
+  "official": {
+    "text": "zvaničnik",
+    "gender": "m"
+  },
+  "officer": {
+    "text": "oficir",
+    "gender": "m"
+  },
+  "chief": {
+    "text": "načelnik",
+    "gender": "m"
+  },
+  "captain": {
+    "text": "kapetan",
+    "gender": "m"
+  },
+  "minister": {
+    "text": "ministar",
+    "gender": "m"
+  },
+  "mayor": {
+    "text": "gradonačelnik",
+    "gender": "m"
+  },
+  "chairman": {
+    "text": "predsedavajući",
+    "gender": "m"
+  },
+  "executive": {
+    "text": "rukovodilac",
+    "gender": "m"
+  },
+  "secretary": {
+    "text": "sekretar",
+    "gender": "m"
+  },
+  "candidate": {
+    "text": "kandidat",
+    "gender": "m"
+  },
+  "politician": {
+    "text": "političar",
+    "gender": "m"
+  },
+  "king": {
+    "text": "kralj",
+    "gender": "m"
+  },
+  "lord": {
+    "text": "gospodar",
+    "gender": "m"
+  },
+  "general_n": {
+    "text": "general",
+    "gender": "m"
+  },
+  "to_insist": {
+    "text": "insistirati",
+    "aspect": "imperfective"
+  },
+  "to_express": {
+    "imperfective": "izražavati",
+    "perfective": "izraziti"
+  },
+  "to_declare": {
+    "imperfective": "proglašavati",
+    "perfective": "proglasiti"
+  },
+  "to_propose": {
+    "imperfective": "predlagati",
+    "perfective": "predložiti"
+  },
+  "to_recommend": {
+    "imperfective": "preporučivati",
+    "perfective": "preporučiti"
+  },
+  "to_excuse": {
+    "imperfective": "opravdavati",
+    "perfective": "opravdati"
+  },
+  "to_blame": {
+    "imperfective": "kriviti",
+    "perfective": "okriviti"
+  },
+  "to_accuse": {
+    "imperfective": "optuživati",
+    "perfective": "optužiti"
+  },
+  "to_convince": {
+    "imperfective": "ubeđivati",
+    "perfective": "ubediti"
+  },
+  "to_comment": {
+    "text": "komentarisati",
+    "aspect": "imperfective"
+  },
+  "to_question": {
+    "imperfective": "ispitivati",
+    "perfective": "ispitati"
+  },
+  "to_cite": {
+    "text": "citirati",
+    "aspect": "imperfective"
+  },
+  "generation": {
+    "text": "generacija",
+    "gender": "f"
+  },
+  "crowd": {
+    "text": "gomila",
+    "gender": "f"
+  },
+  "troop": {
+    "text": "trupa",
+    "gender": "f"
+  },
+  "crew": {
+    "text": "posada",
+    "gender": "f"
+  },
+  "staff": {
+    "text": "osoblje",
+    "gender": "n"
+  },
+  "minority": {
+    "text": "manjina",
+    "gender": "f"
+  },
+  "majority": {
+    "text": "većina",
+    "gender": "f"
+  },
+  "population": {
+    "text": "stanovništvo",
+    "gender": "n"
+  },
+  "community": {
+    "text": "zajednica",
+    "gender": "f"
+  },
+  "society": {
+    "text": "društvo",
+    "gender": "n"
+  },
+  "public_n": {
+    "text": "javnost",
+    "gender": "f"
+  },
+  "folk": {
+    "text": "narod",
+    "gender": "m"
+  },
+  "enemy": {
+    "text": "neprijatelj",
+    "gender": "m"
+  },
+  "hero": {
+    "text": "heroj",
+    "gender": "m"
+  },
+  "association": {
+    "text": "udruženje",
+    "gender": "n"
+  },
+  "panel": {
+    "text": "panel",
+    "gender": "m"
+  },
+  "call": {
+    "text": "poziv",
+    "gender": "m"
+  },
+  "talk": {
+    "text": "ćaskanje",
+    "gender": "n"
+  },
+  "conversation": {
+    "text": "razgovor",
+    "gender": "m"
+  },
+  "discussion": {
+    "text": "rasprava",
+    "gender": "f"
+  },
+  "debate": {
+    "text": "debata",
+    "gender": "f"
+  },
+  "statement": {
+    "text": "izjava",
+    "gender": "f"
+  },
+  "expression": {
+    "text": "izraz",
+    "gender": "m"
+  },
+  "explanation": {
+    "text": "objašnjenje",
+    "gender": "n"
+  },
+  "instruction": {
+    "text": "uputstvo",
+    "gender": "n"
+  },
+  "advice": {
+    "text": "savet",
+    "gender": "m"
+  },
+  "promise": {
+    "text": "obećanje",
+    "gender": "n"
+  },
+  "claim": {
+    "text": "tvrdnja",
+    "gender": "f"
+  },
+  "agreement": {
+    "text": "sporazum",
+    "gender": "m"
+  },
+  "joke": {
+    "text": "šala",
+    "gender": "f"
+  },
+  "note": {
+    "text": "beleška",
+    "gender": "f"
+  },
+  "contact": {
+    "text": "kontakt",
+    "gender": "m"
+  },
+  "connection": {
+    "text": "veza",
+    "gender": "f"
+  },
+  "communication": {
+    "text": "komunikacija",
+    "gender": "f"
+  },
+  "relation": {
+    "text": "odnos",
+    "gender": "m"
+  },
+  "interaction": {
+    "text": "interakcija",
+    "gender": "f"
+  },
+  "access": {
+    "text": "pristup",
+    "gender": "m"
+  },
+  "support": {
+    "text": "podrška",
+    "gender": "f"
+  },
+  "help": {
+    "text": "pomoć",
+    "gender": "f"
+  },
+  "report": {
+    "text": "izveštaj",
+    "gender": "m"
+  },
+  "record": {
+    "text": "zapis",
+    "gender": "m"
+  },
+  "list": {
+    "text": "spisak",
+    "gender": "m"
+  },
+  "sign": {
+    "text": "znak",
+    "gender": "m"
+  },
+  "sound": {
+    "text": "zvuk",
+    "gender": "m"
+  },
+  "reference": {
+    "text": "referenca",
+    "gender": "f"
+  },
+  "coverage": {
+    "text": "pokrivenost",
+    "gender": "f"
+  },
+  "aid": {
+    "text": "potpora",
+    "gender": "f"
+  },
+  "photograph": {
+    "text": "fotografija",
+    "gender": "f"
+  },
+  "tv": {
+    "text": "televizor",
+    "gender": "m"
+  },
+  "episode": {
+    "text": "epizoda",
+    "gender": "f"
+  },
+  "scene": {
+    "text": "scena",
+    "gender": "f"
+  },
+  "stage": {
+    "text": "pozornica",
+    "gender": "f"
+  },
+  "play": {
+    "text": "predstava",
+    "gender": "f"
+  },
+  "studio": {
+    "text": "studio",
+    "gender": "m"
+  },
+  "media": {
+    "text": "mediji",
+    "gender": "m"
+  },
+  "press": {
+    "text": "štampa",
+    "gender": "f"
+  },
+  "newspaper": {
+    "text": "novine",
+    "gender": "f"
+  },
+  "magazine": {
+    "text": "magazin",
+    "gender": "m"
+  },
+  "journal": {
+    "text": "časopis",
+    "gender": "m"
+  },
+  "article": {
+    "text": "članak",
+    "gender": "m"
+  },
+  "page": {
+    "text": "stranica",
+    "gender": "f"
+  },
+  "text": {
+    "text": "tekst",
+    "gender": "m"
+  },
+  "title": {
+    "text": "naslov",
+    "gender": "m"
+  },
+  "chapter": {
+    "text": "poglavlje",
+    "gender": "n"
+  },
+  "novel": {
+    "text": "roman",
+    "gender": "m"
+  },
+  "literature": {
+    "text": "književnost",
+    "gender": "f"
+  },
+  "blog": {
+    "text": "blog",
+    "gender": "m"
+  },
+  "post": {
+    "text": "objava",
+    "gender": "f"
+  },
+  "comment": {
+    "text": "komentar",
+    "gender": "m"
+  },
+  "image": {
+    "text": "snimak",
+    "gender": "m"
+  },
+  "album": {
+    "text": "album",
+    "gender": "m"
+  },
+  "review": {
+    "text": "recenzija",
+    "gender": "f"
+  },
+  "content": {
+    "text": "sadržaj",
+    "gender": "m"
+  },
+  "ad": {
+    "text": "reklama",
+    "gender": "f"
+  },
+  "center": {
+    "text": "centar",
+    "gender": "m"
+  },
+  "site": {
+    "text": "lokalitet",
+    "gender": "m"
+  },
+  "space": {
+    "text": "prostor",
+    "gender": "m"
+  },
+  "ground": {
+    "text": "tlo",
+    "gender": "n"
+  },
+  "location": {
+    "text": "lokacija",
+    "gender": "f"
+  },
+  "camp": {
+    "text": "kamp",
+    "gender": "m"
+  },
+  "farm": {
+    "text": "farma",
+    "gender": "f"
+  },
+  "yard": {
+    "text": "dvorište",
+    "gender": "n"
+  },
+  "spot": {
+    "text": "mestašce",
+    "gender": "n"
+  },
+  "setting": {
+    "text": "okruženje",
+    "gender": "n"
+  },
+  "zone": {
+    "text": "zona",
+    "gender": "f"
+  },
+  "band": {
+    "text": "bend",
+    "gender": "m"
+  },
+  "dance": {
+    "text": "ples",
+    "gender": "m"
+  },
+  "art": {
+    "text": "umetnost",
+    "gender": "f"
+  },
+  "painting": {
+    "text": "slikarstvo",
+    "gender": "n"
+  },
+  "design": {
+    "text": "dizajn",
+    "gender": "m"
+  },
+  "style": {
+    "text": "stil",
+    "gender": "m"
+  },
+  "fashion": {
+    "text": "moda",
+    "gender": "f"
+  },
+  "technology": {
+    "text": "tehnologija",
+    "gender": "f"
+  },
+  "web": {
+    "text": "veb",
+    "gender": "m"
+  },
+  "digital": {
+    "m": "digitalni",
+    "f": "digitalna",
+    "n": "digitalno"
+  },
+  "link": {
+    "text": "link",
+    "gender": "m"
+  },
+  "file": {
+    "text": "fajl",
+    "gender": "m"
+  },
+  "device": {
+    "text": "uređaj",
+    "gender": "m"
+  },
+  "machine": {
+    "text": "mašina",
+    "gender": "f"
+  },
+  "tool": {
+    "text": "alat",
+    "gender": "m"
+  },
+  "information": {
+    "text": "informacija",
+    "gender": "f"
+  },
+  "source": {
+    "text": "izvor",
+    "gender": "m"
+  },
+  "to_publish": {
+    "imperfective": "objavljivati",
+    "perfective": "objaviti"
+  },
+  "to_post": {
+    "text": "postovati",
+    "aspect": "imperfective"
+  },
+  "to_release": {
+    "imperfective": "puštati",
+    "perfective": "pustiti"
+  },
+  "to_record": {
+    "imperfective": "snimati",
+    "perfective": "snimiti"
+  },
+  "to_capture": {
+    "imperfective": "zarobljavati",
+    "perfective": "zarobiti"
+  },
+  "to_file": {
+    "imperfective": "zavoditi",
+    "perfective": "zavesti"
+  },
+  "to_link": {
+    "imperfective": "povezivati",
+    "perfective": "povezati"
+  },
+  "to_connect": {
+    "imperfective": "spajati",
+    "perfective": "spojiti"
+  },
+  "to_direct": {
+    "text": "režirati",
+    "aspect": "imperfective"
+  },
+  "to_issue": {
+    "imperfective": "izdavati",
+    "perfective": "izdati"
+  },
+  "to_feature": {
+    "imperfective": "isticati",
+    "perfective": "istaći"
+  },
+  "to_mark": {
+    "imperfective": "obeležavati",
+    "perfective": "obeležiti"
+  },
+  "to_list": {
+    "imperfective": "nabrajati",
+    "perfective": "nabrojati"
+  },
+  "to_paint": {
+    "imperfective": "slikati",
+    "perfective": "naslikati"
+  },
+  "sport": {
+    "text": "sport",
+    "gender": "m"
+  },
+  "club": {
+    "text": "klub",
+    "gender": "m"
+  },
+  "football": {
+    "text": "fudbal",
+    "gender": "m"
+  },
+  "baseball": {
+    "text": "bejzbol",
+    "gender": "m"
+  },
+  "award": {
+    "text": "nagrada",
+    "gender": "f"
+  },
+  "competition": {
+    "text": "takmičenje",
+    "gender": "n"
+  },
+  "event": {
+    "text": "događaj",
+    "gender": "m"
+  },
+  "activity": {
+    "text": "aktivnost",
+    "gender": "f"
+  },
+  "party": {
+    "text": "žurka",
+    "gender": "f"
+  },
+  "tour": {
+    "text": "tura",
+    "gender": "f"
+  },
+  "visit": {
+    "text": "poseta",
+    "gender": "f"
+  },
+  "travel": {
+    "text": "putovanja",
+    "gender": "n"
+  },
+  "ride": {
+    "text": "vožnja",
+    "gender": "f"
+  },
+  "drive": {
+    "text": "vožnja kolima",
+    "gender": "f"
+  },
+  "sight": {
+    "text": "prizor",
+    "gender": "m"
+  },
+  "stuff": {
+    "text": "stvari",
+    "gender": "f"
+  },
+  "card": {
+    "text": "kartica",
+    "gender": "f"
+  },
+  "ring": {
+    "text": "prsten",
+    "gender": "m"
+  },
+  "chain": {
+    "text": "lanac",
+    "gender": "m"
+  },
+  "sheet": {
+    "text": "čaršav",
+    "gender": "m"
+  },
+  "copy": {
+    "text": "kopija",
+    "gender": "f"
+  },
+  "check": {
+    "text": "ček",
+    "gender": "m"
+  },
+  "cover": {
+    "text": "poklopac",
+    "gender": "m"
+  },
+  "desk": {
+    "text": "radni sto",
+    "gender": "m"
+  },
+  "equipment": {
+    "text": "oprema",
+    "gender": "f"
+  },
+  "bunch": {
+    "text": "hrpa",
+    "gender": "f"
+  },
+  "pair": {
+    "text": "par",
+    "gender": "m"
+  },
+  "collection": {
+    "text": "kolekcija",
+    "gender": "f"
+  },
+  "bay": {
+    "text": "zaliv",
+    "gender": "m"
+  },
+  "nature": {
+    "text": "priroda",
+    "gender": "f"
+  },
+  "natural": {
+    "m": "prirodan",
+    "f": "prirodna",
+    "n": "prirodno"
+  },
+  "environment": {
+    "text": "životna sredina",
+    "gender": "f"
+  },
+  "environmental": {
+    "m": "ekološki",
+    "f": "ekološka",
+    "n": "ekološko"
+  },
+  "clinic": {
+    "text": "klinika",
+    "gender": "f"
+  },
+  "stadium": {
+    "text": "stadion",
+    "gender": "m"
+  },
+  "tower": {
+    "text": "toranj",
+    "gender": "m"
+  },
+  "castle": {
+    "text": "zamak",
+    "gender": "m"
+  },
+  "temple": {
+    "text": "hram",
+    "gender": "m"
+  },
+  "sidewalk": {
+    "text": "trotoar",
+    "gender": "m"
+  },
+  "tunnel": {
+    "text": "tunel",
+    "gender": "m"
+  },
+  "zoo": {
+    "text": "zoološki vrt",
+    "gender": "m"
+  },
+  "hairdresser": {
+    "text": "frizer",
+    "gender": "m"
+  },
+  "bar": {
+    "text": "bar",
+    "gender": "m"
+  },
+  "top": {
+    "text": "vrh",
+    "gender": "m"
+  },
+  "bottom": {
+    "text": "dno",
+    "gender": "n"
+  },
+  "side": {
+    "text": "strana",
+    "gender": "f"
+  },
+  "middle": {
+    "m": "srednji",
+    "f": "srednja",
+    "n": "srednje"
+  },
+  "front": {
+    "m": "prednji",
+    "f": "prednja",
+    "n": "prednje"
+  },
+  "direction": {
+    "text": "pravac",
+    "gender": "m"
+  },
+  "path": {
+    "text": "staza",
+    "gender": "f"
+  },
+  "track": {
+    "text": "kolosek",
+    "gender": "m"
+  },
+  "trail": {
+    "text": "trag",
+    "gender": "m"
+  },
+  "section": {
+    "text": "odeljak",
+    "gender": "m"
+  },
+  "division": {
+    "text": "podela",
+    "gender": "f"
+  },
+  "quarter": {
+    "text": "četvrt",
+    "gender": "f"
+  },
+  "base": {
+    "text": "baza",
+    "gender": "f"
+  },
+  "hall": {
+    "text": "sala",
+    "gender": "f"
+  },
+  "facility": {
+    "text": "objekat",
+    "gender": "m"
+  },
+  "institute": {
+    "text": "institut",
+    "gender": "m"
+  },
+  "sand": {
+    "text": "pesak",
+    "gender": "m"
+  },
+  "dust": {
+    "text": "prašina",
+    "gender": "f"
+  },
+  "smoke": {
+    "text": "dim",
+    "gender": "m"
+  },
+  "seed": {
+    "text": "seme",
+    "gender": "n"
+  },
+  "branch": {
+    "text": "grana",
+    "gender": "f"
+  },
+  "rose": {
+    "text": "ruža",
+    "gender": "f"
+  },
+  "flood": {
+    "text": "poplava",
+    "gender": "f"
+  },
+  "fog": {
+    "text": "magla",
+    "gender": "f"
+  },
+  "rock": {
+    "text": "stena",
+    "gender": "f"
+  },
+  "plant": {
+    "text": "biljka",
+    "gender": "f"
+  },
+  "leaf": {
+    "text": "list",
+    "gender": "m"
+  },
+  "root": {
+    "text": "koren",
+    "gender": "m"
+  },
+  "wing": {
+    "text": "krilo",
+    "gender": "n"
+  },
+  "wave": {
+    "text": "talas",
+    "gender": "m"
+  },
+  "shadow": {
+    "text": "senka",
+    "gender": "f"
+  },
+  "air": {
+    "text": "vazduh",
+    "gender": "m"
+  },
+  "light_n": {
+    "text": "svetlost",
+    "gender": "f"
+  },
+  "duck": {
+    "text": "patka",
+    "gender": "f"
+  },
+  "tiger": {
+    "text": "tigar",
+    "gender": "m"
+  },
+  "pet": {
+    "text": "kućni ljubimac",
+    "gender": "m"
+  },
+  "tail": {
+    "text": "rep",
+    "gender": "m"
+  },
+  "strange": {
+    "m": "čudan",
+    "f": "čudna",
+    "n": "čudno"
+  },
+  "weird": {
+    "m": "uvrnut",
+    "f": "uvrnuta",
+    "n": "uvrnuto"
+  },
+  "wonderful": {
+    "m": "divan",
+    "f": "divna",
+    "n": "divno"
+  },
+  "amazing": {
+    "m": "zadivljujuć",
+    "f": "zadivljujuća",
+    "n": "zadivljujuće"
+  },
+  "terrible": {
+    "m": "užasan",
+    "f": "užasna",
+    "n": "užasno"
+  },
+  "excellent": {
+    "m": "odličan",
+    "f": "odlična",
+    "n": "odlično"
+  },
+  "super": {
+    "m": "super",
+    "f": "super",
+    "n": "super"
+  },
+  "famous": {
+    "m": "poznat",
+    "f": "poznata",
+    "n": "poznato"
+  },
+  "unique": {
+    "m": "jedinstven",
+    "f": "jedinstvena",
+    "n": "jedinstveno"
+  },
+  "rare": {
+    "m": "redak",
+    "f": "retka",
+    "n": "retko"
+  },
+  "familiar": {
+    "m": "blizak",
+    "f": "bliska",
+    "n": "blisko"
+  },
+  "obvious": {
+    "m": "očigledan",
+    "f": "očigledna",
+    "n": "očigledno"
+  },
+  "impossible": {
+    "m": "nemoguć",
+    "f": "nemoguća",
+    "n": "nemoguće"
+  },
+  "fair": {
+    "m": "pravedan",
+    "f": "pravedna",
+    "n": "pravedno"
+  },
+  "appropriate": {
+    "m": "prikladan",
+    "f": "prikladna",
+    "n": "prikladno"
+  },
+  "useful": {
+    "m": "koristan",
+    "f": "korisna",
+    "n": "korisno"
+  },
+  "cool": {
+    "m": "kul",
+    "f": "kul",
+    "n": "kul"
+  },
+  "crazy": {
+    "m": "lud",
+    "f": "luda",
+    "n": "ludo"
+  },
+  "stupid": {
+    "m": "glup",
+    "f": "glupa",
+    "n": "glupo"
+  },
+  "tough": {
+    "m": "žilav",
+    "f": "žilava",
+    "n": "žilavo"
+  },
+  "lazy": {
+    "m": "lenj",
+    "f": "lenja",
+    "n": "lenjo"
+  },
+  "rude": {
+    "m": "nepristojan",
+    "f": "nepristojna",
+    "n": "nepristojno"
+  },
+  "shy": {
+    "m": "stidljiv",
+    "f": "stidljiva",
+    "n": "stidljivo"
+  },
+  "nervous": {
+    "m": "nervozan",
+    "f": "nervozna",
+    "n": "nervozno"
+  },
+  "lonely": {
+    "m": "usamljen",
+    "f": "usamljena",
+    "n": "usamljeno"
+  },
+  "proud": {
+    "m": "ponosan",
+    "f": "ponosna",
+    "n": "ponosno"
+  },
+  "lucky": {
+    "m": "sretan",
+    "f": "sretna",
+    "n": "sretno"
+  },
+  "careful": {
+    "m": "pažljiv",
+    "f": "pažljiva",
+    "n": "pažljivo"
+  },
+  "to_beat": {
+    "imperfective": "tući",
+    "perfective": "istući"
+  },
+  "to_kick": {
+    "imperfective": "šutirati",
+    "perfective": "šutnuti"
+  },
+  "to_strike": {
+    "imperfective": "lupati",
+    "perfective": "lupiti"
+  },
+  "to_blow": {
+    "imperfective": "duvati",
+    "perfective": "dunuti"
+  },
+  "to_roll": {
+    "imperfective": "kotrljati",
+    "perfective": "otkotrljati"
+  },
+  "to_lift": {
+    "imperfective": "dizati",
+    "perfective": "dići"
+  },
+  "to_press": {
+    "imperfective": "pritiskati",
+    "perfective": "pritisnuti"
+  },
+  "to_knock": {
+    "imperfective": "kucati",
+    "perfective": "pokucati"
+  },
+  "to_grab": {
+    "imperfective": "grabiti",
+    "perfective": "zgrabiti"
+  },
+  "to_stick": {
+    "imperfective": "lepiti",
+    "perfective": "zalepiti"
+  },
+  "to_ring": {
+    "imperfective": "zvoniti",
+    "perfective": "zazvoniti"
+  },
+  "to_bite": {
+    "imperfective": "gristi",
+    "perfective": "ugristi"
+  },
+  "to_swallow": {
+    "imperfective": "gutati",
+    "perfective": "progutati"
+  },
+  "willing": {
+    "m": "voljan",
+    "f": "voljna",
+    "n": "voljno"
+  },
+  "concerned": {
+    "m": "zabrinut",
+    "f": "zabrinuta",
+    "n": "zabrinuto"
+  },
+  "aware": {
+    "m": "svestan",
+    "f": "svesna",
+    "n": "svesno"
+  },
+  "interested": {
+    "m": "zainteresovan",
+    "f": "zainteresovana",
+    "n": "zainteresovano"
+  },
+  "surprised": {
+    "m": "iznenađen",
+    "f": "iznenađena",
+    "n": "iznenađeno"
+  },
+  "excited": {
+    "m": "uzbuđen",
+    "f": "uzbuđena",
+    "n": "uzbuđeno"
+  },
+  "worried": {
+    "m": "uznemiren",
+    "f": "uznemirena",
+    "n": "uznemireno"
+  },
+  "creative": {
+    "m": "kreativan",
+    "f": "kreativna",
+    "n": "kreativno"
+  },
+  "emotional": {
+    "m": "emotivan",
+    "f": "emotivna",
+    "n": "emotivno"
+  },
+  "mental": {
+    "m": "mentalni",
+    "f": "mentalna",
+    "n": "mentalno"
+  },
+  "moral": {
+    "m": "moralan",
+    "f": "moralna",
+    "n": "moralno"
+  },
+  "gay": {
+    "m": "gej",
+    "f": "gej",
+    "n": "gej"
+  },
+  "cute": {
+    "m": "simpatičan",
+    "f": "simpatična",
+    "n": "simpatično"
+  },
+  "handsome": {
+    "m": "zgodan",
+    "f": "zgodna",
+    "n": "zgodno"
+  },
+  "silent": {
+    "m": "nečujan",
+    "f": "nečujna",
+    "n": "nečujno"
+  },
+  "thick": {
+    "m": "debeo",
+    "f": "debela",
+    "n": "debelo"
+  },
+  "thin": {
+    "m": "tanak",
+    "f": "tanka",
+    "n": "tanko"
+  },
+  "fat": {
+    "text": "mast",
+    "gender": "f"
+  },
+  "narrow": {
+    "m": "uzak",
+    "f": "uska",
+    "n": "usko"
+  },
+  "flat": {
+    "m": "ravan",
+    "f": "ravna",
+    "n": "ravno"
+  },
+  "sharp": {
+    "m": "oštar",
+    "f": "oštra",
+    "n": "oštro"
+  },
+  "smooth": {
+    "m": "gladak",
+    "f": "glatka",
+    "n": "glatko"
+  },
+  "rough": {
+    "m": "grub",
+    "f": "gruba",
+    "n": "grubo"
+  },
+  "tight": {
+    "m": "tesan",
+    "f": "tesna",
+    "n": "tesno"
+  },
+  "loose": {
+    "m": "labav",
+    "f": "labava",
+    "n": "labavo"
+  },
+  "raw": {
+    "m": "sirov",
+    "f": "sirova",
+    "n": "sirovo"
+  },
+  "frozen": {
+    "m": "smrznut",
+    "f": "smrznuta",
+    "n": "smrznuto"
+  },
+  "awake": {
+    "m": "budan",
+    "f": "budna",
+    "n": "budno"
+  },
+  "asleep": {
+    "m": "zaspao",
+    "f": "zaspala",
+    "n": "zaspalo"
+  },
+  "drunk": {
+    "m": "pijan",
+    "f": "pijana",
+    "n": "pijano"
+  },
+  "private": {
+    "m": "privatan",
+    "f": "privatna",
+    "n": "privatno"
+  },
+  "personal": {
+    "m": "lični",
+    "f": "lična",
+    "n": "lično"
+  },
+  "medical": {
+    "m": "medicinski",
+    "f": "medicinska",
+    "n": "medicinsko"
+  },
+  "physical": {
+    "m": "fizički",
+    "f": "fizička",
+    "n": "fizičko"
+  },
+  "sexual": {
+    "m": "seksualni",
+    "f": "seksualna",
+    "n": "seksualno"
+  },
+  "female": {
+    "m": "ženski",
+    "f": "ženska",
+    "n": "žensko"
+  },
+  "male": {
+    "m": "muški",
+    "f": "muška",
+    "n": "muško"
+  },
+  "normal": {
+    "m": "normalan",
+    "f": "normalna",
+    "n": "normalno"
+  },
+  "wild": {
+    "m": "divlji",
+    "f": "divlja",
+    "n": "divlje"
+  },
+  "active": {
+    "m": "aktivan",
+    "f": "aktivna",
+    "n": "aktivno"
+  },
+  "direct": {
+    "m": "direktan",
+    "f": "direktna",
+    "n": "direktno"
+  },
+  "broad": {
+    "m": "prostran",
+    "f": "prostrana",
+    "n": "prostrano"
+  },
+  "complex": {
+    "m": "složen",
+    "f": "složena",
+    "n": "složeno"
+  },
+  "equal": {
+    "m": "jednak",
+    "f": "jednaka",
+    "n": "jednako"
+  },
+  "gender": {
+    "text": "rod",
+    "gender": "m"
+  },
+  "major": {
+    "m": "krupan",
+    "f": "krupna",
+    "n": "krupno"
+  },
+  "serious": {
+    "m": "ozbiljan",
+    "f": "ozbiljna",
+    "n": "ozbiljno"
+  },
+  "significant": {
+    "m": "značajan",
+    "f": "značajna",
+    "n": "značajno"
+  },
+  "critical": {
+    "m": "kritičan",
+    "f": "kritična",
+    "n": "kritično"
+  },
+  "powerful": {
+    "m": "moćan",
+    "f": "moćna",
+    "n": "moćno"
+  },
+  "key_a": {
+    "m": "ključni",
+    "f": "ključna",
+    "n": "ključno"
+  },
+  "primary": {
+    "m": "primarni",
+    "f": "primarna",
+    "n": "primarno"
+  },
+  "prime": {
+    "m": "prvoklasan",
+    "f": "prvoklasna",
+    "n": "prvoklasno"
+  },
+  "senior": {
+    "m": "stariji",
+    "f": "starija",
+    "n": "starije"
+  },
+  "top_a": {
+    "m": "vrhunski",
+    "f": "vrhunska",
+    "n": "vrhunsko"
+  },
+  "positive": {
+    "m": "pozitivan",
+    "f": "pozitivna",
+    "n": "pozitivno"
+  },
+  "negative": {
+    "m": "negativan",
+    "f": "negativna",
+    "n": "negativno"
+  },
+  "independent": {
+    "m": "nezavisan",
+    "f": "nezavisna",
+    "n": "nezavisno"
+  },
+  "responsible": {
+    "m": "odgovoran",
+    "f": "odgovorna",
+    "n": "odgovorno"
+  },
+  "original": {
+    "m": "originalan",
+    "f": "originalna",
+    "n": "originalno"
+  },
+  "general": {
+    "m": "opšti",
+    "f": "opšta",
+    "n": "opšte"
+  },
+  "french": {
+    "m": "francuski",
+    "f": "francuska",
+    "n": "francusko"
+  },
+  "british": {
+    "m": "britanski",
+    "f": "britanska",
+    "n": "britansko"
+  },
+  "chinese": {
+    "m": "kineski",
+    "f": "kineska",
+    "n": "kinesko"
+  },
+  "european": {
+    "m": "evropski",
+    "f": "evropska",
+    "n": "evropsko"
+  },
+  "african": {
+    "m": "afrički",
+    "f": "afrička",
+    "n": "afričko"
+  },
+  "russian": {
+    "m": "ruski",
+    "f": "ruska",
+    "n": "rusko"
+  },
+  "indian": {
+    "m": "indijski",
+    "f": "indijska",
+    "n": "indijsko"
+  },
+  "english": {
+    "m": "engleski",
+    "f": "engleska",
+    "n": "englesko"
+  },
+  "soviet": {
+    "m": "sovjetski",
+    "f": "sovjetska",
+    "n": "sovjetsko"
+  },
+  "native": {
+    "m": "rodni",
+    "f": "rodna",
+    "n": "rodno"
+  },
+  "feeling": {
+    "text": "osećaj",
+    "gender": "m"
+  },
+  "surprise": {
+    "text": "iznenađenje",
+    "gender": "n"
+  },
+  "smile": {
+    "text": "osmeh",
+    "gender": "m"
+  },
+  "tear": {
+    "text": "suza",
+    "gender": "f"
+  },
+  "confidence": {
+    "text": "samopouzdanje",
+    "gender": "n"
+  },
+  "doubt": {
+    "text": "sumnja",
+    "gender": "f"
+  },
+  "respect": {
+    "text": "poštovanje",
+    "gender": "n"
+  },
+  "honor": {
+    "text": "čast",
+    "gender": "f"
+  },
+  "luck": {
+    "text": "sreća",
+    "gender": "f"
+  },
+  "attention": {
+    "text": "pažnja",
+    "gender": "f"
+  },
+  "interest": {
+    "text": "interesovanje",
+    "gender": "n"
+  },
+  "concern": {
+    "text": "briga",
+    "gender": "f"
+  },
+  "beauty": {
+    "text": "lepota",
+    "gender": "f"
+  },
+  "expectation": {
+    "text": "očekivanje",
+    "gender": "n"
+  },
+  "ability": {
+    "text": "sposobnost",
+    "gender": "f"
+  },
+  "intelligence": {
+    "text": "inteligencija",
+    "gender": "f"
+  },
+  "identity": {
+    "text": "identitet",
+    "gender": "m"
+  },
+  "character": {
+    "text": "karakter",
+    "gender": "m"
+  },
+  "behavior": {
+    "text": "ponašanje",
+    "gender": "n"
+  },
+  "manner": {
+    "text": "manir",
+    "gender": "m"
+  },
+  "appearance": {
+    "text": "izgled",
+    "gender": "m"
+  },
+  "leadership": {
+    "text": "liderstvo",
+    "gender": "n"
+  },
+  "presence": {
+    "text": "prisustvo",
+    "gender": "n"
+  },
+  "talent": {
+    "text": "talenat",
+    "gender": "m"
+  },
+  "strength": {
+    "text": "snaga",
+    "gender": "f"
+  },
+  "role": {
+    "text": "uloga",
+    "gender": "f"
+  },
+  "will": {
+    "text": "volja",
+    "gender": "f"
+  },
+  "background": {
+    "text": "poreklo",
+    "gender": "n"
+  },
+  "supposed": {
+    "m": "navodni",
+    "f": "navodna",
+    "n": "navodno"
+  },
+  "fun": {
+    "m": "zabavan",
+    "f": "zabavna",
+    "n": "zabavno"
+  },
+  "live": {
+    "m": "uživo",
+    "f": "uživo",
+    "n": "uživo"
+  },
+  "used": {
+    "m": "polovan",
+    "f": "polovna",
+    "n": "polovno"
+  },
+  "massive": {
+    "m": "masivan",
+    "f": "masivna",
+    "n": "masivno"
+  },
+  "internal": {
+    "m": "unutrašnji",
+    "f": "unutrašnja",
+    "n": "unutrašnje"
+  },
+  "overall": {
+    "m": "sveukupan",
+    "f": "sveukupna",
+    "n": "sveukupno"
+  },
+  "grand": {
+    "m": "veličanstven",
+    "f": "veličanstvena",
+    "n": "veličanstveno"
+  },
+  "social": {
+    "m": "društveni",
+    "f": "društvena",
+    "n": "društveno"
+  },
+  "public": {
+    "m": "javni",
+    "f": "javna",
+    "n": "javno"
+  },
+  "to_tie": {
+    "imperfective": "vezivati",
+    "perfective": "vezati"
+  },
+  "to_shut": {
+    "text": "zalupiti",
+    "aspect": "perfective"
+  },
+  "to_hide": {
+    "imperfective": "kriti",
+    "perfective": "sakriti"
+  },
+  "to_seek": {
+    "text": "tragati",
+    "aspect": "imperfective"
+  },
+  "to_step": {
+    "imperfective": "koračati",
+    "perfective": "koraknuti"
+  },
+  "to_lean": {
+    "imperfective": "naginjati se",
+    "perfective": "nagnuti se"
+  },
+  "to_stare": {
+    "text": "zuriti",
+    "aspect": "imperfective"
+  },
+  "to_nod": {
+    "imperfective": "klimati glavom",
+    "perfective": "klimnuti glavom"
+  },
+  "to_point": {
+    "imperfective": "upirati prstom",
+    "perfective": "upreti prstom"
+  },
+  "to_head": {
+    "text": "uputiti se",
+    "aspect": "perfective"
+  },
+  "to_escape": {
+    "imperfective": "bežati",
+    "perfective": "pobeći"
+  },
+  "to_disappear": {
+    "imperfective": "nestajati",
+    "perfective": "nestati"
+  },
+  "to_emerge": {
+    "imperfective": "izranjati",
+    "perfective": "izroniti"
+  },
+  "to_own": {
+    "text": "posedovati",
+    "aspect": "imperfective"
+  },
+  "to_belong": {
+    "text": "pripadati",
+    "aspect": "imperfective"
+  },
+  "to_obtain": {
+    "imperfective": "pribavljati",
+    "perfective": "pribaviti"
+  },
+  "to_afford": {
+    "text": "priuštiti",
+    "aspect": "perfective"
+  },
+  "to_purchase": {
+    "imperfective": "nabavljati",
+    "perfective": "nabaviti"
+  },
+  "to_invest": {
+    "imperfective": "ulagati",
+    "perfective": "uložiti"
+  },
+  "to_collect": {
+    "imperfective": "sakupljati",
+    "perfective": "sakupiti"
+  },
+  "to_gather": {
+    "imperfective": "okupljati",
+    "perfective": "okupiti"
+  },
+  "to_select": {
+    "imperfective": "odabirati",
+    "perfective": "odabrati"
+  },
+  "to_adopt": {
+    "imperfective": "usvajati",
+    "perfective": "usvojiti"
+  },
+  "to_grant": {
+    "imperfective": "odobravati",
+    "perfective": "odobriti"
+  },
+  "to_contribute": {
+    "imperfective": "doprinositi",
+    "perfective": "doprineti"
+  },
+  "to_participate": {
+    "text": "učestvovati",
+    "aspect": "imperfective"
+  },
+  "to_engage": {
+    "text": "angažovati",
+    "aspect": "perfective"
+  },
+  "to_exist": {
+    "text": "postojati",
+    "aspect": "imperfective"
+  },
+  "to_occur": {
+    "imperfective": "dešavati se",
+    "perfective": "desiti se"
+  },
+  "to_affect": {
+    "text": "uticati",
+    "aspect": "imperfective"
+  },
+  "to_influence": {
+    "text": "vršiti uticaj",
+    "aspect": "imperfective"
+  },
+  "to_involve": {
+    "imperfective": "uplitati",
+    "perfective": "uplesti"
+  },
+  "to_matter": {
+    "text": "biti važan",
+    "aspect": "imperfective"
+  },
+  "to_tend": {
+    "text": "naginjati",
+    "aspect": "imperfective"
+  },
+  "to_last": {
+    "text": "trajati",
+    "aspect": "imperfective"
+  },
+  "to_be_born": {
+    "imperfective": "rađati se",
+    "perfective": "roditi se"
+  },
+  "to_experience": {
+    "imperfective": "doživljavati",
+    "perfective": "doživeti"
+  },
+  "to_face": {
+    "imperfective": "suočavati se",
+    "perfective": "suočiti se"
+  },
+  "to_surround": {
+    "imperfective": "okruživati",
+    "perfective": "okružiti"
+  },
+  "to_identify": {
+    "text": "identifikovati",
+    "aspect": "perfective"
+  },
+  "to_determine": {
+    "imperfective": "utvrđivati",
+    "perfective": "utvrditi"
+  },
+  "to_prove": {
+    "imperfective": "dokazivati",
+    "perfective": "dokazati"
+  },
+  "to_indicate": {
+    "imperfective": "ukazivati",
+    "perfective": "ukazati"
+  },
+  "to_figure": {
+    "text": "dokučiti",
+    "aspect": "perfective"
+  },
+  "to_discover": {
+    "imperfective": "otkrivati",
+    "perfective": "otkriti"
+  },
+  "to_reveal": {
+    "imperfective": "razotkrivati",
+    "perfective": "razotkriti"
+  },
+  "to_examine": {
+    "imperfective": "pregledavati",
+    "perfective": "pregledati"
+  },
+  "to_test": {
+    "text": "testirati",
+    "aspect": "imperfective"
+  },
+  "to_observe": {
+    "text": "posmatrati",
+    "aspect": "imperfective"
+  },
+  "to_investigate": {
+    "imperfective": "istraživati",
+    "perfective": "istražiti"
+  },
+  "to_explore": {
+    "imperfective": "proučavati",
+    "perfective": "proučiti"
+  },
+  "size": {
+    "text": "veličina",
+    "gender": "f"
+  },
+  "length": {
+    "text": "dužina",
+    "gender": "f"
+  },
+  "weight": {
+    "text": "težina",
+    "gender": "f"
+  },
+  "volume": {
+    "text": "zapremina",
+    "gender": "f"
+  },
+  "distance": {
+    "text": "udaljenost",
+    "gender": "f"
+  },
+  "range": {
+    "text": "opseg",
+    "gender": "m"
+  },
+  "scale": {
+    "text": "razmera",
+    "gender": "f"
+  },
+  "unit": {
+    "text": "jedinica",
+    "gender": "f"
+  },
+  "shape": {
+    "text": "oblik",
+    "gender": "m"
+  },
+  "circle": {
+    "text": "krug",
+    "gender": "m"
+  },
+  "edge": {
+    "text": "ivica",
+    "gender": "f"
+  },
+  "surface": {
+    "text": "površina",
+    "gender": "f"
+  },
+  "hole": {
+    "text": "rupa",
+    "gender": "f"
+  },
+  "block": {
+    "text": "blok",
+    "gender": "m"
+  },
+  "object": {
+    "text": "predmet",
+    "gender": "m"
+  },
+  "piece": {
+    "text": "komad",
+    "gender": "m"
+  },
+  "material": {
+    "text": "materijal",
+    "gender": "m"
+  },
+  "capacity": {
+    "text": "kapacitet",
+    "gender": "m"
+  },
+  "to_increase": {
+    "imperfective": "povećavati",
+    "perfective": "povećati"
+  },
+  "to_reduce": {
+    "imperfective": "smanjivati",
+    "perfective": "smanjiti"
+  },
+  "to_rise": {
+    "imperfective": "dizati se",
+    "perfective": "dići se"
+  },
+  "to_improve": {
+    "imperfective": "poboljšavati",
+    "perfective": "poboljšati"
+  },
+  "to_expand": {
+    "imperfective": "širiti",
+    "perfective": "proširiti"
+  },
+  "to_extend": {
+    "imperfective": "produžavati",
+    "perfective": "produžiti"
+  },
+  "to_spread": {
+    "imperfective": "širiti se",
+    "perfective": "raširiti se"
+  },
+  "to_gain": {
+    "imperfective": "sticati",
+    "perfective": "steći"
+  },
+  "to_limit": {
+    "imperfective": "ograničavati",
+    "perfective": "ograničiti"
+  },
+  "to_shift": {
+    "imperfective": "pomerati",
+    "perfective": "pomeriti"
+  },
+  "to_measure": {
+    "imperfective": "premeravati",
+    "perfective": "premeriti"
+  },
+  "to_compare": {
+    "imperfective": "porediti",
+    "perfective": "uporediti"
+  },
+  "to_estimate": {
+    "imperfective": "procenjivati",
+    "perfective": "proceniti"
+  },
+  "to_cost": {
+    "text": "koštati",
+    "aspect": "imperfective"
+  },
+  "to_contain": {
+    "text": "sadržati",
+    "aspect": "imperfective"
+  },
+  "to_combine": {
+    "text": "kombinovati",
+    "aspect": "imperfective"
+  },
+  "to_replace": {
+    "imperfective": "zamenjivati",
+    "perfective": "zameniti"
+  },
+  "to_generate": {
+    "text": "generisati",
+    "aspect": "imperfective"
+  },
+  "to_result": {
+    "text": "rezultirati",
+    "aspect": "imperfective"
+  },
+  "to_depend": {
+    "text": "zavisiti",
+    "aspect": "imperfective"
+  },
+  "to_predict": {
+    "imperfective": "predviđati",
+    "perfective": "predvideti"
+  },
+  "to_define": {
+    "text": "definisati",
+    "aspect": "perfective"
+  },
+  "to_review": {
+    "imperfective": "preispitivati",
+    "perfective": "preispitati"
+  },
+  "to_demonstrate": {
+    "text": "demonstrirati",
+    "aspect": "imperfective"
+  },
+  "to_solve": {
+    "imperfective": "rešavati",
+    "perfective": "rešiti"
+  },
+  "to_locate": {
+    "text": "locirati",
+    "aspect": "perfective"
+  },
+  "to_refer": {
+    "imperfective": "upućivati",
+    "perfective": "uputiti"
+  },
+  "to_relate": {
+    "text": "odnositi se",
+    "aspect": "imperfective"
+  },
+  "to_associate": {
+    "text": "asocirati",
+    "aspect": "imperfective"
+  },
+  "to_conclude": {
+    "imperfective": "zaključivati",
+    "perfective": "zaključiti"
+  },
+  "to_reflect": {
+    "imperfective": "odražavati",
+    "perfective": "odraziti"
+  },
+  "to_view": {
+    "text": "razgledati",
+    "aspect": "imperfective"
+  },
+  "to_demand": {
+    "text": "zahtevati",
+    "aspect": "imperfective"
+  },
+  "to_attempt": {
+    "text": "nastojati",
+    "aspect": "imperfective"
+  },
+  "to_pursue": {
+    "text": "goniti",
+    "aspect": "imperfective"
+  },
+  "to_expose": {
+    "text": "raskrinkati",
+    "aspect": "perfective"
+  },
+  "to_acknowledge": {
+    "imperfective": "uvažavati",
+    "perfective": "uvažiti"
+  },
+  "to_rely": {
+    "imperfective": "oslanjati se",
+    "perfective": "osloniti se"
+  },
+  "to_ensure": {
+    "imperfective": "osiguravati",
+    "perfective": "osigurati"
+  },
+  "to_encourage": {
+    "imperfective": "podsticati",
+    "perfective": "podstaći"
+  },
+  "to_ignore": {
+    "text": "ignorisati",
+    "aspect": "imperfective"
+  },
+  "to_approach": {
+    "imperfective": "prilaziti",
+    "perfective": "prići"
+  },
+  "to_address": {
+    "imperfective": "obraćati se",
+    "perfective": "obratiti se"
+  },
+  "to_form": {
+    "text": "formirati",
+    "aspect": "perfective"
+  },
+  "to_base": {
+    "imperfective": "zasnivati",
+    "perfective": "zasnovati"
+  },
+  "to_produce": {
+    "imperfective": "proizvoditi",
+    "perfective": "proizvesti"
+  },
+  "to_treat": {
+    "imperfective": "lečiti",
+    "perfective": "izlečiti"
+  },
+  "to_name": {
+    "text": "imenovati",
+    "aspect": "perfective"
+  },
+  "to_sound": {
+    "text": "zvučati",
+    "aspect": "imperfective"
+  },
+  "to_fit": {
+    "text": "pristajati",
+    "aspect": "imperfective"
+  },
+  "to_dress": {
+    "imperfective": "oblačiti se",
+    "perfective": "obući se"
+  },
+  "to_match": {
+    "imperfective": "slagati se",
+    "perfective": "složiti se"
+  },
+  "to_bet": {
+    "imperfective": "kladiti se",
+    "perfective": "okladiti se"
+  },
+  "to_fuck": {
+    "text": "jebati",
+    "aspect": "imperfective"
+  },
+  "to_bear": {
+    "imperfective": "podnositi",
+    "perfective": "podneti"
+  },
+  "to_clear": {
+    "imperfective": "raščišćavati",
+    "perfective": "raščistiti"
+  },
+  "to_score": {
+    "imperfective": "postizati gol",
+    "perfective": "postići gol"
+  },
+  "to_celebrate": {
+    "imperfective": "slaviti",
+    "perfective": "proslaviti"
+  },
+  "to_settle": {
+    "imperfective": "nastanjivati se",
+    "perfective": "nastaniti se"
+  },
+  "hell": {
+    "text": "pakao",
+    "gender": "m"
+  },
+  "shit": {
+    "text": "sranje",
+    "gender": "n"
+  },
+  "ass": {
+    "text": "dupe",
+    "gender": "n"
+  },
+  "case": {
+    "text": "slučaj",
+    "gender": "m"
+  },
+  "matter": {
+    "text": "materija",
+    "gender": "f"
+  },
+  "issue": {
+    "text": "sporno pitanje",
+    "gender": "n"
+  },
+  "situation": {
+    "text": "situacija",
+    "gender": "f"
+  },
+  "condition": {
+    "text": "uslov",
+    "gender": "m"
+  },
+  "circumstance": {
+    "text": "okolnost",
+    "gender": "f"
+  },
+  "context": {
+    "text": "kontekst",
+    "gender": "m"
+  },
+  "possibility": {
+    "text": "mogućnost",
+    "gender": "f"
+  },
+  "option": {
+    "text": "opcija",
+    "gender": "f"
+  },
+  "choice": {
+    "text": "izbor",
+    "gender": "m"
+  },
+  "trouble": {
+    "text": "nevolja",
+    "gender": "f"
+  },
+  "difficulty": {
+    "text": "teškoća",
+    "gender": "f"
+  },
+  "challenge": {
+    "text": "izazov",
+    "gender": "m"
+  },
+  "error": {
+    "text": "pogreška",
+    "gender": "f"
+  },
+  "lack": {
+    "text": "nedostatak",
+    "gender": "m"
+  },
+  "damage": {
+    "text": "šteta",
+    "gender": "f"
+  },
+  "stress": {
+    "text": "stres",
+    "gender": "m"
+  },
+  "type": {
+    "text": "tip",
+    "gender": "m"
+  },
+  "sort": {
+    "text": "sorta",
+    "gender": "f"
+  },
+  "form": {
+    "text": "obrazac",
+    "gender": "m"
+  },
+  "model": {
+    "text": "model",
+    "gender": "m"
+  },
+  "version": {
+    "text": "verzija",
+    "gender": "f"
+  },
+  "variety": {
+    "text": "raznovrsnost",
+    "gender": "f"
+  },
+  "category": {
+    "text": "kategorija",
+    "gender": "f"
+  },
+  "aspect": {
+    "text": "aspekt",
+    "gender": "m"
+  },
+  "component": {
+    "text": "komponenta",
+    "gender": "f"
+  },
+  "core": {
+    "text": "jezgro",
+    "gender": "n"
+  },
+  "basis": {
+    "text": "osnova",
+    "gender": "f"
+  },
+  "foundation": {
+    "text": "temelj",
+    "gender": "m"
+  },
+  "structure": {
+    "text": "struktura",
+    "gender": "f"
+  },
+  "function": {
+    "text": "funkcija",
+    "gender": "f"
+  },
+  "feature": {
+    "text": "odlika",
+    "gender": "f"
+  },
+  "cause": {
+    "text": "uzrok",
+    "gender": "m"
+  },
+  "effect": {
+    "text": "efekat",
+    "gender": "m"
+  },
+  "impact": {
+    "text": "udar",
+    "gender": "m"
+  },
+  "influence": {
+    "text": "uticaj",
+    "gender": "m"
+  },
+  "consequence": {
+    "text": "posledica",
+    "gender": "f"
+  },
+  "outcome": {
+    "text": "ishod",
+    "gender": "m"
+  },
+  "response": {
+    "text": "odziv",
+    "gender": "m"
+  },
+  "process": {
+    "text": "proces",
+    "gender": "m"
+  },
+  "procedure": {
+    "text": "procedura",
+    "gender": "f"
+  },
+  "technique": {
+    "text": "tehnika",
+    "gender": "f"
+  },
+  "approach": {
+    "text": "pristup",
+    "gender": "m"
+  },
+  "solution": {
+    "text": "rešenje",
+    "gender": "n"
+  },
+  "change": {
+    "text": "promena",
+    "gender": "f"
+  },
+  "difference": {
+    "text": "razlika",
+    "gender": "f"
+  },
+  "factor": {
+    "text": "faktor",
+    "gender": "m"
+  },
+  "variable": {
+    "text": "promenljiva",
+    "gender": "f"
+  },
+  "concept": {
+    "text": "koncept",
+    "gender": "m"
+  },
+  "principle": {
+    "text": "princip",
+    "gender": "m"
+  },
+  "definition": {
+    "text": "definicija",
+    "gender": "f"
+  },
+  "knowledge": {
+    "text": "znanje",
+    "gender": "n"
+  },
+  "notion": {
+    "text": "pojam",
+    "gender": "m"
+  },
+  "perspective": {
+    "text": "perspektiva",
+    "gender": "f"
+  },
+  "vision": {
+    "text": "vizija",
+    "gender": "f"
+  },
+  "view": {
+    "text": "pogled",
+    "gender": "m"
+  },
+  "sense": {
+    "text": "čulo",
+    "gender": "n"
+  },
+  "mind": {
+    "text": "um",
+    "gender": "m"
+  },
+  "thought": {
+    "text": "misao",
+    "gender": "f"
+  },
+  "understanding": {
+    "text": "razumevanje",
+    "gender": "n"
+  },
+  "opinion": {
+    "text": "mišljenje",
+    "gender": "n"
+  },
+  "attitude": {
+    "text": "stav",
+    "gender": "m"
+  },
+  "extent": {
+    "text": "obim",
+    "gender": "m"
+  },
+  "importance": {
+    "text": "važnost",
+    "gender": "f"
+  },
+  "conclusion": {
+    "text": "zaključak",
+    "gender": "m"
+  },
+  "thinking": {
+    "text": "razmišljanje",
+    "gender": "n"
+  },
+  "rule": {
+    "text": "pravilo",
+    "gender": "n"
+  },
+  "order": {
+    "text": "poredak",
+    "gender": "m"
+  },
+  "control": {
+    "text": "kontrola",
+    "gender": "f"
+  },
+  "action": {
+    "text": "postupak",
+    "gender": "m"
+  },
+  "decision": {
+    "text": "odluka",
+    "gender": "f"
+  },
+  "act": {
+    "text": "čin",
+    "gender": "m"
+  },
+  "test": {
+    "text": "test",
+    "gender": "m"
+  },
+  "limit": {
+    "text": "granica",
+    "gender": "f"
+  },
+  "balance": {
+    "text": "ravnoteža",
+    "gender": "f"
+  },
+  "focus": {
+    "text": "fokus",
+    "gender": "m"
+  },
+  "use": {
+    "text": "upotreba",
+    "gender": "f"
+  },
+  "need": {
+    "text": "potreba",
+    "gender": "f"
+  },
+  "trend": {
+    "text": "trend",
+    "gender": "m"
+  },
+  "theme": {
+    "text": "tema",
+    "gender": "f"
+  },
+  "topic": {
+    "text": "tematika",
+    "gender": "f"
+  },
+  "detail": {
+    "text": "detalj",
+    "gender": "m"
+  },
+  "measure": {
+    "text": "mera",
+    "gender": "f"
+  },
+  "move": {
+    "text": "potez",
+    "gender": "m"
+  },
+  "run": {
+    "text": "trčanje",
+    "gender": "n"
+  },
+  "cut": {
+    "text": "rez",
+    "gender": "m"
+  },
+  "lead": {
+    "text": "vođstvo",
+    "gender": "n"
+  },
+  "return": {
+    "text": "povratak",
+    "gender": "m"
+  },
+  "search": {
+    "text": "pretraga",
+    "gender": "f"
+  },
+  "fight": {
+    "text": "tuča",
+    "gender": "f"
+  },
+  "release": {
+    "text": "izdanje",
+    "gender": "n"
+  },
+  "look": {
+    "text": "letimičan pogled",
+    "gender": "m"
+  },
+  "rest": {
+    "text": "predah",
+    "gender": "m"
+  },
+  "set": {
+    "text": "komplet",
+    "gender": "m"
+  },
+  "figure": {
+    "text": "cifra",
+    "gender": "f"
+  },
+  "fall": {
+    "text": "pad",
+    "gender": "m"
+  },
+  "attempt": {
+    "text": "pokušaj",
+    "gender": "m"
+  },
+  "thus": {
+    "text": "stoga"
+  },
+  "despite": {
+    "text": "uprkos"
+  },
+  "upon": {
+    "text": "nad"
+  },
+  "per": {
+    "text": "po"
+  },
+  "via": {
+    "text": "putem"
+  },
+  "plus": {
+    "text": "plus"
+  },
+  "regarding": {
+    "text": "u vezi sa"
+  },
+  "according_to": {
+    "text": "sudeći po"
+  },
+  "including": {
+    "text": "uključujući"
+  },
+  "worth": {
+    "text": "vredan"
+  },
+  "forth": {
+    "text": "unapred"
+  },
+  "specifically": {
+    "text": "konkretno"
+  },
+  "significantly": {
+    "text": "značajno"
+  },
+  "largely": {
+    "text": "uglavnom"
+  },
+  "onto": {
+    "text": "na"
+  },
+  "throughout": {
+    "text": "širom"
+  },
+  "science": {
+    "text": "nauka",
+    "gender": "f"
+  },
+  "scientific": {
+    "m": "naučni",
+    "f": "naučna",
+    "n": "naučno"
+  },
+  "method": {
+    "text": "metod",
+    "gender": "m"
+  },
+  "analysis": {
+    "text": "analiza",
+    "gender": "f"
+  },
+  "finding": {
+    "text": "nalaz",
+    "gender": "m"
+  },
+  "survey": {
+    "text": "anketa",
+    "gender": "f"
+  },
+  "assessment": {
+    "text": "procena",
+    "gender": "f"
+  },
+  "element": {
+    "text": "element",
+    "gender": "m"
+  },
+  "planet": {
+    "text": "planeta",
+    "gender": "f"
+  },
+  "universe": {
+    "text": "svemir",
+    "gender": "m"
+  },
+  "culture": {
+    "text": "kultura",
+    "gender": "f"
+  },
+  "cultural": {
+    "m": "kulturni",
+    "f": "kulturna",
+    "n": "kulturno"
+  },
+  "tradition": {
+    "text": "tradicija",
+    "gender": "f"
+  },
+  "traditional": {
+    "m": "tradicionalan",
+    "f": "tradicionalna",
+    "n": "tradicionalno"
+  },
+  "religion": {
+    "text": "religija",
+    "gender": "f"
+  },
+  "religious": {
+    "m": "religiozan",
+    "f": "religiozna",
+    "n": "religiozno"
+  },
+  "faith": {
+    "text": "vera",
+    "gender": "f"
+  },
+  "belief": {
+    "text": "verovanje",
+    "gender": "n"
+  },
+  "spirit": {
+    "text": "duh",
+    "gender": "m"
+  },
+  "holy": {
+    "m": "svet",
+    "f": "sveta",
+    "n": "sveto"
+  },
+  "christian": {
+    "m": "hrišćanski",
+    "f": "hrišćanska",
+    "n": "hrišćansko"
+  },
+  "catholic": {
+    "m": "katolički",
+    "f": "katolička",
+    "n": "katoličko"
+  },
+  "jewish": {
+    "m": "jevrejski",
+    "f": "jevrejska",
+    "n": "jevrejsko"
+  },
+  "christmas": {
+    "text": "Božić",
+    "gender": "m"
+  },
+  "clearly": {
+    "text": "jasno"
+  },
+  "obviously": {
+    "text": "očigledno"
+  },
+  "apparently": {
+    "text": "izgleda"
+  },
+  "seriously": {
+    "text": "ozbiljno"
+  },
+  "possibly": {
+    "text": "eventualno"
+  },
+  "somehow": {
+    "text": "nekako"
+  },
+  "truly": {
+    "text": "istinski"
+  },
+  "highly": {
+    "text": "izrazito"
+  },
+  "ultimately": {
+    "text": "naposletku"
+  },
+  "unfortunately": {
+    "text": "nažalost"
+  },
+  "personally": {
+    "text": "lično"
+  },
+  "carefully": {
+    "text": "pažljivo"
+  },
+  "necessarily": {
+    "text": "nužno"
+  },
+  "increasingly": {
+    "text": "sve više"
+  },
+  "marriage": {
+    "text": "brak",
+    "gender": "m"
+  },
+  "bond": {
+    "text": "spona",
+    "gender": "f"
+  },
+  "to_hurt": {
+    "text": "boleti",
+    "aspect": "imperfective"
+  },
+  "to_force": {
+    "imperfective": "prisiljavati",
+    "perfective": "prisiliti"
+  },
+  "to_attack": {
+    "imperfective": "napadati",
+    "perfective": "napasti"
+  },
+  "to_defend": {
+    "imperfective": "braniti",
+    "perfective": "odbraniti"
+  },
+  "to_destroy": {
+    "imperfective": "uništavati",
+    "perfective": "uništiti"
+  },
+  "to_threaten": {
+    "imperfective": "pretiti",
+    "perfective": "zapretiti"
+  },
+  "to_steal": {
+    "imperfective": "krasti",
+    "perfective": "ukrasti"
+  },
+  "to_arrest": {
+    "imperfective": "hapsiti",
+    "perfective": "uhapsiti"
+  },
+  "to_commit": {
+    "text": "počiniti",
+    "aspect": "perfective"
+  },
+  "to_suffer": {
+    "text": "patiti",
+    "aspect": "imperfective"
+  },
+  "to_survive": {
+    "imperfective": "preživljavati",
+    "perfective": "preživeti"
+  },
+  "to_struggle": {
+    "text": "mučiti se",
+    "aspect": "imperfective"
+  },
+  "to_prevent": {
+    "imperfective": "sprečavati",
+    "perfective": "sprečiti"
+  },
+  "to_fail": {
+    "text": "podbaciti",
+    "aspect": "perfective"
+  },
+  "to_challenge": {
+    "imperfective": "izazivati",
+    "perfective": "izazvati"
+  },
+  "to_judge": {
+    "text": "suditi",
+    "aspect": "imperfective"
+  },
+  "to_vote": {
+    "text": "glasati",
+    "aspect": "imperfective"
+  },
+  "state": {
+    "text": "država",
+    "gender": "f"
+  },
+  "government": {
+    "text": "vlada",
+    "gender": "f"
+  },
+  "nation": {
+    "text": "nacija",
+    "gender": "f"
+  },
+  "national": {
+    "m": "nacionalni",
+    "f": "nacionalna",
+    "n": "nacionalno"
+  },
+  "political": {
+    "m": "politički",
+    "f": "politička",
+    "n": "političko"
+  },
+  "politics": {
+    "text": "politika",
+    "gender": "f"
+  },
+  "policy": {
+    "text": "smernica",
+    "gender": "f"
+  },
+  "election": {
+    "text": "izbori",
+    "gender": "m"
+  },
+  "campaign": {
+    "text": "kampanja",
+    "gender": "f"
+  },
+  "vote": {
+    "text": "glas",
+    "gender": "m"
+  },
+  "poll": {
+    "text": "ispitivanje javnog mnjenja",
+    "gender": "n"
+  },
+  "democracy": {
+    "text": "demokratija",
+    "gender": "f"
+  },
+  "liberal": {
+    "m": "liberalan",
+    "f": "liberalna",
+    "n": "liberalno"
+  },
+  "conservative": {
+    "m": "konzervativan",
+    "f": "konzervativna",
+    "n": "konzervativno"
+  },
+  "reform": {
+    "text": "reforma",
+    "gender": "f"
+  },
+  "movement": {
+    "text": "pokret",
+    "gender": "m"
+  },
+  "administration": {
+    "text": "uprava",
+    "gender": "f"
+  },
+  "agency": {
+    "text": "agencija",
+    "gender": "f"
+  },
+  "committee": {
+    "text": "odbor",
+    "gender": "m"
+  },
+  "commission": {
+    "text": "komisija",
+    "gender": "f"
+  },
+  "council": {
+    "text": "veće",
+    "gender": "n"
+  },
+  "institution": {
+    "text": "institucija",
+    "gender": "f"
+  },
+  "union": {
+    "text": "sindikat",
+    "gender": "m"
+  },
+  "authority": {
+    "text": "vlast",
+    "gender": "f"
+  },
+  "district": {
+    "text": "okrug",
+    "gender": "m"
+  },
+  "civil": {
+    "m": "građanski",
+    "f": "građanska",
+    "n": "građansko"
+  },
+  "regulation": {
+    "text": "propis",
+    "gender": "m"
+  },
+  "convention": {
+    "text": "konvencija",
+    "gender": "f"
+  },
+  "investigation": {
+    "text": "istraga",
+    "gender": "f"
+  },
+  "intervention": {
+    "text": "intervencija",
+    "gender": "f"
+  },
+  "abuse": {
+    "text": "zloupotreba",
+    "gender": "f"
+  },
+  "incident": {
+    "text": "incident",
+    "gender": "m"
+  },
+  "protection": {
+    "text": "zaštita",
+    "gender": "f"
+  },
+  "safety": {
+    "text": "bezbednost",
+    "gender": "f"
+  },
+  "duty": {
+    "text": "dužnost",
+    "gender": "f"
+  },
+  "board": {
+    "text": "upravni odbor",
+    "gender": "m"
+  },
+  "jury": {
+    "text": "porota",
+    "gender": "f"
+  },
+  "hearing": {
+    "text": "ročište",
+    "gender": "n"
+  },
+  "criminal": {
+    "m": "kriminalan",
+    "f": "kriminalna",
+    "n": "kriminalno"
+  },
+  "illegal": {
+    "m": "nezakonit",
+    "f": "nezakonita",
+    "n": "nezakonito"
+  },
+  "legal": {
+    "m": "zakonit",
+    "f": "zakonita",
+    "n": "zakonito"
+  },
+  "right_n": {
+    "text": "pravo",
+    "gender": "n"
+  },
+  "prison": {
+    "text": "zatvor",
+    "gender": "m"
+  },
+  "murder": {
+    "text": "ubistvo",
+    "gender": "n"
+  },
+  "military": {
+    "m": "vojni",
+    "f": "vojna",
+    "n": "vojno"
+  },
+  "army": {
+    "text": "vojska",
+    "gender": "f"
+  },
+  "weapon": {
+    "text": "oružje",
+    "gender": "n"
+  },
+  "gun": {
+    "text": "pištolj",
+    "gender": "m"
+  },
+  "shot": {
+    "text": "pucanj",
+    "gender": "m"
+  },
+  "defense": {
+    "text": "odbrana",
+    "gender": "f"
+  },
+  "attack": {
+    "text": "napad",
+    "gender": "m"
+  },
+  "battle": {
+    "text": "bitka",
+    "gender": "f"
+  },
+  "conflict": {
+    "text": "sukob",
+    "gender": "m"
+  },
+  "crisis": {
+    "text": "kriza",
+    "gender": "f"
+  },
+  "threat": {
+    "text": "pretnja",
+    "gender": "f"
+  },
+  "violence": {
+    "text": "nasilje",
+    "gender": "n"
+  },
+  "security": {
+    "text": "sigurnost",
+    "gender": "f"
+  },
+  "force": {
+    "text": "sila",
+    "gender": "f"
+  },
+  "nuclear": {
+    "m": "nuklearni",
+    "f": "nuklearna",
+    "n": "nuklearno"
+  },
+  "mission": {
+    "text": "misija",
+    "gender": "f"
+  },
+  "operation": {
+    "text": "operacija",
+    "gender": "f"
+  },
+  "broken": {
+    "m": "slomljen",
+    "f": "slomljena",
+    "n": "slomljeno"
+  },
   "meta": {
     "levels": {
       "top100": {
@@ -4214,6 +10199,54 @@
       "top900": {
         "name": "Top 900"
       },
+      "top1000": {
+        "name": "Top 1000"
+      },
+      "top1100": {
+        "name": "Top 1100"
+      },
+      "top1200": {
+        "name": "Top 1200"
+      },
+      "top1300": {
+        "name": "Top 1300"
+      },
+      "top1400": {
+        "name": "Top 1400"
+      },
+      "top1500": {
+        "name": "Top 1500"
+      },
+      "top1600": {
+        "name": "Top 1600"
+      },
+      "top1700": {
+        "name": "Top 1700"
+      },
+      "top1800": {
+        "name": "Top 1800"
+      },
+      "top1900": {
+        "name": "Top 1900"
+      },
+      "top2000": {
+        "name": "Top 2000"
+      },
+      "top2100": {
+        "name": "Top 2100"
+      },
+      "top2200": {
+        "name": "Top 2200"
+      },
+      "top2300": {
+        "name": "Top 2300"
+      },
+      "top2400": {
+        "name": "Top 2400"
+      },
+      "top2500": {
+        "name": "Top 2500"
+      },
       "specialized": {
         "name": "Specijalizovani"
       }
@@ -4231,125 +10264,488 @@
       "making_sense": {
         "name": "Ima smisla"
       },
-      "core_verbs": {
-        "name": "Osnovni glagoli"
+      "nuts_and_bolts": {
+        "name": "Sitni delovi"
       },
-      "daily_actions": {
-        "name": "Svakodnevne aktivnosti"
+      "one_to_ten": {
+        "name": "Od jedan do deset"
       },
-      "head_to_toe": {
-        "name": "Od glave do prstiju"
+      "folks_and_friends": {
+        "name": "Ljudi i prijatelji"
       },
-      "my_people": {
-        "name": "Moji ljudi"
+      "family_ties": {
+        "name": "Porodične veze"
       },
-      "bread_and_water": {
-        "name": "Hleb i voda"
+      "say_and_see": {
+        "name": "Reci i vidi"
       },
-      "four_walls": {
-        "name": "Četiri zida"
+      "make_and_do": {
+        "name": "Praviti i raditi"
       },
-      "zero_to_ten": {
-        "name": "Od nule do deset"
+      "day_and_night": {
+        "name": "Dan i noć"
       },
-      "on_the_road": {
-        "name": "Na putu"
+      "bite_to_eat": {
+        "name": "Zalogaj"
       },
-      "good_and_bad": {
-        "name": "Dobro i loše"
+      "true_colours": {
+        "name": "Prave boje"
       },
-      "glue_words": {
-        "name": "Vezni reči"
+      "teens_and_tens": {
+        "name": "Desetice"
       },
-      "hands_on": {
-        "name": "Praktično"
+      "come_and_go": {
+        "name": "Doći i otići"
       },
-      "laugh_and_cry": {
-        "name": "Smeh i plač"
+      "open_and_learn": {
+        "name": "Otvori i uči"
       },
-      "market_basket": {
-        "name": "Tržna korpa"
+      "room_by_room": {
+        "name": "Soba po soba"
       },
-      "rainbow": {
-        "name": "Duga"
+      "table_for_two": {
+        "name": "Sto za dvoje"
       },
-      "days_and_months": {
-        "name": "Dani i meseci"
+      "big_and_small": {
+        "name": "Veliko i malo"
       },
-      "when_and_how_often": {
-        "name": "Kada i kako često"
+      "week_by_week": {
+        "name": "Nedelja po nedelja"
       },
-      "creatures_and_sky": {
-        "name": "Živine i nebo"
+      "who_and_whose": {
+        "name": "Ko i čiji"
       },
-      "city_life": {
-        "name": "Život u gradu"
+      "much_and_little": {
+        "name": "Mnogo i malo"
       },
-      "how_things_are": {
-        "name": "Kako stvari jesu"
+      "some_and_any": {
+        "name": "Neki i bilo koji"
       },
-      "bags_packed": {
-        "name": "Putni prtljag"
+      "in_and_out": {
+        "name": "Unutra i napolje"
       },
-      "heart_and_mind": {
-        "name": "Srce i um"
+      "around_town": {
+        "name": "Po gradu"
       },
-      "coming_and_going": {
-        "name": "Dolazak i odlazak"
+      "getting_there": {
+        "name": "Kako stići"
       },
-      "build_and_break": {
-        "name": "Graditi i slomiti"
+      "money_matters": {
+        "name": "Novčana pitanja"
       },
-      "two_word_wonders": {
-        "name": "Dva reči čuda"
+      "top_to_toe": {
+        "name": "Od glave do pete"
       },
-      "skin_deep": {
-        "name": "Ispod kože"
+      "dressed_up": {
+        "name": "Obučeni"
       },
-      "home_sweet_home": {
-        "name": "Slatko kućno"
+      "now_and_then": {
+        "name": "Ponekad"
       },
-      "wild_side": {
-        "name": "Divlja strana"
+      "yes_no_maybe": {
+        "name": "Da, ne, možda"
       },
-      "taste_and_touch": {
-        "name": "Ukus i dodir"
+      "can_and_must": {
+        "name": "Moći i morati"
       },
-      "people_and_places": {
-        "name": "Ljudi i mesta"
+      "first_and_last": {
+        "name": "Prvi i poslednji"
       },
-      "life_and_work": {
-        "name": "Život i rad"
+      "something_nothing": {
+        "name": "Nešto i ništa"
       },
-      "when_and_where": {
-        "name": "Kada i gde"
+      "nine_to_five": {
+        "name": "Od devet do pet"
       },
-      "sick_and_stuff": {
-        "name": "Bolestan i ostalo"
+      "plugged_in": {
+        "name": "Na mreži"
       },
-      "higher_ground": {
-        "name": "Više tlo"
+      "month_by_month": {
+        "name": "Mesec po mesec"
       },
-      "making_it_happen": {
-        "name": "Čini se da se dešava"
+      "on_the_plate": {
+        "name": "Na tanjiru"
       },
-      "tying_loose_ends": {
-        "name": "Vezivanje rastavljenih krajeva"
+      "give_and_share": {
+        "name": "Dati i podeliti"
       },
-      "what_matters": {
-        "name": "Šta je važno"
+      "here_and_there": {
+        "name": "Tu i tamo"
       },
-      "words_and_stories": {
-        "name": "Reči i priče"
+      "on_the_move": {
+        "name": "U pokretu"
       },
-      "peace_and_war": {
-        "name": "Mir i rat"
+      "papers_please": {
+        "name": "Dokumenta, molim"
       },
-      "however_therefore": {
-        "name": "Međutim, zato"
+      "under_one_roof": {
+        "name": "Pod jednim krovom"
       },
-      "after_dark": {
-        "name": "Posle mračnjenja"
+      "doctors_orders": {
+        "name": "Po nalogu lekara"
+      },
+      "sweet_and_sour": {
+        "name": "Slatko i kiselo"
+      },
+      "clean_and_dirty": {
+        "name": "Čisto i prljavo"
+      },
+      "glad_and_sad": {
+        "name": "Radosni i tužni"
+      },
+      "sun_and_rain": {
+        "name": "Sunce i kiša"
+      },
+      "rise_and_shine": {
+        "name": "Ustani i zasijaj"
+      },
+      "words_and_secrets": {
+        "name": "Reči i tajne"
+      },
+      "ways_and_means": {
+        "name": "Načini i sredstva"
+      },
+      "earn_and_spend": {
+        "name": "Zaradi i potroši"
+      },
+      "talk_it_over": {
+        "name": "Popričajmo"
+      },
+      "high_and_low": {
+        "name": "Visoko i nisko"
+      },
+      "feel_and_believe": {
+        "name": "Osećati i verovati"
+      },
+      "think_it_through": {
+        "name": "Promisli"
+      },
+      "time_after_time": {
+        "name": "Vreme za vremenom"
+      },
+      "bank_on_it": {
+        "name": "U banci"
+      },
+      "for_real": {
+        "name": "Stvarno"
+      },
+      "more_or_less": {
+        "name": "Više ili manje"
+      },
+      "slowly_but_surely": {
+        "name": "Polako ali sigurno"
+      },
+      "safe_and_sound": {
+        "name": "Živ i zdrav"
+      },
+      "early_and_late": {
+        "name": "Rano i kasno"
+      },
+      "time_off": {
+        "name": "Slobodno vreme"
+      },
+      "wheels_and_waves": {
+        "name": "Točkovi i talasi"
+      },
+      "bon_voyage": {
+        "name": "Srećan put"
+      },
+      "whos_who": {
+        "name": "Ko je ko"
+      },
+      "bed_and_bath": {
+        "name": "Krevet i kupatilo"
+      },
+      "four_corners": {
+        "name": "Četiri strane sveta"
+      },
+      "if_and_unless": {
+        "name": "Ako i osim ako"
+      },
+      "say_it_out": {
+        "name": "Reci glasno"
+      },
+      "plan_and_manage": {
+        "name": "Planiraj i vodi"
+      },
+      "sing_and_dance": {
+        "name": "Pevaj i igraj"
+      },
+      "shout_and_whisper": {
+        "name": "Vika i šapat"
+      },
+      "farm_and_wild": {
+        "name": "Farma i divljina"
+      },
+      "land_and_sea": {
+        "name": "Kopno i more"
+      },
+      "skin_and_bones": {
+        "name": "Koža i kosti"
+      },
+      "fix_and_break": {
+        "name": "Popravi i slomi"
+      },
+      "two_word_verbs": {
+        "name": "Glagoli od dve reči"
+      },
+      "kitchen_sink": {
+        "name": "Kuća i nameštaj"
+      },
+      "belt_and_boots": {
+        "name": "Kaiš i čizme"
+      },
+      "spring_cleaning": {
+        "name": "Veliko spremanje"
+      },
+      "spice_rack": {
+        "name": "Polica sa začinima"
+      },
+      "market_stall": {
+        "name": "Tezga na pijaci"
+      },
+      "click_and_print": {
+        "name": "Klikni i štampaj"
+      },
+      "office_hours": {
+        "name": "Radno vreme"
+      },
+      "squeaky_clean": {
+        "name": "Čisto kao suza"
+      },
+      "care_and_cure": {
+        "name": "Nega i lečenje"
+      },
+      "joints_and_bones": {
+        "name": "Zglobovi i kosti"
+      },
+      "under_the_hood": {
+        "name": "Ispod haube"
+      },
+      "exam_time": {
+        "name": "Vreme ispita"
+      },
+      "just_folks": {
+        "name": "Obični ljudi"
+      },
+      "tool_box": {
+        "name": "Kutija s alatom"
+      },
+      "back_to_school": {
+        "name": "Nazad u školu"
+      },
+      "career_ladder": {
+        "name": "Karijerne stepenice"
+      },
+      "company_business": {
+        "name": "Poslovi firme"
+      },
+      "by_the_numbers": {
+        "name": "U brojkama"
+      },
+      "results_count": {
+        "name": "Rezultati se računaju"
+      },
+      "get_it_done": {
+        "name": "Završi posao"
+      },
+      "money_talks": {
+        "name": "Novac govori"
+      },
+      "fine_print": {
+        "name": "Sitna slova"
+      },
+      "kith_and_kin": {
+        "name": "Rod i rodbina"
+      },
+      "at_your_service": {
+        "name": "Na usluzi"
+      },
+      "whos_in_charge": {
+        "name": "Ko je glavni"
+      },
+      "say_it_again": {
+        "name": "Reci ponovo"
+      },
+      "us_and_them": {
+        "name": "Mi i oni"
+      },
+      "talk_of_the_town": {
+        "name": "Priča dana"
+      },
+      "keep_in_touch": {
+        "name": "Ostanimo u kontaktu"
+      },
+      "lights_camera": {
+        "name": "Svetla, kamera"
+      },
+      "read_all_about_it": {
+        "name": "Pročitajte sve o tome"
+      },
+      "on_the_map": {
+        "name": "Na mapi"
+      },
+      "song_and_dance": {
+        "name": "Pesma i igra"
+      },
+      "web_and_wires": {
+        "name": "Mreža i žice"
+      },
+      "publish_and_post": {
+        "name": "Objavi i postavi"
+      },
+      "game_on": {
+        "name": "Igra počinje"
+      },
+      "out_and_about": {
+        "name": "U izlasku"
+      },
+      "bits_and_bobs": {
+        "name": "Sitnice"
+      },
+      "wild_places": {
+        "name": "Divlja mesta"
+      },
+      "sights_to_see": {
+        "name": "Znamenitosti"
+      },
+      "top_and_bottom": {
+        "name": "Vrh i dno"
+      },
+      "leaf_and_root": {
+        "name": "List i koren"
+      },
+      "creature_feature": {
+        "name": "Svet životinja"
+      },
+      "strange_but_true": {
+        "name": "Čudno ali istinito"
+      },
+      "cool_and_crazy": {
+        "name": "Kul i ludo"
+      },
+      "kick_and_roll": {
+        "name": "Šutni i kotrljaj"
+      },
+      "aware_and_willing": {
+        "name": "Svestan i voljan"
+      },
+      "thick_and_thin": {
+        "name": "Debelo i tanko"
+      },
+      "private_matters": {
+        "name": "Lične stvari"
+      },
+      "major_and_minor": {
+        "name": "Glavno i sporedno"
+      },
+      "around_the_world": {
+        "name": "Oko sveta"
+      },
+      "mixed_feelings": {
+        "name": "Pomešana osećanja"
+      },
+      "who_you_are": {
+        "name": "Ko si ti"
+      },
+      "odd_ones_out": {
+        "name": "Uljezi"
+      },
+      "gold_and_silver": {
+        "name": "Zlato i srebro"
+      },
+      "hide_and_seek": {
+        "name": "Žmurke"
+      },
+      "have_and_hold": {
+        "name": "Imati i čuvati"
+      },
+      "it_happens": {
+        "name": "Dešava se"
+      },
+      "find_out": {
+        "name": "Saznaj"
+      },
+      "shape_and_size": {
+        "name": "Oblik i veličina"
+      },
+      "rise_and_fall": {
+        "name": "Uspon i pad"
+      },
+      "weigh_it_up": {
+        "name": "Odmeri"
+      },
+      "work_it_out": {
+        "name": "Reši to"
+      },
+      "try_harder": {
+        "name": "Potrudi se više"
+      },
+      "odds_and_bets": {
+        "name": "Opklade i ostalo"
+      },
+      "case_by_case": {
+        "name": "Od slučaja do slučaja"
+      },
+      "flirts_and_affairs": {
+        "name": "Flertovi i afere"
+      },
+      "kind_of": {
+        "name": "Vrste i oblici"
+      },
+      "cause_and_effect": {
+        "name": "Uzrok i posledica"
+      },
+      "big_ideas": {
+        "name": "Velike ideje"
+      },
+      "rules_of_the_game": {
+        "name": "Pravila igre"
+      },
+      "moves_and_turns": {
+        "name": "Potezi i zaokreti"
+      },
+      "by_the_way": {
+        "name": "Usput"
+      },
+      "science_lab": {
+        "name": "Naučna laboratorija"
+      },
+      "faith_and_tradition": {
+        "name": "Vera i tradicija"
+      },
+      "clearly_and_truly": {
+        "name": "Jasno i iskreno"
+      },
+      "tie_the_knot": {
+        "name": "Venčanje"
+      },
+      "win_and_lose": {
+        "name": "Pobeda i poraz"
+      },
+      "fight_back": {
+        "name": "Uzvrati udarac"
+      },
+      "state_and_nation": {
+        "name": "Država i nacija"
+      },
+      "aim_higher": {
+        "name": "Ciljaj više"
+      },
+      "public_affairs": {
+        "name": "Javni poslovi"
+      },
+      "order_in_court": {
+        "name": "Red u sudnici"
+      },
+      "war_room": {
+        "name": "Ratna soba"
+      },
+      "war_and_peace": {
+        "name": "Rat i mir"
+      },
+      "life_and_death": {
+        "name": "Život i smrt"
       },
       "medical_anatomy": {
         "name": "Medicinska anatomija"
@@ -4408,13 +10804,20 @@
       "romance_intimacy": {
         "name": "Romantika i intimnost"
       }
+    },
+    "segments": {
+      "braindead": {
+        "name": "Bez mozga"
+      },
+      "baby": {
+        "name": "Beba"
+      },
+      "kid": {
+        "name": "Dete"
+      },
+      "adult": {
+        "name": "Odrasli"
+      }
     }
-  },
-  "atm": {
-    "text": "bankomat",
-    "gender": "m"
-  },
-  "open": {
-    "text": "otvoreno"
   }
 }

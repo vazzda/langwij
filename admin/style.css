@@ -291,6 +291,18 @@ main {
 }
 
 
+.deck-section.dragging {
+  opacity: 0.4;
+}
+
+.deck-section.insert-before {
+  box-shadow: 0 -2px 0 0 #2563eb;
+}
+
+.deck-section.insert-after {
+  box-shadow: 0 2px 0 0 #2563eb;
+}
+
 .deck-header {
   display: flex;
   flex-wrap: wrap;

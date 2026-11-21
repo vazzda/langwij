@@ -1,0 +1,182 @@
+kind,id,en,sr,ru,it,fr,es,pt,de
+segment,braindead,Braindead,Bez mozga,Безмозглый,Senza cervello,Sans cervelle,Sin cerebro,Sem cérebro,Hirnlos
+segment,baby,Baby,Beba,Малыш,Neonato,Bébé,Bebé,Bebê,Baby
+segment,kid,Kid,Dete,Ребёнок,Bambino,Enfant,Niño,Criança,Kind
+segment,adult,Adult,Odrasli,Взрослый,Adulto,Adulte,Adulto,Adulto,Erwachsener
+level,top1000,Top 1000,Top 1000,Top 1000,Top 1000,Top 1000,Top 1000,Top 1000,Top 1000
+level,top1100,Top 1100,Top 1100,Top 1100,Top 1100,Top 1100,Top 1100,Top 1100,Top 1100
+level,top1200,Top 1200,Top 1200,Top 1200,Top 1200,Top 1200,Top 1200,Top 1200,Top 1200
+level,top1300,Top 1300,Top 1300,Top 1300,Top 1300,Top 1300,Top 1300,Top 1300,Top 1300
+level,top1400,Top 1400,Top 1400,Top 1400,Top 1400,Top 1400,Top 1400,Top 1400,Top 1400
+level,top1500,Top 1500,Top 1500,Top 1500,Top 1500,Top 1500,Top 1500,Top 1500,Top 1500
+level,top1600,Top 1600,Top 1600,Top 1600,Top 1600,Top 1600,Top 1600,Top 1600,Top 1600
+level,top1700,Top 1700,Top 1700,Top 1700,Top 1700,Top 1700,Top 1700,Top 1700,Top 1700
+level,top1800,Top 1800,Top 1800,Top 1800,Top 1800,Top 1800,Top 1800,Top 1800,Top 1800
+level,top1900,Top 1900,Top 1900,Top 1900,Top 1900,Top 1900,Top 1900,Top 1900,Top 1900
+level,top2000,Top 2000,Top 2000,Top 2000,Top 2000,Top 2000,Top 2000,Top 2000,Top 2000
+level,top2100,Top 2100,Top 2100,Top 2100,Top 2100,Top 2100,Top 2100,Top 2100,Top 2100
+level,top2200,Top 2200,Top 2200,Top 2200,Top 2200,Top 2200,Top 2200,Top 2200,Top 2200
+level,top2300,Top 2300,Top 2300,Top 2300,Top 2300,Top 2300,Top 2300,Top 2300,Top 2300
+level,top2400,Top 2400,Top 2400,Top 2400,Top 2400,Top 2400,Top 2400,Top 2400,Top 2400
+level,top2500,Top 2500,Top 2500,Top 2500,Top 2500,Top 2500,Top 2500,Top 2500,Top 2500
+deck,nuts_and_bolts,,Sitni delovi,Винтики и гайки,Viti e bulloni,Petits mots utiles,Tuercas y tornillos,Porcas e parafusos,Kleinteile
+deck,one_to_ten,,Od jedan do deset,От одного до десяти,Da uno a dieci,De un à dix,Del uno al diez,De um a dez,Von eins bis zehn
+deck,folks_and_friends,,Ljudi i prijatelji,Люди и друзья,Gente e amici,Gens et amis,Gente y amigos,Gente e amigos,Leute und Freunde
+deck,family_ties,,Porodične veze,Семейные узы,Legami di famiglia,Liens de famille,Lazos de familia,Laços de família,Familienbande
+deck,say_and_see,,Reci i vidi,Скажи и увидь,Dire e vedere,Dire et voir,Decir y ver,Dizer e ver,Sagen und sehen
+deck,make_and_do,,Praviti i raditi,Делать и создавать,Fare e creare,Faire et agir,Hacer y crear,Fazer e criar,Machen und tun
+deck,day_and_night,,Dan i noć,День и ночь,Giorno e notte,Jour et nuit,Día y noche,Dia e noite,Tag und Nacht
+deck,bite_to_eat,,Zalogaj,Перекус,Un boccone,Un morceau,Un bocado,Uma mordida,Ein Happen
+deck,true_colours,,Prave boje,Настоящие цвета,Veri colori,Vraies couleurs,Colores verdaderos,Cores verdadeiras,Wahre Farben
+deck,teens_and_tens,,Desetice,Десятки,Decine,Dizaines,Decenas,Dezenas,Zehner
+deck,come_and_go,,Doći i otići,Прийти и уйти,Andare e venire,Aller et venir,Ir y venir,Ir e vir,Kommen und gehen
+deck,open_and_learn,,Otvori i uči,Открой и учись,Aprire e imparare,Ouvrir et apprendre,Abrir y aprender,Abrir e aprender,Öffnen und lernen
+deck,room_by_room,,Soba po soba,Комната за комнатой,Stanza per stanza,Pièce par pièce,Cuarto por cuarto,Cômodo por cômodo,Zimmer für Zimmer
+deck,table_for_two,,Sto za dvoje,Столик на двоих,Tavolo per due,Table pour deux,Mesa para dos,Mesa para dois,Tisch für zwei
+deck,big_and_small,,Veliko i malo,Большой и маленький,Grande e piccolo,Grand et petit,Grande y pequeño,Grande e pequeno,Groß und klein
+deck,week_by_week,,Nedelja po nedelja,Неделя за неделей,Settimana per settimana,Semaine après semaine,Semana a semana,Semana a semana,Woche für Woche
+deck,who_and_whose,,Ko i čiji,Кто и чей,Chi e di chi,Qui et à qui,Quién y de quién,Quem e de quem,Wer und wessen
+deck,much_and_little,,Mnogo i malo,Много и мало,Molto e poco,Beaucoup et peu,Mucho y poco,Muito e pouco,Viel und wenig
+deck,some_and_any,,Neki i bilo koji,Некоторые и любые,Alcuni e qualsiasi,Quelques et chaque,Algunos y cualquiera,Alguns e qualquer,Einige und jeder
+deck,in_and_out,,Unutra i napolje,Внутрь и наружу,Dentro e fuori,Dedans et dehors,Dentro y fuera,Dentro e fora,Rein und raus
+deck,around_town,,Po gradu,По городу,In giro per la città,En ville,Por la ciudad,Pela cidade,In der Stadt
+deck,getting_there,,Kako stići,Как добраться,Come arrivarci,Comment y aller,Cómo llegar,Como chegar,Hinkommen
+deck,money_matters,,Novčana pitanja,Денежные дела,Questioni di soldi,Questions d'argent,Asuntos de dinero,Assuntos de dinheiro,Geldsachen
+deck,top_to_toe,,Od glave do pete,С головы до ног,Dalla testa ai piedi,De la tête aux pieds,De pies a cabeza,Da cabeça aos pés,Von Kopf bis Fuß
+deck,dressed_up,,Obučeni,Одетые,Vestiti,Bien habillé,Bien vestido,Bem vestido,Angezogen
+deck,now_and_then,,Ponekad,Время от времени,Ogni tanto,De temps en temps,De vez en cuando,De vez em quando,Hin und wieder
+deck,yes_no_maybe,,"Da, ne, možda","Да, нет, может быть","Sì, no, forse","Oui, non, peut-être","Sí, no, quizás","Sim, não, talvez","Ja, nein, vielleicht"
+deck,can_and_must,,Moći i morati,Могу и должен,Potere e dovere,Pouvoir et devoir,Poder y deber,Poder e dever,Können und müssen
+deck,first_and_last,,Prvi i poslednji,Первый и последний,Primo e ultimo,Premier et dernier,Primero y último,Primeiro e último,Erster und letzter
+deck,something_nothing,,Nešto i ništa,Что-то и ничего,Qualcosa e niente,Quelque chose et rien,Algo y nada,Algo e nada,Etwas und nichts
+deck,nine_to_five,,Od devet do pet,С девяти до пяти,Dalle nove alle cinque,De neuf à cinq,De nueve a cinco,Das nove às cinco,Von neun bis fünf
+deck,plugged_in,,Na mreži,На связи,Connessi,Branché,Conectados,Conectados,Angeschlossen
+deck,month_by_month,,Mesec po mesec,Месяц за месяцем,Mese per mese,Mois après mois,Mes a mes,Mês a mês,Monat für Monat
+deck,on_the_plate,,Na tanjiru,На тарелке,Nel piatto,Dans l'assiette,En el plato,No prato,Auf dem Teller
+deck,on_the_move,,U pokretu,В движении,In movimento,En mouvement,En movimiento,Em movimento,Unterwegs
+deck,give_and_share,,Dati i podeliti,Дать и поделиться,Dare e condividere,Donner et partager,Dar y compartir,Dar e compartilhar,Geben und teilen
+deck,here_and_there,,Tu i tamo,Тут и там,Qua e là,Ici et là,Aquí y allá,Aqui e ali,Hier und da
+deck,papers_please,,"Dokumenta, molim","Документы, пожалуйста","Documenti, prego","Papiers, s'il vous plaît","Papeles, por favor","Documentos, por favor","Papiere, bitte"
+deck,under_one_roof,,Pod jednim krovom,Под одной крышей,Sotto lo stesso tetto,Sous le même toit,Bajo un mismo techo,Sob o mesmo teto,Unter einem Dach
+deck,doctors_orders,,Po nalogu lekara,Предписание врача,Ordini del dottore,Ordre du médecin,Órdenes del médico,Ordens do médico,Ärztliche Anordnung
+deck,glad_and_sad,,Radosni i tužni,Радость и грусть,Felice e triste,Joyeux et triste,Alegre y triste,Alegre e triste,Froh und traurig
+deck,sun_and_rain,,Sunce i kiša,Солнце и дождь,Sole e pioggia,Soleil et pluie,Sol y lluvia,Sol e chuva,Sonne und Regen
+deck,rise_and_shine,,Ustani i zasijaj,Проснись и пой,Sveglia!,Debout !,¡Arriba!,Hora de acordar,Raus aus den Federn
+deck,high_and_low,,Visoko i nisko,Высоко и низко,Alto e basso,Haut et bas,Alto y bajo,Alto e baixo,Hoch und tief
+deck,words_and_secrets,,Reči i tajne,Слова и тайны,Parole e segreti,Mots et secrets,Palabras y secretos,Palavras e segredos,Worte und Geheimnisse
+deck,sweet_and_sour,,Slatko i kiselo,Сладкое и кислое,Dolce e aspro,Sucré et acide,Dulce y agrio,Doce e azedo,Süß und sauer
+deck,feel_and_believe,,Osećati i verovati,Чувствовать и верить,Sentire e credere,Sentir et croire,Sentir y creer,Sentir e acreditar,Fühlen und glauben
+deck,think_it_through,,Promisli,Обдумай,Pensaci bene,Réfléchis bien,Piénsalo bien,Pense bem,Durchdenken
+deck,ways_and_means,,Načini i sredstva,Пути и средства,Modi e mezzi,Voies et moyens,Formas y medios,Meios e modos,Mittel und Wege
+deck,time_after_time,,Vreme za vremenom,Раз за разом,Di volta in volta,Encore et encore,Una y otra vez,Vez após vez,Immer wieder
+deck,more_or_less,,Više ili manje,Более или менее,Più o meno,Plus ou moins,Más o menos,Mais ou menos,Mehr oder weniger
+deck,slowly_but_surely,,Polako ali sigurno,"Медленно, но верно",Piano ma sicuro,Lentement mais sûrement,Lento pero seguro,Devagar e sempre,Langsam aber sicher
+deck,clean_and_dirty,,Čisto i prljavo,Чистое и грязное,Pulito e sporco,Propre et sale,Limpio y sucio,Limpo e sujo,Sauber und schmutzig
+deck,earn_and_spend,,Zaradi i potroši,Заработать и потратить,Guadagnare e spendere,Gagner et dépenser,Ganar y gastar,Ganhar e gastar,Verdienen und ausgeben
+deck,bank_on_it,,U banci,В банке,In banca,À la banque,En el banco,No banco,Auf der Bank
+deck,talk_it_over,,Popričajmo,Обсудим,Parliamone,Parlons-en,Hablemos,Vamos conversar,Reden wir darüber
+deck,safe_and_sound,,Živ i zdrav,Цел и невредим,Sano e salvo,Sain et sauf,Sano y salvo,São e salvo,Gesund und munter
+deck,for_real,,Stvarno,По-настоящему,Davvero,Pour de vrai,De verdad,De verdade,Wirklich
+deck,early_and_late,,Rano i kasno,Рано и поздно,Presto e tardi,Tôt et tard,Temprano y tarde,Cedo e tarde,Früh und spät
+deck,time_off,,Slobodno vreme,Свободное время,Tempo libero,Temps libre,Tiempo libre,Tempo livre,Freizeit
+deck,wheels_and_waves,,Točkovi i talasi,Колёса и волны,Ruote e onde,Roues et vagues,Ruedas y olas,Rodas e ondas,Räder und Wellen
+deck,bon_voyage,,Srećan put,Счастливого пути,Buon viaggio,Bon voyage,Buen viaje,Boa viagem,Gute Reise
+deck,whos_who,,Ko je ko,Кто есть кто,Chi è chi,Qui est qui,Quién es quién,Quem é quem,Wer ist wer
+deck,bed_and_bath,,Krevet i kupatilo,Постель и ванная,Letto e bagno,Lit et bain,Cama y baño,Cama e banho,Bett und Bad
+deck,four_corners,,Četiri strane sveta,Четыре стороны света,Quattro angoli,Quatre coins,Cuatro esquinas,Quatro cantos,Vier Ecken
+deck,if_and_unless,,Ako i osim ako,Если и если не,Se e a meno che,Si et sauf si,Si y a menos que,Se e a menos que,Wenn und außer
+deck,say_it_out,,Reci glasno,Скажи вслух,Dillo ad alta voce,Dis-le tout haut,Dilo en voz alta,Diga em voz alta,Sag es laut
+deck,plan_and_manage,,Planiraj i vodi,Планируй и управляй,Pianificare e gestire,Planifier et gérer,Planear y gestionar,Planejar e gerir,Planen und leiten
+deck,sing_and_dance,,Pevaj i igraj,Пой и танцуй,Cantare e ballare,Chanter et danser,Cantar y bailar,Cantar e dançar,Singen und tanzen
+deck,shout_and_whisper,,Vika i šapat,Крик и шёпот,Urlo e sussurro,Cri et murmure,Grito y susurro,Grito e sussurro,Schreien und flüstern
+deck,farm_and_wild,,Farma i divljina,Ферма и дикая природа,Fattoria e natura,Ferme et nature,Granja y naturaleza,Fazenda e natureza,Hof und Wildnis
+deck,land_and_sea,,Kopno i more,Суша и море,Terra e mare,Terre et mer,Tierra y mar,Terra e mar,Land und Meer
+deck,skin_and_bones,,Koža i kosti,Кожа да кости,Pelle e ossa,La peau et les os,Piel y huesos,Pele e osso,Haut und Knochen
+deck,fix_and_break,,Popravi i slomi,Чинить и ломать,Riparare e rompere,Réparer et casser,Arreglar y romper,Consertar e quebrar,Reparieren und brechen
+deck,two_word_verbs,,Glagoli od dve reči,Глаголы из двух слов,Verbi di due parole,Verbes en deux mots,Verbos de dos palabras,Verbos de duas palavras,Verben aus zwei Wörtern
+deck,kitchen_sink,,Kuća i nameštaj,Дом и мебель,Casa e mobili,Maison et meubles,Casa y muebles,Casa e móveis,Haus und Möbel
+deck,belt_and_boots,,Kaiš i čizme,Ремень и сапоги,Cintura e stivali,Ceinture et bottes,Cinturón y botas,Cinto e botas,Gürtel und Stiefel
+deck,spring_cleaning,,Veliko spremanje,Генеральная уборка,Pulizie di primavera,Grand ménage,Limpieza general,Faxina geral,Frühjahrsputz
+deck,spice_rack,,Polica sa začinima,Полка со специями,Scaffale delle spezie,Étagère à épices,Especiero,Prateleira de temperos,Gewürzregal
+deck,market_stall,,Tezga na pijaci,Рыночный прилавок,Banco del mercato,Étal du marché,Puesto del mercado,Banca da feira,Marktstand
+deck,click_and_print,,Klikni i štampaj,Кликни и напечатай,Clicca e stampa,Cliquer et imprimer,Clic e imprimir,Clicar e imprimir,Klicken und drucken
+deck,office_hours,,Radno vreme,Рабочие часы,Orario d'ufficio,Heures de bureau,Horario de oficina,Horário de trabalho,Bürozeiten
+deck,squeaky_clean,,Čisto kao suza,Чистота и уход,Pulitissimo,Tout propre,Bien limpio,Limpinho,Blitzsauber
+deck,care_and_cure,,Nega i lečenje,Уход и лечение,Cura e guarigione,Soins et guérison,Cuidado y cura,Cuidado e cura,Pflege und Heilung
+deck,joints_and_bones,,Zglobovi i kosti,Суставы и кости,Articolazioni e ossa,Articulations et os,Articulaciones y huesos,Articulações e ossos,Gelenke und Knochen
+deck,under_the_hood,,Ispod haube,Под капотом,Sotto il cofano,Sous le capot,Bajo el capó,Debaixo do capô,Unter der Haube
+deck,exam_time,,Vreme ispita,Время экзаменов,Tempo di esami,Période d'examens,Época de exámenes,Época de provas,Prüfungszeit
+deck,just_folks,,Obični ljudi,Обычные люди,Gente comune,Des gens ordinaires,Gente común,Gente comum,Ganz normale Leute
+deck,tool_box,,Kutija s alatom,Ящик с инструментами,Cassetta degli attrezzi,Boîte à outils,Caja de herramientas,Caixa de ferramentas,Werkzeugkasten
+deck,back_to_school,,Nazad u školu,Снова в школу,Ritorno a scuola,Retour à l'école,Vuelta al cole,Volta às aulas,Zurück zur Schule
+deck,career_ladder,,Karijerne stepenice,Карьерная лестница,Scala della carriera,Échelle de carrière,Escalera profesional,Escada da carreira,Karriereleiter
+deck,company_business,,Poslovi firme,Дела компании,Affari d'azienda,Affaires d'entreprise,Asuntos de empresa,Negócios da empresa,Firmensache
+deck,by_the_numbers,,U brojkama,В цифрах,In cifre,En chiffres,En cifras,Em números,In Zahlen
+deck,results_count,,Rezultati se računaju,Важен результат,Contano i risultati,Les résultats comptent,Los resultados cuentan,Resultados contam,Ergebnisse zählen
+deck,get_it_done,,Završi posao,Доведи до конца,Portalo a termine,Mène-le à bien,Hazlo realidad,Faça acontecer,Erledige es
+deck,money_talks,,Novac govori,Деньги решают,I soldi parlano,L'argent parle,El dinero habla,O dinheiro fala,Geld regiert
+deck,fine_print,,Sitna slova,Мелкий шрифт,Scritte in piccolo,Petits caractères,Letra pequeña,Letras miúdas,Kleingedrucktes
+deck,kith_and_kin,,Rod i rodbina,Родня и близкие,Parenti e amici,Parents et proches,Parientes y allegados,Parentes e próximos,Kind und Kegel
+deck,at_your_service,,Na usluzi,К вашим услугам,Al vostro servizio,À votre service,A su servicio,Ao seu dispor,Zu Ihren Diensten
+deck,whos_in_charge,,Ko je glavni,Кто главный,Chi comanda,Qui commande,Quién manda,Quem manda,Wer hat das Sagen
+deck,say_it_again,,Reci ponovo,Скажи ещё раз,Dillo di nuovo,Redis-le,Dilo otra vez,Diga de novo,Sag es noch einmal
+deck,us_and_them,,Mi i oni,Мы и они,Noi e loro,Nous et eux,Nosotros y ellos,Nós e eles,Wir und die anderen
+deck,talk_of_the_town,,Priča dana,Тема дня,Sulla bocca di tutti,Le sujet du jour,La comidilla del pueblo,O assunto do dia,Stadtgespräch
+deck,keep_in_touch,,Ostanimo u kontaktu,Оставайся на связи,Restiamo in contatto,Restons en contact,Seguimos en contacto,Mantenha contato,In Kontakt bleiben
+deck,lights_camera,,"Svetla, kamera","Свет, камера","Luci, camera","Lumières, caméra","Luces, cámara","Luzes, câmera","Licht, Kamera"
+deck,read_all_about_it,,Pročitajte sve o tome,Читайте все новости,Leggi tutto,Lisez tout,Léalo todo,Leia tudo,Alles zum Nachlesen
+deck,on_the_map,,Na mapi,На карте,Sulla mappa,Sur la carte,En el mapa,No mapa,Auf der Karte
+deck,song_and_dance,,Pesma i igra,Песня и танец,Canto e ballo,Chant et danse,Canto y baile,Canto e dança,Gesang und Tanz
+deck,web_and_wires,,Mreža i žice,Сеть и провода,Rete e fili,Web et câbles,Red y cables,Rede e fios,Netz und Kabel
+deck,publish_and_post,,Objavi i postavi,Публикуй и размещай,Pubblicare e postare,Publier et poster,Publicar y postear,Publicar e postar,Veröffentlichen und posten
+deck,game_on,,Igra počinje,Игра началась,Si gioca,C'est parti,A jugar,Bola pra frente,Spiel läuft
+deck,out_and_about,,U izlasku,Вне дома,In giro,De sortie,De paseo,Por aí,Unterwegs in der Stadt
+deck,bits_and_bobs,,Sitnice,Мелочи,Cianfrusaglie,Bricoles,Cachivaches,Miudezas,Krimskrams
+deck,wild_places,,Divlja mesta,Дикие места,Luoghi selvaggi,Lieux sauvages,Lugares salvajes,Lugares selvagens,Wilde Orte
+deck,sights_to_see,,Znamenitosti,Достопримечательности,Cose da vedere,Choses à voir,Lugares de interés,Pontos turísticos,Sehenswürdigkeiten
+deck,top_and_bottom,,Vrh i dno,Верх и низ,Sopra e sotto,Haut et fond,Arriba y abajo,Topo e fundo,Oben und unten
+deck,leaf_and_root,,List i koren,Лист и корень,Foglia e radice,Feuille et racine,Hoja y raíz,Folha e raiz,Blatt und Wurzel
+deck,creature_feature,,Svet životinja,Мир животных,Mondo animale,Monde animal,Mundo animal,Mundo animal,Tierwelt
+deck,strange_but_true,,Čudno ali istinito,"Странно, но правда",Strano ma vero,Étrange mais vrai,Extraño pero cierto,Estranho mas verdadeiro,Seltsam aber wahr
+deck,cool_and_crazy,,Kul i ludo,Круто и безумно,Figo e pazzo,Cool et fou,Genial y loco,Legal e louco,Cool und verrückt
+deck,kick_and_roll,,Šutni i kotrljaj,Пни и кати,Calciare e rotolare,Frapper et rouler,Patear y rodar,Chutar e rolar,Treten und rollen
+deck,aware_and_willing,,Svestan i voljan,Знаю и хочу,Consapevole e disposto,Conscient et volontaire,Consciente y dispuesto,Consciente e disposto,Bewusst und bereit
+deck,thick_and_thin,,Debelo i tanko,Толстое и тонкое,Spesso e sottile,Épais et mince,Grueso y fino,Grosso e fino,Dick und dünn
+deck,private_matters,,Lične stvari,Личные дела,Questioni private,Affaires privées,Asuntos privados,Assuntos privados,Privatsache
+deck,major_and_minor,,Glavno i sporedno,Главное и второстепенное,Maggiore e minore,Majeur et mineur,Mayor y menor,Maior e menor,Haupt- und Nebensache
+deck,around_the_world,,Oko sveta,Вокруг света,Giro del mondo,Autour du monde,Alrededor del mundo,Volta ao mundo,Rund um die Welt
+deck,mixed_feelings,,Pomešana osećanja,Смешанные чувства,Sentimenti contrastanti,Sentiments mêlés,Sentimientos encontrados,Sentimentos mistos,Gemischte Gefühle
+deck,who_you_are,,Ko si ti,Кто ты,Chi sei,Qui tu es,Quién eres,Quem você é,Wer du bist
+deck,odd_ones_out,,Uljezi,Лишние,Gli intrusi,Les intrus,Los que sobran,Os diferentes,Außenseiter
+deck,gold_and_silver,,Zlato i srebro,Золото и серебро,Oro e argento,Or et argent,Oro y plata,Ouro e prata,Gold und Silber
+deck,hide_and_seek,,Žmurke,Прятки,Nascondino,Cache-cache,Escondite,Esconde-esconde,Verstecken
+deck,have_and_hold,,Imati i čuvati,Иметь и хранить,Avere e tenere,Avoir et garder,Tener y guardar,Ter e guardar,Haben und halten
+deck,it_happens,,Dešava se,Бывает,Succede,Ça arrive,Cosas que pasan,Acontece,Es passiert
+deck,find_out,,Saznaj,Выясни,Scoprilo,Découvre,Averígualo,Descubra,Finde es heraus
+deck,shape_and_size,,Oblik i veličina,Форма и размер,Forma e misura,Forme et taille,Forma y tamaño,Forma e tamanho,Form und Größe
+deck,rise_and_fall,,Uspon i pad,Взлёт и падение,Ascesa e caduta,Hauts et bas,Auge y caída,Ascensão e queda,Aufstieg und Fall
+deck,weigh_it_up,,Odmeri,Взвесь,Soppesare,Peser le pour et le contre,Sopésalo,Pese bem,Abwägen
+deck,work_it_out,,Reši to,Разберись,Risolvilo,Trouve la solution,Resuélvelo,Resolva,Finde die Lösung
+deck,try_harder,,Potrudi se više,Старайся сильнее,Impegnati di più,Fais un effort,Esfuérzate más,Esforce-se mais,Streng dich an
+deck,odds_and_bets,,Opklade i ostalo,Пари и прочее,Scommesse e altro,Paris et autres,Apuestas y demás,Apostas e mais,Wetten und mehr
+deck,case_by_case,,Od slučaja do slučaja,От случая к случаю,Caso per caso,Au cas par cas,Caso por caso,Caso a caso,Von Fall zu Fall
+deck,flirts_and_affairs,,Flertovi i afere,Флирт и романы,Flirt e avventure,Flirts et aventures,Ligues y aventuras,Flertes e casos,Flirts und Affären
+deck,kind_of,,Vrste i oblici,Виды и формы,Tipi e forme,Types et formes,Tipos y formas,Tipos e formas,Arten und Formen
+deck,cause_and_effect,,Uzrok i posledica,Причина и следствие,Causa ed effetto,Cause et effet,Causa y efecto,Causa e efeito,Ursache und Wirkung
+deck,big_ideas,,Velike ideje,Большие идеи,Grandi idee,Grandes idées,Grandes ideas,Grandes ideias,Große Ideen
+deck,rules_of_the_game,,Pravila igre,Правила игры,Regole del gioco,Règles du jeu,Reglas del juego,Regras do jogo,Spielregeln
+deck,moves_and_turns,,Potezi i zaokreti,Ходы и повороты,Mosse e svolte,Coups et virages,Movimientos y giros,Lances e viradas,Züge und Wendungen
+deck,by_the_way,,Usput,Кстати,A proposito,Au fait,Por cierto,A propósito,Übrigens
+deck,science_lab,,Naučna laboratorija,Научная лаборатория,Laboratorio di scienze,Laboratoire de sciences,Laboratorio de ciencias,Laboratório de ciências,Wissenschaftslabor
+deck,faith_and_tradition,,Vera i tradicija,Вера и традиция,Fede e tradizione,Foi et tradition,Fe y tradición,Fé e tradição,Glaube und Tradition
+deck,clearly_and_truly,,Jasno i iskreno,Ясно и честно,Chiaramente e davvero,Clairement et vraiment,Clara y sinceramente,Clara e sinceramente,Klar und wahr
+deck,tie_the_knot,,Venčanje,Свадебные хлопоты,Fiori d'arancio,Se dire oui,Darse el sí,Dar o nó,Bund fürs Leben
+deck,win_and_lose,,Pobeda i poraz,Победа и поражение,Vincere e perdere,Gagner et perdre,Ganar y perder,Ganhar e perder,Gewinnen und verlieren
+deck,fight_back,,Uzvrati udarac,Дай отпор,Reagire,Riposter,Contraatacar,Revidar,Sich wehren
+deck,state_and_nation,,Država i nacija,Государство и нация,Stato e nazione,État et nation,Estado y nación,Estado e nação,Staat und Nation
+deck,aim_higher,,Ciljaj više,Целься выше,Punta più in alto,Vise plus haut,Apunta más alto,Mire mais alto,Höher zielen
+deck,public_affairs,,Javni poslovi,Общественные дела,Affari pubblici,Affaires publiques,Asuntos públicos,Assuntos públicos,Öffentliche Angelegenheiten
+deck,order_in_court,,Red u sudnici,Порядок в суде,Ordine in aula,Silence dans la salle,Orden en la sala,Ordem no tribunal,Ruhe im Gericht
+deck,war_room,,Ratna soba,Военный штаб,Sala di guerra,Salle de guerre,Sala de guerra,Sala de guerra,Kommandozentrale
+deck,war_and_peace,,Rat i mir,Война и мир,Guerra e pace,Guerre et paix,Guerra y paz,Guerra e paz,Krieg und Frieden
+deck,life_and_death,,Život i smrt,Жизнь и смерть,Vita e morte,Vie et mort,Vida y muerte,Vida e morte,Leben und Tod

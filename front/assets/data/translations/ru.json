@@ -4327,6 +4327,5989 @@
   "zero": {
     "text": "ноль"
   },
+  "open": {
+    "m": "открытый",
+    "f": "открытая",
+    "n": "открытое"
+  },
+  "all": {
+    "text": "все"
+  },
+  "that_conj": {
+    "text": "что"
+  },
+  "as": {
+    "text": "как"
+  },
+  "of": {
+    "text": "от"
+  },
+  "to": {
+    "text": "к"
+  },
+  "for": {
+    "text": "для"
+  },
+  "with": {
+    "text": "с"
+  },
+  "at": {
+    "text": "у"
+  },
+  "from": {
+    "text": "из"
+  },
+  "by": {
+    "text": "возле"
+  },
+  "not": {
+    "text": "не"
+  },
+  "people": {
+    "text": "люди",
+    "gender": "m"
+  },
+  "kid": {
+    "text": "малыш",
+    "gender": "m"
+  },
+  "mom": {
+    "text": "мама",
+    "gender": "f"
+  },
+  "dad": {
+    "text": "папа",
+    "gender": "m"
+  },
+  "son": {
+    "text": "сын",
+    "gender": "m"
+  },
+  "daughter": {
+    "text": "дочь",
+    "gender": "f"
+  },
+  "grandmother": {
+    "text": "бабушка",
+    "gender": "f"
+  },
+  "grandfather": {
+    "text": "дедушка",
+    "gender": "m"
+  },
+  "uncle": {
+    "text": "дядя",
+    "gender": "m"
+  },
+  "aunt": {
+    "text": "тётя",
+    "gender": "f"
+  },
+  "cousin": {
+    "text": "двоюродный брат",
+    "gender": "m"
+  },
+  "to_tell": {
+    "imperfective": "рассказывать",
+    "perfective": "рассказать"
+  },
+  "noon": {
+    "text": "полдень",
+    "gender": "m"
+  },
+  "afternoon": {
+    "text": "вторая половина дня",
+    "gender": "f"
+  },
+  "midnight": {
+    "text": "полночь",
+    "gender": "f"
+  },
+  "weekend": {
+    "text": "выходные",
+    "gender": "m"
+  },
+  "color": {
+    "text": "цвет",
+    "gender": "m"
+  },
+  "eleven": {
+    "text": "одиннадцать"
+  },
+  "twelve": {
+    "text": "двенадцать"
+  },
+  "thirteen": {
+    "text": "тринадцать"
+  },
+  "fourteen": {
+    "text": "четырнадцать"
+  },
+  "fifteen": {
+    "text": "пятнадцать"
+  },
+  "sixteen": {
+    "text": "шестнадцать"
+  },
+  "seventeen": {
+    "text": "семнадцать"
+  },
+  "eighteen": {
+    "text": "восемнадцать"
+  },
+  "nineteen": {
+    "text": "девятнадцать"
+  },
+  "twenty": {
+    "text": "двадцать"
+  },
+  "thirty": {
+    "text": "тридцать"
+  },
+  "forty": {
+    "text": "сорок"
+  },
+  "fifty": {
+    "text": "пятьдесят"
+  },
+  "sixty": {
+    "text": "шестьдесят"
+  },
+  "seventy": {
+    "text": "семьдесят"
+  },
+  "eighty": {
+    "text": "восемьдесят"
+  },
+  "ninety": {
+    "text": "девяносто"
+  },
+  "billion": {
+    "text": "миллиард"
+  },
+  "to_start": {
+    "imperfective": "приступать",
+    "perfective": "приступить"
+  },
+  "house": {
+    "text": "дом",
+    "gender": "m"
+  },
+  "toilet": {
+    "text": "туалет",
+    "gender": "m"
+  },
+  "meal": {
+    "text": "приём пищи",
+    "gender": "m"
+  },
+  "breakfast": {
+    "text": "завтрак",
+    "gender": "m"
+  },
+  "lunch": {
+    "text": "обед",
+    "gender": "m"
+  },
+  "dinner": {
+    "text": "ужин",
+    "gender": "m"
+  },
+  "drink": {
+    "text": "напиток",
+    "gender": "m"
+  },
+  "menu": {
+    "text": "меню",
+    "gender": "n"
+  },
+  "bill": {
+    "text": "счёт",
+    "gender": "m"
+  },
+  "tip": {
+    "text": "чаевые",
+    "gender": "m"
+  },
+  "better": {
+    "m": "лучший",
+    "f": "лучшая",
+    "n": "лучшее"
+  },
+  "best": {
+    "m": "наилучший",
+    "f": "наилучшая",
+    "n": "наилучшее"
+  },
+  "date": {
+    "text": "дата",
+    "gender": "f"
+  },
+  "birthday": {
+    "text": "день рождения",
+    "gender": "m"
+  },
+  "holiday": {
+    "text": "праздник",
+    "gender": "m"
+  },
+  "which": {
+    "text": "который"
+  },
+  "whose": {
+    "text": "чей"
+  },
+  "its": {
+    "text": "его"
+  },
+  "every": {
+    "text": "каждый"
+  },
+  "some": {
+    "text": "некоторые"
+  },
+  "any": {
+    "text": "любой"
+  },
+  "each": {
+    "text": "каждый из"
+  },
+  "both": {
+    "text": "оба"
+  },
+  "few": {
+    "text": "немногие"
+  },
+  "several": {
+    "text": "несколько"
+  },
+  "most": {
+    "text": "больше всего"
+  },
+  "another": {
+    "text": "ещё один"
+  },
+  "other": {
+    "m": "другой",
+    "f": "другая",
+    "n": "другое"
+  },
+  "none": {
+    "text": "ни один"
+  },
+  "plenty": {
+    "text": "полно"
+  },
+  "certain": {
+    "m": "определённый",
+    "f": "определённая",
+    "n": "определённое"
+  },
+  "own": {
+    "text": "собственный"
+  },
+  "about": {
+    "text": "о"
+  },
+  "into": {
+    "text": "в"
+  },
+  "through": {
+    "text": "через"
+  },
+  "without": {
+    "text": "без"
+  },
+  "against": {
+    "text": "против"
+  },
+  "around": {
+    "text": "вокруг"
+  },
+  "among": {
+    "text": "среди"
+  },
+  "within": {
+    "text": "в пределах"
+  },
+  "toward": {
+    "text": "по направлению к"
+  },
+  "along": {
+    "text": "вдоль"
+  },
+  "out": {
+    "text": "наружу"
+  },
+  "off": {
+    "text": "выключено"
+  },
+  "away": {
+    "text": "прочь"
+  },
+  "back": {
+    "text": "назад"
+  },
+  "town": {
+    "text": "городок",
+    "gender": "m"
+  },
+  "corner": {
+    "text": "угол",
+    "gender": "m"
+  },
+  "square": {
+    "text": "площадь",
+    "gender": "f"
+  },
+  "building": {
+    "text": "здание",
+    "gender": "n"
+  },
+  "shop": {
+    "text": "лавка",
+    "gender": "f"
+  },
+  "supermarket": {
+    "text": "супермаркет",
+    "gender": "m"
+  },
+  "bakery": {
+    "text": "пекарня",
+    "gender": "f"
+  },
+  "pharmacy": {
+    "text": "аптека",
+    "gender": "f"
+  },
+  "cafe": {
+    "text": "кафе",
+    "gender": "n"
+  },
+  "subway": {
+    "text": "метро",
+    "gender": "n"
+  },
+  "flight": {
+    "text": "рейс",
+    "gender": "m"
+  },
+  "platform": {
+    "text": "платформа",
+    "gender": "f"
+  },
+  "seat": {
+    "text": "место",
+    "gender": "n"
+  },
+  "coin": {
+    "text": "монета",
+    "gender": "f"
+  },
+  "wallet": {
+    "text": "кошелёк",
+    "gender": "m"
+  },
+  "customer": {
+    "text": "покупатель",
+    "gender": "m"
+  },
+  "discount": {
+    "text": "скидка",
+    "gender": "f"
+  },
+  "exchange": {
+    "text": "обмен",
+    "gender": "m"
+  },
+  "fee": {
+    "text": "плата",
+    "gender": "f"
+  },
+  "body": {
+    "text": "тело",
+    "gender": "n"
+  },
+  "face": {
+    "text": "лицо",
+    "gender": "n"
+  },
+  "t_shirt": {
+    "text": "футболка",
+    "gender": "f"
+  },
+  "jeans": {
+    "text": "джинсы",
+    "gender": "m"
+  },
+  "sweater": {
+    "text": "свитер",
+    "gender": "m"
+  },
+  "ever": {
+    "text": "когда-либо"
+  },
+  "once": {
+    "text": "однажды"
+  },
+  "twice": {
+    "text": "дважды"
+  },
+  "again": {
+    "text": "снова"
+  },
+  "during": {
+    "text": "во время"
+  },
+  "since": {
+    "text": "с тех пор как"
+  },
+  "until": {
+    "text": "пока не"
+  },
+  "okay": {
+    "text": "ладно"
+  },
+  "sure": {
+    "m": "уверенный",
+    "f": "уверенная",
+    "n": "уверенное"
+  },
+  "of_course": {
+    "text": "конечно"
+  },
+  "maybe": {
+    "text": "может быть"
+  },
+  "perhaps": {
+    "text": "возможно"
+  },
+  "probably": {
+    "text": "вероятно"
+  },
+  "actually": {
+    "text": "на самом деле"
+  },
+  "well": {
+    "text": "хорошо"
+  },
+  "so": {
+    "text": "так"
+  },
+  "hey": {
+    "text": "эй"
+  },
+  "hi": {
+    "text": "привет"
+  },
+  "anyway": {
+    "text": "в любом случае"
+  },
+  "indeed": {
+    "text": "действительно"
+  },
+  "certainly": {
+    "text": "безусловно"
+  },
+  "definitely": {
+    "text": "определённо"
+  },
+  "should": {
+    "text": "следует"
+  },
+  "second": {
+    "text": "второй"
+  },
+  "third": {
+    "text": "третий"
+  },
+  "fourth": {
+    "text": "четвёртый"
+  },
+  "next": {
+    "text": "следующий"
+  },
+  "finally": {
+    "text": "наконец"
+  },
+  "just": {
+    "text": "только что"
+  },
+  "something": {
+    "text": "что-то"
+  },
+  "anything": {
+    "text": "что угодно"
+  },
+  "nothing": {
+    "text": "ничего"
+  },
+  "everything": {
+    "text": "всё"
+  },
+  "someone": {
+    "text": "кто-то"
+  },
+  "anyone": {
+    "text": "кто угодно"
+  },
+  "everyone": {
+    "text": "все люди"
+  },
+  "nobody": {
+    "text": "никто"
+  },
+  "whatever": {
+    "text": "что бы ни"
+  },
+  "else": {
+    "text": "ещё"
+  },
+  "mine": {
+    "text": "мой"
+  },
+  "yours": {
+    "text": "твой"
+  },
+  "oneself": {
+    "text": "себя"
+  },
+  "manager": {
+    "text": "менеджер",
+    "gender": "m"
+  },
+  "colleague": {
+    "text": "коллега",
+    "gender": "m"
+  },
+  "interview": {
+    "text": "собеседование",
+    "gender": "n"
+  },
+  "lesson": {
+    "text": "урок",
+    "gender": "m"
+  },
+  "example": {
+    "text": "пример",
+    "gender": "m"
+  },
+  "mistake": {
+    "text": "ошибка",
+    "gender": "f"
+  },
+  "laptop": {
+    "text": "ноутбук",
+    "gender": "m"
+  },
+  "internet": {
+    "text": "интернет",
+    "gender": "m"
+  },
+  "wifi": {
+    "text": "вай-фай",
+    "gender": "m"
+  },
+  "online": {
+    "m": "онлайн",
+    "f": "онлайн",
+    "n": "онлайн"
+  },
+  "email": {
+    "text": "электронная почта",
+    "gender": "f"
+  },
+  "cable": {
+    "text": "кабель",
+    "gender": "m"
+  },
+  "charger": {
+    "text": "зарядка",
+    "gender": "f"
+  },
+  "to_charge": {
+    "imperfective": "заряжать",
+    "perfective": "зарядить"
+  },
+  "to_search": {
+    "imperfective": "разыскивать",
+    "perfective": "разыскать"
+  },
+  "beef": {
+    "text": "говядина",
+    "gender": "f"
+  },
+  "pork": {
+    "text": "свинина",
+    "gender": "f"
+  },
+  "pasta": {
+    "text": "паста",
+    "gender": "f"
+  },
+  "pizza": {
+    "text": "пицца",
+    "gender": "f"
+  },
+  "sandwich": {
+    "text": "бутерброд",
+    "gender": "m"
+  },
+  "carrot": {
+    "text": "морковь",
+    "gender": "f"
+  },
+  "lemon": {
+    "text": "лимон",
+    "gender": "m"
+  },
+  "banana": {
+    "text": "банан",
+    "gender": "m"
+  },
+  "to_provide": {
+    "imperfective": "предоставлять",
+    "perfective": "предоставить"
+  },
+  "to_allow": {
+    "imperfective": "разрешать",
+    "perfective": "разрешить"
+  },
+  "to_share": {
+    "imperfective": "делиться",
+    "perfective": "поделиться"
+  },
+  "to_return": {
+    "imperfective": "возвращаться",
+    "perfective": "вернуться"
+  },
+  "to_pick": {
+    "imperfective": "срывать",
+    "perfective": "сорвать"
+  },
+  "to_hit": {
+    "imperfective": "ударять",
+    "perfective": "ударить"
+  },
+  "to_miss": {
+    "text": "скучать",
+    "aspect": "imperfective"
+  },
+  "to_cover": {
+    "imperfective": "накрывать",
+    "perfective": "накрыть"
+  },
+  "to_end": {
+    "imperfective": "заканчиваться",
+    "perfective": "закончиться"
+  },
+  "to_cause": {
+    "imperfective": "вызывать",
+    "perfective": "вызвать"
+  },
+  "to_drop": {
+    "imperfective": "ронять",
+    "perfective": "уронить"
+  },
+  "to_place": {
+    "imperfective": "размещать",
+    "perfective": "разместить"
+  },
+  "to_hang": {
+    "imperfective": "вешать",
+    "perfective": "повесить"
+  },
+  "to_lay": {
+    "imperfective": "класть",
+    "perfective": "положить"
+  },
+  "to_remove": {
+    "imperfective": "удалять",
+    "perfective": "удалить"
+  },
+  "to_avoid": {
+    "imperfective": "избегать",
+    "perfective": "избежать"
+  },
+  "to_prepare": {
+    "imperfective": "готовить",
+    "perfective": "подготовить"
+  },
+  "outside": {
+    "text": "вне"
+  },
+  "beyond": {
+    "text": "за пределами"
+  },
+  "ahead": {
+    "text": "впереди"
+  },
+  "together": {
+    "text": "вместе"
+  },
+  "far": {
+    "text": "далеко"
+  },
+  "somewhere": {
+    "text": "где-то"
+  },
+  "anywhere": {
+    "text": "где угодно"
+  },
+  "to_ride": {
+    "text": "кататься",
+    "aspect": "imperfective"
+  },
+  "to_park": {
+    "imperfective": "парковать",
+    "perfective": "припарковать"
+  },
+  "to_cross": {
+    "imperfective": "переходить",
+    "perfective": "перейти"
+  },
+  "to_pack": {
+    "imperfective": "упаковывать",
+    "perfective": "упаковать"
+  },
+  "to_reserve": {
+    "imperfective": "бронировать",
+    "perfective": "забронировать"
+  },
+  "to_cancel": {
+    "imperfective": "отменять",
+    "perfective": "отменить"
+  },
+  "to_confirm": {
+    "imperfective": "подтверждать",
+    "perfective": "подтвердить"
+  },
+  "to_visit": {
+    "imperfective": "посещать",
+    "perfective": "посетить"
+  },
+  "to_enter": {
+    "imperfective": "входить",
+    "perfective": "войти"
+  },
+  "to_hurry": {
+    "imperfective": "спешить",
+    "perfective": "поспешить"
+  },
+  "document": {
+    "text": "документ",
+    "gender": "m"
+  },
+  "signature": {
+    "text": "подпись",
+    "gender": "f"
+  },
+  "address": {
+    "text": "адрес",
+    "gender": "m"
+  },
+  "deposit": {
+    "text": "залог",
+    "gender": "m"
+  },
+  "mail": {
+    "text": "почта",
+    "gender": "f"
+  },
+  "envelope": {
+    "text": "конверт",
+    "gender": "m"
+  },
+  "postcard": {
+    "text": "открытка",
+    "gender": "f"
+  },
+  "landlord": {
+    "text": "арендодатель",
+    "gender": "m"
+  },
+  "to_rent": {
+    "imperfective": "снимать",
+    "perfective": "снять"
+  },
+  "elevator": {
+    "text": "лифт",
+    "gender": "m"
+  },
+  "entrance": {
+    "text": "вход",
+    "gender": "m"
+  },
+  "exit": {
+    "text": "выход",
+    "gender": "m"
+  },
+  "balcony": {
+    "text": "балкон",
+    "gender": "m"
+  },
+  "garden": {
+    "text": "сад",
+    "gender": "m"
+  },
+  "furniture": {
+    "text": "мебель",
+    "gender": "f"
+  },
+  "couch": {
+    "text": "диван",
+    "gender": "m"
+  },
+  "electricity": {
+    "text": "электричество",
+    "gender": "n"
+  },
+  "garbage": {
+    "text": "мусор",
+    "gender": "m"
+  },
+  "health": {
+    "text": "здоровье",
+    "gender": "n"
+  },
+  "cough": {
+    "text": "кашель",
+    "gender": "m"
+  },
+  "flu": {
+    "text": "грипп",
+    "gender": "m"
+  },
+  "headache": {
+    "text": "головная боль",
+    "gender": "f"
+  },
+  "pill": {
+    "text": "таблетка",
+    "gender": "f"
+  },
+  "appointment": {
+    "text": "приём",
+    "gender": "m"
+  },
+  "dentist": {
+    "text": "стоматолог",
+    "gender": "m"
+  },
+  "emergency": {
+    "text": "чрезвычайная ситуация",
+    "gender": "f"
+  },
+  "ambulance": {
+    "text": "скорая помощь",
+    "gender": "f"
+  },
+  "injury": {
+    "text": "травма",
+    "gender": "f"
+  },
+  "fresh": {
+    "m": "свежий",
+    "f": "свежая",
+    "n": "свежее"
+  },
+  "cake": {
+    "text": "торт",
+    "gender": "m"
+  },
+  "dessert": {
+    "text": "десерт",
+    "gender": "m"
+  },
+  "snack": {
+    "text": "закуска",
+    "gender": "f"
+  },
+  "comfortable": {
+    "m": "удобный",
+    "f": "удобная",
+    "n": "удобное"
+  },
+  "glad": {
+    "m": "радостный",
+    "f": "радостная",
+    "n": "радостное"
+  },
+  "afraid": {
+    "m": "испуганный",
+    "f": "испуганная",
+    "n": "испуганное"
+  },
+  "busy": {
+    "m": "занятой",
+    "f": "занятая",
+    "n": "занятое"
+  },
+  "alone": {
+    "m": "один",
+    "f": "одна",
+    "n": "одно"
+  },
+  "married": {
+    "m": "женатый",
+    "f": "замужняя",
+    "n": "женатое"
+  },
+  "lost": {
+    "m": "потерянный",
+    "f": "потерянная",
+    "n": "потерянное"
+  },
+  "funny": {
+    "m": "смешной",
+    "f": "смешная",
+    "n": "смешное"
+  },
+  "friendly": {
+    "m": "дружелюбный",
+    "f": "дружелюбная",
+    "n": "дружелюбное"
+  },
+  "umbrella": {
+    "text": "зонт",
+    "gender": "m"
+  },
+  "climate": {
+    "text": "климат",
+    "gender": "m"
+  },
+  "heat": {
+    "text": "жара",
+    "gender": "f"
+  },
+  "point": {
+    "text": "точка",
+    "gender": "f"
+  },
+  "group": {
+    "text": "группа",
+    "gender": "f"
+  },
+  "line": {
+    "text": "линия",
+    "gender": "f"
+  },
+  "level": {
+    "text": "уровень",
+    "gender": "m"
+  },
+  "kind": {
+    "text": "род",
+    "gender": "m"
+  },
+  "to_earn": {
+    "imperfective": "зарабатывать",
+    "perfective": "заработать"
+  },
+  "to_borrow": {
+    "imperfective": "брать взаймы",
+    "perfective": "взять взаймы"
+  },
+  "to_lend": {
+    "imperfective": "одалживать",
+    "perfective": "одолжить"
+  },
+  "to_sign": {
+    "imperfective": "подписывать",
+    "perfective": "подписать"
+  },
+  "to_order": {
+    "imperfective": "заказывать",
+    "perfective": "заказать"
+  },
+  "to_deliver": {
+    "imperfective": "доставлять",
+    "perfective": "доставить"
+  },
+  "to_weigh": {
+    "imperfective": "взвешивать",
+    "perfective": "взвесить"
+  },
+  "to_fill": {
+    "imperfective": "заполнять",
+    "perfective": "заполнить"
+  },
+  "to_repeat": {
+    "imperfective": "повторять",
+    "perfective": "повторить"
+  },
+  "to_translate": {
+    "imperfective": "переводить",
+    "perfective": "перевести"
+  },
+  "to_spell": {
+    "imperfective": "произносить по буквам",
+    "perfective": "произнести по буквам"
+  },
+  "to_complain": {
+    "imperfective": "жаловаться",
+    "perfective": "пожаловаться"
+  },
+  "to_introduce": {
+    "imperfective": "представлять",
+    "perfective": "представить"
+  },
+  "to_welcome": {
+    "text": "приветствовать",
+    "aspect": "imperfective"
+  },
+  "great": {
+    "m": "отличный",
+    "f": "отличная",
+    "n": "отличное"
+  },
+  "high": {
+    "m": "высокий",
+    "f": "высокая",
+    "n": "высокое"
+  },
+  "low": {
+    "m": "низкий",
+    "f": "низкая",
+    "n": "низкое"
+  },
+  "huge": {
+    "m": "огромный",
+    "f": "огромная",
+    "n": "огромное"
+  },
+  "tiny": {
+    "m": "крошечный",
+    "f": "крошечная",
+    "n": "крошечное"
+  },
+  "real": {
+    "m": "настоящий",
+    "f": "настоящая",
+    "n": "настоящее"
+  },
+  "true": {
+    "m": "истинный",
+    "f": "истинная",
+    "n": "истинное"
+  },
+  "whole": {
+    "m": "целый",
+    "f": "целая",
+    "n": "целое"
+  },
+  "free": {
+    "m": "свободный",
+    "f": "свободная",
+    "n": "свободное"
+  },
+  "able": {
+    "m": "способный",
+    "f": "способная",
+    "n": "способное"
+  },
+  "ready": {
+    "m": "готовый",
+    "f": "готовая",
+    "n": "готовое"
+  },
+  "simple": {
+    "m": "простой",
+    "f": "простая",
+    "n": "простое"
+  },
+  "common": {
+    "m": "распространённый",
+    "f": "распространённая",
+    "n": "распространённое"
+  },
+  "special": {
+    "m": "особый",
+    "f": "особая",
+    "n": "особое"
+  },
+  "main": {
+    "m": "главный",
+    "f": "главная",
+    "n": "главное"
+  },
+  "perfect": {
+    "m": "идеальный",
+    "f": "идеальная",
+    "n": "идеальное"
+  },
+  "fine": {
+    "m": "прекрасный",
+    "f": "прекрасная",
+    "n": "прекрасное"
+  },
+  "to_prefer": {
+    "imperfective": "предпочитать",
+    "perfective": "предпочесть"
+  },
+  "to_enjoy": {
+    "imperfective": "наслаждаться",
+    "perfective": "насладиться"
+  },
+  "to_realize": {
+    "imperfective": "осознавать",
+    "perfective": "осознать"
+  },
+  "to_guess": {
+    "imperfective": "угадывать",
+    "perfective": "угадать"
+  },
+  "to_wonder": {
+    "text": "задаваться вопросом",
+    "aspect": "imperfective"
+  },
+  "to_imagine": {
+    "imperfective": "представлять себе",
+    "perfective": "представить себе"
+  },
+  "to_notice": {
+    "imperfective": "замечать",
+    "perfective": "заметить"
+  },
+  "to_recognize": {
+    "imperfective": "узнавать",
+    "perfective": "узнать"
+  },
+  "to_worry": {
+    "text": "беспокоиться",
+    "aspect": "imperfective"
+  },
+  "to_assume": {
+    "imperfective": "допускать",
+    "perfective": "допустить"
+  },
+  "to_suppose": {
+    "text": "полагать",
+    "aspect": "imperfective"
+  },
+  "to_intend": {
+    "text": "намереваться",
+    "aspect": "imperfective"
+  },
+  "to_remind": {
+    "imperfective": "напоминать",
+    "perfective": "напомнить"
+  },
+  "to_recall": {
+    "imperfective": "вспоминать",
+    "perfective": "вспомнить"
+  },
+  "to_trust": {
+    "imperfective": "доверять",
+    "perfective": "доверить"
+  },
+  "to_mind": {
+    "imperfective": "возражать",
+    "perfective": "возразить"
+  },
+  "to_appreciate": {
+    "imperfective": "ценить",
+    "perfective": "оценить"
+  },
+  "to_deserve": {
+    "imperfective": "заслуживать",
+    "perfective": "заслужить"
+  },
+  "to_bother": {
+    "imperfective": "беспокоить",
+    "perfective": "побеспокоить"
+  },
+  "moment": {
+    "text": "момент",
+    "gender": "m"
+  },
+  "period": {
+    "text": "период",
+    "gender": "m"
+  },
+  "age": {
+    "text": "возраст",
+    "gender": "m"
+  },
+  "season": {
+    "text": "сезон",
+    "gender": "m"
+  },
+  "history": {
+    "text": "история",
+    "gender": "f"
+  },
+  "century": {
+    "text": "век",
+    "gender": "m"
+  },
+  "decade": {
+    "text": "десятилетие",
+    "gender": "n"
+  },
+  "era": {
+    "text": "эпоха",
+    "gender": "f"
+  },
+  "future": {
+    "text": "будущее",
+    "gender": "n"
+  },
+  "past": {
+    "m": "прошлый",
+    "f": "прошлая",
+    "n": "прошлое"
+  },
+  "beginning": {
+    "text": "начало",
+    "gender": "n"
+  },
+  "end": {
+    "text": "конец",
+    "gender": "m"
+  },
+  "start": {
+    "text": "старт",
+    "gender": "m"
+  },
+  "break": {
+    "text": "перерыв",
+    "gender": "m"
+  },
+  "turn": {
+    "text": "очередь",
+    "gender": "f"
+  },
+  "step": {
+    "text": "шаг",
+    "gender": "m"
+  },
+  "session": {
+    "text": "сессия",
+    "gender": "f"
+  },
+  "term": {
+    "text": "срок",
+    "gender": "m"
+  },
+  "second_n": {
+    "text": "секунда",
+    "gender": "f"
+  },
+  "wage": {
+    "text": "заработная плата",
+    "gender": "f"
+  },
+  "refund": {
+    "text": "возврат денег",
+    "gender": "m"
+  },
+  "charge": {
+    "text": "сбор",
+    "gender": "m"
+  },
+  "to_withdraw": {
+    "imperfective": "снимать со счёта",
+    "perfective": "снять со счёта"
+  },
+  "to_owe": {
+    "text": "быть должным",
+    "aspect": "imperfective"
+  },
+  "clear": {
+    "m": "ясный",
+    "f": "ясная",
+    "n": "ясное"
+  },
+  "likely": {
+    "m": "вероятный",
+    "f": "вероятная",
+    "n": "вероятное"
+  },
+  "similar": {
+    "m": "похожий",
+    "f": "похожая",
+    "n": "похожее"
+  },
+  "various": {
+    "m": "различный",
+    "f": "различная",
+    "n": "различное"
+  },
+  "specific": {
+    "m": "конкретный",
+    "f": "конкретная",
+    "n": "конкретное"
+  },
+  "particular": {
+    "m": "особенный",
+    "f": "особенная",
+    "n": "особенное"
+  },
+  "total": {
+    "m": "общий",
+    "f": "общая",
+    "n": "общее"
+  },
+  "entire": {
+    "m": "весь",
+    "f": "вся",
+    "n": "всё"
+  },
+  "complete": {
+    "m": "полный",
+    "f": "полная",
+    "n": "полное"
+  },
+  "actual": {
+    "m": "фактический",
+    "f": "фактическая",
+    "n": "фактическое"
+  },
+  "basic": {
+    "m": "основной",
+    "f": "основная",
+    "n": "основное"
+  },
+  "extra": {
+    "m": "дополнительный",
+    "f": "дополнительная",
+    "n": "дополнительное"
+  },
+  "additional": {
+    "m": "добавочный",
+    "f": "добавочная",
+    "n": "добавочное"
+  },
+  "multiple": {
+    "m": "многочисленный",
+    "f": "многочисленная",
+    "n": "многочисленное"
+  },
+  "available": {
+    "m": "доступный",
+    "f": "доступная",
+    "n": "доступное"
+  },
+  "nearly": {
+    "text": "едва не"
+  },
+  "rather": {
+    "text": "скорее"
+  },
+  "pretty": {
+    "text": "довольно"
+  },
+  "especially": {
+    "text": "особенно"
+  },
+  "particularly": {
+    "text": "в особенности"
+  },
+  "absolutely": {
+    "text": "абсолютно"
+  },
+  "extremely": {
+    "text": "чрезвычайно"
+  },
+  "slightly": {
+    "text": "слегка"
+  },
+  "relatively": {
+    "text": "относительно"
+  },
+  "entirely": {
+    "text": "целиком"
+  },
+  "currently": {
+    "text": "в настоящее время"
+  },
+  "forever": {
+    "text": "навсегда"
+  },
+  "anymore": {
+    "text": "больше не"
+  },
+  "quickly": {
+    "text": "быстро"
+  },
+  "slowly": {
+    "text": "медленно"
+  },
+  "easily": {
+    "text": "легко"
+  },
+  "directly": {
+    "text": "напрямую"
+  },
+  "simply": {
+    "text": "просто"
+  },
+  "generally": {
+    "text": "в целом"
+  },
+  "basically": {
+    "text": "в основном"
+  },
+  "eventually": {
+    "text": "в конце концов"
+  },
+  "suddenly": {
+    "text": "внезапно"
+  },
+  "ago": {
+    "text": "тому назад"
+  },
+  "safe": {
+    "m": "безопасный",
+    "f": "безопасная",
+    "n": "безопасное"
+  },
+  "dangerous": {
+    "m": "опасный",
+    "f": "опасная",
+    "n": "опасное"
+  },
+  "interesting": {
+    "m": "интересный",
+    "f": "интересная",
+    "n": "интересное"
+  },
+  "boring": {
+    "m": "скучный",
+    "f": "скучная",
+    "n": "скучное"
+  },
+  "popular": {
+    "m": "популярный",
+    "f": "популярная",
+    "n": "популярное"
+  },
+  "favorite": {
+    "m": "любимый",
+    "f": "любимая",
+    "n": "любимое"
+  },
+  "foreign": {
+    "m": "иностранный",
+    "f": "иностранная",
+    "n": "иностранное"
+  },
+  "early": {
+    "m": "ранний",
+    "f": "ранняя",
+    "n": "раннее"
+  },
+  "late": {
+    "m": "поздний",
+    "f": "поздняя",
+    "n": "позднее"
+  },
+  "recent": {
+    "m": "недавний",
+    "f": "недавняя",
+    "n": "недавнее"
+  },
+  "current": {
+    "m": "текущий",
+    "f": "текущая",
+    "n": "текущее"
+  },
+  "former": {
+    "text": "бывший"
+  },
+  "previous": {
+    "m": "предыдущий",
+    "f": "предыдущая",
+    "n": "предыдущее"
+  },
+  "final": {
+    "m": "финальный",
+    "f": "финальная",
+    "n": "финальное"
+  },
+  "initial": {
+    "m": "начальный",
+    "f": "начальная",
+    "n": "начальное"
+  },
+  "annual": {
+    "m": "ежегодный",
+    "f": "ежегодная",
+    "n": "ежегодное"
+  },
+  "daily": {
+    "m": "ежедневный",
+    "f": "ежедневная",
+    "n": "ежедневное"
+  },
+  "regular": {
+    "m": "регулярный",
+    "f": "регулярная",
+    "n": "регулярное"
+  },
+  "long_term": {
+    "m": "долгосрочный",
+    "f": "долгосрочная",
+    "n": "долгосрочное"
+  },
+  "ancient": {
+    "m": "древний",
+    "f": "древняя",
+    "n": "древнее"
+  },
+  "modern": {
+    "m": "современный",
+    "f": "современная",
+    "n": "современное"
+  },
+  "historical": {
+    "m": "исторический",
+    "f": "историческая",
+    "n": "историческое"
+  },
+  "quick": {
+    "m": "быстрый",
+    "f": "быстрая",
+    "n": "быстрое"
+  },
+  "present": {
+    "m": "нынешний",
+    "f": "нынешняя",
+    "n": "нынешнее"
+  },
+  "museum": {
+    "text": "музей",
+    "gender": "m"
+  },
+  "cinema": {
+    "text": "кинотеатр",
+    "gender": "m"
+  },
+  "pool": {
+    "text": "бассейн",
+    "gender": "m"
+  },
+  "mall": {
+    "text": "торговый центр",
+    "gender": "m"
+  },
+  "neighborhood": {
+    "text": "район",
+    "gender": "m"
+  },
+  "village": {
+    "text": "деревня",
+    "gender": "f"
+  },
+  "picture": {
+    "text": "картинка",
+    "gender": "f"
+  },
+  "to_rest": {
+    "imperfective": "отдыхать",
+    "perfective": "отдохнуть"
+  },
+  "to_relax": {
+    "imperfective": "расслабляться",
+    "perfective": "расслабиться"
+  },
+  "motorcycle": {
+    "text": "мотоцикл",
+    "gender": "m"
+  },
+  "truck": {
+    "text": "грузовик",
+    "gender": "m"
+  },
+  "ship": {
+    "text": "корабль",
+    "gender": "m"
+  },
+  "tourist": {
+    "text": "турист",
+    "gender": "m"
+  },
+  "schedule": {
+    "text": "расписание",
+    "gender": "n"
+  },
+  "delay": {
+    "text": "задержка",
+    "gender": "f"
+  },
+  "vacation": {
+    "text": "отпуск",
+    "gender": "m"
+  },
+  "passenger": {
+    "text": "пассажир",
+    "gender": "m"
+  },
+  "departure": {
+    "text": "отправление",
+    "gender": "n"
+  },
+  "arrival": {
+    "text": "прибытие",
+    "gender": "n"
+  },
+  "journey": {
+    "text": "путешествие",
+    "gender": "n"
+  },
+  "route": {
+    "text": "маршрут",
+    "gender": "m"
+  },
+  "airline": {
+    "text": "авиакомпания",
+    "gender": "f"
+  },
+  "suitcase": {
+    "text": "чемодан",
+    "gender": "m"
+  },
+  "ferry": {
+    "text": "паром",
+    "gender": "m"
+  },
+  "tram": {
+    "text": "трамвай",
+    "gender": "m"
+  },
+  "souvenir": {
+    "text": "сувенир",
+    "gender": "m"
+  },
+  "tent": {
+    "text": "палатка",
+    "gender": "f"
+  },
+  "adult": {
+    "text": "взрослый",
+    "gender": "m"
+  },
+  "guest": {
+    "text": "гость",
+    "gender": "m"
+  },
+  "stranger": {
+    "text": "незнакомец",
+    "gender": "m"
+  },
+  "shower": {
+    "text": "душ",
+    "gender": "m"
+  },
+  "fridge": {
+    "text": "холодильник",
+    "gender": "m"
+  },
+  "stove": {
+    "text": "плита",
+    "gender": "f"
+  },
+  "north": {
+    "text": "север",
+    "gender": "m"
+  },
+  "south": {
+    "text": "юг",
+    "gender": "m"
+  },
+  "east": {
+    "text": "восток",
+    "gender": "m"
+  },
+  "west": {
+    "text": "запад",
+    "gender": "m"
+  },
+  "northern": {
+    "m": "северный",
+    "f": "северная",
+    "n": "северное"
+  },
+  "southern": {
+    "m": "южный",
+    "f": "южная",
+    "n": "южное"
+  },
+  "eastern": {
+    "m": "восточный",
+    "f": "восточная",
+    "n": "восточное"
+  },
+  "western": {
+    "m": "западный",
+    "f": "западная",
+    "n": "западное"
+  },
+  "central": {
+    "m": "центральный",
+    "f": "центральная",
+    "n": "центральное"
+  },
+  "local": {
+    "m": "местный",
+    "f": "местная",
+    "n": "местное"
+  },
+  "international": {
+    "m": "международный",
+    "f": "международная",
+    "n": "международное"
+  },
+  "global": {
+    "m": "глобальный",
+    "f": "глобальная",
+    "n": "глобальное"
+  },
+  "urban": {
+    "m": "городской",
+    "f": "городская",
+    "n": "городское"
+  },
+  "domestic": {
+    "m": "внутренний",
+    "f": "внутренняя",
+    "n": "внутреннее"
+  },
+  "region": {
+    "text": "регион",
+    "gender": "m"
+  },
+  "area": {
+    "text": "область",
+    "gender": "f"
+  },
+  "though": {
+    "text": "впрочем"
+  },
+  "nor": {
+    "text": "ни"
+  },
+  "than": {
+    "text": "чем"
+  },
+  "like": {
+    "text": "подобно"
+  },
+  "even": {
+    "text": "даже"
+  },
+  "except": {
+    "text": "кроме"
+  },
+  "to_describe": {
+    "imperfective": "описывать",
+    "perfective": "описать"
+  },
+  "to_mention": {
+    "imperfective": "упоминать",
+    "perfective": "упомянуть"
+  },
+  "to_discuss": {
+    "imperfective": "обсуждать",
+    "perfective": "обсудить"
+  },
+  "to_argue": {
+    "imperfective": "спорить",
+    "perfective": "поспорить"
+  },
+  "to_claim": {
+    "text": "утверждать",
+    "aspect": "imperfective"
+  },
+  "to_state": {
+    "imperfective": "заявлять",
+    "perfective": "заявить"
+  },
+  "to_note": {
+    "imperfective": "отмечать",
+    "perfective": "отметить"
+  },
+  "to_respond": {
+    "imperfective": "откликаться",
+    "perfective": "откликнуться"
+  },
+  "to_announce": {
+    "imperfective": "объявлять",
+    "perfective": "объявить"
+  },
+  "to_admit": {
+    "imperfective": "признавать",
+    "perfective": "признать"
+  },
+  "to_deny": {
+    "text": "отрицать",
+    "aspect": "imperfective"
+  },
+  "to_refuse": {
+    "imperfective": "отказываться",
+    "perfective": "отказаться"
+  },
+  "to_plan": {
+    "imperfective": "планировать",
+    "perfective": "запланировать"
+  },
+  "to_manage": {
+    "text": "управлять",
+    "aspect": "imperfective"
+  },
+  "to_control": {
+    "text": "контролировать",
+    "aspect": "imperfective"
+  },
+  "to_design": {
+    "imperfective": "проектировать",
+    "perfective": "спроектировать"
+  },
+  "to_apply": {
+    "imperfective": "подавать заявку",
+    "perfective": "подать заявку"
+  },
+  "to_present": {
+    "text": "презентовать",
+    "aspect": "imperfective"
+  },
+  "to_represent": {
+    "text": "представлять интересы",
+    "aspect": "imperfective"
+  },
+  "to_focus": {
+    "imperfective": "сосредотачиваться",
+    "perfective": "сосредоточиться"
+  },
+  "to_deal": {
+    "text": "иметь дело",
+    "aspect": "imperfective"
+  },
+  "to_act": {
+    "text": "действовать",
+    "aspect": "imperfective"
+  },
+  "to_handle": {
+    "text": "обращаться",
+    "aspect": "imperfective"
+  },
+  "to_conduct": {
+    "imperfective": "проводить",
+    "perfective": "провести"
+  },
+  "to_climb": {
+    "imperfective": "взбираться",
+    "perfective": "взобраться"
+  },
+  "to_breathe": {
+    "text": "дышать",
+    "aspect": "imperfective"
+  },
+  "to_smoke": {
+    "text": "курить",
+    "aspect": "imperfective"
+  },
+  "to_yell": {
+    "text": "орать",
+    "aspect": "imperfective"
+  },
+  "to_whisper": {
+    "imperfective": "шептать",
+    "perfective": "шепнуть"
+  },
+  "to_scream": {
+    "imperfective": "визжать",
+    "perfective": "взвизгнуть"
+  },
+  "to_greet": {
+    "imperfective": "здороваться",
+    "perfective": "поздороваться"
+  },
+  "to_apologize": {
+    "imperfective": "извиняться",
+    "perfective": "извиниться"
+  },
+  "to_forgive": {
+    "imperfective": "прощать",
+    "perfective": "простить"
+  },
+  "beach": {
+    "text": "пляж",
+    "gender": "m"
+  },
+  "lip": {
+    "text": "губа",
+    "gender": "f"
+  },
+  "throat": {
+    "text": "горло",
+    "gender": "n"
+  },
+  "to_fix": {
+    "imperfective": "чинить",
+    "perfective": "починить"
+  },
+  "to_repair": {
+    "imperfective": "ремонтировать",
+    "perfective": "отремонтировать"
+  },
+  "to_lock": {
+    "imperfective": "запирать",
+    "perfective": "запереть"
+  },
+  "closet": {
+    "text": "шкаф",
+    "gender": "m"
+  },
+  "curtain": {
+    "text": "занавеска",
+    "gender": "f"
+  },
+  "carpet": {
+    "text": "ковёр",
+    "gender": "m"
+  },
+  "mattress": {
+    "text": "матрас",
+    "gender": "m"
+  },
+  "sofa": {
+    "text": "софа",
+    "gender": "f"
+  },
+  "pocket": {
+    "text": "карман",
+    "gender": "m"
+  },
+  "watch": {
+    "text": "наручные часы",
+    "gender": "m"
+  },
+  "belt": {
+    "text": "ремень",
+    "gender": "m"
+  },
+  "shorts": {
+    "text": "шорты",
+    "gender": "m"
+  },
+  "underwear": {
+    "text": "нижнее бельё",
+    "gender": "n"
+  },
+  "backpack": {
+    "text": "рюкзак",
+    "gender": "m"
+  },
+  "tie": {
+    "text": "галстук",
+    "gender": "m"
+  },
+  "uniform": {
+    "text": "униформа",
+    "gender": "f"
+  },
+  "button": {
+    "text": "пуговица",
+    "gender": "f"
+  },
+  "cap": {
+    "text": "кепка",
+    "gender": "f"
+  },
+  "sneaker": {
+    "text": "кроссовок",
+    "gender": "m"
+  },
+  "sandal": {
+    "text": "сандалия",
+    "gender": "f"
+  },
+  "swimsuit": {
+    "text": "купальник",
+    "gender": "m"
+  },
+  "sunglasses": {
+    "text": "солнечные очки",
+    "gender": "n"
+  },
+  "clothes": {
+    "text": "одежда",
+    "gender": "f"
+  },
+  "suit": {
+    "text": "костюм",
+    "gender": "m"
+  },
+  "laundry": {
+    "text": "стирка",
+    "gender": "f"
+  },
+  "bucket": {
+    "text": "ведро",
+    "gender": "n"
+  },
+  "trash": {
+    "text": "отбросы",
+    "gender": "m"
+  },
+  "heater": {
+    "text": "обогреватель",
+    "gender": "m"
+  },
+  "bathtub": {
+    "text": "ванна",
+    "gender": "f"
+  },
+  "ceiling": {
+    "text": "потолок",
+    "gender": "m"
+  },
+  "fence": {
+    "text": "забор",
+    "gender": "m"
+  },
+  "gate": {
+    "text": "ворота",
+    "gender": "n"
+  },
+  "to_sweep": {
+    "imperfective": "подметать",
+    "perfective": "подмести"
+  },
+  "to_fold": {
+    "imperfective": "складывать",
+    "perfective": "сложить"
+  },
+  "to_wrap": {
+    "imperfective": "заворачивать",
+    "perfective": "завернуть"
+  },
+  "recipe": {
+    "text": "рецепт",
+    "gender": "m"
+  },
+  "ingredient": {
+    "text": "ингредиент",
+    "gender": "m"
+  },
+  "to_fry": {
+    "imperfective": "жарить",
+    "perfective": "пожарить"
+  },
+  "to_chop": {
+    "imperfective": "крошить",
+    "perfective": "покрошить"
+  },
+  "to_pour": {
+    "imperfective": "наливать",
+    "perfective": "налить"
+  },
+  "to_stir": {
+    "imperfective": "мешать",
+    "perfective": "помешать"
+  },
+  "to_boil": {
+    "imperfective": "кипятить",
+    "perfective": "вскипятить"
+  },
+  "bean": {
+    "text": "фасоль",
+    "gender": "f"
+  },
+  "corn": {
+    "text": "кукуруза",
+    "gender": "f"
+  },
+  "nut": {
+    "text": "орех",
+    "gender": "m"
+  },
+  "grape": {
+    "text": "виноград",
+    "gender": "m"
+  },
+  "strawberry": {
+    "text": "клубника",
+    "gender": "f"
+  },
+  "cucumber": {
+    "text": "огурец",
+    "gender": "m"
+  },
+  "cabbage": {
+    "text": "капуста",
+    "gender": "f"
+  },
+  "yogurt": {
+    "text": "йогурт",
+    "gender": "m"
+  },
+  "steak": {
+    "text": "стейк",
+    "gender": "m"
+  },
+  "burger": {
+    "text": "бургер",
+    "gender": "m"
+  },
+  "pie": {
+    "text": "пирог",
+    "gender": "m"
+  },
+  "cookie": {
+    "text": "печенье",
+    "gender": "n"
+  },
+  "candy": {
+    "text": "конфета",
+    "gender": "f"
+  },
+  "keyboard": {
+    "text": "клавиатура",
+    "gender": "f"
+  },
+  "signal": {
+    "text": "сигнал",
+    "gender": "m"
+  },
+  "to_click": {
+    "imperfective": "кликать",
+    "perfective": "кликнуть"
+  },
+  "to_print": {
+    "imperfective": "печатать",
+    "perfective": "напечатать"
+  },
+  "to_delete": {
+    "imperfective": "стирать",
+    "perfective": "стереть"
+  },
+  "to_install": {
+    "imperfective": "устанавливать",
+    "perfective": "установить"
+  },
+  "printer": {
+    "text": "принтер",
+    "gender": "m"
+  },
+  "headphones": {
+    "text": "наушники",
+    "gender": "m"
+  },
+  "employer": {
+    "text": "работодатель",
+    "gender": "m"
+  },
+  "profession": {
+    "text": "профессия",
+    "gender": "f"
+  },
+  "to_quit": {
+    "imperfective": "увольняться",
+    "perfective": "уволиться"
+  },
+  "conference": {
+    "text": "конференция",
+    "gender": "f"
+  },
+  "task": {
+    "text": "задача",
+    "gender": "f"
+  },
+  "responsibility": {
+    "text": "ответственность",
+    "gender": "f"
+  },
+  "to_shave": {
+    "imperfective": "бриться",
+    "perfective": "побриться"
+  },
+  "cancer": {
+    "text": "рак",
+    "gender": "m"
+  },
+  "disease": {
+    "text": "болезнь",
+    "gender": "f"
+  },
+  "treatment": {
+    "text": "лечение",
+    "gender": "n"
+  },
+  "patient": {
+    "text": "пациент",
+    "gender": "m"
+  },
+  "drug": {
+    "text": "наркотик",
+    "gender": "m"
+  },
+  "care": {
+    "text": "уход",
+    "gender": "m"
+  },
+  "vaccine": {
+    "text": "вакцина",
+    "gender": "f"
+  },
+  "vitamin": {
+    "text": "витамин",
+    "gender": "m"
+  },
+  "mask": {
+    "text": "маска",
+    "gender": "f"
+  },
+  "diet": {
+    "text": "диета",
+    "gender": "f"
+  },
+  "to_bleed": {
+    "text": "кровоточить",
+    "aspect": "imperfective"
+  },
+  "to_sneeze": {
+    "imperfective": "чихать",
+    "perfective": "чихнуть"
+  },
+  "abortion": {
+    "text": "аборт",
+    "gender": "m"
+  },
+  "elbow": {
+    "text": "локоть",
+    "gender": "m"
+  },
+  "wrist": {
+    "text": "запястье",
+    "gender": "n"
+  },
+  "ankle": {
+    "text": "лодыжка",
+    "gender": "f"
+  },
+  "thumb": {
+    "text": "большой палец",
+    "gender": "m"
+  },
+  "cheek": {
+    "text": "щека",
+    "gender": "f"
+  },
+  "chin": {
+    "text": "подбородок",
+    "gender": "m"
+  },
+  "forehead": {
+    "text": "лоб",
+    "gender": "m"
+  },
+  "breast": {
+    "text": "грудь",
+    "gender": "f"
+  },
+  "breath": {
+    "text": "дыхание",
+    "gender": "n"
+  },
+  "sleep": {
+    "text": "сон",
+    "gender": "m"
+  },
+  "gas": {
+    "text": "бензин",
+    "gender": "m"
+  },
+  "vocabulary": {
+    "text": "словарный запас",
+    "gender": "m"
+  },
+  "pencil": {
+    "text": "карандаш",
+    "gender": "m"
+  },
+  "notebook": {
+    "text": "тетрадь",
+    "gender": "f"
+  },
+  "dictionary": {
+    "text": "словарь",
+    "gender": "m"
+  },
+  "grammar": {
+    "text": "грамматика",
+    "gender": "f"
+  },
+  "to_practice": {
+    "text": "практиковаться",
+    "aspect": "imperfective"
+  },
+  "to_graduate": {
+    "imperfective": "оканчивать",
+    "perfective": "окончить"
+  },
+  "guy": {
+    "text": "парень",
+    "gender": "m"
+  },
+  "lady": {
+    "text": "дама",
+    "gender": "f"
+  },
+  "sir": {
+    "text": "сэр",
+    "gender": "m"
+  },
+  "member": {
+    "text": "член",
+    "gender": "m"
+  },
+  "fan": {
+    "text": "фанат",
+    "gender": "m"
+  },
+  "user": {
+    "text": "пользователь",
+    "gender": "m"
+  },
+  "owner": {
+    "text": "владелец",
+    "gender": "m"
+  },
+  "reader": {
+    "text": "читатель",
+    "gender": "m"
+  },
+  "consumer": {
+    "text": "потребитель",
+    "gender": "m"
+  },
+  "citizen": {
+    "text": "гражданин",
+    "gender": "m"
+  },
+  "resident": {
+    "text": "житель",
+    "gender": "m"
+  },
+  "voter": {
+    "text": "избиратель",
+    "gender": "m"
+  },
+  "participant": {
+    "text": "участник",
+    "gender": "m"
+  },
+  "winner": {
+    "text": "победитель",
+    "gender": "m"
+  },
+  "speaker": {
+    "text": "докладчик",
+    "gender": "m"
+  },
+  "investor": {
+    "text": "инвестор",
+    "gender": "m"
+  },
+  "miss": {
+    "text": "мисс",
+    "gender": "f"
+  },
+  "host": {
+    "text": "хозяин",
+    "gender": "m"
+  },
+  "university": {
+    "text": "университет",
+    "gender": "m"
+  },
+  "college": {
+    "text": "колледж",
+    "gender": "m"
+  },
+  "education": {
+    "text": "образование",
+    "gender": "n"
+  },
+  "class": {
+    "text": "занятие",
+    "gender": "n"
+  },
+  "study": {
+    "text": "учёба",
+    "gender": "f"
+  },
+  "learning": {
+    "text": "обучение",
+    "gender": "n"
+  },
+  "teaching": {
+    "text": "преподавание",
+    "gender": "n"
+  },
+  "reading": {
+    "text": "чтение",
+    "gender": "n"
+  },
+  "writing": {
+    "text": "написание",
+    "gender": "n"
+  },
+  "educational": {
+    "m": "образовательный",
+    "f": "образовательная",
+    "n": "образовательное"
+  },
+  "academic": {
+    "m": "академический",
+    "f": "академическая",
+    "n": "академическое"
+  },
+  "subject": {
+    "text": "предмет",
+    "gender": "m"
+  },
+  "career": {
+    "text": "карьера",
+    "gender": "f"
+  },
+  "position": {
+    "text": "должность",
+    "gender": "f"
+  },
+  "opportunity": {
+    "text": "возможность",
+    "gender": "f"
+  },
+  "skill": {
+    "text": "навык",
+    "gender": "m"
+  },
+  "professional": {
+    "m": "профессиональный",
+    "f": "профессиональная",
+    "n": "профессиональное"
+  },
+  "plan": {
+    "text": "план",
+    "gender": "m"
+  },
+  "purpose": {
+    "text": "цель",
+    "gender": "f"
+  },
+  "effort": {
+    "text": "усилие",
+    "gender": "n"
+  },
+  "practice": {
+    "text": "практика",
+    "gender": "f"
+  },
+  "target": {
+    "text": "мишень",
+    "gender": "f"
+  },
+  "living": {
+    "text": "заработок",
+    "gender": "m"
+  },
+  "business": {
+    "text": "бизнес",
+    "gender": "m"
+  },
+  "firm": {
+    "text": "фирма",
+    "gender": "f"
+  },
+  "corporation": {
+    "text": "корпорация",
+    "gender": "f"
+  },
+  "industry": {
+    "text": "промышленность",
+    "gender": "f"
+  },
+  "organization": {
+    "text": "организация",
+    "gender": "f"
+  },
+  "management": {
+    "text": "руководство",
+    "gender": "n"
+  },
+  "sector": {
+    "text": "сектор",
+    "gender": "m"
+  },
+  "program": {
+    "text": "программа",
+    "gender": "f"
+  },
+  "system": {
+    "text": "система",
+    "gender": "f"
+  },
+  "service": {
+    "text": "услуга",
+    "gender": "f"
+  },
+  "product": {
+    "text": "продукт",
+    "gender": "m"
+  },
+  "production": {
+    "text": "производство",
+    "gender": "n"
+  },
+  "construction": {
+    "text": "строительство",
+    "gender": "n"
+  },
+  "percent": {
+    "text": "процент",
+    "gender": "m"
+  },
+  "percentage": {
+    "text": "процентная доля",
+    "gender": "f"
+  },
+  "amount": {
+    "text": "сумма",
+    "gender": "f"
+  },
+  "average": {
+    "m": "средний",
+    "f": "средняя",
+    "n": "среднее"
+  },
+  "million": {
+    "text": "миллион"
+  },
+  "rate": {
+    "text": "ставка",
+    "gender": "f"
+  },
+  "value": {
+    "text": "ценность",
+    "gender": "f"
+  },
+  "cost": {
+    "text": "стоимость",
+    "gender": "f"
+  },
+  "dollar": {
+    "text": "доллар",
+    "gender": "m"
+  },
+  "pound": {
+    "text": "фунт",
+    "gender": "m"
+  },
+  "increase": {
+    "text": "увеличение",
+    "gender": "n"
+  },
+  "growth": {
+    "text": "рост",
+    "gender": "m"
+  },
+  "risk": {
+    "text": "риск",
+    "gender": "m"
+  },
+  "benefit": {
+    "text": "польза",
+    "gender": "f"
+  },
+  "deal": {
+    "text": "сделка",
+    "gender": "f"
+  },
+  "mile": {
+    "text": "миля",
+    "gender": "f"
+  },
+  "inch": {
+    "text": "дюйм",
+    "gender": "m"
+  },
+  "mean": {
+    "text": "среднее значение",
+    "gender": "n"
+  },
+  "result": {
+    "text": "результат",
+    "gender": "m"
+  },
+  "development": {
+    "text": "развитие",
+    "gender": "n"
+  },
+  "improvement": {
+    "text": "улучшение",
+    "gender": "n"
+  },
+  "progress": {
+    "text": "прогресс",
+    "gender": "m"
+  },
+  "performance": {
+    "text": "производительность",
+    "gender": "f"
+  },
+  "advantage": {
+    "text": "преимущество",
+    "gender": "n"
+  },
+  "demand": {
+    "text": "спрос",
+    "gender": "m"
+  },
+  "supply": {
+    "text": "поставка",
+    "gender": "f"
+  },
+  "resource": {
+    "text": "ресурс",
+    "gender": "m"
+  },
+  "standard": {
+    "text": "стандарт",
+    "gender": "m"
+  },
+  "quality": {
+    "text": "качество",
+    "gender": "n"
+  },
+  "status": {
+    "text": "статус",
+    "gender": "m"
+  },
+  "potential": {
+    "m": "потенциальный",
+    "f": "потенциальная",
+    "n": "потенциальное"
+  },
+  "requirement": {
+    "text": "требование",
+    "gender": "n"
+  },
+  "commitment": {
+    "text": "обязательство",
+    "gender": "n"
+  },
+  "contribution": {
+    "text": "вклад",
+    "gender": "m"
+  },
+  "to_operate": {
+    "text": "эксплуатировать",
+    "aspect": "imperfective"
+  },
+  "to_organize": {
+    "imperfective": "организовывать",
+    "perfective": "организовать"
+  },
+  "to_perform": {
+    "imperfective": "выступать",
+    "perfective": "выступить"
+  },
+  "to_complete": {
+    "imperfective": "завершать",
+    "perfective": "завершить"
+  },
+  "to_achieve": {
+    "imperfective": "достигать",
+    "perfective": "достичь"
+  },
+  "to_attend": {
+    "text": "присутствовать",
+    "aspect": "imperfective"
+  },
+  "to_fire": {
+    "imperfective": "увольнять",
+    "perfective": "уволить"
+  },
+  "to_establish": {
+    "imperfective": "основывать",
+    "perfective": "основать"
+  },
+  "to_maintain": {
+    "imperfective": "поддерживать",
+    "perfective": "поддержать"
+  },
+  "to_launch": {
+    "imperfective": "запускать",
+    "perfective": "запустить"
+  },
+  "economy": {
+    "text": "экономика",
+    "gender": "f"
+  },
+  "economic": {
+    "m": "экономический",
+    "f": "экономическая",
+    "n": "экономическое"
+  },
+  "financial": {
+    "m": "финансовый",
+    "f": "финансовая",
+    "n": "финансовое"
+  },
+  "trade": {
+    "text": "торговля",
+    "gender": "f"
+  },
+  "stock": {
+    "text": "акция",
+    "gender": "f"
+  },
+  "credit": {
+    "text": "кредит",
+    "gender": "m"
+  },
+  "income": {
+    "text": "доход",
+    "gender": "m"
+  },
+  "investment": {
+    "text": "инвестиция",
+    "gender": "f"
+  },
+  "debt": {
+    "text": "долг",
+    "gender": "m"
+  },
+  "sales": {
+    "text": "продажи",
+    "gender": "f"
+  },
+  "revenue": {
+    "text": "выручка",
+    "gender": "f"
+  },
+  "fund": {
+    "text": "фонд",
+    "gender": "m"
+  },
+  "capital": {
+    "text": "капитал",
+    "gender": "m"
+  },
+  "share": {
+    "text": "доля",
+    "gender": "f"
+  },
+  "property": {
+    "text": "имущество",
+    "gender": "n"
+  },
+  "estate": {
+    "text": "поместье",
+    "gender": "n"
+  },
+  "application": {
+    "text": "заявление",
+    "gender": "n"
+  },
+  "request": {
+    "text": "просьба",
+    "gender": "f"
+  },
+  "offer": {
+    "text": "предложение",
+    "gender": "n"
+  },
+  "package": {
+    "text": "посылка",
+    "gender": "f"
+  },
+  "item": {
+    "text": "позиция",
+    "gender": "f"
+  },
+  "sample": {
+    "text": "образец",
+    "gender": "m"
+  },
+  "labor": {
+    "text": "труд",
+    "gender": "m"
+  },
+  "successful": {
+    "m": "успешный",
+    "f": "успешная",
+    "n": "успешное"
+  },
+  "effective": {
+    "m": "эффективный",
+    "f": "эффективная",
+    "n": "эффективное"
+  },
+  "corporate": {
+    "m": "корпоративный",
+    "f": "корпоративная",
+    "n": "корпоративное"
+  },
+  "commercial": {
+    "m": "коммерческий",
+    "f": "коммерческая",
+    "n": "коммерческое"
+  },
+  "relative": {
+    "text": "родственник",
+    "gender": "m"
+  },
+  "twin": {
+    "text": "близнец",
+    "gender": "m"
+  },
+  "nephew": {
+    "text": "племянник",
+    "gender": "m"
+  },
+  "niece": {
+    "text": "племянница",
+    "gender": "f"
+  },
+  "teenager": {
+    "text": "подросток",
+    "gender": "m"
+  },
+  "immigrant": {
+    "text": "иммигрант",
+    "gender": "m"
+  },
+  "youth": {
+    "text": "молодёжь",
+    "gender": "f"
+  },
+  "individual": {
+    "text": "индивид",
+    "gender": "m"
+  },
+  "human": {
+    "m": "человеческий",
+    "f": "человеческая",
+    "n": "человеческое"
+  },
+  "self": {
+    "text": "собственное я",
+    "gender": "n"
+  },
+  "being": {
+    "text": "существо",
+    "gender": "n"
+  },
+  "daddy": {
+    "text": "папочка",
+    "gender": "m"
+  },
+  "writer": {
+    "text": "писатель",
+    "gender": "m"
+  },
+  "author": {
+    "text": "автор",
+    "gender": "m"
+  },
+  "editor": {
+    "text": "редактор",
+    "gender": "m"
+  },
+  "reporter": {
+    "text": "репортёр",
+    "gender": "m"
+  },
+  "scientist": {
+    "text": "учёный",
+    "gender": "m"
+  },
+  "researcher": {
+    "text": "исследователь",
+    "gender": "m"
+  },
+  "expert": {
+    "text": "эксперт",
+    "gender": "m"
+  },
+  "agent": {
+    "text": "агент",
+    "gender": "m"
+  },
+  "cop": {
+    "text": "коп",
+    "gender": "m"
+  },
+  "guard": {
+    "text": "охранник",
+    "gender": "m"
+  },
+  "critic": {
+    "text": "критик",
+    "gender": "m"
+  },
+  "master": {
+    "text": "мастер",
+    "gender": "m"
+  },
+  "president": {
+    "text": "президент",
+    "gender": "m"
+  },
+  "leader": {
+    "text": "лидер",
+    "gender": "m"
+  },
+  "director": {
+    "text": "директор",
+    "gender": "m"
+  },
+  "official": {
+    "text": "чиновник",
+    "gender": "m"
+  },
+  "officer": {
+    "text": "офицер",
+    "gender": "m"
+  },
+  "chief": {
+    "text": "начальник",
+    "gender": "m"
+  },
+  "captain": {
+    "text": "капитан",
+    "gender": "m"
+  },
+  "minister": {
+    "text": "министр",
+    "gender": "m"
+  },
+  "mayor": {
+    "text": "мэр",
+    "gender": "m"
+  },
+  "chairman": {
+    "text": "председатель",
+    "gender": "m"
+  },
+  "executive": {
+    "text": "руководитель",
+    "gender": "m"
+  },
+  "secretary": {
+    "text": "секретарь",
+    "gender": "m"
+  },
+  "candidate": {
+    "text": "кандидат",
+    "gender": "m"
+  },
+  "politician": {
+    "text": "политик",
+    "gender": "m"
+  },
+  "king": {
+    "text": "король",
+    "gender": "m"
+  },
+  "lord": {
+    "text": "лорд",
+    "gender": "m"
+  },
+  "general_n": {
+    "text": "генерал",
+    "gender": "m"
+  },
+  "to_insist": {
+    "imperfective": "настаивать",
+    "perfective": "настоять"
+  },
+  "to_express": {
+    "imperfective": "выражать",
+    "perfective": "выразить"
+  },
+  "to_declare": {
+    "imperfective": "провозглашать",
+    "perfective": "провозгласить"
+  },
+  "to_propose": {
+    "imperfective": "предлагать",
+    "perfective": "предложить"
+  },
+  "to_recommend": {
+    "imperfective": "рекомендовать",
+    "perfective": "порекомендовать"
+  },
+  "to_excuse": {
+    "imperfective": "оправдывать",
+    "perfective": "оправдать"
+  },
+  "to_blame": {
+    "text": "винить",
+    "aspect": "imperfective"
+  },
+  "to_accuse": {
+    "imperfective": "обвинять",
+    "perfective": "обвинить"
+  },
+  "to_convince": {
+    "imperfective": "убеждать",
+    "perfective": "убедить"
+  },
+  "to_comment": {
+    "imperfective": "комментировать",
+    "perfective": "прокомментировать"
+  },
+  "to_question": {
+    "imperfective": "расспрашивать",
+    "perfective": "расспросить"
+  },
+  "to_cite": {
+    "imperfective": "цитировать",
+    "perfective": "процитировать"
+  },
+  "generation": {
+    "text": "поколение",
+    "gender": "n"
+  },
+  "crowd": {
+    "text": "толпа",
+    "gender": "f"
+  },
+  "troop": {
+    "text": "отряд",
+    "gender": "m"
+  },
+  "crew": {
+    "text": "экипаж",
+    "gender": "m"
+  },
+  "staff": {
+    "text": "персонал",
+    "gender": "m"
+  },
+  "minority": {
+    "text": "меньшинство",
+    "gender": "n"
+  },
+  "majority": {
+    "text": "большинство",
+    "gender": "n"
+  },
+  "population": {
+    "text": "население",
+    "gender": "n"
+  },
+  "community": {
+    "text": "сообщество",
+    "gender": "n"
+  },
+  "society": {
+    "text": "общество",
+    "gender": "n"
+  },
+  "public_n": {
+    "text": "публика",
+    "gender": "f"
+  },
+  "folk": {
+    "text": "народ",
+    "gender": "m"
+  },
+  "enemy": {
+    "text": "враг",
+    "gender": "m"
+  },
+  "hero": {
+    "text": "герой",
+    "gender": "m"
+  },
+  "association": {
+    "text": "ассоциация",
+    "gender": "f"
+  },
+  "panel": {
+    "text": "экспертная группа",
+    "gender": "f"
+  },
+  "call": {
+    "text": "звонок",
+    "gender": "m"
+  },
+  "talk": {
+    "text": "беседа",
+    "gender": "f"
+  },
+  "conversation": {
+    "text": "разговор",
+    "gender": "m"
+  },
+  "discussion": {
+    "text": "обсуждение",
+    "gender": "n"
+  },
+  "debate": {
+    "text": "дебаты",
+    "gender": "m"
+  },
+  "statement": {
+    "text": "высказывание",
+    "gender": "n"
+  },
+  "expression": {
+    "text": "выражение",
+    "gender": "n"
+  },
+  "explanation": {
+    "text": "объяснение",
+    "gender": "n"
+  },
+  "instruction": {
+    "text": "инструкция",
+    "gender": "f"
+  },
+  "advice": {
+    "text": "совет",
+    "gender": "m"
+  },
+  "promise": {
+    "text": "обещание",
+    "gender": "n"
+  },
+  "claim": {
+    "text": "утверждение",
+    "gender": "n"
+  },
+  "agreement": {
+    "text": "соглашение",
+    "gender": "n"
+  },
+  "joke": {
+    "text": "шутка",
+    "gender": "f"
+  },
+  "note": {
+    "text": "заметка",
+    "gender": "f"
+  },
+  "contact": {
+    "text": "контакт",
+    "gender": "m"
+  },
+  "connection": {
+    "text": "связь",
+    "gender": "f"
+  },
+  "communication": {
+    "text": "общение",
+    "gender": "n"
+  },
+  "relation": {
+    "text": "отношение",
+    "gender": "n"
+  },
+  "interaction": {
+    "text": "взаимодействие",
+    "gender": "n"
+  },
+  "access": {
+    "text": "доступ",
+    "gender": "m"
+  },
+  "support": {
+    "text": "поддержка",
+    "gender": "f"
+  },
+  "help": {
+    "text": "помощь",
+    "gender": "f"
+  },
+  "report": {
+    "text": "отчёт",
+    "gender": "m"
+  },
+  "record": {
+    "text": "запись",
+    "gender": "f"
+  },
+  "list": {
+    "text": "список",
+    "gender": "m"
+  },
+  "sign": {
+    "text": "знак",
+    "gender": "m"
+  },
+  "sound": {
+    "text": "звук",
+    "gender": "m"
+  },
+  "reference": {
+    "text": "ссылка",
+    "gender": "f"
+  },
+  "coverage": {
+    "text": "охват",
+    "gender": "m"
+  },
+  "aid": {
+    "text": "содействие",
+    "gender": "n"
+  },
+  "photograph": {
+    "text": "фотография",
+    "gender": "f"
+  },
+  "tv": {
+    "text": "телевизор",
+    "gender": "m"
+  },
+  "episode": {
+    "text": "эпизод",
+    "gender": "m"
+  },
+  "scene": {
+    "text": "сцена",
+    "gender": "f"
+  },
+  "stage": {
+    "text": "эстрада",
+    "gender": "f"
+  },
+  "play": {
+    "text": "пьеса",
+    "gender": "f"
+  },
+  "studio": {
+    "text": "студия",
+    "gender": "f"
+  },
+  "media": {
+    "text": "СМИ",
+    "gender": "n"
+  },
+  "press": {
+    "text": "пресса",
+    "gender": "f"
+  },
+  "newspaper": {
+    "text": "газета",
+    "gender": "f"
+  },
+  "magazine": {
+    "text": "журнал",
+    "gender": "m"
+  },
+  "journal": {
+    "text": "научный журнал",
+    "gender": "m"
+  },
+  "article": {
+    "text": "статья",
+    "gender": "f"
+  },
+  "page": {
+    "text": "страница",
+    "gender": "f"
+  },
+  "text": {
+    "text": "текст",
+    "gender": "m"
+  },
+  "title": {
+    "text": "заголовок",
+    "gender": "m"
+  },
+  "chapter": {
+    "text": "глава",
+    "gender": "f"
+  },
+  "novel": {
+    "text": "роман",
+    "gender": "m"
+  },
+  "literature": {
+    "text": "литература",
+    "gender": "f"
+  },
+  "blog": {
+    "text": "блог",
+    "gender": "m"
+  },
+  "post": {
+    "text": "пост",
+    "gender": "m"
+  },
+  "comment": {
+    "text": "комментарий",
+    "gender": "m"
+  },
+  "image": {
+    "text": "изображение",
+    "gender": "n"
+  },
+  "album": {
+    "text": "альбом",
+    "gender": "m"
+  },
+  "review": {
+    "text": "рецензия",
+    "gender": "f"
+  },
+  "content": {
+    "text": "содержание",
+    "gender": "n"
+  },
+  "ad": {
+    "text": "реклама",
+    "gender": "f"
+  },
+  "center": {
+    "text": "центр",
+    "gender": "m"
+  },
+  "site": {
+    "text": "участок",
+    "gender": "m"
+  },
+  "space": {
+    "text": "пространство",
+    "gender": "n"
+  },
+  "ground": {
+    "text": "грунт",
+    "gender": "m"
+  },
+  "location": {
+    "text": "местоположение",
+    "gender": "n"
+  },
+  "camp": {
+    "text": "лагерь",
+    "gender": "m"
+  },
+  "farm": {
+    "text": "ферма",
+    "gender": "f"
+  },
+  "yard": {
+    "text": "двор",
+    "gender": "m"
+  },
+  "spot": {
+    "text": "местечко",
+    "gender": "n"
+  },
+  "setting": {
+    "text": "обстановка",
+    "gender": "f"
+  },
+  "zone": {
+    "text": "зона",
+    "gender": "f"
+  },
+  "band": {
+    "text": "музыкальная группа",
+    "gender": "f"
+  },
+  "dance": {
+    "text": "танец",
+    "gender": "m"
+  },
+  "art": {
+    "text": "искусство",
+    "gender": "n"
+  },
+  "painting": {
+    "text": "живопись",
+    "gender": "f"
+  },
+  "design": {
+    "text": "дизайн",
+    "gender": "m"
+  },
+  "style": {
+    "text": "стиль",
+    "gender": "m"
+  },
+  "fashion": {
+    "text": "мода",
+    "gender": "f"
+  },
+  "technology": {
+    "text": "технология",
+    "gender": "f"
+  },
+  "web": {
+    "text": "веб",
+    "gender": "m"
+  },
+  "digital": {
+    "m": "цифровой",
+    "f": "цифровая",
+    "n": "цифровое"
+  },
+  "link": {
+    "text": "гиперссылка",
+    "gender": "f"
+  },
+  "file": {
+    "text": "файл",
+    "gender": "m"
+  },
+  "device": {
+    "text": "устройство",
+    "gender": "n"
+  },
+  "machine": {
+    "text": "машина",
+    "gender": "f"
+  },
+  "tool": {
+    "text": "инструмент",
+    "gender": "m"
+  },
+  "information": {
+    "text": "информация",
+    "gender": "f"
+  },
+  "source": {
+    "text": "источник",
+    "gender": "m"
+  },
+  "to_publish": {
+    "imperfective": "публиковать",
+    "perfective": "опубликовать"
+  },
+  "to_post": {
+    "imperfective": "постить",
+    "perfective": "запостить"
+  },
+  "to_release": {
+    "imperfective": "выпускать",
+    "perfective": "выпустить"
+  },
+  "to_record": {
+    "imperfective": "записывать",
+    "perfective": "записать"
+  },
+  "to_capture": {
+    "imperfective": "захватывать",
+    "perfective": "захватить"
+  },
+  "to_file": {
+    "imperfective": "подшивать",
+    "perfective": "подшить"
+  },
+  "to_link": {
+    "imperfective": "связывать",
+    "perfective": "связать"
+  },
+  "to_connect": {
+    "imperfective": "соединять",
+    "perfective": "соединить"
+  },
+  "to_direct": {
+    "text": "режиссировать",
+    "aspect": "imperfective"
+  },
+  "to_issue": {
+    "imperfective": "выдавать",
+    "perfective": "выдать"
+  },
+  "to_feature": {
+    "imperfective": "освещать",
+    "perfective": "осветить"
+  },
+  "to_mark": {
+    "imperfective": "помечать",
+    "perfective": "пометить"
+  },
+  "to_list": {
+    "imperfective": "перечислять",
+    "perfective": "перечислить"
+  },
+  "to_paint": {
+    "imperfective": "красить",
+    "perfective": "покрасить"
+  },
+  "sport": {
+    "text": "спорт",
+    "gender": "m"
+  },
+  "club": {
+    "text": "клуб",
+    "gender": "m"
+  },
+  "football": {
+    "text": "футбол",
+    "gender": "m"
+  },
+  "baseball": {
+    "text": "бейсбол",
+    "gender": "m"
+  },
+  "award": {
+    "text": "награда",
+    "gender": "f"
+  },
+  "competition": {
+    "text": "соревнование",
+    "gender": "n"
+  },
+  "event": {
+    "text": "событие",
+    "gender": "n"
+  },
+  "activity": {
+    "text": "деятельность",
+    "gender": "f"
+  },
+  "party": {
+    "text": "вечеринка",
+    "gender": "f"
+  },
+  "tour": {
+    "text": "тур",
+    "gender": "m"
+  },
+  "visit": {
+    "text": "визит",
+    "gender": "m"
+  },
+  "travel": {
+    "text": "поездки",
+    "gender": "f"
+  },
+  "ride": {
+    "text": "поездка",
+    "gender": "f"
+  },
+  "drive": {
+    "text": "езда",
+    "gender": "f"
+  },
+  "sight": {
+    "text": "зрелище",
+    "gender": "n"
+  },
+  "stuff": {
+    "text": "вещи",
+    "gender": "f"
+  },
+  "card": {
+    "text": "карта",
+    "gender": "f"
+  },
+  "ring": {
+    "text": "кольцо",
+    "gender": "n"
+  },
+  "chain": {
+    "text": "цепь",
+    "gender": "f"
+  },
+  "sheet": {
+    "text": "простыня",
+    "gender": "f"
+  },
+  "copy": {
+    "text": "копия",
+    "gender": "f"
+  },
+  "check": {
+    "text": "чек",
+    "gender": "m"
+  },
+  "cover": {
+    "text": "крышка",
+    "gender": "f"
+  },
+  "desk": {
+    "text": "письменный стол",
+    "gender": "m"
+  },
+  "equipment": {
+    "text": "оборудование",
+    "gender": "n"
+  },
+  "bunch": {
+    "text": "куча",
+    "gender": "f"
+  },
+  "pair": {
+    "text": "пара",
+    "gender": "f"
+  },
+  "collection": {
+    "text": "коллекция",
+    "gender": "f"
+  },
+  "bay": {
+    "text": "залив",
+    "gender": "m"
+  },
+  "nature": {
+    "text": "природа",
+    "gender": "f"
+  },
+  "natural": {
+    "m": "природный",
+    "f": "природная",
+    "n": "природное"
+  },
+  "environment": {
+    "text": "окружающая среда",
+    "gender": "f"
+  },
+  "environmental": {
+    "m": "экологический",
+    "f": "экологическая",
+    "n": "экологическое"
+  },
+  "clinic": {
+    "text": "клиника",
+    "gender": "f"
+  },
+  "stadium": {
+    "text": "стадион",
+    "gender": "m"
+  },
+  "tower": {
+    "text": "башня",
+    "gender": "f"
+  },
+  "castle": {
+    "text": "замок",
+    "gender": "m"
+  },
+  "temple": {
+    "text": "храм",
+    "gender": "m"
+  },
+  "sidewalk": {
+    "text": "тротуар",
+    "gender": "m"
+  },
+  "tunnel": {
+    "text": "туннель",
+    "gender": "m"
+  },
+  "zoo": {
+    "text": "зоопарк",
+    "gender": "m"
+  },
+  "hairdresser": {
+    "text": "парикмахер",
+    "gender": "m"
+  },
+  "bar": {
+    "text": "бар",
+    "gender": "m"
+  },
+  "top": {
+    "text": "верх",
+    "gender": "m"
+  },
+  "bottom": {
+    "text": "дно",
+    "gender": "n"
+  },
+  "side": {
+    "text": "сторона",
+    "gender": "f"
+  },
+  "middle": {
+    "m": "серединный",
+    "f": "серединная",
+    "n": "серединное"
+  },
+  "front": {
+    "m": "передний",
+    "f": "передняя",
+    "n": "переднее"
+  },
+  "direction": {
+    "text": "направление",
+    "gender": "n"
+  },
+  "path": {
+    "text": "тропа",
+    "gender": "f"
+  },
+  "track": {
+    "text": "колея",
+    "gender": "f"
+  },
+  "trail": {
+    "text": "след",
+    "gender": "m"
+  },
+  "section": {
+    "text": "раздел",
+    "gender": "m"
+  },
+  "division": {
+    "text": "деление",
+    "gender": "n"
+  },
+  "quarter": {
+    "text": "четверть",
+    "gender": "f"
+  },
+  "base": {
+    "text": "база",
+    "gender": "f"
+  },
+  "hall": {
+    "text": "зал",
+    "gender": "m"
+  },
+  "facility": {
+    "text": "объект",
+    "gender": "m"
+  },
+  "institute": {
+    "text": "институт",
+    "gender": "m"
+  },
+  "sand": {
+    "text": "песок",
+    "gender": "m"
+  },
+  "dust": {
+    "text": "пыль",
+    "gender": "f"
+  },
+  "smoke": {
+    "text": "дым",
+    "gender": "m"
+  },
+  "seed": {
+    "text": "семя",
+    "gender": "n"
+  },
+  "branch": {
+    "text": "ветка",
+    "gender": "f"
+  },
+  "rose": {
+    "text": "роза",
+    "gender": "f"
+  },
+  "flood": {
+    "text": "наводнение",
+    "gender": "n"
+  },
+  "fog": {
+    "text": "туман",
+    "gender": "m"
+  },
+  "rock": {
+    "text": "скала",
+    "gender": "f"
+  },
+  "plant": {
+    "text": "растение",
+    "gender": "n"
+  },
+  "leaf": {
+    "text": "лист",
+    "gender": "m"
+  },
+  "root": {
+    "text": "корень",
+    "gender": "m"
+  },
+  "wing": {
+    "text": "крыло",
+    "gender": "n"
+  },
+  "wave": {
+    "text": "волна",
+    "gender": "f"
+  },
+  "shadow": {
+    "text": "тень",
+    "gender": "f"
+  },
+  "air": {
+    "text": "воздух",
+    "gender": "m"
+  },
+  "light_n": {
+    "text": "свет",
+    "gender": "m"
+  },
+  "duck": {
+    "text": "утка",
+    "gender": "f"
+  },
+  "tiger": {
+    "text": "тигр",
+    "gender": "m"
+  },
+  "pet": {
+    "text": "домашний питомец",
+    "gender": "m"
+  },
+  "tail": {
+    "text": "хвост",
+    "gender": "m"
+  },
+  "strange": {
+    "m": "странный",
+    "f": "странная",
+    "n": "странное"
+  },
+  "weird": {
+    "m": "чудной",
+    "f": "чудная",
+    "n": "чудное"
+  },
+  "wonderful": {
+    "m": "чудесный",
+    "f": "чудесная",
+    "n": "чудесное"
+  },
+  "amazing": {
+    "m": "потрясающий",
+    "f": "потрясающая",
+    "n": "потрясающее"
+  },
+  "terrible": {
+    "m": "ужасный",
+    "f": "ужасная",
+    "n": "ужасное"
+  },
+  "excellent": {
+    "m": "превосходный",
+    "f": "превосходная",
+    "n": "превосходное"
+  },
+  "super": {
+    "m": "суперский",
+    "f": "суперская",
+    "n": "суперское"
+  },
+  "famous": {
+    "m": "знаменитый",
+    "f": "знаменитая",
+    "n": "знаменитое"
+  },
+  "unique": {
+    "m": "уникальный",
+    "f": "уникальная",
+    "n": "уникальное"
+  },
+  "rare": {
+    "m": "редкий",
+    "f": "редкая",
+    "n": "редкое"
+  },
+  "familiar": {
+    "m": "знакомый",
+    "f": "знакомая",
+    "n": "знакомое"
+  },
+  "obvious": {
+    "m": "очевидный",
+    "f": "очевидная",
+    "n": "очевидное"
+  },
+  "impossible": {
+    "m": "невозможный",
+    "f": "невозможная",
+    "n": "невозможное"
+  },
+  "fair": {
+    "m": "справедливый",
+    "f": "справедливая",
+    "n": "справедливое"
+  },
+  "appropriate": {
+    "m": "подходящий",
+    "f": "подходящая",
+    "n": "подходящее"
+  },
+  "useful": {
+    "m": "полезный",
+    "f": "полезная",
+    "n": "полезное"
+  },
+  "cool": {
+    "m": "клёвый",
+    "f": "клёвая",
+    "n": "клёвое"
+  },
+  "crazy": {
+    "m": "сумасшедший",
+    "f": "сумасшедшая",
+    "n": "сумасшедшее"
+  },
+  "stupid": {
+    "m": "глупый",
+    "f": "глупая",
+    "n": "глупое"
+  },
+  "tough": {
+    "m": "жёсткий",
+    "f": "жёсткая",
+    "n": "жёсткое"
+  },
+  "lazy": {
+    "m": "ленивый",
+    "f": "ленивая",
+    "n": "ленивое"
+  },
+  "rude": {
+    "m": "грубый",
+    "f": "грубая",
+    "n": "грубое"
+  },
+  "shy": {
+    "m": "застенчивый",
+    "f": "застенчивая",
+    "n": "застенчивое"
+  },
+  "nervous": {
+    "m": "нервный",
+    "f": "нервная",
+    "n": "нервное"
+  },
+  "lonely": {
+    "m": "одинокий",
+    "f": "одинокая",
+    "n": "одинокое"
+  },
+  "proud": {
+    "m": "гордый",
+    "f": "гордая",
+    "n": "гордое"
+  },
+  "lucky": {
+    "m": "везучий",
+    "f": "везучая",
+    "n": "везучее"
+  },
+  "careful": {
+    "m": "осторожный",
+    "f": "осторожная",
+    "n": "осторожное"
+  },
+  "to_beat": {
+    "imperfective": "бить",
+    "perfective": "побить"
+  },
+  "to_kick": {
+    "imperfective": "пинать",
+    "perfective": "пнуть"
+  },
+  "to_strike": {
+    "imperfective": "поражать",
+    "perfective": "поразить"
+  },
+  "to_blow": {
+    "imperfective": "дуть",
+    "perfective": "подуть"
+  },
+  "to_roll": {
+    "imperfective": "катить",
+    "perfective": "покатить"
+  },
+  "to_lift": {
+    "imperfective": "поднимать",
+    "perfective": "поднять"
+  },
+  "to_press": {
+    "imperfective": "нажимать",
+    "perfective": "нажать"
+  },
+  "to_knock": {
+    "imperfective": "стучать",
+    "perfective": "постучать"
+  },
+  "to_grab": {
+    "imperfective": "хватать",
+    "perfective": "схватить"
+  },
+  "to_stick": {
+    "imperfective": "клеить",
+    "perfective": "приклеить"
+  },
+  "to_ring": {
+    "imperfective": "звонить",
+    "perfective": "позвонить"
+  },
+  "to_bite": {
+    "imperfective": "кусать",
+    "perfective": "укусить"
+  },
+  "to_swallow": {
+    "imperfective": "глотать",
+    "perfective": "проглотить"
+  },
+  "willing": {
+    "m": "согласный",
+    "f": "согласная",
+    "n": "согласное"
+  },
+  "concerned": {
+    "m": "обеспокоенный",
+    "f": "обеспокоенная",
+    "n": "обеспокоенное"
+  },
+  "aware": {
+    "m": "осведомлённый",
+    "f": "осведомлённая",
+    "n": "осведомлённое"
+  },
+  "interested": {
+    "m": "заинтересованный",
+    "f": "заинтересованная",
+    "n": "заинтересованное"
+  },
+  "surprised": {
+    "m": "удивлённый",
+    "f": "удивлённая",
+    "n": "удивлённое"
+  },
+  "excited": {
+    "m": "взволнованный",
+    "f": "взволнованная",
+    "n": "взволнованное"
+  },
+  "worried": {
+    "m": "встревоженный",
+    "f": "встревоженная",
+    "n": "встревоженное"
+  },
+  "creative": {
+    "m": "творческий",
+    "f": "творческая",
+    "n": "творческое"
+  },
+  "emotional": {
+    "m": "эмоциональный",
+    "f": "эмоциональная",
+    "n": "эмоциональное"
+  },
+  "mental": {
+    "m": "психический",
+    "f": "психическая",
+    "n": "психическое"
+  },
+  "moral": {
+    "m": "моральный",
+    "f": "моральная",
+    "n": "моральное"
+  },
+  "gay": {
+    "m": "гей",
+    "f": "гей",
+    "n": "гей"
+  },
+  "cute": {
+    "m": "милый",
+    "f": "милая",
+    "n": "милое"
+  },
+  "handsome": {
+    "m": "симпатичный",
+    "f": "симпатичная",
+    "n": "симпатичное"
+  },
+  "silent": {
+    "m": "безмолвный",
+    "f": "безмолвная",
+    "n": "безмолвное"
+  },
+  "thick": {
+    "m": "толстый",
+    "f": "толстая",
+    "n": "толстое"
+  },
+  "thin": {
+    "m": "тонкий",
+    "f": "тонкая",
+    "n": "тонкое"
+  },
+  "fat": {
+    "text": "жир",
+    "gender": "m"
+  },
+  "narrow": {
+    "m": "узкий",
+    "f": "узкая",
+    "n": "узкое"
+  },
+  "flat": {
+    "m": "плоский",
+    "f": "плоская",
+    "n": "плоское"
+  },
+  "sharp": {
+    "m": "острый",
+    "f": "острая",
+    "n": "острое"
+  },
+  "smooth": {
+    "m": "гладкий",
+    "f": "гладкая",
+    "n": "гладкое"
+  },
+  "rough": {
+    "m": "шершавый",
+    "f": "шершавая",
+    "n": "шершавое"
+  },
+  "tight": {
+    "m": "тесный",
+    "f": "тесная",
+    "n": "тесное"
+  },
+  "loose": {
+    "m": "просторный",
+    "f": "просторная",
+    "n": "просторное"
+  },
+  "raw": {
+    "m": "сырой",
+    "f": "сырая",
+    "n": "сырое"
+  },
+  "frozen": {
+    "m": "замороженный",
+    "f": "замороженная",
+    "n": "замороженное"
+  },
+  "awake": {
+    "m": "бодрствующий",
+    "f": "бодрствующая",
+    "n": "бодрствующее"
+  },
+  "asleep": {
+    "m": "спящий",
+    "f": "спящая",
+    "n": "спящее"
+  },
+  "drunk": {
+    "m": "пьяный",
+    "f": "пьяная",
+    "n": "пьяное"
+  },
+  "private": {
+    "m": "частный",
+    "f": "частная",
+    "n": "частное"
+  },
+  "personal": {
+    "m": "личный",
+    "f": "личная",
+    "n": "личное"
+  },
+  "medical": {
+    "m": "медицинский",
+    "f": "медицинская",
+    "n": "медицинское"
+  },
+  "physical": {
+    "m": "физический",
+    "f": "физическая",
+    "n": "физическое"
+  },
+  "sexual": {
+    "m": "сексуальный",
+    "f": "сексуальная",
+    "n": "сексуальное"
+  },
+  "female": {
+    "m": "женский",
+    "f": "женская",
+    "n": "женское"
+  },
+  "male": {
+    "m": "мужской",
+    "f": "мужская",
+    "n": "мужское"
+  },
+  "normal": {
+    "m": "нормальный",
+    "f": "нормальная",
+    "n": "нормальное"
+  },
+  "wild": {
+    "m": "дикий",
+    "f": "дикая",
+    "n": "дикое"
+  },
+  "active": {
+    "m": "активный",
+    "f": "активная",
+    "n": "активное"
+  },
+  "direct": {
+    "m": "прямой",
+    "f": "прямая",
+    "n": "прямое"
+  },
+  "broad": {
+    "m": "обширный",
+    "f": "обширная",
+    "n": "обширное"
+  },
+  "complex": {
+    "m": "сложный",
+    "f": "сложная",
+    "n": "сложное"
+  },
+  "equal": {
+    "m": "равный",
+    "f": "равная",
+    "n": "равное"
+  },
+  "gender": {
+    "text": "пол",
+    "gender": "m"
+  },
+  "major": {
+    "m": "крупный",
+    "f": "крупная",
+    "n": "крупное"
+  },
+  "serious": {
+    "m": "серьёзный",
+    "f": "серьёзная",
+    "n": "серьёзное"
+  },
+  "significant": {
+    "m": "значительный",
+    "f": "значительная",
+    "n": "значительное"
+  },
+  "critical": {
+    "m": "критический",
+    "f": "критическая",
+    "n": "критическое"
+  },
+  "powerful": {
+    "m": "мощный",
+    "f": "мощная",
+    "n": "мощное"
+  },
+  "key_a": {
+    "m": "ключевой",
+    "f": "ключевая",
+    "n": "ключевое"
+  },
+  "primary": {
+    "m": "первичный",
+    "f": "первичная",
+    "n": "первичное"
+  },
+  "prime": {
+    "m": "первоклассный",
+    "f": "первоклассная",
+    "n": "первоклассное"
+  },
+  "senior": {
+    "m": "старший",
+    "f": "старшая",
+    "n": "старшее"
+  },
+  "top_a": {
+    "m": "высший",
+    "f": "высшая",
+    "n": "высшее"
+  },
+  "positive": {
+    "m": "положительный",
+    "f": "положительная",
+    "n": "положительное"
+  },
+  "negative": {
+    "m": "отрицательный",
+    "f": "отрицательная",
+    "n": "отрицательное"
+  },
+  "independent": {
+    "m": "независимый",
+    "f": "независимая",
+    "n": "независимое"
+  },
+  "responsible": {
+    "m": "ответственный",
+    "f": "ответственная",
+    "n": "ответственное"
+  },
+  "original": {
+    "m": "оригинальный",
+    "f": "оригинальная",
+    "n": "оригинальное"
+  },
+  "general": {
+    "m": "всеобщий",
+    "f": "всеобщая",
+    "n": "всеобщее"
+  },
+  "french": {
+    "m": "французский",
+    "f": "французская",
+    "n": "французское"
+  },
+  "british": {
+    "m": "британский",
+    "f": "британская",
+    "n": "британское"
+  },
+  "chinese": {
+    "m": "китайский",
+    "f": "китайская",
+    "n": "китайское"
+  },
+  "european": {
+    "m": "европейский",
+    "f": "европейская",
+    "n": "европейское"
+  },
+  "african": {
+    "m": "африканский",
+    "f": "африканская",
+    "n": "африканское"
+  },
+  "russian": {
+    "m": "русский",
+    "f": "русская",
+    "n": "русское"
+  },
+  "indian": {
+    "m": "индийский",
+    "f": "индийская",
+    "n": "индийское"
+  },
+  "english": {
+    "m": "английский",
+    "f": "английская",
+    "n": "английское"
+  },
+  "soviet": {
+    "m": "советский",
+    "f": "советская",
+    "n": "советское"
+  },
+  "native": {
+    "m": "родной",
+    "f": "родная",
+    "n": "родное"
+  },
+  "feeling": {
+    "text": "чувство",
+    "gender": "n"
+  },
+  "surprise": {
+    "text": "сюрприз",
+    "gender": "m"
+  },
+  "smile": {
+    "text": "улыбка",
+    "gender": "f"
+  },
+  "tear": {
+    "text": "слеза",
+    "gender": "f"
+  },
+  "confidence": {
+    "text": "уверенность",
+    "gender": "f"
+  },
+  "doubt": {
+    "text": "сомнение",
+    "gender": "n"
+  },
+  "respect": {
+    "text": "уважение",
+    "gender": "n"
+  },
+  "honor": {
+    "text": "честь",
+    "gender": "f"
+  },
+  "luck": {
+    "text": "удача",
+    "gender": "f"
+  },
+  "attention": {
+    "text": "внимание",
+    "gender": "n"
+  },
+  "interest": {
+    "text": "интерес",
+    "gender": "m"
+  },
+  "concern": {
+    "text": "забота",
+    "gender": "f"
+  },
+  "beauty": {
+    "text": "красота",
+    "gender": "f"
+  },
+  "expectation": {
+    "text": "ожидание",
+    "gender": "n"
+  },
+  "ability": {
+    "text": "способность",
+    "gender": "f"
+  },
+  "intelligence": {
+    "text": "интеллект",
+    "gender": "m"
+  },
+  "identity": {
+    "text": "идентичность",
+    "gender": "f"
+  },
+  "character": {
+    "text": "характер",
+    "gender": "m"
+  },
+  "behavior": {
+    "text": "поведение",
+    "gender": "n"
+  },
+  "manner": {
+    "text": "манера",
+    "gender": "f"
+  },
+  "appearance": {
+    "text": "внешность",
+    "gender": "f"
+  },
+  "leadership": {
+    "text": "лидерство",
+    "gender": "n"
+  },
+  "presence": {
+    "text": "присутствие",
+    "gender": "n"
+  },
+  "talent": {
+    "text": "талант",
+    "gender": "m"
+  },
+  "strength": {
+    "text": "сила",
+    "gender": "f"
+  },
+  "role": {
+    "text": "роль",
+    "gender": "f"
+  },
+  "will": {
+    "text": "воля",
+    "gender": "f"
+  },
+  "background": {
+    "text": "происхождение",
+    "gender": "n"
+  },
+  "supposed": {
+    "m": "предполагаемый",
+    "f": "предполагаемая",
+    "n": "предполагаемое"
+  },
+  "fun": {
+    "m": "весёлый",
+    "f": "весёлая",
+    "n": "весёлое"
+  },
+  "live": {
+    "m": "эфирный",
+    "f": "эфирная",
+    "n": "эфирное"
+  },
+  "used": {
+    "m": "подержанный",
+    "f": "подержанная",
+    "n": "подержанное"
+  },
+  "massive": {
+    "m": "массивный",
+    "f": "массивная",
+    "n": "массивное"
+  },
+  "internal": {
+    "m": "внутренний",
+    "f": "внутренняя",
+    "n": "внутреннее"
+  },
+  "overall": {
+    "m": "суммарный",
+    "f": "суммарная",
+    "n": "суммарное"
+  },
+  "grand": {
+    "m": "грандиозный",
+    "f": "грандиозная",
+    "n": "грандиозное"
+  },
+  "social": {
+    "m": "социальный",
+    "f": "социальная",
+    "n": "социальное"
+  },
+  "public": {
+    "m": "общественный",
+    "f": "общественная",
+    "n": "общественное"
+  },
+  "to_tie": {
+    "imperfective": "завязывать",
+    "perfective": "завязать"
+  },
+  "to_shut": {
+    "imperfective": "захлопывать",
+    "perfective": "захлопнуть"
+  },
+  "to_hide": {
+    "imperfective": "прятать",
+    "perfective": "спрятать"
+  },
+  "to_seek": {
+    "text": "стремиться",
+    "aspect": "imperfective"
+  },
+  "to_step": {
+    "imperfective": "шагать",
+    "perfective": "шагнуть"
+  },
+  "to_lean": {
+    "imperfective": "наклоняться",
+    "perfective": "наклониться"
+  },
+  "to_stare": {
+    "text": "пялиться",
+    "aspect": "imperfective"
+  },
+  "to_nod": {
+    "imperfective": "кивать",
+    "perfective": "кивнуть"
+  },
+  "to_point": {
+    "imperfective": "указывать",
+    "perfective": "указать"
+  },
+  "to_head": {
+    "imperfective": "направляться",
+    "perfective": "направиться"
+  },
+  "to_escape": {
+    "imperfective": "сбегать",
+    "perfective": "сбежать"
+  },
+  "to_disappear": {
+    "imperfective": "исчезать",
+    "perfective": "исчезнуть"
+  },
+  "to_emerge": {
+    "imperfective": "возникать",
+    "perfective": "возникнуть"
+  },
+  "to_own": {
+    "text": "владеть",
+    "aspect": "imperfective"
+  },
+  "to_belong": {
+    "text": "принадлежать",
+    "aspect": "imperfective"
+  },
+  "to_obtain": {
+    "imperfective": "добывать",
+    "perfective": "добыть"
+  },
+  "to_afford": {
+    "imperfective": "позволять себе",
+    "perfective": "позволить себе"
+  },
+  "to_purchase": {
+    "imperfective": "приобретать",
+    "perfective": "приобрести"
+  },
+  "to_invest": {
+    "text": "инвестировать",
+    "aspect": "imperfective"
+  },
+  "to_collect": {
+    "imperfective": "собирать",
+    "perfective": "собрать"
+  },
+  "to_gather": {
+    "imperfective": "собираться",
+    "perfective": "собраться"
+  },
+  "to_select": {
+    "imperfective": "отбирать",
+    "perfective": "отобрать"
+  },
+  "to_adopt": {
+    "imperfective": "усыновлять",
+    "perfective": "усыновить"
+  },
+  "to_grant": {
+    "text": "даровать",
+    "aspect": "imperfective"
+  },
+  "to_contribute": {
+    "imperfective": "вносить вклад",
+    "perfective": "внести вклад"
+  },
+  "to_participate": {
+    "text": "участвовать",
+    "aspect": "imperfective"
+  },
+  "to_engage": {
+    "imperfective": "вовлекать",
+    "perfective": "вовлечь"
+  },
+  "to_exist": {
+    "text": "существовать",
+    "aspect": "imperfective"
+  },
+  "to_occur": {
+    "imperfective": "случаться",
+    "perfective": "случиться"
+  },
+  "to_affect": {
+    "imperfective": "влиять",
+    "perfective": "повлиять"
+  },
+  "to_influence": {
+    "imperfective": "оказывать влияние",
+    "perfective": "оказать влияние"
+  },
+  "to_involve": {
+    "imperfective": "затрагивать",
+    "perfective": "затронуть"
+  },
+  "to_matter": {
+    "text": "иметь значение",
+    "aspect": "imperfective"
+  },
+  "to_tend": {
+    "text": "иметь склонность",
+    "aspect": "imperfective"
+  },
+  "to_last": {
+    "text": "длиться",
+    "aspect": "imperfective"
+  },
+  "to_be_born": {
+    "imperfective": "рождаться",
+    "perfective": "родиться"
+  },
+  "to_experience": {
+    "imperfective": "испытывать",
+    "perfective": "испытать"
+  },
+  "to_face": {
+    "imperfective": "сталкиваться",
+    "perfective": "столкнуться"
+  },
+  "to_surround": {
+    "imperfective": "окружать",
+    "perfective": "окружить"
+  },
+  "to_identify": {
+    "imperfective": "опознавать",
+    "perfective": "опознать"
+  },
+  "to_determine": {
+    "imperfective": "определять",
+    "perfective": "определить"
+  },
+  "to_prove": {
+    "imperfective": "доказывать",
+    "perfective": "доказать"
+  },
+  "to_indicate": {
+    "imperfective": "обозначать",
+    "perfective": "обозначить"
+  },
+  "to_figure": {
+    "imperfective": "вычислять",
+    "perfective": "вычислить"
+  },
+  "to_discover": {
+    "imperfective": "обнаруживать",
+    "perfective": "обнаружить"
+  },
+  "to_reveal": {
+    "imperfective": "раскрывать",
+    "perfective": "раскрыть"
+  },
+  "to_examine": {
+    "imperfective": "осматривать",
+    "perfective": "осмотреть"
+  },
+  "to_test": {
+    "imperfective": "тестировать",
+    "perfective": "протестировать"
+  },
+  "to_observe": {
+    "text": "наблюдать",
+    "aspect": "imperfective"
+  },
+  "to_investigate": {
+    "text": "расследовать",
+    "aspect": "imperfective"
+  },
+  "to_explore": {
+    "text": "исследовать",
+    "aspect": "imperfective"
+  },
+  "size": {
+    "text": "размер",
+    "gender": "m"
+  },
+  "length": {
+    "text": "длина",
+    "gender": "f"
+  },
+  "weight": {
+    "text": "вес",
+    "gender": "m"
+  },
+  "volume": {
+    "text": "объём",
+    "gender": "m"
+  },
+  "distance": {
+    "text": "расстояние",
+    "gender": "n"
+  },
+  "range": {
+    "text": "диапазон",
+    "gender": "m"
+  },
+  "scale": {
+    "text": "масштаб",
+    "gender": "m"
+  },
+  "unit": {
+    "text": "единица",
+    "gender": "f"
+  },
+  "shape": {
+    "text": "форма",
+    "gender": "f"
+  },
+  "circle": {
+    "text": "круг",
+    "gender": "m"
+  },
+  "edge": {
+    "text": "край",
+    "gender": "m"
+  },
+  "surface": {
+    "text": "поверхность",
+    "gender": "f"
+  },
+  "hole": {
+    "text": "дыра",
+    "gender": "f"
+  },
+  "block": {
+    "text": "блок",
+    "gender": "m"
+  },
+  "object": {
+    "text": "предмет",
+    "gender": "m"
+  },
+  "piece": {
+    "text": "кусок",
+    "gender": "m"
+  },
+  "material": {
+    "text": "материал",
+    "gender": "m"
+  },
+  "capacity": {
+    "text": "вместимость",
+    "gender": "f"
+  },
+  "to_increase": {
+    "imperfective": "увеличивать",
+    "perfective": "увеличить"
+  },
+  "to_reduce": {
+    "imperfective": "уменьшать",
+    "perfective": "уменьшить"
+  },
+  "to_rise": {
+    "imperfective": "подниматься",
+    "perfective": "подняться"
+  },
+  "to_improve": {
+    "imperfective": "улучшать",
+    "perfective": "улучшить"
+  },
+  "to_expand": {
+    "imperfective": "расширять",
+    "perfective": "расширить"
+  },
+  "to_extend": {
+    "imperfective": "продлевать",
+    "perfective": "продлить"
+  },
+  "to_spread": {
+    "imperfective": "распространять",
+    "perfective": "распространить"
+  },
+  "to_gain": {
+    "imperfective": "набирать",
+    "perfective": "набрать"
+  },
+  "to_limit": {
+    "imperfective": "ограничивать",
+    "perfective": "ограничить"
+  },
+  "to_shift": {
+    "imperfective": "сдвигать",
+    "perfective": "сдвинуть"
+  },
+  "to_measure": {
+    "imperfective": "измерять",
+    "perfective": "измерить"
+  },
+  "to_compare": {
+    "imperfective": "сравнивать",
+    "perfective": "сравнить"
+  },
+  "to_estimate": {
+    "imperfective": "прикидывать",
+    "perfective": "прикинуть"
+  },
+  "to_cost": {
+    "text": "стоить",
+    "aspect": "imperfective"
+  },
+  "to_contain": {
+    "text": "содержать",
+    "aspect": "imperfective"
+  },
+  "to_combine": {
+    "text": "сочетать",
+    "aspect": "imperfective"
+  },
+  "to_replace": {
+    "imperfective": "заменять",
+    "perfective": "заменить"
+  },
+  "to_generate": {
+    "text": "генерировать",
+    "aspect": "imperfective"
+  },
+  "to_result": {
+    "imperfective": "приводить",
+    "perfective": "привести"
+  },
+  "to_depend": {
+    "text": "зависеть",
+    "aspect": "imperfective"
+  },
+  "to_predict": {
+    "imperfective": "предсказывать",
+    "perfective": "предсказать"
+  },
+  "to_define": {
+    "imperfective": "давать определение",
+    "perfective": "дать определение"
+  },
+  "to_review": {
+    "imperfective": "пересматривать",
+    "perfective": "пересмотреть"
+  },
+  "to_demonstrate": {
+    "imperfective": "демонстрировать",
+    "perfective": "продемонстрировать"
+  },
+  "to_solve": {
+    "imperfective": "решать",
+    "perfective": "решить"
+  },
+  "to_locate": {
+    "text": "локализовать",
+    "aspect": "imperfective"
+  },
+  "to_refer": {
+    "imperfective": "ссылаться",
+    "perfective": "сослаться"
+  },
+  "to_relate": {
+    "text": "относиться",
+    "aspect": "imperfective"
+  },
+  "to_associate": {
+    "text": "ассоциировать",
+    "aspect": "imperfective"
+  },
+  "to_conclude": {
+    "imperfective": "заключать",
+    "perfective": "заключить"
+  },
+  "to_reflect": {
+    "imperfective": "отражать",
+    "perfective": "отразить"
+  },
+  "to_view": {
+    "imperfective": "просматривать",
+    "perfective": "просмотреть"
+  },
+  "to_demand": {
+    "imperfective": "требовать",
+    "perfective": "потребовать"
+  },
+  "to_attempt": {
+    "imperfective": "пытаться",
+    "perfective": "попытаться"
+  },
+  "to_pursue": {
+    "text": "преследовать",
+    "aspect": "imperfective"
+  },
+  "to_expose": {
+    "imperfective": "разоблачать",
+    "perfective": "разоблачить"
+  },
+  "to_acknowledge": {
+    "imperfective": "отдавать должное",
+    "perfective": "отдать должное"
+  },
+  "to_rely": {
+    "imperfective": "полагаться",
+    "perfective": "положиться"
+  },
+  "to_ensure": {
+    "imperfective": "обеспечивать",
+    "perfective": "обеспечить"
+  },
+  "to_encourage": {
+    "imperfective": "поощрять",
+    "perfective": "поощрить"
+  },
+  "to_ignore": {
+    "text": "игнорировать",
+    "aspect": "imperfective"
+  },
+  "to_approach": {
+    "imperfective": "приближаться",
+    "perfective": "приблизиться"
+  },
+  "to_address": {
+    "text": "адресовать",
+    "aspect": "imperfective"
+  },
+  "to_form": {
+    "imperfective": "формировать",
+    "perfective": "сформировать"
+  },
+  "to_base": {
+    "text": "базировать",
+    "aspect": "imperfective"
+  },
+  "to_produce": {
+    "imperfective": "производить",
+    "perfective": "произвести"
+  },
+  "to_treat": {
+    "imperfective": "лечить",
+    "perfective": "вылечить"
+  },
+  "to_name": {
+    "imperfective": "называть",
+    "perfective": "назвать"
+  },
+  "to_sound": {
+    "text": "звучать",
+    "aspect": "imperfective"
+  },
+  "to_fit": {
+    "imperfective": "подходить",
+    "perfective": "подойти"
+  },
+  "to_dress": {
+    "imperfective": "одеваться",
+    "perfective": "одеться"
+  },
+  "to_match": {
+    "text": "сочетаться",
+    "aspect": "imperfective"
+  },
+  "to_bet": {
+    "imperfective": "делать ставку",
+    "perfective": "сделать ставку"
+  },
+  "to_fuck": {
+    "imperfective": "трахать",
+    "perfective": "трахнуть"
+  },
+  "to_bear": {
+    "imperfective": "выносить",
+    "perfective": "вынести"
+  },
+  "to_clear": {
+    "imperfective": "расчищать",
+    "perfective": "расчистить"
+  },
+  "to_score": {
+    "imperfective": "забивать",
+    "perfective": "забить"
+  },
+  "to_celebrate": {
+    "imperfective": "праздновать",
+    "perfective": "отпраздновать"
+  },
+  "to_settle": {
+    "imperfective": "селиться",
+    "perfective": "поселиться"
+  },
+  "hell": {
+    "text": "ад",
+    "gender": "m"
+  },
+  "shit": {
+    "text": "дерьмо",
+    "gender": "n"
+  },
+  "ass": {
+    "text": "задница",
+    "gender": "f"
+  },
+  "case": {
+    "text": "случай",
+    "gender": "m"
+  },
+  "matter": {
+    "text": "дело",
+    "gender": "n"
+  },
+  "issue": {
+    "text": "проблемный вопрос",
+    "gender": "m"
+  },
+  "situation": {
+    "text": "ситуация",
+    "gender": "f"
+  },
+  "condition": {
+    "text": "условие",
+    "gender": "n"
+  },
+  "circumstance": {
+    "text": "обстоятельство",
+    "gender": "n"
+  },
+  "context": {
+    "text": "контекст",
+    "gender": "m"
+  },
+  "possibility": {
+    "text": "вероятность",
+    "gender": "f"
+  },
+  "option": {
+    "text": "вариант",
+    "gender": "m"
+  },
+  "choice": {
+    "text": "выбор",
+    "gender": "m"
+  },
+  "trouble": {
+    "text": "неприятность",
+    "gender": "f"
+  },
+  "difficulty": {
+    "text": "трудность",
+    "gender": "f"
+  },
+  "challenge": {
+    "text": "вызов",
+    "gender": "m"
+  },
+  "error": {
+    "text": "погрешность",
+    "gender": "f"
+  },
+  "lack": {
+    "text": "нехватка",
+    "gender": "f"
+  },
+  "damage": {
+    "text": "ущерб",
+    "gender": "m"
+  },
+  "stress": {
+    "text": "стресс",
+    "gender": "m"
+  },
+  "type": {
+    "text": "тип",
+    "gender": "m"
+  },
+  "sort": {
+    "text": "сорт",
+    "gender": "m"
+  },
+  "form": {
+    "text": "бланк",
+    "gender": "m"
+  },
+  "model": {
+    "text": "модель",
+    "gender": "f"
+  },
+  "version": {
+    "text": "версия",
+    "gender": "f"
+  },
+  "variety": {
+    "text": "разнообразие",
+    "gender": "n"
+  },
+  "category": {
+    "text": "категория",
+    "gender": "f"
+  },
+  "aspect": {
+    "text": "аспект",
+    "gender": "m"
+  },
+  "component": {
+    "text": "компонент",
+    "gender": "m"
+  },
+  "core": {
+    "text": "ядро",
+    "gender": "n"
+  },
+  "basis": {
+    "text": "основа",
+    "gender": "f"
+  },
+  "foundation": {
+    "text": "фундамент",
+    "gender": "m"
+  },
+  "structure": {
+    "text": "структура",
+    "gender": "f"
+  },
+  "function": {
+    "text": "функция",
+    "gender": "f"
+  },
+  "feature": {
+    "text": "особенность",
+    "gender": "f"
+  },
+  "cause": {
+    "text": "причина",
+    "gender": "f"
+  },
+  "effect": {
+    "text": "эффект",
+    "gender": "m"
+  },
+  "impact": {
+    "text": "воздействие",
+    "gender": "n"
+  },
+  "influence": {
+    "text": "влияние",
+    "gender": "n"
+  },
+  "consequence": {
+    "text": "последствие",
+    "gender": "n"
+  },
+  "outcome": {
+    "text": "исход",
+    "gender": "m"
+  },
+  "response": {
+    "text": "отклик",
+    "gender": "m"
+  },
+  "process": {
+    "text": "процесс",
+    "gender": "m"
+  },
+  "procedure": {
+    "text": "процедура",
+    "gender": "f"
+  },
+  "technique": {
+    "text": "техника",
+    "gender": "f"
+  },
+  "approach": {
+    "text": "подход",
+    "gender": "m"
+  },
+  "solution": {
+    "text": "решение",
+    "gender": "n"
+  },
+  "change": {
+    "text": "изменение",
+    "gender": "n"
+  },
+  "difference": {
+    "text": "разница",
+    "gender": "f"
+  },
+  "factor": {
+    "text": "фактор",
+    "gender": "m"
+  },
+  "variable": {
+    "text": "переменная",
+    "gender": "f"
+  },
+  "concept": {
+    "text": "концепция",
+    "gender": "f"
+  },
+  "principle": {
+    "text": "принцип",
+    "gender": "m"
+  },
+  "definition": {
+    "text": "определение",
+    "gender": "n"
+  },
+  "knowledge": {
+    "text": "знание",
+    "gender": "n"
+  },
+  "notion": {
+    "text": "понятие",
+    "gender": "n"
+  },
+  "perspective": {
+    "text": "перспектива",
+    "gender": "f"
+  },
+  "vision": {
+    "text": "видение",
+    "gender": "n"
+  },
+  "view": {
+    "text": "вид",
+    "gender": "m"
+  },
+  "sense": {
+    "text": "смысл",
+    "gender": "m"
+  },
+  "mind": {
+    "text": "разум",
+    "gender": "m"
+  },
+  "thought": {
+    "text": "мысль",
+    "gender": "f"
+  },
+  "understanding": {
+    "text": "понимание",
+    "gender": "n"
+  },
+  "opinion": {
+    "text": "мнение",
+    "gender": "n"
+  },
+  "attitude": {
+    "text": "настрой",
+    "gender": "m"
+  },
+  "extent": {
+    "text": "степень",
+    "gender": "f"
+  },
+  "importance": {
+    "text": "важность",
+    "gender": "f"
+  },
+  "conclusion": {
+    "text": "вывод",
+    "gender": "m"
+  },
+  "thinking": {
+    "text": "мышление",
+    "gender": "n"
+  },
+  "rule": {
+    "text": "правило",
+    "gender": "n"
+  },
+  "order": {
+    "text": "порядок",
+    "gender": "m"
+  },
+  "control": {
+    "text": "контроль",
+    "gender": "m"
+  },
+  "action": {
+    "text": "действие",
+    "gender": "n"
+  },
+  "decision": {
+    "text": "решение",
+    "gender": "n"
+  },
+  "act": {
+    "text": "поступок",
+    "gender": "m"
+  },
+  "test": {
+    "text": "тест",
+    "gender": "m"
+  },
+  "limit": {
+    "text": "предел",
+    "gender": "m"
+  },
+  "balance": {
+    "text": "равновесие",
+    "gender": "n"
+  },
+  "focus": {
+    "text": "фокус",
+    "gender": "m"
+  },
+  "use": {
+    "text": "использование",
+    "gender": "n"
+  },
+  "need": {
+    "text": "потребность",
+    "gender": "f"
+  },
+  "trend": {
+    "text": "тенденция",
+    "gender": "f"
+  },
+  "theme": {
+    "text": "тема",
+    "gender": "f"
+  },
+  "topic": {
+    "text": "предмет обсуждения",
+    "gender": "m"
+  },
+  "detail": {
+    "text": "деталь",
+    "gender": "f"
+  },
+  "measure": {
+    "text": "мера",
+    "gender": "f"
+  },
+  "move": {
+    "text": "ход",
+    "gender": "m"
+  },
+  "run": {
+    "text": "пробежка",
+    "gender": "f"
+  },
+  "cut": {
+    "text": "порез",
+    "gender": "m"
+  },
+  "lead": {
+    "text": "отрыв",
+    "gender": "m"
+  },
+  "return": {
+    "text": "возвращение",
+    "gender": "n"
+  },
+  "search": {
+    "text": "поиск",
+    "gender": "m"
+  },
+  "fight": {
+    "text": "драка",
+    "gender": "f"
+  },
+  "release": {
+    "text": "выпуск",
+    "gender": "m"
+  },
+  "look": {
+    "text": "взгляд",
+    "gender": "m"
+  },
+  "rest": {
+    "text": "отдых",
+    "gender": "m"
+  },
+  "set": {
+    "text": "набор",
+    "gender": "m"
+  },
+  "figure": {
+    "text": "цифра",
+    "gender": "f"
+  },
+  "fall": {
+    "text": "падение",
+    "gender": "n"
+  },
+  "attempt": {
+    "text": "попытка",
+    "gender": "f"
+  },
+  "thus": {
+    "text": "таким образом"
+  },
+  "despite": {
+    "text": "несмотря на"
+  },
+  "upon": {
+    "text": "по"
+  },
+  "per": {
+    "text": "за"
+  },
+  "via": {
+    "text": "посредством"
+  },
+  "plus": {
+    "text": "плюс"
+  },
+  "regarding": {
+    "text": "касательно"
+  },
+  "according_to": {
+    "text": "согласно"
+  },
+  "including": {
+    "text": "включая"
+  },
+  "worth": {
+    "text": "стоящий"
+  },
+  "forth": {
+    "text": "вперёд"
+  },
+  "specifically": {
+    "text": "конкретно"
+  },
+  "significantly": {
+    "text": "значительно"
+  },
+  "largely": {
+    "text": "по большей части"
+  },
+  "onto": {
+    "text": "на"
+  },
+  "throughout": {
+    "text": "повсюду"
+  },
+  "science": {
+    "text": "наука",
+    "gender": "f"
+  },
+  "scientific": {
+    "m": "научный",
+    "f": "научная",
+    "n": "научное"
+  },
+  "method": {
+    "text": "метод",
+    "gender": "m"
+  },
+  "analysis": {
+    "text": "анализ",
+    "gender": "m"
+  },
+  "finding": {
+    "text": "находка",
+    "gender": "f"
+  },
+  "survey": {
+    "text": "опрос",
+    "gender": "m"
+  },
+  "assessment": {
+    "text": "оценка",
+    "gender": "f"
+  },
+  "element": {
+    "text": "элемент",
+    "gender": "m"
+  },
+  "planet": {
+    "text": "планета",
+    "gender": "f"
+  },
+  "universe": {
+    "text": "вселенная",
+    "gender": "f"
+  },
+  "culture": {
+    "text": "культура",
+    "gender": "f"
+  },
+  "cultural": {
+    "m": "культурный",
+    "f": "культурная",
+    "n": "культурное"
+  },
+  "tradition": {
+    "text": "традиция",
+    "gender": "f"
+  },
+  "traditional": {
+    "m": "традиционный",
+    "f": "традиционная",
+    "n": "традиционное"
+  },
+  "religion": {
+    "text": "религия",
+    "gender": "f"
+  },
+  "religious": {
+    "m": "религиозный",
+    "f": "религиозная",
+    "n": "религиозное"
+  },
+  "faith": {
+    "text": "вера",
+    "gender": "f"
+  },
+  "belief": {
+    "text": "убеждение",
+    "gender": "n"
+  },
+  "spirit": {
+    "text": "дух",
+    "gender": "m"
+  },
+  "holy": {
+    "m": "святой",
+    "f": "святая",
+    "n": "святое"
+  },
+  "christian": {
+    "m": "христианский",
+    "f": "христианская",
+    "n": "христианское"
+  },
+  "catholic": {
+    "m": "католический",
+    "f": "католическая",
+    "n": "католическое"
+  },
+  "jewish": {
+    "m": "еврейский",
+    "f": "еврейская",
+    "n": "еврейское"
+  },
+  "christmas": {
+    "text": "Рождество",
+    "gender": "n"
+  },
+  "clearly": {
+    "text": "ясно"
+  },
+  "obviously": {
+    "text": "очевидно"
+  },
+  "apparently": {
+    "text": "по-видимому"
+  },
+  "seriously": {
+    "text": "серьёзно"
+  },
+  "possibly": {
+    "text": "не исключено"
+  },
+  "somehow": {
+    "text": "как-то"
+  },
+  "truly": {
+    "text": "поистине"
+  },
+  "highly": {
+    "text": "в высшей степени"
+  },
+  "ultimately": {
+    "text": "в конечном счёте"
+  },
+  "unfortunately": {
+    "text": "к сожалению"
+  },
+  "personally": {
+    "text": "лично"
+  },
+  "carefully": {
+    "text": "осторожно"
+  },
+  "necessarily": {
+    "text": "обязательно"
+  },
+  "increasingly": {
+    "text": "всё больше"
+  },
+  "marriage": {
+    "text": "брак",
+    "gender": "m"
+  },
+  "bond": {
+    "text": "узы",
+    "gender": "f"
+  },
+  "to_hurt": {
+    "imperfective": "причинять боль",
+    "perfective": "причинить боль"
+  },
+  "to_force": {
+    "imperfective": "заставлять",
+    "perfective": "заставить"
+  },
+  "to_attack": {
+    "imperfective": "нападать",
+    "perfective": "напасть"
+  },
+  "to_defend": {
+    "imperfective": "защищать",
+    "perfective": "защитить"
+  },
+  "to_destroy": {
+    "imperfective": "уничтожать",
+    "perfective": "уничтожить"
+  },
+  "to_threaten": {
+    "text": "угрожать",
+    "aspect": "imperfective"
+  },
+  "to_steal": {
+    "imperfective": "красть",
+    "perfective": "украсть"
+  },
+  "to_arrest": {
+    "imperfective": "арестовывать",
+    "perfective": "арестовать"
+  },
+  "to_commit": {
+    "imperfective": "совершать",
+    "perfective": "совершить"
+  },
+  "to_suffer": {
+    "text": "страдать",
+    "aspect": "imperfective"
+  },
+  "to_survive": {
+    "imperfective": "выживать",
+    "perfective": "выжить"
+  },
+  "to_struggle": {
+    "text": "бороться",
+    "aspect": "imperfective"
+  },
+  "to_prevent": {
+    "imperfective": "предотвращать",
+    "perfective": "предотвратить"
+  },
+  "to_fail": {
+    "imperfective": "терпеть неудачу",
+    "perfective": "потерпеть неудачу"
+  },
+  "to_challenge": {
+    "imperfective": "бросать вызов",
+    "perfective": "бросить вызов"
+  },
+  "to_judge": {
+    "text": "судить",
+    "aspect": "imperfective"
+  },
+  "to_vote": {
+    "imperfective": "голосовать",
+    "perfective": "проголосовать"
+  },
+  "state": {
+    "text": "государство",
+    "gender": "n"
+  },
+  "government": {
+    "text": "правительство",
+    "gender": "n"
+  },
+  "nation": {
+    "text": "нация",
+    "gender": "f"
+  },
+  "national": {
+    "m": "национальный",
+    "f": "национальная",
+    "n": "национальное"
+  },
+  "political": {
+    "m": "политический",
+    "f": "политическая",
+    "n": "политическое"
+  },
+  "politics": {
+    "text": "политика",
+    "gender": "f"
+  },
+  "policy": {
+    "text": "курс",
+    "gender": "m"
+  },
+  "election": {
+    "text": "выборы",
+    "gender": "m"
+  },
+  "campaign": {
+    "text": "кампания",
+    "gender": "f"
+  },
+  "vote": {
+    "text": "голос",
+    "gender": "m"
+  },
+  "poll": {
+    "text": "опрос общественного мнения",
+    "gender": "m"
+  },
+  "democracy": {
+    "text": "демократия",
+    "gender": "f"
+  },
+  "liberal": {
+    "m": "либеральный",
+    "f": "либеральная",
+    "n": "либеральное"
+  },
+  "conservative": {
+    "m": "консервативный",
+    "f": "консервативная",
+    "n": "консервативное"
+  },
+  "reform": {
+    "text": "реформа",
+    "gender": "f"
+  },
+  "movement": {
+    "text": "движение",
+    "gender": "n"
+  },
+  "administration": {
+    "text": "администрация",
+    "gender": "f"
+  },
+  "agency": {
+    "text": "агентство",
+    "gender": "n"
+  },
+  "committee": {
+    "text": "комитет",
+    "gender": "m"
+  },
+  "commission": {
+    "text": "комиссия",
+    "gender": "f"
+  },
+  "council": {
+    "text": "совет",
+    "gender": "m"
+  },
+  "institution": {
+    "text": "учреждение",
+    "gender": "n"
+  },
+  "union": {
+    "text": "профсоюз",
+    "gender": "m"
+  },
+  "authority": {
+    "text": "власть",
+    "gender": "f"
+  },
+  "district": {
+    "text": "округ",
+    "gender": "m"
+  },
+  "civil": {
+    "m": "гражданский",
+    "f": "гражданская",
+    "n": "гражданское"
+  },
+  "regulation": {
+    "text": "постановление",
+    "gender": "n"
+  },
+  "convention": {
+    "text": "съезд",
+    "gender": "m"
+  },
+  "investigation": {
+    "text": "расследование",
+    "gender": "n"
+  },
+  "intervention": {
+    "text": "вмешательство",
+    "gender": "n"
+  },
+  "abuse": {
+    "text": "злоупотребление",
+    "gender": "n"
+  },
+  "incident": {
+    "text": "инцидент",
+    "gender": "m"
+  },
+  "protection": {
+    "text": "защита",
+    "gender": "f"
+  },
+  "safety": {
+    "text": "безопасность",
+    "gender": "f"
+  },
+  "duty": {
+    "text": "обязанность",
+    "gender": "f"
+  },
+  "board": {
+    "text": "правление",
+    "gender": "n"
+  },
+  "jury": {
+    "text": "присяжные",
+    "gender": "m"
+  },
+  "hearing": {
+    "text": "слушание",
+    "gender": "n"
+  },
+  "criminal": {
+    "m": "преступный",
+    "f": "преступная",
+    "n": "преступное"
+  },
+  "illegal": {
+    "m": "незаконный",
+    "f": "незаконная",
+    "n": "незаконное"
+  },
+  "legal": {
+    "m": "законный",
+    "f": "законная",
+    "n": "законное"
+  },
+  "right_n": {
+    "text": "право",
+    "gender": "n"
+  },
+  "prison": {
+    "text": "тюрьма",
+    "gender": "f"
+  },
+  "murder": {
+    "text": "убийство",
+    "gender": "n"
+  },
+  "military": {
+    "m": "военный",
+    "f": "военная",
+    "n": "военное"
+  },
+  "army": {
+    "text": "армия",
+    "gender": "f"
+  },
+  "weapon": {
+    "text": "оружие",
+    "gender": "n"
+  },
+  "gun": {
+    "text": "пистолет",
+    "gender": "m"
+  },
+  "shot": {
+    "text": "выстрел",
+    "gender": "m"
+  },
+  "defense": {
+    "text": "оборона",
+    "gender": "f"
+  },
+  "attack": {
+    "text": "нападение",
+    "gender": "n"
+  },
+  "battle": {
+    "text": "битва",
+    "gender": "f"
+  },
+  "conflict": {
+    "text": "конфликт",
+    "gender": "m"
+  },
+  "crisis": {
+    "text": "кризис",
+    "gender": "m"
+  },
+  "threat": {
+    "text": "угроза",
+    "gender": "f"
+  },
+  "violence": {
+    "text": "насилие",
+    "gender": "n"
+  },
+  "security": {
+    "text": "охрана",
+    "gender": "f"
+  },
+  "force": {
+    "text": "мощь",
+    "gender": "f"
+  },
+  "nuclear": {
+    "m": "ядерный",
+    "f": "ядерная",
+    "n": "ядерное"
+  },
+  "mission": {
+    "text": "миссия",
+    "gender": "f"
+  },
+  "operation": {
+    "text": "операция",
+    "gender": "f"
+  },
+  "broken": {
+    "m": "сломанный",
+    "f": "сломанная",
+    "n": "сломанное"
+  },
   "meta": {
     "levels": {
       "top100": {
@@ -4356,6 +10339,54 @@
       "top900": {
         "name": "Top 900"
       },
+      "top1000": {
+        "name": "Top 1000"
+      },
+      "top1100": {
+        "name": "Top 1100"
+      },
+      "top1200": {
+        "name": "Top 1200"
+      },
+      "top1300": {
+        "name": "Top 1300"
+      },
+      "top1400": {
+        "name": "Top 1400"
+      },
+      "top1500": {
+        "name": "Top 1500"
+      },
+      "top1600": {
+        "name": "Top 1600"
+      },
+      "top1700": {
+        "name": "Top 1700"
+      },
+      "top1800": {
+        "name": "Top 1800"
+      },
+      "top1900": {
+        "name": "Top 1900"
+      },
+      "top2000": {
+        "name": "Top 2000"
+      },
+      "top2100": {
+        "name": "Top 2100"
+      },
+      "top2200": {
+        "name": "Top 2200"
+      },
+      "top2300": {
+        "name": "Top 2300"
+      },
+      "top2400": {
+        "name": "Top 2400"
+      },
+      "top2500": {
+        "name": "Top 2500"
+      },
       "specialized": {
         "name": "Специализированный"
       }
@@ -4373,125 +10404,488 @@
       "making_sense": {
         "name": "Понимание"
       },
-      "core_verbs": {
-        "name": "Основные глаголы"
+      "nuts_and_bolts": {
+        "name": "Винтики и гайки"
       },
-      "daily_actions": {
-        "name": "Повседневные действия"
+      "one_to_ten": {
+        "name": "От одного до десяти"
       },
-      "head_to_toe": {
+      "folks_and_friends": {
+        "name": "Люди и друзья"
+      },
+      "family_ties": {
+        "name": "Семейные узы"
+      },
+      "say_and_see": {
+        "name": "Скажи и увидь"
+      },
+      "make_and_do": {
+        "name": "Делать и создавать"
+      },
+      "day_and_night": {
+        "name": "День и ночь"
+      },
+      "bite_to_eat": {
+        "name": "Перекус"
+      },
+      "true_colours": {
+        "name": "Настоящие цвета"
+      },
+      "teens_and_tens": {
+        "name": "Десятки"
+      },
+      "come_and_go": {
+        "name": "Прийти и уйти"
+      },
+      "open_and_learn": {
+        "name": "Открой и учись"
+      },
+      "room_by_room": {
+        "name": "Комната за комнатой"
+      },
+      "table_for_two": {
+        "name": "Столик на двоих"
+      },
+      "big_and_small": {
+        "name": "Большой и маленький"
+      },
+      "week_by_week": {
+        "name": "Неделя за неделей"
+      },
+      "who_and_whose": {
+        "name": "Кто и чей"
+      },
+      "much_and_little": {
+        "name": "Много и мало"
+      },
+      "some_and_any": {
+        "name": "Некоторые и любые"
+      },
+      "in_and_out": {
+        "name": "Внутрь и наружу"
+      },
+      "around_town": {
+        "name": "По городу"
+      },
+      "getting_there": {
+        "name": "Как добраться"
+      },
+      "money_matters": {
+        "name": "Денежные дела"
+      },
+      "top_to_toe": {
         "name": "С головы до ног"
       },
-      "my_people": {
-        "name": "Мои люди"
+      "dressed_up": {
+        "name": "Одетые"
       },
-      "bread_and_water": {
-        "name": "Хлеб и вода"
+      "now_and_then": {
+        "name": "Время от времени"
       },
-      "four_walls": {
-        "name": "Четыре стены"
+      "yes_no_maybe": {
+        "name": "Да, нет, может быть"
       },
-      "zero_to_ten": {
-        "name": "От нуля до десяти"
+      "can_and_must": {
+        "name": "Могу и должен"
       },
-      "on_the_road": {
-        "name": "В дороге"
+      "first_and_last": {
+        "name": "Первый и последний"
       },
-      "good_and_bad": {
-        "name": "Хорошее и плохое"
+      "something_nothing": {
+        "name": "Что-то и ничего"
       },
-      "glue_words": {
-        "name": "Слова-связки"
+      "nine_to_five": {
+        "name": "С девяти до пяти"
       },
-      "hands_on": {
-        "name": "Своими руками"
+      "plugged_in": {
+        "name": "На связи"
       },
-      "laugh_and_cry": {
-        "name": "Смех и слёзы"
+      "month_by_month": {
+        "name": "Месяц за месяцем"
       },
-      "market_basket": {
-        "name": "Корзина с рынка"
+      "on_the_plate": {
+        "name": "На тарелке"
       },
-      "rainbow": {
-        "name": "Радуга"
+      "give_and_share": {
+        "name": "Дать и поделиться"
       },
-      "days_and_months": {
-        "name": "Дни и месяцы"
+      "here_and_there": {
+        "name": "Тут и там"
       },
-      "when_and_how_often": {
-        "name": "Когда и как часто"
+      "on_the_move": {
+        "name": "В движении"
       },
-      "creatures_and_sky": {
-        "name": "Звери и небо"
+      "papers_please": {
+        "name": "Документы, пожалуйста"
       },
-      "city_life": {
-        "name": "Городская жизнь"
+      "under_one_roof": {
+        "name": "Под одной крышей"
       },
-      "how_things_are": {
-        "name": "Какие вещи бывают"
+      "doctors_orders": {
+        "name": "Предписание врача"
       },
-      "bags_packed": {
-        "name": "Чемоданы собраны"
+      "sweet_and_sour": {
+        "name": "Сладкое и кислое"
       },
-      "heart_and_mind": {
-        "name": "Сердце и разум"
+      "clean_and_dirty": {
+        "name": "Чистое и грязное"
       },
-      "coming_and_going": {
-        "name": "Приходить и уходить"
+      "glad_and_sad": {
+        "name": "Радость и грусть"
       },
-      "build_and_break": {
-        "name": "Строить и ломать"
+      "sun_and_rain": {
+        "name": "Солнце и дождь"
       },
-      "two_word_wonders": {
-        "name": "Фразовые глаголы"
+      "rise_and_shine": {
+        "name": "Проснись и пой"
       },
-      "skin_deep": {
-        "name": "На поверхности"
+      "words_and_secrets": {
+        "name": "Слова и тайны"
       },
-      "home_sweet_home": {
-        "name": "Дом, милый дом"
+      "ways_and_means": {
+        "name": "Пути и средства"
       },
-      "wild_side": {
-        "name": "Дикая сторона"
+      "earn_and_spend": {
+        "name": "Заработать и потратить"
       },
-      "taste_and_touch": {
-        "name": "Вкус и прикосновение"
+      "talk_it_over": {
+        "name": "Обсудим"
       },
-      "people_and_places": {
-        "name": "Люди и места"
+      "high_and_low": {
+        "name": "Высоко и низко"
       },
-      "life_and_work": {
-        "name": "Жизнь и работа"
+      "feel_and_believe": {
+        "name": "Чувствовать и верить"
       },
-      "when_and_where": {
-        "name": "Когда и где"
+      "think_it_through": {
+        "name": "Обдумай"
       },
-      "sick_and_stuff": {
-        "name": "Болезни и всякое"
+      "time_after_time": {
+        "name": "Раз за разом"
       },
-      "higher_ground": {
-        "name": "Высшая ступень"
+      "bank_on_it": {
+        "name": "В банке"
       },
-      "making_it_happen": {
-        "name": "Добиваемся цели"
+      "for_real": {
+        "name": "По-настоящему"
       },
-      "tying_loose_ends": {
-        "name": "Связываем концы"
+      "more_or_less": {
+        "name": "Более или менее"
       },
-      "what_matters": {
-        "name": "Что важно"
+      "slowly_but_surely": {
+        "name": "Медленно, но верно"
       },
-      "words_and_stories": {
-        "name": "Слова и истории"
+      "safe_and_sound": {
+        "name": "Цел и невредим"
       },
-      "peace_and_war": {
+      "early_and_late": {
+        "name": "Рано и поздно"
+      },
+      "time_off": {
+        "name": "Свободное время"
+      },
+      "wheels_and_waves": {
+        "name": "Колёса и волны"
+      },
+      "bon_voyage": {
+        "name": "Счастливого пути"
+      },
+      "whos_who": {
+        "name": "Кто есть кто"
+      },
+      "bed_and_bath": {
+        "name": "Постель и ванная"
+      },
+      "four_corners": {
+        "name": "Четыре стороны света"
+      },
+      "if_and_unless": {
+        "name": "Если и если не"
+      },
+      "say_it_out": {
+        "name": "Скажи вслух"
+      },
+      "plan_and_manage": {
+        "name": "Планируй и управляй"
+      },
+      "sing_and_dance": {
+        "name": "Пой и танцуй"
+      },
+      "shout_and_whisper": {
+        "name": "Крик и шёпот"
+      },
+      "farm_and_wild": {
+        "name": "Ферма и дикая природа"
+      },
+      "land_and_sea": {
+        "name": "Суша и море"
+      },
+      "skin_and_bones": {
+        "name": "Кожа да кости"
+      },
+      "fix_and_break": {
+        "name": "Чинить и ломать"
+      },
+      "two_word_verbs": {
+        "name": "Глаголы из двух слов"
+      },
+      "kitchen_sink": {
+        "name": "Дом и мебель"
+      },
+      "belt_and_boots": {
+        "name": "Ремень и сапоги"
+      },
+      "spring_cleaning": {
+        "name": "Генеральная уборка"
+      },
+      "spice_rack": {
+        "name": "Полка со специями"
+      },
+      "market_stall": {
+        "name": "Рыночный прилавок"
+      },
+      "click_and_print": {
+        "name": "Кликни и напечатай"
+      },
+      "office_hours": {
+        "name": "Рабочие часы"
+      },
+      "squeaky_clean": {
+        "name": "Чистота и уход"
+      },
+      "care_and_cure": {
+        "name": "Уход и лечение"
+      },
+      "joints_and_bones": {
+        "name": "Суставы и кости"
+      },
+      "under_the_hood": {
+        "name": "Под капотом"
+      },
+      "exam_time": {
+        "name": "Время экзаменов"
+      },
+      "just_folks": {
+        "name": "Обычные люди"
+      },
+      "tool_box": {
+        "name": "Ящик с инструментами"
+      },
+      "back_to_school": {
+        "name": "Снова в школу"
+      },
+      "career_ladder": {
+        "name": "Карьерная лестница"
+      },
+      "company_business": {
+        "name": "Дела компании"
+      },
+      "by_the_numbers": {
+        "name": "В цифрах"
+      },
+      "results_count": {
+        "name": "Важен результат"
+      },
+      "get_it_done": {
+        "name": "Доведи до конца"
+      },
+      "money_talks": {
+        "name": "Деньги решают"
+      },
+      "fine_print": {
+        "name": "Мелкий шрифт"
+      },
+      "kith_and_kin": {
+        "name": "Родня и близкие"
+      },
+      "at_your_service": {
+        "name": "К вашим услугам"
+      },
+      "whos_in_charge": {
+        "name": "Кто главный"
+      },
+      "say_it_again": {
+        "name": "Скажи ещё раз"
+      },
+      "us_and_them": {
+        "name": "Мы и они"
+      },
+      "talk_of_the_town": {
+        "name": "Тема дня"
+      },
+      "keep_in_touch": {
+        "name": "Оставайся на связи"
+      },
+      "lights_camera": {
+        "name": "Свет, камера"
+      },
+      "read_all_about_it": {
+        "name": "Читайте все новости"
+      },
+      "on_the_map": {
+        "name": "На карте"
+      },
+      "song_and_dance": {
+        "name": "Песня и танец"
+      },
+      "web_and_wires": {
+        "name": "Сеть и провода"
+      },
+      "publish_and_post": {
+        "name": "Публикуй и размещай"
+      },
+      "game_on": {
+        "name": "Игра началась"
+      },
+      "out_and_about": {
+        "name": "Вне дома"
+      },
+      "bits_and_bobs": {
+        "name": "Мелочи"
+      },
+      "wild_places": {
+        "name": "Дикие места"
+      },
+      "sights_to_see": {
+        "name": "Достопримечательности"
+      },
+      "top_and_bottom": {
+        "name": "Верх и низ"
+      },
+      "leaf_and_root": {
+        "name": "Лист и корень"
+      },
+      "creature_feature": {
+        "name": "Мир животных"
+      },
+      "strange_but_true": {
+        "name": "Странно, но правда"
+      },
+      "cool_and_crazy": {
+        "name": "Круто и безумно"
+      },
+      "kick_and_roll": {
+        "name": "Пни и кати"
+      },
+      "aware_and_willing": {
+        "name": "Знаю и хочу"
+      },
+      "thick_and_thin": {
+        "name": "Толстое и тонкое"
+      },
+      "private_matters": {
+        "name": "Личные дела"
+      },
+      "major_and_minor": {
+        "name": "Главное и второстепенное"
+      },
+      "around_the_world": {
+        "name": "Вокруг света"
+      },
+      "mixed_feelings": {
+        "name": "Смешанные чувства"
+      },
+      "who_you_are": {
+        "name": "Кто ты"
+      },
+      "odd_ones_out": {
+        "name": "Лишние"
+      },
+      "gold_and_silver": {
+        "name": "Золото и серебро"
+      },
+      "hide_and_seek": {
+        "name": "Прятки"
+      },
+      "have_and_hold": {
+        "name": "Иметь и хранить"
+      },
+      "it_happens": {
+        "name": "Бывает"
+      },
+      "find_out": {
+        "name": "Выясни"
+      },
+      "shape_and_size": {
+        "name": "Форма и размер"
+      },
+      "rise_and_fall": {
+        "name": "Взлёт и падение"
+      },
+      "weigh_it_up": {
+        "name": "Взвесь"
+      },
+      "work_it_out": {
+        "name": "Разберись"
+      },
+      "try_harder": {
+        "name": "Старайся сильнее"
+      },
+      "odds_and_bets": {
+        "name": "Пари и прочее"
+      },
+      "case_by_case": {
+        "name": "От случая к случаю"
+      },
+      "flirts_and_affairs": {
+        "name": "Флирт и романы"
+      },
+      "kind_of": {
+        "name": "Виды и формы"
+      },
+      "cause_and_effect": {
+        "name": "Причина и следствие"
+      },
+      "big_ideas": {
+        "name": "Большие идеи"
+      },
+      "rules_of_the_game": {
+        "name": "Правила игры"
+      },
+      "moves_and_turns": {
+        "name": "Ходы и повороты"
+      },
+      "by_the_way": {
+        "name": "Кстати"
+      },
+      "science_lab": {
+        "name": "Научная лаборатория"
+      },
+      "faith_and_tradition": {
+        "name": "Вера и традиция"
+      },
+      "clearly_and_truly": {
+        "name": "Ясно и честно"
+      },
+      "tie_the_knot": {
+        "name": "Свадебные хлопоты"
+      },
+      "win_and_lose": {
+        "name": "Победа и поражение"
+      },
+      "fight_back": {
+        "name": "Дай отпор"
+      },
+      "state_and_nation": {
+        "name": "Государство и нация"
+      },
+      "aim_higher": {
+        "name": "Целься выше"
+      },
+      "public_affairs": {
+        "name": "Общественные дела"
+      },
+      "order_in_court": {
+        "name": "Порядок в суде"
+      },
+      "war_room": {
+        "name": "Военный штаб"
+      },
+      "war_and_peace": {
         "name": "Война и мир"
       },
-      "however_therefore": {
-        "name": "Однако и поэтому"
-      },
-      "after_dark": {
-        "name": "После заката"
+      "life_and_death": {
+        "name": "Жизнь и смерть"
       },
       "medical_anatomy": {
         "name": "Медицина и анатомия"
@@ -4550,11 +10944,20 @@
       "romance_intimacy": {
         "name": "Романтика и близость"
       }
+    },
+    "segments": {
+      "braindead": {
+        "name": "Безмозглый"
+      },
+      "baby": {
+        "name": "Малыш"
+      },
+      "kid": {
+        "name": "Ребёнок"
+      },
+      "adult": {
+        "name": "Взрослый"
+      }
     }
-  },
-  "open": {
-    "m": "открытый",
-    "f": "открытая",
-    "n": "открытое"
   }
 }
