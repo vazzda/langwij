@@ -100,13 +100,14 @@ class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
       );
     }
 
-    final levelData = _buildLevelData(
+    final levelData = VocabLevelDataBuilderService.buildVocabLevelData(
       level: specializedLevel,
-      dictionary: dictionary,
-      nativePack: nativePack,
+      decksByDeckId: dictionary.decksById,
       targetPack: targetPack,
-      allProgress: allProgress,
-      levelTiers: levelTiers,
+      nativePack: nativePack,
+      deckProgressByDeckId: allProgress,
+      deckNumberByDeckId: const {},
+      levelTier: levelTiers[specializedLevel.id] ?? LevelTier.premium,
     );
 
     final title = nativePack.levelMeta[specializedLevel.id]?.name
@@ -149,111 +150,6 @@ class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
       if (level.id == Level.specializedLevelId) return level;
     }
     return null;
-  }
-
-  VocabLevelData _buildLevelData({
-    required Level level,
-    required Dictionary dictionary,
-    required LanguagePack nativePack,
-    required LanguagePack targetPack,
-    required Map<String, DeckProgress> allProgress,
-    required Map<String, LevelTier> levelTiers,
-  }) {
-    final decksById = dictionary.decksById;
-    final tier = levelTiers[level.id] ?? LevelTier.premium;
-    final levelName = nativePack.levelMeta[level.id]?.name ?? level.id;
-    final levelDesc = nativePack.levelMeta[level.id]?.description;
-
-    final decks = <VocabDeckCardData>[];
-    for (final deckId in level.deckIds) {
-      final deck = decksById[deckId];
-      if (deck == null) continue;
-
-      final cardCount = _countCards(deck, targetPack, nativePack);
-      final progress = allProgress[deckId];
-      final deckName = nativePack.deckMeta[deckId]?.name ?? deck.id;
-      final practice = progress?.practice ?? 0.0;
-      final mastery = progress?.mastery ?? 0;
-      final coverage =
-          progress != null && progress.totalProgress > 0
-          ? progress.totalProgress.round()
-          : null;
-      final words = <String>[];
-      for (final cid in deck.termIds) {
-        final entry = targetPack.translations[cid];
-        if (entry == null) continue;
-        if (entry is SimpleEntry) {
-          words.add(entry.text);
-        } else if (entry is AspectPairEntry) {
-          words.add(entry.imperfective);
-        } else if (entry is AdjectiveEntry) {
-          words.add(entry.m);
-        }
-      }
-
-      decks.add(
-        VocabDeckCardData(
-          deck: deck,
-          name: deckName,
-          icon: deck.icon,
-          cardCount: cardCount,
-          words: words,
-          coverage: coverage,
-          progress: progress,
-          practice: practice,
-          mastery: mastery,
-        ),
-      );
-    }
-
-    final levelProgress = _computeLevelProgress(decks);
-    final latestDate = _computeLatestDate(decks);
-
-    return VocabLevelData(
-      level: level,
-      name: levelName,
-      description: levelDesc,
-      tier: tier,
-      levelProgress: levelProgress,
-      decks: decks,
-      latestDate: latestDate,
-      totalCardCount: decks.fold(0, (s, g) => s + g.cardCount),
-    );
-  }
-
-  double _computeLevelProgress(List<VocabDeckCardData> decks) {
-    if (decks.isEmpty) return 0.0;
-    final total = decks.fold(
-      0.0,
-      (sum, g) => sum + (g.progress?.totalProgress ?? 0.0),
-    );
-    return total / decks.length;
-  }
-
-  DateTime? _computeLatestDate(List<VocabDeckCardData> decks) {
-    DateTime? latest;
-    for (final g in decks) {
-      final d = g.progress?.lastRoundDate;
-      if (d != null && (latest == null || d.isAfter(latest))) {
-        latest = d;
-      }
-    }
-    return latest;
-  }
-
-  int _countCards(
-    VocabDeckModel deck,
-    LanguagePack target,
-    LanguagePack native,
-  ) {
-    int count = 0;
-    for (final cid in deck.termIds) {
-      if (target.translations.containsKey(cid) &&
-          native.translations.containsKey(cid)) {
-        count++;
-      }
-    }
-    return count;
   }
 
   Future<void> _onDeckTap(

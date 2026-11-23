@@ -360,11 +360,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get vocab_masteryLabel => 'dominio:';
 
   @override
-  String vocab_masteryCount(int count) {
-    return 'dominio: $count';
-  }
-
-  @override
   String get result_techWork => 'Trabajo técnico: no cuenta para el progreso';
 
   @override

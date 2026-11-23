@@ -17,6 +17,7 @@ import 'package:langwij/shared/app/layout/layout.dart';
 
 import 'answer_feedback_card.dart';
 import 'term_detail_card.dart';
+import 'term_note_box.dart';
 
 class RoundPage extends ConsumerStatefulWidget {
   const RoundPage({super.key});
@@ -107,6 +108,7 @@ class _RoundPageState extends ConsumerState<RoundPage> {
         round.allCards ??
         (round.roundType == RoundType.agreement ? round.queue : group!.cards);
     final promptText = _buildPromptText(card, round.mode, l10n);
+    final promptNote = _findNoteOfPromptWord(card, round.mode);
 
     return FlesselScaffold(
       title: title,
@@ -154,17 +156,9 @@ class _RoundPageState extends ConsumerState<RoundPage> {
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        if (card is VocabCard &&
-                            (round.mode == QuizMode.targetShown
-                                    ? card.targetNote
-                                    : card.nativeNote) !=
-                                null) ...[
+                        if (promptNote != null) ...[
                           const FlesselGap.s(),
-                          FlesselNote(
-                            text: round.mode == QuizMode.targetShown
-                                ? card.targetNote!
-                                : card.nativeNote!,
-                          ),
+                          TermNoteBox(note: promptNote),
                         ],
                         if (card is PairVocabCard &&
                             round.mode == QuizMode.write) ...[
@@ -419,6 +413,13 @@ class _RoundPageState extends ConsumerState<RoundPage> {
           : displayNativeForCard(card, l10n);
     }
     return mode == QuizMode.targetShown ? card.targetText : card.nativeText;
+  }
+
+  /// The note of the word shown as the question, in that word's own language;
+  /// null when the card has none.
+  String? _findNoteOfPromptWord(CardModel card, QuizMode mode) {
+    if (card is! VocabCard) return null;
+    return mode == QuizMode.targetShown ? card.targetNote : card.nativeNote;
   }
 
   void _submitWritePair(WidgetRef ref) {

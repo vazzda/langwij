@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/shared/app/database/database.dart';
 // Barrel bypass: dev-only tool needs to bump internal revision signals.
 // ignore: implementation_imports
@@ -15,9 +16,15 @@ class DevDataService {
 
   static final instance = Provider((ref) => DevDataService(ref));
 
-  Future<void> loadSeeds({String seedName = 'full'}) async {
+  Future<void> loadSeeds({required String seedName}) async {
     final db = await _ref.read(DatabaseService.database.future);
-    await SeedLoaderService.loadSeeds(db, seedName: seedName);
+    final dictionary = await _ref.read(DictionaryService.dictionary.future);
+    final seed = await SeedLoaderService.readSeedFromAssets(seedName);
+    await SeedLoaderService.replaceStoredProgressWithSeed(
+      db,
+      seed: seed,
+      decksById: dictionary.decksById,
+    );
     _bumpRevisions();
   }
 

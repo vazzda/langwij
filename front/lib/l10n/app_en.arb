@@ -197,14 +197,6 @@
   "vocab_lastTrained": "last trained:",
   "vocab_termsLabel": "terms:",
   "vocab_masteryLabel": "mastery:",
-  "vocab_masteryCount": "{count} mastery",
-  "@vocab_masteryCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
 
   "result_techWork": "Tech work — no progress contribution",
 

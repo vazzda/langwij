@@ -366,11 +366,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get vocab_masteryLabel => 'maîtrise :';
 
   @override
-  String vocab_masteryCount(int count) {
-    return 'maîtrise : $count';
-  }
-
-  @override
   String get result_techWork =>
       'Travail technique — ne compte pas dans la progression';
 

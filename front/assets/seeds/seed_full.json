@@ -3,77 +3,74 @@
   "decks": [
     {
       "deck_id": "first_contact",
-      "term_coverages": {"100": 14},
+      "all_terms_coverage": 100,
       "practice": 100,
-      "mastery": 2,
+      "mastery": 7,
       "last_practice_days_ago": 0
     },
     {
       "deck_id": "getting_around",
-      "term_coverages": {"100": 15},
+      "all_terms_coverage": 100,
       "practice": 30,
-      "mastery": 0,
+      "mastery": 4,
       "last_practice_days_ago": 1
     },
     {
       "deck_id": "staying_alive",
-      "term_coverages": {"100": 15},
+      "all_terms_coverage": 100,
       "practice": 95,
       "mastery": 1,
       "last_practice_days_ago": 2
     },
     {
       "deck_id": "making_sense",
-      "term_coverages": {"100": 15},
+      "all_terms_coverage": 100,
       "practice": 100,
       "mastery": 3,
       "last_practice_days_ago": 10
     },
     {
-      "deck_id": "core_verbs",
-      "term_coverages": {"100": 13},
-      "practice": 80,
-      "mastery": 1,
-      "last_practice_days_ago": 6
-    },
-    {
-      "deck_id": "daily_actions",
-      "term_coverages": {"100": 14},
+      "deck_id": "nuts_and_bolts",
+      "all_terms_coverage": 100,
       "practice": 55,
       "mastery": 2,
       "last_practice_days_ago": 10
     },
     {
-      "deck_id": "head_to_toe",
-      "term_coverages": {"100": 3, "75": 5, "50": 3},
+      "deck_id": "say_and_see",
+      "all_terms_coverage": 100,
+      "practice": 80,
+      "mastery": 1,
+      "last_practice_days_ago": 6
+    },
+    {
+      "deck_id": "one_to_ten",
+      "term_coverages": {"100": 3, "75": 4, "50": 3},
       "last_round_days_ago": 2
     },
     {
-      "deck_id": "my_people",
-      "term_coverages": {"50": 13},
+      "deck_id": "folks_and_friends",
+      "all_terms_coverage": 50,
       "last_round_days_ago": 3
     },
     {
-      "deck_id": "bread_and_water",
-      "term_coverages": {"50": 4, "40": 3, "20": 3, "10": 3},
+      "deck_id": "family_ties",
+      "term_coverages": {"50": 3, "40": 3, "20": 2, "10": 2},
       "last_round_days_ago": 5
     },
     {
-      "deck_id": "four_walls",
-      "term_coverages": {"30": 2, "20": 3, "10": 4, "0": 3},
+      "deck_id": "make_and_do",
+      "term_coverages": {"30": 2, "20": 3, "10": 4},
       "last_round_days_ago": 8
     },
     {
-      "deck_id": "doing_things",
-      "term_coverages": {"10": 5, "0": 10},
+      "deck_id": "day_and_night",
+      "term_coverages": {"10": 5},
       "last_round_days_ago": 12
     },
     {
-      "deck_id": "hands_on"
-    },
-    {
-      "deck_id": "laugh_and_cry",
-      "term_coverages": {"100": 16},
+      "deck_id": "glad_and_sad",
+      "all_terms_coverage": 100,
       "practice": 50,
       "mastery": 1,
       "last_practice_days_ago": 30

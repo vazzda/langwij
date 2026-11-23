@@ -353,11 +353,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get vocab_masteryLabel => 'mastery:';
 
   @override
-  String vocab_masteryCount(int count) {
-    return '$count mastery';
-  }
-
-  @override
   String get result_techWork => 'Tech work — no progress contribution';
 
   @override

@@ -6,34 +6,29 @@ import '../model/core_validation_ids.dart';
 class ConfigValidationService {
   static const _allowedPos = {'verb', 'noun', 'adjective', 'adverb', 'pronoun', 'conjunction', 'preposition', 'numeral', 'phrase', 'interrogative'};
 
+  static const String _levelsMetaBlockKey = 'levels';
+  static const String _decksMetaBlockKey = 'decks';
+  static const String _segmentsMetaBlockKey = 'segments';
+
   static CoreValidationIds validateCore({
     required Map<String, dynamic> planData,
     required Map<String, dynamic> dictionaryData,
     required Map<String, dynamic> levelsData,
   }) {
-    final termIds = _validateDictionary(dictionaryData);
-    final (deckIds, levelIds) = _validateLevels(levelsData, termIds);
-    _validatePlanStructure(planData, levelIds);
-    return CoreValidationIds(
-      termIds: termIds,
-      deckIds: deckIds,
-      levelIds: levelIds,
-    );
+    final coreIds = _validateDictionaryAndLevels(dictionaryData, levelsData);
+    _validatePlanStructure(planData, coreIds.levelIds);
+    return coreIds;
   }
 
   static void validateTranslation(
     String langCode,
     Map<String, dynamic> data,
-    Set<String> termIds,
-    Set<String> levelIds,
-    Set<String> deckIds,
+    CoreValidationIds coreIds,
   ) {
     _validateTranslation(
       langCode,
       data,
-      termIds,
-      levelIds,
-      deckIds,
+      coreIds,
       LangGrammarProfiles.of(langCode),
     );
   }
@@ -44,19 +39,36 @@ class ConfigValidationService {
     required Map<String, dynamic> levelsData,
     required Map<String, Map<String, dynamic>> translationsByCode,
   }) {
-    final termIds = _validateDictionary(dictionaryData);
-    final (deckIds, levelIds) = _validateLevels(levelsData, termIds);
-    _validatePlanFull(planData, levelIds, translationsByCode.keys.toSet());
+    final coreIds = _validateDictionaryAndLevels(dictionaryData, levelsData);
+    _validatePlanFull(
+      planData,
+      coreIds.levelIds,
+      translationsByCode.keys.toSet(),
+    );
     for (final entry in translationsByCode.entries) {
       _validateTranslation(
         entry.key,
         entry.value,
-        termIds,
-        levelIds,
-        deckIds,
+        coreIds,
         LangGrammarProfiles.of(entry.key),
       );
     }
+  }
+
+  static CoreValidationIds _validateDictionaryAndLevels(
+    Map<String, dynamic> dictionaryData,
+    Map<String, dynamic> levelsData,
+  ) {
+    final termIds = _validateDictionary(dictionaryData);
+    final deckIds = _validateDecks(levelsData, termIds);
+    final levelIds = _validateLevelsList(levelsData, deckIds);
+    final segmentIds = _validateSegmentsList(levelsData, levelIds);
+    return CoreValidationIds(
+      termIds: termIds,
+      deckIds: deckIds,
+      levelIds: levelIds,
+      segmentIds: segmentIds,
+    );
   }
 
   static Set<String> _validateDictionary(Map<String, dynamic> data) {
@@ -96,15 +108,6 @@ class ConfigValidationService {
       termIds.add(id);
     }
     return termIds;
-  }
-
-  static (Set<String>, Set<String>) _validateLevels(
-    Map<String, dynamic> data,
-    Set<String> termIds,
-  ) {
-    final deckIds = _validateDecks(data, termIds);
-    final levelIds = _validateLevelsList(data, deckIds);
-    return (deckIds, levelIds);
   }
 
   static Set<String> _validateDecks(
@@ -217,6 +220,70 @@ class ConfigValidationService {
       levelIds.add(id);
     }
     return levelIds;
+  }
+
+  static Set<String> _validateSegmentsList(
+    Map<String, dynamic> data,
+    Set<String> levelIds,
+  ) {
+    final segmentsRaw = data['segments'];
+    if (segmentsRaw == null) {
+      throw const ConfigValidationError('levels.json: missing required key "segments"');
+    }
+    if (segmentsRaw is! List<dynamic>) {
+      throw const ConfigValidationError('levels.json: "segments" must be an array');
+    }
+
+    final segmentIds = <String>{};
+    final segmentIdByLevelId = <String, String>{};
+    for (int i = 0; i < segmentsRaw.length; i++) {
+      final segment = segmentsRaw[i];
+      if (segment is! Map<String, dynamic>) {
+        throw ConfigValidationError('levels.json: segments[$i] must be an object');
+      }
+      final id = segment['id'];
+      if (id == null) {
+        throw ConfigValidationError('levels.json: segments[$i] missing required field "id"');
+      }
+      if (id is! String) {
+        throw ConfigValidationError('levels.json: segments[$i].id must be a string');
+      }
+      if (segmentIds.contains(id)) {
+        throw ConfigValidationError('levels.json: duplicate segment id "$id"');
+      }
+      final levels = segment['levels'];
+      if (levels == null) {
+        throw ConfigValidationError(
+          'levels.json: segment "$id" missing required field "levels"',
+        );
+      }
+      if (levels is! List<dynamic>) {
+        throw ConfigValidationError('levels.json: segment "$id".levels must be an array');
+      }
+      for (int j = 0; j < levels.length; j++) {
+        final levelId = levels[j];
+        if (levelId is! String) {
+          throw ConfigValidationError(
+            'levels.json: segment "$id".levels[$j] must be a string',
+          );
+        }
+        if (!levelIds.contains(levelId)) {
+          throw ConfigValidationError(
+            'levels.json: segment "$id".levels[$j] = "$levelId" does not exist in levels',
+          );
+        }
+        final segmentIdAlreadyListingLevel = segmentIdByLevelId[levelId];
+        if (segmentIdAlreadyListingLevel != null) {
+          throw ConfigValidationError(
+            'levels.json: segment "$id".levels[$j] = "$levelId" is already listed '
+            'in segment "$segmentIdAlreadyListingLevel"',
+          );
+        }
+        segmentIdByLevelId[levelId] = id;
+      }
+      segmentIds.add(id);
+    }
+    return segmentIds;
   }
 
   static void _validatePlanStructure(
@@ -392,15 +459,13 @@ class ConfigValidationService {
   static void _validateTranslation(
     String langCode,
     Map<String, dynamic> data,
-    Set<String> termIds,
-    Set<String> levelIds,
-    Set<String> deckIds,
+    CoreValidationIds coreIds,
     LanguageGrammarProfile profile,
   ) {
     for (final entry in data.entries) {
       if (entry.key == 'meta') continue;
       final termId = entry.key;
-      if (!termIds.contains(termId)) {
+      if (!coreIds.termIds.contains(termId)) {
         throw ConfigValidationError(
           'translations/$langCode.json: key "$termId" does not exist in dictionary.json',
         );
@@ -421,66 +486,66 @@ class ConfigValidationService {
         'translations/$langCode.json: "meta" must be an object',
       );
     }
-    _validateTranslationMeta(langCode, meta, levelIds, deckIds);
+    _validateTranslationMeta(langCode, meta, coreIds);
   }
 
   static void _validateTranslationMeta(
     String langCode,
     Map<String, dynamic> meta,
-    Set<String> levelIds,
-    Set<String> deckIds,
+    CoreValidationIds coreIds,
   ) {
-    final levelsMetaRaw = meta['levels'];
-    if (levelsMetaRaw != null) {
-      if (levelsMetaRaw is! Map<String, dynamic>) {
-        throw ConfigValidationError(
-          'translations/$langCode.json: meta.levels must be an object',
-        );
-      }
-      for (final e in levelsMetaRaw.entries) {
-        if (!levelIds.contains(e.key)) {
-          throw ConfigValidationError(
-            'translations/$langCode.json: meta.levels["${e.key}"] does not exist in levels.json',
-          );
-        }
-        final entry = e.value;
-        if (entry is! Map<String, dynamic>) {
-          throw ConfigValidationError(
-            'translations/$langCode.json: meta.levels["${e.key}"] must be an object',
-          );
-        }
-        if (entry['name'] == null) {
-          throw ConfigValidationError(
-            'translations/$langCode.json: meta.levels["${e.key}"] missing required field "name"',
-          );
-        }
-      }
-    }
+    _validateTranslationMetaBlock(
+      langCode,
+      meta,
+      metaBlockKey: _levelsMetaBlockKey,
+      idsDeclaredInLevelsFile: coreIds.levelIds,
+    );
+    _validateTranslationMetaBlock(
+      langCode,
+      meta,
+      metaBlockKey: _decksMetaBlockKey,
+      idsDeclaredInLevelsFile: coreIds.deckIds,
+    );
+    _validateTranslationMetaBlock(
+      langCode,
+      meta,
+      metaBlockKey: _segmentsMetaBlockKey,
+      idsDeclaredInLevelsFile: coreIds.segmentIds,
+    );
+  }
 
-    final decksMetaRaw = meta['decks'];
-    if (decksMetaRaw != null) {
-      if (decksMetaRaw is! Map<String, dynamic>) {
+  /// Checks one optional block of `meta` (levels, decks or segments): every
+  /// key is an id declared in levels.json and every entry carries a name.
+  static void _validateTranslationMetaBlock(
+    String langCode,
+    Map<String, dynamic> meta, {
+    required String metaBlockKey,
+    required Set<String> idsDeclaredInLevelsFile,
+  }) {
+    final metaBlockRaw = meta[metaBlockKey];
+    if (metaBlockRaw == null) return;
+    if (metaBlockRaw is! Map<String, dynamic>) {
+      throw ConfigValidationError(
+        'translations/$langCode.json: meta.$metaBlockKey must be an object',
+      );
+    }
+    for (final metaBlockEntry in metaBlockRaw.entries) {
+      final describedId = metaBlockEntry.key;
+      if (!idsDeclaredInLevelsFile.contains(describedId)) {
         throw ConfigValidationError(
-          'translations/$langCode.json: meta.decks must be an object',
+          'translations/$langCode.json: meta.$metaBlockKey["$describedId"] does not exist in levels.json',
         );
       }
-      for (final e in decksMetaRaw.entries) {
-        if (!deckIds.contains(e.key)) {
-          throw ConfigValidationError(
-            'translations/$langCode.json: meta.decks["${e.key}"] does not exist in levels.json',
-          );
-        }
-        final entry = e.value;
-        if (entry is! Map<String, dynamic>) {
-          throw ConfigValidationError(
-            'translations/$langCode.json: meta.decks["${e.key}"] must be an object',
-          );
-        }
-        if (entry['name'] == null) {
-          throw ConfigValidationError(
-            'translations/$langCode.json: meta.decks["${e.key}"] missing required field "name"',
-          );
-        }
+      final metaEntry = metaBlockEntry.value;
+      if (metaEntry is! Map<String, dynamic>) {
+        throw ConfigValidationError(
+          'translations/$langCode.json: meta.$metaBlockKey["$describedId"] must be an object',
+        );
+      }
+      if (metaEntry['name'] == null) {
+        throw ConfigValidationError(
+          'translations/$langCode.json: meta.$metaBlockKey["$describedId"] missing required field "name"',
+        );
       }
     }
   }

@@ -3,11 +3,14 @@ import 'package:flessel/flessel.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:langwij/l10n/app_localizations.dart';
+import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/features/pronunciation/pronunciation.dart';
 import 'package:langwij/features/quiz/model/vocab_card.dart';
 
 class TermDetailCard extends ConsumerWidget {
   const TermDetailCard({super.key, required this.card});
+
+  static const String _exampleLabelSeparator = ' ';
 
   final VocabCard card;
 
@@ -75,11 +78,12 @@ class TermDetailCard extends ConsumerWidget {
                   ),
                 ),
                 TextSpan(
-                  text: ' ${card.targetNote!}',
+                  text: _exampleLabelSeparator,
                   style: FlesselFonts.contentBody.copyWith(
                     color: t.fgSecondary,
                   ),
                 ),
+                ..._buildSpansOfExample(card.targetNote!, t),
               ],
             )),
           ],
@@ -87,6 +91,19 @@ class TermDetailCard extends ConsumerWidget {
       ),
     );
   }
+
+  /// The example sentence as spans: the marked word stands in the accent
+  /// weight, the rest in the regular one.
+  List<TextSpan> _buildSpansOfExample(String note, FlesselThemeData t) => [
+        for (final segment in TermNoteSegment.splitNoteIntoSegments(note))
+          TextSpan(
+            text: segment.text,
+            style: (segment.isMarked
+                    ? FlesselFonts.contentBodyAccent
+                    : FlesselFonts.contentBody)
+                .copyWith(color: t.fgSecondary),
+          ),
+      ];
 
   List<Widget> _buildSimpleDetails(
     SimpleVocabCard simple,

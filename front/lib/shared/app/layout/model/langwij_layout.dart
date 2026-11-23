@@ -9,7 +9,7 @@ class LangwijLayout {
 
   static const double vocabTileHeight = 180.0;
   static const double vocabTileMinWidth = 120.0;
-  static const double vocabTileIconSize = 50.0;
+  static const double vocabTileIconSize = 34.0;
   static const double vocabTileIconTopOffset = -2.0;
   static const double vocabTileHeaderTop = 49.0;
   static const double vocabTileHeaderLeft = 8.0;
@@ -24,6 +24,12 @@ class LangwijLayout {
   static const double vocabTileWordsRight = 8.0;
   static const double vocabTileProgressPercentGap = 4.0;
   static const double vocabTileProgressPercentWidth = 30.0;
+
+  static const double vocabDeckIndentLeft = 8.0;
+  static const double vocabDeckProgressBarLength = 38.0;
+
+  /// How far the stars' container lies over the lower edge of the deck icon.
+  static const double vocabDeckStarsOverlapOnIcon = 8.0;
 
   static const double vocabProgressWordsWidth = 70.0;
   static const double vocabProgressPercentWidth = 40.0;

@@ -9,7 +9,7 @@ abstract final class DbSchema {
 
   static const String colTargetLang          = 'target_lang';
   static const String colNativeLang          = 'native_lang';
-  static const String colLevelFoldOverridesPrefix = 'level_fold_overrides_';
+  static const String appSettingsKeyLevelFoldOverridesPrefix = 'level_fold_overrides_';
 
   static const String colDeckId  = 'deck_id';
   static const String colDate    = 'date';

@@ -1,6 +1,7 @@
 import 'deck_meta.dart';
 import 'lang_entry.dart';
 import 'level_meta.dart';
+import 'vocabulary_level_segment_meta.dart';
 
 class LanguagePack {
   const LanguagePack({
@@ -11,6 +12,7 @@ class LanguagePack {
     required this.totalTerms,
     this.levelMeta = const {},
     this.deckMeta = const {},
+    this.vocabularyLevelSegmentMeta = const {},
     required this.humanVerified,
     this.nativeNote,
   });
@@ -22,6 +24,7 @@ class LanguagePack {
   final int totalTerms;
   final Map<String, LevelMeta> levelMeta;
   final Map<String, DeckMeta> deckMeta;
+  final Map<String, VocabularyLevelSegmentMeta> vocabularyLevelSegmentMeta;
   final String? nativeNote;
   final int humanVerified;
 

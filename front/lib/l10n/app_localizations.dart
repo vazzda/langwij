@@ -734,12 +734,6 @@ abstract class AppLocalizations {
   /// **'mastery:'**
   String get vocab_masteryLabel;
 
-  /// No description provided for @vocab_masteryCount.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} mastery'**
-  String vocab_masteryCount(int count);
-
   /// No description provided for @result_techWork.
   ///
   /// In en, this message translates to:

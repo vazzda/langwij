@@ -361,11 +361,6 @@ class AppLocalizationsSr extends AppLocalizations {
   String get vocab_masteryLabel => 'savladanost:';
 
   @override
-  String vocab_masteryCount(int count) {
-    return 'savladanost: $count';
-  }
-
-  @override
   String get result_techWork => 'Tehnički rad — ne računa se u napredak';
 
   @override

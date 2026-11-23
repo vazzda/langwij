@@ -33,13 +33,7 @@ class StartupValidationService {
       try {
         final raw = await rootBundle.loadString(path);
         final data = jsonDecode(raw) as Map<String, dynamic>;
-        ConfigValidationService.validateTranslation(
-          code,
-          data,
-          ids.termIds,
-          ids.levelIds,
-          ids.deckIds,
-        );
+        ConfigValidationService.validateTranslation(code, data, ids);
       } catch (e) {
         if (e is ConfigValidationError) rethrow;
         throw ConfigValidationError(

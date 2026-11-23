@@ -35,7 +35,7 @@
   },
   "airport": {
     "text": "airport",
-    "note": "Take me to the airport."
+    "note": "Take me to the *airport*."
   },
   "algorithm": {
     "text": "algorithm"
@@ -62,7 +62,8 @@
     "text": "always"
   },
   "and": {
-    "text": "and"
+    "text": "and",
+    "note": "Coffee *and* water, please."
   },
   "angry": {
     "text": "angry"
@@ -75,7 +76,7 @@
   },
   "to_answer": {
     "text": "to answer",
-    "note": "respond"
+    "note": "Please *answer* my question."
   },
   "answer_n": {
     "text": "answer"
@@ -97,7 +98,8 @@
     "note": "become visible"
   },
   "apple": {
-    "text": "apple"
+    "text": "apple",
+    "note": "This *apple* is sweet."
   },
   "april": {
     "text": "April"
@@ -126,7 +128,7 @@
   },
   "to_ask": {
     "text": "to ask",
-    "note": "request info"
+    "note": "Can I *ask* something?"
   },
   "at_least": {
     "text": "at least"
@@ -153,7 +155,8 @@
     "text": "autumn"
   },
   "baby": {
-    "text": "baby"
+    "text": "baby",
+    "note": "The *baby* is crying."
   },
   "back_body": {
     "text": "back",
@@ -164,7 +167,7 @@
   },
   "bad": {
     "text": "bad",
-    "note": "The weather is bad."
+    "note": "The weather is *bad*."
   },
   "bag": {
     "text": "bag"
@@ -186,14 +189,14 @@
   },
   "bathroom": {
     "text": "bathroom",
-    "note": "Where is the bathroom?"
+    "note": "Where is the *bathroom*?"
   },
   "battery": {
     "text": "battery"
   },
   "to_be": {
     "text": "to be",
-    "note": "exist/state"
+    "note": "I *was* a student."
   },
   "to_be_allowed_to": {
     "text": "to be allowed to"
@@ -254,7 +257,7 @@
   },
   "big": {
     "text": "big / large",
-    "note": "That is a big house."
+    "note": "That is a *big* house."
   },
   "bird": {
     "text": "bird"
@@ -266,7 +269,8 @@
     "text": "bitter"
   },
   "black": {
-    "text": "black"
+    "text": "black",
+    "note": "My bag is *black*."
   },
   "blanket": {
     "text": "blanket"
@@ -281,7 +285,8 @@
     "text": "blood pressure"
   },
   "blue": {
-    "text": "blue"
+    "text": "blue",
+    "note": "The sea is *blue*."
   },
   "boat": {
     "text": "boat"
@@ -311,7 +316,8 @@
     "text": "box"
   },
   "boy": {
-    "text": "boy"
+    "text": "boy",
+    "note": "The *boy* plays football."
   },
   "boyfriend": {
     "text": "boyfriend"
@@ -327,7 +333,7 @@
   },
   "bread": {
     "text": "bread",
-    "note": "Fresh bread, please."
+    "note": "Fresh *bread*, please."
   },
   "to_break": {
     "text": "to break",
@@ -358,10 +364,12 @@
     "text": "broom"
   },
   "brother": {
-    "text": "brother"
+    "text": "brother",
+    "note": "My *brother* lives in Berlin."
   },
   "brown": {
-    "text": "brown"
+    "text": "brown",
+    "note": "His shoes are *brown*."
   },
   "browser": {
     "text": "browser"
@@ -394,14 +402,14 @@
   },
   "to_buy": {
     "text": "to buy",
-    "note": "purchase"
+    "note": "I want to *buy* a ticket."
   },
   "cabinet": {
     "text": "cabinet"
   },
   "to_call": {
     "text": "to call",
-    "note": "telephone/shout"
+    "note": "*Call* me tomorrow."
   },
   "to_call_back": {
     "text": "to call back",
@@ -412,7 +420,7 @@
   },
   "to_can": {
     "text": "to can",
-    "note": "be able to"
+    "note": "I *can* help you."
   },
   "canvas": {
     "text": "canvas"
@@ -432,7 +440,8 @@
     "note": "hold and move"
   },
   "cash": {
-    "text": "cash"
+    "text": "cash",
+    "note": "Can I pay in *cash*?"
   },
   "cat": {
     "text": "cat"
@@ -483,7 +492,8 @@
     "note": "examine/leave"
   },
   "cheese": {
-    "text": "cheese"
+    "text": "cheese",
+    "note": "I love *cheese*."
   },
   "chemical": {
     "text": "chemical"
@@ -497,10 +507,11 @@
   },
   "chicken_meat": {
     "text": "chicken",
-    "note": "the meat"
+    "note": "The *chicken* is very tasty."
   },
   "child": {
-    "text": "child"
+    "text": "child",
+    "note": "The *child* is sleeping."
   },
   "chocolate": {
     "text": "chocolate"
@@ -544,7 +555,7 @@
   },
   "closed": {
     "text": "closed",
-    "note": "The shop is closed."
+    "note": "The shop is *closed*."
   },
   "cloth": {
     "text": "cloth"
@@ -573,11 +584,11 @@
   },
   "coffee": {
     "text": "coffee",
-    "note": "Two coffees, please."
+    "note": "Two *coffees*, please."
   },
   "cold": {
     "text": "cold",
-    "note": "It is cold outside."
+    "note": "It is *cold* outside."
   },
   "colorful": {
     "text": "colorful"
@@ -587,7 +598,7 @@
   },
   "to_come": {
     "text": "to come",
-    "note": "Come with me."
+    "note": "*Come* tomorrow at ten."
   },
   "company": {
     "text": "company"
@@ -704,7 +715,7 @@
   },
   "danger": {
     "text": "danger",
-    "note": "Stay away, danger!"
+    "note": "*Danger*! Do not enter."
   },
   "dark": {
     "text": "dark",
@@ -720,7 +731,8 @@
     "text": "date romantic"
   },
   "day": {
-    "text": "day"
+    "text": "day",
+    "note": "Today is a beautiful *day*."
   },
   "dead": {
     "text": "dead"
@@ -806,11 +818,11 @@
   },
   "to_do": {
     "text": "to do",
-    "note": "perform an action"
+    "note": "I have to *do* it."
   },
   "doctor": {
     "text": "doctor",
-    "note": "I need a doctor."
+    "note": "I need a *doctor*."
   },
   "dog": {
     "text": "dog"
@@ -825,7 +837,8 @@
     "text": "dough"
   },
   "down": {
-    "text": "down / downwards"
+    "text": "down / downwards",
+    "note": "Go *down* the stairs."
   },
   "to_download": {
     "text": "to download"
@@ -854,7 +867,7 @@
   },
   "to_drink": {
     "text": "to drink",
-    "note": "I need to drink water."
+    "note": "I need to *drink* water."
   },
   "to_drive": {
     "text": "to drive",
@@ -883,7 +896,7 @@
   },
   "to_eat": {
     "text": "to eat",
-    "note": "Let's eat something."
+    "note": "Let's *eat* something."
   },
   "to_eat_breakfast": {
     "text": "to eat breakfast",
@@ -898,10 +911,12 @@
     "note": "consume food"
   },
   "egg": {
-    "text": "egg"
+    "text": "egg",
+    "note": "I eat an *egg* for breakfast."
   },
   "eight": {
-    "text": "eight"
+    "text": "eight",
+    "note": "Breakfast is at *eight*."
   },
   "either": {
     "text": "either"
@@ -952,7 +967,8 @@
     "text": "ethics"
   },
   "evening": {
-    "text": "evening"
+    "text": "evening",
+    "note": "Good *evening*!"
   },
   "everywhere": {
     "text": "everywhere"
@@ -1010,7 +1026,8 @@
     "note": "drop down"
   },
   "family": {
-    "text": "family"
+    "text": "family",
+    "note": "My *family* lives in Serbia."
   },
   "fantasy": {
     "text": "fantasy"
@@ -1025,7 +1042,8 @@
     "text": "fate"
   },
   "father": {
-    "text": "father"
+    "text": "father",
+    "note": "My *father* works a lot."
   },
   "to_fear": {
     "text": "to fear",
@@ -1059,7 +1077,7 @@
   },
   "to_find": {
     "text": "to find",
-    "note": "locate"
+    "note": "I can't *find* my key."
   },
   "to_find_out": {
     "text": "to find out",
@@ -1083,14 +1101,16 @@
     "text": "first"
   },
   "fish": {
-    "text": "fish"
+    "text": "fish",
+    "note": "The *fish* is fresh."
   },
   "fish_animal": {
     "text": "fish",
     "note": "the animal"
   },
   "five": {
-    "text": "five"
+    "text": "five",
+    "note": "I'll be there in *five* minutes."
   },
   "flirt": {
     "text": "flirt"
@@ -1113,7 +1133,7 @@
   },
   "food": {
     "text": "food",
-    "note": "The food is ready."
+    "note": "The *food* is ready."
   },
   "foot": {
     "text": "foot"
@@ -1134,7 +1154,8 @@
     "text": "forward"
   },
   "four": {
-    "text": "four"
+    "text": "four",
+    "note": "The bus leaves at *four*."
   },
   "fracture": {
     "text": "fracture"
@@ -1146,14 +1167,15 @@
     "text": "Friday"
   },
   "friend": {
-    "text": "friend"
+    "text": "friend",
+    "note": "This is my *friend*."
   },
   "frog": {
     "text": "frog"
   },
   "fruit": {
     "text": "fruit",
-    "note": "The fruit is sweet."
+    "note": "The *fruit* is sweet."
   },
   "fuel": {
     "text": "fuel"
@@ -1182,7 +1204,7 @@
   },
   "to_get": {
     "text": "to get",
-    "note": "obtain/receive"
+    "note": "Where do I *get* a ticket?"
   },
   "to_get_up": {
     "text": "to get up",
@@ -1195,14 +1217,15 @@
     "text": "ginger"
   },
   "girl": {
-    "text": "girl"
+    "text": "girl",
+    "note": "The *girl* is singing."
   },
   "girlfriend": {
     "text": "girlfriend"
   },
   "to_give": {
     "text": "to give",
-    "note": "hand to someone"
+    "note": "*Give* me the key, please."
   },
   "to_give_up": {
     "text": "to give up",
@@ -1227,7 +1250,7 @@
   },
   "to_go": {
     "text": "to go",
-    "note": "Let's go now."
+    "note": "Let's *go* now."
   },
   "goal": {
     "text": "goal"
@@ -1240,11 +1263,11 @@
   },
   "good": {
     "text": "good",
-    "note": "This is very good."
+    "note": "This is very *good*."
   },
   "goodbye": {
     "text": "goodbye",
-    "note": "Goodbye, see you later."
+    "note": "*Goodbye*, see you later."
   },
   "grade": {
     "text": "grade"
@@ -1256,10 +1279,12 @@
     "text": "gravity"
   },
   "green": {
-    "text": "green"
+    "text": "green",
+    "note": "The grass is *green*."
   },
   "grey": {
-    "text": "grey"
+    "text": "grey",
+    "note": "The sky is *grey* today."
   },
   "to_grill": {
     "text": "to grill"
@@ -1317,14 +1342,15 @@
   },
   "to_have": {
     "text": "to have",
-    "note": "possess/own"
+    "note": "It is good to *have* friends."
   },
   "to_have_to": {
     "text": "to have to",
-    "note": "must"
+    "note": "I *have to* go."
   },
   "he": {
-    "text": "he"
+    "text": "he",
+    "note": "*He* is my friend."
   },
   "head": {
     "text": "head"
@@ -1334,7 +1360,7 @@
   },
   "to_hear": {
     "text": "to hear",
-    "note": "perceive sound"
+    "note": "I can't *hear* you."
   },
   "heart_organ": {
     "text": "heart",
@@ -1345,18 +1371,18 @@
   },
   "hello": {
     "text": "hello",
-    "note": "Hello, how are you?"
+    "note": "*Hello*, how are you?"
   },
   "to_help": {
     "text": "to help",
-    "note": "Can you help me?"
+    "note": "My friend *helps* me."
   },
   "her": {
     "text": "her"
   },
   "here": {
     "text": "here",
-    "note": "I am right here."
+    "note": "I am right *here*."
   },
   "highway": {
     "text": "highway"
@@ -1411,28 +1437,30 @@
   },
   "hospital": {
     "text": "hospital",
-    "note": "The hospital is nearby."
+    "note": "The *hospital* is nearby."
   },
   "hostel": {
     "text": "hostel"
   },
   "hot": {
     "text": "hot",
-    "note": "The soup is hot."
+    "note": "The tea is *hot*."
   },
   "hotel": {
     "text": "hotel",
-    "note": "Where is the hotel?"
+    "note": "Where is the *hotel*?"
   },
   "hour": {
-    "text": "hour"
+    "text": "hour",
+    "note": "The trip takes one *hour*."
   },
   "how": {
-    "text": "how"
+    "text": "how",
+    "note": "*How* do I get there?"
   },
   "how_much": {
     "text": "how much",
-    "note": "How much does it cost?"
+    "note": "*How much* does it cost?"
   },
   "however": {
     "text": "however"
@@ -1441,20 +1469,22 @@
     "text": "hug"
   },
   "hundred": {
-    "text": "hundred"
+    "text": "hundred",
+    "note": "It costs a *hundred* euros."
   },
   "hungry": {
     "text": "hungry"
   },
   "husband": {
-    "text": "husband"
+    "text": "husband",
+    "note": "This is my *husband*."
   },
   "hypothesis": {
     "text": "hypothesis"
   },
   "i": {
     "text": "I",
-    "note": "I like this place."
+    "note": "*I* like this place."
   },
   "ice": {
     "text": "ice"
@@ -1463,7 +1493,8 @@
     "text": "idea"
   },
   "if": {
-    "text": "if"
+    "text": "if",
+    "note": "Call me *if* you need help."
   },
   "ignorance": {
     "text": "ignorance"
@@ -1478,7 +1509,8 @@
     "text": "important"
   },
   "in": {
-    "text": "in"
+    "text": "in",
+    "note": "I am *in* the hotel."
   },
   "in_front_of": {
     "text": "in front of"
@@ -1534,7 +1566,8 @@
     "text": "island"
   },
   "it": {
-    "text": "it"
+    "text": "it",
+    "note": "*It* is on the table."
   },
   "ivory": {
     "text": "ivory"
@@ -1605,7 +1638,7 @@
   },
   "to_know": {
     "text": "to know",
-    "note": "possess information"
+    "note": "I don't *know*."
   },
   "laboratory": {
     "text": "laboratory"
@@ -1633,7 +1666,7 @@
   },
   "later": {
     "text": "later",
-    "note": "Let's talk later."
+    "note": "Let's talk *later*."
   },
   "to_laugh": {
     "text": "to laugh",
@@ -1671,7 +1704,7 @@
   },
   "left": {
     "text": "left",
-    "note": "Turn left at the corner."
+    "note": "Turn *left* at the corner."
   },
   "leg": {
     "text": "leg"
@@ -1714,21 +1747,21 @@
   },
   "to_like": {
     "text": "to like",
-    "note": "enjoy"
+    "note": "I *like* this city."
   },
   "lion": {
     "text": "lion"
   },
   "to_listen": {
     "text": "to listen",
-    "note": "pay attention to sound"
+    "note": "I *listen* to music."
   },
   "little": {
     "text": "little / bit"
   },
   "to_live": {
     "text": "to live",
-    "note": "dwell"
+    "note": "I *live* in Belgrade."
   },
   "liver": {
     "text": "liver"
@@ -1747,7 +1780,7 @@
   },
   "to_look_at": {
     "text": "to look at",
-    "note": "view/examine"
+    "note": "*Look at* this photo."
   },
   "to_look_for": {
     "text": "to look for",
@@ -1788,13 +1821,14 @@
   },
   "to_make": {
     "text": "to make",
-    "note": "create/construct"
+    "note": "I *make* coffee every morning."
   },
   "makeup": {
     "text": "makeup"
   },
   "man": {
-    "text": "man"
+    "text": "man",
+    "note": "The *man* is waiting outside."
   },
   "map": {
     "text": "map"
@@ -1832,11 +1866,11 @@
   },
   "meat": {
     "text": "meat",
-    "note": "I don't eat meat."
+    "note": "I don't eat *meat*."
   },
   "medicine": {
     "text": "medicine",
-    "note": "Take your medicine."
+    "note": "Take your *medicine*."
   },
   "to_meet": {
     "text": "to meet",
@@ -1862,10 +1896,12 @@
     "text": "microwave"
   },
   "milk": {
-    "text": "milk"
+    "text": "milk",
+    "note": "The *milk* is cold."
   },
   "minute": {
-    "text": "minute"
+    "text": "minute",
+    "note": "Wait a *minute*, please."
   },
   "mirror": {
     "text": "mirror"
@@ -1878,7 +1914,7 @@
   },
   "money": {
     "text": "money",
-    "note": "I have no money."
+    "note": "I have no *money*."
   },
   "monkey": {
     "text": "monkey"
@@ -1896,13 +1932,15 @@
     "text": "more"
   },
   "morning": {
-    "text": "morning"
+    "text": "morning",
+    "note": "Good *morning*!"
   },
   "mostly": {
     "text": "mostly"
   },
   "mother": {
-    "text": "mother"
+    "text": "mother",
+    "note": "My *mother* is a teacher."
   },
   "mountain": {
     "text": "mountain"
@@ -1944,7 +1982,8 @@
     "text": "music"
   },
   "my": {
-    "text": "my"
+    "text": "my",
+    "note": "This is *my* phone."
   },
   "nail_clipper": {
     "text": "nail clipper"
@@ -1973,7 +2012,7 @@
   },
   "to_need": {
     "text": "to need",
-    "note": "I need a map."
+    "note": "I *need* help."
   },
   "to_negotiate": {
     "text": "to negotiate"
@@ -1997,17 +2036,19 @@
     "text": "news"
   },
   "night": {
-    "text": "night"
+    "text": "night",
+    "note": "Good *night*!"
   },
   "nightstand": {
     "text": "nightstand"
   },
   "nine": {
-    "text": "nine"
+    "text": "nine",
+    "note": "The train leaves at *nine*."
   },
   "no": {
     "text": "no",
-    "note": "No, thank you."
+    "note": "*No*, thank you."
   },
   "noodle": {
     "text": "noodle"
@@ -2020,7 +2061,7 @@
   },
   "now": {
     "text": "now",
-    "note": "I need it now."
+    "note": "I need it *now*."
   },
   "number": {
     "text": "number"
@@ -2061,7 +2102,7 @@
   },
   "one": {
     "text": "one",
-    "note": "Just one, please."
+    "note": "Just *one*, please."
   },
   "one_night_stand": {
     "text": "one night stand"
@@ -2077,10 +2118,12 @@
     "note": "Please open the door."
   },
   "or": {
-    "text": "or"
+    "text": "or",
+    "note": "Coffee *or* tea?"
   },
   "orange": {
-    "text": "orange"
+    "text": "orange",
+    "note": "My jacket is *orange*."
   },
   "orgasm": {
     "text": "orgasm"
@@ -2122,7 +2165,8 @@
     "text": "paradox"
   },
   "parent": {
-    "text": "parent"
+    "text": "parent",
+    "note": "Every *parent* knows this."
   },
   "park": {
     "text": "park"
@@ -2160,7 +2204,7 @@
   },
   "to_pay": {
     "text": "to pay",
-    "note": "give money"
+    "note": "Can I *pay* by card?"
   },
   "to_pay_for": {
     "text": "to pay for",
@@ -2191,10 +2235,12 @@
     "text": "perfume"
   },
   "person": {
-    "text": "person"
+    "text": "person",
+    "note": "She is a kind *person*."
   },
   "phone": {
-    "text": "phone"
+    "text": "phone",
+    "note": "Where is my *phone*?"
   },
   "photo": {
     "text": "photo"
@@ -2241,7 +2287,7 @@
   },
   "please": {
     "text": "please",
-    "note": "Please pass the salt."
+    "note": "*Please* pass the salt."
   },
   "pleasure": {
     "text": "pleasure"
@@ -2251,7 +2297,7 @@
   },
   "police": {
     "text": "police",
-    "note": "Call the police."
+    "note": "Call the *police*."
   },
   "poor": {
     "text": "poor"
@@ -2263,7 +2309,8 @@
     "text": "pot"
   },
   "potato": {
-    "text": "potato"
+    "text": "potato",
+    "note": "I'd like fish with *potatoes*."
   },
   "power": {
     "text": "power"
@@ -2324,7 +2371,7 @@
   },
   "to_put": {
     "text": "to put",
-    "note": "place somewhere"
+    "note": "*Put* the bag here."
   },
   "to_put_on": {
     "text": "to put on",
@@ -2370,7 +2417,7 @@
   },
   "to_read": {
     "text": "to read",
-    "note": "interpret text"
+    "note": "I *read* before bed."
   },
   "reality": {
     "text": "reality"
@@ -2389,7 +2436,8 @@
     "text": "recently"
   },
   "red": {
-    "text": "red"
+    "text": "red",
+    "note": "The apple is *red*."
   },
   "referee": {
     "text": "referee"
@@ -2423,17 +2471,18 @@
   },
   "restaurant": {
     "text": "restaurant",
-    "note": "The restaurant is full."
+    "note": "The *restaurant* is full."
   },
   "rice": {
-    "text": "rice"
+    "text": "rice",
+    "note": "Chicken with *rice*, please."
   },
   "rich": {
     "text": "rich"
   },
   "right": {
     "text": "right",
-    "note": "Turn right here."
+    "note": "Turn *right* at the bank."
   },
   "rights": {
     "text": "rights"
@@ -2476,7 +2525,8 @@
     "text": "salary"
   },
   "salt": {
-    "text": "salt"
+    "text": "salt",
+    "note": "The soup needs more *salt*."
   },
   "salty": {
     "text": "salty"
@@ -2501,7 +2551,7 @@
   },
   "to_say": {
     "text": "to say",
-    "note": "speak words"
+    "note": "What did you *say*?"
   },
   "scarf": {
     "text": "scarf"
@@ -2550,7 +2600,7 @@
   },
   "to_see": {
     "text": "to see",
-    "note": "use eyes"
+    "note": "I *see* the mountains."
   },
   "to_seem": {
     "text": "to seem",
@@ -2596,7 +2646,8 @@
     "note": "organize/arrange"
   },
   "seven": {
-    "text": "seven"
+    "text": "seven",
+    "note": "The shop opens at *seven*."
   },
   "sex": {
     "text": "sex"
@@ -2614,7 +2665,8 @@
     "text": "shark"
   },
   "she": {
-    "text": "she"
+    "text": "she",
+    "note": "*She* works at the hotel."
   },
   "sheep": {
     "text": "sheep"
@@ -2646,7 +2698,7 @@
   },
   "to_show": {
     "text": "to show",
-    "note": "display"
+    "note": "*Show* me the room, please."
   },
   "show_n": {
     "text": "show",
@@ -2677,7 +2729,8 @@
     "text": "sink"
   },
   "sister": {
-    "text": "sister"
+    "text": "sister",
+    "note": "My *sister* is older than me."
   },
   "to_sit": {
     "text": "to sit",
@@ -2688,7 +2741,8 @@
     "note": "take a seat"
   },
   "six": {
-    "text": "six"
+    "text": "six",
+    "note": "I get up at *six*."
   },
   "to_sketch": {
     "text": "to sketch"
@@ -2704,14 +2758,14 @@
   },
   "to_sleep": {
     "text": "to sleep",
-    "note": "rest"
+    "note": "I *sleep* eight hours."
   },
   "slow": {
     "text": "slow"
   },
   "small": {
     "text": "small / little",
-    "note": "A small cup, please."
+    "note": "A *small* cup, please."
   },
   "smart": {
     "text": "smart"
@@ -2755,7 +2809,7 @@
   },
   "sorry": {
     "text": "sorry",
-    "note": "Sorry, I didn't know."
+    "note": "*Sorry*, I didn't know."
   },
   "soul": {
     "text": "soul"
@@ -2768,7 +2822,7 @@
   },
   "to_speak": {
     "text": "to speak",
-    "note": "Do you speak English?"
+    "note": "Do you *speak* English?"
   },
   "species": {
     "text": "species"
@@ -2814,7 +2868,7 @@
   },
   "to_stay": {
     "text": "to stay / to remain",
-    "note": "remain / stay behind"
+    "note": "I will *stay* two days."
   },
   "to_steam": {
     "text": "to steam"
@@ -2843,7 +2897,7 @@
   },
   "straight": {
     "text": "straight",
-    "note": "Go straight ahead."
+    "note": "Go *straight* ahead."
   },
   "strategy": {
     "text": "strategy"
@@ -2876,7 +2930,8 @@
     "text": "to sue"
   },
   "sugar": {
-    "text": "sugar"
+    "text": "sugar",
+    "note": "Tea without *sugar*, please."
   },
   "to_suggest": {
     "text": "to suggest",
@@ -2921,7 +2976,7 @@
   },
   "to_take": {
     "text": "to take",
-    "note": "move something/someone"
+    "note": "I will *take* this one."
   },
   "to_take_off": {
     "text": "to take off",
@@ -2929,7 +2984,7 @@
   },
   "to_talk": {
     "text": "to talk",
-    "note": "converse"
+    "note": "We *talk* every day."
   },
   "tall": {
     "text": "tall"
@@ -2965,7 +3020,8 @@
     "text": "temperature"
   },
   "ten": {
-    "text": "ten"
+    "text": "ten",
+    "note": "It costs *ten* euros."
   },
   "textbook": {
     "text": "textbook"
@@ -2979,11 +3035,11 @@
   },
   "thank_you": {
     "text": "thank you",
-    "note": "Thank you very much."
+    "note": "*Thank you* very much."
   },
   "that": {
     "text": "that",
-    "note": "near you"
+    "note": "Is *that* seat free?"
   },
   "that_o": {
     "text": "that",
@@ -3004,34 +3060,36 @@
   },
   "there": {
     "text": "there",
-    "note": "It is over there."
+    "note": "It is over *there*."
   },
   "therefore": {
     "text": "therefore"
   },
   "they": {
-    "text": "they"
+    "text": "they",
+    "note": "*They* live in Belgrade."
   },
   "thing": {
     "text": "thing"
   },
   "to_think": {
     "text": "to think",
-    "note": "mental action"
+    "note": "I *think* so."
   },
   "thirsty": {
     "text": "thirsty"
   },
   "this": {
     "text": "this",
-    "note": "This is my house."
+    "note": "*This* is my house."
   },
   "thousand": {
-    "text": "thousand"
+    "text": "thousand",
+    "note": "A *thousand* people live here."
   },
   "three": {
     "text": "three",
-    "note": "I have three kids."
+    "note": "I have *three* tickets."
   },
   "to_throw": {
     "text": "to throw"
@@ -3041,10 +3099,11 @@
   },
   "ticket": {
     "text": "ticket",
-    "note": "Show me your ticket."
+    "note": "Show me your *ticket*."
   },
   "time": {
-    "text": "time"
+    "text": "time",
+    "note": "I have no *time*."
   },
   "tire": {
     "text": "tire"
@@ -3057,7 +3116,7 @@
   },
   "today": {
     "text": "today",
-    "note": "I start work today."
+    "note": "I start work *today*."
   },
   "toe": {
     "text": "toe"
@@ -3067,7 +3126,7 @@
   },
   "tomorrow": {
     "text": "tomorrow",
-    "note": "See you tomorrow."
+    "note": "See you *tomorrow*."
   },
   "tongue": {
     "text": "tongue"
@@ -3147,7 +3206,7 @@
   },
   "to_try": {
     "text": "to try",
-    "note": "attempt"
+    "note": "*Try* again."
   },
   "to_try_on": {
     "text": "to try on",
@@ -3176,7 +3235,7 @@
   },
   "two": {
     "text": "two",
-    "note": "Two tickets, please."
+    "note": "*Two* tickets, please."
   },
   "ugly": {
     "text": "ugly"
@@ -3186,13 +3245,14 @@
   },
   "to_understand": {
     "text": "to understand",
-    "note": "I don't understand."
+    "note": "I don't *understand*."
   },
   "unless": {
     "text": "unless"
   },
   "up": {
-    "text": "up / upwards"
+    "text": "up / upwards",
+    "note": "Go *up* to the second floor."
   },
   "to_update": {
     "text": "to update"
@@ -3202,7 +3262,7 @@
   },
   "to_use": {
     "text": "to use",
-    "note": "employ a tool"
+    "note": "Can I *use* your phone?"
   },
   "usually": {
     "text": "usually"
@@ -3221,7 +3281,7 @@
   },
   "vegetable": {
     "text": "vegetable",
-    "note": "Eat your vegetables."
+    "note": "Eat your *vegetables*."
   },
   "vehicle": {
     "text": "vehicle"
@@ -3268,7 +3328,7 @@
   },
   "to_wait": {
     "text": "to wait",
-    "note": "stay/pause"
+    "note": "*Wait* for me here."
   },
   "to_wait_for": {
     "text": "to wait for",
@@ -3290,7 +3350,7 @@
   },
   "to_want": {
     "text": "to want",
-    "note": "I want to go home."
+    "note": "I *want* to go home."
   },
   "war": {
     "text": "war"
@@ -3312,7 +3372,7 @@
   },
   "to_watch": {
     "text": "to watch",
-    "note": "observe"
+    "note": "I *watch* a film every evening."
   },
   "to_watch_out": {
     "text": "to watch out",
@@ -3320,7 +3380,7 @@
   },
   "water": {
     "text": "water",
-    "note": "Can I have water?"
+    "note": "Can I have *water*?"
   },
   "waterfall": {
     "text": "waterfall"
@@ -3332,7 +3392,8 @@
     "text": "way"
   },
   "we": {
-    "text": "we"
+    "text": "we",
+    "note": "*We* are going to the airport."
   },
   "weak": {
     "text": "weak"
@@ -3353,7 +3414,8 @@
     "text": "Wednesday"
   },
   "week": {
-    "text": "week"
+    "text": "week",
+    "note": "I stay here for a *week*."
   },
   "wet": {
     "text": "wet"
@@ -3363,17 +3425,18 @@
   },
   "what": {
     "text": "what",
-    "note": "What is your name?"
+    "note": "*What* is this?"
   },
   "wheel": {
     "text": "wheel"
   },
   "when": {
-    "text": "when"
+    "text": "when",
+    "note": "*When* does the shop open?"
   },
   "where": {
     "text": "where",
-    "note": "Where is the station?"
+    "note": "*Where* is the station?"
   },
   "whether": {
     "text": "whether"
@@ -3382,20 +3445,22 @@
     "text": "while"
   },
   "white": {
-    "text": "white"
+    "text": "white",
+    "note": "The snow is *white*."
   },
   "who": {
     "text": "who"
   },
   "why": {
     "text": "why",
-    "note": "Why are you here?"
+    "note": "*Why* are you here?"
   },
   "wide": {
     "text": "wide"
   },
   "wife": {
-    "text": "wife"
+    "text": "wife",
+    "note": "My *wife* is at work."
   },
   "to_win": {
     "text": "to win / to get",
@@ -3430,7 +3495,8 @@
     "text": "wolf"
   },
   "woman": {
-    "text": "woman"
+    "text": "woman",
+    "note": "The *woman* reads a book."
   },
   "wood": {
     "text": "wood"
@@ -3440,7 +3506,7 @@
   },
   "to_work": {
     "text": "to work",
-    "note": "labor/task"
+    "note": "I *work* from home."
   },
   "work_n": {
     "text": "work"
@@ -3459,7 +3525,7 @@
   },
   "to_write": {
     "text": "to write",
-    "note": "record text"
+    "note": "I am *writing* a message."
   },
   "wrong": {
     "text": "wrong / incorrect"
@@ -3468,30 +3534,34 @@
     "text": "year"
   },
   "yellow": {
-    "text": "yellow"
+    "text": "yellow",
+    "note": "The lemon is *yellow*."
   },
   "yes": {
     "text": "yes",
-    "note": "Yes, I agree."
+    "note": "*Yes*, I agree."
   },
   "yesterday": {
-    "text": "yesterday"
+    "text": "yesterday",
+    "note": "I arrived *yesterday*."
   },
   "yet": {
     "text": "yet / still"
   },
   "you": {
     "text": "you",
-    "note": "You look great today."
+    "note": "*You* look great today."
   },
   "young": {
     "text": "young"
   },
   "your": {
-    "text": "your"
+    "text": "your",
+    "note": "Is this *your* key?"
   },
   "zero": {
-    "text": "zero"
+    "text": "zero",
+    "note": "It is *zero* degrees outside."
   },
   "atm": {
     "text": "ATM",
@@ -3499,7 +3569,7 @@
   },
   "open": {
     "text": "open",
-    "note": "The store is open."
+    "note": "The store is *open*."
   },
   "all": {
     "text": "all"
@@ -3520,7 +3590,8 @@
     "text": "for"
   },
   "with": {
-    "text": "with"
+    "text": "with",
+    "note": "Coffee *with* milk, please."
   },
   "at": {
     "text": "at"
@@ -3532,64 +3603,84 @@
     "text": "by"
   },
   "not": {
-    "text": "not"
+    "text": "not",
+    "note": "It does *not* work."
   },
   "people": {
-    "text": "people"
+    "text": "people",
+    "note": "The *people* here are kind."
   },
   "kid": {
-    "text": "kid"
+    "text": "kid",
+    "note": "The *kid* wants ice cream."
   },
   "mom": {
-    "text": "mom"
+    "text": "mom",
+    "note": "*Mom*, where are you?"
   },
   "dad": {
-    "text": "dad"
+    "text": "dad",
+    "note": "*Dad* is at home."
   },
   "son": {
-    "text": "son"
+    "text": "son",
+    "note": "My *son* goes to school."
   },
   "daughter": {
-    "text": "daughter"
+    "text": "daughter",
+    "note": "My *daughter* loves music."
   },
   "grandmother": {
-    "text": "grandmother"
+    "text": "grandmother",
+    "note": "My *grandmother* cooks very well."
   },
   "grandfather": {
-    "text": "grandfather"
+    "text": "grandfather",
+    "note": "My *grandfather* tells good stories."
   },
   "uncle": {
-    "text": "uncle"
+    "text": "uncle",
+    "note": "My *uncle* has a farm."
   },
   "aunt": {
-    "text": "aunt"
+    "text": "aunt",
+    "note": "My *aunt* lives nearby."
   },
   "cousin": {
-    "text": "cousin"
+    "text": "cousin",
+    "note": "My *cousin* is visiting us."
   },
   "to_tell": {
-    "text": "to tell"
+    "text": "to tell",
+    "note": "*Tell* me a story."
   },
   "noon": {
-    "text": "noon"
+    "text": "noon",
+    "note": "We meet at *noon*."
   },
   "afternoon": {
-    "text": "afternoon"
+    "text": "afternoon",
+    "note": "I am free this *afternoon*."
   },
   "midnight": {
-    "text": "midnight"
+    "text": "midnight",
+    "note": "The bar closes at *midnight*."
   },
   "weekend": {
-    "text": "weekend"
+    "text": "weekend",
+    "note": "Have a nice *weekend*!"
   },
   "color": {
-    "text": "color"
+    "text": "color",
+    "note": "What *color* is your car?"
   },
   "eleven": {
-    "text": "eleven"
+    "text": "eleven",
+    "note": "Checkout is at *eleven*."
   },
   "twelve": {
-    "text": "twelve"
+    "text": "twelve",
+    "note": "Lunch is at *twelve*."
   },
   "thirteen": {
     "text": "thirteen"
@@ -3649,16 +3740,20 @@
     "text": "toilet"
   },
   "meal": {
-    "text": "meal"
+    "text": "meal",
+    "note": "Breakfast is my favourite *meal*."
   },
   "breakfast": {
-    "text": "breakfast"
+    "text": "breakfast",
+    "note": "*Breakfast* is included."
   },
   "lunch": {
-    "text": "lunch"
+    "text": "lunch",
+    "note": "What is for *lunch*?"
   },
   "dinner": {
-    "text": "dinner"
+    "text": "dinner",
+    "note": "*Dinner* is ready."
   },
   "drink": {
     "text": "drink",
@@ -8071,6 +8166,9 @@
       "nuts_and_bolts": {
         "name": "Nuts and Bolts"
       },
+      "say_and_see": {
+        "name": "Say and See"
+      },
       "one_to_ten": {
         "name": "One to Ten"
       },
@@ -8079,9 +8177,6 @@
       },
       "family_ties": {
         "name": "Family Ties"
-      },
-      "say_and_see": {
-        "name": "Say and See"
       },
       "make_and_do": {
         "name": "Make and Do"
@@ -8610,8 +8705,8 @@
       }
     },
     "segments": {
-      "braindead": {
-        "name": "Braindead"
+      "survival": {
+        "name": "Survival"
       },
       "baby": {
         "name": "Baby"

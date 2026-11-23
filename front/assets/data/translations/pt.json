@@ -17,7 +17,8 @@
   },
   "airport": {
     "text": "aeroporto",
-    "gender": "m"
+    "gender": "m",
+    "note": "Leve-me ao *aeroporto*."
   },
   "algorithm": {
     "text": "algoritmo",
@@ -149,7 +150,8 @@
   },
   "bathroom": {
     "text": "banheiro",
-    "gender": "m"
+    "gender": "m",
+    "note": "Onde fica o *banheiro*?"
   },
   "battery": {
     "text": "bateria",
@@ -253,7 +255,8 @@
   },
   "bread": {
     "text": "pão",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Pão* fresco, por favor."
   },
   "breakup": {
     "text": "separação",
@@ -317,7 +320,8 @@
   },
   "cash": {
     "text": "dinheiro",
-    "gender": "m"
+    "gender": "m",
+    "note": "Posso pagar em *dinheiro*?"
   },
   "cat": {
     "text": "gato",
@@ -453,7 +457,8 @@
   },
   "coffee": {
     "text": "café",
-    "gender": "m"
+    "gender": "m",
+    "note": "Dois *cafés*, por favor."
   },
   "comb": {
     "text": "pente",
@@ -557,7 +562,8 @@
   },
   "danger": {
     "text": "perigo",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Perigo*! Não entre."
   },
   "data": {
     "text": "dados",
@@ -641,7 +647,8 @@
   },
   "doctor": {
     "text": "médico",
-    "gender": "m"
+    "gender": "m",
+    "note": "Preciso de um *médico*."
   },
   "dog": {
     "text": "cachorro",
@@ -873,7 +880,8 @@
   },
   "food": {
     "text": "comida",
-    "gender": "f"
+    "gender": "f",
+    "note": "A *comida* está pronta."
   },
   "foot": {
     "text": "pé",
@@ -905,7 +913,8 @@
   },
   "friend": {
     "text": "amigo",
-    "gender": "m"
+    "gender": "m",
+    "note": "Este é o meu *amigo*."
   },
   "frog": {
     "text": "sapo",
@@ -913,7 +922,8 @@
   },
   "fruit": {
     "text": "fruta",
-    "gender": "f"
+    "gender": "f",
+    "note": "A *fruta* está doce."
   },
   "fuel": {
     "text": "combustível",
@@ -1077,7 +1087,8 @@
   },
   "hospital": {
     "text": "hospital",
-    "gender": "m"
+    "gender": "m",
+    "note": "O *hospital* fica perto."
   },
   "hostel": {
     "text": "albergue",
@@ -1085,7 +1096,8 @@
   },
   "hotel": {
     "text": "hotel",
-    "gender": "m"
+    "gender": "m",
+    "note": "Onde fica o *hotel*?"
   },
   "hour": {
     "text": "hora",
@@ -1385,11 +1397,13 @@
   },
   "meat": {
     "text": "carne",
-    "gender": "f"
+    "gender": "f",
+    "note": "Eu não como *carne*."
   },
   "medicine": {
     "text": "medicina",
-    "gender": "f"
+    "gender": "f",
+    "note": "Tome sua *medicina*."
   },
   "meeting": {
     "text": "reunião",
@@ -1433,7 +1447,8 @@
   },
   "money": {
     "text": "dinheiro",
-    "gender": "m"
+    "gender": "m",
+    "note": "Não tenho *dinheiro*."
   },
   "monkey": {
     "text": "macaco",
@@ -1689,7 +1704,8 @@
   },
   "phone": {
     "text": "telefone",
-    "gender": "m"
+    "gender": "m",
+    "note": "Onde está meu *telefone*?"
   },
   "photo": {
     "text": "foto",
@@ -1745,7 +1761,8 @@
   },
   "police": {
     "text": "polícia",
-    "gender": "f"
+    "gender": "f",
+    "note": "Chame a *polícia*."
   },
   "pot": {
     "text": "pote",
@@ -1857,7 +1874,8 @@
   },
   "restaurant": {
     "text": "restaurante",
-    "gender": "m"
+    "gender": "m",
+    "note": "O *restaurante* está cheio."
   },
   "rice": {
     "text": "arroz",
@@ -2281,7 +2299,8 @@
   },
   "ticket": {
     "text": "passagem",
-    "gender": "f"
+    "gender": "f",
+    "note": "Mostre sua *passagem*."
   },
   "time": {
     "text": "tempo",
@@ -2397,7 +2416,8 @@
   },
   "vegetable": {
     "text": "legume",
-    "gender": "m"
+    "gender": "m",
+    "note": "Coma seus *legumes*."
   },
   "vehicle": {
     "text": "veículo",
@@ -2469,7 +2489,8 @@
   },
   "water": {
     "text": "água",
-    "gender": "f"
+    "gender": "f",
+    "note": "Pode me dar *água*?"
   },
   "waterfall": {
     "text": "cachoeira",
@@ -2598,13 +2619,15 @@
     "text": "chegar"
   },
   "to_ask": {
-    "text": "pedir"
+    "text": "pedir",
+    "note": "Posso *pedir* uma coisa?"
   },
   "to_bake": {
     "text": "assar"
   },
   "to_be": {
-    "text": "ser"
+    "text": "ser",
+    "note": "Eu *era* estudante."
   },
   "to_be_allowed_to": {
     "text": "poder"
@@ -2640,7 +2663,8 @@
     "text": "queimar"
   },
   "to_buy": {
-    "text": "comprar"
+    "text": "comprar",
+    "note": "Quero *comprar* uma passagem."
   },
   "to_call": {
     "text": "chamar"
@@ -2649,7 +2673,8 @@
     "text": "ligar de volta"
   },
   "to_can": {
-    "text": "poder"
+    "text": "poder",
+    "note": "Eu *posso* te ajudar."
   },
   "to_care": {
     "text": "cuidar"
@@ -2679,7 +2704,8 @@
     "text": "fechar"
   },
   "to_come": {
-    "text": "vir"
+    "text": "vir",
+    "note": "*Venha* amanhã às dez."
   },
   "to_consider": {
     "text": "considerar"
@@ -2715,7 +2741,8 @@
     "text": "morrer"
   },
   "to_do": {
-    "text": "fazer"
+    "text": "fazer",
+    "note": "Tenho que *fazer* isso."
   },
   "to_download": {
     "text": "baixar"
@@ -2727,13 +2754,15 @@
     "text": "sonhar"
   },
   "to_drink": {
-    "text": "beber"
+    "text": "beber",
+    "note": "Preciso *beber* água."
   },
   "to_drive": {
     "text": "dirigir"
   },
   "to_eat": {
-    "text": "comer"
+    "text": "comer",
+    "note": "Vamos *comer* alguma coisa."
   },
   "to_eat_breakfast": {
     "text": "tomar café da manhã"
@@ -2766,7 +2795,8 @@
     "text": "lutar"
   },
   "to_find": {
-    "text": "encontrar"
+    "text": "encontrar",
+    "note": "Não *encontro* minha chave."
   },
   "to_find_out": {
     "text": "descobrir"
@@ -2784,19 +2814,22 @@
     "text": "esquecer"
   },
   "to_get": {
-    "text": "obter"
+    "text": "obter",
+    "note": "Onde posso *obter* uma passagem?"
   },
   "to_get_up": {
     "text": "acordar"
   },
   "to_give": {
-    "text": "dar"
+    "text": "dar",
+    "note": "Me *dá* a chave, por favor."
   },
   "to_give_up": {
     "text": "desistir"
   },
   "to_go": {
-    "text": "ir"
+    "text": "ir",
+    "note": "*Vamos* agora."
   },
   "to_grill": {
     "text": "grelhar"
@@ -2814,16 +2847,19 @@
     "text": "odiar"
   },
   "to_have": {
-    "text": "ter"
+    "text": "ter",
+    "note": "É bom *ter* amigos."
   },
   "to_have_to": {
-    "text": "ter que"
+    "text": "ter que",
+    "note": "*Tenho que* ir."
   },
   "to_hear": {
     "text": "ouvir"
   },
   "to_help": {
-    "text": "ajudar"
+    "text": "ajudar",
+    "note": "Meu amigo me *ajuda*."
   },
   "to_hire": {
     "text": "contratar"
@@ -2856,7 +2892,8 @@
     "text": "beijar"
   },
   "to_know": {
-    "text": "saber"
+    "text": "saber",
+    "note": "Eu não *sei*."
   },
   "to_laugh": {
     "text": "rir"
@@ -2880,7 +2917,8 @@
     "text": "deitar"
   },
   "to_like": {
-    "text": "gostar"
+    "text": "gostar",
+    "note": "Eu *gosto* desta cidade."
   },
   "to_listen": {
     "text": "ouvir"
@@ -2928,7 +2966,8 @@
     "text": "mudar de"
   },
   "to_need": {
-    "text": "precisar"
+    "text": "precisar",
+    "note": "*Preciso* de ajuda."
   },
   "to_negotiate": {
     "text": "negociar"
@@ -3072,7 +3111,8 @@
     "text": "sorrir"
   },
   "to_speak": {
-    "text": "falar"
+    "text": "falar",
+    "note": "Você *fala* inglês?"
   },
   "to_spend": {
     "text": "gastar"
@@ -3081,7 +3121,8 @@
     "text": "ficar em pé"
   },
   "to_stay": {
-    "text": "ficar"
+    "text": "ficar",
+    "note": "Vou *ficar* dois dias."
   },
   "to_steam": {
     "text": "vaporizar"
@@ -3108,7 +3149,8 @@
     "text": "nadar"
   },
   "to_take": {
-    "text": "pegar"
+    "text": "pegar",
+    "note": "Vou *pegar* este."
   },
   "to_take_off": {
     "text": "decolar"
@@ -3126,7 +3168,8 @@
     "text": "agradecer"
   },
   "to_think": {
-    "text": "pensar"
+    "text": "pensar",
+    "note": "*Penso* que sim."
   },
   "to_throw": {
     "text": "jogar"
@@ -3156,7 +3199,8 @@
     "text": "ligar"
   },
   "to_understand": {
-    "text": "entender"
+    "text": "entender",
+    "note": "Eu não *entendo*."
   },
   "to_update": {
     "text": "atualizar"
@@ -3165,7 +3209,8 @@
     "text": "enviar"
   },
   "to_use": {
-    "text": "usar"
+    "text": "usar",
+    "note": "Posso *usar* seu telefone?"
   },
   "to_wait": {
     "text": "esperar"
@@ -3180,7 +3225,8 @@
     "text": "caminhar"
   },
   "to_want": {
-    "text": "querer"
+    "text": "querer",
+    "note": "Eu *quero* ir para casa."
   },
   "to_warn": {
     "text": "avisar"
@@ -3222,7 +3268,8 @@
   },
   "bad": {
     "m": "mau",
-    "f": "má"
+    "f": "má",
+    "note": "O tempo está *mau*."
   },
   "beautiful": {
     "m": "bonito",
@@ -3234,7 +3281,8 @@
   },
   "big": {
     "m": "grande",
-    "f": "grande"
+    "f": "grande",
+    "note": "É uma casa *grande*."
   },
   "bitter": {
     "m": "amargo",
@@ -3274,11 +3322,13 @@
   },
   "closed": {
     "m": "fechado",
-    "f": "fechada"
+    "f": "fechada",
+    "note": "A loja está *fechada*."
   },
   "cold": {
     "m": "frio",
-    "f": "fria"
+    "f": "fria",
+    "note": "Está *frio* lá fora."
   },
   "colorful": {
     "m": "colorido",
@@ -3366,7 +3416,8 @@
   },
   "good": {
     "m": "bom",
-    "f": "boa"
+    "f": "boa",
+    "note": "Isto é muito *bom*."
   },
   "green": {
     "m": "verde",
@@ -3402,7 +3453,8 @@
   },
   "hot": {
     "m": "quente",
-    "f": "quente"
+    "f": "quente",
+    "note": "O chá está *quente*."
   },
   "hungry": {
     "m": "faminto",
@@ -3550,7 +3602,8 @@
   },
   "small": {
     "m": "pequeno",
-    "f": "pequena"
+    "f": "pequena",
+    "note": "Uma xícara *pequena*, por favor."
   },
   "smart": {
     "m": "inteligente",
@@ -3641,22 +3694,28 @@
     "f": "jovem"
   },
   "here": {
-    "text": "aqui"
+    "text": "aqui",
+    "note": "Estou *aqui*."
   },
   "how_much": {
-    "text": "quanto"
+    "text": "quanto",
+    "note": "*Quanto* custa?"
   },
   "there": {
-    "text": "lá"
+    "text": "lá",
+    "note": "Está *lá*."
   },
   "when": {
-    "text": "quando"
+    "text": "quando",
+    "note": "*Quando* abre a loja?"
   },
   "where": {
-    "text": "onde"
+    "text": "onde",
+    "note": "*Onde* fica a estação?"
   },
   "why": {
-    "text": "por quê"
+    "text": "por quê",
+    "note": "Você está aqui *por quê*?"
   },
   "a_lot": {
     "text": "muito"
@@ -3683,7 +3742,8 @@
     "text": "sempre"
   },
   "and": {
-    "text": "e"
+    "text": "e",
+    "note": "Café *e* água, por favor."
   },
   "at_least": {
     "text": "pelo menos"
@@ -3713,7 +3773,8 @@
     "text": "completamente"
   },
   "down": {
-    "text": "para baixo"
+    "text": "para baixo",
+    "note": "Vá *para baixo* pela escada."
   },
   "earlier": {
     "text": "mais cedo"
@@ -3746,7 +3807,8 @@
     "text": "quatro"
   },
   "goodbye": {
-    "text": "tchau"
+    "text": "tchau",
+    "note": "*Tchau*, até mais tarde."
   },
   "half": {
     "text": "metade"
@@ -3755,10 +3817,12 @@
     "text": "dificilmente"
   },
   "he": {
-    "text": "ele"
+    "text": "ele",
+    "note": "*Ele* é meu amigo."
   },
   "hello": {
-    "text": "olá"
+    "text": "olá",
+    "note": "*Olá*, como vai?"
   },
   "her": {
     "text": "dela"
@@ -3767,7 +3831,8 @@
     "text": "dele"
   },
   "how": {
-    "text": "como"
+    "text": "como",
+    "note": "*Como* chego lá?"
   },
   "however": {
     "text": "porém"
@@ -3776,16 +3841,19 @@
     "text": "cem"
   },
   "i": {
-    "text": "eu"
+    "text": "eu",
+    "note": "*Eu* gosto deste lugar."
   },
   "if": {
-    "text": "se"
+    "text": "se",
+    "note": "Me ligue *se* precisar de ajuda."
   },
   "immediately": {
     "text": "imediatamente"
   },
   "in": {
-    "text": "em"
+    "text": "em",
+    "note": "Estou *no* hotel."
   },
   "in_front_of": {
     "text": "na frente de"
@@ -3797,16 +3865,19 @@
     "text": "em vez de"
   },
   "it": {
-    "text": "isso"
+    "text": "isso",
+    "note": "*Isso* está na mesa."
   },
   "last": {
     "text": "último"
   },
   "later": {
-    "text": "mais tarde"
+    "text": "mais tarde",
+    "note": "Falamos *mais tarde*."
   },
   "left": {
-    "text": "esquerda"
+    "text": "esquerda",
+    "note": "Vire à *esquerda* na esquina."
   },
   "less": {
     "text": "menos"
@@ -3824,7 +3895,8 @@
     "text": "muito"
   },
   "my": {
-    "text": "meu"
+    "text": "meu",
+    "note": "Este é o *meu* telefone."
   },
   "near": {
     "text": "perto"
@@ -3839,10 +3911,12 @@
     "text": "nove"
   },
   "no": {
-    "text": "não"
+    "text": "não",
+    "note": "*Não*, obrigado."
   },
   "now": {
-    "text": "agora"
+    "text": "agora",
+    "note": "Preciso disso *agora*."
   },
   "often": {
     "text": "frequentemente"
@@ -3851,13 +3925,15 @@
     "text": "em"
   },
   "one": {
-    "text": "um"
+    "text": "um",
+    "note": "Só *um*, por favor."
   },
   "only": {
     "text": "apenas"
   },
   "or": {
-    "text": "ou"
+    "text": "ou",
+    "note": "Café *ou* chá?"
   },
   "otherwise": {
     "text": "caso contrário"
@@ -3872,7 +3948,8 @@
     "text": "parcialmente"
   },
   "please": {
-    "text": "por favor"
+    "text": "por favor",
+    "note": "Passe o sal, *por favor*."
   },
   "rarely": {
     "text": "raramente"
@@ -3881,13 +3958,15 @@
     "text": "recentemente"
   },
   "right": {
-    "text": "direita"
+    "text": "direita",
+    "note": "Vire à *direita* no banco."
   },
   "seven": {
     "text": "sete"
   },
   "she": {
-    "text": "ela"
+    "text": "ela",
+    "note": "*Ela* trabalha no hotel."
   },
   "sideways": {
     "text": "para o lado"
@@ -3902,22 +3981,27 @@
     "text": "em breve"
   },
   "sorry": {
-    "text": "desculpa"
+    "text": "desculpa",
+    "note": "*Desculpa*, eu não sabia."
   },
   "straight": {
-    "text": "reto"
+    "text": "reto",
+    "note": "Siga *reto*."
   },
   "such": {
     "text": "tal"
   },
   "ten": {
-    "text": "dez"
+    "text": "dez",
+    "note": "Custa *dez* euros."
   },
   "thank_you": {
-    "text": "obrigado"
+    "text": "obrigado",
+    "note": "Muito *obrigado*."
   },
   "that": {
-    "text": "aquele"
+    "text": "aquele",
+    "note": "*Aquele* lugar está livre?"
   },
   "that_o": {
     "text": "que"
@@ -3932,22 +4016,27 @@
     "text": "portanto"
   },
   "they": {
-    "text": "eles"
+    "text": "eles",
+    "note": "*Eles* moram em Belgrado."
   },
   "this": {
-    "text": "este"
+    "text": "este",
+    "note": "*Esta* é a minha casa."
   },
   "thousand": {
     "text": "mil"
   },
   "three": {
-    "text": "três"
+    "text": "três",
+    "note": "Tenho *três* passagens."
   },
   "today": {
-    "text": "hoje"
+    "text": "hoje",
+    "note": "Começo a trabalhar *hoje*."
   },
   "tomorrow": {
-    "text": "amanhã"
+    "text": "amanhã",
+    "note": "Vejo você *amanhã*."
   },
   "tonight": {
     "text": "hoje à noite"
@@ -3959,7 +4048,8 @@
     "text": "totalmente"
   },
   "two": {
-    "text": "dois"
+    "text": "dois",
+    "note": "*Duas* passagens, por favor."
   },
   "under": {
     "text": "sob"
@@ -3968,7 +4058,8 @@
     "text": "a menos que"
   },
   "up": {
-    "text": "para cima"
+    "text": "para cima",
+    "note": "Vá *para cima*, ao segundo andar."
   },
   "usually": {
     "text": "geralmente"
@@ -3977,10 +4068,12 @@
     "text": "muito"
   },
   "we": {
-    "text": "nós"
+    "text": "nós",
+    "note": "*Nós* vamos ao aeroporto."
   },
   "what": {
-    "text": "o quê"
+    "text": "o quê",
+    "note": "Isto é *o quê*?"
   },
   "whether": {
     "text": "se"
@@ -3992,26 +4085,31 @@
     "text": "quem"
   },
   "yes": {
-    "text": "sim"
+    "text": "sim",
+    "note": "*Sim*, eu concordo."
   },
   "yesterday": {
-    "text": "ontem"
+    "text": "ontem",
+    "note": "Cheguei *ontem*."
   },
   "yet": {
     "text": "ainda"
   },
   "you": {
-    "text": "você"
+    "text": "você",
+    "note": "*Você* está ótimo hoje."
   },
   "your": {
-    "text": "seu"
+    "text": "seu",
+    "note": "Esta é a *sua* chave?"
   },
   "zero": {
     "text": "zero"
   },
   "open": {
     "m": "aberto",
-    "f": "aberta"
+    "f": "aberta",
+    "note": "A loja está *aberta*."
   },
   "all": {
     "text": "tudo"
@@ -4032,7 +4130,8 @@
     "text": "para"
   },
   "with": {
-    "text": "com"
+    "text": "com",
+    "note": "Café *com* leite, por favor."
   },
   "at": {
     "text": "em"
@@ -4044,7 +4143,8 @@
     "text": "junto a"
   },
   "not": {
-    "text": "não"
+    "text": "não",
+    "note": "*Não* funciona."
   },
   "people": {
     "text": "pessoas",
@@ -9564,6 +9664,9 @@
       "nuts_and_bolts": {
         "name": "Porcas e parafusos"
       },
+      "say_and_see": {
+        "name": "Dizer e ver"
+      },
       "one_to_ten": {
         "name": "De um a dez"
       },
@@ -9572,9 +9675,6 @@
       },
       "family_ties": {
         "name": "Laços de família"
-      },
-      "say_and_see": {
-        "name": "Dizer e ver"
       },
       "make_and_do": {
         "name": "Fazer e criar"
@@ -10103,8 +10203,8 @@
       }
     },
     "segments": {
-      "braindead": {
-        "name": "Sem cérebro"
+      "survival": {
+        "name": "Sobrevivência"
       },
       "baby": {
         "name": "Bebê"

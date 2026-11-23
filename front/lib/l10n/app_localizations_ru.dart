@@ -363,11 +363,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get vocab_masteryLabel => 'мастерство:';
 
   @override
-  String vocab_masteryCount(int count) {
-    return 'мастерство: $count';
-  }
-
-  @override
   String get result_techWork =>
       'Техническая работа — в прогресс не засчитывается';
 

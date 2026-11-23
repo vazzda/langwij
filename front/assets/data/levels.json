@@ -409,15 +409,15 @@
         "today",
         "tomorrow",
         "yesterday",
+        "when",
         "one",
         "two",
         "three",
         "ten",
         "ticket",
         "restaurant",
-        "all",
-        "that_o",
-        "his"
+        "friend",
+        "phone"
       ]
     },
     {
@@ -426,24 +426,42 @@
       "terms": [
         "to_be",
         "to_do",
-        "to_say",
         "to_know",
+        "to_have_to",
+        "to_think",
+        "to_ask",
+        "to_find",
+        "to_use",
+        "to_like",
+        "to_buy",
+        "to_give",
+        "to_take",
+        "to_stay",
+        "how",
         "and",
-        "but",
         "or",
         "if",
-        "that_conj",
-        "as",
-        "of",
         "in",
-        "to",
-        "for",
         "with",
-        "on",
-        "at",
-        "from",
-        "by",
         "not"
+      ]
+    },
+    {
+      "id": "say_and_see",
+      "icon": "alphabetical-variant",
+      "terms": [
+        "to_say",
+        "to_speak",
+        "to_tell",
+        "to_talk",
+        "to_answer",
+        "to_call",
+        "to_show",
+        "to_see",
+        "to_look_at",
+        "to_watch",
+        "to_hear",
+        "to_listen"
       ]
     },
     {
@@ -461,6 +479,8 @@
         "eight",
         "nine",
         "ten",
+        "eleven",
+        "twelve",
         "hundred",
         "thousand"
       ]
@@ -478,7 +498,6 @@
         "child",
         "kid",
         "baby",
-        "friend",
         "family"
       ]
     },
@@ -505,43 +524,20 @@
       ]
     },
     {
-      "id": "say_and_see",
-      "icon": "alphabetical-variant",
-      "terms": [
-        "to_say",
-        "to_speak",
-        "to_tell",
-        "to_talk",
-        "to_ask",
-        "to_answer",
-        "to_call",
-        "to_see",
-        "to_look_at",
-        "to_watch",
-        "to_hear",
-        "to_listen"
-      ]
-    },
-    {
       "id": "make_and_do",
       "icon": "hand-back-right",
       "terms": [
         "to_do",
         "to_make",
-        "to_give",
-        "to_take",
         "to_put",
-        "to_buy",
         "to_pay",
-        "to_like",
         "to_live",
         "to_work",
         "to_sleep",
         "to_wait",
-        "to_find",
-        "to_use",
         "to_read",
-        "to_write"
+        "to_write",
+        "to_try"
       ]
     },
     {
@@ -566,6 +562,10 @@
       "id": "bite_to_eat",
       "icon": "bread-slice",
       "terms": [
+        "meal",
+        "breakfast",
+        "lunch",
+        "dinner",
         "milk",
         "egg",
         "cheese",
@@ -598,8 +598,6 @@
       "id": "teens_and_tens",
       "icon": "numeric",
       "terms": [
-        "eleven",
-        "twelve",
         "thirteen",
         "fourteen",
         "fifteen",
@@ -615,6 +613,7 @@
         "seventy",
         "eighty",
         "ninety",
+        "half",
         "billion"
       ]
     },
@@ -626,7 +625,6 @@
         "to_come",
         "to_leave",
         "to_arrive",
-        "to_stay",
         "to_walk",
         "to_run",
         "to_sit",
@@ -634,7 +632,12 @@
         "to_stop",
         "to_start",
         "to_begin",
-        "to_finish"
+        "to_finish",
+        "out",
+        "off",
+        "away",
+        "back",
+        "around"
       ]
     },
     {
@@ -648,11 +651,8 @@
         "to_learn",
         "to_study",
         "to_teach",
-        "to_show",
         "to_play",
         "to_hold",
-        "to_try",
-        "to_think",
         "to_meet"
       ]
     },
@@ -681,10 +681,6 @@
       "id": "table_for_two",
       "icon": "silverware-fork-knife",
       "terms": [
-        "meal",
-        "breakfast",
-        "lunch",
-        "dinner",
         "drink",
         "menu",
         "bill",
@@ -694,7 +690,9 @@
         "spoon",
         "fork",
         "knife_utensil",
-        "glass_cup"
+        "glass_cup",
+        "cafe",
+        "bakery"
       ]
     },
     {
@@ -717,7 +715,9 @@
         "fast",
         "slow",
         "easy",
-        "difficult"
+        "difficult",
+        "cheap",
+        "expensive"
       ]
     },
     {
@@ -749,6 +749,7 @@
         "when",
         "which",
         "whose",
+        "that_conj",
         "my",
         "your",
         "his",
@@ -773,7 +774,6 @@
         "very",
         "too",
         "almost",
-        "half",
         "also",
         "only"
       ]
@@ -791,6 +791,7 @@
         "most",
         "another",
         "other",
+        "that_o",
         "none",
         "plenty",
         "certain",
@@ -801,20 +802,23 @@
       "id": "in_and_out",
       "icon": "swap-horizontal",
       "terms": [
+        "of",
+        "to",
+        "for",
+        "at",
+        "from",
+        "by",
+        "on",
         "about",
         "into",
         "through",
         "without",
         "against",
-        "around",
         "among",
         "within",
         "toward",
         "along",
-        "out",
-        "off",
-        "away",
-        "back"
+        "as"
       ]
     },
     {
@@ -831,10 +835,8 @@
         "shop",
         "supermarket",
         "market",
-        "bakery",
         "pharmacy",
         "bank",
-        "cafe",
         "office"
       ]
     },
@@ -864,8 +866,6 @@
       "icon": "basket",
       "terms": [
         "price",
-        "cheap",
-        "expensive",
         "to_sell",
         "to_count",
         "coin",
@@ -953,6 +953,7 @@
         "actually",
         "well",
         "so",
+        "but",
         "hey",
         "hi",
         "anyway",
@@ -972,7 +973,6 @@
         "to_let",
         "to_keep",
         "to_bring",
-        "to_send",
         "to_carry",
         "to_change",
         "to_move",
@@ -1045,7 +1045,6 @@
       "id": "plugged_in",
       "icon": "laptop",
       "terms": [
-        "phone",
         "computer",
         "laptop",
         "internet",
@@ -1053,6 +1052,7 @@
         "online",
         "email",
         "message",
+        "to_send",
         "cable",
         "charger",
         "to_charge",
@@ -4259,7 +4259,7 @@
   ],
   "segments": [
     {
-      "id": "braindead",
+      "id": "survival",
       "levels": [
         "top100"
       ]

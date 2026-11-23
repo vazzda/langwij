@@ -1,87 +1,115 @@
 {
   "sorry": {
-    "text": "izvini"
+    "text": "izvini",
+    "note": "*Izvini*, nisam znao."
   },
   "what": {
-    "text": "šta"
+    "text": "šta",
+    "note": "*Šta* je ovo?"
   },
   "where": {
-    "text": "gde"
+    "text": "gde",
+    "note": "*Gde* je stanica?"
   },
   "when": {
-    "text": "kada"
+    "text": "kada",
+    "note": "*Kada* se otvara prodavnica?"
   },
   "how_much": {
-    "text": "koliko"
+    "text": "koliko",
+    "note": "*Koliko* košta?"
   },
   "why": {
-    "text": "zašto"
+    "text": "zašto",
+    "note": "*Zašto* si ovde?"
   },
   "here": {
-    "text": "ovde"
+    "text": "ovde",
+    "note": "Ja sam *ovde*."
   },
   "there": {
-    "text": "tamo"
+    "text": "tamo",
+    "note": "To je *tamo*."
   },
   "hotel": {
-    "text": "hotel"
+    "text": "hotel",
+    "note": "Gde je *hotel*?"
   },
   "bathroom": {
-    "text": "toalet"
+    "text": "toalet",
+    "note": "Gde je *toalet*?"
   },
   "meat": {
-    "text": "meso"
+    "text": "meso",
+    "note": "Ne jedem *meso*."
   },
   "fruit": {
-    "text": "voće"
+    "text": "voće",
+    "note": "*Voće* je slatko."
   },
   "danger": {
-    "text": "opasnost"
+    "text": "opasnost",
+    "note": "*Opasnost*! Ne ulazi."
   },
   "medicine": {
-    "text": "lek"
+    "text": "lek",
+    "note": "Uzmi svoj *lek*."
   },
   "closed": {
-    "text": "zatvoreno"
+    "text": "zatvoreno",
+    "note": "Prodavnica je *zatvorena*."
   },
   "one": {
-    "text": "jedan"
+    "text": "jedan",
+    "note": "Samo *jedan*, molim."
   },
   "two": {
-    "text": "dva"
+    "text": "dva",
+    "note": "*Dve* karte, molim."
   },
   "three": {
-    "text": "tri"
+    "text": "tri",
+    "note": "Imam *tri* karte."
   },
   "ticket": {
-    "text": "karta"
+    "text": "karta",
+    "note": "Pokaži mi svoju *kartu*."
   },
   "restaurant": {
-    "text": "restoran"
+    "text": "restoran",
+    "note": "*Restoran* je pun."
   },
   "hello": {
-    "text": "cao"
+    "text": "cao",
+    "note": "*Cao*, kako si?"
   },
   "goodbye": {
-    "text": "cao"
+    "text": "cao",
+    "note": "*Cao*, vidimo se kasnije."
   },
   "thank_you": {
-    "text": "hvala"
+    "text": "hvala",
+    "note": "*Hvala* vam puno."
   },
   "please": {
-    "text": "molim"
+    "text": "molim",
+    "note": "*Molim* te, dodaj so."
   },
   "i": {
-    "text": "ja"
+    "text": "ja",
+    "note": "*Ja* volim ovo mesto."
   },
   "you": {
-    "text": "ti"
+    "text": "ti",
+    "note": "*Ti* danas izgledaš odlično."
   },
   "yes": {
-    "text": "da"
+    "text": "da",
+    "note": "*Da*, slažem se."
   },
   "no": {
-    "text": "ne"
+    "text": "ne",
+    "note": "*Ne*, hvala."
   },
   "to_lie_down": {
     "imperfective": "ležati",
@@ -93,11 +121,13 @@
   },
   "to_buy": {
     "imperfective": "kupovati",
-    "perfective": "kupiti"
+    "perfective": "kupiti",
+    "note": "Hoću da *kupim* kartu."
   },
   "to_give": {
     "imperfective": "davati",
-    "perfective": "dati"
+    "perfective": "dati",
+    "note": "*Daj* mi ključ, molim."
   },
   "to_sell": {
     "imperfective": "prodavati",
@@ -123,10 +153,12 @@
     "text": "sedeti"
   },
   "to_see": {
-    "text": "videti"
+    "text": "videti",
+    "note": "*Vidim* planine."
   },
   "to_watch": {
-    "text": "gledati"
+    "text": "gledati",
+    "note": "*Gledam* film svako veče."
   },
   "to_love": {
     "text": "voleti"
@@ -135,35 +167,44 @@
     "text": "želeti"
   },
   "to_live": {
-    "text": "živeti"
+    "text": "živeti",
+    "note": "*Živim* u Beogradu."
   },
   "to_talk": {
-    "text": "pričati"
+    "text": "pričati",
+    "note": "*Pričamo* svaki dan."
   },
   "to_speak": {
-    "text": "govoriti"
+    "text": "govoriti",
+    "note": "Da li *govoriš* engleski?"
   },
   "to_use": {
-    "text": "koristiti"
+    "text": "koristiti",
+    "note": "Mogu li da *koristim* tvoj telefon?"
   },
   "to_think": {
-    "text": "misliti"
+    "text": "misliti",
+    "note": "Tako *mislim*."
   },
   "to_pay": {
     "text": "platiti",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "Mogu li da *platim* karticom?"
   },
   "to_listen": {
-    "text": "slušati"
+    "text": "slušati",
+    "note": "*Slušam* muziku."
   },
   "to_work": {
-    "text": "raditi"
+    "text": "raditi",
+    "note": "*Radim* od kuće."
   },
   "to_learn": {
     "text": "učiti"
   },
   "to_make": {
-    "text": "praviti"
+    "text": "praviti",
+    "note": "*Pravim* kafu svako jutro."
   },
   "to_drive": {
     "text": "voziti"
@@ -176,22 +217,26 @@
     "text": "mrzeti"
   },
   "to_wait": {
-    "text": "čekati"
+    "text": "čekati",
+    "note": "*Čekaj* me ovde."
   },
   "to_read": {
-    "text": "čitati"
+    "text": "čitati",
+    "note": "*Čitam* pre spavanja."
   },
   "to_play": {
     "text": "igrati"
   },
   "to_have": {
-    "text": "imati"
+    "text": "imati",
+    "note": "Dobro je *imati* prijatelje."
   },
   "to_cook": {
     "text": "kuvati"
   },
   "to_have_to": {
-    "text": "morati"
+    "text": "morati",
+    "note": "*Moram* da idem."
   },
   "to_sing": {
     "text": "pevati"
@@ -203,10 +248,12 @@
     "text": "sanjati"
   },
   "to_sleep": {
-    "text": "spavati"
+    "text": "spavati",
+    "note": "*Spavam* osam sati."
   },
   "to_can": {
-    "text": "moći"
+    "text": "moći",
+    "note": "*Mogu* da ti pomognem."
   },
   "to_wear": {
     "text": "nositi"
@@ -215,7 +262,8 @@
     "text": "studirati"
   },
   "to_like": {
-    "text": "sviđati se"
+    "text": "sviđati se",
+    "note": "*Sviđa* mi *se* ovaj grad."
   },
   "to_train": {
     "text": "trenirati"
@@ -230,23 +278,27 @@
     "text": "doručkovati"
   },
   "to_know": {
-    "text": "znati"
+    "text": "znati",
+    "note": "Ne *znam*."
   },
   "to_lie": {
     "text": "lagati"
   },
   "to_help": {
-    "text": "pomagati"
+    "text": "pomagati",
+    "note": "Prijatelj mi *pomaže*."
   },
   "to_show": {
     "text": "pokazati",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "*Pokaži* mi sobu, molim."
   },
   "to_wave": {
     "text": "mahati"
   },
   "to_write": {
-    "text": "pisati"
+    "text": "pisati",
+    "note": "*Pišem* poruku."
   },
   "to_dance": {
     "text": "plesati"
@@ -280,16 +332,19 @@
   },
   "to_come": {
     "text": "doći",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "*Dođi* sutra u deset."
   },
   "to_go": {
-    "text": "ići"
+    "text": "ići",
+    "note": "*Idemo* sada."
   },
   "to_bake": {
     "text": "peći"
   },
   "to_understand": {
-    "text": "razumeti"
+    "text": "razumeti",
+    "note": "Ne *razumem*."
   },
   "to_be_allowed_to": {
     "text": "smeti"
@@ -299,10 +354,12 @@
     "aspect": "perfective"
   },
   "to_be": {
-    "text": "biti"
+    "text": "biti",
+    "note": "*Bio* sam student."
   },
   "to_want": {
-    "text": "hteti"
+    "text": "hteti",
+    "note": "*Hoću* da idem kući."
   },
   "to_finish": {
     "text": "završiti",
@@ -310,7 +367,8 @@
   },
   "to_answer": {
     "text": "odgovoriti",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "Molim te, *odgovori* na pitanje."
   },
   "to_accept": {
     "text": "prihvatiti",
@@ -339,13 +397,16 @@
   },
   "to_say": {
     "text": "reći",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "Šta si *rekao*?"
   },
   "to_eat": {
-    "text": "jesti"
+    "text": "jesti",
+    "note": "Hajde da *jedemo* nešto."
   },
   "to_drink": {
-    "text": "piti"
+    "text": "piti",
+    "note": "Moram da *pijem* vodu."
   },
   "to_kill": {
     "text": "ubiti",
@@ -359,7 +420,8 @@
     "text": "smejati se"
   },
   "to_hear": {
-    "text": "čuti"
+    "text": "čuti",
+    "note": "Ne *čujem* te."
   },
   "to_taste": {
     "text": "okusiti",
@@ -415,7 +477,8 @@
     "aspect": "perfective"
   },
   "to_call": {
-    "text": "zvati"
+    "text": "zvati",
+    "note": "*Zovi* me sutra."
   },
   "to_turn": {
     "text": "okrenuti",
@@ -443,7 +506,8 @@
   },
   "to_find": {
     "text": "naći",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "Ne mogu da *nađem* ključ."
   },
   "to_fall": {
     "text": "pasti",
@@ -495,17 +559,20 @@
   },
   "to_do": {
     "text": "uraditi",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "Moram to da *uradim*."
   },
   "to_get": {
-    "text": "dobijati"
+    "text": "dobijati",
+    "note": "Gde se *dobija* karta?"
   },
   "to_look_for": {
     "text": "tražiti"
   },
   "to_look_at": {
     "text": "pogledati",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "*Pogledaj* ovu sliku."
   },
   "to_get_up": {
     "text": "ustati",
@@ -513,7 +580,8 @@
   },
   "to_take": {
     "text": "uzeti",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "*Uzeću* ovaj."
   },
   "to_find_out": {
     "text": "saznati",
@@ -529,17 +597,20 @@
   },
   "to_try": {
     "text": "pokušati",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "*Pokušaj* ponovo."
   },
   "to_try_on": {
     "text": "probati",
     "aspect": "perfective"
   },
   "to_ask": {
-    "text": "pitati"
+    "text": "pitati",
+    "note": "Mogu li nešto da *pitam*?"
   },
   "to_need": {
-    "text": "trebati"
+    "text": "trebati",
+    "note": "*Treba* mi pomoć."
   },
   "to_feel": {
     "text": "osećati"
@@ -554,7 +625,8 @@
   },
   "to_put": {
     "text": "staviti",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "*Stavi* torbu ovde."
   },
   "to_put_on": {
     "text": "obući",
@@ -699,7 +771,8 @@
   },
   "to_stay": {
     "text": "ostati",
-    "aspect": "perfective"
+    "aspect": "perfective",
+    "note": "*Ostaću* dva dana."
   },
   "to_reach": {
     "text": "doseći",
@@ -751,28 +824,33 @@
     "aspect": "perfective"
   },
   "now": {
-    "text": "sada"
+    "text": "sada",
+    "note": "Treba mi *sada*."
   },
   "then": {
     "text": "tada"
   },
   "today": {
-    "text": "danas"
+    "text": "danas",
+    "note": "*Danas* počinjem da radim."
   },
   "tonight": {
     "text": "večeras"
   },
   "yesterday": {
-    "text": "juče"
+    "text": "juče",
+    "note": "Stigao sam *juče*."
   },
   "tomorrow": {
-    "text": "sutra"
+    "text": "sutra",
+    "note": "Vidimo se *sutra*."
   },
   "soon": {
     "text": "uskoro"
   },
   "later": {
-    "text": "kasnije"
+    "text": "kasnije",
+    "note": "Pričaćemo *kasnije*."
   },
   "earlier": {
     "text": "ranije"
@@ -832,7 +910,8 @@
     "text": "pored"
   },
   "in": {
-    "text": "u"
+    "text": "u",
+    "note": "Ja sam *u* hotelu."
   },
   "inside": {
     "text": "unutra"
@@ -844,10 +923,12 @@
     "text": "blizu"
   },
   "this": {
-    "text": "ovaj"
+    "text": "ovaj",
+    "note": "*Ovo* je moja kuća."
   },
   "that": {
-    "text": "taj"
+    "text": "taj",
+    "note": "Da li je *to* mesto slobodno?"
   },
   "that_o": {
     "text": "onaj"
@@ -856,13 +937,16 @@
     "text": "ovakav"
   },
   "left": {
-    "text": "levo"
+    "text": "levo",
+    "note": "Skreni *levo* na uglu."
   },
   "right": {
-    "text": "desno"
+    "text": "desno",
+    "note": "Skreni *desno* kod banke."
   },
   "straight": {
-    "text": "pravo"
+    "text": "pravo",
+    "note": "Idi *pravo*."
   },
   "forward": {
     "text": "napred"
@@ -871,10 +955,12 @@
     "text": "nazad"
   },
   "up": {
-    "text": "gore"
+    "text": "gore",
+    "note": "Idi *gore* na drugi sprat."
   },
   "down": {
-    "text": "dole"
+    "text": "dole",
+    "note": "Idi *dole* niz stepenice."
   },
   "across": {
     "text": "preko"
@@ -938,67 +1024,83 @@
   },
   "person": {
     "text": "osoba",
-    "gender": "f"
+    "gender": "f",
+    "note": "Ona je dobra *osoba*."
   },
   "man": {
     "text": "čovek",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Čovek* čeka napolju."
   },
   "woman": {
     "text": "žena",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Žena* čita knjigu."
   },
   "child": {
     "text": "dete",
-    "gender": "n"
+    "gender": "n",
+    "note": "*Dete* spava."
   },
   "boy": {
     "text": "dečak",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Dečak* igra fudbal."
   },
   "girl": {
     "text": "devojka",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Devojka* peva."
   },
   "friend": {
     "text": "prijatelj",
-    "gender": "m"
+    "gender": "m",
+    "note": "Ovo je moj *prijatelj*."
   },
   "family": {
     "text": "porodica",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *porodica* živi u Srbiji."
   },
   "father": {
     "text": "otac",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *otac* mnogo radi."
   },
   "mother": {
     "text": "majka",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *majka* je učiteljica."
   },
   "brother": {
     "text": "brat",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *brat* živi u Berlinu."
   },
   "sister": {
     "text": "sestra",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *sestra* je starija od mene."
   },
   "husband": {
     "text": "muž",
-    "gender": "m"
+    "gender": "m",
+    "note": "Ovo je moj *muž*."
   },
   "wife": {
     "text": "žena",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *žena* je na poslu."
   },
   "doctor": {
     "text": "doktor",
-    "gender": "m"
+    "gender": "m",
+    "note": "Treba mi *doktor*."
   },
   "police": {
     "text": "policija",
-    "gender": "f"
+    "gender": "f",
+    "note": "Zovi *policiju*."
   },
   "home": {
     "text": "kuća",
@@ -1022,7 +1124,8 @@
   },
   "hospital": {
     "text": "bolnica",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Bolnica* je blizu."
   },
   "park": {
     "text": "park",
@@ -1054,7 +1157,8 @@
   },
   "airport": {
     "text": "aerodrom",
-    "gender": "m"
+    "gender": "m",
+    "note": "Odvezi me na *aerodrom*."
   },
   "thing": {
     "text": "stvar",
@@ -1074,27 +1178,33 @@
   },
   "money": {
     "text": "novac",
-    "gender": "m"
+    "gender": "m",
+    "note": "Nemam *novca*."
   },
   "water": {
     "text": "voda",
-    "gender": "f"
+    "gender": "f",
+    "note": "Mogu li dobiti *vodu*?"
   },
   "food": {
     "text": "hrana",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Hrana* je spremna."
   },
   "bread": {
     "text": "hleb",
-    "gender": "m"
+    "gender": "m",
+    "note": "Svež *hleb*, molim."
   },
   "coffee": {
     "text": "kafa",
-    "gender": "f"
+    "gender": "f",
+    "note": "Dve *kafe*, molim."
   },
   "phone": {
     "text": "telefon",
-    "gender": "m"
+    "gender": "m",
+    "note": "Gde je moj *telefon*?"
   },
   "computer": {
     "text": "računar",
@@ -1130,7 +1240,8 @@
   },
   "time": {
     "text": "vreme",
-    "gender": "n"
+    "gender": "n",
+    "note": "Nemam *vremena*."
   },
   "year": {
     "text": "godina",
@@ -1142,23 +1253,28 @@
   },
   "week": {
     "text": "nedelja",
-    "gender": "f"
+    "gender": "f",
+    "note": "Ostajem ovde *nedelju* dana."
   },
   "day": {
     "text": "dan",
-    "gender": "m"
+    "gender": "m",
+    "note": "Danas je lep *dan*."
   },
   "night": {
     "text": "noć",
-    "gender": "f"
+    "gender": "f",
+    "note": "Laku *noć*!"
   },
   "morning": {
     "text": "jutro",
-    "gender": "n"
+    "gender": "n",
+    "note": "Dobro *jutro*!"
   },
   "evening": {
     "text": "veče",
-    "gender": "n"
+    "gender": "n",
+    "note": "Dobro *veče*!"
   },
   "sun": {
     "text": "sunce",
@@ -1251,12 +1367,14 @@
   "good": {
     "m": "dobar",
     "f": "dobra",
-    "n": "dobro"
+    "n": "dobro",
+    "note": "Ovo je veoma *dobro*."
   },
   "bad": {
     "m": "loš",
     "f": "loša",
-    "n": "loše"
+    "n": "loše",
+    "note": "Vreme je *loše*."
   },
   "beautiful": {
     "m": "lep",
@@ -1271,12 +1389,14 @@
   "big": {
     "m": "veliki",
     "f": "velika",
-    "n": "veliko"
+    "n": "veliko",
+    "note": "To je *velika* kuća."
   },
   "small": {
     "m": "mali",
     "f": "mala",
-    "n": "malo"
+    "n": "malo",
+    "note": "*Malu* šolju, molim."
   },
   "new": {
     "m": "nov",
@@ -1406,7 +1526,8 @@
   "hot": {
     "m": "vruć",
     "f": "vruća",
-    "n": "vruće"
+    "n": "vruće",
+    "note": "Čaj je *vruć*."
   },
   "warm": {
     "m": "topao",
@@ -1416,7 +1537,8 @@
   "cold": {
     "m": "hladan",
     "f": "hladna",
-    "n": "hladno"
+    "n": "hladno",
+    "note": "Napolju je *hladno*."
   },
   "sweet": {
     "m": "sladak",
@@ -1481,47 +1603,56 @@
   "white": {
     "m": "beo",
     "f": "bela",
-    "n": "belo"
+    "n": "belo",
+    "note": "Sneg je *beo*."
   },
   "black": {
     "m": "crn",
     "f": "crna",
-    "n": "crno"
+    "n": "crno",
+    "note": "Moja torba je *crna*."
   },
   "red": {
     "m": "crven",
     "f": "crvena",
-    "n": "crveno"
+    "n": "crveno",
+    "note": "Jabuka je *crvena*."
   },
   "blue": {
     "m": "plav",
     "f": "plava",
-    "n": "plavo"
+    "n": "plavo",
+    "note": "More je *plavo*."
   },
   "green": {
     "m": "zelen",
     "f": "zelena",
-    "n": "zeleno"
+    "n": "zeleno",
+    "note": "Trava je *zelena*."
   },
   "yellow": {
     "m": "žut",
     "f": "žuta",
-    "n": "žuto"
+    "n": "žuto",
+    "note": "Limun je *žut*."
   },
   "grey": {
     "m": "siv",
     "f": "siva",
-    "n": "sivo"
+    "n": "sivo",
+    "note": "Nebo je danas *sivo*."
   },
   "brown": {
     "m": "braon",
     "f": "braon",
-    "n": "braon"
+    "n": "braon",
+    "note": "Njegove cipele su *braon*."
   },
   "orange": {
     "m": "narandžast",
     "f": "narandžasta",
-    "n": "narandžasto"
+    "n": "narandžasto",
+    "note": "Moja jakna je *narandžasta*."
   },
   "pink": {
     "m": "roze",
@@ -1818,39 +1949,48 @@
   },
   "milk": {
     "text": "mleko",
-    "gender": "n"
+    "gender": "n",
+    "note": "*Mleko* je hladno."
   },
   "egg": {
     "text": "jaje",
-    "gender": "n"
+    "gender": "n",
+    "note": "Jedem *jaje* za doručak."
   },
   "rice": {
     "text": "pirinač",
-    "gender": "m"
+    "gender": "m",
+    "note": "Piletinu sa *pirinčem*, molim."
   },
   "cheese": {
     "text": "sir",
-    "gender": "m"
+    "gender": "m",
+    "note": "Volim *sir*."
   },
   "fish": {
     "text": "riba",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Riba* je sveža."
   },
   "chicken_meat": {
     "text": "piletina",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Piletina* je veoma ukusna."
   },
   "vegetable": {
     "text": "povrće",
-    "gender": "n"
+    "gender": "n",
+    "note": "Jedi *povrće*."
   },
   "apple": {
     "text": "jabuka",
-    "gender": "f"
+    "gender": "f",
+    "note": "Ova *jabuka* je slatka."
   },
   "potato": {
     "text": "krompir",
-    "gender": "m"
+    "gender": "m",
+    "note": "Želim ribu sa *krompirom*."
   },
   "tea": {
     "text": "čaj",
@@ -1862,11 +2002,13 @@
   },
   "sugar": {
     "text": "šećer",
-    "gender": "m"
+    "gender": "m",
+    "note": "Čaj bez *šećera*, molim."
   },
   "salt": {
     "text": "so",
-    "gender": "f"
+    "gender": "f",
+    "note": "Supi treba još *soli*."
   },
   "butter": {
     "text": "puter",
@@ -2021,25 +2163,32 @@
     "gender": "f"
   },
   "he": {
-    "text": "on"
+    "text": "on",
+    "note": "*On* je moj prijatelj."
   },
   "she": {
-    "text": "ona"
+    "text": "ona",
+    "note": "*Ona* radi u hotelu."
   },
   "we": {
-    "text": "mi"
+    "text": "mi",
+    "note": "*Mi* idemo na aerodrom."
   },
   "they": {
-    "text": "oni"
+    "text": "oni",
+    "note": "*Oni* žive u Beogradu."
   },
   "it": {
-    "text": "ono"
+    "text": "ono",
+    "note": "*Ono* je na stolu."
   },
   "my": {
-    "text": "moj"
+    "text": "moj",
+    "note": "Ovo je *moj* telefon."
   },
   "your": {
-    "text": "tvoj"
+    "text": "tvoj",
+    "note": "Da li je ovo *tvoj* ključ?"
   },
   "his": {
     "text": "njegov"
@@ -2054,34 +2203,44 @@
     "text": "njihov"
   },
   "zero": {
-    "text": "nula"
+    "text": "nula",
+    "note": "Napolju je *nula* stepeni."
   },
   "four": {
-    "text": "četiri"
+    "text": "četiri",
+    "note": "Autobus polazi u *četiri*."
   },
   "five": {
-    "text": "pet"
+    "text": "pet",
+    "note": "Stižem za *pet* minuta."
   },
   "six": {
-    "text": "šest"
+    "text": "šest",
+    "note": "Ustajem u *šest*."
   },
   "seven": {
-    "text": "sedam"
+    "text": "sedam",
+    "note": "Prodavnica se otvara u *sedam*."
   },
   "eight": {
-    "text": "osam"
+    "text": "osam",
+    "note": "Doručak je u *osam*."
   },
   "nine": {
-    "text": "devet"
+    "text": "devet",
+    "note": "Voz polazi u *devet*."
   },
   "ten": {
-    "text": "deset"
+    "text": "deset",
+    "note": "Košta *deset* evra."
   },
   "hundred": {
-    "text": "sto"
+    "text": "sto",
+    "note": "Košta *sto* evra."
   },
   "thousand": {
-    "text": "hiljada"
+    "text": "hiljada",
+    "note": "Ovde živi *hiljadu* ljudi."
   },
   "first": {
     "text": "prvi"
@@ -2094,11 +2253,13 @@
   },
   "hour": {
     "text": "sat",
-    "gender": "m"
+    "gender": "m",
+    "note": "Put traje jedan *sat*."
   },
   "minute": {
     "text": "minut",
-    "gender": "m"
+    "gender": "m",
+    "note": "Sačekaj *minut*, molim."
   },
   "spring": {
     "text": "proleće",
@@ -2323,7 +2484,8 @@
   },
   "cash": {
     "text": "gotovina",
-    "gender": "f"
+    "gender": "f",
+    "note": "Mogu li da platim *gotovinom*?"
   },
   "neighbor": {
     "text": "komšija",
@@ -2331,7 +2493,8 @@
   },
   "parent": {
     "text": "roditelj",
-    "gender": "m"
+    "gender": "m",
+    "note": "Svaki *roditelj* to zna."
   },
   "farmer": {
     "text": "farmer",
@@ -2467,16 +2630,19 @@
     "gender": "m"
   },
   "and": {
-    "text": "i"
+    "text": "i",
+    "note": "Kafu *i* vodu, molim."
   },
   "or": {
-    "text": "ili"
+    "text": "ili",
+    "note": "Kafa *ili* čaj?"
   },
   "who": {
     "text": "ko"
   },
   "how": {
-    "text": "kako"
+    "text": "kako",
+    "note": "*Kako* da stignem tamo?"
   },
   "but": {
     "text": "ali"
@@ -2485,7 +2651,8 @@
     "text": "zato što"
   },
   "if": {
-    "text": "ako"
+    "text": "ako",
+    "note": "Zovi me *ako* ti treba pomoć."
   },
   "also": {
     "text": "također"
@@ -2740,7 +2907,8 @@
   },
   "baby": {
     "text": "beba",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Beba* plače."
   },
   "ball": {
     "text": "lopta",
@@ -4190,7 +4358,8 @@
     "gender": "m"
   },
   "open": {
-    "text": "otvoreno"
+    "text": "otvoreno",
+    "note": "Prodavnica je *otvorena*."
   },
   "all": {
     "text": "sve"
@@ -4211,7 +4380,8 @@
     "text": "za"
   },
   "with": {
-    "text": "sa"
+    "text": "sa",
+    "note": "Kafu *sa* mlekom, molim."
   },
   "at": {
     "text": "kod"
@@ -4223,81 +4393,101 @@
     "text": "pored"
   },
   "not": {
-    "text": "ne"
+    "text": "ne",
+    "note": "*Ne* radi."
   },
   "people": {
     "text": "ljudi",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Ljudi* su ovde ljubazni."
   },
   "kid": {
     "text": "klinac",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Klinac* hoće sladoled."
   },
   "mom": {
     "text": "mama",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Mama*, gde si?"
   },
   "dad": {
     "text": "tata",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Tata* je kod kuće."
   },
   "son": {
     "text": "sin",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *sin* ide u školu."
   },
   "daughter": {
     "text": "ćerka",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *ćerka* voli muziku."
   },
   "grandmother": {
     "text": "baka",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *baka* odlično kuva."
   },
   "grandfather": {
     "text": "deda",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *deda* priča dobre priče."
   },
   "uncle": {
     "text": "ujak",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *ujak* ima farmu."
   },
   "aunt": {
     "text": "tetka",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *tetka* živi blizu."
   },
   "cousin": {
     "text": "rođak",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *rođak* je kod nas u gostima."
   },
   "to_tell": {
     "imperfective": "pričati",
-    "perfective": "ispričati"
+    "perfective": "ispričati",
+    "note": "*Ispričaj* mi priču."
   },
   "noon": {
     "text": "podne",
-    "gender": "n"
+    "gender": "n",
+    "note": "Vidimo se u *podne*."
   },
   "afternoon": {
     "text": "popodne",
-    "gender": "n"
+    "gender": "n",
+    "note": "Slobodan sam ovo *popodne*."
   },
   "midnight": {
     "text": "ponoć",
-    "gender": "f"
+    "gender": "f",
+    "note": "Bar se zatvara u *ponoć*."
   },
   "weekend": {
     "text": "vikend",
-    "gender": "m"
+    "gender": "m",
+    "note": "Lep *vikend*!"
   },
   "color": {
     "text": "boja",
-    "gender": "f"
+    "gender": "f",
+    "note": "Koje je *boje* tvoj auto?"
   },
   "eleven": {
-    "text": "jedanaest"
+    "text": "jedanaest",
+    "note": "Odjava je u *jedanaest*."
   },
   "twelve": {
-    "text": "dvanaest"
+    "text": "dvanaest",
+    "note": "Ručak je u *dvanaest*."
   },
   "thirteen": {
     "text": "trinaest"
@@ -4361,19 +4551,23 @@
   },
   "meal": {
     "text": "obrok",
-    "gender": "m"
+    "gender": "m",
+    "note": "Doručak je moj omiljeni *obrok*."
   },
   "breakfast": {
     "text": "doručak",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Doručak* je uključen."
   },
   "lunch": {
     "text": "ručak",
-    "gender": "m"
+    "gender": "m",
+    "note": "Šta ima za *ručak*?"
   },
   "dinner": {
     "text": "večera",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Večera* je spremna."
   },
   "drink": {
     "text": "piće",
@@ -10267,6 +10461,9 @@
       "nuts_and_bolts": {
         "name": "Sitni delovi"
       },
+      "say_and_see": {
+        "name": "Reci i vidi"
+      },
       "one_to_ten": {
         "name": "Od jedan do deset"
       },
@@ -10275,9 +10472,6 @@
       },
       "family_ties": {
         "name": "Porodične veze"
-      },
-      "say_and_see": {
-        "name": "Reci i vidi"
       },
       "make_and_do": {
         "name": "Praviti i raditi"
@@ -10806,8 +11000,8 @@
       }
     },
     "segments": {
-      "braindead": {
-        "name": "Bez mozga"
+      "survival": {
+        "name": "Preživljavanje"
       },
       "baby": {
         "name": "Beba"
