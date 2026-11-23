@@ -18,7 +18,8 @@
     "text": "für"
   },
   "with": {
-    "text": "mit"
+    "text": "mit",
+    "note": "Kaffee *mit* Milch, bitte."
   },
   "at": {
     "text": "bei"
@@ -30,7 +31,8 @@
     "text": "neben"
   },
   "not": {
-    "text": "nicht"
+    "text": "nicht",
+    "note": "Es funktioniert *nicht*."
   },
   "people": {
     "text": "Leute",

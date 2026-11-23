@@ -18,7 +18,8 @@
     "text": "per"
   },
   "with": {
-    "text": "con"
+    "text": "con",
+    "note": "Caffè *con* latte, per favore."
   },
   "at": {
     "text": "presso"
@@ -30,7 +31,8 @@
     "text": "accanto a"
   },
   "not": {
-    "text": "non"
+    "text": "non",
+    "note": "*Non* funziona."
   },
   "people": {
     "text": "gente",

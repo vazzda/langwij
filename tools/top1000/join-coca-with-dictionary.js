@@ -1,6 +1,6 @@
 'use strict';
 
-// Builds the word list of the ten general levels from three sources only:
+// Builds the word list of the general levels from three sources only:
 //   the app's present general words   every one of them stays in the levels
 //   additions.csv                     the new words, kept by hand; a row either
 //                                     enters the list or waits in the reserve
@@ -8,12 +8,18 @@
 //                                     deck of their set
 // The frequency rank admits and refuses nothing; it is shown beside each word.
 //
+// "The app's present words" are the words the app held before this list was
+// written into it. Since then the live data is the list's own output, so they
+// are read from a stored copy of the earlier app: app_before_list/ beside this
+// script, or --before <dir>. Only the frequency file is read from the live
+// data (--data <dir>).
+//
 // Lists beside this script:
 //   additions.csv          read only: source, word id, rank of its frequency
 //                          row, "enter" or "reserve", note; a word without a
 //                          frequency row carries its English text and part of speech
 //   candidate_ranking.csv  the record of how each frequency row maps to a word
-//   word_list.csv          the 1,000 cards, level by level and deck by deck
+//   word_list.csv          the cards, level by level and deck by deck
 //   coca_words_outside_app.csv
 //                          the words of the commonest frequency rows that hold
 //                          no card in the word list, each with the reason;
@@ -32,14 +38,17 @@
 //   <level>|<deck id>|<deck name>|<term ids>
 //   set|<set name>|<term ids>
 //
-// Usage: node join-coca-with-dictionary.js [--data <dir>] [--lists <dir>]
-//          [--marks-seed <csv>] [--decks-seed <txt>] [--print <section>]
+// Usage: node join-coca-with-dictionary.js [--data <dir>] [--before <dir>]
+//          [--lists <dir>] [--marks-seed <csv>] [--decks-seed <txt>]
+//          [--print <section>]
 
 const fs = require('fs');
 const path = require('path');
 const inventory = require('./print-level-inventory.js');
 
 const DEFAULT_LISTS_DIRECTORY = __dirname;
+// The stored copy of the app's data from before the list was written into it.
+const DEFAULT_EARLIER_APP_DIRECTORY = path.join(__dirname, 'app_before_list');
 const RANKING_LIST_FILE_NAME = 'candidate_ranking.csv';
 const WORD_LIST_FILE_NAME = 'word_list.csv';
 const ADDITIONS_LIST_FILE_NAME = 'additions.csv';
@@ -50,7 +59,7 @@ const LEVEL_WORD_COUNT = 100;
 // The ladder of the learner's progress: each segment holds a run of levels,
 // in this order. The number of general levels is the sum of the ladder.
 const SEGMENT_LADDER = Object.freeze([
-  Object.freeze({ id: 'braindead', levelCount: 1 }),
+  Object.freeze({ id: 'survival', levelCount: 1 }),
   Object.freeze({ id: 'baby', levelCount: 3 }),
   Object.freeze({ id: 'kid', levelCount: 7 }),
   Object.freeze({ id: 'adult', levelCount: 14 }),
@@ -1218,6 +1227,7 @@ function printRequestedSection(printSection, joinResult) {
 function parseCommandLineOptions(argumentList) {
   const options = {
     dataDirectory: inventory.DEFAULT_DATA_DIRECTORY,
+    earlierAppDirectory: DEFAULT_EARLIER_APP_DIRECTORY,
     listsDirectory: DEFAULT_LISTS_DIRECTORY,
     marksSeedPath: null,
     decksSeedPath: null,
@@ -1225,6 +1235,7 @@ function parseCommandLineOptions(argumentList) {
   };
   const optionKeyByFlag = {
     '--data': 'dataDirectory',
+    '--before': 'earlierAppDirectory',
     '--lists': 'listsDirectory',
     '--marks-seed': 'marksSeedPath',
     '--decks-seed': 'decksSeedPath',
@@ -1240,14 +1251,16 @@ function parseCommandLineOptions(argumentList) {
   return options;
 }
 
-function loadJoinSources(dataDirectory) {
-  const levelDeckStructure = inventory.loadLevelDeckStructure(dataDirectory);
+// The app's words, levels and decks come from the earlier app; the frequency
+// file comes from the live data.
+function loadJoinSources(dataDirectory, earlierAppDirectory) {
+  const levelDeckStructure = inventory.loadLevelDeckStructure(earlierAppDirectory);
   return {
-    termsById: inventory.loadDictionaryTermsById(dataDirectory),
+    termsById: inventory.loadDictionaryTermsById(earlierAppDirectory),
     levelDeckStructure,
     levelTermMembership: inventory.collectLevelTermMembership(levelDeckStructure),
     frequencyRows: inventory.loadFrequencyRowsInRankOrder(dataDirectory),
-    englishEntries: inventory.loadTranslationEntriesByLanguage(dataDirectory).get(ENGLISH_LANGUAGE_CODE),
+    englishEntries: inventory.loadTranslationEntriesByLanguage(earlierAppDirectory).get(ENGLISH_LANGUAGE_CODE),
   };
 }
 
@@ -1256,7 +1269,7 @@ function refreshReviewLists(options) {
   const wordListPath = path.join(options.listsDirectory, WORD_LIST_FILE_NAME);
   const additionsListPath = path.join(options.listsDirectory, ADDITIONS_LIST_FILE_NAME);
   const generalLevelIds = buildGeneralLevelIds();
-  const sources = loadJoinSources(options.dataDirectory);
+  const sources = loadJoinSources(options.dataDirectory, options.earlierAppDirectory);
 
   const handLinesByRank = loadHandMarkLinesByRank(rankingListPath, options.marksSeedPath);
   const rankingLines = new RankingListBuilder(sources, handLinesByRank).buildLinesInRankOrder();
@@ -1313,6 +1326,10 @@ module.exports = {
   LEVEL_WORD_COUNT,
   MAX_REPEATS_PER_WORD,
   DEFAULT_LISTS_DIRECTORY,
+  DEFAULT_EARLIER_APP_DIRECTORY,
+  DECKS_SEED_FIELD_SEPARATOR,
+  DECKS_SEED_SET_LINE_TAG,
+  DECKS_SEED_COMMENT_PREFIX,
   ListColumn,
   RowMark,
   WordStatus,

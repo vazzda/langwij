@@ -18,7 +18,8 @@
     "text": "для"
   },
   "with": {
-    "text": "с"
+    "text": "с",
+    "note": "Кофе *с* молоком, пожалуйста."
   },
   "at": {
     "text": "у"
@@ -30,81 +31,101 @@
     "text": "возле"
   },
   "not": {
-    "text": "не"
+    "text": "не",
+    "note": "Это *не* работает."
   },
   "people": {
     "text": "люди",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Люди* здесь добрые."
   },
   "kid": {
     "text": "малыш",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Малыш* хочет мороженое."
   },
   "mom": {
     "text": "мама",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Мама*, ты где?"
   },
   "dad": {
     "text": "папа",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Папа* дома."
   },
   "son": {
     "text": "сын",
-    "gender": "m"
+    "gender": "m",
+    "note": "Мой *сын* ходит в школу."
   },
   "daughter": {
     "text": "дочь",
-    "gender": "f"
+    "gender": "f",
+    "note": "Моя *дочь* любит музыку."
   },
   "grandmother": {
     "text": "бабушка",
-    "gender": "f"
+    "gender": "f",
+    "note": "Моя *бабушка* отлично готовит."
   },
   "grandfather": {
     "text": "дедушка",
-    "gender": "m"
+    "gender": "m",
+    "note": "Мой *дедушка* рассказывает хорошие истории."
   },
   "uncle": {
     "text": "дядя",
-    "gender": "m"
+    "gender": "m",
+    "note": "У моего *дяди* есть ферма."
   },
   "aunt": {
     "text": "тётя",
-    "gender": "f"
+    "gender": "f",
+    "note": "Моя *тётя* живёт рядом."
   },
   "cousin": {
     "text": "двоюродный брат",
-    "gender": "m"
+    "gender": "m",
+    "note": "Мой *двоюродный брат* у нас в гостях."
   },
   "to_tell": {
     "imperfective": "рассказывать",
-    "perfective": "рассказать"
+    "perfective": "рассказать",
+    "note": "*Расскажи* мне историю."
   },
   "noon": {
     "text": "полдень",
-    "gender": "m"
+    "gender": "m",
+    "note": "Встретимся в *полдень*."
   },
   "afternoon": {
     "text": "вторая половина дня",
-    "gender": "f"
+    "gender": "f",
+    "note": "Я свободен во *второй половине дня*."
   },
   "midnight": {
     "text": "полночь",
-    "gender": "f"
+    "gender": "f",
+    "note": "Бар закрывается в *полночь*."
   },
   "weekend": {
     "text": "выходные",
-    "gender": "m"
+    "gender": "m",
+    "note": "Хороших *выходных*!"
   },
   "color": {
     "text": "цвет",
-    "gender": "m"
+    "gender": "m",
+    "note": "Какого *цвета* твоя машина?"
   },
   "eleven": {
-    "text": "одиннадцать"
+    "text": "одиннадцать",
+    "note": "Выезд в *одиннадцать*."
   },
   "twelve": {
-    "text": "двенадцать"
+    "text": "двенадцать",
+    "note": "Обед в *двенадцать*."
   },
   "thirteen": {
     "text": "тринадцать"
@@ -168,19 +189,23 @@
   },
   "meal": {
     "text": "приём пищи",
-    "gender": "m"
+    "gender": "m",
+    "note": "Завтрак — мой любимый *приём пищи*."
   },
   "breakfast": {
     "text": "завтрак",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Завтрак* включён."
   },
   "lunch": {
     "text": "обед",
-    "gender": "m"
+    "gender": "m",
+    "note": "Что на *обед*?"
   },
   "dinner": {
     "text": "ужин",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Ужин* готов."
   },
   "drink": {
     "text": "напиток",

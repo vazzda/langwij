@@ -38,7 +38,9 @@ lib/
 │   │   │   ├── level_tier.dart                      LevelTier enum
 │   │   │   ├── term.dart                            Term data class
 │   │   │   ├── translation_entry.dart               TranslationEntry
-│   │   │   └── vocab_deck_model.dart                VocabDeckModel
+│   │   │   ├── vocab_deck_model.dart                VocabDeckModel
+│   │   │   ├── vocabulary_level_segment.dart        VocabularyLevelSegment (segment id + its level ids)
+│   │   │   └── vocabulary_level_segment_meta.dart   VocabularyLevelSegmentMeta (segment name)
 │   │   ├── repository/
 │   │   │   ├── dictionary_repository.dart            JSON asset loading
 │   │   │   └── plan_repository.dart                  learning plan persistence
@@ -84,8 +86,10 @@ lib/
 ├── features/                                    — cross-cutting product features
 │   ├── dev_tools/                                 dev infrastructure
 │   │   ├── dev_tools.dart                         barrel
+│   │   ├── model/
+│   │   │   └── progress_seed.dart                   ProgressSeed (typed developer seed; coverage of each deck's terms)
 │   │   └── services/
-│   │       ├── seed_loader_service.dart              SeedLoaderService (JSON → DB seed loading)
+│   │       ├── seed_loader_service.dart              SeedLoaderService (seed asset → progress tables)
 │   │       └── dev_data_service.dart                 DevDataService (wipe + seed + revision orchestration)
 │   │
 │   ├── pronunciation/                             term audio + web lookup cascade
@@ -137,7 +141,8 @@ lib/
 │   │   │       └── result_page.dart                    quiz result screen
 │   │   └── round/                                   quiz round subslice
 │   │       └── ui/
-│   │           └── round_page.dart                     quiz round screen
+│   │           ├── round_page.dart                     quiz round screen
+│   │           └── term_note_box.dart                  TermNoteBox widget (a term's note in a box, its marked word in bold)
 │   │
 │   ├── settings/                                  app settings
 │   │   └── ui/
@@ -152,9 +157,14 @@ lib/
 │   │   └── ui/
 │   │       └── specialized_vocab_page.dart            specialized vocab deck screen
 │   │
-│   └── vocab/                                     vocabulary deck list
+│   └── vocab/                                     main vocabulary screen
+│       ├── model/
+│       │   └── vocab_fold_state.dart                VocabFoldState (unfolded segment + unfolded level)
+│       ├── service/
+│       │   ├── vocab_fold_state_notifier_service.dart VocabFoldStateNotifierService (fold state for one app run, started from the training history)
+│       │   └── vocab_page_service.dart              VocabPageService (fold state provider, segment sections)
 │       └── ui/
-│           └── vocab_deck_list_page.dart             deck list screen
+│           └── vocab_deck_list_page.dart             foldable segments with their level cards
 │
 ├── widgets/                                     — reusable composed widgets
 │   ├── drill/                                     drill practice display widgets (subslices)
@@ -176,15 +186,26 @@ lib/
 │       ├── deck_card/                               deck card subslice
 │       │   ├── model/
 │       │   │   ├── vocab_deck_card_data.dart            VocabDeckCardData
+│       │   │   ├── vocab_deck_study_phase.dart          VocabDeckStudyPhase enum (not started, studying, training)
 │       │   │   └── vocab_level_data.dart                VocabLevelData
+│       │   ├── service/
+│       │   │   └── vocab_level_data_builder_service.dart VocabLevelDataBuilderService (level + deck display data)
 │       │   ├── ui/
-│       │   │   └── vocab_deck_card.dart                 LangwijVocabDeckCard widget
-│       │   └── deck_card.dart                         barrel (exports model/)
-│       ├── level_card/                              level card subslice
+│       │   │   ├── vocab_deck_card.dart                 LangwijVocabDeckCard widget
+│       │   │   ├── vocab_deck_icon.dart                 LangwijVocabDeckIcon widget (deck glyph in a box on the controls surface)
+│       │   │   └── vocab_deck_mastery_stars.dart        LangwijVocabDeckMasteryStars widget (finished practices as stars)
+│       │   └── deck_card.dart                         barrel (exports model/ + service/)
+│       ├── level_accordion/                         level accordion subslice
 │       │   └── ui/
-│       │       ├── vocab_level_card.dart                LangwijVocabLevelCard widget
-│       │       └── vocab_level_stats_row.dart           LangwijVocabLevelStatsRow widget
-│       └── vocab.dart                               slice barrel (re-exports deck_card)
+│       │       ├── vocab_level_accordion.dart           LangwijVocabLevelAccordion widget (a segment's levels as one block)
+│       │       └── vocab_level_accordion_item.dart      LangwijVocabLevelAccordionItem widget (one level + its decks)
+│       ├── segment_section/                         segment section subslice
+│       │   ├── model/
+│       │   │   └── vocab_segment_section_data.dart      VocabSegmentSectionData
+│       │   ├── ui/
+│       │   │   └── vocab_segment_section.dart           LangwijVocabSegmentSection widget
+│       │   └── segment_section.dart                   barrel (exports model/)
+│       └── vocab.dart                               slice barrel (re-exports deck_card, segment_section)
 │
 ├── shared/                                      — infrastructure, no domain
 │   ├── app/                                       app-infrastructure subslice group
@@ -260,6 +281,10 @@ lib/
 │   │   ├── ui/
 │   │   │   └── developer_gate_config_builder.dart   DeveloperGateConfigBuilder (password-gate config for the developer section)
 │   │   └── dev_section.dart                         barrel
+│   │
+│   ├── keep_in_view/                              scroll-into-view for unfolded items
+│   │   └── ui/
+│   │       └── keep_unfolded_in_view.dart           LangwijKeepUnfoldedInView (keeps a newly unfolded item's top on screen)
 │   │
 │   └── nav_bar/                                   bottom navigation bar
 │       ├── model/

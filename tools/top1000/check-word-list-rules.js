@@ -4,7 +4,10 @@
 // and prints PASS or FAIL per rule. Reads only; writes nothing.
 // Exit code 1 when a rule fails.
 //
-// Usage: node check-word-list-rules.js [dataDirectory] [listsDirectory]
+// "The present app" of the rules is the app as it stood before the list was
+// written into it: the stored copy the list tool reads as well.
+//
+// Usage: node check-word-list-rules.js [earlierAppDirectory] [listsDirectory]
 
 const path = require('path');
 const inventory = require('./print-level-inventory.js');
@@ -303,8 +306,8 @@ function printListSummary(wordListRecords, keptDeckIds) {
   console.log(`decks that keep their id: ${keptDeckIds.length} ${keptDeckIds.join(' ')}`);
 }
 
-function checkWordListRules(dataDirectory, listsDirectory) {
-  const levelDeckStructure = inventory.loadLevelDeckStructure(dataDirectory);
+function checkWordListRules(earlierAppDirectory, listsDirectory) {
+  const levelDeckStructure = inventory.loadLevelDeckStructure(earlierAppDirectory);
   const levelTermMembership = inventory.collectLevelTermMembership(levelDeckStructure);
   const presentGeneralTermIds = new Set(levelTermMembership.generalDeckIdsByTermId.keys());
   const generalLevelIds = join.buildGeneralLevelIds();
@@ -372,7 +375,7 @@ function checkWordListRules(dataDirectory, listsDirectory) {
 
 if (require.main === module) {
   checkWordListRules(
-    process.argv[2] || inventory.DEFAULT_DATA_DIRECTORY,
+    process.argv[2] || join.DEFAULT_EARLIER_APP_DIRECTORY,
     process.argv[3] || join.DEFAULT_LISTS_DIRECTORY,
   );
 }

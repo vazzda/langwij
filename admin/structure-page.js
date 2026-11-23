@@ -24,6 +24,34 @@ function computeIndexAfterRemoval(movedIndex, targetIndex, isPlacedAfterTarget) 
   return movedIndex < insertionIndex ? insertionIndex - 1 : insertionIndex;
 }
 
+// The level whose decks stand in a grid under the columns of the general levels.
+const SPECIALIZED_LEVEL_ID = 'specialized';
+// The CSS property that tells a segment marker how many level columns it spans.
+const SEGMENT_COLUMN_COUNT_PROPERTY = '--segment-column-count';
+
+// Groups the level columns, in their order, into runs of neighbours that belong
+// to the same segment. A run of levels outside every segment has a null segmentId.
+function groupLevelIdsIntoSegmentRuns(levelIds, segmentDefinitions) {
+  const segmentIdByLevelId = new Map();
+  for (const segmentDefinition of segmentDefinitions) {
+    for (const levelId of segmentDefinition.levels) {
+      segmentIdByLevelId.set(levelId, segmentDefinition.id);
+    }
+  }
+
+  const segmentRuns = [];
+  for (const levelId of levelIds) {
+    const segmentId = segmentIdByLevelId.has(levelId) ? segmentIdByLevelId.get(levelId) : null;
+    const lastRun = segmentRuns[segmentRuns.length - 1];
+    if (lastRun && lastRun.segmentId === segmentId) {
+      lastRun.columnCount += 1;
+    } else {
+      segmentRuns.push({ segmentId, columnCount: 1 });
+    }
+  }
+  return segmentRuns;
+}
+
 class DraggableTermChip {
   #termId;
   #partOfSpeech;
@@ -570,16 +598,18 @@ class StructureEditorPage {
     const secondaryRow = document.createElement('div');
     secondaryRow.className = 'level-columns-container';
 
+    const levelIdsOfMainRow = [];
     for (const levelDef of this.#dataStore.levelDefinitions) {
       const levelPanel = this.#buildLevelPanel(levelDef, names);
       levelPanel.setExpanded(true);
       this.#levelPanels.push(levelPanel);
 
-      if (levelDef.id === 'specialized') {
+      if (levelDef.id === SPECIALIZED_LEVEL_ID) {
         levelPanel.element.classList.add('columned');
         secondaryRow.appendChild(levelPanel.element);
       } else {
         mainRow.appendChild(levelPanel.element);
+        levelIdsOfMainRow.push(levelDef.id);
       }
     }
 
@@ -588,9 +618,42 @@ class StructureEditorPage {
 
     const wrapper = document.createElement('div');
     wrapper.className = 'level-rows-wrapper';
+    const segmentMarkerRow = this.#buildSegmentMarkerRow(levelIdsOfMainRow, names);
+    if (segmentMarkerRow) wrapper.appendChild(segmentMarkerRow);
     wrapper.appendChild(mainRow);
     wrapper.appendChild(secondaryRow);
     this.#containerElement.appendChild(wrapper);
+  }
+
+  // One named line per segment above the level columns, as wide as the
+  // segment's columns. Returns null when the data names no segments.
+  #buildSegmentMarkerRow(levelIdsOfMainRow, names) {
+    const segmentDefinitions = this.#dataStore.segmentDefinitions;
+    if (segmentDefinitions.length === 0) return null;
+
+    const markerRow = document.createElement('div');
+    markerRow.className = 'segment-marker-row';
+    for (const segmentRun of groupLevelIdsIntoSegmentRuns(levelIdsOfMainRow, segmentDefinitions)) {
+      markerRow.appendChild(this.#buildSegmentMarker(segmentRun, names));
+    }
+    return markerRow;
+  }
+
+  // A run of levels outside every segment gets an empty spot of the same
+  // width, so the lines after it still stand over their own columns.
+  #buildSegmentMarker(segmentRun, names) {
+    const marker = document.createElement('div');
+    marker.className = 'segment-marker';
+    marker.style.setProperty(SEGMENT_COLUMN_COUNT_PROPERTY, String(segmentRun.columnCount));
+
+    if (segmentRun.segmentId === null) {
+      marker.classList.add('without-segment');
+      return marker;
+    }
+
+    const segmentNames = names.segments[segmentRun.segmentId];
+    marker.textContent = (segmentNames && segmentNames.name) || segmentRun.segmentId;
+    return marker;
   }
 
   #wireHeaderControls() {

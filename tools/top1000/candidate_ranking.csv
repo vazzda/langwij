@@ -3,7 +3,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 2,be,v,card,rule,,to_be,to be,verb,kept,top100
 3,and,c,card,rule,,and,and,conjunction,kept,top100
 4,a,a,skipped,hand,article,,,,,
-5,of,i,card,rule,,of,of,preposition,new,top100
+5,of,i,card,rule,,of,of,preposition,new,top400
 6,to,t,borrowed,rule,placed by hand at rank 127,to_be_allowed_to,to be allowed to,verb,kept,
 6,to,t,skipped,hand,infinitive marker,,,,,
 7,in,i,card,rule,,in,in,preposition,kept,top100
@@ -12,39 +12,39 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 10,it,p,card,rule,,it,it,pronoun,kept,top100
 11,have,v,card,hand,loose fit in its deck,to_have,to have,verb,kept,top100
 11,have,v,borrowed,rule,placed by hand at rank 228,to_have_to,to have to,verb,kept,
-12,to,i,card,rule,,to,to,preposition,new,top100
-13,that,c,card,hand,conjunction; another word than the demonstrative in the other languages,that_conj,that (conjunction),conjunction,new,top100
-14,for,i,card,rule,,for,for,preposition,new,top100
+12,to,i,card,rule,,to,to,preposition,new,top400
+13,that,c,card,hand,conjunction; another word than the demonstrative in the other languages,that_conj,that (conjunction),conjunction,new,top400
+14,for,i,card,rule,,for,for,preposition,new,top400
 15,do,v,card,rule,,to_do,to do,verb,kept,top100
 16,he,p,card,rule,,he,he,pronoun,kept,top100
 17,with,i,card,rule,,with,with,preposition,new,top100
-18,on,i,card,rule,,on,on,preposition,kept,top100
+18,on,i,card,rule,,on,on,preposition,kept,top400
 19,this,d,card,rule,,this,this,pronoun,kept,top100
 20,n't,x,merged,hand,not,,,,,
 21,we,p,card,rule,,we,we,pronoun,kept,top100
 22,that,d,card,rule,,that,that,pronoun,kept,top100
-22,that,d,card,hand,loose fit in its deck,that_o,that,pronoun,kept,top100
+22,that,d,card,hand,loose fit in its deck,that_o,that,pronoun,kept,top400
 23,not,x,card,rule,,not,not,adverb,new,top100
-24,but,c,card,rule,,but,but,conjunction,kept,top100
+24,but,c,card,rule,,but,but,conjunction,kept,top500
 25,they,p,card,rule,,they,they,pronoun,kept,top100
-26,say,v,card,rule,,to_say,to say,verb,kept,top100
-27,at,i,card,rule,,at,at,preposition,new,top100
+26,say,v,card,rule,,to_say,to say,verb,kept,top200
+27,at,i,card,rule,,at,at,preposition,new,top400
 28,what,d,card,rule,,what,what,interrogative,kept,top100
-29,his,a,card,hand,row of the possessive his; loose fit in its deck,his,his,pronoun,kept,top100
-30,from,i,card,rule,,from,from,preposition,new,top100
+29,his,a,card,hand,row of the possessive his,his,his,pronoun,kept,top400
+30,from,i,card,rule,,from,from,preposition,new,top400
 31,go,v,card,rule,,to_go,to go,verb,kept,top100
 32,or,c,card,rule,,or,or,conjunction,kept,top100
-33,by,i,card,rule,,by,by,preposition,new,top100
+33,by,i,card,rule,,by,by,preposition,new,top400
 34,get,v,card,hand,loose fit in its deck,to_get,to get,verb,kept,top100
 35,she,p,card,rule,,she,she,pronoun,kept,top100
 36,my,a,card,rule,,my,my,pronoun,kept,top100
 37,can,v,card,hand,loose fit in its deck,to_can,to can,verb,kept,top100
-38,as,c,card,rule,,as,as,conjunction,new,top100
+38,as,c,card,rule,,as,as,conjunction,new,top400
 39,know,v,card,rule,,to_know,to know,verb,kept,top100
 40,if,c,card,rule,,if,if,conjunction,kept,top100
 41,me,p,merged,hand,i,,,,,
 42,your,a,card,rule,,your,your,pronoun,kept,top100
-43,all,d,card,hand,loose fit in its deck,all,all,pronoun,new,top100
+43,all,d,card,hand,loose fit in its deck,all,all,pronoun,new,top400
 44,who,p,card,rule,,who,who,interrogative,kept,top400
 45,about,i,card,rule,,about,about,preposition,new,top400
 46,their,a,card,rule,,their,their,pronoun,kept,top400
@@ -55,24 +55,24 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 51,just,r,card,rule,,just,just,adverb,new,top500
 52,up,r,borrowed,hand,rank of the adverb up,to_get_up,to get up,verb,kept,
 52,up,r,card,rule,,up,up / upwards,adverb,kept,top100
-53,think,v,card,rule,,to_think,to think,verb,kept,top300
+53,think,v,card,rule,,to_think,to think,verb,kept,top100
 54,time,n,card,rule,,time,time,noun,kept,top200
 55,there,e,merged,rule,there,,,,,
 56,see,v,card,rule,,to_see,to see,verb,kept,top200
 57,her,a,card,hand,row of the possessive her,her,her,pronoun,kept,top400
 58,as,i,merged,rule,as,,,,,
-59,out,r,card,rule,,out,out,adverb,new,top400
+59,out,r,card,rule,,out,out,adverb,new,top300
 60,one,m,card,rule,,one,one,numeral,kept,top100
 61,come,v,card,rule,,to_come,to come,verb,kept,top100
 62,people,n,card,rule,,people,people,noun,new,top200
-63,take,v,card,rule,,to_take,to take,verb,kept,top200
+63,take,v,card,rule,,to_take,to take,verb,kept,top100
 64,year,n,card,rule,,year,year,noun,kept,top600
 65,him,p,merged,hand,he,,,,,
 66,them,p,merged,hand,they,,,,,
 67,some,d,card,rule,,some,some,pronoun,new,top400
 68,want,v,card,rule,,to_want,to want,verb,kept,top100
-69,how,r,card,rule,,how,how,interrogative,kept,top400
-70,when,c,card,rule,,when,when,interrogative,kept,top400
+69,how,r,card,rule,,how,how,interrogative,kept,top100
+70,when,c,card,rule,,when,when,interrogative,kept,top100
 71,which,d,card,rule,,which,which,pronoun,new,top400
 72,now,r,card,rule,,now,now,adverb,kept,top100
 73,like,i,card,rule,,like,like,preposition,new,top1100
@@ -94,15 +94,15 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 88,because,c,card,rule,,because,because,conjunction,kept,top1100
 89,also,r,card,rule,,also,also,adverb,kept,top400
 90,two,m,card,rule,,two,two,numeral,kept,top100
-91,use,v,card,rule,,to_use,to use,verb,kept,top200
+91,use,v,card,rule,,to_use,to use,verb,kept,top100
 92,tell,v,card,rule,,to_tell,to tell,verb,new,top200
 93,good,j,card,rule,,good,good,adjective,kept,top100
 94,first,m,card,rule,,first,first,numeral,kept,top500
 95,man,n,card,rule,,man,man,noun,kept,top200
 96,day,n,card,rule,,day,day,noun,kept,top200
-97,find,v,card,rule,,to_find,to find,verb,kept,top200
+97,find,v,card,rule,,to_find,to find,verb,kept,top100
 97,find,v,borrowed,hand,rank of the verb find,to_find_out,to find out,verb,kept,
-98,give,v,card,rule,,to_give,to give,verb,kept,top200
+98,give,v,card,rule,,to_give,to give,verb,kept,top100
 98,give,v,borrowed,hand,rank of the verb give,to_give_up,to give up,verb,kept,
 99,more,d,merged,rule,more,,,,,
 100,new,j,card,rule,,new,new,adjective,kept,top300
@@ -115,7 +115,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 106,her,p,merged,rule,her,,,,,
 107,need,v,card,rule,,to_need,to need,verb,kept,top100
 108,back,r,borrowed,hand,rank of the adverb back,backward,backward,adverb,kept,
-108,back,r,card,rule,,back,back,adverb,new,top400
+108,back,r,card,rule,,back,back,adverb,new,top300
 109,there,r,card,rule,,there,there,adverb,kept,top100
 110,should,v,card,hand,,should,should,verb,new,top500
 111,even,r,card,rule,,even,even,adverb,new,top1100
@@ -129,7 +129,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 118,right,r,borrowed,hand,rank of the adverb right,rights,rights,noun,shared,
 119,down,r,card,rule,,down,down / downwards,adverb,kept,top100
 120,on,r,merged,rule,on,,,,,
-121,try,v,card,rule,,to_try,to try,verb,kept,top300
+121,try,v,card,rule,,to_try,to try,verb,kept,top200
 121,try,v,borrowed,hand,rank of the verb try,to_try_on,to try on,verb,kept,
 122,let,v,card,rule,,to_let,to let,verb,kept,top500
 123,something,p,card,rule,,something,something,pronoun,new,top500
@@ -152,7 +152,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 140,child,n,card,rule,,child,child,noun,kept,top200
 141,oh,u,skipped,hand,sound of surprise; not a vocabulary word,,,,,
 142,over,i,card,rule,,over,over / above,preposition,kept,top600
-143,ask,v,card,rule,,to_ask,to ask,verb,kept,top200
+143,ask,v,card,rule,,to_ask,to ask,verb,kept,top100
 144,when,r,merged,rule,when,,,,,
 145,as,r,merged,rule,as,,,,,
 146,school,n,card,rule,,school,school,noun,kept,top600
@@ -164,7 +164,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 152,leave,v,card,rule,,to_leave,to leave,verb,kept,top300
 153,put,v,card,rule,,to_put,to put,verb,kept,top200
 153,put,v,borrowed,hand,rank of the verb put,to_put_on,to put on,verb,kept,
-154,like,v,card,rule,,to_like,to like,verb,kept,top200
+154,like,v,card,rule,,to_like,to like,verb,kept,top100
 155,help,v,card,rule,,to_help,to help,verb,kept,top100
 156,big,j,card,rule,,big,big / large,adjective,kept,top100
 157,where,r,card,rule,,where,where,interrogative,kept,top100
@@ -187,7 +187,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 174,old,j,card,rule,,old,old,adjective,kept,top300
 175,yes,u,card,rule,,yes,yes,phrase,kept,top100
 176,house,n,card,rule,,house,house,noun,new,top300
-177,show,v,card,rule,,to_show,to show,verb,kept,top300
+177,show,v,card,rule,,to_show,to show,verb,kept,top200
 178,again,r,card,rule,,again,again,adverb,new,top500
 179,student,n,card,rule,,student,student,noun,kept,top600
 180,so,c,merged,rule,so,,,,,
@@ -206,7 +206,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 193,point,n,card,rule,,point,point,noun,new,top800
 194,hand,n,card,rule,,hand,hand,noun,kept,top500
 195,off,r,borrowed,hand,rank of the adverb off,to_take_off,to take off,verb,kept,
-195,off,r,card,rule,,off,off,adverb,new,top400
+195,off,r,card,rule,,off,off,adverb,new,top300
 196,play,v,card,rule,,to_play,to play,verb,kept,top300
 197,turn,v,card,rule,,to_turn,to turn,verb,kept,top500
 197,turn,v,borrowed,hand,rank of the verb turn,to_turn_off,to turn off,verb,kept,
@@ -244,9 +244,9 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 227,move,v,card,rule,,to_move,to move,verb,kept,top500
 227,move,v,borrowed,hand,rank of the verb move,to_move_in,to move in,verb,kept,
 227,move,v,borrowed,hand,rank of the verb move,to_move_out,to move out,verb,kept,
-228,must,v,card,hand,same meaning as the modal must,to_have_to,to have to,verb,kept,top500
+228,must,v,card,hand,same meaning as the modal must,to_have_to,to have to,verb,kept,top100
 229,bad,j,card,rule,,bad,bad,adjective,kept,top100
-230,friend,n,card,rule,,friend,friend,noun,kept,top200
+230,friend,n,card,rule,,friend,friend,noun,kept,top100
 231,during,i,card,rule,,during,during,preposition,new,top500
 232,begin,v,card,rule,,to_begin,to begin,verb,kept,top300
 233,love,v,card,rule,,to_love,to love,verb,kept,top900
@@ -284,7 +284,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 264,room,n,card,rule,,room,room,noun,kept,top300
 265,percent,n,card,rule,,percent,percent,noun,new,top1500
 266,far,r,card,rule,,far,far,adverb,new,top600
-267,away,r,card,rule,,away,away,adverb,new,top400
+267,away,r,card,rule,,away,away,adverb,new,top300
 268,law,n,card,rule,,law,law,noun,kept,top2500
 269,actually,r,card,rule,,actually,actually,adverb,new,top500
 270,large,j,merged,hand,big,,,,,
@@ -329,7 +329,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 304,change,v,card,rule,,to_change,to change,verb,kept,top500
 305,however,r,card,rule,,however,however,conjunction,kept,top1100
 306,only,j,merged,rule,only,,,,,
-307,around,r,card,rule,,around,around,adverb,new,top400
+307,around,r,card,rule,,around,around,adverb,new,top300
 308,hour,n,card,rule,,hour,hour,noun,kept,top200
 309,everything,p,card,rule,,everything,everything,pronoun,new,top500
 310,national,j,card,rule,,national,national,adjective,new,top2400
@@ -386,7 +386,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 358,boy,n,card,rule,,boy,boy,noun,kept,top200
 359,university,n,card,rule,,university,university,noun,new,top1500
 360,before,c,merged,rule,before,,,,,
-361,stay,v,card,rule,,to_stay,to stay / to remain,verb,kept,top300
+361,stay,v,card,rule,,to_stay,to stay / to remain,verb,kept,top100
 362,add,v,card,rule,,to_add,to add,verb,kept,top800
 363,later,r,card,rule,,later,later,adverb,kept,top100
 364,change,n,card,rule,,change,change,noun,new,top2300
@@ -400,14 +400,14 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 372,food,n,card,rule,,food,food,noun,kept,top100
 373,else,r,card,rule,,else,else,adverb,new,top500
 374,history,n,card,rule,,history,history,noun,new,top900
-375,buy,v,card,rule,,to_buy,to buy,verb,kept,top200
+375,buy,v,card,rule,,to_buy,to buy,verb,kept,top100
 376,result,n,card,rule,,result,result,noun,new,top1500
 377,morning,n,card,rule,,morning,morning,noun,kept,top200
 378,off,i,merged,rule,off,,,,,
 379,parent,n,card,rule,,parent,parent,noun,kept,top200
 380,office,n,card,rule,,office,office,noun,kept,top400
 381,course,r,card,hand,,of_course,of course,adverb,new,top500
-382,send,v,card,rule,,to_send,to send,verb,kept,top500
+382,send,v,card,rule,,to_send,to send,verb,kept,top600
 383,research,n,card,rule,,research,research,noun,shared,top1500
 384,walk,v,card,rule,,to_walk,to walk,verb,kept,top300
 385,door,n,card,rule,,door,door,noun,kept,top300
@@ -523,7 +523,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 490,value,n,card,rule,,value,value,noun,new,top1500
 491,base,v,card,rule,,to_base,to base,verb,new,top2200
 492,pick,v,card,rule,,to_pick,to pick,verb,new,top600
-493,phone,n,card,rule,,phone,phone,noun,kept,top600
+493,phone,n,card,rule,,phone,phone,noun,kept,top100
 494,thanks,n,merged,hand,thank_you,,,,,
 495,event,n,card,rule,,event,event,noun,new,top1800
 496,drive,v,card,rule,,to_drive,to drive,verb,kept,top700
@@ -666,7 +666,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 629,produce,v,card,rule,,to_produce,to produce,verb,new,top2200
 630,certain,j,card,rule,,certain,certain,adjective,new,top400
 631,whatever,d,card,rule,,whatever,whatever,pronoun,new,top500
-632,half,d,card,rule,,half,half,numeral,kept,top400
+632,half,d,card,rule,,half,half,numeral,kept,top300
 633,video,n,card,rule,,video,video,noun,shared,top1700
 634,support,n,card,rule,,support,support,noun,new,top1700
 635,throw,v,card,rule,,to_throw,to throw,verb,kept,top1200
@@ -1121,7 +1121,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 1077,majority,n,card,rule,,majority,majority,noun,new,top1700
 1078,peace,n,card,rule,,peace,peace,noun,kept,top2500
 1079,dinner,n,borrowed,hand,rank of the noun dinner,to_eat_dinner,to eat dinner,verb,kept,
-1079,dinner,n,card,rule,,dinner,dinner,noun,new,top300
+1079,dinner,n,card,rule,,dinner,dinner,noun,new,top200
 1080,partner,n,card,rule,,partner,partner,noun,kept,top2200
 1081,user,n,card,rule,,user,user,noun,new,top1400
 1082,above,i,merged,hand,over,,,,,
@@ -1745,7 +1745,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 1696,emerge,v,card,rule,,to_emerge,to emerge,verb,new,top2100
 1697,long,c,skipped,hand,"left out: sound, fragment or abbreviation",,,,,
 1698,lunch,n,borrowed,hand,rank of the noun lunch,to_eat_lunch,to eat lunch,verb,kept,
-1698,lunch,n,card,rule,,lunch,lunch,noun,new,top300
+1698,lunch,n,card,rule,,lunch,lunch,noun,new,top200
 1699,judge,v,card,rule,,to_judge,to judge,verb,new,top2400
 1700,ad,n,card,rule,,ad,ad,noun,new,top1700
 1701,desire,n,card,rule,,desire,desire,noun,kept,top2200
@@ -1820,7 +1820,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 1769,deep,r,merged,rule,deep,,,,,
 1770,prefer,v,card,rule,,to_prefer,to prefer,verb,new,top900
 1771,except,c,card,rule,,except,except,conjunction,new,top1100
-1772,cheap,j,card,rule,,cheap,cheap,adjective,kept,top400
+1772,cheap,j,card,rule,,cheap,cheap,adjective,kept,top300
 1773,literature,n,card,rule,,literature,literature,noun,new,top1700
 1774,direct,v,card,rule,,to_direct,to direct,verb,new,top1800
 1775,mayor,n,card,rule,,mayor,mayor,noun,new,top1600
@@ -1842,7 +1842,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 1791,select,v,card,rule,,to_select,to select,verb,new,top2100
 1792,file,v,card,rule,,to_file,to file,verb,new,top1800
 1793,studio,n,card,rule,,studio,studio,noun,new,top1700
-1794,expensive,j,card,rule,,expensive,expensive,adjective,kept,top400
+1794,expensive,j,card,rule,,expensive,expensive,adjective,kept,top300
 1795,secret,n,card,rule,,secret,secret,noun,kept,top800
 1796,engine,n,card,rule,,engine,engine,noun,shared,top1400
 1797,adopt,v,card,rule,,to_adopt,to adopt,verb,new,top2100
@@ -1920,7 +1920,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 1868,used,j,card,rule,,used,used,adjective,new,top2100
 1869,clear,v,card,rule,,to_clear,to clear,verb,new,top2200
 1870,bear,v,card,rule,,to_bear,to bear,verb,new,top2200
-1871,meal,n,card,rule,,meal,meal,noun,new,top300
+1871,meal,n,card,rule,,meal,meal,noun,new,top200
 1872,review,v,card,rule,,to_review,to review,verb,new,top2200
 1873,minority,n,card,rule,,minority,minority,noun,new,top1700
 1874,sight,n,card,rule,,sight,sight,noun,new,top1800
@@ -2512,7 +2512,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 2457,interpretation,n,card,rule,,interpretation,interpretation,noun,new,
 2458,wage,n,card,rule,,wage,wage,noun,new,top900
 2459,breakfast,n,borrowed,hand,rank of the noun breakfast,to_eat_breakfast,to eat breakfast,verb,kept,
-2459,breakfast,n,card,rule,,breakfast,breakfast,noun,new,top300
+2459,breakfast,n,card,rule,,breakfast,breakfast,noun,new,top200
 2460,severe,j,card,rule,,severe,severe,adjective,new,
 2461,profile,n,card,rule,,profile,profile,noun,new,
 2462,saving,n,card,rule,,saving,saving,noun,new,
@@ -3542,7 +3542,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 3485,sandwich,n,card,rule,,sandwich,sandwich,noun,new,top600
 3486,bull,n,card,rule,,bull,bull,noun,new,
 3487,lens,n,card,rule,,lens,lens,noun,new,
-3488,twelve,m,card,rule,,twelve,twelve,numeral,new,top300
+3488,twelve,m,card,rule,,twelve,twelve,numeral,new,top200
 3489,mainstream,j,card,rule,,mainstream,mainstream,adjective,new,
 3490,presidency,n,card,rule,,presidency,presidency,noun,new,
 3491,integrity,n,card,rule,,integrity,integrity,noun,new,
@@ -4807,7 +4807,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 4748,alley,n,card,rule,,alley,alley,noun,new,
 4749,ease,n,card,rule,,ease,ease,noun,new,
 4750,coastal,j,card,rule,,coastal,coastal,adjective,new,
-4751,cafe,n,card,rule,,cafe,cafe,noun,new,top400
+4751,cafe,n,card,rule,,cafe,cafe,noun,new,top300
 4752,partial,j,card,rule,,partial,partial,adjective,new,
 4753,flexible,j,card,rule,,flexible,flexible,adjective,new,
 4754,experienced,j,card,rule,,experienced,experienced,adjective,new,
@@ -4871,7 +4871,7 @@ rank,lemma,pos_code,mark,mark_by,detail,term_id,english,pos,status,level
 4812,workout,n,card,rule,,workout,workout,noun,new,
 4813,wilderness,n,card,rule,,wilderness,wilderness,noun,new,
 4814,compelling,j,card,rule,,compelling,compelling,adjective,new,
-4815,eleven,m,card,rule,,eleven,eleven,numeral,new,top300
+4815,eleven,m,card,rule,,eleven,eleven,numeral,new,top200
 4816,arm,v,card,rule,,to_arm,to arm,verb,new,
 4817,backyard,n,card,rule,,backyard,backyard,noun,new,
 4818,alike,r,card,rule,,alike,alike,adverb,new,

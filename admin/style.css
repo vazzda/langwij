@@ -198,6 +198,13 @@ main {
 
 /* ── Level columns ── */
 
+/* The width of a level column and the gap between two columns. The segment
+   lines above the columns are measured with the same two values. */
+:root {
+  --level-column-width: 275px;
+  --level-column-gap: 8px;
+}
+
 .level-rows-wrapper {
   display: flex;
   flex-direction: column;
@@ -206,15 +213,44 @@ main {
 
 .level-columns-container {
   display: flex;
-  gap: 8px;
+  gap: var(--level-column-gap);
   align-items: flex-start;
+}
+
+/* ── Segment markers ── */
+
+.segment-marker-row {
+  display: flex;
+  gap: var(--level-column-gap);
+}
+
+/* One line per segment, as wide as the level columns it stands over; the
+   script sets the count of those columns. */
+.segment-marker {
+  --segment-column-count: 1;
+  flex-shrink: 0;
+  width: calc(
+    var(--segment-column-count) * var(--level-column-width)
+    + (var(--segment-column-count) - 1) * var(--level-column-gap)
+  );
+  padding: 0 2px 3px;
+  border-bottom: 2px solid #333;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.segment-marker.without-segment {
+  border-bottom-color: transparent;
 }
 
 /* ── Levels ── */
 
 .level-section {
-  width: 275px;
-  min-width: 275px;
+  width: var(--level-column-width);
+  min-width: var(--level-column-width);
   flex-shrink: 0;
   border: 1px solid #ddd;
   border-radius: 6px;

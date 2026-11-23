@@ -18,7 +18,8 @@
     "text": "pour"
   },
   "with": {
-    "text": "avec"
+    "text": "avec",
+    "note": "Un café *avec* du lait."
   },
   "at": {
     "text": "chez"
@@ -30,7 +31,8 @@
     "text": "près de"
   },
   "not": {
-    "text": "ne pas"
+    "text": "ne pas",
+    "note": "Ça *ne* marche *pas*."
   },
   "people": {
     "text": "gens",

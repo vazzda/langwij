@@ -141,10 +141,15 @@ function readAppData(dataDirectory) {
   };
 }
 
+// The draft file that holds the entries of the new words in one language.
+function resolveWordDraftPath(draftsDirectory, languageCode) {
+  return path.join(draftsDirectory, `${WORD_DRAFT_FILE_PREFIX}${languageCode}${WORD_DRAFT_FILE_EXTENSION}`);
+}
+
 function readDrafts(draftsDirectory, languageCodes) {
   const wordDraftsByLanguage = new Map();
   for (const languageCode of languageCodes) {
-    const draftPath = path.join(draftsDirectory, `${WORD_DRAFT_FILE_PREFIX}${languageCode}${WORD_DRAFT_FILE_EXTENSION}`);
+    const draftPath = resolveWordDraftPath(draftsDirectory, languageCode);
     wordDraftsByLanguage.set(languageCode, fs.existsSync(draftPath) ? readJsonFile(draftPath) : {});
   }
   const namesByKindAndId = new Map();
@@ -429,4 +434,11 @@ if (require.main === module) {
   writeAppDataFromWordList(parseCommandLineOptions(process.argv.slice(2)));
 }
 
-module.exports = { LANGUAGE_SHAPES, ARTICLE_BY_GENDER, DRAFTS_DIRECTORY_NAME };
+module.exports = {
+  LANGUAGE_SHAPES,
+  ARTICLE_BY_GENDER,
+  DRAFTS_DIRECTORY_NAME,
+  readJsonFile,
+  writeJsonFileInAppLayout,
+  resolveWordDraftPath,
+};

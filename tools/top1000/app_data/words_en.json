@@ -18,7 +18,8 @@
     "text": "for"
   },
   "with": {
-    "text": "with"
+    "text": "with",
+    "note": "Coffee *with* milk, please."
   },
   "at": {
     "text": "at"
@@ -30,64 +31,84 @@
     "text": "by"
   },
   "not": {
-    "text": "not"
+    "text": "not",
+    "note": "It does *not* work."
   },
   "people": {
-    "text": "people"
+    "text": "people",
+    "note": "The *people* here are kind."
   },
   "kid": {
-    "text": "kid"
+    "text": "kid",
+    "note": "The *kid* wants ice cream."
   },
   "mom": {
-    "text": "mom"
+    "text": "mom",
+    "note": "*Mom*, where are you?"
   },
   "dad": {
-    "text": "dad"
+    "text": "dad",
+    "note": "*Dad* is at home."
   },
   "son": {
-    "text": "son"
+    "text": "son",
+    "note": "My *son* goes to school."
   },
   "daughter": {
-    "text": "daughter"
+    "text": "daughter",
+    "note": "My *daughter* loves music."
   },
   "grandmother": {
-    "text": "grandmother"
+    "text": "grandmother",
+    "note": "My *grandmother* cooks very well."
   },
   "grandfather": {
-    "text": "grandfather"
+    "text": "grandfather",
+    "note": "My *grandfather* tells good stories."
   },
   "uncle": {
-    "text": "uncle"
+    "text": "uncle",
+    "note": "My *uncle* has a farm."
   },
   "aunt": {
-    "text": "aunt"
+    "text": "aunt",
+    "note": "My *aunt* lives nearby."
   },
   "cousin": {
-    "text": "cousin"
+    "text": "cousin",
+    "note": "My *cousin* is visiting us."
   },
   "to_tell": {
-    "text": "to tell"
+    "text": "to tell",
+    "note": "*Tell* me a story."
   },
   "noon": {
-    "text": "noon"
+    "text": "noon",
+    "note": "We meet at *noon*."
   },
   "afternoon": {
-    "text": "afternoon"
+    "text": "afternoon",
+    "note": "I am free this *afternoon*."
   },
   "midnight": {
-    "text": "midnight"
+    "text": "midnight",
+    "note": "The bar closes at *midnight*."
   },
   "weekend": {
-    "text": "weekend"
+    "text": "weekend",
+    "note": "Have a nice *weekend*!"
   },
   "color": {
-    "text": "color"
+    "text": "color",
+    "note": "What *color* is your car?"
   },
   "eleven": {
-    "text": "eleven"
+    "text": "eleven",
+    "note": "Checkout is at *eleven*."
   },
   "twelve": {
-    "text": "twelve"
+    "text": "twelve",
+    "note": "Lunch is at *twelve*."
   },
   "thirteen": {
     "text": "thirteen"
@@ -147,16 +168,20 @@
     "text": "toilet"
   },
   "meal": {
-    "text": "meal"
+    "text": "meal",
+    "note": "Breakfast is my favourite *meal*."
   },
   "breakfast": {
-    "text": "breakfast"
+    "text": "breakfast",
+    "note": "*Breakfast* is included."
   },
   "lunch": {
-    "text": "lunch"
+    "text": "lunch",
+    "note": "What is for *lunch*?"
   },
   "dinner": {
-    "text": "dinner"
+    "text": "dinner",
+    "note": "*Dinner* is ready."
   },
   "drink": {
     "text": "drink",

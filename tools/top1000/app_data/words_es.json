@@ -18,7 +18,8 @@
     "text": "para"
   },
   "with": {
-    "text": "con"
+    "text": "con",
+    "note": "Café *con* leche, por favor."
   },
   "at": {
     "text": "en"
@@ -30,7 +31,8 @@
     "text": "junto a"
   },
   "not": {
-    "text": "no"
+    "text": "no",
+    "note": "*No* funciona."
   },
   "people": {
     "text": "gente",

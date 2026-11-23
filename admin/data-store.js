@@ -94,9 +94,15 @@ class LanguageDataStore {
     return Object.keys(this.#translationsByLanguage).sort();
   }
 
+  // The segments of the learner ladder, each with the ids of its levels; empty
+  // when levels.json names none.
+  get segmentDefinitions() {
+    return this.#levelsData.segments || [];
+  }
+
   get displayNames() {
     const meta = this.#translationMetaByLanguage.en || {};
-    return { levels: meta.levels || {}, decks: meta.decks || {} };
+    return { segments: meta.segments || {}, levels: meta.levels || {}, decks: meta.decks || {} };
   }
 
   get hasUnsavedChanges() {

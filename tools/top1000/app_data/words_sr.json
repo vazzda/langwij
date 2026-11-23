@@ -18,7 +18,8 @@
     "text": "za"
   },
   "with": {
-    "text": "sa"
+    "text": "sa",
+    "note": "Kafu *sa* mlekom, molim."
   },
   "at": {
     "text": "kod"
@@ -30,81 +31,101 @@
     "text": "pored"
   },
   "not": {
-    "text": "ne"
+    "text": "ne",
+    "note": "*Ne* radi."
   },
   "people": {
     "text": "ljudi",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Ljudi* su ovde ljubazni."
   },
   "kid": {
     "text": "klinac",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Klinac* hoće sladoled."
   },
   "mom": {
     "text": "mama",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Mama*, gde si?"
   },
   "dad": {
     "text": "tata",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Tata* je kod kuće."
   },
   "son": {
     "text": "sin",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *sin* ide u školu."
   },
   "daughter": {
     "text": "ćerka",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *ćerka* voli muziku."
   },
   "grandmother": {
     "text": "baka",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *baka* odlično kuva."
   },
   "grandfather": {
     "text": "deda",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *deda* priča dobre priče."
   },
   "uncle": {
     "text": "ujak",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *ujak* ima farmu."
   },
   "aunt": {
     "text": "tetka",
-    "gender": "f"
+    "gender": "f",
+    "note": "Moja *tetka* živi blizu."
   },
   "cousin": {
     "text": "rođak",
-    "gender": "m"
+    "gender": "m",
+    "note": "Moj *rođak* je kod nas u gostima."
   },
   "to_tell": {
     "imperfective": "pričati",
-    "perfective": "ispričati"
+    "perfective": "ispričati",
+    "note": "*Ispričaj* mi priču."
   },
   "noon": {
     "text": "podne",
-    "gender": "n"
+    "gender": "n",
+    "note": "Vidimo se u *podne*."
   },
   "afternoon": {
     "text": "popodne",
-    "gender": "n"
+    "gender": "n",
+    "note": "Slobodan sam ovo *popodne*."
   },
   "midnight": {
     "text": "ponoć",
-    "gender": "f"
+    "gender": "f",
+    "note": "Bar se zatvara u *ponoć*."
   },
   "weekend": {
     "text": "vikend",
-    "gender": "m"
+    "gender": "m",
+    "note": "Lep *vikend*!"
   },
   "color": {
     "text": "boja",
-    "gender": "f"
+    "gender": "f",
+    "note": "Koje je *boje* tvoj auto?"
   },
   "eleven": {
-    "text": "jedanaest"
+    "text": "jedanaest",
+    "note": "Odjava je u *jedanaest*."
   },
   "twelve": {
-    "text": "dvanaest"
+    "text": "dvanaest",
+    "note": "Ručak je u *dvanaest*."
   },
   "thirteen": {
     "text": "trinaest"
@@ -168,19 +189,23 @@
   },
   "meal": {
     "text": "obrok",
-    "gender": "m"
+    "gender": "m",
+    "note": "Doručak je moj omiljeni *obrok*."
   },
   "breakfast": {
     "text": "doručak",
-    "gender": "m"
+    "gender": "m",
+    "note": "*Doručak* je uključen."
   },
   "lunch": {
     "text": "ručak",
-    "gender": "m"
+    "gender": "m",
+    "note": "Šta ima za *ručak*?"
   },
   "dinner": {
     "text": "večera",
-    "gender": "f"
+    "gender": "f",
+    "note": "*Večera* je spremna."
   },
   "drink": {
     "text": "piće",
