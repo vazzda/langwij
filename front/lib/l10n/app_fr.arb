@@ -49,8 +49,8 @@
   "exit": "Quitter",
   "dailyActivityTitle": "Aujourd'hui",
   "dailyActivityEmpty": "Aucune activité aujourd'hui",
-  "mode_guessingHeader": "Deviner",
-  "mode_writingHeader": "Écrire",
+  "mode_guessingHeader": "Cartes",
+  "mode_writingHeader": "Saisie",
   "mode_langCards": "Cartes : {language}",
   "mode_training": "Entraînement",
   "mode_test": "Test",
@@ -110,7 +110,9 @@
   "vocab_trained": "Entraîné",
   "vocab_lastTrained": "dernier entraînement :",
   "vocab_termsLabel": "termes :",
-  "vocab_masteryLabel": "maîtrise :",
+  "vocab_studiedLabel": "Étudié :",
+  "vocab_masteryLabel": "Maîtrise :",
+  "vocab_nextStarIn": "prochaine étoile dans {percent}%",
 
   "result_techWork": "Travail technique — ne compte pas dans la progression",
 
@@ -140,6 +142,8 @@
 
   "language_aiDictionaryWarning": "Dictionnaire généré par IA. Il peut contenir des erreurs. Relecture humaine en cours — à utiliser à tes risques et périls.",
   "language_pairUnavailable": "Cette paire de langues n'est pas encore disponible.",
+  "language_aiGeneratedTitle": "Généré par IA",
+  "language_aiGeneratedNote": "Les paquets de ces langues ont été générés par IA et seulement en partie vérifiés par des experts. Tu peux les utiliser : ils sont bons pour la plupart, mais des erreurs restent possibles.",
 
   "termCard_gender": "Genre : {gender}",
   "termCard_example": "Exemple :",

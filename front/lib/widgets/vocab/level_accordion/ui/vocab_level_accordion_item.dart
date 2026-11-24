@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flessel/flessel.dart';
 
-import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
 import 'package:langwij/shared/keep_in_view/ui/keep_unfolded_in_view.dart';
+import '../../deck_card/model/vocab_deck_card_data.dart';
 import '../../deck_card/model/vocab_level_data.dart';
 import '../../deck_card/ui/vocab_deck_card.dart';
 
@@ -28,7 +28,7 @@ class LangwijVocabLevelAccordionItem extends StatelessWidget {
   final AppLocalizations l10n;
   final bool isExpanded;
   final VoidCallback onHeaderTap;
-  final void Function(VocabDeckModel deck, int cardCount) onDeckTap;
+  final void Function(VocabDeckCardData deckCard) onDeckTap;
   final VoidCallback onTrainTap;
 
   @override
@@ -124,7 +124,7 @@ class LangwijVocabLevelAccordionItem extends StatelessWidget {
             LangwijVocabDeckCard(
               item: deckCard,
               l10n: l10n,
-              onTap: () => onDeckTap(deckCard.deck, deckCard.cardCount),
+              onTap: () => onDeckTap(deckCard),
             ),
         ],
       ),

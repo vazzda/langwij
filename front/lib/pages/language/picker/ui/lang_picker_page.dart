@@ -1,4 +1,3 @@
-import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -10,6 +9,7 @@ import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
+import 'package:langwij/shared/flag/ui/flag.dart';
 
 enum LangPickerMode { native, target }
 
@@ -35,23 +35,70 @@ class LangPickerPage extends ConsumerWidget {
         loading: () => const Center(child: FlesselSpinner()),
         error: (_, _) => Center(child: Text(l10n.loadError)),
         data: (packs) {
-          return ListView.separated(
+          final packsWithoutWarning =
+              packs.where((pack) => !pack.isAiGenerated).toList();
+          final aiGeneratedPacks =
+              packs.where((pack) => pack.isAiGenerated).toList();
+
+          return ListView(
             padding: FlesselLayout.screenPaddingInsets(context).copyWith(
               bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
             ),
-            itemCount: packs.length,
-            separatorBuilder: (_, _) => const FlesselGap.s(),
-            itemBuilder: (_, index) {
-              final pack = packs[index];
-              return _LangPickerTile(
-                pack: pack,
-                label: l10n.langLabel(pack.labelKey),
-                onTap: () => context.pop(pack.code),
-              );
-            },
+            children: [
+              ..._buildTilesOfLanguages(context, l10n, packsWithoutWarning),
+              if (aiGeneratedPacks.isNotEmpty) ...[
+                if (packsWithoutWarning.isNotEmpty) const FlesselGap.l(),
+                _AiGeneratedSectionHeading(l10n: l10n),
+                const FlesselGap.s(),
+                ..._buildTilesOfLanguages(context, l10n, aiGeneratedPacks),
+              ],
+            ],
           );
         },
       ),
+    );
+  }
+
+  /// The tiles of the given languages, with a gap between each two.
+  List<Widget> _buildTilesOfLanguages(
+    BuildContext context,
+    AppLocalizations l10n,
+    List<LanguagePack> packs,
+  ) {
+    return [
+      for (final (packIndex, pack) in packs.indexed) ...[
+        if (packIndex > 0) const FlesselGap.s(),
+        _LangPickerTile(
+          pack: pack,
+          label: l10n.langLabel(pack.labelKey),
+          onTap: () => context.pop(pack.code),
+        ),
+      ],
+    ];
+  }
+}
+
+/// The heading of the AI generated languages: the title and the note that
+/// tells what to expect of their decks.
+class _AiGeneratedSectionHeading extends StatelessWidget {
+  const _AiGeneratedSectionHeading({required this.l10n});
+
+  final AppLocalizations l10n;
+
+  @override
+  Widget build(BuildContext context) {
+    final t = FlesselThemes.of(context);
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          l10n.language_aiGeneratedTitle.toUpperCase(),
+          style: FlesselFonts.contentTitle.copyWith(color: t.fg),
+        ),
+        const FlesselGap.xs(),
+        FlesselNote(text: l10n.language_aiGeneratedNote),
+      ],
     );
   }
 }
@@ -88,13 +135,9 @@ class _LangPickerTile extends StatelessWidget {
         child: Row(
           children: [
             if (countryCode != null)
-              CountryFlag.fromCountryCode(
-                countryCode,
-                theme: const ImageTheme(
-                  width: LangwijLayout.langFlagWidth,
-                  height: LangwijLayout.langFlagHeight,
-                  shape: RoundedRectangle(4),
-                ),
+              LangwijFlag(
+                countryCode: countryCode,
+                size: LangwijFlagSize.large,
               ),
             const FlesselGap.m(),
             Expanded(

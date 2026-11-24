@@ -49,8 +49,8 @@
   "exit": "Выйти",
   "dailyActivityTitle": "Сегодня",
   "dailyActivityEmpty": "Сегодня активности нет",
-  "mode_guessingHeader": "Угадывание",
-  "mode_writingHeader": "Письмо",
+  "mode_guessingHeader": "Карточки",
+  "mode_writingHeader": "Ввод",
   "mode_langCards": "Карточки: {language}",
   "mode_training": "Тренировка",
   "mode_test": "Тест",
@@ -110,7 +110,9 @@
   "vocab_trained": "Натренировано",
   "vocab_lastTrained": "последняя тренировка:",
   "vocab_termsLabel": "терминов:",
-  "vocab_masteryLabel": "мастерство:",
+  "vocab_studiedLabel": "Изучено:",
+  "vocab_masteryLabel": "Мастерство:",
+  "vocab_nextStarIn": "до следующей звезды {percent}%",
 
   "result_techWork": "Техническая работа — в прогресс не засчитывается",
 
@@ -140,6 +142,8 @@
 
   "language_aiDictionaryWarning": "Словарь создан ИИ. Возможны ошибки. Проверка человеком в процессе — используй на свой страх и риск.",
   "language_pairUnavailable": "Эта языковая пара пока недоступна.",
+  "language_aiGeneratedTitle": "Сделано ИИ",
+  "language_aiGeneratedNote": "Колоды этих языков созданы ИИ и лишь частично проверены экспертами. Ими можно пользоваться: в основном они хороши, но ошибки всё ещё возможны.",
 
   "termCard_gender": "Род: {gender}",
   "termCard_example": "Пример:",

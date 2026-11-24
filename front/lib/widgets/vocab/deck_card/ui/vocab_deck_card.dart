@@ -7,8 +7,9 @@ import 'package:langwij/shared/date_format/date_format.dart';
 import 'package:langwij/shared/deck_icons/deck_icons.dart';
 import '../model/vocab_deck_card_data.dart';
 import '../model/vocab_deck_study_phase.dart';
+import '../../elements/ui/vocab_counted_name_list.dart';
+import '../../elements/ui/vocab_mastery_stars.dart';
 import 'vocab_deck_icon.dart';
-import 'vocab_deck_mastery_stars.dart';
 
 class LangwijVocabDeckCard extends StatelessWidget {
   const LangwijVocabDeckCard({
@@ -20,7 +21,6 @@ class LangwijVocabDeckCard extends StatelessWidget {
   });
 
   static const double _fullPercent = 100.0;
-  static const int _previewLineCount = 2;
   static const int _daysSinceLastRoundCountedAsYesterday = 1;
 
   /// Three quarter turns clockwise stand a left-to-right bar upright with
@@ -66,11 +66,11 @@ class LangwijVocabDeckCard extends StatelessWidget {
     );
   }
 
-  /// The icon box and, once the deck is fully studied, the stars of its
-  /// finished practices in their container on the promo surface, as wide
-  /// as the box and centred under it. The container is drawn a little
-  /// higher than its place in the column, so it lies over the box's lower
-  /// edge.
+  /// The icon box and, once the deck is fully studied, the collapsed
+  /// practice box with the stars of its finished practices, as wide as the
+  /// icon box and centred under it. The practice box is drawn a little
+  /// higher than its place in the column, so it lies over the icon box's
+  /// lower edge.
   Widget _buildIconWithMasteryStarsBelow(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -79,12 +79,9 @@ class LangwijVocabDeckCard extends StatelessWidget {
         if (_isDeckFullyStudied)
           Transform.translate(
             offset: const Offset(0, -LangwijLayout.vocabDeckStarsOverlapOnIcon),
-            child: LangwijVocabDeckMasteryStars(
+            child: LangwijVocabMasteryStars(
               finishedPracticeCount: item.mastery,
-              surface: FlesselSurface.s21,
-              width: LangwijVocabDeckIcon.outerSideIn(
-                FlesselThemes.of(context),
-              ),
+              form: VocabMasteryStarsForm.collapsed,
             ),
           ),
       ],
@@ -166,7 +163,12 @@ class LangwijVocabDeckCard extends StatelessWidget {
       children: [
         _buildDeckTitle(context),
         const FlesselGap.xs(),
-        _buildTermCountWithPreviewWords(context),
+        LangwijVocabCountedNameList(
+          l10n: l10n,
+          termCount: item.cardCount,
+          names: item.words,
+          length: VocabCountedNameListLength.preview,
+        ),
         if (lastRoundDate != null) ...[
           const FlesselGap.s(),
           _buildLastTrainedRow(context, lastRoundDate),
@@ -175,57 +177,14 @@ class LangwijVocabDeckCard extends StatelessWidget {
     );
   }
 
-  /// The deck name, led by the deck's running number when it has one:
-  /// "36. Plugged In".
   Widget _buildDeckTitle(BuildContext context) {
     final t = FlesselThemes.of(context);
-    final deckNumber = item.deckNumber;
 
     return Text(
-      deckNumber == null ? item.name : '$deckNumber. ${item.name}',
+      item.numberedName,
       maxLines: 1,
       overflow: TextOverflow.ellipsis,
       style: FlesselFonts.displayL.copyWith(color: t.fg),
-    );
-  }
-
-  /// Always [_previewLineCount] lines tall: a shorter text leaves the rest
-  /// empty, a longer one is cut with an ellipsis.
-  Widget _buildTermCountWithPreviewWords(BuildContext context) {
-    final t = FlesselThemes.of(context);
-    final previewWordsStyle = FlesselFonts.contentCaption.copyWith(color: t.fg);
-
-    return Stack(
-      children: [
-        _buildHeightReservedForPreviewLines(previewWordsStyle),
-        Text.rich(
-          TextSpan(
-            children: [
-              TextSpan(
-                text: '${l10n.vocab_termsCount(item.cardCount)}: ',
-                style: FlesselFonts.contentSAccent.copyWith(color: t.fg),
-              ),
-              TextSpan(text: item.words.join(', '), style: previewWordsStyle),
-            ],
-          ),
-          maxLines: _previewLineCount,
-          overflow: TextOverflow.ellipsis,
-        ),
-      ],
-    );
-  }
-
-  /// An invisible text of exactly [_previewLineCount] empty lines; it gives
-  /// the word preview its fixed height.
-  Widget _buildHeightReservedForPreviewLines(TextStyle previewWordsStyle) {
-    const lineBreak = '\n';
-
-    return ExcludeSemantics(
-      child: Text(
-        lineBreak * (_previewLineCount - 1),
-        maxLines: _previewLineCount,
-        style: previewWordsStyle,
-      ),
     );
   }
 

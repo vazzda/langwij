@@ -354,6 +354,12 @@ class ConfigValidationService {
           'plan.json: languages[$i].nativeNote must be a string',
         );
       }
+      final aiGenerated = lang['aiGenerated'];
+      if (aiGenerated != null && aiGenerated is! bool) {
+        throw ConfigValidationError(
+          'plan.json: languages[$i].aiGenerated must be a boolean',
+        );
+      }
       final humanVerified = lang['humanVerified'];
       if (humanVerified == null) {
         throw ConfigValidationError(

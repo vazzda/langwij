@@ -13,6 +13,7 @@ import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/features/quiz/ui/mode_selection_sheet.dart';
 import 'package:langwij/widgets/vocab/level_accordion/ui/vocab_level_accordion.dart';
 import 'package:langwij/widgets/vocab/segment_section/ui/vocab_segment_section.dart';
+import 'package:langwij/widgets/vocab/training_summary/ui/vocab_training_summary.dart';
 import 'package:langwij/widgets/vocab/vocab.dart';
 
 import '../service/vocab_page_service.dart';
@@ -192,13 +193,12 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       onLevelHeaderTap: (level) => ref
           .read(VocabPageService.foldState.notifier)
           .toggleLevelFold(level.level.id),
-      onDeckTap: (deck, cardCount) => _onDeckTap(
+      onDeckTap: (deckCard) => _onDeckTap(
         context,
-        deck,
+        deckCard,
         dictionary,
         targetPack,
         nativePack,
-        cardCount,
         l10n,
       ),
       onLevelTrainTap: (level) => _onTrainTap(
@@ -257,6 +257,8 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       nativeLangCode: nativePack.code,
       nativeLangName: l10n.langLabel(nativePack.labelKey),
       targetLangName: l10n.langLabel(targetPack.labelKey),
+      summaryBuilder: (_) =>
+          LangwijVocabTrainingSummary.ofLevel(l10n: l10n, level: level),
     );
     if (selection == null || !context.mounted) return;
 
@@ -297,13 +299,14 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
 
   Future<void> _onDeckTap(
     BuildContext context,
-    VocabDeckModel deck,
+    VocabDeckCardData deckCard,
     Dictionary dictionary,
     LanguagePack targetPack,
     LanguagePack nativePack,
-    int cardCount,
     AppLocalizations l10n,
   ) async {
+    final deck = deckCard.deck;
+    final cardCount = deckCard.cardCount;
     if (cardCount <= 0) return;
 
     final allProgress = ref.read(ProgressService.allDeckProgress).valueOrNull ?? {};
@@ -317,6 +320,11 @@ class _VocabDeckListPageState extends ConsumerState<VocabDeckListPage> {
       nativeLangCode: nativePack.code,
       nativeLangName: l10n.langLabel(nativePack.labelKey),
       targetLangName: l10n.langLabel(targetPack.labelKey),
+      summaryBuilder: (onTestTap) => LangwijVocabTrainingSummary.ofDeck(
+        l10n: l10n,
+        deck: deckCard,
+        onTestTap: onTestTap,
+      ),
     );
     if (selection == null || !context.mounted) return;
 

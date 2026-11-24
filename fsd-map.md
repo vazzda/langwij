@@ -192,9 +192,13 @@ lib/
 │       │   │   └── vocab_level_data_builder_service.dart VocabLevelDataBuilderService (level + deck display data)
 │       │   ├── ui/
 │       │   │   ├── vocab_deck_card.dart                 LangwijVocabDeckCard widget
-│       │   │   ├── vocab_deck_icon.dart                 LangwijVocabDeckIcon widget (deck glyph in a box on the controls surface)
-│       │   │   └── vocab_deck_mastery_stars.dart        LangwijVocabDeckMasteryStars widget (finished practices as stars)
+│       │   │   └── vocab_deck_icon.dart                 LangwijVocabDeckIcon widget (deck glyph in a box on the controls surface)
 │       │   └── deck_card.dart                         barrel (exports model/ + service/)
+│       ├── elements/                                elements shared by the vocab widgets
+│       │   └── ui/
+│       │       ├── vocab_counted_name_list.dart         LangwijVocabCountedNameList widget (term count + names; preview or full)
+│       │       ├── vocab_mastery_star.dart              LangwijVocabMasteryStar widget (one star of the practice box, by kind)
+│       │       └── vocab_mastery_stars.dart             LangwijVocabMasteryStars widget (practice box: finished practices as stars; collapsed or expanded)
 │       ├── level_accordion/                         level accordion subslice
 │       │   └── ui/
 │       │       ├── vocab_level_accordion.dart           LangwijVocabLevelAccordion widget (a segment's levels as one block)
@@ -205,6 +209,9 @@ lib/
 │       │   ├── ui/
 │       │   │   └── vocab_segment_section.dart           LangwijVocabSegmentSection widget
 │       │   └── segment_section.dart                   barrel (exports model/)
+│       ├── training_summary/                        training summary subslice
+│       │   └── ui/
+│       │       └── vocab_training_summary.dart          LangwijVocabTrainingSummary widget (what the mode sheet is about to train: title, counted names, studied and mastery bars, practice box, test button)
 │       └── vocab.dart                               slice barrel (re-exports deck_card, segment_section)
 │
 ├── shared/                                      — infrastructure, no domain
@@ -281,6 +288,10 @@ lib/
 │   │   ├── ui/
 │   │   │   └── developer_gate_config_builder.dart   DeveloperGateConfigBuilder (password-gate config for the developer section)
 │   │   └── dev_section.dart                         barrel
+│   │
+│   ├── flag/                                      country flag in a border
+│   │   └── ui/
+│   │       └── flag.dart                            LangwijFlag widget + LangwijFlagSize (the three sizes a flag is drawn at)
 │   │
 │   ├── keep_in_view/                              scroll-into-view for unfolded items
 │   │   └── ui/

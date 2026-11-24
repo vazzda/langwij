@@ -49,8 +49,8 @@
   "exit": "Sair",
   "dailyActivityTitle": "Hoje",
   "dailyActivityEmpty": "Sem atividade hoje",
-  "mode_guessingHeader": "Adivinhar",
-  "mode_writingHeader": "Escrever",
+  "mode_guessingHeader": "Cartões",
+  "mode_writingHeader": "Digitação",
   "mode_langCards": "Cartões: {language}",
   "mode_training": "Treino",
   "mode_test": "Teste",
@@ -110,7 +110,9 @@
   "vocab_trained": "Treinado",
   "vocab_lastTrained": "último treino:",
   "vocab_termsLabel": "termos:",
-  "vocab_masteryLabel": "domínio:",
+  "vocab_studiedLabel": "Estudado:",
+  "vocab_masteryLabel": "Domínio:",
+  "vocab_nextStarIn": "próxima estrela em {percent}%",
 
   "result_techWork": "Trabalho técnico — não conta para o progresso",
 
@@ -140,6 +142,8 @@
 
   "language_aiDictionaryWarning": "Dicionário gerado por IA. Pode conter erros. Revisão humana em curso — usa por tua conta e risco.",
   "language_pairUnavailable": "Este par de idiomas ainda não está disponível.",
+  "language_aiGeneratedTitle": "Gerado por IA",
+  "language_aiGeneratedNote": "Os baralhos destes idiomas foram gerados por IA e apenas em parte verificados por especialistas. Podes usá-los: são bons na sua maioria, mas ainda podem existir erros.",
 
   "termCard_gender": "Género: {gender}",
   "termCard_example": "Exemplo:",

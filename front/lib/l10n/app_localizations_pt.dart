@@ -179,10 +179,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get dailyActivityEmpty => 'Sem atividade hoje';
 
   @override
-  String get mode_guessingHeader => 'Adivinhar';
+  String get mode_guessingHeader => 'Cartões';
 
   @override
-  String get mode_writingHeader => 'Escrever';
+  String get mode_writingHeader => 'Digitação';
 
   @override
   String mode_langCards(String language) {
@@ -357,7 +357,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get vocab_termsLabel => 'termos:';
 
   @override
-  String get vocab_masteryLabel => 'domínio:';
+  String get vocab_studiedLabel => 'Estudado:';
+
+  @override
+  String get vocab_masteryLabel => 'Domínio:';
+
+  @override
+  String vocab_nextStarIn(int percent) {
+    return 'próxima estrela em $percent%';
+  }
 
   @override
   String get result_techWork => 'Trabalho técnico — não conta para o progresso';
@@ -433,6 +441,13 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get language_pairUnavailable =>
       'Este par de idiomas ainda não está disponível.';
+
+  @override
+  String get language_aiGeneratedTitle => 'Gerado por IA';
+
+  @override
+  String get language_aiGeneratedNote =>
+      'Os baralhos destes idiomas foram gerados por IA e apenas em parte verificados por especialistas. Podes usá-los: são bons na sua maioria, mas ainda podem existir erros.';
 
   @override
   String termCard_gender(String gender) {

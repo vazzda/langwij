@@ -46,8 +46,8 @@ class LangwijLayout {
   static const double langQualityIconSize = 25.0;
   static const double langProgressLabelWidth = 72.0;
   static const double langProgressPercentWidth = 36.0;
-  static const double langProgressionFlagWidth = 24.0;
-  static const double langProgressionFlagHeight = 16.0;
+  static const double langProgressionFlagWidth = 30.0;
+  static const double langProgressionFlagHeight = 20.0;
   static const double langProgressionFlagBorderRadius = 2.0;
   static const double langBoxPaddingLeft = 12.0;
   static const double langBoxPaddingTop = 14.0;

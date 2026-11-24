@@ -49,8 +49,8 @@
   "exit": "Izađi",
   "dailyActivityTitle": "Danas",
   "dailyActivityEmpty": "Danas nema aktivnosti",
-  "mode_guessingHeader": "Pogađanje",
-  "mode_writingHeader": "Pisanje",
+  "mode_guessingHeader": "Kartice",
+  "mode_writingHeader": "Kucanje",
   "mode_langCards": "Kartice: {language}",
   "mode_training": "Trening",
   "mode_test": "Test",
@@ -110,7 +110,9 @@
   "vocab_trained": "Uvežbano",
   "vocab_lastTrained": "poslednji trening:",
   "vocab_termsLabel": "termina:",
-  "vocab_masteryLabel": "savladanost:",
+  "vocab_studiedLabel": "Naučeno:",
+  "vocab_masteryLabel": "Savladanost:",
+  "vocab_nextStarIn": "sledeća zvezda za {percent}%",
 
   "result_techWork": "Tehnički rad — ne računa se u napredak",
 
@@ -140,6 +142,8 @@
 
   "language_aiDictionaryWarning": "Rečnik je napravila veštačka inteligencija. Moguće su greške. Provera od strane ljudi je u toku — koristiš na sopstvenu odgovornost.",
   "language_pairUnavailable": "Ovaj jezički par još nije dostupan.",
+  "language_aiGeneratedTitle": "Napravio AI",
+  "language_aiGeneratedNote": "Špilove ovih jezika napravio je AI, a stručnjaci su ih proverili samo delimično. Možeš da ih koristiš: uglavnom su dobri, ali greške su i dalje moguće.",
 
   "termCard_gender": "Rod: {gender}",
   "termCard_example": "Primer:",

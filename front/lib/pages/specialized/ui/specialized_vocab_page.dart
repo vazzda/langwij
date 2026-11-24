@@ -12,6 +12,7 @@ import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/features/quiz/ui/mode_selection_sheet.dart';
 import 'package:langwij/widgets/vocab/deck_card/ui/vocab_deck_card.dart';
+import 'package:langwij/widgets/vocab/training_summary/ui/vocab_training_summary.dart';
 import 'package:langwij/widgets/vocab/vocab.dart';
 
 class SpecializedVocabPage extends ConsumerStatefulWidget {
@@ -132,11 +133,10 @@ class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
             transparent: false,
             onTap: () => _onDeckTap(
               context,
-              deck.deck,
+              deck,
               dictionary,
               targetPack,
               nativePack,
-              deck.cardCount,
               l10n,
             ),
           );
@@ -154,13 +154,14 @@ class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
 
   Future<void> _onDeckTap(
     BuildContext context,
-    VocabDeckModel deck,
+    VocabDeckCardData deckCard,
     Dictionary dictionary,
     LanguagePack targetPack,
     LanguagePack nativePack,
-    int cardCount,
     AppLocalizations l10n,
   ) async {
+    final deck = deckCard.deck;
+    final cardCount = deckCard.cardCount;
     if (cardCount <= 0) return;
 
     final allProgress = ref.read(ProgressService.allDeckProgress).valueOrNull ?? {};
@@ -174,6 +175,11 @@ class _SpecializedVocabPageState extends ConsumerState<SpecializedVocabPage> {
       nativeLangCode: nativePack.code,
       nativeLangName: l10n.langLabel(nativePack.labelKey),
       targetLangName: l10n.langLabel(targetPack.labelKey),
+      summaryBuilder: (onTestTap) => LangwijVocabTrainingSummary.ofDeck(
+        l10n: l10n,
+        deck: deckCard,
+        onTestTap: onTestTap,
+      ),
     );
     if (selection == null || !context.mounted) return;
 

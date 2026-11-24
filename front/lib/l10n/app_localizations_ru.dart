@@ -182,10 +182,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get dailyActivityEmpty => 'Сегодня активности нет';
 
   @override
-  String get mode_guessingHeader => 'Угадывание';
+  String get mode_guessingHeader => 'Карточки';
 
   @override
-  String get mode_writingHeader => 'Письмо';
+  String get mode_writingHeader => 'Ввод';
 
   @override
   String mode_langCards(String language) {
@@ -360,7 +360,15 @@ class AppLocalizationsRu extends AppLocalizations {
   String get vocab_termsLabel => 'терминов:';
 
   @override
-  String get vocab_masteryLabel => 'мастерство:';
+  String get vocab_studiedLabel => 'Изучено:';
+
+  @override
+  String get vocab_masteryLabel => 'Мастерство:';
+
+  @override
+  String vocab_nextStarIn(int percent) {
+    return 'до следующей звезды $percent%';
+  }
 
   @override
   String get result_techWork =>
@@ -436,6 +444,13 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get language_pairUnavailable => 'Эта языковая пара пока недоступна.';
+
+  @override
+  String get language_aiGeneratedTitle => 'Сделано ИИ';
+
+  @override
+  String get language_aiGeneratedNote =>
+      'Колоды этих языков созданы ИИ и лишь частично проверены экспертами. Ими можно пользоваться: в основном они хороши, но ошибки всё ещё возможны.';
 
   @override
   String termCard_gender(String gender) {

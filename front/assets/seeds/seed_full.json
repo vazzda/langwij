@@ -4,8 +4,8 @@
     {
       "deck_id": "first_contact",
       "all_terms_coverage": 100,
-      "practice": 100,
-      "mastery": 7,
+      "practice": 0,
+      "mastery": 32,
       "last_practice_days_ago": 0
     },
     {
@@ -25,7 +25,7 @@
     {
       "deck_id": "making_sense",
       "all_terms_coverage": 100,
-      "practice": 100,
+      "practice": 0,
       "mastery": 3,
       "last_practice_days_ago": 10
     },

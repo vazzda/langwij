@@ -33,4 +33,8 @@ class VocabDeckCardData {
   final double practice;
   final int mastery;
   final VocabDeckStudyPhase studyPhase;
+
+  /// The deck name, led by the deck's running number when it has one:
+  /// "36. Plugged In".
+  String get numberedName => deckNumber == null ? name : '$deckNumber. $name';
 }

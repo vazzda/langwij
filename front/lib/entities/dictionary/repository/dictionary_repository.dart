@@ -32,13 +32,13 @@ class DictionaryRepository {
     return _cachedDictionary!;
   }
 
+  /// Loads the pack of one language of plan.json: its translations and
+  /// names, with what the plan states about the language.
   Future<LanguagePack> loadLanguagePack(
-    String langCode, {
-    required String labelKey,
+    LanguageEntry languageEntry, {
     required bool isPublic,
-    required int humanVerified,
-    String? nativeNote,
   }) async {
+    final langCode = languageEntry.code;
     if (_cachedPacks.containsKey(langCode)) return _cachedPacks[langCode]!;
 
     final dictionary = await loadDictionary();
@@ -49,7 +49,7 @@ class DictionaryRepository {
 
     final pack = LanguagePack(
       code: langCode,
-      labelKey: labelKey,
+      labelKey: languageEntry.labelKey,
       isPublic: isPublic,
       translations: _parseTranslationsByTermId(translationDocument),
       totalTerms: dictionary.terms.length,
@@ -68,8 +68,9 @@ class DictionaryRepository {
         _vocabularyLevelSegmentMetaJsonKey,
         VocabularyLevelSegmentMeta.fromJson,
       ),
-      nativeNote: nativeNote,
-      humanVerified: humanVerified,
+      nativeNote: languageEntry.nativeNote,
+      humanVerified: languageEntry.humanVerified,
+      isAiGenerated: languageEntry.isAiGenerated,
     );
 
     _cachedPacks[langCode] = pack;
@@ -84,11 +85,8 @@ class DictionaryRepository {
     for (final entry in entries) {
       packs.add(
         await loadLanguagePack(
-          entry.code,
-          labelKey: entry.labelKey,
+          entry,
           isPublic: publicCodes.contains(entry.code),
-          nativeNote: entry.nativeNote,
-          humanVerified: entry.humanVerified,
         ),
       );
     }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flessel/flessel.dart';
 
-import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/l10n/app_localizations.dart';
+import '../../deck_card/model/vocab_deck_card_data.dart';
 import '../../deck_card/model/vocab_level_data.dart';
 import 'vocab_level_accordion_item.dart';
 
@@ -25,7 +25,7 @@ class LangwijVocabLevelAccordion extends StatelessWidget {
   final String? unfoldedLevelId;
   final AppLocalizations l10n;
   final void Function(VocabLevelData level) onLevelHeaderTap;
-  final void Function(VocabDeckModel deck, int cardCount) onDeckTap;
+  final void Function(VocabDeckCardData deckCard) onDeckTap;
   final void Function(VocabLevelData level) onLevelTrainTap;
 
   @override

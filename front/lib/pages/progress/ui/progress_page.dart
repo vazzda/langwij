@@ -1,4 +1,3 @@
-import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flessel/flessel.dart';
@@ -10,6 +9,7 @@ import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/entities/progress/progress.dart';
 import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
+import 'package:langwij/shared/flag/ui/flag.dart';
 import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/widgets/vocab/daily_activity_card/ui/vocab_daily_activity_card.dart';
 import '../service/progress_page_service.dart';
@@ -186,17 +186,9 @@ class _LanguageProgressionCard extends StatelessWidget {
                       child: Row(
                         children: [
                           if (countryCode != null) ...[
-                            CountryFlag.fromCountryCode(
-                              countryCode,
-                              theme: const ImageTheme(
-                                width:
-                                    LangwijLayout.langProgressionFlagWidth,
-                                height:
-                                    LangwijLayout.langProgressionFlagHeight,
-                                shape: RoundedRectangle(
-                                    LangwijLayout
-                                        .langProgressionFlagBorderRadius),
-                              ),
+                            LangwijFlag(
+                              countryCode: countryCode,
+                              size: LangwijFlagSize.small,
                             ),
                             const FlesselGap.s(),
                           ],

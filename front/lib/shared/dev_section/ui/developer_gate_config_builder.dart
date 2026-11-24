@@ -7,7 +7,7 @@ class DeveloperGateConfigBuilder {
   const DeveloperGateConfigBuilder._();
 
   static const String _developerAccessPasswordHash =
-      '875dec89dd3b2300db839f43cb4b8d2b6b316cf88262b6e5bbebaa66a73d6ed8';
+      '4ce16e094c68e844b911b1b2e621a3249ccd2d138ed2580cef859ccce932be23';
 
   static FlesselDevGateConfig buildForContext(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;

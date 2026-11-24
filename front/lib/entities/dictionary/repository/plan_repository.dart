@@ -7,6 +7,8 @@ import '../model/level_tier.dart';
 
 class PlanRepository {
   static const String _planPath = 'assets/data/plan.json';
+  static const String _aiGeneratedLanguageKey = 'aiGenerated';
+  static const bool _isAiGeneratedWhenNotStated = false;
 
   Map<String, List<String>>? _cachedCourses;
   Map<String, String>? _cachedCourseNotes;
@@ -25,6 +27,8 @@ class PlanRepository {
             code: map['code'] as String,
             labelKey: map['labelKey'] as String,
             humanVerified: map['humanVerified'] as int,
+            isAiGenerated: map[_aiGeneratedLanguageKey] as bool? ??
+                _isAiGeneratedWhenNotStated,
             nativeNote: map['nativeNote'] as String?,
           );
         })

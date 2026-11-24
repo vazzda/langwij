@@ -180,10 +180,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get dailyActivityEmpty => 'Danas nema aktivnosti';
 
   @override
-  String get mode_guessingHeader => 'Pogađanje';
+  String get mode_guessingHeader => 'Kartice';
 
   @override
-  String get mode_writingHeader => 'Pisanje';
+  String get mode_writingHeader => 'Kucanje';
 
   @override
   String mode_langCards(String language) {
@@ -358,7 +358,15 @@ class AppLocalizationsSr extends AppLocalizations {
   String get vocab_termsLabel => 'termina:';
 
   @override
-  String get vocab_masteryLabel => 'savladanost:';
+  String get vocab_studiedLabel => 'Naučeno:';
+
+  @override
+  String get vocab_masteryLabel => 'Savladanost:';
+
+  @override
+  String vocab_nextStarIn(int percent) {
+    return 'sledeća zvezda za $percent%';
+  }
 
   @override
   String get result_techWork => 'Tehnički rad — ne računa se u napredak';
@@ -433,6 +441,13 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get language_pairUnavailable => 'Ovaj jezički par još nije dostupan.';
+
+  @override
+  String get language_aiGeneratedTitle => 'Napravio AI';
+
+  @override
+  String get language_aiGeneratedNote =>
+      'Špilove ovih jezika napravio je AI, a stručnjaci su ih proverili samo delimično. Možeš da ih koristiš: uglavnom su dobri, ali greške su i dalje moguće.';
 
   @override
   String termCard_gender(String gender) {

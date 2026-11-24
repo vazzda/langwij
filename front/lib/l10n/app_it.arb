@@ -49,8 +49,8 @@
   "exit": "Esci",
   "dailyActivityTitle": "Oggi",
   "dailyActivityEmpty": "Nessuna attività oggi",
-  "mode_guessingHeader": "Indovinare",
-  "mode_writingHeader": "Scrivere",
+  "mode_guessingHeader": "Carte",
+  "mode_writingHeader": "Scrittura",
   "mode_langCards": "Carte: {language}",
   "mode_training": "Allenamento",
   "mode_test": "Test",
@@ -110,7 +110,9 @@
   "vocab_trained": "Allenato",
   "vocab_lastTrained": "ultimo allenamento:",
   "vocab_termsLabel": "termini:",
-  "vocab_masteryLabel": "padronanza:",
+  "vocab_studiedLabel": "Studiato:",
+  "vocab_masteryLabel": "Padronanza:",
+  "vocab_nextStarIn": "prossima stella tra {percent}%",
 
   "result_techWork": "Lavoro tecnico — non conta per i progressi",
 
@@ -140,6 +142,8 @@
 
   "language_aiDictionaryWarning": "Dizionario generato dall'IA. Può contenere errori. Revisione umana in corso — usalo a tuo rischio.",
   "language_pairUnavailable": "Questa coppia di lingue non è ancora disponibile.",
+  "language_aiGeneratedTitle": "Generato dall'IA",
+  "language_aiGeneratedNote": "I mazzi di queste lingue sono stati generati dall'IA e controllati solo in parte da esperti. Puoi usarli: sono per lo più buoni, ma possono ancora esserci errori.",
 
   "termCard_gender": "Genere: {gender}",
   "termCard_example": "Esempio:",

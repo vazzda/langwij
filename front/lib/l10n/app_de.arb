@@ -49,8 +49,8 @@
   "exit": "Verlassen",
   "dailyActivityTitle": "Heute",
   "dailyActivityEmpty": "Heute keine Aktivität",
-  "mode_guessingHeader": "Raten",
-  "mode_writingHeader": "Schreiben",
+  "mode_guessingHeader": "Karten",
+  "mode_writingHeader": "Tippen",
   "mode_langCards": "Karten: {language}",
   "mode_training": "Training",
   "mode_test": "Test",
@@ -110,7 +110,9 @@
   "vocab_trained": "Trainiert",
   "vocab_lastTrained": "zuletzt trainiert:",
   "vocab_termsLabel": "Begriffe:",
+  "vocab_studiedLabel": "Gelernt:",
   "vocab_masteryLabel": "Beherrschung:",
+  "vocab_nextStarIn": "nächster Stern in {percent}%",
 
   "result_techWork": "Technische Runde — zählt nicht zum Fortschritt",
 
@@ -140,6 +142,8 @@
 
   "language_aiDictionaryWarning": "KI-generiertes Wörterbuch. Kann Fehler enthalten. Die Prüfung durch Menschen läuft — Nutzung auf eigene Gefahr.",
   "language_pairUnavailable": "Dieses Sprachpaar ist noch nicht verfügbar.",
+  "language_aiGeneratedTitle": "KI-generiert",
+  "language_aiGeneratedNote": "Die Stapel dieser Sprachen wurden von KI erstellt und nur teilweise von Fachleuten geprüft. Du kannst sie verwenden: Sie sind größtenteils gut, aber Fehler sind weiterhin möglich.",
 
   "termCard_gender": "Genus: {gender}",
   "termCard_example": "Beispiel:",

@@ -1,4 +1,3 @@
-import 'package:country_flags/country_flags.dart';
 import 'package:flessel/flessel.dart';
 import 'package:flutter/material.dart';
 
@@ -6,8 +5,15 @@ import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/entities/progress/progress.dart';
 import 'package:langwij/l10n/app_localizations.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
+import 'package:langwij/shared/flag/ui/flag.dart';
 import '../model/mode_selection.dart';
 
+/// [summaryBuilder] builds the description of what is about to be trained;
+/// it stands above the modes. It is handed the action that starts a test,
+/// or null when [enableTest] is false, and shows the test button itself.
+/// [nativeLangName] and [targetLangName] are read by nothing since
+/// the guessing tiles lost their label; they stay while the tiles of flags
+/// alone are on trial.
 Future<ModeSelection?> showLangwijModeSelectionSheet(
   BuildContext context,
   AppLocalizations l10n, {
@@ -17,8 +23,8 @@ Future<ModeSelection?> showLangwijModeSelectionSheet(
   String nativeLangCode = '',
   String nativeLangName = '',
   String targetLangName = '',
+  Widget Function(VoidCallback? onTestTap)? summaryBuilder,
 }) {
-  final t = FlesselThemes.of(context);
   return showFlesselBottomSheet<ModeSelection>(
     context: context,
     builder: (context) => ConstrainedBox(
@@ -29,67 +35,60 @@ Future<ModeSelection?> showLangwijModeSelectionSheet(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (showAllModes) ...[
-            Text(
-              l10n.mode_guessingHeader.toUpperCase(),
-              style: FlesselFonts.contentXlAccent
-                  .copyWith(color: t.fgSecondary),
+          if (summaryBuilder != null) ...[
+            summaryBuilder(
+              enableTest
+                  ? () => Navigator.of(context).pop(
+                        const ModeSelection(
+                            mode: QuizMode.write, isTest: true),
+                      )
+                  : null,
             ),
-            const FlesselGap.s(),
-            _ModeTileRow(
-              tiles: [
+            const FlesselGap.l(),
+          ],
+          _ModeSectionTitle(text: l10n.mode_training),
+          const FlesselGap.s(),
+          _ModeTileRow(
+            tiles: [
+              if (showAllModes) ...[
                 _ModeTileData(
-                  label: l10n.mode_langCards(nativeLangName),
-                  langCode: nativeLangCode,
-                  typeIcon: PhosphorIconsRegular.cards,
-                  isAccent: false,
-                  onTap: () => Navigator.of(context).pop(
-                    const ModeSelection(
-                        mode: QuizMode.nativeShown, isTest: false),
-                  ),
-                ),
-                _ModeTileData(
-                  label: l10n.mode_langCards(targetLangName),
-                  langCode: targetLangCode,
-                  typeIcon: PhosphorIconsRegular.cards,
-                  isAccent: false,
+                  title: l10n.mode_guessingHeader,
+                  icon: PhosphorIconsRegular.cards,
+                  parts: [
+                    _ModeTileFlag(targetLangCode),
+                    const _ModeTileArrowToAnswer(),
+                    _ModeTileFlag(nativeLangCode),
+                  ],
                   onTap: () => Navigator.of(context).pop(
                     const ModeSelection(
                         mode: QuizMode.targetShown, isTest: false),
                   ),
                 ),
+                _ModeTileData(
+                  title: l10n.mode_guessingHeader,
+                  icon: PhosphorIconsRegular.cards,
+                  parts: [
+                    _ModeTileFlag(nativeLangCode),
+                    const _ModeTileArrowToAnswer(),
+                    _ModeTileFlag(targetLangCode),
+                  ],
+                  onTap: () => Navigator.of(context).pop(
+                    const ModeSelection(
+                        mode: QuizMode.nativeShown, isTest: false),
+                  ),
+                ),
               ],
-            ),
-            const FlesselGap.l(),
-          ],
-          Text(
-            l10n.mode_writingHeader.toUpperCase(),
-            style: FlesselFonts.contentXlAccent
-                .copyWith(color: t.fgSecondary),
-          ),
-          const FlesselGap.s(),
-          _ModeTileRow(
-            tiles: [
               _ModeTileData(
-                label: l10n.mode_training,
-                langCode: targetLangCode,
-                typeIcon: PhosphorIconsRegular.pencilSimpleLine,
-                isAccent: false,
+                title: l10n.mode_writingHeader,
+                icon: PhosphorIconsRegular.pencilSimpleLine,
+                parts: [
+                  _ModeTileFlag(nativeLangCode),
+                  const _ModeTileArrowToAnswer(),
+                  _ModeTileFlag(targetLangCode),
+                ],
                 onTap: () => Navigator.of(context).pop(
                   const ModeSelection(mode: QuizMode.write, isTest: false),
                 ),
-              ),
-              _ModeTileData(
-                label: l10n.mode_test,
-                langCode: targetLangCode,
-                typeIcon: PhosphorIconsRegular.pencilSimpleLine,
-                isAccent: true,
-                onTap: enableTest
-                    ? () => Navigator.of(context).pop(
-                          const ModeSelection(
-                              mode: QuizMode.write, isTest: true),
-                        )
-                    : null,
               ),
             ],
           ),
@@ -176,24 +175,63 @@ Future<int?> showLangwijQuestionCountSheet(
   );
 }
 
-class _ModeTileData {
-  const _ModeTileData({
-    required this.label,
-    required this.langCode,
-    required this.typeIcon,
-    required this.isAccent,
-    this.onTap,
-  });
+/// The title of the section of modes, in the font and colour of a level
+/// name in the vocabulary list.
+class _ModeSectionTitle extends StatelessWidget {
+  const _ModeSectionTitle({required this.text});
 
-  final String label;
-  final String langCode;
-  final IconData typeIcon;
-  final bool isAccent;
-  final VoidCallback? onTap;
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final t = FlesselThemes.of(context);
+
+    return Text(text, style: FlesselFonts.displayXl.copyWith(color: t.fg));
+  }
 }
 
+/// One of the parts a mode tile shows under its title.
+sealed class _ModeTilePart {
+  const _ModeTilePart();
+}
+
+/// The flag of a language. A language that has no flag shows nothing.
+final class _ModeTileFlag extends _ModeTilePart {
+  const _ModeTileFlag(this.langCode);
+
+  final String langCode;
+}
+
+/// The arrow from the flag of the cards down to the flag of the answers.
+final class _ModeTileArrowToAnswer extends _ModeTilePart {
+  const _ModeTileArrowToAnswer();
+}
+
+class _ModeTileData {
+  const _ModeTileData({
+    required this.icon,
+    required this.title,
+    required this.parts,
+    required this.onTap,
+  });
+
+  /// The icon above the title.
+  final IconData icon;
+
+  final String title;
+
+  /// What the tile shows under its title, from top to bottom.
+  final List<_ModeTilePart> parts;
+
+  final VoidCallback onTap;
+}
+
+/// A row of mode tiles. Each tile is as wide as one of three tiles sharing
+/// the row with gaps between them, and all are as tall as the tallest.
 class _ModeTileRow extends StatelessWidget {
   const _ModeTileRow({required this.tiles});
+
+  static const int _tileCountSharingRowWidth = 3;
 
   final List<_ModeTileData> tiles;
 
@@ -201,14 +239,25 @@ class _ModeTileRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        final tileWidth =
-            (constraints.maxWidth - FlesselLayout.gapM) / 2;
-        return Row(
-          children: [
-            SizedBox(width: tileWidth, child: _ModeTile(data: tiles[0])),
-            const FlesselGap.m(),
-            SizedBox(width: tileWidth, child: _ModeTile(data: tiles[1])),
-          ],
+        final widthOfGapsBetweenTiles =
+            FlesselLayout.gapM * (_tileCountSharingRowWidth - 1);
+        final tileWidth = (constraints.maxWidth - widthOfGapsBetweenTiles) /
+            _tileCountSharingRowWidth;
+        return IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              for (var tileIndex = 0;
+                  tileIndex < tiles.length;
+                  tileIndex++) ...[
+                if (tileIndex > 0) const FlesselGap.m(),
+                SizedBox(
+                  width: tileWidth,
+                  child: _ModeTile(data: tiles[tileIndex]),
+                ),
+              ],
+            ],
+          ),
         );
       },
     );
@@ -218,58 +267,79 @@ class _ModeTileRow extends StatelessWidget {
 class _ModeTile extends StatelessWidget {
   const _ModeTile({required this.data});
 
+  /// Every mode tile stands on the promo surface in its success variant.
+  static const FlesselSurface _surface = FlesselSurface.s21;
+  static const FlesselVariant _variant = FlesselVariant.success;
+
+  static const FlesselSize _paddingAroundContent = FlesselSize.s;
+  static const double _arrowToAnswerSize = FlesselLayout.iconL;
+
+  /// The icon is as high as a flag, so the rows of a tile keep one rhythm.
+  static const double _iconSize = LangwijLayout.modeTileFlagHeight;
+
   final _ModeTileData data;
 
   @override
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
-    final fg = data.isAccent ? t.surface02.accent.fg : t.fg;
-    final countryCode = LangCodes.flagCountryCode(data.langCode);
+    final fg = t.surfaceOf(_surface).resolve(_variant).fg;
 
-    final tile = FlesselTile(
-      variant: data.isAccent ? FlesselVariant.accent : FlesselVariant.regular,
+    // The library's tile stands on the tile surface only, so a mode tile is
+    // drawn as a card on its own surface.
+    return FlesselCard(
+      surface: _surface,
+      colorVariant: _variant,
+      padding: _paddingAroundContent,
+      margin: FlesselSize.none,
       onTap: data.onTap,
-      child: Padding(
-        padding: const EdgeInsets.all(FlesselLayout.gapM),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                if (countryCode != null) ...[
-                  CountryFlag.fromCountryCode(
-                    countryCode,
-                    theme: const ImageTheme(
-                      width: LangwijLayout.modeTileFlagWidth,
-                      height: LangwijLayout.modeTileFlagHeight,
-                      shape: RoundedRectangle(
-                          LangwijLayout.modeTileFlagBorderRadius),
-                    ),
-                  ),
-                  const FlesselGap.s(),
-                ],
-                PhosphorIcon(
-                  data.typeIcon,
-                  size: LangwijLayout.modeTileIconSize,
-                  color: fg,
-                ),
-              ],
-            ),
-            const FlesselGap.s(),
-            Text(
-              data.label,
-              style: FlesselFonts.contentMAccent.copyWith(color: fg),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-      ),
+      child: _buildIconAndTitleAboveParts(fg),
     );
+  }
 
-    return data.onTap != null
-        ? tile
-        : Opacity(opacity: 0.3, child: tile);
+  /// The icon, the title under it, then the parts from top to bottom: a
+  /// gap under the title and a smaller one between the other neighbours.
+  /// A part that shows nothing is left out.
+  Widget _buildIconAndTitleAboveParts(Color fg) {
+    final shownParts = [
+      for (final part in data.parts)
+        if (_buildPartOrNull(part, fg) case final shownPart?) shownPart,
+    ];
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        PhosphorIcon(data.icon, size: _iconSize, color: fg),
+        const FlesselGap.xs(),
+        Text(
+          data.title,
+          style: FlesselFonts.contentMAccent.copyWith(color: fg),
+          textAlign: TextAlign.center,
+        ),
+        for (var partIndex = 0; partIndex < shownParts.length; partIndex++) ...[
+          if (partIndex == 0) const FlesselGap.s() else const FlesselGap.xs(),
+          shownParts[partIndex],
+        ],
+      ],
+    );
+  }
+
+  /// Null for the flag of a language that has none.
+  Widget? _buildPartOrNull(_ModeTilePart part, Color fg) {
+    return switch (part) {
+      _ModeTileFlag(:final langCode) =>
+        switch (LangCodes.flagCountryCode(langCode)) {
+          final countryCode? => LangwijFlag(
+              countryCode: countryCode,
+              size: LangwijFlagSize.medium,
+            ),
+          null => null,
+        },
+      _ModeTileArrowToAnswer() => PhosphorIcon(
+          PhosphorIconsRegular.arrowDown,
+          size: _arrowToAnswerSize,
+          color: fg,
+        ),
+    };
   }
 }
 

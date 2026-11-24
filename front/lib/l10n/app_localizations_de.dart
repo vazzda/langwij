@@ -180,10 +180,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get dailyActivityEmpty => 'Heute keine Aktivität';
 
   @override
-  String get mode_guessingHeader => 'Raten';
+  String get mode_guessingHeader => 'Karten';
 
   @override
-  String get mode_writingHeader => 'Schreiben';
+  String get mode_writingHeader => 'Tippen';
 
   @override
   String mode_langCards(String language) {
@@ -358,7 +358,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get vocab_termsLabel => 'Begriffe:';
 
   @override
+  String get vocab_studiedLabel => 'Gelernt:';
+
+  @override
   String get vocab_masteryLabel => 'Beherrschung:';
+
+  @override
+  String vocab_nextStarIn(int percent) {
+    return 'nächster Stern in $percent%';
+  }
 
   @override
   String get result_techWork =>
@@ -435,6 +443,13 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get language_pairUnavailable =>
       'Dieses Sprachpaar ist noch nicht verfügbar.';
+
+  @override
+  String get language_aiGeneratedTitle => 'KI-generiert';
+
+  @override
+  String get language_aiGeneratedNote =>
+      'Die Stapel dieser Sprachen wurden von KI erstellt und nur teilweise von Fachleuten geprüft. Du kannst sie verwenden: Sie sind größtenteils gut, aber Fehler sind weiterhin möglich.';
 
   @override
   String termCard_gender(String gender) {

@@ -14,6 +14,7 @@ class LanguagePack {
     this.deckMeta = const {},
     this.vocabularyLevelSegmentMeta = const {},
     required this.humanVerified,
+    required this.isAiGenerated,
     this.nativeNote,
   });
 
@@ -27,6 +28,10 @@ class LanguagePack {
   final Map<String, VocabularyLevelSegmentMeta> vocabularyLevelSegmentMeta;
   final String? nativeNote;
   final int humanVerified;
+
+  /// Whether the language is listed among the AI generated ones, apart from
+  /// the languages offered without that warning.
+  final bool isAiGenerated;
 
   int get translatedCount => translations.length;
   int get missingCount => totalTerms - translatedCount;

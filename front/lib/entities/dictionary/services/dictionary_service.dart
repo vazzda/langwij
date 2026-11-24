@@ -49,11 +49,8 @@ class DictionaryService {
       ),
     );
     return repo.loadLanguagePack(
-      entry.code,
-      labelKey: entry.labelKey,
+      entry,
       isPublic: publicCodes.contains(entry.code),
-      nativeNote: entry.nativeNote,
-      humanVerified: entry.humanVerified,
     );
   }
 

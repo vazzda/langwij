@@ -1,4 +1,3 @@
-import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -11,6 +10,7 @@ import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/shared/app/layout/layout.dart';
+import 'package:langwij/shared/flag/ui/flag.dart';
 import '../../picker/ui/lang_picker_page.dart';
 
 class LanguagePage extends ConsumerStatefulWidget {
@@ -21,8 +21,9 @@ class LanguagePage extends ConsumerStatefulWidget {
 }
 
 class _LanguagePageState extends ConsumerState<LanguagePage> {
-  String? _displayedNativeCode;
-  String? _displayedTargetCode;
+  /// The pair the page shows. It may differ from the stored pair: a pair
+  /// without a course is shown, with its warning, but never stored.
+  LanguageSettings? _displayedLanguagePair;
 
   @override
   void initState() {
@@ -30,16 +31,16 @@ class _LanguagePageState extends ConsumerState<LanguagePage> {
     ConfigService.markLanguagesConfigured();
   }
 
-  void _onNativeSelected(String code, Set<String> availableCourseIds) {
-    final targetCode = _displayedTargetCode!;
-    setState(() => _displayedNativeCode = code);
-    _persistIfValidPair(targetCode: targetCode, nativeCode: code, availableCourseIds: availableCourseIds);
-  }
-
-  void _onTargetSelected(String code, Set<String> availableCourseIds) {
-    final nativeCode = _displayedNativeCode!;
-    setState(() => _displayedTargetCode = code);
-    _persistIfValidPair(targetCode: code, nativeCode: nativeCode, availableCourseIds: availableCourseIds);
+  void _showLanguagePairAndPersistIfValid(
+    LanguageSettings languagePair,
+    Set<String> availableCourseIds,
+  ) {
+    setState(() => _displayedLanguagePair = languagePair);
+    _persistIfValidPair(
+      targetCode: languagePair.targetLang,
+      nativeCode: languagePair.nativeLang,
+      availableCourseIds: availableCourseIds,
+    );
   }
 
   void _persistIfValidPair({
@@ -47,7 +48,6 @@ class _LanguagePageState extends ConsumerState<LanguagePage> {
     required String nativeCode,
     required Set<String> availableCourseIds,
   }) {
-    if (targetCode == nativeCode) return;
     final courseId = '$targetCode→$nativeCode';
     if (!availableCourseIds.contains(courseId)) return;
     ref.read(ConfigService.instance).setLanguagePair(
@@ -71,10 +71,9 @@ class _LanguagePageState extends ConsumerState<LanguagePage> {
       );
     }
 
-    _displayedNativeCode ??= langSettings.nativeLang;
-    _displayedTargetCode ??= langSettings.targetLang;
-    final nativeCode = _displayedNativeCode!;
-    final targetCode = _displayedTargetCode!;
+    final displayedLanguagePair = _displayedLanguagePair ??= langSettings;
+    final nativeCode = displayedLanguagePair.nativeLang;
+    final targetCode = displayedLanguagePair.targetLang;
     final availableCourseIds = asyncCourseIds.valueOrNull ?? const {};
 
     return LangwijScaffold(
@@ -95,10 +94,14 @@ class _LanguagePageState extends ConsumerState<LanguagePage> {
                 nativeCode: nativeCode,
                 targetCode: targetCode,
                 l10n: l10n,
-                onNativeSelected: (code) =>
-                    _onNativeSelected(code, availableCourseIds),
-                onTargetSelected: (code) =>
-                    _onTargetSelected(code, availableCourseIds),
+                onNativeSelected: (code) => _showLanguagePairAndPersistIfValid(
+                  displayedLanguagePair.withNativeLangPicked(code),
+                  availableCourseIds,
+                ),
+                onTargetSelected: (code) => _showLanguagePairAndPersistIfValid(
+                  displayedLanguagePair.withTargetLangPicked(code),
+                  availableCourseIds,
+                ),
               ),
               ..._buildLanguageWarnings(
                 packByCode: packByCode,
@@ -283,13 +286,9 @@ class _LangBox extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 if (countryCode != null)
-                  CountryFlag.fromCountryCode(
-                    countryCode,
-                    theme: const ImageTheme(
-                      width: LangwijLayout.langFlagWidth,
-                      height: LangwijLayout.langFlagHeight,
-                      shape: RoundedRectangle(LangwijLayout.langFlagBorderRadius),
-                    ),
+                  LangwijFlag(
+                    countryCode: countryCode,
+                    size: LangwijFlagSize.large,
                   )
                 else
                   Icon(PhosphorIconsRegular.caretDown, color: t.fgSecondary, size: 18),
