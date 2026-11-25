@@ -8,7 +8,7 @@ Generated from actual filesystem + import analysis.
 ```
 lib/
 ├── boot/                                        — app-level wiring, no domain
-│   ├── initialization.dart                        AppInitialization: DB open, config load, splash, dev gate, theme
+│   ├── initialization.dart                        AppInitialization: DB open, config load, splash, dev gate
 │   └── router.dart                                GoRouter route table
 │
 ├── main.dart                                    — entry point: ProviderScope + runApp
@@ -247,11 +247,6 @@ lib/
 │   │   │   ├── model/
 │   │   │   │   └── app_routes.dart                      AppRoutes (route path strings)
 │   │   │   └── routing.dart                             barrel
-│   │   │
-│   │   ├── theme/                                     theme persistence
-│   │   │   ├── services/
-│   │   │   │   └── theme_service.dart                   ThemeService (theme ID provider, load/save)
-│   │   │   └── theme.dart                               barrel
 │   │   │
 │   │   ├── validators/                                startup validation
 │   │   │   ├── model/

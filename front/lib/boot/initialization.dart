@@ -4,14 +4,12 @@ import 'package:flessel/flessel.dart';
 
 import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/app/database/database.dart';
-import 'package:langwij/shared/app/theme/theme.dart';
 import 'package:langwij/shared/app/validators/validators.dart';
 import 'package:langwij/shared/dev_section/dev_section.dart';
 
 class AppInitialization {
   const AppInitialization._();
 
-  static late final String savedThemeId;
   static late final LanguageSettings savedLanguageSettings;
   static late final bool isLanguageConfigured;
 
@@ -29,7 +27,6 @@ class AppInitialization {
 
     FlutterNativeSplash.preserve(widgetsBinding: WidgetsBinding.instance);
 
-    savedThemeId = await ThemeService.load();
     isLanguageConfigured = await ConfigService.hasConfiguredLanguages();
     await FlesselDevGate.init(
       load: DevSectionService.load,

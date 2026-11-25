@@ -8,7 +8,6 @@ import 'package:langwij/features/dev_tools/dev_tools.dart';
 import 'package:langwij/shared/app/routing/routing.dart';
 import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
 import 'package:langwij/shared/app/validators/validators.dart';
-import 'package:langwij/shared/app/theme/theme.dart';
 
 class SettingsPage extends ConsumerStatefulWidget {
   const SettingsPage({super.key});
@@ -110,7 +109,6 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
           bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
         ),
         children: [
-          ..._buildThemeSelectionSection(context),
           ValueListenableBuilder<bool>(
             valueListenable: FlesselDevGate.enabled,
             builder: (_, isDeveloperSectionShown, _) => isDeveloperSectionShown
@@ -120,39 +118,6 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
         ],
       ),
     );
-  }
-
-  List<Widget> _buildThemeSelectionSection(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    final t = FlesselThemes.of(context);
-    final currentTheme = ref.watch(ThemeService.themeId);
-
-    return [
-      Padding(
-        padding: const EdgeInsets.only(bottom: FlesselLayout.listItemGap),
-        child: Text(
-          l10n.settingsTheme,
-          style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
-        ),
-      ),
-      FlesselCard(
-        child: Column(
-          children: [
-            for (final entry in FlesselThemeCatalog.all)
-              FlesselRadioTile<String>(
-                value: entry.id,
-                groupValue: currentTheme,
-                label: entry.displayName,
-                onChanged: (value) {
-                  if (value != null) {
-                    ref.read(ThemeService.instance).setTheme(value);
-                  }
-                },
-              ),
-          ],
-        ),
-      ),
-    ];
   }
 
   Widget _buildDeveloperToolsSection(BuildContext context) {

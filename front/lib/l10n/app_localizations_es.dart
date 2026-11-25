@@ -255,9 +255,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get navLabelLanguage => 'Idioma';
 
   @override
-  String get settingsTheme => 'Tema';
-
-  @override
   String get lang_english => 'Inglés';
 
   @override

@@ -536,12 +536,6 @@ abstract class AppLocalizations {
   /// **'Language'**
   String get navLabelLanguage;
 
-  /// No description provided for @settingsTheme.
-  ///
-  /// In en, this message translates to:
-  /// **'Theme'**
-  String get settingsTheme;
-
   /// No description provided for @lang_english.
   ///
   /// In en, this message translates to:

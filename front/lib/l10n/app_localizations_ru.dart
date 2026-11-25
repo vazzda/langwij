@@ -258,9 +258,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get navLabelLanguage => 'Язык';
 
   @override
-  String get settingsTheme => 'Тема';
-
-  @override
   String get lang_english => 'Английский';
 
   @override
