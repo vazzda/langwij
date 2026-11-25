@@ -299,15 +299,11 @@ class _RoundPageState extends ConsumerState<RoundPage> {
     final t = FlesselThemes.of(context);
     showFlesselBottomSheet<void>(
       context: context,
+      title: l10n.exitRound,
       builder: (sheetContext) => Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text(
-            l10n.exitRound,
-            style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
-          ),
-          const FlesselGap.m(),
           Text(
             l10n.exitRoundConfirm,
             style: FlesselFonts.contentM.copyWith(color: t.fg),

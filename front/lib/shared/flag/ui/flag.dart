@@ -20,7 +20,7 @@ enum LangwijFlagSize {
     cornerRadius: LangwijLayout.modeTileFlagBorderRadius,
   ),
 
-  /// In a language box and in a line of the language picker.
+  /// In the row of a chosen language and in a line of the language picker.
   large(
     width: LangwijLayout.langFlagWidth,
     height: LangwijLayout.langFlagHeight,

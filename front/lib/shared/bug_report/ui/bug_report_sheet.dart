@@ -11,6 +11,7 @@ Future<void> showLangwijBugReportSheet(
 }) {
   return showFlesselBottomSheet<void>(
     context: context,
+    title: AppLocalizations.of(context)!.bugReport_title,
     builder: (_) => _LangwijBugReportForm(
       targetText: targetText,
       nativeText: nativeText,
@@ -50,11 +51,6 @@ class _LangwijBugReportFormState extends State<_LangwijBugReportForm> {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          l10n.bugReport_title,
-          style: FlesselFonts.contentTitle.copyWith(color: t.fg),
-        ),
-        const FlesselGap.m(),
         Text(
           '${widget.targetText} → ${widget.nativeText}',
           style: FlesselFonts.contentBodyAccent.copyWith(color: t.fg),

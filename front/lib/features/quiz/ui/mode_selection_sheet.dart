@@ -48,29 +48,29 @@ Future<ModeSelection?> showLangwijModeSelectionSheet(
           ],
           _ModeSectionTitle(text: l10n.mode_training),
           const FlesselGap.s(),
-          _ModeTileRow(
+          _OptionTileGrid(
             tiles: [
               if (showAllModes) ...[
-                _ModeTileData(
+                _OptionTileData(
                   title: l10n.mode_guessingHeader,
                   icon: PhosphorIconsRegular.cards,
                   parts: [
-                    _ModeTileFlag(targetLangCode),
-                    const _ModeTileArrowToAnswer(),
-                    _ModeTileFlag(nativeLangCode),
+                    _OptionTileFlag(targetLangCode),
+                    const _OptionTileArrowToAnswer(),
+                    _OptionTileFlag(nativeLangCode),
                   ],
                   onTap: () => Navigator.of(context).pop(
                     const ModeSelection(
                         mode: QuizMode.targetShown, isTest: false),
                   ),
                 ),
-                _ModeTileData(
+                _OptionTileData(
                   title: l10n.mode_guessingHeader,
                   icon: PhosphorIconsRegular.cards,
                   parts: [
-                    _ModeTileFlag(nativeLangCode),
-                    const _ModeTileArrowToAnswer(),
-                    _ModeTileFlag(targetLangCode),
+                    _OptionTileFlag(nativeLangCode),
+                    const _OptionTileArrowToAnswer(),
+                    _OptionTileFlag(targetLangCode),
                   ],
                   onTap: () => Navigator.of(context).pop(
                     const ModeSelection(
@@ -78,13 +78,13 @@ Future<ModeSelection?> showLangwijModeSelectionSheet(
                   ),
                 ),
               ],
-              _ModeTileData(
+              _OptionTileData(
                 title: l10n.mode_writingHeader,
                 icon: PhosphorIconsRegular.pencilSimpleLine,
                 parts: [
-                  _ModeTileFlag(nativeLangCode),
-                  const _ModeTileArrowToAnswer(),
-                  _ModeTileFlag(targetLangCode),
+                  _OptionTileFlag(nativeLangCode),
+                  const _OptionTileArrowToAnswer(),
+                  _OptionTileFlag(targetLangCode),
                 ],
                 onTap: () => Navigator.of(context).pop(
                   const ModeSelection(mode: QuizMode.write, isTest: false),
@@ -138,11 +138,9 @@ Future<int?> showLangwijQuestionCountSheet(
     icons.add(PhosphorIconsFill.chartPolar);
   }
 
-  final t = FlesselThemes.of(context);
-  final lastIndex = counts.length - 1;
-
   return showFlesselBottomSheet<int>(
     context: context,
+    title: l10n.chooseQuestionsCount,
     builder: (context) => ConstrainedBox(
       constraints: const BoxConstraints(
         minHeight: LangwijLayout.quizSheetMinHeight,
@@ -151,18 +149,16 @@ Future<int?> showLangwijQuestionCountSheet(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text(
-            l10n.chooseQuestionsCount.toUpperCase(),
-            style: FlesselFonts.contentXlAccent
-                .copyWith(color: t.fgSecondary),
-          ),
-          const FlesselGap.l(),
-          _CountTileGrid(
-            counts: counts,
-            labels: labels,
-            icons: icons,
-            accentIndex: lastIndex,
-            onSelect: (value) => Navigator.of(context).pop(value),
+          _OptionTileGrid(
+            tiles: [
+              for (var index = 0; index < counts.length; index++)
+                _OptionTileData(
+                  icon: icons[index],
+                  title: labels[index],
+                  parts: const [],
+                  onTap: () => Navigator.of(context).pop(counts[index]),
+                ),
+            ],
           ),
           const FlesselGap.l(),
           FlesselTextButton(
@@ -190,25 +186,27 @@ class _ModeSectionTitle extends StatelessWidget {
   }
 }
 
-/// One of the parts a mode tile shows under its title.
-sealed class _ModeTilePart {
-  const _ModeTilePart();
+/// One of the parts an option tile shows under its title.
+sealed class _OptionTilePart {
+  const _OptionTilePart();
 }
 
 /// The flag of a language. A language that has no flag shows nothing.
-final class _ModeTileFlag extends _ModeTilePart {
-  const _ModeTileFlag(this.langCode);
+final class _OptionTileFlag extends _OptionTilePart {
+  const _OptionTileFlag(this.langCode);
 
   final String langCode;
 }
 
 /// The arrow from the flag of the cards down to the flag of the answers.
-final class _ModeTileArrowToAnswer extends _ModeTilePart {
-  const _ModeTileArrowToAnswer();
+final class _OptionTileArrowToAnswer extends _OptionTilePart {
+  const _OptionTileArrowToAnswer();
 }
 
-class _ModeTileData {
-  const _ModeTileData({
+/// One option of a quiz sheet: a mode of the mode sheet, or a count of the
+/// question-count sheet.
+class _OptionTileData {
+  const _OptionTileData({
     required this.icon,
     required this.title,
     required this.parts,
@@ -220,54 +218,77 @@ class _ModeTileData {
 
   final String title;
 
-  /// What the tile shows under its title, from top to bottom.
-  final List<_ModeTilePart> parts;
+  /// What the tile shows under its title, from top to bottom; nothing for
+  /// a tile of icon and title alone.
+  final List<_OptionTilePart> parts;
 
   final VoidCallback onTap;
 }
 
-/// A row of mode tiles. Each tile is as wide as one of three tiles sharing
-/// the row with gaps between them, and all are as tall as the tallest.
-class _ModeTileRow extends StatelessWidget {
-  const _ModeTileRow({required this.tiles});
+/// A grid of option tiles, three to a row. Each tile is as wide as one of
+/// three tiles sharing a row with gaps between them, so a row of fewer
+/// tiles keeps them at that width from its start. The tiles of one row are
+/// as tall as the tallest of them.
+class _OptionTileGrid extends StatelessWidget {
+  const _OptionTileGrid({required this.tiles});
 
-  static const int _tileCountSharingRowWidth = 3;
+  static const int _tileCountInRow = 3;
 
-  final List<_ModeTileData> tiles;
+  final List<_OptionTileData> tiles;
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
         final widthOfGapsBetweenTiles =
-            FlesselLayout.gapM * (_tileCountSharingRowWidth - 1);
+            FlesselLayout.gapM * (_tileCountInRow - 1);
         final tileWidth = (constraints.maxWidth - widthOfGapsBetweenTiles) /
-            _tileCountSharingRowWidth;
-        return IntrinsicHeight(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              for (var tileIndex = 0;
-                  tileIndex < tiles.length;
-                  tileIndex++) ...[
-                if (tileIndex > 0) const FlesselGap.m(),
-                SizedBox(
-                  width: tileWidth,
-                  child: _ModeTile(data: tiles[tileIndex]),
-                ),
-              ],
+            _tileCountInRow;
+
+        return Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (var rowStart = 0;
+                rowStart < tiles.length;
+                rowStart += _tileCountInRow) ...[
+              if (rowStart > 0) const FlesselGap.m(),
+              _buildRow(
+                tiles.skip(rowStart).take(_tileCountInRow).toList(),
+                tileWidth,
+              ),
             ],
-          ),
+          ],
         );
       },
     );
   }
+
+  Widget _buildRow(List<_OptionTileData> tilesOfRow, double tileWidth) {
+    return IntrinsicHeight(
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          for (var tileIndex = 0;
+              tileIndex < tilesOfRow.length;
+              tileIndex++) ...[
+            if (tileIndex > 0) const FlesselGap.m(),
+            SizedBox(
+              width: tileWidth,
+              child: _OptionTile(data: tilesOfRow[tileIndex]),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
 }
 
-class _ModeTile extends StatelessWidget {
-  const _ModeTile({required this.data});
+class _OptionTile extends StatelessWidget {
+  const _OptionTile({required this.data});
 
-  /// Every mode tile stands on the promo surface in its success variant.
+  /// Every option tile stands on the promo surface in its success variant.
   static const FlesselSurface _surface = FlesselSurface.s21;
   static const FlesselVariant _variant = FlesselVariant.success;
 
@@ -277,15 +298,15 @@ class _ModeTile extends StatelessWidget {
   /// The icon is as high as a flag, so the rows of a tile keep one rhythm.
   static const double _iconSize = LangwijLayout.modeTileFlagHeight;
 
-  final _ModeTileData data;
+  final _OptionTileData data;
 
   @override
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
     final fg = t.surfaceOf(_surface).resolve(_variant).fg;
 
-    // The library's tile stands on the tile surface only, so a mode tile is
-    // drawn as a card on its own surface.
+    // The library's tile stands on the tile surface only, so an option tile
+    // is drawn as a card on its own surface.
     return FlesselCard(
       surface: _surface,
       colorVariant: _variant,
@@ -324,9 +345,9 @@ class _ModeTile extends StatelessWidget {
   }
 
   /// Null for the flag of a language that has none.
-  Widget? _buildPartOrNull(_ModeTilePart part, Color fg) {
+  Widget? _buildPartOrNull(_OptionTilePart part, Color fg) {
     return switch (part) {
-      _ModeTileFlag(:final langCode) =>
+      _OptionTileFlag(:final langCode) =>
         switch (LangCodes.flagCountryCode(langCode)) {
           final countryCode? => LangwijFlag(
               countryCode: countryCode,
@@ -334,118 +355,11 @@ class _ModeTile extends StatelessWidget {
             ),
           null => null,
         },
-      _ModeTileArrowToAnswer() => PhosphorIcon(
+      _OptionTileArrowToAnswer() => PhosphorIcon(
           PhosphorIconsRegular.arrowDown,
           size: _arrowToAnswerSize,
           color: fg,
         ),
     };
-  }
-}
-
-class _CountTileGrid extends StatelessWidget {
-  const _CountTileGrid({
-    required this.counts,
-    required this.labels,
-    required this.icons,
-    required this.accentIndex,
-    required this.onSelect,
-  });
-
-  final List<int> counts;
-  final List<String> labels;
-  final List<IconData> icons;
-  final int accentIndex;
-  final ValueChanged<int> onSelect;
-
-  @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final tileWidth =
-            (constraints.maxWidth - FlesselLayout.gapM) / 2;
-        final rows = <Widget>[];
-
-        for (var i = 0; i < counts.length; i += 2) {
-          final row = <Widget>[
-            SizedBox(
-              width: tileWidth,
-              child: _CountTile(
-                label: labels[i],
-                icon: icons[i],
-                isAccent: i == accentIndex,
-                onTap: () => onSelect(counts[i]),
-              ),
-            ),
-          ];
-          if (i + 1 < counts.length) {
-            row.add(const FlesselGap.m());
-            row.add(
-              SizedBox(
-                width: tileWidth,
-                child: _CountTile(
-                  label: labels[i + 1],
-                  icon: icons[i + 1],
-                  isAccent: (i + 1) == accentIndex,
-                  onTap: () => onSelect(counts[i + 1]),
-                ),
-              ),
-            );
-          }
-          if (rows.isNotEmpty) rows.add(const FlesselGap.m());
-          rows.add(Row(children: row));
-        }
-
-        return Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: rows,
-        );
-      },
-    );
-  }
-}
-
-class _CountTile extends StatelessWidget {
-  const _CountTile({
-    required this.label,
-    required this.icon,
-    required this.isAccent,
-    required this.onTap,
-  });
-
-  final String label;
-  final IconData icon;
-  final bool isAccent;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final t = FlesselThemes.of(context);
-    final fg = isAccent ? t.surface02.accent.fg : t.fg;
-
-    return FlesselTile(
-      variant: isAccent ? FlesselVariant.accent : FlesselVariant.regular,
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.all(FlesselLayout.gapM),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            PhosphorIcon(
-              icon,
-              size: LangwijLayout.modeTileIconSize,
-              color: fg,
-            ),
-            const FlesselGap.s(),
-            Text(
-              label,
-              style: FlesselFonts.contentMAccent.copyWith(color: fg),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-      ),
-    );
   }
 }

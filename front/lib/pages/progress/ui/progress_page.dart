@@ -98,17 +98,13 @@ void _confirmResetLanguageProgress(
       : langCode;
   showFlesselBottomSheet<void>(
     context: context,
+    title: l10n.language_resetConfirmTitle,
     builder: (sheetContext) {
       final t = FlesselThemes.of(sheetContext);
       return Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text(
-            l10n.language_resetConfirmTitle,
-            style: FlesselFonts.contentXxlAccent.copyWith(color: t.fg),
-          ),
-          const FlesselGap.m(),
           Text(
             l10n.language_resetConfirmBody(langName),
             style: FlesselFonts.contentM.copyWith(color: t.fg),

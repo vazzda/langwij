@@ -1,7 +1,6 @@
 class LangwijLayout {
   LangwijLayout._();
 
-  static const double modeTileIconSize = 45.0;
   static const double modeTileFlagWidth = 45.0;
   static const double modeTileFlagHeight = 28.0;
   static const double modeTileFlagBorderRadius = 4.0;
@@ -49,10 +48,6 @@ class LangwijLayout {
   static const double langProgressionFlagWidth = 30.0;
   static const double langProgressionFlagHeight = 20.0;
   static const double langProgressionFlagBorderRadius = 2.0;
-  static const double langBoxPaddingLeft = 12.0;
-  static const double langBoxPaddingTop = 14.0;
-  static const double langBoxPaddingRight = 12.0;
-  static const double langBoxPaddingBottom = 8.0;
   static const double langPickerQualitySegmentWidth = 56.0;
 
   static const double vocabProgressLabelWidth = 48.0;

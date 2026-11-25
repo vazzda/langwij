@@ -90,9 +90,10 @@ class _LanguagePageState extends ConsumerState<LanguagePage> {
             ),
             children: [
               _LangPairSelector(
-                packByCode: packByCode,
                 nativeCode: nativeCode,
                 targetCode: targetCode,
+                nativeName: _languageNameOf(nativeCode, packByCode, l10n),
+                targetName: _languageNameOf(targetCode, packByCode, l10n),
                 l10n: l10n,
                 onNativeSelected: (code) => _showLanguagePairAndPersistIfValid(
                   displayedLanguagePair.withNativeLangPicked(code),
@@ -110,12 +111,46 @@ class _LanguagePageState extends ConsumerState<LanguagePage> {
                 availableCourseIds: availableCourseIds,
                 l10n: l10n,
               ),
+              const FlesselGap.l(),
+              _LanguageQualityCard(
+                languageName: _languageNameOf(nativeCode, packByCode, l10n),
+                humanVerifiedPercent:
+                    _humanVerifiedPercentOf(nativeCode, packByCode),
+              ),
+              _LanguageQualityCard(
+                languageName: _languageNameOf(targetCode, packByCode, l10n),
+                humanVerifiedPercent:
+                    _humanVerifiedPercentOf(targetCode, packByCode),
+              ),
             ],
           );
         },
       ),
     );
   }
+}
+
+/// A language that is not among the listed packs counts as made without
+/// human checking.
+const int _humanVerifiedPercentOfUnlistedLanguage = 0;
+
+/// The name of a language in the interface language, or its code when the
+/// language is not among the listed packs.
+String _languageNameOf(
+  String languageCode,
+  Map<String, LanguagePack> packByCode,
+  AppLocalizations l10n,
+) {
+  final pack = packByCode[languageCode];
+  return pack != null ? l10n.langLabel(pack.labelKey) : languageCode;
+}
+
+int _humanVerifiedPercentOf(
+  String languageCode,
+  Map<String, LanguagePack> packByCode,
+) {
+  return packByCode[languageCode]?.humanVerified ??
+      _humanVerifiedPercentOfUnlistedLanguage;
 }
 
 List<Widget> _buildLanguageWarnings({
@@ -144,22 +179,33 @@ List<Widget> _buildLanguageWarnings({
   return warnings;
 }
 
+/// The pair of chosen languages: the language spoken above, the language
+/// being learned below, each under its centred title, with the arrow from
+/// the one to the other between them.
 class _LangPairSelector extends StatelessWidget {
   const _LangPairSelector({
-    required this.packByCode,
     required this.nativeCode,
     required this.targetCode,
+    required this.nativeName,
+    required this.targetName,
     required this.l10n,
     required this.onNativeSelected,
     required this.onTargetSelected,
   });
 
-  final Map<String, LanguagePack> packByCode;
   final String nativeCode;
   final String targetCode;
+  final String nativeName;
+  final String targetName;
   final AppLocalizations l10n;
   final ValueChanged<String> onNativeSelected;
   final ValueChanged<String> onTargetSelected;
+
+  /// The heart stands in for the arrow where Serbian is the language spoken,
+  /// and where a Russian speaker learns Serbian.
+  bool get _showsHeartInPlaceOfArrow =>
+      nativeCode == LangCodes.serbian ||
+      (nativeCode == LangCodes.russian && targetCode == LangCodes.serbian);
 
   @override
   Widget build(BuildContext context) {
@@ -168,196 +214,161 @@ class _LangPairSelector extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          l10n.language_iSpeak.toUpperCase(),
-          style: FlesselFonts.contentTitle.copyWith(color: t.fg),
-        ),
+        _buildCentredTitle(l10n.language_iSpeak, t),
         const FlesselGap.xs(),
-        IntrinsicHeight(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Expanded(
-                child: _LangBox(
-                  selectedLabel: packByCode[nativeCode] != null
-                      ? l10n.langLabel(packByCode[nativeCode]!.labelKey)
-                      : nativeCode,
-                  langCode: nativeCode,
-                  onTap: () async {
-                    final picked = await context.push<String>(
-                      AppRoutes.langPicker,
-                      extra: LangPickerMode.native,
-                    );
-                    if (picked != null) onNativeSelected(picked);
-                  },
-                ),
-              ),
-              const FlesselGap.s(),
-              Expanded(
-                child: _QualityBlock(
-                  humanVerified: packByCode[nativeCode]?.humanVerified ?? 0,
-                ),
-              ),
-            ],
+        _ChosenLanguageRow(
+          languageCode: nativeCode,
+          languageName: nativeName,
+          onTap: () => _openPickerAndReportPick(
+            context,
+            LangPickerMode.native,
+            onNativeSelected,
           ),
         ),
-        const FlesselGap.xs(),
-        Transform.translate(
-          offset: const Offset(0, FlesselLayout.gapS),
-          child: Center(
-            child: Icon(
-              nativeCode == LangCodes.serbian ||
-                      (nativeCode == LangCodes.russian &&
-                          targetCode == LangCodes.serbian)
-                  ? PhosphorIconsFill.heart
-                  : PhosphorIconsBold.arrowDown,
-              color: t.fg,
-              size: FlesselLayout.iconL,
-            ),
+        const FlesselGap.s(),
+        Center(
+          child: Icon(
+            _showsHeartInPlaceOfArrow
+                ? PhosphorIconsFill.heart
+                : PhosphorIconsBold.arrowDown,
+            color: t.fg,
+            size: FlesselLayout.iconL,
           ),
         ),
-        Text(
-          l10n.language_iLearn.toUpperCase(),
-          style: FlesselFonts.contentTitle.copyWith(color: t.fg),
-        ),
+        const FlesselGap.s(),
+        _buildCentredTitle(l10n.language_iLearn, t),
         const FlesselGap.xs(),
-        IntrinsicHeight(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Expanded(
-                child: _LangBox(
-                  selectedLabel: packByCode[targetCode] != null
-                      ? l10n.langLabel(packByCode[targetCode]!.labelKey)
-                      : targetCode,
-                  langCode: targetCode,
-                  onTap: () async {
-                    final picked = await context.push<String>(
-                      AppRoutes.langPicker,
-                      extra: LangPickerMode.target,
-                    );
-                    if (picked != null) onTargetSelected(picked);
-                  },
-                ),
-              ),
-              const FlesselGap.s(),
-              Expanded(
-                child: _QualityBlock(
-                  humanVerified: packByCode[targetCode]?.humanVerified ?? 0,
-                ),
-              ),
-            ],
+        _ChosenLanguageRow(
+          languageCode: targetCode,
+          languageName: targetName,
+          onTap: () => _openPickerAndReportPick(
+            context,
+            LangPickerMode.target,
+            onTargetSelected,
           ),
         ),
       ],
     );
   }
+
+  Widget _buildCentredTitle(String title, FlesselThemeData t) {
+    return Text(
+      title.toUpperCase(),
+      textAlign: TextAlign.center,
+      style: FlesselFonts.contentTitle.copyWith(color: t.fg),
+    );
+  }
+
+  Future<void> _openPickerAndReportPick(
+    BuildContext context,
+    LangPickerMode pickerMode,
+    ValueChanged<String> onLanguagePicked,
+  ) async {
+    final pickedLanguageCode = await context.push<String>(
+      AppRoutes.langPicker,
+      extra: pickerMode,
+    );
+    if (pickedLanguageCode != null) onLanguagePicked(pickedLanguageCode);
+  }
 }
 
-class _LangBox extends StatelessWidget {
-  const _LangBox({
-    required this.selectedLabel,
-    required this.langCode,
+/// A chosen language of the pair: its flag and its name in one centred row.
+/// A tap opens the picker. The row paints no surface of its own.
+class _ChosenLanguageRow extends StatelessWidget {
+  const _ChosenLanguageRow({
+    required this.languageCode,
+    required this.languageName,
     required this.onTap,
   });
 
-  final String selectedLabel;
-  final String langCode;
+  final String languageCode;
+  final String languageName;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
-    final countryCode = LangCodes.flagCountryCode(langCode);
-    return GestureDetector(
+    final countryCode = LangCodes.flagCountryCode(languageCode);
+
+    return FlesselCard(
+      variant: FlesselCardVariant.transparent,
+      margin: FlesselSize.none,
       onTap: onTap,
-      child: Container(
-            padding: const EdgeInsets.fromLTRB(LangwijLayout.langBoxPaddingLeft, LangwijLayout.langBoxPaddingTop, LangwijLayout.langBoxPaddingRight, LangwijLayout.langBoxPaddingBottom),
-            decoration: BoxDecoration(
-              color: t.surface01.regular.bg.colorValue,
-              border: Border.all(
-                color: t.surface02.regular.border,
-                width: t.tileBorderWidth,
-              ),
-              borderRadius: BorderRadius.circular(t.tileBorderRadius),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          if (countryCode != null) ...[
+            LangwijFlag(
+              countryCode: countryCode,
+              size: LangwijFlagSize.large,
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                if (countryCode != null)
-                  LangwijFlag(
-                    countryCode: countryCode,
-                    size: LangwijFlagSize.large,
-                  )
-                else
-                  Icon(PhosphorIconsRegular.caretDown, color: t.fgSecondary, size: 18),
-                const FlesselGap.xs(),
-                Text(
-                  selectedLabel,
-                  style: FlesselFonts.contentLAccent
-                      .copyWith(color: t.fg),
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.center,
-                ),
-              ],
+            const FlesselGap.s(),
+          ],
+          Flexible(
+            child: Text(
+              languageName,
+              style: FlesselFonts.contentLAccent.copyWith(color: t.fg),
+              overflow: TextOverflow.ellipsis,
             ),
           ),
-        );
+        ],
+      ),
+    );
   }
 }
 
-class _QualityBlock extends StatelessWidget {
-  const _QualityBlock({required this.humanVerified});
+/// The shares of a language's dictionary made by humans and by AI, in a card
+/// across the page under the language's name.
+class _LanguageQualityCard extends StatelessWidget {
+  const _LanguageQualityCard({
+    required this.languageName,
+    required this.humanVerifiedPercent,
+  });
 
-  final int humanVerified;
+  static const int _fullPercent = 100;
+
+  /// From this share of human-made entries on, the human line stands first
+  /// and is the accented one; below it the AI line is.
+  static const int _humanVerifiedPercentThatLeads = 80;
+
+  final String languageName;
+  final int humanVerifiedPercent;
 
   @override
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
     final l10n = AppLocalizations.of(context)!;
-    final aiPct = 100 - humanVerified;
-    final humanFirst = humanVerified >= 80;
+    final aiMadePercent = _fullPercent - humanVerifiedPercent;
+    final isHumanLineLeading =
+        humanVerifiedPercent >= _humanVerifiedPercentThatLeads;
 
-    final humanRow = _qualityRow(
+    final humanLine = _qualityRow(
       icon: PhosphorIconsRegular.finnTheHuman,
-      label: l10n.language_qualityHuman(humanVerified),
-      style: humanFirst
+      label: l10n.language_qualityHuman(humanVerifiedPercent),
+      style: isHumanLineLeading
           ? FlesselFonts.contentSAccent
           : FlesselFonts.contentS,
       color: t.fg,
     );
-
-    final aiColor = aiPct > 0 ? t.surface01.danger.fg : t.fg;
-    final aiRow = _qualityRow(
+    final aiLine = _qualityRow(
       icon: PhosphorIconsRegular.robot,
-      label: l10n.language_qualityAi(aiPct),
-      style: humanFirst
+      label: l10n.language_qualityAi(aiMadePercent),
+      style: isHumanLineLeading
           ? FlesselFonts.contentS
           : FlesselFonts.contentSAccent,
-      color: aiColor,
+      color: aiMadePercent > 0 ? t.surface01.danger.fg : t.fg,
     );
 
-    return Container(
-      padding: const EdgeInsets.symmetric(
-        horizontal: FlesselLayout.gapS,
-        vertical: FlesselLayout.gapXs,
-      ),
-      decoration: BoxDecoration(
-        color: t.surface01.regular.bg.colorValue,
-        border: Border.all(
-          color: t.surface02.regular.border,
-          width: t.tileBorderWidth,
-        ),
-        borderRadius: BorderRadius.circular(t.tileBorderRadius),
-      ),
+    return FlesselCard(
+      header: languageName,
+      headerInside: true,
+      margin: FlesselSize.s,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          if (humanFirst) ...[humanRow, const FlesselGap.xxs(), aiRow]
-          else ...[aiRow, const FlesselGap.xxs(), humanRow],
-        ],
+        mainAxisSize: MainAxisSize.min,
+        children: isHumanLineLeading
+            ? [humanLine, const FlesselGap.xxs(), aiLine]
+            : [aiLine, const FlesselGap.xxs(), humanLine],
       ),
     );
   }
