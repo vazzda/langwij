@@ -115,7 +115,7 @@ class LangwijDrillGroupCard extends StatelessWidget {
                             ? t.surface21.regular.bg.colorValue
                             : daysDiff == 1
                                 ? t.surface21.accent.bg.colorValue
-                                : t.surface21.danger.bg.colorValue;
+                                : t.dangerColor;
                         return Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [

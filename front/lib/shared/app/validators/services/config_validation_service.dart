@@ -16,7 +16,7 @@ class ConfigValidationService {
     required Map<String, dynamic> levelsData,
   }) {
     final coreIds = _validateDictionaryAndLevels(dictionaryData, levelsData);
-    _validatePlanStructure(planData, coreIds.levelIds);
+    _validatePlanStructure(planData, coreIds.levelIds, coreIds.termIds);
     return coreIds;
   }
 
@@ -43,6 +43,7 @@ class ConfigValidationService {
     _validatePlanFull(
       planData,
       coreIds.levelIds,
+      coreIds.termIds,
       translationsByCode.keys.toSet(),
     );
     for (final entry in translationsByCode.entries) {
@@ -289,15 +290,18 @@ class ConfigValidationService {
   static void _validatePlanStructure(
     Map<String, dynamic> data,
     Set<String> levelIds,
+    Set<String> termIds,
   ) {
     final declaredCodes = _validatePlanLanguageEntries(data);
     _validatePlanPublicLanguages(data, declaredCodes);
+    _validatePlanLanguageCardTerms(data, termIds);
     _validatePlanCourses(data, levelIds);
   }
 
   static void _validatePlanFull(
     Map<String, dynamic> data,
     Set<String> levelIds,
+    Set<String> termIds,
     Set<String> loadedCodes,
   ) {
     final declaredCodes = _validatePlanLanguageEntries(data);
@@ -310,6 +314,7 @@ class ConfigValidationService {
       }
     }
     _validatePlanPublicLanguages(data, declaredCodes);
+    _validatePlanLanguageCardTerms(data, termIds);
     _validatePlanCourses(data, levelIds);
   }
 
@@ -352,6 +357,18 @@ class ConfigValidationService {
       if (nativeNote != null && nativeNote is! String) {
         throw ConfigValidationError(
           'plan.json: languages[$i].nativeNote must be a string',
+        );
+      }
+      final nativeNoteTitle = lang['nativeNoteTitle'];
+      if (nativeNoteTitle != null && nativeNoteTitle is! String) {
+        throw ConfigValidationError(
+          'plan.json: languages[$i].nativeNoteTitle must be a string',
+        );
+      }
+      if ((nativeNote == null) != (nativeNoteTitle == null)) {
+        throw ConfigValidationError(
+          'plan.json: languages[$i] must state "nativeNote" and '
+          '"nativeNoteTitle" together',
         );
       }
       final aiGenerated = lang['aiGenerated'];
@@ -412,6 +429,44 @@ class ConfigValidationService {
     }
   }
 
+  /// The terms whose words the card of a chosen language shows: each must be
+  /// a term of dictionary.json, listed once.
+  static void _validatePlanLanguageCardTerms(
+    Map<String, dynamic> data,
+    Set<String> termIds,
+  ) {
+    final cardTerms = data['language_card_terms'];
+    if (cardTerms == null) {
+      throw const ConfigValidationError(
+        'plan.json: missing required key "language_card_terms"',
+      );
+    }
+    if (cardTerms is! List<dynamic>) {
+      throw const ConfigValidationError(
+        'plan.json: "language_card_terms" must be an array',
+      );
+    }
+    final listedTermIds = <String>{};
+    for (int i = 0; i < cardTerms.length; i++) {
+      final termId = cardTerms[i];
+      if (termId is! String) {
+        throw ConfigValidationError(
+          'plan.json: language_card_terms[$i] must be a string',
+        );
+      }
+      if (!termIds.contains(termId)) {
+        throw ConfigValidationError(
+          'plan.json: language_card_terms[$i] = "$termId" does not exist in dictionary.json',
+        );
+      }
+      if (!listedTermIds.add(termId)) {
+        throw ConfigValidationError(
+          'plan.json: language_card_terms lists "$termId" twice',
+        );
+      }
+    }
+  }
+
   static void _validatePlanCourses(
     Map<String, dynamic> data,
     Set<String> levelIds,
@@ -433,6 +488,18 @@ class ConfigValidationService {
       if (note != null && note is! String) {
         throw ConfigValidationError(
           'plan.json: course "$courseId".note must be a string',
+        );
+      }
+      final noteTitle = course['noteTitle'];
+      if (noteTitle != null && noteTitle is! String) {
+        throw ConfigValidationError(
+          'plan.json: course "$courseId".noteTitle must be a string',
+        );
+      }
+      if ((note == null) != (noteTitle == null)) {
+        throw ConfigValidationError(
+          'plan.json: course "$courseId" must state "note" and "noteTitle" '
+          'together',
         );
       }
       final free = course['free'];

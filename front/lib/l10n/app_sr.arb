@@ -83,8 +83,8 @@
 
   "language_iSpeak": "Govorim",
   "language_iLearn": "Učim",
-  "language_qualityAi": "{aiPct}% napravio AI",
-  "language_qualityHuman": "{humanPct}% napravili ljudi",
+  "language_iSpeakLanguage": "Govorim {language}",
+  "language_iLearnLanguage": "Učim {language}",
   "language_progression": "Napredovanje",
   "language_incompleteDictionaries": "Nepotpuni rečnici",
   "language_termsCount": "{done}/{total} termina",
@@ -139,10 +139,11 @@
   "settings_seedError": "Učitavanje podataka nije uspelo: {message}",
   "settings_contentDeleted": "Sadržaj je obrisan",
 
-  "language_aiDictionaryWarning": "Rečnik je napravila veštačka inteligencija. Moguće su greške. Provera od strane ljudi je u toku — koristiš na sopstvenu odgovornost.",
-  "language_pairUnavailable": "Ovaj jezički par još nije dostupan.",
+  "language_aiWarningTitle": "AI upozorenje",
+  "language_aiDictionaryWarning":"Rečnik je napravila veštačka inteligencija. Moguće su greške. Provera od strane ljudi je u toku — koristiš na sopstvenu odgovornost.",
   "language_aiGeneratedTitle": "Napravio AI",
   "language_aiGeneratedNote": "Špilove ovih jezika napravio je AI, a stručnjaci su ih proverili samo delimično. Možeš da ih koristiš: uglavnom su dobri, ali greške su i dalje moguće.",
+  "language_inDevelopmentTitle": "U razvoju",
 
   "termCard_gender": "Rod: {gender}",
   "termCard_example": "Primer:",

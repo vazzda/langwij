@@ -229,6 +229,6 @@ class LangwijVocabDeckCard extends StatelessWidget {
     if (daysSinceLastRound == _daysSinceLastRoundCountedAsYesterday) {
       return t.surface21.accent.bg.colorValue;
     }
-    return t.surface21.danger.bg.colorValue;
+    return t.dangerColor;
   }
 }

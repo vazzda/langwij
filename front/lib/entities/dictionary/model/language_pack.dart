@@ -1,6 +1,7 @@
 import 'deck_meta.dart';
 import 'lang_entry.dart';
 import 'level_meta.dart';
+import 'plan_note.dart';
 import 'vocabulary_level_segment_meta.dart';
 
 class LanguagePack {
@@ -26,7 +27,9 @@ class LanguagePack {
   final Map<String, LevelMeta> levelMeta;
   final Map<String, DeckMeta> deckMeta;
   final Map<String, VocabularyLevelSegmentMeta> vocabularyLevelSegmentMeta;
-  final String? nativeNote;
+
+  /// The note for those who speak this language, or none.
+  final PlanNote? nativeNote;
   final int humanVerified;
 
   /// Whether the language is listed among the AI generated ones, apart from

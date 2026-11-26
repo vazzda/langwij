@@ -4,16 +4,23 @@ import 'package:flutter/services.dart';
 
 import '../model/language_entry.dart';
 import '../model/level_tier.dart';
+import '../model/plan_note.dart';
 
 class PlanRepository {
   static const String _planPath = 'assets/data/plan.json';
   static const String _aiGeneratedLanguageKey = 'aiGenerated';
   static const bool _isAiGeneratedWhenNotStated = false;
+  static const String _languageCardTermsKey = 'language_card_terms';
+  static const String _nativeNoteTitleKey = 'nativeNoteTitle';
+  static const String _nativeNoteTextKey = 'nativeNote';
+  static const String _courseNoteTitleKey = 'noteTitle';
+  static const String _courseNoteTextKey = 'note';
 
   Map<String, List<String>>? _cachedCourses;
-  Map<String, String>? _cachedCourseNotes;
+  Map<String, PlanNote>? _cachedCourseNotes;
   List<String>? _cachedPublicLanguages;
   List<LanguageEntry>? _cachedLanguages;
+  List<String>? _cachedLanguageCardTermIds;
 
   Future<void> _load() async {
     if (_cachedCourses != null) return;
@@ -29,13 +36,20 @@ class PlanRepository {
             humanVerified: map['humanVerified'] as int,
             isAiGenerated: map[_aiGeneratedLanguageKey] as bool? ??
                 _isAiGeneratedWhenNotStated,
-            nativeNote: map['nativeNote'] as String?,
+            nativeNote: PlanNote.fromJsonOrNull(
+              map,
+              titleKey: _nativeNoteTitleKey,
+              textKey: _nativeNoteTextKey,
+            ),
           );
         })
         .toList();
 
     _cachedPublicLanguages =
         (data['public_languages'] as List<dynamic>).cast<String>();
+
+    _cachedLanguageCardTermIds =
+        (data[_languageCardTermsKey] as List<dynamic>).cast<String>();
 
     _cachedCourses = {};
     _cachedCourseNotes = {};
@@ -44,7 +58,11 @@ class PlanRepository {
       final courseMap = entry.value as Map<String, dynamic>;
       final freeList = (courseMap['free'] as List<dynamic>).cast<String>();
       _cachedCourses![entry.key] = freeList;
-      final note = courseMap['note'] as String?;
+      final note = PlanNote.fromJsonOrNull(
+        courseMap,
+        titleKey: _courseNoteTitleKey,
+        textKey: _courseNoteTextKey,
+      );
       if (note != null) {
         _cachedCourseNotes![entry.key] = note;
       }
@@ -68,14 +86,16 @@ class PlanRepository {
     return _cachedLanguages!;
   }
 
-  Future<String?> getCourseNote(String courseId) async {
+  /// The ids of the terms whose words the card of a chosen language shows,
+  /// in the order they are shown.
+  Future<List<String>> getLanguageCardTermIds() async {
     await _load();
-    return _cachedCourseNotes![courseId];
+    return _cachedLanguageCardTermIds!;
   }
 
-  Future<Set<String>> getAvailableCourseIds() async {
+  Future<PlanNote?> getCourseNote(String courseId) async {
     await _load();
-    return _cachedCourses!.keys.toSet();
+    return _cachedCourseNotes![courseId];
   }
 
   Future<Map<String, LevelTier>> getTiers(

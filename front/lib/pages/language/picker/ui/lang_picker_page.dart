@@ -8,7 +8,6 @@ import 'package:langwij/l10n/app_localizations_ext.dart';
 import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/shared/app/config/config.dart';
 import 'package:langwij/shared/nav_bar/ui/langwij_scaffold.dart';
-import 'package:langwij/shared/app/layout/layout.dart';
 import 'package:langwij/shared/flag/ui/flag.dart';
 
 enum LangPickerMode { native, target }
@@ -35,28 +34,66 @@ class LangPickerPage extends ConsumerWidget {
         loading: () => const Center(child: FlesselSpinner()),
         error: (_, _) => Center(child: Text(l10n.loadError)),
         data: (packs) {
-          final packsWithoutWarning =
-              packs.where((pack) => !pack.isAiGenerated).toList();
-          final aiGeneratedPacks =
-              packs.where((pack) => pack.isAiGenerated).toList();
+          final publicPacksWithoutWarning = packs
+              .where((pack) => pack.isPublic && !pack.isAiGenerated)
+              .toList();
+          final publicAiGeneratedPacks = packs
+              .where((pack) => pack.isPublic && pack.isAiGenerated)
+              .toList();
+          // Languages that are not public are among the packs only while
+          // developer mode is on.
+          final packsInDevelopment =
+              packs.where((pack) => !pack.isPublic).toList();
 
           return ListView(
             padding: FlesselLayout.screenPaddingInsets(context).copyWith(
               bottom: FlesselLayout.screenPaddingInsets(context).bottom + LangwijScaffold.navbarSpacer(context),
             ),
             children: [
-              ..._buildTilesOfLanguages(context, l10n, packsWithoutWarning),
-              if (aiGeneratedPacks.isNotEmpty) ...[
-                if (packsWithoutWarning.isNotEmpty) const FlesselGap.l(),
-                _AiGeneratedSectionHeading(l10n: l10n),
-                const FlesselGap.s(),
-                ..._buildTilesOfLanguages(context, l10n, aiGeneratedPacks),
-              ],
+              ..._buildTilesOfLanguages(
+                context,
+                l10n,
+                publicPacksWithoutWarning,
+              ),
+              ..._buildTitledSection(
+                context,
+                l10n,
+                icon: PhosphorIconsBold.robot,
+                title: l10n.language_aiGeneratedTitle,
+                note: l10n.language_aiGeneratedNote,
+                packs: publicAiGeneratedPacks,
+              ),
+              ..._buildTitledSection(
+                context,
+                l10n,
+                icon: PhosphorIconsBold.hammer,
+                title: l10n.language_inDevelopmentTitle,
+                packs: packsInDevelopment,
+              ),
             ],
           );
         },
       ),
     );
+  }
+
+  /// A section of languages under a heading. Nothing when the section holds
+  /// no language.
+  List<Widget> _buildTitledSection(
+    BuildContext context,
+    AppLocalizations l10n, {
+    required IconData icon,
+    required String title,
+    String? note,
+    required List<LanguagePack> packs,
+  }) {
+    if (packs.isEmpty) return const [];
+    return [
+      const FlesselGap.xl(),
+      _SectionHeading(icon: icon, title: title, note: note),
+      const FlesselGap.s(),
+      ..._buildTilesOfLanguages(context, l10n, packs),
+    ];
   }
 
   /// The tiles of the given languages, with a gap between each two.
@@ -78,12 +115,19 @@ class LangPickerPage extends ConsumerWidget {
   }
 }
 
-/// The heading of the AI generated languages: the title and the note that
-/// tells what to expect of their decks.
-class _AiGeneratedSectionHeading extends StatelessWidget {
-  const _AiGeneratedSectionHeading({required this.l10n});
+/// The heading of a titled section of languages: its icon beside its title
+/// and, where the section has one, the note that warns what to expect of
+/// its languages, in a card of the danger kind.
+class _SectionHeading extends StatelessWidget {
+  const _SectionHeading({
+    required this.icon,
+    required this.title,
+    this.note,
+  });
 
-  final AppLocalizations l10n;
+  final IconData icon;
+  final String title;
+  final String? note;
 
   @override
   Widget build(BuildContext context) {
@@ -92,12 +136,32 @@ class _AiGeneratedSectionHeading extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          l10n.language_aiGeneratedTitle.toUpperCase(),
-          style: FlesselFonts.contentTitle.copyWith(color: t.fg),
+        Row(
+          children: [
+            Icon(icon, size: FlesselLayout.iconM, color: t.fg),
+            const FlesselGap.xs(),
+            Expanded(
+              child: Text(
+                title.toUpperCase(),
+                style: FlesselFonts.contentTitle.copyWith(color: t.fg),
+              ),
+            ),
+          ],
         ),
-        const FlesselGap.xs(),
-        FlesselNote(text: l10n.language_aiGeneratedNote),
+        if (note case final noteText?) ...[
+          const FlesselGap.xs(),
+          FlesselCard(
+            surface: FlesselSurface.s21,
+            colorVariant: FlesselVariant.danger,
+            margin: FlesselSize.none,
+            child: Text(
+              noteText,
+              style: FlesselFonts.contentSAccent.copyWith(
+                color: t.surface21.danger.fg,
+              ),
+            ),
+          ),
+        ],
       ],
     );
   }
@@ -118,7 +182,6 @@ class _LangPickerTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = FlesselThemes.of(context);
     final countryCode = LangCodes.flagCountryCode(pack.code);
-    final aiPct = 100 - pack.humanVerified;
 
     return GestureDetector(
       onTap: onTap,
@@ -140,61 +203,26 @@ class _LangPickerTile extends StatelessWidget {
                 size: LangwijFlagSize.large,
               ),
             const FlesselGap.m(),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    label,
-                    style: FlesselFonts.contentLAccent
-                        .copyWith(color: t.fg),
-                  ),
-                  const FlesselGap.xxs(),
-                  Row(
-                    children: [
-                      _qualitySegment(
-                        icon: PhosphorIconsBold.smiley,
-                        pct: pack.humanVerified,
-                        color: t.fg,
-                      ),
-                      const FlesselGap.s(),
-                      _qualitySegment(
-                        icon: PhosphorIconsBold.robot,
-                        pct: aiPct,
-                        color: aiPct > 0 ? t.surface01.danger.fg : t.fg,
-                      ),
-                      if (pack.code == LangCodes.serbian) ...[
-                        const FlesselGap.s(),
-                        const Text('❤️'),
-                      ],
-                    ],
-                  ),
-                ],
+            Flexible(
+              child: Text(
+                label,
+                style: FlesselFonts.contentLAccent.copyWith(color: t.fg),
               ),
             ),
+            if (pack.code == LangCodes.serbian) ...[
+              const FlesselGap.s(),
+              const Text('❤️'),
+            ],
+            if (pack.isAiGenerated) ...[
+              const FlesselGap.s(),
+              Icon(
+                PhosphorIconsBold.robot,
+                size: FlesselLayout.iconM,
+                color: t.dangerColor,
+              ),
+            ],
           ],
         ),
-      ),
-    );
-  }
-
-  static Widget _qualitySegment({
-    required IconData icon,
-    required int pct,
-    required Color color,
-  }) {
-    return SizedBox(
-      width: LangwijLayout.langPickerQualitySegmentWidth,
-      child: Row(
-        children: [
-          Icon(icon, size: FlesselLayout.iconS, color: color),
-          const FlesselGap.xs(),
-          Text(
-            '$pct%',
-            style: FlesselFonts.contentSAccent.copyWith(color: color),
-          ),
-        ],
       ),
     );
   }

@@ -83,8 +83,8 @@
 
   "language_iSpeak": "Ich spreche",
   "language_iLearn": "Ich lerne",
-  "language_qualityAi": "{aiPct}% KI-erstellt",
-  "language_qualityHuman": "{humanPct}% von Menschen",
+  "language_iSpeakLanguage": "Ich spreche {language}",
+  "language_iLearnLanguage": "Ich lerne {language}",
   "language_progression": "Verlauf",
   "language_incompleteDictionaries": "Unvollständige Wörterbücher",
   "language_termsCount": "{done}/{total} Begriffe",
@@ -139,10 +139,11 @@
   "settings_seedError": "Testdaten fehlgeschlagen: {message}",
   "settings_contentDeleted": "Inhalte gelöscht",
 
-  "language_aiDictionaryWarning": "KI-generiertes Wörterbuch. Kann Fehler enthalten. Die Prüfung durch Menschen läuft — Nutzung auf eigene Gefahr.",
-  "language_pairUnavailable": "Dieses Sprachpaar ist noch nicht verfügbar.",
+  "language_aiWarningTitle": "KI-Warnung",
+  "language_aiDictionaryWarning":"KI-generiertes Wörterbuch. Kann Fehler enthalten. Die Prüfung durch Menschen läuft — Nutzung auf eigene Gefahr.",
   "language_aiGeneratedTitle": "KI-generiert",
   "language_aiGeneratedNote": "Die Stapel dieser Sprachen wurden von KI erstellt und nur teilweise von Fachleuten geprüft. Du kannst sie verwenden: Sie sind größtenteils gut, aber Fehler sind weiterhin möglich.",
+  "language_inDevelopmentTitle": "In Entwicklung",
 
   "termCard_gender": "Genus: {gender}",
   "termCard_example": "Beispiel:",

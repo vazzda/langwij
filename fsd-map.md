@@ -36,6 +36,7 @@ lib/
 │   │   │   ├── level.dart                           Level data class
 │   │   │   ├── level_meta.dart                      LevelMeta
 │   │   │   ├── level_tier.dart                      LevelTier enum
+│   │   │   ├── plan_note.dart                       PlanNote (title and text of a note of plan.json)
 │   │   │   ├── term.dart                            Term data class
 │   │   │   ├── translation_entry.dart               TranslationEntry
 │   │   │   ├── vocab_deck_model.dart                VocabDeckModel

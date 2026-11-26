@@ -42,13 +42,14 @@ class LangwijLayout {
   static const double langFlagHeight = 44.0;
   static const double langFlagBorderRadius = 4.0;
   static const double langArrowIconSize = 20.0;
-  static const double langQualityIconSize = 25.0;
   static const double langProgressLabelWidth = 72.0;
   static const double langProgressPercentWidth = 36.0;
   static const double langProgressionFlagWidth = 30.0;
   static const double langProgressionFlagHeight = 20.0;
   static const double langProgressionFlagBorderRadius = 2.0;
-  static const double langPickerQualitySegmentWidth = 56.0;
+  /// How many rows of dictionary words stand beside the flag in the card of a
+  /// chosen language.
+  static const int langChosenCardWordRowCount = 3;
 
   static const double vocabProgressLabelWidth = 48.0;
 

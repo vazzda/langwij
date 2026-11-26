@@ -6,6 +6,7 @@ export 'model/level.dart';
 export 'model/deck_meta.dart';
 export 'model/level_meta.dart';
 export 'model/level_tier.dart';
+export 'model/plan_note.dart';
 export 'model/term.dart';
 export 'model/term_note_segment.dart';
 export 'model/translation_entry.dart';

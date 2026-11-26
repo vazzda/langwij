@@ -288,13 +288,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get language_iLearn => 'Я учу';
 
   @override
-  String language_qualityAi(int aiPct) {
-    return '$aiPct% сделано ИИ';
+  String language_iSpeakLanguage(String language) {
+    return 'Я говорю: $language';
   }
 
   @override
-  String language_qualityHuman(int humanPct) {
-    return '$humanPct% сделано людьми';
+  String language_iLearnLanguage(String language) {
+    return 'Я учу: $language';
   }
 
   @override
@@ -436,11 +436,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get settings_contentDeleted => 'Контент удалён';
 
   @override
-  String get language_aiDictionaryWarning =>
-      'Словарь создан ИИ. Возможны ошибки. Проверка человеком в процессе — используй на свой страх и риск.';
+  String get language_aiWarningTitle => 'Предупреждение об ИИ';
 
   @override
-  String get language_pairUnavailable => 'Эта языковая пара пока недоступна.';
+  String get language_aiDictionaryWarning =>
+      'Словарь создан ИИ. Возможны ошибки. Проверка человеком в процессе — используй на свой страх и риск.';
 
   @override
   String get language_aiGeneratedTitle => 'Сделано ИИ';
@@ -448,6 +448,9 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get language_aiGeneratedNote =>
       'Колоды этих языков созданы ИИ и лишь частично проверены экспертами. Ими можно пользоваться: в основном они хороши, но ошибки всё ещё возможны.';
+
+  @override
+  String get language_inDevelopmentTitle => 'В разработке';
 
   @override
   String termCard_gender(String gender) {

@@ -83,8 +83,8 @@
 
   "language_iSpeak": "Je parle",
   "language_iLearn": "J'apprends",
-  "language_qualityAi": "{aiPct} % fait par IA",
-  "language_qualityHuman": "{humanPct} % fait par des humains",
+  "language_iSpeakLanguage": "Je parle {language}",
+  "language_iLearnLanguage": "J'apprends {language}",
   "language_progression": "Progression",
   "language_incompleteDictionaries": "Dictionnaires incomplets",
   "language_termsCount": "{done}/{total} termes",
@@ -139,10 +139,11 @@
   "settings_seedError": "Échec des données de test : {message}",
   "settings_contentDeleted": "Contenu supprimé",
 
-  "language_aiDictionaryWarning": "Dictionnaire généré par IA. Il peut contenir des erreurs. Relecture humaine en cours — à utiliser à tes risques et périls.",
-  "language_pairUnavailable": "Cette paire de langues n'est pas encore disponible.",
+  "language_aiWarningTitle": "Avertissement IA",
+  "language_aiDictionaryWarning":"Dictionnaire généré par IA. Il peut contenir des erreurs. Relecture humaine en cours — à utiliser à tes risques et périls.",
   "language_aiGeneratedTitle": "Généré par IA",
   "language_aiGeneratedNote": "Les paquets de ces langues ont été générés par IA et seulement en partie vérifiés par des experts. Tu peux les utiliser : ils sont bons pour la plupart, mais des erreurs restent possibles.",
+  "language_inDevelopmentTitle": "En développement",
 
   "termCard_gender": "Genre : {gender}",
   "termCard_example": "Exemple :",

@@ -1,3 +1,5 @@
+import 'plan_note.dart';
+
 class LanguageEntry {
   const LanguageEntry({
     required this.code,
@@ -14,5 +16,7 @@ class LanguageEntry {
   /// Whether the language is listed among the AI generated ones, apart from
   /// the languages offered without that warning.
   final bool isAiGenerated;
-  final String? nativeNote;
+
+  /// The note for those who speak this language, or none.
+  final PlanNote? nativeNote;
 }

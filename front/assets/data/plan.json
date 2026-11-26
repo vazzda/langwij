@@ -4,7 +4,8 @@
     {
       "code": "sr",
       "labelKey": "lang_serbian",
-      "nativeNote": "❤️❤️️❤️ Thanks for the hospitality! Every Serbian speaker learning a new language gets all languages for free — no subscription needed.\n❤️❤️❤️",
+      "nativeNoteTitle": "Hvala na gostoprimstvu!",
+      "nativeNote": "Svako ko govori srpski i uči novi jezik dobija sve jezike besplatno — pretplata nije potrebna.",
       "humanVerified": 42
     },
     { "code": "ru", "labelKey": "lang_russian", "humanVerified": 12 },
@@ -14,7 +15,28 @@
     { "code": "pt", "labelKey": "lang_portuguese", "humanVerified": 0, "aiGenerated": true },
     { "code": "de", "labelKey": "lang_german", "humanVerified": 0 }
   ],
-  "public_languages": ["en", "sr", "ru"],
+  "public_languages": ["en", "sr", "ru", "it", "fr", "es", "de"],
+  "language_card_terms": [
+    "please",
+    "friend",
+    "conversation",
+    "to_speak",
+    "to_listen",
+    "to_understand",
+    "question",
+    "answer_n",
+    "story",
+    "idea",
+    "thought",
+    "knowledge",
+    "lesson",
+    "teacher",
+    "practice",
+    "progress",
+    "culture",
+    "freedom",
+    "success"
+  ],
   "courses": {
     "sr→en": {
       "free": [
@@ -22,6 +44,8 @@
       ]
     },
     "sr→ru": {
+      "noteTitle": "Сербский бесплатно!",
+      "note": "Мы сами обживаемся в Сербии и хотим помочь тебе освоиться в этой прекрасной и гостеприимной стране. Приложение мы делали для себя и будем рады, если оно пригодится и тебе. Поэтому весь основной русско-сербский контент — бесплатно.",
       "free": [
         "top100"
       ]

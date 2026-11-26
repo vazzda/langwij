@@ -83,8 +83,8 @@
 
   "language_iSpeak": "Falo",
   "language_iLearn": "Aprendo",
-  "language_qualityAi": "{aiPct}% feito por IA",
-  "language_qualityHuman": "{humanPct}% feito por humanos",
+  "language_iSpeakLanguage": "Falo {language}",
+  "language_iLearnLanguage": "Aprendo {language}",
   "language_progression": "Progressão",
   "language_incompleteDictionaries": "Dicionários incompletos",
   "language_termsCount": "{done}/{total} termos",
@@ -139,10 +139,11 @@
   "settings_seedError": "Falha nos dados de teste: {message}",
   "settings_contentDeleted": "Conteúdo eliminado",
 
-  "language_aiDictionaryWarning": "Dicionário gerado por IA. Pode conter erros. Revisão humana em curso — usa por tua conta e risco.",
-  "language_pairUnavailable": "Este par de idiomas ainda não está disponível.",
+  "language_aiWarningTitle": "Aviso de IA",
+  "language_aiDictionaryWarning":"Dicionário gerado por IA. Pode conter erros. Revisão humana em curso — usa por tua conta e risco.",
   "language_aiGeneratedTitle": "Gerado por IA",
   "language_aiGeneratedNote": "Os baralhos destes idiomas foram gerados por IA e apenas em parte verificados por especialistas. Podes usá-los: são bons na sua maioria, mas ainda podem existir erros.",
+  "language_inDevelopmentTitle": "Em desenvolvimento",
 
   "termCard_gender": "Género: {gender}",
   "termCard_example": "Exemplo:",

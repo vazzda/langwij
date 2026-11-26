@@ -83,8 +83,8 @@
 
   "language_iSpeak": "Я говорю",
   "language_iLearn": "Я учу",
-  "language_qualityAi": "{aiPct}% сделано ИИ",
-  "language_qualityHuman": "{humanPct}% сделано людьми",
+  "language_iSpeakLanguage": "Я говорю: {language}",
+  "language_iLearnLanguage": "Я учу: {language}",
   "language_progression": "Продвижение",
   "language_incompleteDictionaries": "Неполные словари",
   "language_termsCount": "{done}/{total} терминов",
@@ -139,10 +139,11 @@
   "settings_seedError": "Не удалось загрузить данные: {message}",
   "settings_contentDeleted": "Контент удалён",
 
-  "language_aiDictionaryWarning": "Словарь создан ИИ. Возможны ошибки. Проверка человеком в процессе — используй на свой страх и риск.",
-  "language_pairUnavailable": "Эта языковая пара пока недоступна.",
+  "language_aiWarningTitle": "Предупреждение об ИИ",
+  "language_aiDictionaryWarning":"Словарь создан ИИ. Возможны ошибки. Проверка человеком в процессе — используй на свой страх и риск.",
   "language_aiGeneratedTitle": "Сделано ИИ",
   "language_aiGeneratedNote": "Колоды этих языков созданы ИИ и лишь частично проверены экспертами. Ими можно пользоваться: в основном они хороши, но ошибки всё ещё возможны.",
+  "language_inDevelopmentTitle": "В разработке",
 
   "termCard_gender": "Род: {gender}",
   "termCard_example": "Пример:",

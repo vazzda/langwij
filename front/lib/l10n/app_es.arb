@@ -83,8 +83,8 @@
 
   "language_iSpeak": "Hablo",
   "language_iLearn": "Aprendo",
-  "language_qualityAi": "{aiPct}% hecho por IA",
-  "language_qualityHuman": "{humanPct}% hecho por humanos",
+  "language_iSpeakLanguage": "Hablo {language}",
+  "language_iLearnLanguage": "Aprendo {language}",
   "language_progression": "Progresión",
   "language_incompleteDictionaries": "Diccionarios incompletos",
   "language_termsCount": "{done}/{total} términos",
@@ -139,10 +139,11 @@
   "settings_seedError": "Error en los datos de prueba: {message}",
   "settings_contentDeleted": "Contenido eliminado",
 
-  "language_aiDictionaryWarning": "Diccionario generado por IA. Puede contener errores. Revisión humana en curso: úsalo bajo tu propia responsabilidad.",
-  "language_pairUnavailable": "Este par de idiomas aún no está disponible.",
+  "language_aiWarningTitle": "Aviso de IA",
+  "language_aiDictionaryWarning":"Diccionario generado por IA. Puede contener errores. Revisión humana en curso: úsalo bajo tu propia responsabilidad.",
   "language_aiGeneratedTitle": "Generado por IA",
   "language_aiGeneratedNote": "Los mazos de estos idiomas fueron generados por IA y solo en parte revisados por expertos. Puedes usarlos: en su mayoría son buenos, pero aún puede haber errores.",
+  "language_inDevelopmentTitle": "En desarrollo",
 
   "termCard_gender": "Género: {gender}",
   "termCard_example": "Ejemplo:",

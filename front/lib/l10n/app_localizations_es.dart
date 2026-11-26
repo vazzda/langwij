@@ -285,13 +285,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get language_iLearn => 'Aprendo';
 
   @override
-  String language_qualityAi(int aiPct) {
-    return '$aiPct% hecho por IA';
+  String language_iSpeakLanguage(String language) {
+    return 'Hablo $language';
   }
 
   @override
-  String language_qualityHuman(int humanPct) {
-    return '$humanPct% hecho por humanos';
+  String language_iLearnLanguage(String language) {
+    return 'Aprendo $language';
   }
 
   @override
@@ -433,12 +433,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settings_contentDeleted => 'Contenido eliminado';
 
   @override
-  String get language_aiDictionaryWarning =>
-      'Diccionario generado por IA. Puede contener errores. Revisión humana en curso: úsalo bajo tu propia responsabilidad.';
+  String get language_aiWarningTitle => 'Aviso de IA';
 
   @override
-  String get language_pairUnavailable =>
-      'Este par de idiomas aún no está disponible.';
+  String get language_aiDictionaryWarning =>
+      'Diccionario generado por IA. Puede contener errores. Revisión humana en curso: úsalo bajo tu propia responsabilidad.';
 
   @override
   String get language_aiGeneratedTitle => 'Generado por IA';
@@ -446,6 +445,9 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get language_aiGeneratedNote =>
       'Los mazos de estos idiomas fueron generados por IA y solo en parte revisados por expertos. Puedes usarlos: en su mayoría son buenos, pero aún puede haber errores.';
+
+  @override
+  String get language_inDevelopmentTitle => 'En desarrollo';
 
   @override
   String termCard_gender(String gender) {

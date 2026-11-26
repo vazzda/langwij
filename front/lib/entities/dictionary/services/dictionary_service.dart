@@ -5,6 +5,7 @@ import 'package:langwij/shared/dev_section/dev_section.dart';
 import '../model/dictionary.dart';
 import '../model/language_pack.dart';
 import '../model/level_tier.dart';
+import '../model/plan_note.dart';
 import 'dictionary_internal_service.dart';
 
 class DictionaryService {
@@ -74,12 +75,14 @@ class DictionaryService {
     return repo.getTiers(courseId, levelIds);
   });
 
-  static final availableCourseIds = FutureProvider<Set<String>>((ref) async {
+  /// The ids of the terms whose words the card of a chosen language shows,
+  /// in the order they are shown.
+  static final languageCardTermIds = FutureProvider<List<String>>((ref) async {
     final repo = ref.watch(DictionaryInternalService.planRepository);
-    return repo.getAvailableCourseIds();
+    return repo.getLanguageCardTermIds();
   });
 
-  static final courseNote = FutureProvider<String?>((ref) async {
+  static final courseNote = FutureProvider<PlanNote?>((ref) async {
     final repo = ref.watch(DictionaryInternalService.planRepository);
     final langSettings = await ref.watch(ConfigService.languageSettings.future);
     final courseId = '${langSettings.targetLang}→${langSettings.nativeLang}';

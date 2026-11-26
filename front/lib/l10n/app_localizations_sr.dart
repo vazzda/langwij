@@ -286,13 +286,13 @@ class AppLocalizationsSr extends AppLocalizations {
   String get language_iLearn => 'Učim';
 
   @override
-  String language_qualityAi(int aiPct) {
-    return '$aiPct% napravio AI';
+  String language_iSpeakLanguage(String language) {
+    return 'Govorim $language';
   }
 
   @override
-  String language_qualityHuman(int humanPct) {
-    return '$humanPct% napravili ljudi';
+  String language_iLearnLanguage(String language) {
+    return 'Učim $language';
   }
 
   @override
@@ -433,11 +433,11 @@ class AppLocalizationsSr extends AppLocalizations {
   String get settings_contentDeleted => 'Sadržaj je obrisan';
 
   @override
-  String get language_aiDictionaryWarning =>
-      'Rečnik je napravila veštačka inteligencija. Moguće su greške. Provera od strane ljudi je u toku — koristiš na sopstvenu odgovornost.';
+  String get language_aiWarningTitle => 'AI upozorenje';
 
   @override
-  String get language_pairUnavailable => 'Ovaj jezički par još nije dostupan.';
+  String get language_aiDictionaryWarning =>
+      'Rečnik je napravila veštačka inteligencija. Moguće su greške. Provera od strane ljudi je u toku — koristiš na sopstvenu odgovornost.';
 
   @override
   String get language_aiGeneratedTitle => 'Napravio AI';
@@ -445,6 +445,9 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get language_aiGeneratedNote =>
       'Špilove ovih jezika napravio je AI, a stručnjaci su ih proverili samo delimično. Možeš da ih koristiš: uglavnom su dobri, ali greške su i dalje moguće.';
+
+  @override
+  String get language_inDevelopmentTitle => 'U razvoju';
 
   @override
   String termCard_gender(String gender) {

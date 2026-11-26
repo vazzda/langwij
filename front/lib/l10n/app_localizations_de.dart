@@ -286,13 +286,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get language_iLearn => 'Ich lerne';
 
   @override
-  String language_qualityAi(int aiPct) {
-    return '$aiPct% KI-erstellt';
+  String language_iSpeakLanguage(String language) {
+    return 'Ich spreche $language';
   }
 
   @override
-  String language_qualityHuman(int humanPct) {
-    return '$humanPct% von Menschen';
+  String language_iLearnLanguage(String language) {
+    return 'Ich lerne $language';
   }
 
   @override
@@ -434,12 +434,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_contentDeleted => 'Inhalte gelöscht';
 
   @override
-  String get language_aiDictionaryWarning =>
-      'KI-generiertes Wörterbuch. Kann Fehler enthalten. Die Prüfung durch Menschen läuft — Nutzung auf eigene Gefahr.';
+  String get language_aiWarningTitle => 'KI-Warnung';
 
   @override
-  String get language_pairUnavailable =>
-      'Dieses Sprachpaar ist noch nicht verfügbar.';
+  String get language_aiDictionaryWarning =>
+      'KI-generiertes Wörterbuch. Kann Fehler enthalten. Die Prüfung durch Menschen läuft — Nutzung auf eigene Gefahr.';
 
   @override
   String get language_aiGeneratedTitle => 'KI-generiert';
@@ -447,6 +446,9 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get language_aiGeneratedNote =>
       'Die Stapel dieser Sprachen wurden von KI erstellt und nur teilweise von Fachleuten geprüft. Du kannst sie verwenden: Sie sind größtenteils gut, aber Fehler sind weiterhin möglich.';
+
+  @override
+  String get language_inDevelopmentTitle => 'In Entwicklung';
 
   @override
   String termCard_gender(String gender) {

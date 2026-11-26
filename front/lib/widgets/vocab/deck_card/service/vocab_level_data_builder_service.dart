@@ -120,17 +120,9 @@ class VocabLevelDataBuilderService {
     for (final termId in deck.termIds) {
       final targetEntry = targetPack.translations[termId];
       if (targetEntry == null) continue;
-      previewWords.add(_previewWordOfLangEntry(targetEntry));
+      previewWords.add(targetEntry.headword);
     }
     return previewWords;
-  }
-
-  static String _previewWordOfLangEntry(LangEntry langEntry) {
-    return switch (langEntry) {
-      SimpleEntry() => langEntry.text,
-      AspectPairEntry() => langEntry.imperfective,
-      AdjectiveEntry() => langEntry.m,
-    };
   }
 
   static double _averageStudiedPercentOfDecks(

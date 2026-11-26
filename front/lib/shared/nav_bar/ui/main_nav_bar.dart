@@ -35,7 +35,7 @@ class LangwijMainNavBar {
       MainNavDestination.vocabulary => PhosphorIconsRegular.books,
       MainNavDestination.specialized => PhosphorIconsRegular.graduationCap,
       MainNavDestination.tools => PhosphorIconsRegular.puzzlePiece,
-      MainNavDestination.language => PhosphorIconsRegular.globe,
+      MainNavDestination.language => PhosphorIconsRegular.translate,
     };
   }
 
@@ -44,7 +44,7 @@ class LangwijMainNavBar {
       MainNavDestination.vocabulary => PhosphorIconsFill.books,
       MainNavDestination.specialized => PhosphorIconsFill.graduationCap,
       MainNavDestination.tools => PhosphorIconsFill.puzzlePiece,
-      MainNavDestination.language => PhosphorIconsFill.globe,
+      MainNavDestination.language => PhosphorIconsFill.translate,
     };
   }
 
