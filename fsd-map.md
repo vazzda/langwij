@@ -30,15 +30,18 @@ lib/
 │   │   ├── model/
 │   │   │   ├── deck_meta.dart                       DeckMeta
 │   │   │   ├── dictionary.dart                      Dictionary data class
+│   │   │   ├── grammatical_gender.dart              GrammaticalGender enum (gender of a noun)
 │   │   │   ├── lang_entry.dart                      LangEntry
 │   │   │   ├── language_entry.dart                   LanguageEntry
 │   │   │   ├── language_pack.dart                    LanguagePack (per-language asset data)
 │   │   │   ├── level.dart                           Level data class
 │   │   │   ├── level_meta.dart                      LevelMeta
 │   │   │   ├── level_tier.dart                      LevelTier enum
+│   │   │   ├── part_of_speech.dart                  PartOfSpeech enum (type of a word)
 │   │   │   ├── plan_note.dart                       PlanNote (title and text of a note of plan.json)
 │   │   │   ├── term.dart                            Term data class
 │   │   │   ├── translation_entry.dart               TranslationEntry
+│   │   │   ├── verb_aspect.dart                     VerbAspect enum (aspect of a verb that stands alone)
 │   │   │   ├── vocab_deck_model.dart                VocabDeckModel
 │   │   │   ├── vocabulary_level_segment.dart        VocabularyLevelSegment (segment id + its level ids)
 │   │   │   └── vocabulary_level_segment_meta.dart   VocabularyLevelSegmentMeta (segment name)
@@ -143,7 +146,8 @@ lib/
 │   │   └── round/                                   quiz round subslice
 │   │       └── ui/
 │   │           ├── round_page.dart                     quiz round screen
-│   │           └── term_note_box.dart                  TermNoteBox widget (a term's note in a box, its marked word in bold)
+│   │           ├── term_example.dart                   TermExample widget (a term's example behind its label, its marked word in bold)
+│   │           └── term_title.dart                     TermTitle widget (the word of a card as its title, capitalised)
 │   │
 │   ├── settings/                                  app settings
 │   │   └── ui/

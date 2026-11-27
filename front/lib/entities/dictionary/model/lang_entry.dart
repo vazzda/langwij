@@ -1,3 +1,6 @@
+import 'grammatical_gender.dart';
+import 'verb_aspect.dart';
+
 sealed class LangEntry {
   const LangEntry({this.note});
 
@@ -19,20 +22,37 @@ class SimpleEntry extends LangEntry {
   const SimpleEntry({
     required this.text,
     this.gender,
+    this.article,
+    this.aspect,
     super.note,
   });
 
   final String text;
-  final String? gender;
+
+  /// The gender of a noun, in the languages whose nouns have one.
+  final GrammaticalGender? gender;
+
+  /// The article of a noun, in the languages that store it beside the gender.
+  final String? article;
+
+  /// The aspect of a verb that stands alone, where the files mark it.
+  final VerbAspect? aspect;
 
   @override
   String get headword => text;
 
-  factory SimpleEntry.fromJson(Map<String, dynamic> json) => SimpleEntry(
-        text: json['text'] as String,
-        gender: json['gender'] as String?,
-        note: json['note'] as String?,
-      );
+  factory SimpleEntry.fromJson(Map<String, dynamic> json) {
+    final genderCode = json['gender'] as String?;
+    final aspectCode = json['aspect'] as String?;
+
+    return SimpleEntry(
+      text: json['text'] as String,
+      gender: genderCode == null ? null : GrammaticalGender.fromCode(genderCode),
+      article: json['article'] as String?,
+      aspect: aspectCode == null ? null : VerbAspect.values.byName(aspectCode),
+      note: json['note'] as String?,
+    );
+  }
 }
 
 class AspectPairEntry extends LangEntry {

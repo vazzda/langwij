@@ -18,7 +18,7 @@ class CardGenerationService {
       final nativeText = _nativeText(nativeEntry);
       final nativeNote = nativeEntry.note;
       final term = terms[termId];
-      final pos = term?.pos ?? '';
+      final pos = term?.pos;
       final coca = term?.coca;
 
       switch (targetEntry) {
@@ -38,7 +38,13 @@ class CardGenerationService {
             targetNote: note,
           ));
 
-        case SimpleEntry(:final text, :final note, :final gender):
+        case SimpleEntry(
+            :final text,
+            :final note,
+            :final gender,
+            :final article,
+            :final aspect,
+          ):
           cards.add(SimpleVocabCard(
             termId: termId,
             nativeText: nativeText,
@@ -48,6 +54,8 @@ class CardGenerationService {
             nativeNote: nativeNote,
             targetNote: note,
             gender: gender,
+            article: article,
+            aspect: aspect,
           ));
 
         case AdjectiveEntry(:final m, :final note, :final f, :final n):

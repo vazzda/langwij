@@ -466,8 +466,63 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String termCard_cocaRank(int rank) {
-    return 'Rang COCA : $rank';
+    return 'Fréquence : $rank';
   }
+
+  @override
+  String termCard_article(String article) {
+    return 'Article : $article';
+  }
+
+  @override
+  String termCard_aspect(String aspect) {
+    return 'Aspect : $aspect';
+  }
+
+  @override
+  String get termCard_typePhrase => 'Expression';
+
+  @override
+  String get termCard_typeInterrogative => 'Interrogatif';
+
+  @override
+  String get termCard_typePronoun => 'Pronom';
+
+  @override
+  String get termCard_typePreposition => 'Préposition';
+
+  @override
+  String get termCard_typeConjunction => 'Conjonction';
+
+  @override
+  String get termCard_typeNumeral => 'Numéral';
+
+  @override
+  String get termCard_typeVerb => 'Verbe';
+
+  @override
+  String get termCard_typeAdverb => 'Adverbe';
+
+  @override
+  String get termCard_typeAdjective => 'Adjectif';
+
+  @override
+  String get termCard_typeNoun => 'Nom';
+
+  @override
+  String get termCard_genderMasculine => 'masculin';
+
+  @override
+  String get termCard_genderFeminine => 'féminin';
+
+  @override
+  String get termCard_genderNeuter => 'neutre';
+
+  @override
+  String get termCard_aspectImperfective => 'imperfectif';
+
+  @override
+  String get termCard_aspectPerfective => 'perfectif';
 
   @override
   String get termCard_soundSemantics => 'Prononcer';

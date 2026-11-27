@@ -1,3 +1,4 @@
+import 'package:langwij/entities/dictionary/dictionary.dart';
 import 'package:langwij/entities/group/group.dart';
 
 sealed class VocabCard implements CardModel {
@@ -11,7 +12,10 @@ sealed class VocabCard implements CardModel {
   });
 
   final String termId;
-  final String pos;
+
+  /// The type of the word; absent when the dictionary holds no term for the
+  /// card.
+  final PartOfSpeech? pos;
   final int? coca;
 
   @override
@@ -35,13 +39,17 @@ class SimpleVocabCard extends VocabCard {
     super.targetNote,
     super.coca,
     this.gender,
+    this.article,
+    this.aspect,
     this.feminineForm,
     this.neuterForm,
   });
 
   @override
   final String targetText;
-  final String? gender;
+  final GrammaticalGender? gender;
+  final String? article;
+  final VerbAspect? aspect;
   final String? feminineForm;
   final String? neuterForm;
 

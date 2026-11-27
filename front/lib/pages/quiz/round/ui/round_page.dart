@@ -17,7 +17,8 @@ import 'package:langwij/shared/app/layout/layout.dart';
 
 import 'answer_feedback_card.dart';
 import 'term_detail_card.dart';
-import 'term_note_box.dart';
+import 'term_example.dart';
+import 'term_title.dart';
 
 class RoundPage extends ConsumerStatefulWidget {
   const RoundPage({super.key});
@@ -148,17 +149,12 @@ class _RoundPageState extends ConsumerState<RoundPage> {
                 : FlesselCard(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          promptText,
-                          style: FlesselFonts.contentXxxlAccent.copyWith(
-                            color: t.fg,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
+                        TermTitle(text: promptText),
                         if (promptNote != null) ...[
                           const FlesselGap.s(),
-                          TermNoteBox(note: promptNote),
+                          TermExample(example: promptNote),
                         ],
                         if (card is PairVocabCard &&
                             round.mode == QuizMode.write) ...[

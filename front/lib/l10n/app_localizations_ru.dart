@@ -462,8 +462,63 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String termCard_cocaRank(int rank) {
-    return 'Ранг COCA: $rank';
+    return 'Частотность: $rank';
   }
+
+  @override
+  String termCard_article(String article) {
+    return 'Артикль: $article';
+  }
+
+  @override
+  String termCard_aspect(String aspect) {
+    return 'Вид: $aspect';
+  }
+
+  @override
+  String get termCard_typePhrase => 'Фраза';
+
+  @override
+  String get termCard_typeInterrogative => 'Вопросительное слово';
+
+  @override
+  String get termCard_typePronoun => 'Местоимение';
+
+  @override
+  String get termCard_typePreposition => 'Предлог';
+
+  @override
+  String get termCard_typeConjunction => 'Союз';
+
+  @override
+  String get termCard_typeNumeral => 'Числительное';
+
+  @override
+  String get termCard_typeVerb => 'Глагол';
+
+  @override
+  String get termCard_typeAdverb => 'Наречие';
+
+  @override
+  String get termCard_typeAdjective => 'Прилагательное';
+
+  @override
+  String get termCard_typeNoun => 'Существительное';
+
+  @override
+  String get termCard_genderMasculine => 'мужской';
+
+  @override
+  String get termCard_genderFeminine => 'женский';
+
+  @override
+  String get termCard_genderNeuter => 'средний';
+
+  @override
+  String get termCard_aspectImperfective => 'несовершенный';
+
+  @override
+  String get termCard_aspectPerfective => 'совершенный';
 
   @override
   String get termCard_soundSemantics => 'Произнести';

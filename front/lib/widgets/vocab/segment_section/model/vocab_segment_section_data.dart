@@ -11,4 +11,16 @@ class VocabSegmentSectionData {
   final String segmentId;
   final String name;
   final List<VocabLevelData> levels;
+
+  /// The studied share of the segment, 0 to 100: the mean of the studied
+  /// shares of its levels, each level counting equally. 0 for a segment
+  /// without levels.
+  double get studiedPercent {
+    if (levels.isEmpty) return 0.0;
+    final studiedPercentSum = levels.fold(
+      0.0,
+      (sum, level) => sum + level.levelProgress,
+    );
+    return studiedPercentSum / levels.length;
+  }
 }

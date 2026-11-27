@@ -260,12 +260,39 @@
     }
   },
   "termCard_example": "Example:",
-  "termCard_cocaRank": "COCA rank: {rank}",
+  "termCard_cocaRank": "Frequency: {rank}",
   "@termCard_cocaRank": {
     "placeholders": {
       "rank": { "type": "int" }
     }
   },
+  "termCard_article": "Article: {article}",
+  "@termCard_article": {
+    "placeholders": {
+      "article": { "type": "String" }
+    }
+  },
+  "termCard_aspect": "Aspect: {aspect}",
+  "@termCard_aspect": {
+    "placeholders": {
+      "aspect": { "type": "String" }
+    }
+  },
+  "termCard_typePhrase": "Phrase",
+  "termCard_typeInterrogative": "Question word",
+  "termCard_typePronoun": "Pronoun",
+  "termCard_typePreposition": "Preposition",
+  "termCard_typeConjunction": "Conjunction",
+  "termCard_typeNumeral": "Numeral",
+  "termCard_typeVerb": "Verb",
+  "termCard_typeAdverb": "Adverb",
+  "termCard_typeAdjective": "Adjective",
+  "termCard_typeNoun": "Noun",
+  "termCard_genderMasculine": "masculine",
+  "termCard_genderFeminine": "feminine",
+  "termCard_genderNeuter": "neuter",
+  "termCard_aspectImperfective": "imperfective",
+  "termCard_aspectPerfective": "perfective",
   "termCard_soundSemantics": "Pronounce",
   "termCard_soundFailed": "Pronunciation unavailable"
 }

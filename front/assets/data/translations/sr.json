@@ -33,30 +33,38 @@
   },
   "hotel": {
     "text": "hotel",
+    "gender": "m",
     "note": "Gde je *hotel*?"
   },
   "bathroom": {
     "text": "toalet",
+    "gender": "m",
     "note": "Gde je *toalet*?"
   },
   "meat": {
     "text": "meso",
+    "gender": "n",
     "note": "Ne jedem *meso*."
   },
   "fruit": {
     "text": "voće",
+    "gender": "n",
     "note": "*Voće* je slatko."
   },
   "danger": {
     "text": "opasnost",
+    "gender": "f",
     "note": "*Opasnost*! Ne ulazi."
   },
   "medicine": {
     "text": "lek",
+    "gender": "m",
     "note": "Uzmi svoj *lek*."
   },
   "closed": {
-    "text": "zatvoreno",
+    "m": "zatvoren",
+    "f": "zatvorena",
+    "n": "zatvoreno",
     "note": "Prodavnica je *zatvorena*."
   },
   "one": {
@@ -73,10 +81,12 @@
   },
   "ticket": {
     "text": "karta",
+    "gender": "f",
     "note": "Pokaži mi svoju *kartu*."
   },
   "restaurant": {
     "text": "restoran",
+    "gender": "m",
     "note": "*Restoran* je pun."
   },
   "hello": {
@@ -2278,61 +2288,80 @@
     "gender": "f"
   },
   "monday": {
-    "text": "ponedeljak"
+    "text": "ponedeljak",
+    "gender": "m"
   },
   "tuesday": {
-    "text": "utorak"
+    "text": "utorak",
+    "gender": "m"
   },
   "wednesday": {
-    "text": "sreda"
+    "text": "sreda",
+    "gender": "f"
   },
   "thursday": {
-    "text": "četvrtak"
+    "text": "četvrtak",
+    "gender": "m"
   },
   "friday": {
-    "text": "petak"
+    "text": "petak",
+    "gender": "m"
   },
   "saturday": {
-    "text": "subota"
+    "text": "subota",
+    "gender": "f"
   },
   "sunday": {
-    "text": "nedelja"
+    "text": "nedelja",
+    "gender": "f"
   },
   "january": {
-    "text": "januar"
+    "text": "januar",
+    "gender": "m"
   },
   "february": {
-    "text": "februar"
+    "text": "februar",
+    "gender": "m"
   },
   "march": {
-    "text": "mart"
+    "text": "mart",
+    "gender": "m"
   },
   "april": {
-    "text": "april"
+    "text": "april",
+    "gender": "m"
   },
   "may": {
-    "text": "maj"
+    "text": "maj",
+    "gender": "m"
   },
   "june": {
-    "text": "jun"
+    "text": "jun",
+    "gender": "m"
   },
   "july": {
-    "text": "jul"
+    "text": "jul",
+    "gender": "m"
   },
   "august": {
-    "text": "avgust"
+    "text": "avgust",
+    "gender": "m"
   },
   "september": {
-    "text": "septembar"
+    "text": "septembar",
+    "gender": "m"
   },
   "october": {
-    "text": "oktobar"
+    "text": "oktobar",
+    "gender": "m"
   },
   "november": {
-    "text": "novembar"
+    "text": "novembar",
+    "gender": "m"
   },
   "december": {
-    "text": "decembar"
+    "text": "decembar",
+    "gender": "m"
   },
   "bird": {
     "text": "ptica",
@@ -4358,7 +4387,9 @@
     "gender": "m"
   },
   "open": {
-    "text": "otvoreno",
+    "m": "otvoren",
+    "f": "otvorena",
+    "n": "otvoreno",
     "note": "Prodavnica je *otvorena*."
   },
   "all": {

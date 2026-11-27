@@ -1,3 +1,5 @@
+import 'part_of_speech.dart';
+
 class Term {
   const Term({
     required this.id,
@@ -6,13 +8,13 @@ class Term {
   });
 
   final String id;
-  final String pos;
+  final PartOfSpeech pos;
   final int? coca;
 
   factory Term.fromJson(String id, Map<String, dynamic> json) {
     return Term(
       id: id,
-      pos: json['pos'] as String,
+      pos: PartOfSpeech.values.byName(json['pos'] as String),
       coca: json['coca'] as int?,
     );
   }

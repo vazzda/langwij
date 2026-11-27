@@ -1,4 +1,5 @@
 export 'model/dictionary.dart';
+export 'model/grammatical_gender.dart';
 export 'model/lang_entry.dart';
 export 'model/language_entry.dart';
 export 'model/language_pack.dart';
@@ -6,10 +7,12 @@ export 'model/level.dart';
 export 'model/deck_meta.dart';
 export 'model/level_meta.dart';
 export 'model/level_tier.dart';
+export 'model/part_of_speech.dart';
 export 'model/plan_note.dart';
 export 'model/term.dart';
 export 'model/term_note_segment.dart';
 export 'model/translation_entry.dart';
+export 'model/verb_aspect.dart';
 export 'model/vocab_deck_model.dart';
 export 'model/vocabulary_level_segment.dart';
 export 'model/vocabulary_level_segment_meta.dart';

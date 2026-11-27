@@ -905,8 +905,110 @@ abstract class AppLocalizations {
   /// No description provided for @termCard_cocaRank.
   ///
   /// In en, this message translates to:
-  /// **'COCA rank: {rank}'**
+  /// **'Frequency: {rank}'**
   String termCard_cocaRank(int rank);
+
+  /// No description provided for @termCard_article.
+  ///
+  /// In en, this message translates to:
+  /// **'Article: {article}'**
+  String termCard_article(String article);
+
+  /// No description provided for @termCard_aspect.
+  ///
+  /// In en, this message translates to:
+  /// **'Aspect: {aspect}'**
+  String termCard_aspect(String aspect);
+
+  /// No description provided for @termCard_typePhrase.
+  ///
+  /// In en, this message translates to:
+  /// **'Phrase'**
+  String get termCard_typePhrase;
+
+  /// No description provided for @termCard_typeInterrogative.
+  ///
+  /// In en, this message translates to:
+  /// **'Question word'**
+  String get termCard_typeInterrogative;
+
+  /// No description provided for @termCard_typePronoun.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronoun'**
+  String get termCard_typePronoun;
+
+  /// No description provided for @termCard_typePreposition.
+  ///
+  /// In en, this message translates to:
+  /// **'Preposition'**
+  String get termCard_typePreposition;
+
+  /// No description provided for @termCard_typeConjunction.
+  ///
+  /// In en, this message translates to:
+  /// **'Conjunction'**
+  String get termCard_typeConjunction;
+
+  /// No description provided for @termCard_typeNumeral.
+  ///
+  /// In en, this message translates to:
+  /// **'Numeral'**
+  String get termCard_typeNumeral;
+
+  /// No description provided for @termCard_typeVerb.
+  ///
+  /// In en, this message translates to:
+  /// **'Verb'**
+  String get termCard_typeVerb;
+
+  /// No description provided for @termCard_typeAdverb.
+  ///
+  /// In en, this message translates to:
+  /// **'Adverb'**
+  String get termCard_typeAdverb;
+
+  /// No description provided for @termCard_typeAdjective.
+  ///
+  /// In en, this message translates to:
+  /// **'Adjective'**
+  String get termCard_typeAdjective;
+
+  /// No description provided for @termCard_typeNoun.
+  ///
+  /// In en, this message translates to:
+  /// **'Noun'**
+  String get termCard_typeNoun;
+
+  /// No description provided for @termCard_genderMasculine.
+  ///
+  /// In en, this message translates to:
+  /// **'masculine'**
+  String get termCard_genderMasculine;
+
+  /// No description provided for @termCard_genderFeminine.
+  ///
+  /// In en, this message translates to:
+  /// **'feminine'**
+  String get termCard_genderFeminine;
+
+  /// No description provided for @termCard_genderNeuter.
+  ///
+  /// In en, this message translates to:
+  /// **'neuter'**
+  String get termCard_genderNeuter;
+
+  /// No description provided for @termCard_aspectImperfective.
+  ///
+  /// In en, this message translates to:
+  /// **'imperfective'**
+  String get termCard_aspectImperfective;
+
+  /// No description provided for @termCard_aspectPerfective.
+  ///
+  /// In en, this message translates to:
+  /// **'perfective'**
+  String get termCard_aspectPerfective;
 
   /// No description provided for @termCard_soundSemantics.
   ///

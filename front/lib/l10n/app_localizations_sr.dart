@@ -459,8 +459,63 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String termCard_cocaRank(int rank) {
-    return 'COCA rang: $rank';
+    return 'Učestalost: $rank';
   }
+
+  @override
+  String termCard_article(String article) {
+    return 'Član: $article';
+  }
+
+  @override
+  String termCard_aspect(String aspect) {
+    return 'Vid: $aspect';
+  }
+
+  @override
+  String get termCard_typePhrase => 'Fraza';
+
+  @override
+  String get termCard_typeInterrogative => 'Upitna reč';
+
+  @override
+  String get termCard_typePronoun => 'Zamenica';
+
+  @override
+  String get termCard_typePreposition => 'Predlog';
+
+  @override
+  String get termCard_typeConjunction => 'Veznik';
+
+  @override
+  String get termCard_typeNumeral => 'Broj';
+
+  @override
+  String get termCard_typeVerb => 'Glagol';
+
+  @override
+  String get termCard_typeAdverb => 'Prilog';
+
+  @override
+  String get termCard_typeAdjective => 'Pridev';
+
+  @override
+  String get termCard_typeNoun => 'Imenica';
+
+  @override
+  String get termCard_genderMasculine => 'muški';
+
+  @override
+  String get termCard_genderFeminine => 'ženski';
+
+  @override
+  String get termCard_genderNeuter => 'srednji';
+
+  @override
+  String get termCard_aspectImperfective => 'nesvršeni';
+
+  @override
+  String get termCard_aspectPerfective => 'svršeni';
 
   @override
   String get termCard_soundSemantics => 'Izgovori';
