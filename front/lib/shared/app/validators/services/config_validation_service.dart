@@ -588,7 +588,8 @@ class ConfigValidationService {
   }
 
   /// Checks one optional block of `meta` (levels, decks or segments): every
-  /// key is an id declared in levels.json and every entry carries a name.
+  /// key is an id declared in levels.json, every entry carries a name, and
+  /// an entry's intro, where it has one, is a text.
   static void _validateTranslationMetaBlock(
     String langCode,
     Map<String, dynamic> meta, {
@@ -620,8 +621,18 @@ class ConfigValidationService {
           'translations/$langCode.json: meta.$metaBlockKey["$describedId"] missing required field "name"',
         );
       }
+      final intro = metaEntry['intro'];
+      if (intro != null && intro is! String) {
+        throw ConfigValidationError(
+          'translations/$langCode.json: meta.$metaBlockKey["$describedId"].intro must be a string',
+        );
+      }
     }
   }
+
+  /// The fields that hold the gender forms of an entry; the `default` field
+  /// of such an entry names one of them.
+  static const List<String> _genderFormKeys = ['m', 'f', 'n'];
 
   static void _validateLangEntry(
     String langCode,
@@ -653,17 +664,17 @@ class ConfigValidationService {
     } else if (entry.containsKey('m') || entry.containsKey('f') || entry.containsKey('n')) {
       if (!entry.containsKey('m')) {
         throw ConfigValidationError(
-          'translations/$langCode.json: "$termId" (adjective) missing required field "m"',
+          'translations/$langCode.json: "$termId" (gender forms) missing required field "m"',
         );
       }
       if (!entry.containsKey('f')) {
         throw ConfigValidationError(
-          'translations/$langCode.json: "$termId" (adjective) missing required field "f"',
+          'translations/$langCode.json: "$termId" (gender forms) missing required field "f"',
         );
       }
       if (profile.hasNeuter && !entry.containsKey('n')) {
         throw ConfigValidationError(
-          'translations/$langCode.json: "$termId" (adjective) missing required field "n"',
+          'translations/$langCode.json: "$termId" (gender forms) missing required field "n"',
         );
       }
       if (entry['m'] is! String) {
@@ -679,6 +690,15 @@ class ConfigValidationService {
       if (entry.containsKey('n') && entry['n'] is! String) {
         throw ConfigValidationError(
           'translations/$langCode.json: "$termId".n must be a string',
+        );
+      }
+      final defaultFormKey = entry['default'];
+      final isDefaultOneOfTheEntryForms = defaultFormKey is String &&
+          _genderFormKeys.contains(defaultFormKey) &&
+          entry.containsKey(defaultFormKey);
+      if (defaultFormKey != null && !isDefaultOneOfTheEntryForms) {
+        throw ConfigValidationError(
+          'translations/$langCode.json: "$termId".default must name one of the forms the entry has',
         );
       }
     } else {

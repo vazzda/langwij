@@ -1,6 +1,7 @@
 {
   "@@locale": "it",
   "appTitle": "Langwij",
+  "numberWithSign": "n. {number}",
   "parentAgreement": "Accordi di genere",
   "groupWords": "Verbi di base",
   "wordsCount": "{count, plural, one{{count} parola} other{{count} parole}}",
@@ -145,11 +146,7 @@
   "language_aiGeneratedNote": "I mazzi di queste lingue sono stati generati dall'IA e controllati solo in parte da esperti. Puoi usarli: sono per lo più buoni, ma possono ancora esserci errori.",
   "language_inDevelopmentTitle": "In sviluppo",
 
-  "termCard_gender": "Genere: {gender}",
   "termCard_example": "Esempio:",
-  "termCard_cocaRank": "Frequenza: {rank}",
-  "termCard_article": "Articolo: {article}",
-  "termCard_aspect": "Aspetto: {aspect}",
   "termCard_typePhrase": "Frase",
   "termCard_typeInterrogative": "Interrogativo",
   "termCard_typePronoun": "Pronome",

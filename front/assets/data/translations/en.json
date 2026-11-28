@@ -8706,16 +8706,20 @@
     },
     "segments": {
       "survival": {
-        "name": "Survival"
+        "name": "Survival",
+        "intro": "I SPEAK. YOU UNDERSTAND."
       },
       "baby": {
-        "name": "Baby"
+        "name": "Baby",
+        "intro": "HOW MUCH RED APPLE? VERY EXPENSIVE. DISCOUNT?"
       },
       "kid": {
-        "name": "Kid"
+        "name": "Kid",
+        "intro": "LUGGAGE HEAVY. PASSPORT LOST. TOURIST CRY. VACATION PERFECT."
       },
       "adult": {
-        "name": "Adult"
+        "name": "Adult",
+        "intro": "A SMILE CONNECTS SOULS. CONVERSATION CONNECTS COMMUNITIES."
       }
     }
   }

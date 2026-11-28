@@ -1,6 +1,9 @@
 {
   "all": {
-    "text": "tudo"
+    "m": "todo",
+    "f": "toda",
+    "n": "tudo",
+    "default": "n"
   },
   "that_conj": {
     "text": "que"
@@ -225,41 +228,49 @@
     "text": "de quem"
   },
   "its": {
-    "text": "seu"
+    "m": "seu",
+    "f": "sua"
   },
   "every": {
     "text": "cada"
   },
   "some": {
-    "text": "alguns"
+    "m": "alguns",
+    "f": "algumas"
   },
   "any": {
     "text": "qualquer"
   },
   "each": {
-    "text": "cada um"
+    "m": "cada um",
+    "f": "cada uma"
   },
   "both": {
-    "text": "ambos"
+    "m": "ambos",
+    "f": "ambas"
   },
   "few": {
-    "text": "poucos"
+    "m": "poucos",
+    "f": "poucas"
   },
   "several": {
-    "text": "vários"
+    "m": "vários",
+    "f": "várias"
   },
   "most": {
     "text": "o mais"
   },
   "another": {
-    "text": "mais um"
+    "m": "mais um",
+    "f": "mais uma"
   },
   "other": {
     "m": "outro",
     "f": "outra"
   },
   "none": {
-    "text": "nenhum"
+    "m": "nenhum",
+    "f": "nenhuma"
   },
   "plenty": {
     "text": "um monte"
@@ -269,7 +280,8 @@
     "f": "certa"
   },
   "own": {
-    "text": "próprio"
+    "m": "próprio",
+    "f": "própria"
   },
   "about": {
     "text": "sobre"
@@ -480,16 +492,20 @@
     "text": "deveria"
   },
   "second": {
-    "text": "segundo"
+    "m": "segundo",
+    "f": "segunda"
   },
   "third": {
-    "text": "terceiro"
+    "m": "terceiro",
+    "f": "terceira"
   },
   "fourth": {
-    "text": "quarto"
+    "m": "quarto",
+    "f": "quarta"
   },
   "next": {
-    "text": "próximo"
+    "m": "próximo",
+    "f": "próxima"
   },
   "finally": {
     "text": "finalmente"
@@ -528,13 +544,16 @@
     "text": "mais"
   },
   "mine": {
-    "text": "o meu"
+    "m": "o meu",
+    "f": "a minha"
   },
   "yours": {
-    "text": "o teu"
+    "m": "o teu",
+    "f": "a tua"
   },
   "oneself": {
-    "text": "si mesmo"
+    "m": "si mesmo",
+    "f": "si mesma"
   },
   "manager": {
     "text": "gerente",

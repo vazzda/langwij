@@ -3795,7 +3795,8 @@
     "text": "exatamente"
   },
   "first": {
-    "text": "primeiro"
+    "m": "primeiro",
+    "f": "primeira"
   },
   "five": {
     "text": "cinco"
@@ -3869,7 +3870,8 @@
     "note": "*Isso* está na mesa."
   },
   "last": {
-    "text": "último"
+    "m": "último",
+    "f": "última"
   },
   "later": {
     "text": "mais tarde",
@@ -3895,7 +3897,8 @@
     "text": "muito"
   },
   "my": {
-    "text": "meu",
+    "m": "meu",
+    "f": "minha",
     "note": "Este é o *meu* telefone."
   },
   "near": {
@@ -3925,7 +3928,8 @@
     "text": "em"
   },
   "one": {
-    "text": "um",
+    "m": "um",
+    "f": "uma",
     "note": "Só *um*, por favor."
   },
   "only": {
@@ -3939,7 +3943,8 @@
     "text": "caso contrário"
   },
   "our": {
-    "text": "nosso"
+    "m": "nosso",
+    "f": "nossa"
   },
   "over": {
     "text": "sobre"
@@ -4000,14 +4005,17 @@
     "note": "Muito *obrigado*."
   },
   "that": {
-    "text": "aquele",
+    "m": "aquele",
+    "f": "aquela",
+    "n": "aquilo",
     "note": "*Aquele* lugar está livre?"
   },
   "that_o": {
     "text": "que"
   },
   "their": {
-    "text": "deles"
+    "m": "deles",
+    "f": "delas"
   },
   "then": {
     "text": "então"
@@ -4016,11 +4024,14 @@
     "text": "portanto"
   },
   "they": {
-    "text": "eles",
+    "m": "eles",
+    "f": "elas",
     "note": "*Eles* moram em Belgrado."
   },
   "this": {
-    "text": "este",
+    "m": "este",
+    "f": "esta",
+    "n": "isto",
     "note": "*Esta* é a minha casa."
   },
   "thousand": {
@@ -4048,7 +4059,8 @@
     "text": "totalmente"
   },
   "two": {
-    "text": "dois",
+    "m": "dois",
+    "f": "duas",
     "note": "*Duas* passagens, por favor."
   },
   "under": {
@@ -4100,7 +4112,8 @@
     "note": "*Você* está ótimo hoje."
   },
   "your": {
-    "text": "seu",
+    "m": "seu",
+    "f": "sua",
     "note": "Esta é a *sua* chave?"
   },
   "zero": {
@@ -4112,7 +4125,10 @@
     "note": "A loja está *aberta*."
   },
   "all": {
-    "text": "tudo"
+    "m": "todo",
+    "f": "toda",
+    "n": "tudo",
+    "default": "n"
   },
   "that_conj": {
     "text": "que"
@@ -4337,41 +4353,49 @@
     "text": "de quem"
   },
   "its": {
-    "text": "seu"
+    "m": "seu",
+    "f": "sua"
   },
   "every": {
     "text": "cada"
   },
   "some": {
-    "text": "alguns"
+    "m": "alguns",
+    "f": "algumas"
   },
   "any": {
     "text": "qualquer"
   },
   "each": {
-    "text": "cada um"
+    "m": "cada um",
+    "f": "cada uma"
   },
   "both": {
-    "text": "ambos"
+    "m": "ambos",
+    "f": "ambas"
   },
   "few": {
-    "text": "poucos"
+    "m": "poucos",
+    "f": "poucas"
   },
   "several": {
-    "text": "vários"
+    "m": "vários",
+    "f": "várias"
   },
   "most": {
     "text": "o mais"
   },
   "another": {
-    "text": "mais um"
+    "m": "mais um",
+    "f": "mais uma"
   },
   "other": {
     "m": "outro",
     "f": "outra"
   },
   "none": {
-    "text": "nenhum"
+    "m": "nenhum",
+    "f": "nenhuma"
   },
   "plenty": {
     "text": "um monte"
@@ -4381,7 +4405,8 @@
     "f": "certa"
   },
   "own": {
-    "text": "próprio"
+    "m": "próprio",
+    "f": "própria"
   },
   "about": {
     "text": "sobre"
@@ -4592,16 +4617,20 @@
     "text": "deveria"
   },
   "second": {
-    "text": "segundo"
+    "m": "segundo",
+    "f": "segunda"
   },
   "third": {
-    "text": "terceiro"
+    "m": "terceiro",
+    "f": "terceira"
   },
   "fourth": {
-    "text": "quarto"
+    "m": "quarto",
+    "f": "quarta"
   },
   "next": {
-    "text": "próximo"
+    "m": "próximo",
+    "f": "próxima"
   },
   "finally": {
     "text": "finalmente"
@@ -4640,13 +4669,16 @@
     "text": "mais"
   },
   "mine": {
-    "text": "o meu"
+    "m": "o meu",
+    "f": "a minha"
   },
   "yours": {
-    "text": "o teu"
+    "m": "o teu",
+    "f": "a tua"
   },
   "oneself": {
-    "text": "si mesmo"
+    "m": "si mesmo",
+    "f": "si mesma"
   },
   "manager": {
     "text": "gerente",
@@ -10204,16 +10236,20 @@
     },
     "segments": {
       "survival": {
-        "name": "Sobrevivência"
+        "name": "Sobrevivência",
+        "intro": "EU FALAR. VOCÊ ENTENDER."
       },
       "baby": {
-        "name": "Bebê"
+        "name": "Bebê",
+        "intro": "QUANTO MAÇÃ VERMELHO? MUITO CARO. DESCONTO?"
       },
       "kid": {
-        "name": "Criança"
+        "name": "Criança",
+        "intro": "BAGAGEM PESADO. PASSAPORTE PERDIDO. TURISTA CHORAR. FÉRIAS PERFEITO."
       },
       "adult": {
-        "name": "Adulto"
+        "name": "Adulto",
+        "intro": "UM SORRISO CONECTA AS ALMAS. A CONVERSA CONECTA AS COMUNIDADES."
       }
     }
   }

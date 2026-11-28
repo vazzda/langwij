@@ -12,6 +12,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appTitle => 'Langwij';
 
   @override
+  String numberWithSign(int number) {
+    return 'n.º $number';
+  }
+
+  @override
   String get parentAgreement => 'Concordancia de género';
 
   @override
@@ -450,27 +455,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get language_inDevelopmentTitle => 'En desarrollo';
 
   @override
-  String termCard_gender(String gender) {
-    return 'Género: $gender';
-  }
-
-  @override
   String get termCard_example => 'Ejemplo:';
-
-  @override
-  String termCard_cocaRank(int rank) {
-    return 'Frecuencia: $rank';
-  }
-
-  @override
-  String termCard_article(String article) {
-    return 'Artículo: $article';
-  }
-
-  @override
-  String termCard_aspect(String aspect) {
-    return 'Aspecto: $aspect';
-  }
 
   @override
   String get termCard_typePhrase => 'Frase';

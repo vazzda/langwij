@@ -1,6 +1,7 @@
 {
   "@@locale": "fr",
   "appTitle": "Langwij",
+  "numberWithSign": "n° {number}",
   "parentAgreement": "Accords en genre",
   "groupWords": "Verbes de base",
   "wordsCount": "{count, plural, one{{count} mot} other{{count} mots}}",
@@ -145,11 +146,7 @@
   "language_aiGeneratedNote": "Les paquets de ces langues ont été générés par IA et seulement en partie vérifiés par des experts. Tu peux les utiliser : ils sont bons pour la plupart, mais des erreurs restent possibles.",
   "language_inDevelopmentTitle": "En développement",
 
-  "termCard_gender": "Genre : {gender}",
   "termCard_example": "Exemple :",
-  "termCard_cocaRank": "Fréquence : {rank}",
-  "termCard_article": "Article : {article}",
-  "termCard_aspect": "Aspect : {aspect}",
   "termCard_typePhrase": "Expression",
   "termCard_typeInterrogative": "Interrogatif",
   "termCard_typePronoun": "Pronom",

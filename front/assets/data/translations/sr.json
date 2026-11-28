@@ -68,11 +68,15 @@
     "note": "Prodavnica je *zatvorena*."
   },
   "one": {
-    "text": "jedan",
+    "m": "jedan",
+    "f": "jedna",
+    "n": "jedno",
     "note": "Samo *jedan*, molim."
   },
   "two": {
-    "text": "dva",
+    "m": "dva",
+    "f": "dve",
+    "n": "dva",
     "note": "*Dve* karte, molim."
   },
   "three": {
@@ -933,15 +937,21 @@
     "text": "blizu"
   },
   "this": {
-    "text": "ovaj",
+    "m": "ovaj",
+    "f": "ova",
+    "n": "ovo",
     "note": "*Ovo* je moja kuća."
   },
   "that": {
-    "text": "taj",
+    "m": "taj",
+    "f": "ta",
+    "n": "to",
     "note": "Da li je *to* mesto slobodno?"
   },
   "that_o": {
-    "text": "onaj"
+    "m": "onaj",
+    "f": "ona",
+    "n": "ono"
   },
   "such": {
     "text": "ovakav"
@@ -2185,7 +2195,9 @@
     "note": "*Mi* idemo na aerodrom."
   },
   "they": {
-    "text": "oni",
+    "m": "oni",
+    "f": "one",
+    "n": "ona",
     "note": "*Oni* žive u Beogradu."
   },
   "it": {
@@ -2193,24 +2205,36 @@
     "note": "*Ono* je na stolu."
   },
   "my": {
-    "text": "moj",
+    "m": "moj",
+    "f": "moja",
+    "n": "moje",
     "note": "Ovo je *moj* telefon."
   },
   "your": {
-    "text": "tvoj",
+    "m": "tvoj",
+    "f": "tvoja",
+    "n": "tvoje",
     "note": "Da li je ovo *tvoj* ključ?"
   },
   "his": {
-    "text": "njegov"
+    "m": "njegov",
+    "f": "njegova",
+    "n": "njegovo"
   },
   "her": {
-    "text": "njen"
+    "m": "njen",
+    "f": "njena",
+    "n": "njeno"
   },
   "our": {
-    "text": "naš"
+    "m": "naš",
+    "f": "naša",
+    "n": "naše"
   },
   "their": {
-    "text": "njihov"
+    "m": "njihov",
+    "f": "njihova",
+    "n": "njihovo"
   },
   "zero": {
     "text": "nula",
@@ -2253,10 +2277,14 @@
     "note": "Ovde živi *hiljadu* ljudi."
   },
   "first": {
-    "text": "prvi"
+    "m": "prvi",
+    "f": "prva",
+    "n": "prvo"
   },
   "last": {
-    "text": "poslednji"
+    "m": "poslednji",
+    "f": "poslednja",
+    "n": "poslednje"
   },
   "half": {
     "text": "pola"
@@ -4393,7 +4421,10 @@
     "note": "Prodavnica je *otvorena*."
   },
   "all": {
-    "text": "sve"
+    "m": "sav",
+    "f": "sva",
+    "n": "sve",
+    "default": "n"
   },
   "that_conj": {
     "text": "da"
@@ -4639,28 +4670,45 @@
     "gender": "m"
   },
   "which": {
-    "text": "koji"
+    "m": "koji",
+    "f": "koja",
+    "n": "koje"
   },
   "whose": {
-    "text": "čiji"
+    "m": "čiji",
+    "f": "čija",
+    "n": "čije"
   },
   "its": {
-    "text": "njegovo"
+    "m": "njegov",
+    "f": "njegova",
+    "n": "njegovo",
+    "default": "n"
   },
   "every": {
-    "text": "svaki"
+    "m": "svaki",
+    "f": "svaka",
+    "n": "svako"
   },
   "some": {
-    "text": "neki"
+    "m": "neki",
+    "f": "neka",
+    "n": "neko"
   },
   "any": {
-    "text": "bilo koji"
+    "m": "bilo koji",
+    "f": "bilo koja",
+    "n": "bilo koje"
   },
   "each": {
-    "text": "svaki pojedini"
+    "m": "svaki pojedini",
+    "f": "svaka pojedina",
+    "n": "svako pojedino"
   },
   "both": {
-    "text": "oba"
+    "m": "oba",
+    "f": "obe",
+    "n": "oba"
   },
   "few": {
     "text": "malo njih"
@@ -4672,7 +4720,9 @@
     "text": "najviše"
   },
   "another": {
-    "text": "još jedan"
+    "m": "još jedan",
+    "f": "još jedna",
+    "n": "još jedno"
   },
   "other": {
     "m": "drugi",
@@ -4680,7 +4730,9 @@
     "n": "drugo"
   },
   "none": {
-    "text": "nijedan"
+    "m": "nijedan",
+    "f": "nijedna",
+    "n": "nijedno"
   },
   "plenty": {
     "text": "napretek"
@@ -4691,7 +4743,9 @@
     "n": "izvesno"
   },
   "own": {
-    "text": "sopstveni"
+    "m": "sopstveni",
+    "f": "sopstvena",
+    "n": "sopstveno"
   },
   "about": {
     "text": "o"
@@ -4903,16 +4957,24 @@
     "text": "trebalo bi"
   },
   "second": {
-    "text": "drugi"
+    "m": "drugi",
+    "f": "druga",
+    "n": "drugo"
   },
   "third": {
-    "text": "treći"
+    "m": "treći",
+    "f": "treća",
+    "n": "treće"
   },
   "fourth": {
-    "text": "četvrti"
+    "m": "četvrti",
+    "f": "četvrta",
+    "n": "četvrto"
   },
   "next": {
-    "text": "sledeći"
+    "m": "sledeći",
+    "f": "sledeća",
+    "n": "sledeće"
   },
   "finally": {
     "text": "konačno"
@@ -4951,10 +5013,14 @@
     "text": "drugo"
   },
   "mine": {
-    "text": "moj"
+    "m": "moj",
+    "f": "moja",
+    "n": "moje"
   },
   "yours": {
-    "text": "tvoj"
+    "m": "tvoj",
+    "f": "tvoja",
+    "n": "tvoje"
   },
   "oneself": {
     "text": "sebe"
@@ -5901,7 +5967,9 @@
     "n": "trenutno"
   },
   "former": {
-    "text": "bivši"
+    "m": "bivši",
+    "f": "bivša",
+    "n": "bivše"
   },
   "previous": {
     "m": "prethodni",
@@ -11032,16 +11100,20 @@
     },
     "segments": {
       "survival": {
-        "name": "Preživljavanje"
+        "name": "Preživljavanje",
+        "intro": "JA GOVORITI. TI RAZUMETI."
       },
       "baby": {
-        "name": "Beba"
+        "name": "Beba",
+        "intro": "KOLIKO CRVEN JABUKA? VEOMA SKUP. POPUST?"
       },
       "kid": {
-        "name": "Dete"
+        "name": "Dete",
+        "intro": "PRTLJAG TEŽAK. PASOŠ IZGUBLJEN. TURISTA PLAKATI. ODMOR SAVRŠEN."
       },
       "adult": {
-        "name": "Odrasli"
+        "name": "Odrasli",
+        "intro": "OSMEH SPAJA DUŠE. RAZGOVOR SPAJA ZAJEDNICE."
       }
     }
   }

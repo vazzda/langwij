@@ -1,6 +1,7 @@
 {
   "@@locale": "de",
   "appTitle": "Langwij",
+  "numberWithSign": "Nr. {number}",
   "parentAgreement": "Genus-Kongruenz",
   "groupWords": "Grundverben",
   "wordsCount": "{count, plural, one{{count} Wort} other{{count} Wörter}}",
@@ -145,11 +146,7 @@
   "language_aiGeneratedNote": "Die Stapel dieser Sprachen wurden von KI erstellt und nur teilweise von Fachleuten geprüft. Du kannst sie verwenden: Sie sind größtenteils gut, aber Fehler sind weiterhin möglich.",
   "language_inDevelopmentTitle": "In Entwicklung",
 
-  "termCard_gender": "Genus: {gender}",
   "termCard_example": "Beispiel:",
-  "termCard_cocaRank": "Häufigkeit: {rank}",
-  "termCard_article": "Artikel: {article}",
-  "termCard_aspect": "Aspekt: {aspect}",
   "termCard_typePhrase": "Phrase",
   "termCard_typeInterrogative": "Fragewort",
   "termCard_typePronoun": "Pronomen",

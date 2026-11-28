@@ -36,7 +36,7 @@ Interface language: derived from the native ("I speak") language through `Config
 
 Two-layer language config: target (being learned) and native (for definitions and for the interface language). Persisted in SQLite via `LanguageSettingsRepository`, exposed reactively through `ConfigService.languageSettings`.
 
-Language packs loaded from `assets/data/translations/{code}.json`. Each pack contains translations as `LangEntry` — a sealed hierarchy: `SimpleEntry` (text + optional gender), `AspectPairEntry` (imperfective/perfective, Serbian only), `AdjectiveEntry` (gender variants). Structure enforced per language by `LangGrammarProfile` (e.g. Serbian: hasNeuter + hasAspectPairs; German: hasNeuter only).
+Language packs loaded from `assets/data/translations/{code}.json`. Each pack contains translations as `LangEntry` — a sealed hierarchy: `SimpleEntry` (text + optional gender), `AspectPairEntry` (imperfective/perfective, Serbian only), `GenderFormsEntry` (one form per gender, for adjectives and for the pronouns and numerals that change by gender; an optional `default` field names the form that stands for the word, the masculine otherwise). Structure enforced per language by `LangGrammarProfile` (e.g. Serbian: hasNeuter + hasAspectPairs; German: hasNeuter only).
 
 Validation at two stages:
 - **Startup** (`StartupValidator`): confirms target + native language files exist and parse.

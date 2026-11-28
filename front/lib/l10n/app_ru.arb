@@ -1,6 +1,7 @@
 {
   "@@locale": "ru",
   "appTitle": "Langwij",
+  "numberWithSign": "№ {number}",
   "parentAgreement": "Согласование по роду",
   "groupWords": "Базовые глаголы",
   "wordsCount": "{count, plural, one{{count} слово} few{{count} слова} many{{count} слов} other{{count} слова}}",
@@ -145,11 +146,7 @@
   "language_aiGeneratedNote": "Колоды этих языков созданы ИИ и лишь частично проверены экспертами. Ими можно пользоваться: в основном они хороши, но ошибки всё ещё возможны.",
   "language_inDevelopmentTitle": "В разработке",
 
-  "termCard_gender": "Род: {gender}",
   "termCard_example": "Пример:",
-  "termCard_cocaRank": "Частотность: {rank}",
-  "termCard_article": "Артикль: {article}",
-  "termCard_aspect": "Вид: {aspect}",
   "termCard_typePhrase": "Фраза",
   "termCard_typeInterrogative": "Вопросительное слово",
   "termCard_typePronoun": "Местоимение",

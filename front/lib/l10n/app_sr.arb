@@ -1,6 +1,7 @@
 {
   "@@locale": "sr",
   "appTitle": "Langwij",
+  "numberWithSign": "br. {number}",
   "parentAgreement": "Slaganje u rodu",
   "groupWords": "Osnovni glagoli",
   "wordsCount": "{count, plural, one{{count} reč} few{{count} reči} other{{count} reči}}",
@@ -145,11 +146,7 @@
   "language_aiGeneratedNote": "Špilove ovih jezika napravio je AI, a stručnjaci su ih proverili samo delimično. Možeš da ih koristiš: uglavnom su dobri, ali greške su i dalje moguće.",
   "language_inDevelopmentTitle": "U razvoju",
 
-  "termCard_gender": "Rod: {gender}",
   "termCard_example": "Primer:",
-  "termCard_cocaRank": "Učestalost: {rank}",
-  "termCard_article": "Član: {article}",
-  "termCard_aspect": "Vid: {aspect}",
   "termCard_typePhrase": "Fraza",
   "termCard_typeInterrogative": "Upitna reč",
   "termCard_typePronoun": "Zamenica",

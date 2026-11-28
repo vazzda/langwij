@@ -236,13 +236,13 @@ class TranslationEditorPage {
   #detectEntryShape(entry) {
     if (Object.keys(entry).length === 0) return 'empty';
     if (entry.imperfective || entry.perfective) return 'aspect-pair';
-    if (entry.m || entry.f) return 'adjective';
+    if (entry.m || entry.f) return 'gender-forms';
     return 'simple';
   }
 
   #formatReadonlyShapeLabel(shape) {
     if (shape === 'aspect-pair') return 'aspect pair';
-    if (shape === 'adjective') return 'adjective forms';
+    if (shape === 'gender-forms') return 'gender forms';
     return shape;
   }
 
@@ -251,10 +251,11 @@ class TranslationEditorPage {
     if (shape === 'aspect-pair') {
       if (entry.imperfective) parts.push('imp: ' + entry.imperfective);
       if (entry.perfective) parts.push('pf: ' + entry.perfective);
-    } else if (shape === 'adjective') {
+    } else if (shape === 'gender-forms') {
       if (entry.m) parts.push('m: ' + entry.m);
       if (entry.f) parts.push('f: ' + entry.f);
       if (entry.n) parts.push('n: ' + entry.n);
+      if (entry.default) parts.push('default: ' + entry.default);
     } else {
       if (entry.gender) parts.push(entry.gender);
       if (entry.article) parts.push(entry.article);

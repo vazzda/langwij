@@ -1280,7 +1280,8 @@
     "gender": "m"
   },
   "first": {
-    "text": "primero"
+    "m": "primero",
+    "f": "primera"
   },
   "fish": {
     "text": "pescado",
@@ -1932,7 +1933,8 @@
     "gender": "m"
   },
   "last": {
-    "text": "último"
+    "m": "último",
+    "f": "última"
   },
   "later": {
     "text": "más tarde",
@@ -2431,7 +2433,8 @@
     "text": "en"
   },
   "one": {
-    "text": "uno",
+    "m": "uno",
+    "f": "una",
     "note": "Solo *uno*, por favor."
   },
   "one_night_stand": {
@@ -2464,7 +2467,8 @@
     "text": "de lo contrario"
   },
   "our": {
-    "text": "nuestro"
+    "m": "nuestro",
+    "f": "nuestra"
   },
   "oven": {
     "text": "horno",
@@ -3518,7 +3522,9 @@
     "note": "Muchas *gracias*."
   },
   "that": {
-    "text": "ese",
+    "m": "ese",
+    "f": "esa",
+    "n": "eso",
     "note": "¿*Ese* asiento está libre?"
   },
   "that_o": {
@@ -3546,7 +3552,8 @@
     "text": "por lo tanto"
   },
   "they": {
-    "text": "ellos",
+    "m": "ellos",
+    "f": "ellas",
     "note": "*Ellos* viven en Belgrado."
   },
   "thing": {
@@ -3562,7 +3569,10 @@
     "f": "sedienta"
   },
   "this": {
-    "text": "esto",
+    "m": "este",
+    "f": "esta",
+    "n": "esto",
+    "default": "n",
     "note": "*Esto* es para ti."
   },
   "thousand": {
@@ -3913,7 +3923,8 @@
     "gender": "m"
   },
   "we": {
-    "text": "nosotros",
+    "m": "nosotros",
+    "f": "nosotras",
     "note": "*Nosotros* vamos al aeropuerto."
   },
   "weak": {
@@ -4112,7 +4123,8 @@
     "note": "La tienda está *abierta*."
   },
   "all": {
-    "text": "todo"
+    "m": "todo",
+    "f": "toda"
   },
   "that_conj": {
     "text": "que"
@@ -4343,35 +4355,42 @@
     "text": "cada"
   },
   "some": {
-    "text": "algunos"
+    "m": "algunos",
+    "f": "algunas"
   },
   "any": {
     "text": "cualquier"
   },
   "each": {
-    "text": "cada uno"
+    "m": "cada uno",
+    "f": "cada una"
   },
   "both": {
-    "text": "ambos"
+    "m": "ambos",
+    "f": "ambas"
   },
   "few": {
-    "text": "pocos"
+    "m": "pocos",
+    "f": "pocas"
   },
   "several": {
-    "text": "varios"
+    "m": "varios",
+    "f": "varias"
   },
   "most": {
     "text": "lo más"
   },
   "another": {
-    "text": "otro más"
+    "m": "otro más",
+    "f": "otra más"
   },
   "other": {
     "m": "otro",
     "f": "otra"
   },
   "none": {
-    "text": "ninguno"
+    "m": "ninguno",
+    "f": "ninguna"
   },
   "plenty": {
     "text": "un montón"
@@ -4381,7 +4400,8 @@
     "f": "cierta"
   },
   "own": {
-    "text": "propio"
+    "m": "propio",
+    "f": "propia"
   },
   "about": {
     "text": "sobre"
@@ -4592,13 +4612,16 @@
     "text": "debería"
   },
   "second": {
-    "text": "segundo"
+    "m": "segundo",
+    "f": "segunda"
   },
   "third": {
-    "text": "tercero"
+    "m": "tercero",
+    "f": "tercera"
   },
   "fourth": {
-    "text": "cuarto"
+    "m": "cuarto",
+    "f": "cuarta"
   },
   "next": {
     "text": "siguiente"
@@ -4628,7 +4651,8 @@
     "text": "cualquiera"
   },
   "everyone": {
-    "text": "todos"
+    "m": "todos",
+    "f": "todas"
   },
   "nobody": {
     "text": "nadie"
@@ -4640,13 +4664,16 @@
     "text": "más"
   },
   "mine": {
-    "text": "el mío"
+    "m": "el mío",
+    "f": "la mía"
   },
   "yours": {
-    "text": "el tuyo"
+    "m": "el tuyo",
+    "f": "la tuya"
   },
   "oneself": {
-    "text": "uno mismo"
+    "m": "uno mismo",
+    "f": "una misma"
   },
   "manager": {
     "text": "gerente",
@@ -10204,16 +10231,20 @@
     },
     "segments": {
       "survival": {
-        "name": "Supervivencia"
+        "name": "Supervivencia",
+        "intro": "YO HABLAR. TÚ ENTENDER."
       },
       "baby": {
-        "name": "Bebé"
+        "name": "Bebé",
+        "intro": "CUÁNTO MANZANA ROJO? MUY CARO. DESCUENTO?"
       },
       "kid": {
-        "name": "Niño"
+        "name": "Niño",
+        "intro": "EQUIPAJE PESADO. PASAPORTE PERDIDO. TURISTA LLORAR. VACACIONES PERFECTO."
       },
       "adult": {
-        "name": "Adulto"
+        "name": "Adulto",
+        "intro": "UNA SONRISA CONECTA LAS ALMAS. LA CONVERSACIÓN CONECTA LAS COMUNIDADES."
       }
     }
   }

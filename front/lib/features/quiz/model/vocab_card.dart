@@ -41,8 +41,7 @@ class SimpleVocabCard extends VocabCard {
     this.gender,
     this.article,
     this.aspect,
-    this.feminineForm,
-    this.neuterForm,
+    this.genderForms = const [],
   });
 
   @override
@@ -50,8 +49,11 @@ class SimpleVocabCard extends VocabCard {
   final GrammaticalGender? gender;
   final String? article;
   final VerbAspect? aspect;
-  final String? feminineForm;
-  final String? neuterForm;
+
+  /// Every gender form of a word that changes by gender, the masculine
+  /// first; empty for a word of one form. [targetText] is the one of them
+  /// that stands for the word.
+  final List<String> genderForms;
 
   @override
   String get targetAnswer => targetText;

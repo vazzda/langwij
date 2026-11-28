@@ -1,6 +1,7 @@
 {
   "@@locale": "es",
   "appTitle": "Langwij",
+  "numberWithSign": "n.º {number}",
   "parentAgreement": "Concordancia de género",
   "groupWords": "Verbos básicos",
   "wordsCount": "{count, plural, one{{count} palabra} other{{count} palabras}}",
@@ -145,11 +146,7 @@
   "language_aiGeneratedNote": "Los mazos de estos idiomas fueron generados por IA y solo en parte revisados por expertos. Puedes usarlos: en su mayoría son buenos, pero aún puede haber errores.",
   "language_inDevelopmentTitle": "En desarrollo",
 
-  "termCard_gender": "Género: {gender}",
   "termCard_example": "Ejemplo:",
-  "termCard_cocaRank": "Frecuencia: {rank}",
-  "termCard_article": "Artículo: {article}",
-  "termCard_aspect": "Aspecto: {aspect}",
   "termCard_typePhrase": "Frase",
   "termCard_typeInterrogative": "Interrogativo",
   "termCard_typePronoun": "Pronombre",

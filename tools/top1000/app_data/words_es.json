@@ -1,6 +1,7 @@
 {
   "all": {
-    "text": "todo"
+    "m": "todo",
+    "f": "toda"
   },
   "that_conj": {
     "text": "que"
@@ -231,35 +232,42 @@
     "text": "cada"
   },
   "some": {
-    "text": "algunos"
+    "m": "algunos",
+    "f": "algunas"
   },
   "any": {
     "text": "cualquier"
   },
   "each": {
-    "text": "cada uno"
+    "m": "cada uno",
+    "f": "cada una"
   },
   "both": {
-    "text": "ambos"
+    "m": "ambos",
+    "f": "ambas"
   },
   "few": {
-    "text": "pocos"
+    "m": "pocos",
+    "f": "pocas"
   },
   "several": {
-    "text": "varios"
+    "m": "varios",
+    "f": "varias"
   },
   "most": {
     "text": "lo más"
   },
   "another": {
-    "text": "otro más"
+    "m": "otro más",
+    "f": "otra más"
   },
   "other": {
     "m": "otro",
     "f": "otra"
   },
   "none": {
-    "text": "ninguno"
+    "m": "ninguno",
+    "f": "ninguna"
   },
   "plenty": {
     "text": "un montón"
@@ -269,7 +277,8 @@
     "f": "cierta"
   },
   "own": {
-    "text": "propio"
+    "m": "propio",
+    "f": "propia"
   },
   "about": {
     "text": "sobre"
@@ -480,13 +489,16 @@
     "text": "debería"
   },
   "second": {
-    "text": "segundo"
+    "m": "segundo",
+    "f": "segunda"
   },
   "third": {
-    "text": "tercero"
+    "m": "tercero",
+    "f": "tercera"
   },
   "fourth": {
-    "text": "cuarto"
+    "m": "cuarto",
+    "f": "cuarta"
   },
   "next": {
     "text": "siguiente"
@@ -516,7 +528,8 @@
     "text": "cualquiera"
   },
   "everyone": {
-    "text": "todos"
+    "m": "todos",
+    "f": "todas"
   },
   "nobody": {
     "text": "nadie"
@@ -528,13 +541,16 @@
     "text": "más"
   },
   "mine": {
-    "text": "el mío"
+    "m": "el mío",
+    "f": "la mía"
   },
   "yours": {
-    "text": "el tuyo"
+    "m": "el tuyo",
+    "f": "la tuya"
   },
   "oneself": {
-    "text": "uno mismo"
+    "m": "uno mismo",
+    "f": "una misma"
   },
   "manager": {
     "text": "gerente",

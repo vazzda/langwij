@@ -12,6 +12,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'Langwij';
 
   @override
+  String numberWithSign(int number) {
+    return '#$number';
+  }
+
+  @override
   String get parentAgreement => 'Gender agreements';
 
   @override
@@ -442,27 +447,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get language_inDevelopmentTitle => 'In development';
 
   @override
-  String termCard_gender(String gender) {
-    return 'Gender: $gender';
-  }
-
-  @override
   String get termCard_example => 'Example:';
-
-  @override
-  String termCard_cocaRank(int rank) {
-    return 'Frequency: $rank';
-  }
-
-  @override
-  String termCard_article(String article) {
-    return 'Article: $article';
-  }
-
-  @override
-  String termCard_aspect(String aspect) {
-    return 'Aspect: $aspect';
-  }
 
   @override
   String get termCard_typePhrase => 'Phrase';

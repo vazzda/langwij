@@ -147,6 +147,7 @@ lib/
 │   │       └── ui/
 │   │           ├── round_page.dart                     quiz round screen
 │   │           ├── term_example.dart                   TermExample widget (a term's example behind its label, its marked word in bold)
+│   │           ├── term_info_section.dart              TermInfoSection widget (a term's frequency, type and specifics, line under line)
 │   │           └── term_title.dart                     TermTitle widget (the word of a card as its title, capitalised)
 │   │
 │   ├── settings/                                  app settings

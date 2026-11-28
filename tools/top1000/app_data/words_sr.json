@@ -1,6 +1,9 @@
 {
   "all": {
-    "text": "sve"
+    "m": "sav",
+    "f": "sva",
+    "n": "sve",
+    "default": "n"
   },
   "that_conj": {
     "text": "da"
@@ -246,28 +249,45 @@
     "gender": "m"
   },
   "which": {
-    "text": "koji"
+    "m": "koji",
+    "f": "koja",
+    "n": "koje"
   },
   "whose": {
-    "text": "čiji"
+    "m": "čiji",
+    "f": "čija",
+    "n": "čije"
   },
   "its": {
-    "text": "njegovo"
+    "m": "njegov",
+    "f": "njegova",
+    "n": "njegovo",
+    "default": "n"
   },
   "every": {
-    "text": "svaki"
+    "m": "svaki",
+    "f": "svaka",
+    "n": "svako"
   },
   "some": {
-    "text": "neki"
+    "m": "neki",
+    "f": "neka",
+    "n": "neko"
   },
   "any": {
-    "text": "bilo koji"
+    "m": "bilo koji",
+    "f": "bilo koja",
+    "n": "bilo koje"
   },
   "each": {
-    "text": "svaki pojedini"
+    "m": "svaki pojedini",
+    "f": "svaka pojedina",
+    "n": "svako pojedino"
   },
   "both": {
-    "text": "oba"
+    "m": "oba",
+    "f": "obe",
+    "n": "oba"
   },
   "few": {
     "text": "malo njih"
@@ -279,7 +299,9 @@
     "text": "najviše"
   },
   "another": {
-    "text": "još jedan"
+    "m": "još jedan",
+    "f": "još jedna",
+    "n": "još jedno"
   },
   "other": {
     "m": "drugi",
@@ -287,7 +309,9 @@
     "n": "drugo"
   },
   "none": {
-    "text": "nijedan"
+    "m": "nijedan",
+    "f": "nijedna",
+    "n": "nijedno"
   },
   "plenty": {
     "text": "napretek"
@@ -298,7 +322,9 @@
     "n": "izvesno"
   },
   "own": {
-    "text": "sopstveni"
+    "m": "sopstveni",
+    "f": "sopstvena",
+    "n": "sopstveno"
   },
   "about": {
     "text": "o"
@@ -510,16 +536,24 @@
     "text": "trebalo bi"
   },
   "second": {
-    "text": "drugi"
+    "m": "drugi",
+    "f": "druga",
+    "n": "drugo"
   },
   "third": {
-    "text": "treći"
+    "m": "treći",
+    "f": "treća",
+    "n": "treće"
   },
   "fourth": {
-    "text": "četvrti"
+    "m": "četvrti",
+    "f": "četvrta",
+    "n": "četvrto"
   },
   "next": {
-    "text": "sledeći"
+    "m": "sledeći",
+    "f": "sledeća",
+    "n": "sledeće"
   },
   "finally": {
     "text": "konačno"
@@ -558,10 +592,14 @@
     "text": "drugo"
   },
   "mine": {
-    "text": "moj"
+    "m": "moj",
+    "f": "moja",
+    "n": "moje"
   },
   "yours": {
-    "text": "tvoj"
+    "m": "tvoj",
+    "f": "tvoja",
+    "n": "tvoje"
   },
   "oneself": {
     "text": "sebe"
@@ -1508,7 +1546,9 @@
     "n": "trenutno"
   },
   "former": {
-    "text": "bivši"
+    "m": "bivši",
+    "f": "bivša",
+    "n": "bivše"
   },
   "previous": {
     "m": "prethodni",

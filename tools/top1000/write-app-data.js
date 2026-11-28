@@ -58,9 +58,16 @@ const EntryKey = Object.freeze({
   masculine: 'm',
   feminine: 'f',
   neuter: 'n',
+  defaultForm: 'default',
   note: 'note',
 });
-const Pos = Object.freeze({ noun: 'noun', adjective: 'adjective', verb: 'verb' });
+const Pos = Object.freeze({
+  noun: 'noun',
+  adjective: 'adjective',
+  verb: 'verb',
+  pronoun: 'pronoun',
+  numeral: 'numeral',
+});
 const GENDER_VALUES = Object.freeze(['m', 'f', 'n']);
 const ASPECT_VALUES = Object.freeze(['perfective', 'imperfective']);
 const ARTICLE_BY_GENDER = Object.freeze({ m: 'der', f: 'die', n: 'das' });
@@ -172,16 +179,44 @@ function isFilledText(value) {
   return typeof value === 'string' && value.trim() !== '';
 }
 
+// Says what is wrong with an entry that holds one form for each gender; an empty
+// text means it is right. The language's shape names the forms it must hold. A
+// pronoun or a numeral of a language with two forms may hold a neuter beside
+// them, where the word has one (Spanish "esto"). The default field names the
+// form that stands for the word; without it the masculine does.
+function describeFaultOfGenderForms(entry, shapes, mayHoldNeuterBesideTwoForms) {
+  const requiredKeys = shapes.adjective === AdjectiveShape.threeForms
+    ? [EntryKey.masculine, EntryKey.feminine, EntryKey.neuter]
+    : [EntryKey.masculine, EntryKey.feminine];
+  const formKeys = mayHoldNeuterBesideTwoForms
+    ? [EntryKey.masculine, EntryKey.feminine, EntryKey.neuter]
+    : requiredKeys;
+  const allowedKeys = [...formKeys, EntryKey.defaultForm];
+  if (!hasOnlyKeys(entry, allowedKeys)) return `has keys other than ${allowedKeys.join(', ')}`;
+  if (!requiredKeys.every((key) => isFilledText(entry[key]))) return `needs ${requiredKeys.join(', ')}`;
+  if (EntryKey.neuter in entry && !isFilledText(entry[EntryKey.neuter])) return 'has an empty neuter form';
+  if (EntryKey.defaultForm in entry) {
+    const defaultFormKey = entry[EntryKey.defaultForm];
+    if (!formKeys.includes(defaultFormKey) || !isFilledText(entry[defaultFormKey])) {
+      return 'names a default form it does not hold';
+    }
+  }
+  return '';
+}
+
 // Says what is wrong with the shape of a drafted entry; an empty text means it is right.
 function describeShapeFaultOfEntry(entry, pos, languageCode) {
   const shapes = LANGUAGE_SHAPES[languageCode];
   if (entry === null || typeof entry !== 'object') return 'is not an object';
-  if (pos === Pos.adjective && shapes.adjective !== AdjectiveShape.text) {
-    const formKeys = shapes.adjective === AdjectiveShape.threeForms
-      ? [EntryKey.masculine, EntryKey.feminine, EntryKey.neuter]
-      : [EntryKey.masculine, EntryKey.feminine];
-    if (!hasOnlyKeys(entry, formKeys)) return `has keys other than ${formKeys.join(', ')}`;
-    return formKeys.every((key) => isFilledText(entry[key])) ? '' : `needs ${formKeys.join(', ')}`;
+  const languageHasGenderForms = shapes.adjective !== AdjectiveShape.text;
+  if (pos === Pos.adjective && languageHasGenderForms) {
+    return describeFaultOfGenderForms(entry, shapes, false);
+  }
+  // A pronoun or a numeral holds gender forms only when it changes by gender;
+  // otherwise it is one word, checked below like any other.
+  const mayChangeByGender = pos === Pos.pronoun || pos === Pos.numeral;
+  if (mayChangeByGender && languageHasGenderForms && EntryKey.masculine in entry) {
+    return describeFaultOfGenderForms(entry, shapes, true);
   }
   if (pos === Pos.verb && shapes.verbHasAspect && EntryKey.imperfective in entry) {
     const pairKeys = [EntryKey.imperfective, EntryKey.perfective];

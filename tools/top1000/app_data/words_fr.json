@@ -1,6 +1,7 @@
 {
   "all": {
-    "text": "tout"
+    "m": "tout",
+    "f": "toute"
   },
   "that_conj": {
     "text": "que"
@@ -219,13 +220,15 @@
     "gender": "m"
   },
   "which": {
-    "text": "lequel"
+    "m": "lequel",
+    "f": "laquelle"
   },
   "whose": {
     "text": "à qui"
   },
   "its": {
-    "text": "son"
+    "m": "son",
+    "f": "sa"
   },
   "every": {
     "text": "chaque"
@@ -234,10 +237,12 @@
     "text": "quelques"
   },
   "any": {
-    "text": "n'importe quel"
+    "m": "n'importe quel",
+    "f": "n'importe quelle"
   },
   "each": {
-    "text": "chacun"
+    "m": "chacun",
+    "f": "chacune"
   },
   "both": {
     "text": "les deux"
@@ -252,14 +257,16 @@
     "text": "le plus"
   },
   "another": {
-    "text": "un autre"
+    "m": "un autre",
+    "f": "une autre"
   },
   "other": {
     "m": "autre",
     "f": "autre"
   },
   "none": {
-    "text": "aucun"
+    "m": "aucun",
+    "f": "aucune"
   },
   "plenty": {
     "text": "plein"
@@ -489,7 +496,8 @@
     "text": "quatrième"
   },
   "next": {
-    "text": "prochain"
+    "m": "prochain",
+    "f": "prochaine"
   },
   "finally": {
     "text": "enfin"
@@ -528,10 +536,12 @@
     "text": "d'autre"
   },
   "mine": {
-    "text": "le mien"
+    "m": "le mien",
+    "f": "la mienne"
   },
   "yours": {
-    "text": "le tien"
+    "m": "le tien",
+    "f": "la tienne"
   },
   "oneself": {
     "text": "soi-même"
@@ -1358,7 +1368,8 @@
     "f": "actuelle"
   },
   "former": {
-    "text": "ancien"
+    "m": "ancien",
+    "f": "ancienne"
   },
   "previous": {
     "m": "précédent",

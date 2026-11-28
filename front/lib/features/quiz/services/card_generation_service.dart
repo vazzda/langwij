@@ -58,17 +58,16 @@ class CardGenerationService {
             aspect: aspect,
           ));
 
-        case AdjectiveEntry(:final m, :final note, :final f, :final n):
+        case GenderFormsEntry(:final headword, :final forms, :final note):
           cards.add(SimpleVocabCard(
             termId: termId,
             nativeText: nativeText,
             pos: pos,
             coca: coca,
-            targetText: m,
+            targetText: headword,
             nativeNote: nativeNote,
             targetNote: note,
-            feminineForm: f,
-            neuterForm: n,
+            genderForms: forms,
           ));
       }
     }
@@ -80,6 +79,6 @@ class CardGenerationService {
         SimpleEntry(:final text) => text,
         AspectPairEntry(:final imperfective, :final perfective) =>
           '$imperfective / $perfective',
-        AdjectiveEntry(:final m) => m,
+        GenderFormsEntry(:final headword) => headword,
       };
 }

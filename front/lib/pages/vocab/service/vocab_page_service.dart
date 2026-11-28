@@ -41,6 +41,7 @@ class VocabPageService {
           segmentId: segment.id,
           name: nativePack.vocabularyLevelSegmentMeta[segment.id]?.name ??
               segment.id,
+          intro: nativePack.vocabularyLevelSegmentMeta[segment.id]?.intro,
           levels: [
             for (final levelId in segment.levelIds)
               if (levelsByLevelId[levelId] case final level?)

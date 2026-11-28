@@ -116,6 +116,12 @@ abstract class AppLocalizations {
   /// **'Langwij'**
   String get appTitle;
 
+  /// No description provided for @numberWithSign.
+  ///
+  /// In en, this message translates to:
+  /// **'#{number}'**
+  String numberWithSign(int number);
+
   /// No description provided for @parentAgreement.
   ///
   /// In en, this message translates to:
@@ -890,35 +896,11 @@ abstract class AppLocalizations {
   /// **'In development'**
   String get language_inDevelopmentTitle;
 
-  /// No description provided for @termCard_gender.
-  ///
-  /// In en, this message translates to:
-  /// **'Gender: {gender}'**
-  String termCard_gender(String gender);
-
   /// No description provided for @termCard_example.
   ///
   /// In en, this message translates to:
   /// **'Example:'**
   String get termCard_example;
-
-  /// No description provided for @termCard_cocaRank.
-  ///
-  /// In en, this message translates to:
-  /// **'Frequency: {rank}'**
-  String termCard_cocaRank(int rank);
-
-  /// No description provided for @termCard_article.
-  ///
-  /// In en, this message translates to:
-  /// **'Article: {article}'**
-  String termCard_article(String article);
-
-  /// No description provided for @termCard_aspect.
-  ///
-  /// In en, this message translates to:
-  /// **'Aspect: {aspect}'**
-  String termCard_aspect(String aspect);
 
   /// No description provided for @termCard_typePhrase.
   ///

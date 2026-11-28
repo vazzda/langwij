@@ -1,6 +1,7 @@
 {
   "all": {
-    "text": "tutto"
+    "m": "tutto",
+    "f": "tutta"
   },
   "that_conj": {
     "text": "che"
@@ -225,41 +226,49 @@
     "text": "di chi"
   },
   "its": {
-    "text": "suo"
+    "m": "suo",
+    "f": "sua"
   },
   "every": {
     "text": "ogni"
   },
   "some": {
-    "text": "alcuni"
+    "m": "alcuni",
+    "f": "alcune"
   },
   "any": {
     "text": "qualsiasi"
   },
   "each": {
-    "text": "ciascuno"
+    "m": "ciascuno",
+    "f": "ciascuna"
   },
   "both": {
-    "text": "entrambi"
+    "m": "entrambi",
+    "f": "entrambe"
   },
   "few": {
-    "text": "pochi"
+    "m": "pochi",
+    "f": "poche"
   },
   "several": {
-    "text": "parecchi"
+    "m": "parecchi",
+    "f": "parecchie"
   },
   "most": {
     "text": "il più"
   },
   "another": {
-    "text": "un altro"
+    "m": "un altro",
+    "f": "un'altra"
   },
   "other": {
     "m": "altro",
     "f": "altra"
   },
   "none": {
-    "text": "nessuno"
+    "m": "nessuno",
+    "f": "nessuna"
   },
   "plenty": {
     "text": "un sacco"
@@ -269,7 +278,8 @@
     "f": "certa"
   },
   "own": {
-    "text": "proprio"
+    "m": "proprio",
+    "f": "propria"
   },
   "about": {
     "text": "su"
@@ -480,16 +490,20 @@
     "text": "dovrebbe"
   },
   "second": {
-    "text": "secondo"
+    "m": "secondo",
+    "f": "seconda"
   },
   "third": {
-    "text": "terzo"
+    "m": "terzo",
+    "f": "terza"
   },
   "fourth": {
-    "text": "quarto"
+    "m": "quarto",
+    "f": "quarta"
   },
   "next": {
-    "text": "prossimo"
+    "m": "prossimo",
+    "f": "prossima"
   },
   "finally": {
     "text": "finalmente"
@@ -510,13 +524,15 @@
     "text": "ogni cosa"
   },
   "someone": {
-    "text": "qualcuno"
+    "m": "qualcuno",
+    "f": "qualcuna"
   },
   "anyone": {
     "text": "chiunque"
   },
   "everyone": {
-    "text": "tutti"
+    "m": "tutti",
+    "f": "tutte"
   },
   "nobody": {
     "text": "nessuna persona"
@@ -528,13 +544,16 @@
     "text": "altro"
   },
   "mine": {
-    "text": "il mio"
+    "m": "il mio",
+    "f": "la mia"
   },
   "yours": {
-    "text": "il tuo"
+    "m": "il tuo",
+    "f": "la tua"
   },
   "oneself": {
-    "text": "sé stesso"
+    "m": "sé stesso",
+    "f": "sé stessa"
   },
   "manager": {
     "text": "manager",

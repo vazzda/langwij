@@ -1,6 +1,7 @@
 {
   "@@locale": "pt",
   "appTitle": "Langwij",
+  "numberWithSign": "n.º {number}",
   "parentAgreement": "Concordância de género",
   "groupWords": "Verbos básicos",
   "wordsCount": "{count, plural, one{{count} palavra} other{{count} palavras}}",
@@ -145,11 +146,7 @@
   "language_aiGeneratedNote": "Os baralhos destes idiomas foram gerados por IA e apenas em parte verificados por especialistas. Podes usá-los: são bons na sua maioria, mas ainda podem existir erros.",
   "language_inDevelopmentTitle": "Em desenvolvimento",
 
-  "termCard_gender": "Género: {gender}",
   "termCard_example": "Exemplo:",
-  "termCard_cocaRank": "Frequência: {rank}",
-  "termCard_article": "Artigo: {article}",
-  "termCard_aspect": "Aspeto: {aspect}",
   "termCard_typePhrase": "Frase",
   "termCard_typeInterrogative": "Interrogativo",
   "termCard_typePronoun": "Pronome",

@@ -127,18 +127,31 @@ class _RoundPageState extends ConsumerState<RoundPage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             FlesselCard(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    l10n.correctCount(round.correctCount),
-                    style: FlesselFonts.displayM.copyWith(color: t.accentColor),
-                  ),
-                  Text(
-                    l10n.questionsLeft(round.queue.length),
-                    style: FlesselFonts.displayM.copyWith(color: t.fg),
-                  ),
-                ],
+              variant: FlesselCardVariant.transparent,
+              padding: FlesselSize.none,
+              margin: FlesselSize.none,
+              // The card control pads all four sides alike, so the padding of
+              // the left and right sides alone is given here, by the card's
+              // own value.
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: FlesselLayout.cardPadding(FlesselSize.m),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      l10n.correctCount(round.correctCount),
+                      style: FlesselFonts.controlS.copyWith(
+                        color: t.accentColor,
+                      ),
+                    ),
+                    Text(
+                      l10n.questionsLeft(round.queue.length),
+                      style: FlesselFonts.controlS.copyWith(color: t.fg),
+                    ),
+                  ],
+                ),
               ),
             ),
             _answerFeedback != null &&

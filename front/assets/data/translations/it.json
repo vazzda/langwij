@@ -1276,7 +1276,8 @@
     "gender": "m"
   },
   "first": {
-    "text": "primo"
+    "m": "primo",
+    "f": "prima"
   },
   "fish": {
     "text": "pesce",
@@ -1595,7 +1596,8 @@
     "note": "Il mio amico mi *aiuta*."
   },
   "her": {
-    "text": "suo"
+    "m": "suo",
+    "f": "sua"
   },
   "here": {
     "text": "qui",
@@ -1613,7 +1615,8 @@
     "text": "assumere"
   },
   "his": {
-    "text": "suo"
+    "m": "suo",
+    "f": "sua"
   },
   "to_hold": {
     "text": "tenere"
@@ -1813,7 +1816,8 @@
     "gender": "f"
   },
   "it": {
-    "text": "esso",
+    "m": "esso",
+    "f": "essa",
     "note": "*Esso* è sul tavolo."
   },
   "ivory": {
@@ -1928,7 +1932,8 @@
     "gender": "f"
   },
   "last": {
-    "text": "ultimo"
+    "m": "ultimo",
+    "f": "ultima"
   },
   "later": {
     "text": "più tardi",
@@ -2287,7 +2292,8 @@
     "gender": "f"
   },
   "my": {
-    "text": "mio",
+    "m": "mio",
+    "f": "mia",
     "note": "Questo è il *mio* telefono."
   },
   "nail_clipper": {
@@ -2427,7 +2433,8 @@
     "text": "su"
   },
   "one": {
-    "text": "uno",
+    "m": "uno",
+    "f": "una",
     "note": "Solo *uno*, per favore."
   },
   "one_night_stand": {
@@ -2460,7 +2467,8 @@
     "text": "altrimenti"
   },
   "our": {
-    "text": "nostro"
+    "m": "nostro",
+    "f": "nostra"
   },
   "oven": {
     "text": "forno",
@@ -3514,7 +3522,8 @@
     "note": "*Grazie* mille."
   },
   "that": {
-    "text": "quello",
+    "m": "quello",
+    "f": "quella",
     "note": "*Quel* posto è libero?"
   },
   "that_o": {
@@ -3558,7 +3567,8 @@
     "f": "assetata"
   },
   "this": {
-    "text": "questo",
+    "m": "questo",
+    "f": "questa",
     "note": "*Questa* è la mia casa."
   },
   "thousand": {
@@ -4096,7 +4106,8 @@
     "f": "giovane"
   },
   "your": {
-    "text": "tuo",
+    "m": "tuo",
+    "f": "tua",
     "note": "È la *tua* chiave?"
   },
   "zero": {
@@ -4112,7 +4123,8 @@
     "note": "Il negozio è *aperto*."
   },
   "all": {
-    "text": "tutto"
+    "m": "tutto",
+    "f": "tutta"
   },
   "that_conj": {
     "text": "che"
@@ -4337,41 +4349,49 @@
     "text": "di chi"
   },
   "its": {
-    "text": "suo"
+    "m": "suo",
+    "f": "sua"
   },
   "every": {
     "text": "ogni"
   },
   "some": {
-    "text": "alcuni"
+    "m": "alcuni",
+    "f": "alcune"
   },
   "any": {
     "text": "qualsiasi"
   },
   "each": {
-    "text": "ciascuno"
+    "m": "ciascuno",
+    "f": "ciascuna"
   },
   "both": {
-    "text": "entrambi"
+    "m": "entrambi",
+    "f": "entrambe"
   },
   "few": {
-    "text": "pochi"
+    "m": "pochi",
+    "f": "poche"
   },
   "several": {
-    "text": "parecchi"
+    "m": "parecchi",
+    "f": "parecchie"
   },
   "most": {
     "text": "il più"
   },
   "another": {
-    "text": "un altro"
+    "m": "un altro",
+    "f": "un'altra"
   },
   "other": {
     "m": "altro",
     "f": "altra"
   },
   "none": {
-    "text": "nessuno"
+    "m": "nessuno",
+    "f": "nessuna"
   },
   "plenty": {
     "text": "un sacco"
@@ -4381,7 +4401,8 @@
     "f": "certa"
   },
   "own": {
-    "text": "proprio"
+    "m": "proprio",
+    "f": "propria"
   },
   "about": {
     "text": "su"
@@ -4592,16 +4613,20 @@
     "text": "dovrebbe"
   },
   "second": {
-    "text": "secondo"
+    "m": "secondo",
+    "f": "seconda"
   },
   "third": {
-    "text": "terzo"
+    "m": "terzo",
+    "f": "terza"
   },
   "fourth": {
-    "text": "quarto"
+    "m": "quarto",
+    "f": "quarta"
   },
   "next": {
-    "text": "prossimo"
+    "m": "prossimo",
+    "f": "prossima"
   },
   "finally": {
     "text": "finalmente"
@@ -4622,13 +4647,15 @@
     "text": "ogni cosa"
   },
   "someone": {
-    "text": "qualcuno"
+    "m": "qualcuno",
+    "f": "qualcuna"
   },
   "anyone": {
     "text": "chiunque"
   },
   "everyone": {
-    "text": "tutti"
+    "m": "tutti",
+    "f": "tutte"
   },
   "nobody": {
     "text": "nessuna persona"
@@ -4640,13 +4667,16 @@
     "text": "altro"
   },
   "mine": {
-    "text": "il mio"
+    "m": "il mio",
+    "f": "la mia"
   },
   "yours": {
-    "text": "il tuo"
+    "m": "il tuo",
+    "f": "la tua"
   },
   "oneself": {
-    "text": "sé stesso"
+    "m": "sé stesso",
+    "f": "sé stessa"
   },
   "manager": {
     "text": "manager",
@@ -10204,16 +10234,20 @@
     },
     "segments": {
       "survival": {
-        "name": "Sopravvivenza"
+        "name": "Sopravvivenza",
+        "intro": "IO PARLARE. TU CAPIRE."
       },
       "baby": {
-        "name": "Neonato"
+        "name": "Neonato",
+        "intro": "QUANTO MELA ROSSO? MOLTO CARO. SCONTO?"
       },
       "kid": {
-        "name": "Bambino"
+        "name": "Bambino",
+        "intro": "BAGAGLIO PESANTE. PASSAPORTO PERSO. TURISTA PIANGERE. VACANZA PERFETTO."
       },
       "adult": {
-        "name": "Adulto"
+        "name": "Adulto",
+        "intro": "UN SORRISO CONNETTE LE ANIME. LA CONVERSAZIONE CONNETTE LE COMUNITÀ."
       }
     }
   }

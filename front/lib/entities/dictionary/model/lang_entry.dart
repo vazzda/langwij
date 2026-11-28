@@ -8,12 +8,12 @@ sealed class LangEntry {
 
   /// The one word that stands for the entry where a single word is shown:
   /// the text of a simple entry, the imperfective of an aspect pair, the
-  /// masculine form of an adjective.
+  /// default form of a word stored with its gender forms.
   String get headword;
 
   factory LangEntry.fromJson(Map<String, dynamic> json) {
     if (json.containsKey('imperfective')) return AspectPairEntry.fromJson(json);
-    if (json.containsKey('m')) return AdjectiveEntry.fromJson(json);
+    if (json.containsKey('m')) return GenderFormsEntry.fromJson(json);
     return SimpleEntry.fromJson(json);
   }
 }
@@ -76,11 +76,14 @@ class AspectPairEntry extends LangEntry {
       );
 }
 
-class AdjectiveEntry extends LangEntry {
-  const AdjectiveEntry({
+/// A word that changes by gender, stored with one form for each gender: an
+/// adjective, and the pronouns and numerals that change in the same way.
+class GenderFormsEntry extends LangEntry {
+  const GenderFormsEntry({
     required this.m,
     required this.f,
     this.n,
+    this.defaultGender = GrammaticalGender.masculine,
     super.note,
   });
 
@@ -88,13 +91,35 @@ class AdjectiveEntry extends LangEntry {
   final String f;
   final String? n;
 
-  @override
-  String get headword => m;
+  /// The gender whose form stands for the word. It is the masculine unless
+  /// the `default` field of the translation files names another; the app's
+  /// validator sees to it that the named form is one the entry holds.
+  final GrammaticalGender defaultGender;
 
-  factory AdjectiveEntry.fromJson(Map<String, dynamic> json) => AdjectiveEntry(
-        m: json['m'] as String,
-        f: json['f'] as String,
-        n: json['n'] as String?,
-        note: json['note'] as String?,
-      );
+  /// Every form the entry holds, the masculine first.
+  List<String> get forms {
+    final neuterForm = n;
+    return [m, f, if (neuterForm != null) neuterForm];
+  }
+
+  @override
+  String get headword => switch (defaultGender) {
+        GrammaticalGender.masculine => m,
+        GrammaticalGender.feminine => f,
+        GrammaticalGender.neuter => n!,
+      };
+
+  factory GenderFormsEntry.fromJson(Map<String, dynamic> json) {
+    final defaultGenderCode = json['default'] as String?;
+
+    return GenderFormsEntry(
+      m: json['m'] as String,
+      f: json['f'] as String,
+      n: json['n'] as String?,
+      defaultGender: defaultGenderCode == null
+          ? GrammaticalGender.masculine
+          : GrammaticalGender.fromCode(defaultGenderCode),
+      note: json['note'] as String?,
+    );
+  }
 }

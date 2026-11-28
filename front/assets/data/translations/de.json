@@ -11305,16 +11305,20 @@
     },
     "segments": {
       "survival": {
-        "name": "Überleben"
+        "name": "Überleben",
+        "intro": "ICH SPRECHEN. DU VERSTEHEN."
       },
       "baby": {
-        "name": "Baby"
+        "name": "Baby",
+        "intro": "WIE VIEL ROT APFEL? SEHR TEUER. RABATT?"
       },
       "kid": {
-        "name": "Kind"
+        "name": "Kind",
+        "intro": "GEPÄCK SCHWER. REISEPASS VERLOREN. TOURIST WEINEN. URLAUB PERFEKT."
       },
       "adult": {
-        "name": "Erwachsener"
+        "name": "Erwachsener",
+        "intro": "EIN LÄCHELN VERBINDET SEELEN. EINE UNTERHALTUNG VERBINDET GEMEINSCHAFTEN."
       }
     }
   }
